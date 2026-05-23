@@ -1,0 +1,7007 @@
+{
+  "name": "DE-YT",
+  "targetLang": "de",
+  "cards": [
+    {
+      "id": "card_1gvoa3",
+      "fr": "Elle écrit un livre.",
+      "target": "Sie schreibt ein Buch.",
+      "lesson": "Général",
+      "index": 0
+    },
+    {
+      "id": "card_ndg7h4",
+      "fr": "Tout cela a l'air génial.",
+      "target": "Das alles hört sich toll an.",
+      "lesson": "Général",
+      "index": 1
+    },
+    {
+      "id": "card_qvu3wl",
+      "fr": "Est-ce que je le connais ?",
+      "target": "Kenne ich ihn?",
+      "lesson": "Général",
+      "index": 2
+    },
+    {
+      "id": "card_gj5z1z",
+      "fr": "Combien d'argent as-tu ?",
+      "target": "Wie viel Geld hast du?",
+      "lesson": "Général",
+      "index": 3
+    },
+    {
+      "id": "card_h8bndo",
+      "fr": "Viens avec moi.",
+      "target": "Komm mit.",
+      "lesson": "Général",
+      "index": 4
+    },
+    {
+      "id": "card_6x30lc",
+      "fr": "Je crois que je suis prêt.",
+      "target": "Ich glaube, ich bin bereit.",
+      "lesson": "Général",
+      "index": 5
+    },
+    {
+      "id": "card_wu9wo6",
+      "fr": "Sais-tu où il vit ?",
+      "target": "Weißt du, wo er lebt?",
+      "lesson": "Général",
+      "index": 6
+    },
+    {
+      "id": "card_gsqoo6",
+      "fr": "Je sais qu'elle dort.",
+      "target": "Ich weiß, dass sie schläft.",
+      "lesson": "Général",
+      "index": 7
+    },
+    {
+      "id": "card_738ms3",
+      "fr": "J'ai besoin de plus de temps.",
+      "target": "Ich brauche mehr Zeit.",
+      "lesson": "Général",
+      "index": 8
+    },
+    {
+      "id": "card_bakfyt",
+      "fr": "Il a besoin d'argent.",
+      "target": "Er braucht Geld.",
+      "lesson": "Général",
+      "index": 9
+    },
+    {
+      "id": "card_6grlcu",
+      "fr": "Tu as de l'argent ?",
+      "target": "Hast du Geld?",
+      "lesson": "Général",
+      "index": 10
+    },
+    {
+      "id": "card_tctves",
+      "fr": "Sois gentil avec Carmen !",
+      "target": "Sei nett zu Carmen!",
+      "lesson": "Général",
+      "index": 11
+    },
+    {
+      "id": "card_e6w6ns",
+      "fr": "Nous pouvons le faire nous-mêmes.",
+      "target": "Wir können es selbst tun.",
+      "lesson": "Général",
+      "index": 12
+    },
+    {
+      "id": "card_lgk3jn",
+      "fr": "Il boit de l'eau.",
+      "target": "Er trinkt Wasser.",
+      "lesson": "Général",
+      "index": 13
+    },
+    {
+      "id": "card_ousb40",
+      "fr": "Je veux lire ce livre.",
+      "target": "Ich will dieses Buch lesen.",
+      "lesson": "Général",
+      "index": 14
+    },
+    {
+      "id": "card_hrra59",
+      "fr": "Tu nous connais ?",
+      "target": "Kennst du uns?",
+      "lesson": "Général",
+      "index": 15
+    },
+    {
+      "id": "card_dgyfk0",
+      "fr": "J'appelle mon père.",
+      "target": "Ich rufe meinen Vater an.",
+      "lesson": "Général",
+      "index": 16
+    },
+    {
+      "id": "card_awktzd",
+      "fr": "Je peux parler anglais.",
+      "target": "Ich kann Englisch sprechen.",
+      "lesson": "Général",
+      "index": 17
+    },
+    {
+      "id": "card_27agbi",
+      "fr": "Je n'ai rien entendu.",
+      "target": "Ich habe nichts gehört.",
+      "lesson": "Général",
+      "index": 18
+    },
+    {
+      "id": "card_8temkb",
+      "fr": "Je te cherchais.",
+      "target": "Ich habe nach dir gesucht.",
+      "lesson": "Général",
+      "index": 19
+    },
+    {
+      "id": "card_w5dvhr",
+      "fr": "Le bébé dort encore.",
+      "target": "Das Baby schläft noch.",
+      "lesson": "Général",
+      "index": 20
+    },
+    {
+      "id": "card_7d6p7a",
+      "fr": "Presque toutes les filles sont gentilles.",
+      "target": "Fast alle Mädchen sind nett.",
+      "lesson": "Général",
+      "index": 21
+    },
+    {
+      "id": "card_ucd4xl",
+      "fr": "Il n'y a pas assez d'eau.",
+      "target": "Es gibt nicht genug Wasser.",
+      "lesson": "Général",
+      "index": 22
+    },
+    {
+      "id": "card_fxvxg5",
+      "fr": "Tu es tout pour moi.",
+      "target": "Du bist alles für mich.",
+      "lesson": "Général",
+      "index": 23
+    },
+    {
+      "id": "card_a0zd76",
+      "fr": "Nous les aimons tous.",
+      "target": "Wir mögen sie alle.",
+      "lesson": "Général",
+      "index": 24
+    },
+    {
+      "id": "card_oeen7g",
+      "fr": "La femme est en train de lire.",
+      "target": "Die Frau liest gerade.",
+      "lesson": "Général",
+      "index": 25
+    },
+    {
+      "id": "card_gv8kdj",
+      "fr": "J'aime les livres.",
+      "target": "Ich liebe Bücher.",
+      "lesson": "Général",
+      "index": 26
+    },
+    {
+      "id": "card_5bo0oq",
+      "fr": "Je suis en train de manger.",
+      "target": "Ich esse gerade.",
+      "lesson": "Général",
+      "index": 27
+    },
+    {
+      "id": "card_3gjpg8",
+      "fr": "Ton père le sait-il ?",
+      "target": "Weiß es dein Vater?",
+      "lesson": "Général",
+      "index": 28
+    },
+    {
+      "id": "card_m537t9",
+      "fr": "Il ne boit pas.",
+      "target": "Er trinkt nicht.",
+      "lesson": "Général",
+      "index": 29
+    },
+    {
+      "id": "card_b4gnbf",
+      "fr": "Quelle chance j'ai !",
+      "target": "Was für ein Glück ich doch habe!",
+      "lesson": "Général",
+      "index": 30
+    },
+    {
+      "id": "card_quijga",
+      "fr": "Il n'en a pas toujours été ainsi.",
+      "target": "Es war nicht immer so.",
+      "lesson": "Général",
+      "index": 31
+    },
+    {
+      "id": "card_2bxeni",
+      "fr": "Fais-le pour moi !",
+      "target": "Tu das für mich!",
+      "lesson": "Général",
+      "index": 32
+    },
+    {
+      "id": "card_6sq1nb",
+      "fr": "Avons-nous le temps ?",
+      "target": "Haben wir Zeit?",
+      "lesson": "Général",
+      "index": 33
+    },
+    {
+      "id": "card_o63sf7",
+      "fr": "Ne fais plus jamais ça !",
+      "target": "Mach das nie wieder!",
+      "lesson": "Général",
+      "index": 34
+    },
+    {
+      "id": "card_y5l00k",
+      "fr": "Elle m'a donné la main.",
+      "target": "Sie gab mir die Hand.",
+      "lesson": "Général",
+      "index": 35
+    },
+    {
+      "id": "card_l490kl",
+      "fr": "Je n'aime pas le café.",
+      "target": "Ich mag keinen Kaffee.",
+      "lesson": "Général",
+      "index": 36
+    },
+    {
+      "id": "card_7k39ls",
+      "fr": "J'aime les jeux.",
+      "target": "Ich liebe Spiele.",
+      "lesson": "Général",
+      "index": 37
+    },
+    {
+      "id": "card_c39ox4",
+      "fr": "Ma femme me manque beaucoup.",
+      "target": "Ich vermisse meine Frau sehr.",
+      "lesson": "Général",
+      "index": 38
+    },
+    {
+      "id": "card_qblsl1",
+      "fr": "Je peux le voir aussi ?",
+      "target": "Kann ich es auch mal sehen?",
+      "lesson": "Général",
+      "index": 39
+    },
+    {
+      "id": "card_k0ieee",
+      "fr": "Il faut faire quelque chose !",
+      "target": "Es muss etwas getan werden!",
+      "lesson": "Général",
+      "index": 40
+    },
+    {
+      "id": "card_l80go8",
+      "fr": "Je te déteste toujours.",
+      "target": "Ich hasse dich immer noch.",
+      "lesson": "Général",
+      "index": 41
+    },
+    {
+      "id": "card_gwvkcc",
+      "fr": "Elle aime les enfants.",
+      "target": "Sie liebt Kinder.",
+      "lesson": "Général",
+      "index": 42
+    },
+    {
+      "id": "card_t0t7t7",
+      "fr": "Que voulait-il ?",
+      "target": "Was wollte er?",
+      "lesson": "Général",
+      "index": 43
+    },
+    {
+      "id": "card_wh1ofj",
+      "fr": "Elle veut vraiment partir.",
+      "target": "Sie will wirklich gehen.",
+      "lesson": "Général",
+      "index": 44
+    },
+    {
+      "id": "card_ytmx2",
+      "fr": "Elle n'a rien dit.",
+      "target": "Sie sagte nichts.",
+      "lesson": "Général",
+      "index": 45
+    },
+    {
+      "id": "card_rgtqvb",
+      "fr": "Passe-moi le livre, s'il te plaît.",
+      "target": "Reich mir bitte das Buch.",
+      "lesson": "Général",
+      "index": 46
+    },
+    {
+      "id": "card_pox1db",
+      "fr": "Tu n'as pas d'amis ?",
+      "target": "Hast du keine Freunde?",
+      "lesson": "Général",
+      "index": 47
+    },
+    {
+      "id": "card_ei9okx",
+      "fr": "Tu penses trop.",
+      "target": "Du denkst zu viel.",
+      "lesson": "Général",
+      "index": 48
+    },
+    {
+      "id": "card_kwn5an",
+      "fr": "Il ne m'aime pas.",
+      "target": "Er mag mich nicht.",
+      "lesson": "Général",
+      "index": 49
+    },
+    {
+      "id": "card_tnyh7u",
+      "fr": "Comme elle chante bien !",
+      "target": "Wie gut sie singt!",
+      "lesson": "Général",
+      "index": 50
+    },
+    {
+      "id": "card_fjrecl",
+      "fr": "Je suis plus belle que toi.",
+      "target": "Ich bin schöner als du.",
+      "lesson": "Général",
+      "index": 51
+    },
+    {
+      "id": "card_o7mfju",
+      "fr": "Ne me fais pas ça !",
+      "target": "Tu mir das nicht an!",
+      "lesson": "Général",
+      "index": 52
+    },
+    {
+      "id": "card_2owumr",
+      "fr": "Tu as tout ?",
+      "target": "Hast du alles?",
+      "lesson": "Général",
+      "index": 53
+    },
+    {
+      "id": "card_u7s4m4",
+      "fr": "Essaie d'imaginer.",
+      "target": "Versuch es dir vorzustellen.",
+      "lesson": "Général",
+      "index": 54
+    },
+    {
+      "id": "card_buj5o6",
+      "fr": "Tu ne parles pas français ?",
+      "target": "Kannst du kein Französisch?",
+      "lesson": "Général",
+      "index": 55
+    },
+    {
+      "id": "card_ycivi3",
+      "fr": "Je peux lui parler ?",
+      "target": "Kann ich mit ihm sprechen?",
+      "lesson": "Général",
+      "index": 56
+    },
+    {
+      "id": "card_q5xfmj",
+      "fr": "Quoi qu'il en soit.",
+      "target": "Wie dem auch sei.",
+      "lesson": "Général",
+      "index": 57
+    },
+    {
+      "id": "card_zmerf",
+      "fr": "Je vais te le donner.",
+      "target": "Ich werde es dir geben.",
+      "lesson": "Général",
+      "index": 58
+    },
+    {
+      "id": "card_8bkry9",
+      "fr": "Tais-toi et écoute.",
+      "target": "Sei ruhig und hör mir zu.",
+      "lesson": "Général",
+      "index": 59
+    },
+    {
+      "id": "card_nisdqt",
+      "fr": "Elle veut partir.",
+      "target": "Sie will gehen.",
+      "lesson": "Général",
+      "index": 60
+    },
+    {
+      "id": "card_rfo2ia",
+      "fr": "Voici nos livres.",
+      "target": "Hier sind unsere Bücher.",
+      "lesson": "Général",
+      "index": 61
+    },
+    {
+      "id": "card_eblcsq",
+      "fr": "Je les connais tous les deux.",
+      "target": "Ich kenne sie beide.",
+      "lesson": "Général",
+      "index": 62
+    },
+    {
+      "id": "card_uirq4o",
+      "fr": "Je serai de retour à sept heures.",
+      "target": "Um sieben bin ich wieder da.",
+      "lesson": "Général",
+      "index": 63
+    },
+    {
+      "id": "card_nvknry",
+      "fr": "On ne peut pas faire demi-tour.",
+      "target": "Wir können nicht umkehren.",
+      "lesson": "Général",
+      "index": 64
+    },
+    {
+      "id": "card_94iz9n",
+      "fr": "L'enfant est tombé du lit.",
+      "target": "Das Kind ist aus dem Bett gefallen.",
+      "lesson": "Général",
+      "index": 65
+    },
+    {
+      "id": "card_cedxze",
+      "fr": "Tu me comprends ?",
+      "target": "Verstehst du mich?",
+      "lesson": "Général",
+      "index": 66
+    },
+    {
+      "id": "card_7p7v11",
+      "fr": "Que veut-il ?",
+      "target": "Was will er?",
+      "lesson": "Général",
+      "index": 67
+    },
+    {
+      "id": "card_fl7xvw",
+      "fr": "A-t-il raison ?",
+      "target": "Hat er recht?",
+      "lesson": "Général",
+      "index": 68
+    },
+    {
+      "id": "card_ab3bma",
+      "fr": "Je suis aussi grand que toi.",
+      "target": "Ich bin so groß wie du.",
+      "lesson": "Général",
+      "index": 69
+    },
+    {
+      "id": "card_jdc11u",
+      "fr": "Je suis grand.",
+      "target": "Ich bin groß.",
+      "lesson": "Général",
+      "index": 70
+    },
+    {
+      "id": "card_jgqqza",
+      "fr": "Ce n'était pas si difficile.",
+      "target": "Es war nicht so schwer.",
+      "lesson": "Général",
+      "index": 71
+    },
+    {
+      "id": "card_966a39",
+      "fr": "Je suis dans le jardin.",
+      "target": "Ich bin im Garten.",
+      "lesson": "Général",
+      "index": 72
+    },
+    {
+      "id": "card_al6kkr",
+      "fr": "Tu es en colère ?",
+      "target": "Bist du wütend?",
+      "lesson": "Général",
+      "index": 73
+    },
+    {
+      "id": "card_dcy5iu",
+      "fr": "Dis-le-moi, s'il te plaît.",
+      "target": "Bitte sag es mir.",
+      "lesson": "Général",
+      "index": 74
+    },
+    {
+      "id": "card_kz2rlb",
+      "fr": "On y va ?",
+      "target": "Gehen wir?",
+      "lesson": "Général",
+      "index": 75
+    },
+    {
+      "id": "card_o2dt1j",
+      "fr": "Ils sont trop nombreux !",
+      "target": "Es sind zu viele!",
+      "lesson": "Général",
+      "index": 76
+    },
+    {
+      "id": "card_691s53",
+      "fr": "Je veux la voir.",
+      "target": "Ich will sie sehen.",
+      "lesson": "Général",
+      "index": 77
+    },
+    {
+      "id": "card_4esid2",
+      "fr": "Je connais un peu le français.",
+      "target": "Ich kann etwas Französisch.",
+      "lesson": "Général",
+      "index": 78
+    },
+    {
+      "id": "card_6luy30",
+      "fr": "Tu es plus grand que moi.",
+      "target": "Du bist größer als ich.",
+      "lesson": "Général",
+      "index": 79
+    },
+    {
+      "id": "card_x5u2vo",
+      "fr": "Toutes les femmes ne sont pas comme ça.",
+      "target": "Nicht alle Frauen sind so.",
+      "lesson": "Général",
+      "index": 80
+    },
+    {
+      "id": "card_3m8tdy",
+      "fr": "Elle a éteint la lumière.",
+      "target": "Sie machte das Licht aus.",
+      "lesson": "Général",
+      "index": 81
+    },
+    {
+      "id": "card_hlsntj",
+      "fr": "Tu as l'air très fatigué.",
+      "target": "Sie sehen sehr müde aus.",
+      "lesson": "Général",
+      "index": 82
+    },
+    {
+      "id": "card_l8hhcu",
+      "fr": "Je vais toujours à pied.",
+      "target": "Ich gehe immer zu Fuß.",
+      "lesson": "Général",
+      "index": 83
+    },
+    {
+      "id": "card_b6ox0t",
+      "fr": "C'est comme ça qu'il l'aime.",
+      "target": "So mag er es gern.",
+      "lesson": "Général",
+      "index": 84
+    },
+    {
+      "id": "card_9ldioq",
+      "fr": "C'est ce que tu penses !",
+      "target": "Das denkst du!",
+      "lesson": "Général",
+      "index": 85
+    },
+    {
+      "id": "card_f9jaiz",
+      "fr": "Tu as un chien ?",
+      "target": "Hast du einen Hund?",
+      "lesson": "Général",
+      "index": 86
+    },
+    {
+      "id": "card_nvdl7c",
+      "fr": "J'aime ma femme.",
+      "target": "Ich liebe meine Frau.",
+      "lesson": "Général",
+      "index": 87
+    },
+    {
+      "id": "card_miw135",
+      "fr": "Combien de fois la vois-tu ?",
+      "target": "Wie oft siehst du sie?",
+      "lesson": "Général",
+      "index": 88
+    },
+    {
+      "id": "card_yf1yzk",
+      "fr": "Ce chapeau te va bien.",
+      "target": "Dieser Hut steht dir gut.",
+      "lesson": "Général",
+      "index": 89
+    },
+    {
+      "id": "card_hqtw9h",
+      "fr": "Tu veux le voir maintenant ?",
+      "target": "Willst du es jetzt sehen?",
+      "lesson": "Général",
+      "index": 90
+    },
+    {
+      "id": "card_rvtegd",
+      "fr": "Je l'appelle très souvent.",
+      "target": "Ich rufe sie sehr oft an.",
+      "lesson": "Général",
+      "index": 91
+    },
+    {
+      "id": "card_xmsmgc",
+      "fr": "Elle a beaucoup d'amis ici.",
+      "target": "Sie hat hier viele Freunde.",
+      "lesson": "Général",
+      "index": 92
+    },
+    {
+      "id": "card_6pspsp",
+      "fr": "Il a deux chiens.",
+      "target": "Er hat zwei Hunde.",
+      "lesson": "Général",
+      "index": 93
+    },
+    {
+      "id": "card_q02zhg",
+      "fr": "Sans toi, je ne pars pas.",
+      "target": "Ohne dich gehe ich nicht.",
+      "lesson": "Général",
+      "index": 94
+    },
+    {
+      "id": "card_v98bba",
+      "fr": "Elle ne boit pas.",
+      "target": "Sie trinkt nicht.",
+      "lesson": "Général",
+      "index": 95
+    },
+    {
+      "id": "card_hm7sgh",
+      "fr": "Je suis plus âgé que lui.",
+      "target": "Ich bin älter als er.",
+      "lesson": "Général",
+      "index": 96
+    },
+    {
+      "id": "card_f8d7oy",
+      "fr": "J'en ai fini avec toi.",
+      "target": "Ich bin fertig mit dir.",
+      "lesson": "Général",
+      "index": 97
+    },
+    {
+      "id": "card_c706q7",
+      "fr": "Je n'ai rien.",
+      "target": "Ich habe nichts.",
+      "lesson": "Général",
+      "index": 98
+    },
+    {
+      "id": "card_44072u",
+      "fr": "Je suis en train de lire ce livre.",
+      "target": "Ich lese gerade dieses Buch.",
+      "lesson": "Général",
+      "index": 99
+    },
+    {
+      "id": "card_mm4b1j",
+      "fr": "Moi aussi, je veux savoir !",
+      "target": "Ich will es auch wissen!",
+      "lesson": "Général",
+      "index": 100
+    },
+    {
+      "id": "card_lfzu0m",
+      "fr": "C'est à lui, n'est-ce pas ?",
+      "target": "Es gehört ihm, nicht wahr?",
+      "lesson": "Général",
+      "index": 101
+    },
+    {
+      "id": "card_703xxp",
+      "fr": "Le soleil se lève.",
+      "target": "Die Sonne geht auf.",
+      "lesson": "Général",
+      "index": 102
+    },
+    {
+      "id": "card_3g9ys9",
+      "fr": "Tu peux y aller.",
+      "target": "Du kannst gehen.",
+      "lesson": "Général",
+      "index": 103
+    },
+    {
+      "id": "card_fzyw5n",
+      "fr": "Je veux aller me coucher.",
+      "target": "Ich möchte ins Bett gehen.",
+      "lesson": "Général",
+      "index": 104
+    },
+    {
+      "id": "card_qckc30",
+      "fr": "Comment était le temps hier ?",
+      "target": "Wie war das Wetter gestern?",
+      "lesson": "Général",
+      "index": 105
+    },
+    {
+      "id": "card_h3komd",
+      "fr": "Ne te lève pas, s'il te plaît.",
+      "target": "Bitte steh nicht auf.",
+      "lesson": "Général",
+      "index": 106
+    },
+    {
+      "id": "card_aqx7q",
+      "fr": "Je suis meilleur que lui.",
+      "target": "Ich bin besser als er.",
+      "lesson": "Général",
+      "index": 107
+    },
+    {
+      "id": "card_wq0159",
+      "fr": "Je dois rentrer.",
+      "target": "Ich muss zurück.",
+      "lesson": "Général",
+      "index": 108
+    },
+    {
+      "id": "card_4petuz",
+      "fr": "Attends-moi !",
+      "target": "Warte auf mich!",
+      "lesson": "Général",
+      "index": 109
+    },
+    {
+      "id": "card_b0mlft",
+      "fr": "Il a raccroché.",
+      "target": "Er hat aufgelegt.",
+      "lesson": "Général",
+      "index": 110
+    },
+    {
+      "id": "card_qoq85i",
+      "fr": "Je te connais.",
+      "target": "Ich kenne dich.",
+      "lesson": "Général",
+      "index": 111
+    },
+    {
+      "id": "card_syy0pe",
+      "fr": "Il pleut encore.",
+      "target": "Es regnet schon wieder.",
+      "lesson": "Général",
+      "index": 112
+    },
+    {
+      "id": "card_cqw1k1",
+      "fr": "Ne te fâche pas, s'il te plaît !",
+      "target": "Sei bitte nicht böse!",
+      "lesson": "Général",
+      "index": 113
+    },
+    {
+      "id": "card_vjb33p",
+      "fr": "Ta chambre me plaît.",
+      "target": "Dein Zimmer gefällt mir.",
+      "lesson": "Général",
+      "index": 114
+    },
+    {
+      "id": "card_2f3evf",
+      "fr": "Allons-y !",
+      "target": "Gehen wir!",
+      "lesson": "Général",
+      "index": 115
+    },
+    {
+      "id": "card_rvqfvm",
+      "fr": "Que font ces personnes ?",
+      "target": "Was machen diese Leute?",
+      "lesson": "Général",
+      "index": 116
+    },
+    {
+      "id": "card_sdow1x",
+      "fr": "Elle tient toujours sa parole.",
+      "target": "Sie hält immer ihr Wort.",
+      "lesson": "Général",
+      "index": 117
+    },
+    {
+      "id": "card_i9ta1j",
+      "fr": "Nous le connaissons.",
+      "target": "Wir kennen ihn.",
+      "lesson": "Général",
+      "index": 118
+    },
+    {
+      "id": "card_794sze",
+      "fr": "Je courais pour sauver ma vie.",
+      "target": "Ich rannte um mein Leben.",
+      "lesson": "Général",
+      "index": 119
+    },
+    {
+      "id": "card_qgph6h",
+      "fr": "C'est bien pour toi.",
+      "target": "Schön für dich.",
+      "lesson": "Général",
+      "index": 120
+    },
+    {
+      "id": "card_3172j",
+      "fr": "Ça fait très mal ?",
+      "target": "Tut es sehr weh?",
+      "lesson": "Général",
+      "index": 121
+    },
+    {
+      "id": "card_n0lm5y",
+      "fr": "Je participe !",
+      "target": "Ich mache mit!",
+      "lesson": "Général",
+      "index": 122
+    },
+    {
+      "id": "card_rolzbl",
+      "fr": "Je crois qu'il a raison.",
+      "target": "Ich glaube, er hat recht.",
+      "lesson": "Général",
+      "index": 123
+    },
+    {
+      "id": "card_kaxsu3",
+      "fr": "Je te crois.",
+      "target": "Ich glaube dir.",
+      "lesson": "Général",
+      "index": 124
+    },
+    {
+      "id": "card_mi7jjw",
+      "fr": "J'aime le café.",
+      "target": "Ich mag Kaffee.",
+      "lesson": "Général",
+      "index": 125
+    },
+    {
+      "id": "card_qzv5gr",
+      "fr": "Il semble riche.",
+      "target": "Er scheint reich zu sein.",
+      "lesson": "Général",
+      "index": 126
+    },
+    {
+      "id": "card_jmcy9s",
+      "fr": "Nous le connaissons tous bien.",
+      "target": "Wir kennen ihn alle gut.",
+      "lesson": "Général",
+      "index": 127
+    },
+    {
+      "id": "card_n2r6rh",
+      "fr": "Quelqu'un arrive.",
+      "target": "Jemand kommt.",
+      "lesson": "Général",
+      "index": 128
+    },
+    {
+      "id": "card_xz800v",
+      "fr": "Ce vélo m'appartient.",
+      "target": "Dieses Fahrrad gehört mir.",
+      "lesson": "Général",
+      "index": 129
+    },
+    {
+      "id": "card_4q7b3r",
+      "fr": "Je sais ce qu'il pense.",
+      "target": "Ich weiß, was er denkt.",
+      "lesson": "Général",
+      "index": 130
+    },
+    {
+      "id": "card_odk72l",
+      "fr": "Oui, s'il te plaît.",
+      "target": "Ja, bitte.",
+      "lesson": "Général",
+      "index": 131
+    },
+    {
+      "id": "card_hpdoli",
+      "fr": "Parle-t-il anglais ?",
+      "target": "Spricht er Englisch?",
+      "lesson": "Général",
+      "index": 132
+    },
+    {
+      "id": "card_4l1x9k",
+      "fr": "Les deux sont en vie.",
+      "target": "Beide sind am Leben.",
+      "lesson": "Général",
+      "index": 133
+    },
+    {
+      "id": "card_iuoa7p",
+      "fr": "Tu n'as rien à faire ?",
+      "target": "Hast du nichts zu tun?",
+      "lesson": "Général",
+      "index": 134
+    },
+    {
+      "id": "card_dkfmc9",
+      "fr": "Je dois voir ça.",
+      "target": "Ich muss das sehen.",
+      "lesson": "Général",
+      "index": 135
+    },
+    {
+      "id": "card_fcllje",
+      "fr": "Je dois aller à la police.",
+      "target": "Ich muss zur Polizei gehen.",
+      "lesson": "Général",
+      "index": 136
+    },
+    {
+      "id": "card_sbgi2k",
+      "fr": "Tu as beaucoup à faire ?",
+      "target": "Hast du viel zu tun?",
+      "lesson": "Général",
+      "index": 137
+    },
+    {
+      "id": "card_73di44",
+      "fr": "J'allais partir.",
+      "target": "Ich wollte gerade gehen.",
+      "lesson": "Général",
+      "index": 138
+    },
+    {
+      "id": "card_a9vw30",
+      "fr": "Je veux de la soupe.",
+      "target": "Ich möchte etwas Suppe.",
+      "lesson": "Général",
+      "index": 139
+    },
+    {
+      "id": "card_fpkb75",
+      "fr": "Je peux venir chez toi ?",
+      "target": "Kann ich zu dir kommen?",
+      "lesson": "Général",
+      "index": 140
+    },
+    {
+      "id": "card_q1ybip",
+      "fr": "Quelle est la cause de l'incendie ?",
+      "target": "Was ist die Ursache des Brandes?",
+      "lesson": "Général",
+      "index": 141
+    },
+    {
+      "id": "card_2aqun2",
+      "fr": "Il connaît le chemin.",
+      "target": "Er kennt den Weg.",
+      "lesson": "Général",
+      "index": 142
+    },
+    {
+      "id": "card_7hj3vq",
+      "fr": "Je suis souvent là.",
+      "target": "Ich bin oft hier.",
+      "lesson": "Général",
+      "index": 143
+    },
+    {
+      "id": "card_l44mwf",
+      "fr": "Nous avons eu une très bonne conversation.",
+      "target": "Wir hatten ein wirklich gutes Gespräch.",
+      "lesson": "Général",
+      "index": 144
+    },
+    {
+      "id": "card_9m4w5l",
+      "fr": "Je ne sais pas.",
+      "target": "Ich weiß das nicht.",
+      "lesson": "Général",
+      "index": 145
+    },
+    {
+      "id": "card_19bmhe",
+      "fr": "Est-ce qu'ils s'aiment ?",
+      "target": "Lieben sie sich?",
+      "lesson": "Général",
+      "index": 146
+    },
+    {
+      "id": "card_840hog",
+      "fr": "Personne ne m'aime.",
+      "target": "Niemand liebt mich.",
+      "lesson": "Général",
+      "index": 147
+    },
+    {
+      "id": "card_3proui",
+      "fr": "Elle me rend heureux.",
+      "target": "Sie macht mich glücklich.",
+      "lesson": "Général",
+      "index": 148
+    },
+    {
+      "id": "card_68q77w",
+      "fr": "Le matin, il faisait très froid.",
+      "target": "Am Morgen war es sehr kalt.",
+      "lesson": "Général",
+      "index": 149
+    },
+    {
+      "id": "card_3is93e",
+      "fr": "Je peux t'attendre.",
+      "target": "Ich kann auf dich warten.",
+      "lesson": "Général",
+      "index": 150
+    },
+    {
+      "id": "card_oxk85o",
+      "fr": "Je ne peux pas conduire.",
+      "target": "Ich kann nicht Auto fahren.",
+      "lesson": "Général",
+      "index": 151
+    },
+    {
+      "id": "card_brwpnl",
+      "fr": "Je n'ai pas d'enfants.",
+      "target": "Ich habe keine Kinder.",
+      "lesson": "Général",
+      "index": 152
+    },
+    {
+      "id": "card_mppsss",
+      "fr": "Qu'est-ce qu'il t'a fait ?",
+      "target": "Was hat er dir getan?",
+      "lesson": "Général",
+      "index": 153
+    },
+    {
+      "id": "card_ead3yo",
+      "fr": "Je reviens tout de suite !",
+      "target": "Ich bin gleich wieder da!",
+      "lesson": "Général",
+      "index": 154
+    },
+    {
+      "id": "card_e4jpel",
+      "fr": "Elle se lève toujours tôt.",
+      "target": "Sie steht immer früh auf.",
+      "lesson": "Général",
+      "index": 155
+    },
+    {
+      "id": "card_tqv7w",
+      "fr": "Je vais à l'école.",
+      "target": "Ich gehe in die Schule.",
+      "lesson": "Général",
+      "index": 156
+    },
+    {
+      "id": "card_kxmkt5",
+      "fr": "Tu ne peux pas me voir.",
+      "target": "Sie können mich nicht sehen.",
+      "lesson": "Général",
+      "index": 157
+    },
+    {
+      "id": "card_288xd",
+      "fr": "Je le vois dans tes yeux.",
+      "target": "Ich sehe es in deinen Augen.",
+      "lesson": "Général",
+      "index": 158
+    },
+    {
+      "id": "card_v00smg",
+      "fr": "Je ne l'aime plus.",
+      "target": "Ich liebe sie nicht mehr.",
+      "lesson": "Général",
+      "index": 159
+    },
+    {
+      "id": "card_crwta7",
+      "fr": "Il dépense trop d'argent.",
+      "target": "Er gibt zu viel Geld aus.",
+      "lesson": "Général",
+      "index": 160
+    },
+    {
+      "id": "card_8cxm6i",
+      "fr": "Tu aimes vraiment ça ?",
+      "target": "Magst du das wirklich?",
+      "lesson": "Général",
+      "index": 161
+    },
+    {
+      "id": "card_8qas9p",
+      "fr": "Il parle avec elle.",
+      "target": "Er spricht mit ihr.",
+      "lesson": "Général",
+      "index": 162
+    },
+    {
+      "id": "card_ennytp",
+      "fr": "Je ne le fais pas.",
+      "target": "Ich tue das nicht.",
+      "lesson": "Général",
+      "index": 163
+    },
+    {
+      "id": "card_ihdcnr",
+      "fr": "Ça a l'air bien.",
+      "target": "Das sieht gut aus.",
+      "lesson": "Général",
+      "index": 164
+    },
+    {
+      "id": "card_z2v1ic",
+      "fr": "Je t'aime toujours.",
+      "target": "Ich liebe dich immer noch.",
+      "lesson": "Général",
+      "index": 165
+    },
+    {
+      "id": "card_6xa2sk",
+      "fr": "Je sais ce qu'elle pense.",
+      "target": "Ich weiß, was sie denkt.",
+      "lesson": "Général",
+      "index": 166
+    },
+    {
+      "id": "card_1nezfq",
+      "fr": "Élimine.",
+      "target": "Schalte es aus.",
+      "lesson": "Général",
+      "index": 167
+    },
+    {
+      "id": "card_1wn4vc",
+      "fr": "C'est la différence !",
+      "target": "Das ist der Unterschied!",
+      "lesson": "Général",
+      "index": 168
+    },
+    {
+      "id": "card_g3159a",
+      "fr": "Je ne parle pas de ça.",
+      "target": "Das meine ich nicht.",
+      "lesson": "Général",
+      "index": 169
+    },
+    {
+      "id": "card_hwxjqg",
+      "fr": "Nous devons partir maintenant.",
+      "target": "Wir müssen jetzt gehen.",
+      "lesson": "Général",
+      "index": 170
+    },
+    {
+      "id": "card_v8f18b",
+      "fr": "Je suis fou de toi.",
+      "target": "Ich bin verrückt nach dir.",
+      "lesson": "Général",
+      "index": 171
+    },
+    {
+      "id": "card_tryl4g",
+      "fr": "Content de te voir.",
+      "target": "Schön dich zu sehen.",
+      "lesson": "Général",
+      "index": 172
+    },
+    {
+      "id": "card_ptdjkj",
+      "fr": "Ils sont en train de manger.",
+      "target": "Sie essen gerade.",
+      "lesson": "Général",
+      "index": 173
+    },
+    {
+      "id": "card_vrsbqz",
+      "fr": "Que se passe-t-il ici ?",
+      "target": "Was geht hier vor sich?",
+      "lesson": "Général",
+      "index": 174
+    },
+    {
+      "id": "card_nta3rm",
+      "fr": "Je suis enseignant.",
+      "target": "Ich bin Lehrer.",
+      "lesson": "Général",
+      "index": 175
+    },
+    {
+      "id": "card_nawohp",
+      "fr": "Je ne te connais pas.",
+      "target": "Ich kenne dich nicht.",
+      "lesson": "Général",
+      "index": 176
+    },
+    {
+      "id": "card_jw6qf4",
+      "fr": "Le plan n'a pas fonctionné.",
+      "target": "Der Plan ging nicht auf.",
+      "lesson": "Général",
+      "index": 177
+    },
+    {
+      "id": "card_e08c4s",
+      "fr": "Je fais tout, sauf ça.",
+      "target": "Ich mache alles, außer das.",
+      "lesson": "Général",
+      "index": 178
+    },
+    {
+      "id": "card_1jsl7e",
+      "fr": "Je suis en train de parler.",
+      "target": "Ich spreche gerade.",
+      "lesson": "Général",
+      "index": 179
+    },
+    {
+      "id": "card_j8w8hp",
+      "fr": "Où sont les enfants ?",
+      "target": "Wo sind die Kinder?",
+      "lesson": "Général",
+      "index": 180
+    },
+    {
+      "id": "card_psexlp",
+      "fr": "Sans effort, pas de prix !",
+      "target": "Ohne Fleiß kein Preis!",
+      "lesson": "Général",
+      "index": 181
+    },
+    {
+      "id": "card_sjyubz",
+      "fr": "Ferme les yeux.",
+      "target": "Mach die Augen zu.",
+      "lesson": "Général",
+      "index": 182
+    },
+    {
+      "id": "card_ed6u5v",
+      "fr": "Mieux vaut elle que moi.",
+      "target": "Besser sie als ich.",
+      "lesson": "Général",
+      "index": 183
+    },
+    {
+      "id": "card_xnaolk",
+      "fr": "Cette eau a bon goût.",
+      "target": "Dieses Wasser schmeckt gut.",
+      "lesson": "Général",
+      "index": 184
+    },
+    {
+      "id": "card_uv2jj",
+      "fr": "Je n'ai jamais été aussi bien.",
+      "target": "Es ging mir nie besser.",
+      "lesson": "Général",
+      "index": 185
+    },
+    {
+      "id": "card_3acvp3",
+      "fr": "Je ne suis qu'un professeur.",
+      "target": "Ich bin nur ein Lehrer.",
+      "lesson": "Général",
+      "index": 186
+    },
+    {
+      "id": "card_3bi5cw",
+      "fr": "On n'entend que du bien à son sujet.",
+      "target": "Man hört nur Gutes über ihn.",
+      "lesson": "Général",
+      "index": 187
+    },
+    {
+      "id": "card_5e70b9",
+      "fr": "Tu es ce que tu manges.",
+      "target": "Du bist, was du isst.",
+      "lesson": "Général",
+      "index": 188
+    },
+    {
+      "id": "card_os88p2",
+      "fr": "J'avais vraiment peur.",
+      "target": "Ich hatte wirklich Angst.",
+      "lesson": "Général",
+      "index": 189
+    },
+    {
+      "id": "card_fia4yq",
+      "fr": "Il fait toujours ce qu'il dit.",
+      "target": "Er tut immer, was er sagt.",
+      "lesson": "Général",
+      "index": 190
+    },
+    {
+      "id": "card_3tghel",
+      "fr": "Qui vient avec moi ?",
+      "target": "Wer kommt mit mir?",
+      "lesson": "Général",
+      "index": 191
+    },
+    {
+      "id": "card_d73kf5",
+      "fr": "Je n'ai pas peur.",
+      "target": "Ich habe keine Angst.",
+      "lesson": "Général",
+      "index": 192
+    },
+    {
+      "id": "card_qhbhlb",
+      "fr": "J'ai raison, n'est-ce pas ?",
+      "target": "Ich habe recht, nicht wahr?",
+      "lesson": "Général",
+      "index": 193
+    },
+    {
+      "id": "card_mnpp9b",
+      "fr": "Je suis médecin.",
+      "target": "Ich bin Arzt.",
+      "lesson": "Général",
+      "index": 194
+    },
+    {
+      "id": "card_6orc8l",
+      "fr": "Cela fonctionnerait.",
+      "target": "Das würde funktionieren.",
+      "lesson": "Général",
+      "index": 195
+    },
+    {
+      "id": "card_8qkg18",
+      "fr": "On n'est pas obligé de le faire.",
+      "target": "Wir müssen das nicht tun.",
+      "lesson": "Général",
+      "index": 196
+    },
+    {
+      "id": "card_nu4b53",
+      "fr": "Maintenant, ils ont trois enfants.",
+      "target": "Jetzt haben sie drei Kinder.",
+      "lesson": "Général",
+      "index": 197
+    },
+    {
+      "id": "card_336s72",
+      "fr": "J'aime les chiens.",
+      "target": "Ich mag Hunde.",
+      "lesson": "Général",
+      "index": 198
+    },
+    {
+      "id": "card_co0ati",
+      "fr": "J'aime manger.",
+      "target": "Ich esse gerne.",
+      "lesson": "Général",
+      "index": 199
+    },
+    {
+      "id": "card_dd2ze0",
+      "fr": "Tu n'as rien à dire ?",
+      "target": "Hast du nichts zu sagen?",
+      "lesson": "Général",
+      "index": 200
+    },
+    {
+      "id": "card_hpaueu",
+      "fr": "Elle a l'air très malade.",
+      "target": "Sie sieht sehr krank aus.",
+      "lesson": "Général",
+      "index": 201
+    },
+    {
+      "id": "card_96pvun",
+      "fr": "J'ai entendu.",
+      "target": "Ich habe es gehört.",
+      "lesson": "Général",
+      "index": 202
+    },
+    {
+      "id": "card_hwf4va",
+      "fr": "Je ne te dois pas quelque chose ?",
+      "target": "Schulde ich dir nicht etwas?",
+      "lesson": "Général",
+      "index": 203
+    },
+    {
+      "id": "card_afg83k",
+      "fr": "J'ai passé un bon moment.",
+      "target": "Ich hatte eine schöne Zeit.",
+      "lesson": "Général",
+      "index": 204
+    },
+    {
+      "id": "card_synfac",
+      "fr": "Je le connais bien.",
+      "target": "Ich kenne ihn gut.",
+      "lesson": "Général",
+      "index": 205
+    },
+    {
+      "id": "card_ibnq6h",
+      "fr": "Je ne bois jamais.",
+      "target": "Ich trinke nie.",
+      "lesson": "Général",
+      "index": 206
+    },
+    {
+      "id": "card_devo9e",
+      "fr": "Je dois apprendre.",
+      "target": "Ich muss lernen.",
+      "lesson": "Général",
+      "index": 207
+    },
+    {
+      "id": "card_y0t9ev",
+      "fr": "Je ne suis pas fou.",
+      "target": "Ich bin nicht verrückt.",
+      "lesson": "Général",
+      "index": 208
+    },
+    {
+      "id": "card_37ss1z",
+      "fr": "Je suis trop fatigué pour penser.",
+      "target": "Ich bin zu müde zum Denken.",
+      "lesson": "Général",
+      "index": 209
+    },
+    {
+      "id": "card_mbh4fz",
+      "fr": "Fais vite, s'il te plaît.",
+      "target": "Bitte mache es schnell.",
+      "lesson": "Général",
+      "index": 210
+    },
+    {
+      "id": "card_ofpwo2",
+      "fr": "Ils se ressemblent tous.",
+      "target": "Sie sehen alle gleich aus.",
+      "lesson": "Général",
+      "index": 211
+    },
+    {
+      "id": "card_zexbac",
+      "fr": "Connais-tu son père ?",
+      "target": "Kennst du ihren Vater?",
+      "lesson": "Général",
+      "index": 212
+    },
+    {
+      "id": "card_43y4zk",
+      "fr": "Il a parlé de nous ?",
+      "target": "Hat er uns erwähnt?",
+      "lesson": "Général",
+      "index": 213
+    },
+    {
+      "id": "card_kwsuf6",
+      "fr": "Elle l'aime bien.",
+      "target": "Sie mag ihn.",
+      "lesson": "Général",
+      "index": 214
+    },
+    {
+      "id": "card_n9bmnw",
+      "fr": "J'ai pris du poids.",
+      "target": "Ich habe zugenommen.",
+      "lesson": "Général",
+      "index": 215
+    },
+    {
+      "id": "card_qheb4v",
+      "fr": "Il a le béguin pour cette fille.",
+      "target": "Er ist in dieses Mädchen verknallt.",
+      "lesson": "Général",
+      "index": 216
+    },
+    {
+      "id": "card_muept",
+      "fr": "J'écoute une chanson.",
+      "target": "Ich höre gerade ein Lied.",
+      "lesson": "Général",
+      "index": 217
+    },
+    {
+      "id": "card_qfcgyx",
+      "fr": "Il est toujours vivant.",
+      "target": "Er lebt noch.",
+      "lesson": "Général",
+      "index": 218
+    },
+    {
+      "id": "card_ff7fmn",
+      "fr": "Tu peux venir demain ?",
+      "target": "Kannst du morgen kommen?",
+      "lesson": "Général",
+      "index": 219
+    },
+    {
+      "id": "card_5t5ssq",
+      "fr": "Je ne le sais pas encore.",
+      "target": "Das weiß ich noch nicht.",
+      "lesson": "Général",
+      "index": 220
+    },
+    {
+      "id": "card_1lpvqa",
+      "fr": "Je suis allé à la fête.",
+      "target": "Ich war auf der Party.",
+      "lesson": "Général",
+      "index": 221
+    },
+    {
+      "id": "card_q8ukh9",
+      "fr": "Je suis resté.",
+      "target": "Ich blieb.",
+      "lesson": "Général",
+      "index": 222
+    },
+    {
+      "id": "card_nno7jf",
+      "fr": "Une bière, s'il te plaît !",
+      "target": "Ein Bier, bitte!",
+      "lesson": "Général",
+      "index": 223
+    },
+    {
+      "id": "card_9i9ocb",
+      "fr": "Tu la connais ?",
+      "target": "Du kennst sie?",
+      "lesson": "Général",
+      "index": 224
+    },
+    {
+      "id": "card_t9thg4",
+      "fr": "Je pense qu'il t'aime bien.",
+      "target": "Ich glaube, er mag dich.",
+      "lesson": "Général",
+      "index": 225
+    },
+    {
+      "id": "card_7cs7s1",
+      "fr": "Quel est le titre du film ?",
+      "target": "Wie heißt der Film?",
+      "lesson": "Général",
+      "index": 226
+    },
+    {
+      "id": "card_swkmqf",
+      "fr": "Je suis vieux.",
+      "target": "Ich bin alt.",
+      "lesson": "Général",
+      "index": 227
+    },
+    {
+      "id": "card_orp1vp",
+      "fr": "Ce n'est pas mon idée.",
+      "target": "Das war nicht meine Idee.",
+      "lesson": "Général",
+      "index": 228
+    },
+    {
+      "id": "card_gspqu7",
+      "fr": "Je suis un homme.",
+      "target": "Ich bin ein Mann.",
+      "lesson": "Général",
+      "index": 229
+    },
+    {
+      "id": "card_o8arpv",
+      "fr": "Je connais ce garçon.",
+      "target": "Ich kenne den Jungen.",
+      "lesson": "Général",
+      "index": 230
+    },
+    {
+      "id": "card_j5rkvo",
+      "fr": "Où suis-je ?",
+      "target": "Wo bin ich?",
+      "lesson": "Général",
+      "index": 231
+    },
+    {
+      "id": "card_d9nxx6",
+      "fr": "Il a encore beaucoup à apprendre.",
+      "target": "Er muss noch viel lernen.",
+      "lesson": "Général",
+      "index": 232
+    },
+    {
+      "id": "card_31ishi",
+      "fr": "Comment va ton frère ?",
+      "target": "Wie geht es deinem Bruder?",
+      "lesson": "Général",
+      "index": 233
+    },
+    {
+      "id": "card_2algnz",
+      "fr": "Tu as bien expliqué.",
+      "target": "Du hast das gut erklärt.",
+      "lesson": "Général",
+      "index": 234
+    },
+    {
+      "id": "card_6j2xaq",
+      "fr": "Ne le crois pas !",
+      "target": "Glaub ihm nicht!",
+      "lesson": "Général",
+      "index": 235
+    },
+    {
+      "id": "card_wajhpq",
+      "fr": "Il ne sait pas qui je suis.",
+      "target": "Er weiß nicht, wer ich bin.",
+      "lesson": "Général",
+      "index": 236
+    },
+    {
+      "id": "card_e7vtuj",
+      "fr": "Je ne suis pas doué pour ce genre de choses.",
+      "target": "Ich bin nicht gut in solchen Dingen.",
+      "lesson": "Général",
+      "index": 237
+    },
+    {
+      "id": "card_s815kz",
+      "fr": "On ne peut pas le faire.",
+      "target": "Wir können es nicht machen.",
+      "lesson": "Général",
+      "index": 238
+    },
+    {
+      "id": "card_8mzbal",
+      "fr": "Nous n'avons pas le temps pour cela.",
+      "target": "Wir haben dafür keine Zeit.",
+      "lesson": "Général",
+      "index": 239
+    },
+    {
+      "id": "card_tkvj5f",
+      "fr": "Je t'aimerai toujours !",
+      "target": "Ich werde dich immer lieben!",
+      "lesson": "Général",
+      "index": 240
+    },
+    {
+      "id": "card_9ix8uz",
+      "fr": "Je ferai tout pour lui.",
+      "target": "Ich werde alles für ihn tun.",
+      "lesson": "Général",
+      "index": 241
+    },
+    {
+      "id": "card_dq9miz",
+      "fr": "Cela devrait suffire.",
+      "target": "Das sollte genug sein.",
+      "lesson": "Général",
+      "index": 242
+    },
+    {
+      "id": "card_hixgiy",
+      "fr": "Personne ne te fera de mal.",
+      "target": "Niemand wird dir etwas tun.",
+      "lesson": "Général",
+      "index": 243
+    },
+    {
+      "id": "card_n8lfe4",
+      "fr": "Il a trop de livres.",
+      "target": "Er hat zu viele Bücher.",
+      "lesson": "Général",
+      "index": 244
+    },
+    {
+      "id": "card_uvakj1",
+      "fr": "Tu as besoin d'argent ?",
+      "target": "Brauchst du Geld?",
+      "lesson": "Général",
+      "index": 245
+    },
+    {
+      "id": "card_m2hx9m",
+      "fr": "Quelle journée !",
+      "target": "Was für ein Tag!",
+      "lesson": "Général",
+      "index": 246
+    },
+    {
+      "id": "card_3lkbed",
+      "fr": "Il n'y avait personne.",
+      "target": "Es war niemand da.",
+      "lesson": "Général",
+      "index": 247
+    },
+    {
+      "id": "card_2agndg",
+      "fr": "J'ai fait un rêve.",
+      "target": "Ich hatte einen Traum.",
+      "lesson": "Général",
+      "index": 248
+    },
+    {
+      "id": "card_bss6sz",
+      "fr": "Je le savais !",
+      "target": "Ich wusste es!",
+      "lesson": "Général",
+      "index": 249
+    },
+    {
+      "id": "card_m0i9sa",
+      "fr": "Sommes-nous seuls ?",
+      "target": "Sind wir allein?",
+      "lesson": "Général",
+      "index": 250
+    },
+    {
+      "id": "card_asxcuy",
+      "fr": "Je n'ai pas d'amis.",
+      "target": "Ich habe keine Freunde.",
+      "lesson": "Général",
+      "index": 251
+    },
+    {
+      "id": "card_jkubmd",
+      "fr": "Tu es assez grand maintenant.",
+      "target": "Du bist jetzt alt genug.",
+      "lesson": "Général",
+      "index": 252
+    },
+    {
+      "id": "card_rhtyqx",
+      "fr": "Elle m'a montré sa chambre.",
+      "target": "Sie zeigte mir ihr Zimmer.",
+      "lesson": "Général",
+      "index": 253
+    },
+    {
+      "id": "card_jhrbpf",
+      "fr": "Je le connais très bien.",
+      "target": "Ich kenne ihn sehr gut.",
+      "lesson": "Général",
+      "index": 254
+    },
+    {
+      "id": "card_6n3hut",
+      "fr": "Je suis le méchant.",
+      "target": "Ich bin der Böse.",
+      "lesson": "Général",
+      "index": 255
+    },
+    {
+      "id": "card_547rbg",
+      "fr": "Elle a pris ses livres.",
+      "target": "Sie nahm ihre Bücher.",
+      "lesson": "Général",
+      "index": 256
+    },
+    {
+      "id": "card_li4rc2",
+      "fr": "Tu as beaucoup de livres.",
+      "target": "Du hast viele Bücher.",
+      "lesson": "Général",
+      "index": 257
+    },
+    {
+      "id": "card_4ajxmq",
+      "fr": "C'est amusant.",
+      "target": "Das macht Spaß.",
+      "lesson": "Général",
+      "index": 258
+    },
+    {
+      "id": "card_1mnqij",
+      "fr": "Elle dort déjà.",
+      "target": "Sie schläft schon.",
+      "lesson": "Général",
+      "index": 259
+    },
+    {
+      "id": "card_evpuyp",
+      "fr": "Je ne veux pas être riche.",
+      "target": "Ich möchte nicht reich sein.",
+      "lesson": "Général",
+      "index": 260
+    },
+    {
+      "id": "card_hipxse",
+      "fr": "Donne-moi un peu d'argent.",
+      "target": "Gib mir ein bisschen Geld.",
+      "lesson": "Général",
+      "index": 261
+    },
+    {
+      "id": "card_b7g7f9",
+      "fr": "J'aime ma maison.",
+      "target": "Ich mag mein Haus.",
+      "lesson": "Général",
+      "index": 262
+    },
+    {
+      "id": "card_dlfgdv",
+      "fr": "Tu le vois souvent ?",
+      "target": "Siehst du ihn oft?",
+      "lesson": "Général",
+      "index": 263
+    },
+    {
+      "id": "card_f6w8a",
+      "fr": "Tu sais ce que je veux.",
+      "target": "Du weißt, was ich will.",
+      "lesson": "Général",
+      "index": 264
+    },
+    {
+      "id": "card_r8jjb0",
+      "fr": "Il habite dans cette rue.",
+      "target": "Er wohnt in dieser Straße.",
+      "lesson": "Général",
+      "index": 265
+    },
+    {
+      "id": "card_y5lf0f",
+      "fr": "Je n'ai besoin de rien pour le moment.",
+      "target": "Ich brauche jetzt nichts.",
+      "lesson": "Général",
+      "index": 266
+    },
+    {
+      "id": "card_wn75y",
+      "fr": "Tu sais ce que nous devrions faire ?",
+      "target": "Weißt du, was wir tun sollten?",
+      "lesson": "Général",
+      "index": 267
+    },
+    {
+      "id": "card_t08l72",
+      "fr": "Sais-tu quand elle arrive ?",
+      "target": "Weißt du, wann sie kommt?",
+      "lesson": "Général",
+      "index": 268
+    },
+    {
+      "id": "card_tn8oat",
+      "fr": "Il est plus beau que moi.",
+      "target": "Er sieht besser aus als ich.",
+      "lesson": "Général",
+      "index": 269
+    },
+    {
+      "id": "card_54ktdo",
+      "fr": "Il sait ce qui se passe.",
+      "target": "Er weiß, was vor sich geht.",
+      "lesson": "Général",
+      "index": 270
+    },
+    {
+      "id": "card_p11y8p",
+      "fr": "Je te parlerai demain.",
+      "target": "Ich spreche morgen mit dir.",
+      "lesson": "Général",
+      "index": 271
+    },
+    {
+      "id": "card_ix9sjf",
+      "fr": "Je n'aime pas être seul.",
+      "target": "Ich bin nicht gerne alleine.",
+      "lesson": "Général",
+      "index": 272
+    },
+    {
+      "id": "card_dpcrai",
+      "fr": "La chambre a deux fenêtres.",
+      "target": "Das Zimmer hat zwei Fenster.",
+      "lesson": "Général",
+      "index": 273
+    },
+    {
+      "id": "card_suwxbq",
+      "fr": "J'abandonne.",
+      "target": "Ich gebe auf.",
+      "lesson": "Général",
+      "index": 274
+    },
+    {
+      "id": "card_akwf8",
+      "fr": "Je suis meilleur que toi.",
+      "target": "Ich bin besser als du.",
+      "lesson": "Général",
+      "index": 275
+    },
+    {
+      "id": "card_mwt433",
+      "fr": "Je n'ai pas d'argent.",
+      "target": "Ich habe kein Geld.",
+      "lesson": "Général",
+      "index": 276
+    },
+    {
+      "id": "card_ptpf8t",
+      "fr": "Il était trop tard.",
+      "target": "Es war zu spät.",
+      "lesson": "Général",
+      "index": 277
+    },
+    {
+      "id": "card_xjjys7",
+      "fr": "Comment aller au commissariat ?",
+      "target": "Wie komme ich zur Polizeiwache?",
+      "lesson": "Général",
+      "index": 278
+    },
+    {
+      "id": "card_tqlka",
+      "fr": "Elle sait que tu sais.",
+      "target": "Sie weiß, dass du es weißt.",
+      "lesson": "Général",
+      "index": 279
+    },
+    {
+      "id": "card_s823ma",
+      "fr": "Ça ne te semble pas bien ?",
+      "target": "Klingt das nicht gut?",
+      "lesson": "Général",
+      "index": 280
+    },
+    {
+      "id": "card_sxdzgx",
+      "fr": "Ce ne sont pas mes affaires !",
+      "target": "Das sind nicht meine Sachen!",
+      "lesson": "Général",
+      "index": 281
+    },
+    {
+      "id": "card_116nc9",
+      "fr": "Elle sait déjà lire.",
+      "target": "Sie kann schon lesen.",
+      "lesson": "Général",
+      "index": 282
+    },
+    {
+      "id": "card_4oh632",
+      "fr": "Le travail était très difficile.",
+      "target": "Die Arbeit war sehr schwer.",
+      "lesson": "Général",
+      "index": 283
+    },
+    {
+      "id": "card_q3vy6b",
+      "fr": "Lave-toi les mains !",
+      "target": "Wasch dir die Hände!",
+      "lesson": "Général",
+      "index": 284
+    },
+    {
+      "id": "card_v7dqtx",
+      "fr": "Je ne voulais pas faire ça.",
+      "target": "Ich wollte das nicht tun.",
+      "lesson": "Général",
+      "index": 285
+    },
+    {
+      "id": "card_x7zjn6",
+      "fr": "Il peut faire ce qu'il veut !",
+      "target": "Er kann tun, was er will!",
+      "lesson": "Général",
+      "index": 286
+    },
+    {
+      "id": "card_tl0yfq",
+      "fr": "Tu ne me crois pas ?",
+      "target": "Glaubst du mir nicht?",
+      "lesson": "Général",
+      "index": 287
+    },
+    {
+      "id": "card_buj5o6",
+      "fr": "Tu ne parles pas français ?",
+      "target": "Können sie kein Französisch?",
+      "lesson": "Général",
+      "index": 288
+    },
+    {
+      "id": "card_lrfw8l",
+      "fr": "Je veux vivre ici.",
+      "target": "Ich will hier leben.",
+      "lesson": "Général",
+      "index": 289
+    },
+    {
+      "id": "card_uxjffe",
+      "fr": "Ne travaille pas trop !",
+      "target": "Arbeite nicht zu viel!",
+      "lesson": "Général",
+      "index": 290
+    },
+    {
+      "id": "card_4wy8lz",
+      "fr": "Il n'a pas d'amis.",
+      "target": "Er hat keine Freunde.",
+      "lesson": "Général",
+      "index": 291
+    },
+    {
+      "id": "card_aardx",
+      "fr": "Ne recommence pas !",
+      "target": "Nicht noch einmal!",
+      "lesson": "Général",
+      "index": 292
+    },
+    {
+      "id": "card_l9q95f",
+      "fr": "Il a un chien.",
+      "target": "Er hat einen Hund.",
+      "lesson": "Général",
+      "index": 293
+    },
+    {
+      "id": "card_t41ziz",
+      "fr": "Aujourd'hui, j'ai le temps.",
+      "target": "Heute habe ich Zeit.",
+      "lesson": "Général",
+      "index": 294
+    },
+    {
+      "id": "card_he6ejd",
+      "fr": "C'était un oui ?",
+      "target": "War das ein Ja?",
+      "lesson": "Général",
+      "index": 295
+    },
+    {
+      "id": "card_dqaire",
+      "fr": "Ne va pas dans ma chambre !",
+      "target": "Geh nicht in mein Zimmer!",
+      "lesson": "Général",
+      "index": 296
+    },
+    {
+      "id": "card_yasisv",
+      "fr": "Comme il court vite !",
+      "target": "Wie schnell er läuft!",
+      "lesson": "Général",
+      "index": 297
+    },
+    {
+      "id": "card_vpyftt",
+      "fr": "L'enfant aura six ans.",
+      "target": "Das Kind wird sechs.",
+      "lesson": "Général",
+      "index": 298
+    },
+    {
+      "id": "card_t1ian0",
+      "fr": "Qu'est-ce que je fais ici ?",
+      "target": "Was mache ich hier?",
+      "lesson": "Général",
+      "index": 299
+    },
+    {
+      "id": "card_rwjfgr",
+      "fr": "Je ne sais pas lire.",
+      "target": "Ich kann nicht lesen.",
+      "lesson": "Général",
+      "index": 300
+    },
+    {
+      "id": "card_if8ke6",
+      "fr": "Tu as un copain ?",
+      "target": "Hast du einen Freund?",
+      "lesson": "Général",
+      "index": 301
+    },
+    {
+      "id": "card_g410og",
+      "fr": "Dois-je apprendre ?",
+      "target": "Muss ich lernen?",
+      "lesson": "Général",
+      "index": 302
+    },
+    {
+      "id": "card_ucezxq",
+      "fr": "C'est à toi de décider.",
+      "target": "Es liegt ganz bei dir.",
+      "lesson": "Général",
+      "index": 303
+    },
+    {
+      "id": "card_6p5jmb",
+      "fr": "Es-tu aussi grand que moi ?",
+      "target": "Bist du so groß wie ich?",
+      "lesson": "Général",
+      "index": 304
+    },
+    {
+      "id": "card_k4iz3o",
+      "fr": "Ce n'est pas mon nom.",
+      "target": "Das ist nicht mein Name.",
+      "lesson": "Général",
+      "index": 305
+    },
+    {
+      "id": "card_nn4cs",
+      "fr": "Il vit seul.",
+      "target": "Er lebt allein.",
+      "lesson": "Général",
+      "index": 306
+    },
+    {
+      "id": "card_diam35",
+      "fr": "Tu as une table ?",
+      "target": "Hast du einen Tisch?",
+      "lesson": "Général",
+      "index": 307
+    },
+    {
+      "id": "card_qkwt8b",
+      "fr": "Ils sont heureux.",
+      "target": "Sie sind glücklich.",
+      "lesson": "Général",
+      "index": 308
+    },
+    {
+      "id": "card_vbg1x",
+      "fr": "Je suis aussi fatigué aujourd'hui.",
+      "target": "Ich bin heute auch müde.",
+      "lesson": "Général",
+      "index": 309
+    },
+    {
+      "id": "card_epikwf",
+      "fr": "Quel âge crois-tu qu'elle a ?",
+      "target": "Was glaubst du, wie alt sie ist?",
+      "lesson": "Général",
+      "index": 310
+    },
+    {
+      "id": "card_idwc17",
+      "fr": "Il se lève tôt.",
+      "target": "Er steht früh auf.",
+      "lesson": "Général",
+      "index": 311
+    },
+    {
+      "id": "card_47ssk2",
+      "fr": "J'étais à la maison.",
+      "target": "Ich war zu Hause.",
+      "lesson": "Général",
+      "index": 312
+    },
+    {
+      "id": "card_3jztnm",
+      "fr": "Je joue avec mon chat.",
+      "target": "Ich spiele mit meiner Katze.",
+      "lesson": "Général",
+      "index": 313
+    },
+    {
+      "id": "card_grhbp3",
+      "fr": "Ce livre m'appartient.",
+      "target": "Das Buch gehört mir.",
+      "lesson": "Général",
+      "index": 314
+    },
+    {
+      "id": "card_bw60e0",
+      "fr": "Il ne travaille plus ici.",
+      "target": "Er arbeitet nicht mehr hier.",
+      "lesson": "Général",
+      "index": 315
+    },
+    {
+      "id": "card_iadznn",
+      "fr": "Tu as déjà des enfants ?",
+      "target": "Hast du schon Kinder?",
+      "lesson": "Général",
+      "index": 316
+    },
+    {
+      "id": "card_238dj2",
+      "fr": "Elle ne pense jamais à lui.",
+      "target": "Sie denkt nie an ihn.",
+      "lesson": "Général",
+      "index": 317
+    },
+    {
+      "id": "card_qjv7b0",
+      "fr": "Il ressemble à une femme.",
+      "target": "Er sieht aus wie eine Frau.",
+      "lesson": "Général",
+      "index": 318
+    },
+    {
+      "id": "card_8biimx",
+      "fr": "Tu dois manger quelque chose.",
+      "target": "Du musst etwas essen.",
+      "lesson": "Général",
+      "index": 319
+    },
+    {
+      "id": "card_lrfcj5",
+      "fr": "Sais-tu comment il s'appelle ?",
+      "target": "Weißt du, wie er heißt?",
+      "lesson": "Général",
+      "index": 320
+    },
+    {
+      "id": "card_gifc8x",
+      "fr": "Ce ne sera pas facile.",
+      "target": "Es wird nicht leicht sein.",
+      "lesson": "Général",
+      "index": 321
+    },
+    {
+      "id": "card_6q4la7",
+      "fr": "Comment aller au paradis ?",
+      "target": "Wie komme ich in den Himmel?",
+      "lesson": "Général",
+      "index": 322
+    },
+    {
+      "id": "card_rblybs",
+      "fr": "Tu es belle.",
+      "target": "Du bist schön.",
+      "lesson": "Général",
+      "index": 323
+    },
+    {
+      "id": "card_colx4y",
+      "fr": "Elle le comprend.",
+      "target": "Sie versteht ihn.",
+      "lesson": "Général",
+      "index": 324
+    },
+    {
+      "id": "card_jtd55b",
+      "fr": "Il me va bien.",
+      "target": "Er passt gut zu mir.",
+      "lesson": "Général",
+      "index": 325
+    },
+    {
+      "id": "card_gs3uec",
+      "fr": "Nous avons besoin de l'argent.",
+      "target": "Wir brauchen das Geld.",
+      "lesson": "Général",
+      "index": 326
+    },
+    {
+      "id": "card_xl9h8t",
+      "fr": "Nous devons parler.",
+      "target": "Wir müssen reden.",
+      "lesson": "Général",
+      "index": 327
+    },
+    {
+      "id": "card_ljagoa",
+      "fr": "Je ne suis pas médecin.",
+      "target": "Ich bin kein Arzt.",
+      "lesson": "Général",
+      "index": 328
+    },
+    {
+      "id": "card_wm09jo",
+      "fr": "Elle me regardait et riait.",
+      "target": "Sie sah mich an und lachte.",
+      "lesson": "Général",
+      "index": 329
+    },
+    {
+      "id": "card_osm0vr",
+      "fr": "Comment oses-tu !",
+      "target": "Wie kannst du es wagen!",
+      "lesson": "Général",
+      "index": 330
+    },
+    {
+      "id": "card_b15xhi",
+      "fr": "Je le sais déjà.",
+      "target": "Das weiß ich schon.",
+      "lesson": "Général",
+      "index": 331
+    },
+    {
+      "id": "card_3g9yw0",
+      "fr": "Je ne fais jamais mon lit.",
+      "target": "Ich mache nie mein Bett.",
+      "lesson": "Général",
+      "index": 332
+    },
+    {
+      "id": "card_hq0gka",
+      "fr": "Aujourd'hui, j'étais fatigué.",
+      "target": "Heute war ich müde.",
+      "lesson": "Général",
+      "index": 333
+    },
+    {
+      "id": "card_5l8ohj",
+      "fr": "L'homme a raison.",
+      "target": "Der Mann hat recht.",
+      "lesson": "Général",
+      "index": 334
+    },
+    {
+      "id": "card_uokfwp",
+      "fr": "On se voit demain ?",
+      "target": "Sehen wir uns morgen?",
+      "lesson": "Général",
+      "index": 335
+    },
+    {
+      "id": "card_2be8dr",
+      "fr": "Je déteste ce travail.",
+      "target": "Ich hasse diese Arbeit.",
+      "lesson": "Général",
+      "index": 336
+    },
+    {
+      "id": "card_c5ngyk",
+      "fr": "Tu aimes vivre ainsi ?",
+      "target": "Gefällt es dir, so zu leben?",
+      "lesson": "Général",
+      "index": 337
+    },
+    {
+      "id": "card_r5gpt1",
+      "fr": "Comment s'appelle-t-elle déjà ?",
+      "target": "Wie heißt sie noch gleich?",
+      "lesson": "Général",
+      "index": 338
+    },
+    {
+      "id": "card_tlgu1w",
+      "fr": "Comment s'appelle ton ami ?",
+      "target": "Wie heißt dein Freund?",
+      "lesson": "Général",
+      "index": 339
+    },
+    {
+      "id": "card_2zty2q",
+      "fr": "Tu es médecin ?",
+      "target": "Bist du Arzt?",
+      "lesson": "Général",
+      "index": 340
+    },
+    {
+      "id": "card_wlmctv",
+      "fr": "Le jour viendra.",
+      "target": "Der Tag wird kommen.",
+      "lesson": "Général",
+      "index": 341
+    },
+    {
+      "id": "card_d9ve3h",
+      "fr": "J'ai besoin de toi.",
+      "target": "Ich brauche dich.",
+      "lesson": "Général",
+      "index": 342
+    },
+    {
+      "id": "card_jc4sr4",
+      "fr": "Est-ce que je parle trop vite ?",
+      "target": "Spreche ich zu schnell?",
+      "lesson": "Général",
+      "index": 343
+    },
+    {
+      "id": "card_i0e8gl",
+      "fr": "Tu as l'argent ?",
+      "target": "Hast du das Geld?",
+      "lesson": "Général",
+      "index": 344
+    },
+    {
+      "id": "card_8g5fk4",
+      "fr": "Le chien ne te fera pas de mal.",
+      "target": "Der Hund tut dir nichts.",
+      "lesson": "Général",
+      "index": 345
+    },
+    {
+      "id": "card_k490an",
+      "fr": "Le chien a couru vers moi.",
+      "target": "Der Hund rannte auf mich zu.",
+      "lesson": "Général",
+      "index": 346
+    },
+    {
+      "id": "card_8kfzp4",
+      "fr": "Quelle est ta taille ?",
+      "target": "Wie groß bist du?",
+      "lesson": "Général",
+      "index": 347
+    },
+    {
+      "id": "card_d0p8j1",
+      "fr": "J'ai un livre.",
+      "target": "Ich habe ein Buch.",
+      "lesson": "Général",
+      "index": 348
+    },
+    {
+      "id": "card_hel8w2",
+      "fr": "Oui, je te comprends très bien.",
+      "target": "Ja, ich verstehe dich gut.",
+      "lesson": "Général",
+      "index": 349
+    },
+    {
+      "id": "card_eb51rp",
+      "fr": "Ne fais pas ça.",
+      "target": "Tu das nicht.",
+      "lesson": "Général",
+      "index": 350
+    },
+    {
+      "id": "card_7aibn4",
+      "fr": "Je suis juste derrière lui.",
+      "target": "Ich bin direkt hinter ihm.",
+      "lesson": "Général",
+      "index": 351
+    },
+    {
+      "id": "card_x8qi7r",
+      "fr": "Tu es toujours seul ?",
+      "target": "Bist du immer noch alleine?",
+      "lesson": "Général",
+      "index": 352
+    },
+    {
+      "id": "card_gyni15",
+      "fr": "Je peux vivre avec ça.",
+      "target": "Ich kann damit leben.",
+      "lesson": "Général",
+      "index": 353
+    },
+    {
+      "id": "card_q068qc",
+      "fr": "Ils viendront.",
+      "target": "Sie werden kommen.",
+      "lesson": "Général",
+      "index": 354
+    },
+    {
+      "id": "card_wsfhbf",
+      "fr": "Tout le monde marche droit.",
+      "target": "Alle gehen gerade.",
+      "lesson": "Général",
+      "index": 355
+    },
+    {
+      "id": "card_o55edo",
+      "fr": "J'ai beaucoup d'amis ici.",
+      "target": "Ich habe hier viele Freunde.",
+      "lesson": "Général",
+      "index": 356
+    },
+    {
+      "id": "card_qpusbd",
+      "fr": "Tu es plus intelligent que moi.",
+      "target": "Du bist klüger als ich.",
+      "lesson": "Général",
+      "index": 357
+    },
+    {
+      "id": "card_bhcn3w",
+      "fr": "Je ne travaille pas aujourd'hui.",
+      "target": "Ich arbeite heute nicht.",
+      "lesson": "Général",
+      "index": 358
+    },
+    {
+      "id": "card_at35jb",
+      "fr": "J'accepte.",
+      "target": "Ich nehme es an.",
+      "lesson": "Général",
+      "index": 359
+    },
+    {
+      "id": "card_auv8ec",
+      "fr": "Il a obtenu ce qu'il voulait.",
+      "target": "Er hat bekommen, was er wollte.",
+      "lesson": "Général",
+      "index": 360
+    },
+    {
+      "id": "card_fnmy7b",
+      "fr": "De quel âge ai-je l'air ?",
+      "target": "Wie alt sehe ich aus?",
+      "lesson": "Général",
+      "index": 361
+    },
+    {
+      "id": "card_3o9tz0",
+      "fr": "Ferme les yeux, s'il te plaît.",
+      "target": "Mach bitte deine Augen zu.",
+      "lesson": "Général",
+      "index": 362
+    },
+    {
+      "id": "card_o751mm",
+      "fr": "Elle l'a rencontré ce matin.",
+      "target": "Sie traf ihn heute Morgen.",
+      "lesson": "Général",
+      "index": 363
+    },
+    {
+      "id": "card_8xa4o4",
+      "fr": "J'ai un plan.",
+      "target": "Ich habe einen Plan.",
+      "lesson": "Général",
+      "index": 364
+    },
+    {
+      "id": "card_rzt0qs",
+      "fr": "Il faut que ce soit vrai.",
+      "target": "Es muss wahr sein.",
+      "lesson": "Général",
+      "index": 365
+    },
+    {
+      "id": "card_binq1",
+      "fr": "Le film était-il bon ?",
+      "target": "War der Film gut?",
+      "lesson": "Général",
+      "index": 366
+    },
+    {
+      "id": "card_x3ntda",
+      "fr": "J'étais là hier.",
+      "target": "Ich war gestern hier.",
+      "lesson": "Général",
+      "index": 367
+    },
+    {
+      "id": "card_hjofhb",
+      "fr": "Je fais un rêve.",
+      "target": "Ich habe einen Traum.",
+      "lesson": "Général",
+      "index": 368
+    },
+    {
+      "id": "card_k9wflu",
+      "fr": "Fais ce qu'on te dit.",
+      "target": "Tu, was man dir sagt.",
+      "lesson": "Général",
+      "index": 369
+    },
+    {
+      "id": "card_7cepaz",
+      "fr": "Cette maison m'appartient.",
+      "target": "Dieses Haus gehört mir.",
+      "lesson": "Général",
+      "index": 370
+    },
+    {
+      "id": "card_dzgbm3",
+      "fr": "J'ai vendu un livre.",
+      "target": "Ich habe ein Buch verkauft.",
+      "lesson": "Général",
+      "index": 371
+    },
+    {
+      "id": "card_i8x78q",
+      "fr": "Je vais rencontrer quelqu'un d'autre.",
+      "target": "Ich werde jemand anderen treffen.",
+      "lesson": "Général",
+      "index": 372
+    },
+    {
+      "id": "card_n53l3i",
+      "fr": "J'ai un nouveau vélo.",
+      "target": "Ich habe ein neues Fahrrad.",
+      "lesson": "Général",
+      "index": 373
+    },
+    {
+      "id": "card_dncgog",
+      "fr": "Fais quelque chose, s'il te plaît !",
+      "target": "Tu bitte etwas!",
+      "lesson": "Général",
+      "index": 374
+    },
+    {
+      "id": "card_okt788",
+      "fr": "Ils viennent aussi ?",
+      "target": "Kommen sie auch?",
+      "lesson": "Général",
+      "index": 375
+    },
+    {
+      "id": "card_3yzonu",
+      "fr": "Elle me regardait.",
+      "target": "Sie sah mich an.",
+      "lesson": "Général",
+      "index": 376
+    },
+    {
+      "id": "card_syro2d",
+      "fr": "Je ne suis pas du tout fatigué.",
+      "target": "Ich bin kein bisschen müde.",
+      "lesson": "Général",
+      "index": 377
+    },
+    {
+      "id": "card_wu1kvr",
+      "fr": "Ils sont tous les deux dans la chambre.",
+      "target": "Sie sind beide im Zimmer.",
+      "lesson": "Général",
+      "index": 378
+    },
+    {
+      "id": "card_xytrzg",
+      "fr": "Il prétend être médecin.",
+      "target": "Er gab vor, Arzt zu sein.",
+      "lesson": "Général",
+      "index": 379
+    },
+    {
+      "id": "card_hkhzvo",
+      "fr": "J'ai entendu parler de toi.",
+      "target": "Ich habe von dir gehört.",
+      "lesson": "Général",
+      "index": 380
+    },
+    {
+      "id": "card_z96i3e",
+      "fr": "Je suis ton père.",
+      "target": "Ich bin dein Vater.",
+      "lesson": "Général",
+      "index": 381
+    },
+    {
+      "id": "card_l4e9qd",
+      "fr": "C'est peut-être vrai.",
+      "target": "Es mag sein.",
+      "lesson": "Général",
+      "index": 382
+    },
+    {
+      "id": "card_jmev4n",
+      "fr": "Cela peut être un problème.",
+      "target": "Das könnte ein Problem sein.",
+      "lesson": "Général",
+      "index": 383
+    },
+    {
+      "id": "card_1mjjcm",
+      "fr": "Beaucoup de bruit pour rien.",
+      "target": "Viel Lärm um nichts.",
+      "lesson": "Général",
+      "index": 384
+    },
+    {
+      "id": "card_e6ft3o",
+      "fr": "Je suis beaucoup plus jeune que toi.",
+      "target": "Ich bin viel jünger als du.",
+      "lesson": "Général",
+      "index": 385
+    },
+    {
+      "id": "card_69m6mu",
+      "fr": "Je ne peux pas travailler comme ça.",
+      "target": "Ich kann so nicht arbeiten.",
+      "lesson": "Général",
+      "index": 386
+    },
+    {
+      "id": "card_mqysxy",
+      "fr": "Je ne bois pas.",
+      "target": "Ich trinke nicht.",
+      "lesson": "Général",
+      "index": 387
+    },
+    {
+      "id": "card_kd6udp",
+      "fr": "J'ai un gros chien.",
+      "target": "Ich habe einen großen Hund.",
+      "lesson": "Général",
+      "index": 388
+    },
+    {
+      "id": "card_crhqn4",
+      "fr": "Dieu existe-t-il ?",
+      "target": "Existiert Gott?",
+      "lesson": "Général",
+      "index": 389
+    },
+    {
+      "id": "card_t1vxdk",
+      "fr": "J'en ai envie.",
+      "target": "Ich möchte es.",
+      "lesson": "Général",
+      "index": 390
+    },
+    {
+      "id": "card_r30f2g",
+      "fr": "Elle sait où nous vivons.",
+      "target": "Sie weiß, wo wir wohnen.",
+      "lesson": "Général",
+      "index": 391
+    },
+    {
+      "id": "card_ug2lxh",
+      "fr": "Voilà le bus !",
+      "target": "Da kommt der Bus!",
+      "lesson": "Général",
+      "index": 392
+    },
+    {
+      "id": "card_f5pxqv",
+      "fr": "Je ne vois rien !",
+      "target": "Ich kann nichts sehen!",
+      "lesson": "Général",
+      "index": 393
+    },
+    {
+      "id": "card_gn1ryz",
+      "fr": "Il a l'air gentil.",
+      "target": "Er scheint nett zu sein.",
+      "lesson": "Général",
+      "index": 394
+    },
+    {
+      "id": "card_h8kks2",
+      "fr": "Je ne te crois pas.",
+      "target": "Ich glaube dir nicht.",
+      "lesson": "Général",
+      "index": 395
+    },
+    {
+      "id": "card_dkwcow",
+      "fr": "Je te donne ma parole.",
+      "target": "Ich gebe dir mein Wort.",
+      "lesson": "Général",
+      "index": 396
+    },
+    {
+      "id": "card_vclchk",
+      "fr": "Je n'aime pas apprendre.",
+      "target": "Ich lerne nicht gern.",
+      "lesson": "Général",
+      "index": 397
+    },
+    {
+      "id": "card_99jhky",
+      "fr": "Il ne me connaît pas.",
+      "target": "Er kennt mich nicht.",
+      "lesson": "Général",
+      "index": 398
+    },
+    {
+      "id": "card_kjjsuq",
+      "fr": "Puis-je faire quelque chose pour toi ?",
+      "target": "Kann ich etwas für dich tun?",
+      "lesson": "Général",
+      "index": 399
+    },
+    {
+      "id": "card_hty51u",
+      "fr": "C'est exactement comme ça qu'elle l'aime.",
+      "target": "Genau so mag sie es.",
+      "lesson": "Général",
+      "index": 400
+    },
+    {
+      "id": "card_6bxz6d",
+      "fr": "Tu ne veux pas y aller ?",
+      "target": "Willst du nicht gehen?",
+      "lesson": "Général",
+      "index": 401
+    },
+    {
+      "id": "card_6omfna",
+      "fr": "Je suis un bon professeur.",
+      "target": "Ich bin ein guter Lehrer.",
+      "lesson": "Général",
+      "index": 402
+    },
+    {
+      "id": "card_wf8stw",
+      "fr": "Tu as terminé le livre ?",
+      "target": "Bist du fertig mit dem Buch?",
+      "lesson": "Général",
+      "index": 403
+    },
+    {
+      "id": "card_rjnk7s",
+      "fr": "J'ai aimé ce livre.",
+      "target": "Das Buch hat mir gefallen.",
+      "lesson": "Général",
+      "index": 404
+    },
+    {
+      "id": "card_5vlk8b",
+      "fr": "Je ne suis pas superstitieux.",
+      "target": "Ich bin nicht abergläubisch.",
+      "lesson": "Général",
+      "index": 405
+    },
+    {
+      "id": "card_vk7tx7",
+      "fr": "Je ne veux pas manger.",
+      "target": "Ich möchte nichts essen.",
+      "lesson": "Général",
+      "index": 406
+    },
+    {
+      "id": "card_c22kpp",
+      "fr": "Elle m'a pris par la main.",
+      "target": "Sie nahm mich bei der Hand.",
+      "lesson": "Général",
+      "index": 407
+    },
+    {
+      "id": "card_cddnvz",
+      "fr": "Elle vient aussi ?",
+      "target": "Kommt sie auch?",
+      "lesson": "Général",
+      "index": 408
+    },
+    {
+      "id": "card_ipfaeu",
+      "fr": "Je l'ai remarquée.",
+      "target": "Sie fiel mir auf.",
+      "lesson": "Général",
+      "index": 409
+    },
+    {
+      "id": "card_e9e51i",
+      "fr": "Tu viens ou pas ?",
+      "target": "Kommst du oder nicht?",
+      "lesson": "Général",
+      "index": 410
+    },
+    {
+      "id": "card_32vz9g",
+      "fr": "Je voulais te parler.",
+      "target": "Ich wollte mit dir sprechen.",
+      "lesson": "Général",
+      "index": 411
+    },
+    {
+      "id": "card_mwegwz",
+      "fr": "Est-ce que je peux manger ça ?",
+      "target": "Kann ich das essen?",
+      "lesson": "Général",
+      "index": 412
+    },
+    {
+      "id": "card_ox672e",
+      "fr": "Il me l'a donné.",
+      "target": "Er gab es mir.",
+      "lesson": "Général",
+      "index": 413
+    },
+    {
+      "id": "card_1ucw3d",
+      "fr": "Pas maintenant !",
+      "target": "Nicht jetzt!",
+      "lesson": "Général",
+      "index": 414
+    },
+    {
+      "id": "card_gge8iy",
+      "fr": "C'est le moment.",
+      "target": "Es ist an der Zeit.",
+      "lesson": "Général",
+      "index": 415
+    },
+    {
+      "id": "card_3dexms",
+      "fr": "Je ne lui dois rien.",
+      "target": "Ich schulde ihr nichts.",
+      "lesson": "Général",
+      "index": 416
+    },
+    {
+      "id": "card_u3gf0f",
+      "fr": "C'est ce que j'aime chez toi.",
+      "target": "Das mag ich an dir.",
+      "lesson": "Général",
+      "index": 417
+    },
+    {
+      "id": "card_vpl4a9",
+      "fr": "Nous ne sommes pas seuls.",
+      "target": "Wir sind nicht allein.",
+      "lesson": "Général",
+      "index": 418
+    },
+    {
+      "id": "card_gdqtaz",
+      "fr": "Il a trop bu.",
+      "target": "Er hat zu viel getrunken.",
+      "lesson": "Général",
+      "index": 419
+    },
+    {
+      "id": "card_cikrbn",
+      "fr": "Ce n'était pas facile.",
+      "target": "Es war nicht leicht.",
+      "lesson": "Général",
+      "index": 420
+    },
+    {
+      "id": "card_ymcfjy",
+      "fr": "Il n'y a presque pas de livres.",
+      "target": "Es gibt fast keine Bücher.",
+      "lesson": "Général",
+      "index": 421
+    },
+    {
+      "id": "card_ta48ly",
+      "fr": "J'espère qu'elle m'écoutera.",
+      "target": "Ich hoffe, sie hört auf mich.",
+      "lesson": "Général",
+      "index": 422
+    },
+    {
+      "id": "card_g4iw1m",
+      "fr": "Il a un vélo.",
+      "target": "Er hat ein Fahrrad.",
+      "lesson": "Général",
+      "index": 423
+    },
+    {
+      "id": "card_b63pm",
+      "fr": "Il faut que je sache.",
+      "target": "Ich muss es wissen.",
+      "lesson": "Général",
+      "index": 424
+    },
+    {
+      "id": "card_g5tg79",
+      "fr": "Il ne voulait pas le faire.",
+      "target": "Er wollte es nicht tun.",
+      "lesson": "Général",
+      "index": 425
+    },
+    {
+      "id": "card_frum0v",
+      "fr": "Je t'ai observé.",
+      "target": "Ich habe dich beobachtet.",
+      "lesson": "Général",
+      "index": 426
+    },
+    {
+      "id": "card_jg66y1",
+      "fr": "J'ai beaucoup à faire.",
+      "target": "Ich habe viel zu tun.",
+      "lesson": "Général",
+      "index": 427
+    },
+    {
+      "id": "card_orjcsz",
+      "fr": "S'il te plaît, refais-le encore une fois.",
+      "target": "Bitte mach das noch einmal.",
+      "lesson": "Général",
+      "index": 428
+    },
+    {
+      "id": "card_vzuitn",
+      "fr": "Pourquoi n'essaies-tu pas de te détendre ?",
+      "target": "Warum versuchst du nicht, dich zu entspannen?",
+      "lesson": "Général",
+      "index": 429
+    },
+    {
+      "id": "card_5pb37s",
+      "fr": "Pardon ?",
+      "target": "Wie bitte?",
+      "lesson": "Général",
+      "index": 430
+    },
+    {
+      "id": "card_qdosdy",
+      "fr": "Je suis toujours seul.",
+      "target": "Ich bin immer noch allein.",
+      "lesson": "Général",
+      "index": 431
+    },
+    {
+      "id": "card_kttume",
+      "fr": "Je veux le meilleur.",
+      "target": "Ich will das Beste.",
+      "lesson": "Général",
+      "index": 432
+    },
+    {
+      "id": "card_etse4g",
+      "fr": "Je suis dans la maison.",
+      "target": "Ich bin im Haus.",
+      "lesson": "Général",
+      "index": 433
+    },
+    {
+      "id": "card_6eey09",
+      "fr": "Je ne l'ai jamais revu.",
+      "target": "Ich habe ihn nie wieder gesehen.",
+      "lesson": "Général",
+      "index": 434
+    },
+    {
+      "id": "card_i5qbxi",
+      "fr": "Je ne te parle pas.",
+      "target": "Mit dir rede ich nicht.",
+      "lesson": "Général",
+      "index": 435
+    },
+    {
+      "id": "card_7o0y61",
+      "fr": "Je le pense vraiment !",
+      "target": "Ich meine es so!",
+      "lesson": "Général",
+      "index": 436
+    },
+    {
+      "id": "card_5q2b1q",
+      "fr": "Nous trouverons !",
+      "target": "Wir werden es finden!",
+      "lesson": "Général",
+      "index": 437
+    },
+    {
+      "id": "card_8geli7",
+      "fr": "Je lui ai acheté une montre.",
+      "target": "Ich habe ihr eine Uhr gekauft.",
+      "lesson": "Général",
+      "index": 438
+    },
+    {
+      "id": "card_kjsp8n",
+      "fr": "Appelle-le, s'il te plaît.",
+      "target": "Bitte ruf ihn an.",
+      "lesson": "Général",
+      "index": 439
+    },
+    {
+      "id": "card_3hfzym",
+      "fr": "Ça fait mal ici.",
+      "target": "Es tut hier weh.",
+      "lesson": "Général",
+      "index": 440
+    },
+    {
+      "id": "card_da4nt3",
+      "fr": "Je n'en sais pas plus que toi.",
+      "target": "Ich weiß nicht mehr als du.",
+      "lesson": "Général",
+      "index": 441
+    },
+    {
+      "id": "card_k2zf54",
+      "fr": "Il s'est enfui avec l'argent.",
+      "target": "Er ist mit dem Geld abgehauen.",
+      "lesson": "Général",
+      "index": 442
+    },
+    {
+      "id": "card_57zcfq",
+      "fr": "Fais-toi une raison !",
+      "target": "Finde dich damit ab!",
+      "lesson": "Général",
+      "index": 443
+    },
+    {
+      "id": "card_nei7v1",
+      "fr": "Je suis plus grand que toi.",
+      "target": "Ich bin größer als du.",
+      "lesson": "Général",
+      "index": 444
+    },
+    {
+      "id": "card_1pyjot",
+      "fr": "Qui suis-je ?",
+      "target": "Wer bin ich?",
+      "lesson": "Général",
+      "index": 445
+    },
+    {
+      "id": "card_orqjec",
+      "fr": "J'organise ta fête d'anniversaire.",
+      "target": "Ich plane deine Geburtstagsfeier.",
+      "lesson": "Général",
+      "index": 446
+    },
+    {
+      "id": "card_hqlmf0",
+      "fr": "J'ai enlevé mes chaussures.",
+      "target": "Ich habe meine Schuhe ausgezogen.",
+      "lesson": "Général",
+      "index": 447
+    },
+    {
+      "id": "card_gur4gi",
+      "fr": "Je l'ai rencontré dans la rue.",
+      "target": "Ich traf ihn auf der Straße.",
+      "lesson": "Général",
+      "index": 448
+    },
+    {
+      "id": "card_v0yed6",
+      "fr": "Il aimerait devenir médecin.",
+      "target": "Er möchte gern Arzt werden.",
+      "lesson": "Général",
+      "index": 449
+    },
+    {
+      "id": "card_o8sqxk",
+      "fr": "Je ne la supporte pas.",
+      "target": "Ich kann sie nicht ausstehen.",
+      "lesson": "Général",
+      "index": 450
+    },
+    {
+      "id": "card_kvwm4y",
+      "fr": "J'ai juste besoin de toi.",
+      "target": "Ich brauche nur dich.",
+      "lesson": "Général",
+      "index": 451
+    },
+    {
+      "id": "card_4ybkvy",
+      "fr": "Pas si vite !",
+      "target": "Nicht so schnell!",
+      "lesson": "Général",
+      "index": 452
+    },
+    {
+      "id": "card_9hbt1c",
+      "fr": "Je dois vraiment y aller.",
+      "target": "Ich muss jetzt wirklich los.",
+      "lesson": "Général",
+      "index": 453
+    },
+    {
+      "id": "card_380bz9",
+      "fr": "Je suis le maître de la maison.",
+      "target": "Ich bin der Herr im Haus.",
+      "lesson": "Général",
+      "index": 454
+    },
+    {
+      "id": "card_20tey",
+      "fr": "Tu n'as pas l'air bien.",
+      "target": "Du siehst nicht gut aus.",
+      "lesson": "Général",
+      "index": 455
+    },
+    {
+      "id": "card_qao6qd",
+      "fr": "Tout doit avoir une fin.",
+      "target": "Alles muss ein Ende haben.",
+      "lesson": "Général",
+      "index": 456
+    },
+    {
+      "id": "card_bbmxwt",
+      "fr": "Est-ce que cela te rend heureux ?",
+      "target": "Macht dich das glücklich?",
+      "lesson": "Général",
+      "index": 457
+    },
+    {
+      "id": "card_ybqrmx",
+      "fr": "Je pense à toi.",
+      "target": "Ich denke an dich.",
+      "lesson": "Général",
+      "index": 458
+    },
+    {
+      "id": "card_2sb2su",
+      "fr": "Une voiture arrive.",
+      "target": "Da kommt ein Auto.",
+      "lesson": "Général",
+      "index": 459
+    },
+    {
+      "id": "card_gugv0v",
+      "fr": "Quel est le problème ?",
+      "target": "Wo liegt das Problem?",
+      "lesson": "Général",
+      "index": 460
+    },
+    {
+      "id": "card_gi9pm5",
+      "fr": "Elle parle toujours anglais.",
+      "target": "Sie spricht immer Englisch.",
+      "lesson": "Général",
+      "index": 461
+    },
+    {
+      "id": "card_hpmab4",
+      "fr": "Elle en veut plus.",
+      "target": "Sie will mehr.",
+      "lesson": "Général",
+      "index": 462
+    },
+    {
+      "id": "card_us7kt1",
+      "fr": "Tellement charmant.",
+      "target": "So bezaubernd.",
+      "lesson": "Général",
+      "index": 463
+    },
+    {
+      "id": "card_n5wpa6",
+      "fr": "C'est de ma faute, pas de la tienne.",
+      "target": "Ich bin schuld, nicht du.",
+      "lesson": "Général",
+      "index": 464
+    },
+    {
+      "id": "card_w5huyn",
+      "fr": "Tu as entendu ça aussi ?",
+      "target": "Hast du das auch gehört?",
+      "lesson": "Général",
+      "index": 465
+    },
+    {
+      "id": "card_pmublx",
+      "fr": "Mais je n'ai pas eu peur.",
+      "target": "Aber ich hatte keine Angst.",
+      "lesson": "Général",
+      "index": 466
+    },
+    {
+      "id": "card_2aqxb8",
+      "fr": "Je ne suis pas ton fils.",
+      "target": "Ich bin nicht dein Sohn.",
+      "lesson": "Général",
+      "index": 467
+    },
+    {
+      "id": "card_a5bxtd",
+      "fr": "Je peux manger ?",
+      "target": "Kann ich essen?",
+      "lesson": "Général",
+      "index": 468
+    },
+    {
+      "id": "card_8tilzq",
+      "fr": "J'ai un problème.",
+      "target": "Ich habe ein Problem.",
+      "lesson": "Général",
+      "index": 469
+    },
+    {
+      "id": "card_cwrtm1",
+      "fr": "La pièce était pleine de gens.",
+      "target": "Das Zimmer war voller Leute.",
+      "lesson": "Général",
+      "index": 470
+    },
+    {
+      "id": "card_i80fzw",
+      "fr": "Comme tu es belle !",
+      "target": "Wie schön du bist!",
+      "lesson": "Général",
+      "index": 471
+    },
+    {
+      "id": "card_dicg0i",
+      "fr": "Il déteste sa vie.",
+      "target": "Er hasst sein Leben.",
+      "lesson": "Général",
+      "index": 472
+    },
+    {
+      "id": "card_l8x972",
+      "fr": "C'est vrai !",
+      "target": "Das stimmt!",
+      "lesson": "Général",
+      "index": 473
+    },
+    {
+      "id": "card_x8pdan",
+      "fr": "Je n'ai plus d'argent.",
+      "target": "Ich habe kein Geld mehr.",
+      "lesson": "Général",
+      "index": 474
+    },
+    {
+      "id": "card_b7z7ia",
+      "fr": "Elle et moi avons le même âge.",
+      "target": "Sie und ich sind gleich alt.",
+      "lesson": "Général",
+      "index": 475
+    },
+    {
+      "id": "card_usyj01",
+      "fr": "On ne peut rien y faire.",
+      "target": "Da können wir nichts machen.",
+      "lesson": "Général",
+      "index": 476
+    },
+    {
+      "id": "card_udd11p",
+      "fr": "Je ne les aime ni l'un ni l'autre.",
+      "target": "Ich mag sie beide nicht.",
+      "lesson": "Général",
+      "index": 477
+    },
+    {
+      "id": "card_nwl3bl",
+      "fr": "Ça sonne bien !",
+      "target": "Das hört sich gut an!",
+      "lesson": "Général",
+      "index": 478
+    },
+    {
+      "id": "card_26d0dq",
+      "fr": "Un homme doit travailler.",
+      "target": "Ein Mann muss arbeiten.",
+      "lesson": "Général",
+      "index": 479
+    },
+    {
+      "id": "card_t3683",
+      "fr": "Tu as une famille ?",
+      "target": "Hast du eine Familie?",
+      "lesson": "Général",
+      "index": 480
+    },
+    {
+      "id": "card_nm4rgr",
+      "fr": "Je vais bien, et toi ?",
+      "target": "Mir geht's gut, und dir?",
+      "lesson": "Général",
+      "index": 481
+    },
+    {
+      "id": "card_n2gotj",
+      "fr": "Ferme la porte.",
+      "target": "Mach die Tür zu.",
+      "lesson": "Général",
+      "index": 482
+    },
+    {
+      "id": "card_np0908",
+      "fr": "Maintenant, je comprends.",
+      "target": "Jetzt verstehe ich.",
+      "lesson": "Général",
+      "index": 483
+    },
+    {
+      "id": "card_lhyha3",
+      "fr": "Je pense souvent à lui.",
+      "target": "Ich denke oft an ihn.",
+      "lesson": "Général",
+      "index": 484
+    },
+    {
+      "id": "card_6e0ej2",
+      "fr": "Tout le monde l'aime.",
+      "target": "Alle lieben sie.",
+      "lesson": "Général",
+      "index": 485
+    },
+    {
+      "id": "card_7obrza",
+      "fr": "J'aime les deux.",
+      "target": "Ich mag beide.",
+      "lesson": "Général",
+      "index": 486
+    },
+    {
+      "id": "card_spxr8h",
+      "fr": "Il appartient à mon frère.",
+      "target": "Es gehört meinem Bruder.",
+      "lesson": "Général",
+      "index": 487
+    },
+    {
+      "id": "card_shcxk2",
+      "fr": "La maison au bord du lac est à moi.",
+      "target": "Das Haus am See gehört mir.",
+      "lesson": "Général",
+      "index": 488
+    },
+    {
+      "id": "card_t7fdia",
+      "fr": "Je vis seul ici.",
+      "target": "Ich lebe hier allein.",
+      "lesson": "Général",
+      "index": 489
+    },
+    {
+      "id": "card_71ierl",
+      "fr": "J'ai une grande famille.",
+      "target": "Ich habe eine große Familie.",
+      "lesson": "Général",
+      "index": 490
+    },
+    {
+      "id": "card_osu6ui",
+      "fr": "Il travaille toute la nuit.",
+      "target": "Er arbeitet die ganze Nacht.",
+      "lesson": "Général",
+      "index": 491
+    },
+    {
+      "id": "card_lwn9bw",
+      "fr": "C'est mon vieux.",
+      "target": "Er ist mein Alter.",
+      "lesson": "Général",
+      "index": 492
+    },
+    {
+      "id": "card_l57qov",
+      "fr": "Je n'entends que toi.",
+      "target": "Ich höre nur dich.",
+      "lesson": "Général",
+      "index": 493
+    },
+    {
+      "id": "card_bnpqv",
+      "fr": "Ne parle pas comme ça.",
+      "target": "Rede nicht so.",
+      "lesson": "Général",
+      "index": 494
+    },
+    {
+      "id": "card_8oct1j",
+      "fr": "Je n'ai pas eu le temps.",
+      "target": "Ich hatte keine Zeit.",
+      "lesson": "Général",
+      "index": 495
+    },
+    {
+      "id": "card_55x6ln",
+      "fr": "C'est comme ça que je l'aime.",
+      "target": "So mag ich das.",
+      "lesson": "Général",
+      "index": 496
+    },
+    {
+      "id": "card_qg13cf",
+      "fr": "Je ne la comprends pas.",
+      "target": "Ich verstehe sie nicht.",
+      "lesson": "Général",
+      "index": 497
+    },
+    {
+      "id": "card_x8vfup",
+      "fr": "Je le fais toujours.",
+      "target": "Ich mache das immer.",
+      "lesson": "Général",
+      "index": 498
+    },
+    {
+      "id": "card_8ooi01",
+      "fr": "Je t'entends à peine.",
+      "target": "Ich höre dich kaum.",
+      "lesson": "Général",
+      "index": 499
+    },
+    {
+      "id": "card_fwqd4k",
+      "fr": "Pour qui te prends-tu ?",
+      "target": "Für wen hältst du dich?",
+      "lesson": "Général",
+      "index": 500
+    },
+    {
+      "id": "card_9n3pvs",
+      "fr": "J'appelle mon frère.",
+      "target": "Ich rufe meinen Bruder an.",
+      "lesson": "Général",
+      "index": 501
+    },
+    {
+      "id": "card_pcm5su",
+      "fr": "Tu aimes ta nouvelle maison ?",
+      "target": "Gefällt dir dein neues Haus?",
+      "lesson": "Général",
+      "index": 502
+    },
+    {
+      "id": "card_f85i8g",
+      "fr": "Manger coûte de l'argent.",
+      "target": "Essen kostet Geld.",
+      "lesson": "Général",
+      "index": 503
+    },
+    {
+      "id": "card_dcdjxe",
+      "fr": "Je te parle !",
+      "target": "Ich rede mit dir!",
+      "lesson": "Général",
+      "index": 504
+    },
+    {
+      "id": "card_z89ekg",
+      "fr": "Tu veux des enfants ?",
+      "target": "Willst du Kinder?",
+      "lesson": "Général",
+      "index": 505
+    },
+    {
+      "id": "card_gfsotl",
+      "fr": "J'entends quelque chose.",
+      "target": "Ich höre etwas.",
+      "lesson": "Général",
+      "index": 506
+    },
+    {
+      "id": "card_9igzoc",
+      "fr": "Je ne te déteste pas.",
+      "target": "Ich hasse dich nicht.",
+      "lesson": "Général",
+      "index": 507
+    },
+    {
+      "id": "card_m4bz7u",
+      "fr": "Je ne crois pas un seul mot de ce que tu dis.",
+      "target": "Ich glaube dir kein einziges Wort.",
+      "lesson": "Général",
+      "index": 508
+    },
+    {
+      "id": "card_auff55",
+      "fr": "Il sera bientôt de retour.",
+      "target": "Er wird bald zurück sein.",
+      "lesson": "Général",
+      "index": 509
+    },
+    {
+      "id": "card_gdmpog",
+      "fr": "Je ne fais que mon travail.",
+      "target": "Ich mache bloß meine Arbeit.",
+      "lesson": "Général",
+      "index": 510
+    },
+    {
+      "id": "card_n1wruv",
+      "fr": "Je ne m'entends pas avec lui.",
+      "target": "Ich komme mit ihm nicht aus.",
+      "lesson": "Général",
+      "index": 511
+    },
+    {
+      "id": "card_m2ygvd",
+      "fr": "Il a trois enfants.",
+      "target": "Er hat drei Kinder.",
+      "lesson": "Général",
+      "index": 512
+    },
+    {
+      "id": "card_5ywin5",
+      "fr": "Elle ne parle pas anglais.",
+      "target": "Sie spricht kein Englisch.",
+      "lesson": "Général",
+      "index": 513
+    },
+    {
+      "id": "card_qh06pt",
+      "fr": "Je dois lui parler.",
+      "target": "Ich muss ihn sprechen.",
+      "lesson": "Général",
+      "index": 514
+    },
+    {
+      "id": "card_ldqzsl",
+      "fr": "Tu veux que je parte ?",
+      "target": "Willst du, dass ich gehe?",
+      "lesson": "Général",
+      "index": 515
+    },
+    {
+      "id": "card_bjaiqw",
+      "fr": "Tu dois arrêter !",
+      "target": "Du musst aufhören!",
+      "lesson": "Général",
+      "index": 516
+    },
+    {
+      "id": "card_fvvzai",
+      "fr": "Je suis belle.",
+      "target": "Ich bin schön.",
+      "lesson": "Général",
+      "index": 517
+    },
+    {
+      "id": "card_ik0v46",
+      "fr": "Qui est ton meilleur ami ?",
+      "target": "Wer ist dein bester Freund?",
+      "lesson": "Général",
+      "index": 518
+    },
+    {
+      "id": "card_xyrcbu",
+      "fr": "Tu n'as pas peur ?",
+      "target": "Hast du keine Angst?",
+      "lesson": "Général",
+      "index": 519
+    },
+    {
+      "id": "card_ti8pyg",
+      "fr": "Elle me connaît.",
+      "target": "Sie kennt mich.",
+      "lesson": "Général",
+      "index": 520
+    },
+    {
+      "id": "card_3in99v",
+      "fr": "Ils n'abandonnent jamais.",
+      "target": "Sie geben nie auf.",
+      "lesson": "Général",
+      "index": 521
+    },
+    {
+      "id": "card_mawr9w",
+      "fr": "Il m'a donné sa parole.",
+      "target": "Er gab mir sein Wort.",
+      "lesson": "Général",
+      "index": 522
+    },
+    {
+      "id": "card_8czy2b",
+      "fr": "Je n'ai rien à dire.",
+      "target": "Ich habe nichts zu sagen.",
+      "lesson": "Général",
+      "index": 523
+    },
+    {
+      "id": "card_37lber",
+      "fr": "Elle veut venir.",
+      "target": "Sie will kommen.",
+      "lesson": "Général",
+      "index": 524
+    },
+    {
+      "id": "card_s9afs5",
+      "fr": "J'ai eu très peur.",
+      "target": "Ich hatte große Angst.",
+      "lesson": "Général",
+      "index": 525
+    },
+    {
+      "id": "card_l4xjxc",
+      "fr": "Je veux un café.",
+      "target": "Ich möchte einen Kaffee.",
+      "lesson": "Général",
+      "index": 526
+    },
+    {
+      "id": "card_nioeio",
+      "fr": "C'est encore mieux !",
+      "target": "Das ist ja noch besser.",
+      "lesson": "Général",
+      "index": 527
+    },
+    {
+      "id": "card_3gt2iw",
+      "fr": "Je ne parle pas français.",
+      "target": "Ich kann kein Französisch.",
+      "lesson": "Général",
+      "index": 528
+    },
+    {
+      "id": "card_ij1y2r",
+      "fr": "Ils sont sortis de nulle part.",
+      "target": "Sie kamen aus dem Nichts.",
+      "lesson": "Général",
+      "index": 529
+    },
+    {
+      "id": "card_tqwmyf",
+      "fr": "Cela n'a rien à voir avec toi.",
+      "target": "Das hat nichts mit dir zu tun.",
+      "lesson": "Général",
+      "index": 530
+    },
+    {
+      "id": "card_p5a7hc",
+      "fr": "As-tu assez d'argent ?",
+      "target": "Hast du genug Geld?",
+      "lesson": "Général",
+      "index": 531
+    },
+    {
+      "id": "card_j6to01",
+      "fr": "Ne bois pas ça.",
+      "target": "Trink das nicht.",
+      "lesson": "Général",
+      "index": 532
+    },
+    {
+      "id": "card_mlo3j",
+      "fr": "Je n'ai pas le temps.",
+      "target": "Ich habe keine Zeit.",
+      "lesson": "Général",
+      "index": 533
+    },
+    {
+      "id": "card_w6cnub",
+      "fr": "Je ne suis pas comme toi !",
+      "target": "Ich bin nicht so wie du!",
+      "lesson": "Général",
+      "index": 534
+    },
+    {
+      "id": "card_415lqr",
+      "fr": "Je n'ai pas le temps demain.",
+      "target": "Ich habe morgen keine Zeit.",
+      "lesson": "Général",
+      "index": 535
+    },
+    {
+      "id": "card_8y29zj",
+      "fr": "La réponse me plaît.",
+      "target": "Die Antwort gefällt mir.",
+      "lesson": "Général",
+      "index": 536
+    },
+    {
+      "id": "card_wwb936",
+      "fr": "Combien de personnes travaillent ici ?",
+      "target": "Wie viele Menschen arbeiten hier?",
+      "lesson": "Général",
+      "index": 537
+    },
+    {
+      "id": "card_fuu5ym",
+      "fr": "Je t'entends.",
+      "target": "Ich höre dich.",
+      "lesson": "Général",
+      "index": 538
+    },
+    {
+      "id": "card_mz65cc",
+      "fr": "Nous arrivons.",
+      "target": "Wir kommen.",
+      "lesson": "Général",
+      "index": 539
+    },
+    {
+      "id": "card_p7ykv8",
+      "fr": "Je veux manger.",
+      "target": "Ich will essen.",
+      "lesson": "Général",
+      "index": 540
+    },
+    {
+      "id": "card_q9zf2h",
+      "fr": "Je n'aime pas l'anglais.",
+      "target": "Ich mag Englisch nicht.",
+      "lesson": "Général",
+      "index": 541
+    },
+    {
+      "id": "card_feh9wl",
+      "fr": "Combien d'enfants as-tu ?",
+      "target": "Wie viele Kinder hast du?",
+      "lesson": "Général",
+      "index": 542
+    },
+    {
+      "id": "card_sekcev",
+      "fr": "Il l'aime.",
+      "target": "Er liebt sie.",
+      "lesson": "Général",
+      "index": 543
+    },
+    {
+      "id": "card_gkn98d",
+      "fr": "Combien de fois le vois-tu ?",
+      "target": "Wie oft siehst du ihn?",
+      "lesson": "Général",
+      "index": 544
+    },
+    {
+      "id": "card_sfub5s",
+      "fr": "Ferme ta bouche !",
+      "target": "Halt den Mund!",
+      "lesson": "Général",
+      "index": 545
+    },
+    {
+      "id": "card_r2ip0d",
+      "fr": "Je n'aime pas la pluie.",
+      "target": "Ich mag den Regen nicht.",
+      "lesson": "Général",
+      "index": 546
+    },
+    {
+      "id": "card_jmn40x",
+      "fr": "J'ai encore beaucoup à apprendre.",
+      "target": "Ich muss noch viel lernen.",
+      "lesson": "Général",
+      "index": 547
+    },
+    {
+      "id": "card_4ocmtw",
+      "fr": "Je peux te parler ?",
+      "target": "Kann ich mit dir sprechen?",
+      "lesson": "Général",
+      "index": 548
+    },
+    {
+      "id": "card_5a1bi",
+      "fr": "Je ne veux plus de ça.",
+      "target": "Ich will das nicht mehr.",
+      "lesson": "Général",
+      "index": 549
+    },
+    {
+      "id": "card_cn57kh",
+      "fr": "Je ne pars pas d'ici.",
+      "target": "Ich gehe hier nicht weg.",
+      "lesson": "Général",
+      "index": 550
+    },
+    {
+      "id": "card_n40tod",
+      "fr": "J'ai une bonne idée.",
+      "target": "Ich habe eine gute Idee.",
+      "lesson": "Général",
+      "index": 551
+    },
+    {
+      "id": "card_t0y364",
+      "fr": "Je n'ai peur de rien.",
+      "target": "Ich habe vor nichts Angst.",
+      "lesson": "Général",
+      "index": 552
+    },
+    {
+      "id": "card_gd76si",
+      "fr": "Pourquoi as-tu fait ça ?",
+      "target": "Warum hast du das getan?",
+      "lesson": "Général",
+      "index": 553
+    },
+    {
+      "id": "card_42iqj7",
+      "fr": "Pas encore.",
+      "target": "Noch nicht.",
+      "lesson": "Général",
+      "index": 554
+    },
+    {
+      "id": "card_4eu6i2",
+      "fr": "Je suis le meilleur.",
+      "target": "Ich bin der Beste.",
+      "lesson": "Général",
+      "index": 555
+    },
+    {
+      "id": "card_semx5o",
+      "fr": "Je ne voulais pas.",
+      "target": "Ich wollte das nicht.",
+      "lesson": "Général",
+      "index": 556
+    },
+    {
+      "id": "card_1u54io",
+      "fr": "Ils sont tous les deux de bons professeurs.",
+      "target": "Sie sind beide gute Lehrer.",
+      "lesson": "Général",
+      "index": 557
+    },
+    {
+      "id": "card_pahbe2",
+      "fr": "Elle doit être en colère.",
+      "target": "Sie muss wütend sein.",
+      "lesson": "Général",
+      "index": 558
+    },
+    {
+      "id": "card_fa3cci",
+      "fr": "Tu veux y aller ?",
+      "target": "Willst du gehen?",
+      "lesson": "Général",
+      "index": 559
+    },
+    {
+      "id": "card_v4v83x",
+      "fr": "En quoi cela te concerne-t-il ?",
+      "target": "Was geht dich das an?",
+      "lesson": "Général",
+      "index": 560
+    },
+    {
+      "id": "card_vp3eh7",
+      "fr": "Je l'ai fait pour toi.",
+      "target": "Ich habe es für dich getan.",
+      "lesson": "Général",
+      "index": 561
+    },
+    {
+      "id": "card_ipcxzj",
+      "fr": "Quelqu'un était dans la maison.",
+      "target": "Jemand war im Haus.",
+      "lesson": "Général",
+      "index": 562
+    },
+    {
+      "id": "card_54dc2k",
+      "fr": "Ils n'ont pas de voiture.",
+      "target": "Sie haben kein Auto.",
+      "lesson": "Général",
+      "index": 563
+    },
+    {
+      "id": "card_nh96nv",
+      "fr": "Je connais ces personnes.",
+      "target": "Ich kenne diese Leute.",
+      "lesson": "Général",
+      "index": 564
+    },
+    {
+      "id": "card_8qd2vp",
+      "fr": "J'ai un vélo.",
+      "target": "Ich habe ein Fahrrad.",
+      "lesson": "Général",
+      "index": 565
+    },
+    {
+      "id": "card_1qaj6w",
+      "fr": "Tu me manques.",
+      "target": "Ich vermisse dich.",
+      "lesson": "Général",
+      "index": 566
+    },
+    {
+      "id": "card_8ui1wc",
+      "fr": "Comme tu es grand !",
+      "target": "Wie groß du bist!",
+      "lesson": "Général",
+      "index": 567
+    },
+    {
+      "id": "card_ylwwxw",
+      "fr": "Elle ne devrait pas être là.",
+      "target": "Sie sollte nicht hier sein.",
+      "lesson": "Général",
+      "index": 568
+    },
+    {
+      "id": "card_9uaoxy",
+      "fr": "Fais ce que tu veux.",
+      "target": "Mache, was du willst.",
+      "lesson": "Général",
+      "index": 569
+    },
+    {
+      "id": "card_3li72g",
+      "fr": "C'est une question de vie ou de mort !",
+      "target": "Es geht um Leben und Tod!",
+      "lesson": "Général",
+      "index": 570
+    },
+    {
+      "id": "card_nec72j",
+      "fr": "Je suis plus grand que lui.",
+      "target": "Ich bin größer als er.",
+      "lesson": "Général",
+      "index": 571
+    },
+    {
+      "id": "card_am9k51",
+      "fr": "Jamais de la vie !",
+      "target": "Nie im Leben!",
+      "lesson": "Général",
+      "index": 572
+    },
+    {
+      "id": "card_oa8dfp",
+      "fr": "Tu es d'ici ?",
+      "target": "Bist du von hier?",
+      "lesson": "Général",
+      "index": 573
+    },
+    {
+      "id": "card_2gct17",
+      "fr": "Il parle anglais.",
+      "target": "Er spricht Englisch.",
+      "lesson": "Général",
+      "index": 574
+    },
+    {
+      "id": "card_swv3hn",
+      "fr": "Je ne le vois pas.",
+      "target": "Ich sehe ihn nicht.",
+      "lesson": "Général",
+      "index": 575
+    },
+    {
+      "id": "card_5xrcu3",
+      "fr": "Il te regarde.",
+      "target": "Er sieht dich an.",
+      "lesson": "Général",
+      "index": 576
+    },
+    {
+      "id": "card_85t3k0",
+      "fr": "Être ou ne pas être, telle est la question ici.",
+      "target": "Sein oder nicht sein, das ist hier die Frage.",
+      "lesson": "Général",
+      "index": 577
+    },
+    {
+      "id": "card_uqt5lh",
+      "fr": "Je la connais à peine.",
+      "target": "Ich kenne sie kaum.",
+      "lesson": "Général",
+      "index": 578
+    },
+    {
+      "id": "card_npkejk",
+      "fr": "C'est tellement attentionné.",
+      "target": "Das ist so rücksichtsvoll.",
+      "lesson": "Général",
+      "index": 579
+    },
+    {
+      "id": "card_tmj6jt",
+      "fr": "Elle a l'air vraiment bien.",
+      "target": "Sie sieht wirklich gut aus.",
+      "lesson": "Général",
+      "index": 580
+    },
+    {
+      "id": "card_iucw1p",
+      "fr": "Ne dis pas trop de choses.",
+      "target": "Sag nicht zu viel.",
+      "lesson": "Général",
+      "index": 581
+    },
+    {
+      "id": "card_l1gn9i",
+      "fr": "Mieux vaut tard que jamais.",
+      "target": "Besser spät als nie.",
+      "lesson": "Général",
+      "index": 582
+    },
+    {
+      "id": "card_f51su0",
+      "fr": "Vous vous aimez beaucoup ?",
+      "target": "Liebt ihr euch sehr?",
+      "lesson": "Général",
+      "index": 583
+    },
+    {
+      "id": "card_wa44ws",
+      "fr": "Quelque chose ne va pas chez toi ?",
+      "target": "Stimmt etwas nicht mit dir?",
+      "lesson": "Général",
+      "index": 584
+    },
+    {
+      "id": "card_davqdo",
+      "fr": "Tu dois y aller.",
+      "target": "Du musst gehen.",
+      "lesson": "Général",
+      "index": 585
+    },
+    {
+      "id": "card_6fla2f",
+      "fr": "Il ne me comprend pas.",
+      "target": "Er versteht mich nicht.",
+      "lesson": "Général",
+      "index": 586
+    },
+    {
+      "id": "card_8xdkii",
+      "fr": "Bon retour !",
+      "target": "Willkommen zurück!",
+      "lesson": "Général",
+      "index": 587
+    },
+    {
+      "id": "card_d8adk6",
+      "fr": "Je suis d'accord avec lui.",
+      "target": "Ich stimme ihm zu.",
+      "lesson": "Général",
+      "index": 588
+    },
+    {
+      "id": "card_m134ho",
+      "fr": "Quels sont tes objectifs à long terme ?",
+      "target": "Was sind deine langfristigen Ziele?",
+      "lesson": "Général",
+      "index": 589
+    },
+    {
+      "id": "card_7n5qif",
+      "fr": "Je ne l'aime pas non plus.",
+      "target": "Ich kann ihn auch nicht leiden.",
+      "lesson": "Général",
+      "index": 590
+    },
+    {
+      "id": "card_dx04z2",
+      "fr": "Qui paie ?",
+      "target": "Wer bezahlt das?",
+      "lesson": "Général",
+      "index": 591
+    },
+    {
+      "id": "card_4rlg32",
+      "fr": "Je n'ai pas de chat.",
+      "target": "Ich habe keine Katze.",
+      "lesson": "Général",
+      "index": 592
+    },
+    {
+      "id": "card_x8g56u",
+      "fr": "Je l'ai appelé.",
+      "target": "Ich rief ihn an.",
+      "lesson": "Général",
+      "index": 593
+    },
+    {
+      "id": "card_82ghf4",
+      "fr": "Personne ne m'a vu.",
+      "target": "Niemand sah mich.",
+      "lesson": "Général",
+      "index": 594
+    },
+    {
+      "id": "card_fvic97",
+      "fr": "Comme toi, je te le dis.",
+      "target": "Wie du mir, so ich dir.",
+      "lesson": "Général",
+      "index": 595
+    },
+    {
+      "id": "card_cqyd4c",
+      "fr": "Tu as peur.",
+      "target": "Du hast Angst.",
+      "lesson": "Général",
+      "index": 596
+    },
+    {
+      "id": "card_ih101d",
+      "fr": "Où habites-tu maintenant ?",
+      "target": "Wo wohnst du jetzt?",
+      "lesson": "Général",
+      "index": 597
+    },
+    {
+      "id": "card_3wol55",
+      "fr": "Tu es malade ?",
+      "target": "Bist du krank?",
+      "lesson": "Général",
+      "index": 598
+    },
+    {
+      "id": "card_t6238t",
+      "fr": "Comment va ta femme ?",
+      "target": "Wie geht es deiner Frau?",
+      "lesson": "Général",
+      "index": 599
+    },
+    {
+      "id": "card_naqrue",
+      "fr": "Ne mange pas trop !",
+      "target": "Iss nicht zu viel!",
+      "lesson": "Général",
+      "index": 600
+    },
+    {
+      "id": "card_rrtqp6",
+      "fr": "Il était très heureux.",
+      "target": "Er war sehr glücklich.",
+      "lesson": "Général",
+      "index": 601
+    },
+    {
+      "id": "card_iaia3i",
+      "fr": "Je joue avec lui.",
+      "target": "Ich spiele mit ihm.",
+      "lesson": "Général",
+      "index": 602
+    },
+    {
+      "id": "card_ijl6ef",
+      "fr": "Elle porte un chapeau.",
+      "target": "Sie trägt einen Hut.",
+      "lesson": "Général",
+      "index": 603
+    },
+    {
+      "id": "card_be61xg",
+      "fr": "Je regarde.",
+      "target": "Ich sehe mich nur um.",
+      "lesson": "Général",
+      "index": 604
+    },
+    {
+      "id": "card_y53m2t",
+      "fr": "Quelle bonne idée !",
+      "target": "Was für eine gute Idee!",
+      "lesson": "Général",
+      "index": 605
+    },
+    {
+      "id": "card_em14cm",
+      "fr": "J'ai besoin d'argent.",
+      "target": "Ich brauche Geld.",
+      "lesson": "Général",
+      "index": 606
+    },
+    {
+      "id": "card_wwg6k7",
+      "fr": "J'ai mal partout.",
+      "target": "Mir tut alles weh.",
+      "lesson": "Général",
+      "index": 607
+    },
+    {
+      "id": "card_6ouiwm",
+      "fr": "Personne ne me parle.",
+      "target": "Niemand spricht mit mir.",
+      "lesson": "Général",
+      "index": 608
+    },
+    {
+      "id": "card_yr6k12",
+      "fr": "Je ne suis pas fatigué.",
+      "target": "Ich bin nicht müde.",
+      "lesson": "Général",
+      "index": 609
+    },
+    {
+      "id": "card_7x2nzj",
+      "fr": "Je suis fatigué.",
+      "target": "Ich bin müde.",
+      "lesson": "Général",
+      "index": 610
+    },
+    {
+      "id": "card_t2o9mh",
+      "fr": "Ce sont mes livres.",
+      "target": "Das sind meine Bücher.",
+      "lesson": "Général",
+      "index": 611
+    },
+    {
+      "id": "card_5v6qgi",
+      "fr": "Tu me crois maintenant ?",
+      "target": "Glaubst du mir jetzt?",
+      "lesson": "Général",
+      "index": 612
+    },
+    {
+      "id": "card_rqthbs",
+      "fr": "Que sais-tu de lui ?",
+      "target": "Was weißt du über ihn?",
+      "lesson": "Général",
+      "index": 613
+    },
+    {
+      "id": "card_jseysa",
+      "fr": "Mon anniversaire était il y a six mois.",
+      "target": "Mein Geburtstag war vor sechs Monaten.",
+      "lesson": "Général",
+      "index": 614
+    },
+    {
+      "id": "card_uv7e1l",
+      "fr": "Je peux voir la lumière.",
+      "target": "Ich kann das Licht sehen.",
+      "lesson": "Général",
+      "index": 615
+    },
+    {
+      "id": "card_t6d4j4",
+      "fr": "Tu es toujours en colère contre moi ?",
+      "target": "Bist du mir noch böse?",
+      "lesson": "Général",
+      "index": 616
+    },
+    {
+      "id": "card_8j2czr",
+      "fr": "Je sais que tu le sais.",
+      "target": "Ich weiß, dass du das weißt.",
+      "lesson": "Général",
+      "index": 617
+    },
+    {
+      "id": "card_kklt2e",
+      "fr": "C'est à moi que tu parles ?",
+      "target": "Redest du mit mir?",
+      "lesson": "Général",
+      "index": 618
+    },
+    {
+      "id": "card_ixq3i4",
+      "fr": "Aujourd'hui, j'ai beaucoup à faire.",
+      "target": "Heute habe ich viel zu tun.",
+      "lesson": "Général",
+      "index": 619
+    },
+    {
+      "id": "card_dyafh",
+      "fr": "C'est amusant ?",
+      "target": "Macht das Spaß?",
+      "lesson": "Général",
+      "index": 620
+    },
+    {
+      "id": "card_ii0l9p",
+      "fr": "Je ne sais pas où il habite.",
+      "target": "Ich weiß nicht, wo er wohnt.",
+      "lesson": "Général",
+      "index": 621
+    },
+    {
+      "id": "card_25x88t",
+      "fr": "Viens dans la chambre.",
+      "target": "Komm ins Zimmer.",
+      "lesson": "Général",
+      "index": 622
+    },
+    {
+      "id": "card_6g4hax",
+      "fr": "Tout ira bien.",
+      "target": "Alles wird gut.",
+      "lesson": "Général",
+      "index": 623
+    },
+    {
+      "id": "card_yy0s10",
+      "fr": "Je sais ce que tu penses.",
+      "target": "Ich weiß, was du denkst.",
+      "lesson": "Général",
+      "index": 624
+    },
+    {
+      "id": "card_3vebjo",
+      "fr": "Ce doit être mon livre.",
+      "target": "Das muss mein Buch sein.",
+      "lesson": "Général",
+      "index": 625
+    },
+    {
+      "id": "card_64fh3x",
+      "fr": "Je ne suis pas comme elle !",
+      "target": "Ich bin nicht so wie sie!",
+      "lesson": "Général",
+      "index": 626
+    },
+    {
+      "id": "card_okoj7b",
+      "fr": "Il n'y avait personne à la maison.",
+      "target": "Es war niemand zu Hause.",
+      "lesson": "Général",
+      "index": 627
+    },
+    {
+      "id": "card_3vgleo",
+      "fr": "Je n'irai pas.",
+      "target": "Ich werde nicht gehen.",
+      "lesson": "Général",
+      "index": 628
+    },
+    {
+      "id": "card_odkuqn",
+      "fr": "Il a l'air fatigué.",
+      "target": "Er sieht müde aus.",
+      "lesson": "Général",
+      "index": 629
+    },
+    {
+      "id": "card_hpulag",
+      "fr": "Le film était bien !",
+      "target": "Der Film war gut!",
+      "lesson": "Général",
+      "index": 630
+    },
+    {
+      "id": "card_9eqgcd",
+      "fr": "Il a peur de la mort.",
+      "target": "Er hat Angst vor dem Tod.",
+      "lesson": "Général",
+      "index": 631
+    },
+    {
+      "id": "card_ydv103",
+      "fr": "Tu veux prendre ça ?",
+      "target": "Willst du das nehmen?",
+      "lesson": "Général",
+      "index": 632
+    },
+    {
+      "id": "card_ln4a5o",
+      "fr": "Je sais comment faire.",
+      "target": "Ich weiß, wie man es macht.",
+      "lesson": "Général",
+      "index": 633
+    },
+    {
+      "id": "card_f54bsc",
+      "fr": "Il prenait son temps.",
+      "target": "Er ließ sich Zeit.",
+      "lesson": "Général",
+      "index": 634
+    },
+    {
+      "id": "card_hzm94l",
+      "fr": "Elle s'est battue pour moi.",
+      "target": "Sie hat sich für mich eingesetzt.",
+      "lesson": "Général",
+      "index": 635
+    },
+    {
+      "id": "card_cwwmbw",
+      "fr": "Il a demandé à te voir.",
+      "target": "Er fragte nach dir.",
+      "lesson": "Général",
+      "index": 636
+    },
+    {
+      "id": "card_3ncydm",
+      "fr": "Tu veux que j'attende ?",
+      "target": "Willst du, dass ich warte?",
+      "lesson": "Général",
+      "index": 637
+    },
+    {
+      "id": "card_tnuzyj",
+      "fr": "Combien coûte cette radio ?",
+      "target": "Was kostet dieses Radio?",
+      "lesson": "Général",
+      "index": 638
+    },
+    {
+      "id": "card_87ts3f",
+      "fr": "Je ne peux pas.",
+      "target": "Ich kann nicht.",
+      "lesson": "Général",
+      "index": 639
+    },
+    {
+      "id": "card_g1q3oo",
+      "fr": "Je travaille pour toi.",
+      "target": "Ich arbeite für dich.",
+      "lesson": "Général",
+      "index": 640
+    },
+    {
+      "id": "card_lpjj4j",
+      "fr": "Pour l'amour de Dieu !",
+      "target": "Um Gottes willen!",
+      "lesson": "Général",
+      "index": 641
+    },
+    {
+      "id": "card_ip3fg6",
+      "fr": "Cela doit être dur pour toi.",
+      "target": "Das muss hart für dich sein.",
+      "lesson": "Général",
+      "index": 642
+    },
+    {
+      "id": "card_7w7uto",
+      "fr": "Tu as tout à fait raison.",
+      "target": "Du hast völlig recht.",
+      "lesson": "Général",
+      "index": 643
+    },
+    {
+      "id": "card_prmn3d",
+      "fr": "Je lui ai demandé de le faire.",
+      "target": "Ich bat ihn, das zu tun.",
+      "lesson": "Général",
+      "index": 644
+    },
+    {
+      "id": "card_kvmbcl",
+      "fr": "Tu veux être riche ?",
+      "target": "Willst du reich sein?",
+      "lesson": "Général",
+      "index": 645
+    },
+    {
+      "id": "card_5h6b6r",
+      "fr": "Tu as peur ?",
+      "target": "Hast du Angst?",
+      "lesson": "Général",
+      "index": 646
+    },
+    {
+      "id": "card_olbenm",
+      "fr": "Pas un mot n'a été prononcé.",
+      "target": "Es fiel nicht ein Wort.",
+      "lesson": "Général",
+      "index": 647
+    },
+    {
+      "id": "card_naa5w3",
+      "fr": "Elle a l'air fatiguée.",
+      "target": "Sie sieht müde aus.",
+      "lesson": "Général",
+      "index": 648
+    },
+    {
+      "id": "card_79nwz3",
+      "fr": "Je pense à mes enfants.",
+      "target": "Ich denke an meine Kinder.",
+      "lesson": "Général",
+      "index": 649
+    },
+    {
+      "id": "card_gvtho3",
+      "fr": "Ouvre les yeux.",
+      "target": "Mache deine Augen auf.",
+      "lesson": "Général",
+      "index": 650
+    },
+    {
+      "id": "card_7yx018",
+      "fr": "Elle voulait être seule.",
+      "target": "Sie wollte allein sein.",
+      "lesson": "Général",
+      "index": 651
+    },
+    {
+      "id": "card_tmqdty",
+      "fr": "Je sais ce que tu as fait.",
+      "target": "Ich weiß, was du getan hast.",
+      "lesson": "Général",
+      "index": 652
+    },
+    {
+      "id": "card_aui0oo",
+      "fr": "Elle était seule dans la maison.",
+      "target": "Sie war allein in dem Haus.",
+      "lesson": "Général",
+      "index": 653
+    },
+    {
+      "id": "card_mag680",
+      "fr": "Rien de nouveau !",
+      "target": "Alles nichts Neues!",
+      "lesson": "Général",
+      "index": 654
+    },
+    {
+      "id": "card_yfkqkg",
+      "fr": "Il ne nous aime pas.",
+      "target": "Er mag uns nicht.",
+      "lesson": "Général",
+      "index": 655
+    },
+    {
+      "id": "card_hy7vvg",
+      "fr": "Ça va trop loin !",
+      "target": "Das geht zu weit!",
+      "lesson": "Général",
+      "index": 656
+    },
+    {
+      "id": "card_rhgdmg",
+      "fr": "Elle veut te parler.",
+      "target": "Sie will dich sprechen.",
+      "lesson": "Général",
+      "index": 657
+    },
+    {
+      "id": "card_3kbnzb",
+      "fr": "Il parle bien anglais.",
+      "target": "Er spricht gut Englisch.",
+      "lesson": "Général",
+      "index": 658
+    },
+    {
+      "id": "card_yj7w6q",
+      "fr": "Tout se passe très bien.",
+      "target": "Alles läuft sehr gut.",
+      "lesson": "Général",
+      "index": 659
+    },
+    {
+      "id": "card_93iklr",
+      "fr": "J'ai une idée.",
+      "target": "Ich habe eine Idee.",
+      "lesson": "Général",
+      "index": 660
+    },
+    {
+      "id": "card_d7tb7t",
+      "fr": "Je te connais à peine.",
+      "target": "Ich kenne dich kaum.",
+      "lesson": "Général",
+      "index": 661
+    },
+    {
+      "id": "card_acgjhd",
+      "fr": "Presque trois mois.",
+      "target": "Fast drei Monate.",
+      "lesson": "Général",
+      "index": 662
+    },
+    {
+      "id": "card_vkokq2",
+      "fr": "J'entends parler d'elle de temps en temps.",
+      "target": "Ich höre ab und zu von ihr.",
+      "lesson": "Général",
+      "index": 663
+    },
+    {
+      "id": "card_bgikyt",
+      "fr": "Je ne mangerai pas ça.",
+      "target": "Das esse ich nicht.",
+      "lesson": "Général",
+      "index": 664
+    },
+    {
+      "id": "card_qqanse",
+      "fr": "Je suis rentré à la maison.",
+      "target": "Ich bin nach Hause gegangen.",
+      "lesson": "Général",
+      "index": 665
+    },
+    {
+      "id": "card_aun031",
+      "fr": "Tout va trop vite.",
+      "target": "Es geht alles zu schnell.",
+      "lesson": "Général",
+      "index": 666
+    },
+    {
+      "id": "card_6waua9",
+      "fr": "Rien ne vient de rien.",
+      "target": "Von nichts kommt nichts.",
+      "lesson": "Général",
+      "index": 667
+    },
+    {
+      "id": "card_tsvwws",
+      "fr": "Je ne te déteste plus.",
+      "target": "Ich hasse dich nicht mehr.",
+      "lesson": "Général",
+      "index": 668
+    },
+    {
+      "id": "card_og08ot",
+      "fr": "Comment s'appelle ce chien ?",
+      "target": "Wie heißt dieser Hund?",
+      "lesson": "Général",
+      "index": 669
+    },
+    {
+      "id": "card_quojww",
+      "fr": "Tu ne l'as jamais rencontré ?",
+      "target": "Du bist ihm noch nie begegnet?",
+      "lesson": "Général",
+      "index": 670
+    },
+    {
+      "id": "card_kbboru",
+      "fr": "Elle m'évite.",
+      "target": "Sie geht mir aus dem Weg.",
+      "lesson": "Général",
+      "index": 671
+    },
+    {
+      "id": "card_yi88f9",
+      "fr": "Je veux devenir professeur.",
+      "target": "Ich möchte Lehrer werden.",
+      "lesson": "Général",
+      "index": 672
+    },
+    {
+      "id": "card_5vwcql",
+      "fr": "Ce n'est pas toi, n'est-ce pas ?",
+      "target": "Du warst es nicht, oder?",
+      "lesson": "Général",
+      "index": 673
+    },
+    {
+      "id": "card_4g8x86",
+      "fr": "Je suis trop vieux pour ça.",
+      "target": "Ich bin zu alt dafür.",
+      "lesson": "Général",
+      "index": 674
+    },
+    {
+      "id": "card_buf6lm",
+      "fr": "Je suis plus jeune que lui.",
+      "target": "Ich bin jünger als er.",
+      "lesson": "Général",
+      "index": 675
+    },
+    {
+      "id": "card_3a7vke",
+      "fr": "J'ai une grande maison.",
+      "target": "Ich habe ein großes Haus.",
+      "lesson": "Général",
+      "index": 676
+    },
+    {
+      "id": "card_pvwynz",
+      "fr": "De quoi es-tu particulièrement fier ?",
+      "target": "Worauf bist du besonders stolz?",
+      "lesson": "Général",
+      "index": 677
+    },
+    {
+      "id": "card_6d3s3i",
+      "fr": "Tu es très calme aujourd'hui.",
+      "target": "Du bist heute sehr ruhig.",
+      "lesson": "Général",
+      "index": 678
+    },
+    {
+      "id": "card_ox7sv5",
+      "fr": "Il se tenait derrière moi.",
+      "target": "Er stand hinter mir.",
+      "lesson": "Général",
+      "index": 679
+    },
+    {
+      "id": "card_2fgt38",
+      "fr": "Tu aimes ?",
+      "target": "Magst du es?",
+      "lesson": "Général",
+      "index": 680
+    },
+    {
+      "id": "card_ue02a0",
+      "fr": "Elle semble riche.",
+      "target": "Sie scheint reich zu sein.",
+      "lesson": "Général",
+      "index": 681
+    },
+    {
+      "id": "card_jtn6n4",
+      "fr": "Je me suis mis à pleurer.",
+      "target": "Ich fing an zu weinen.",
+      "lesson": "Général",
+      "index": 682
+    },
+    {
+      "id": "card_r32jej",
+      "fr": "Fais-le pour moi, s'il te plaît !",
+      "target": "Tue es bitte für mich!",
+      "lesson": "Général",
+      "index": 683
+    },
+    {
+      "id": "card_xfkv8p",
+      "fr": "Qu'est-ce que tu cuisines ?",
+      "target": "Was kochst du?",
+      "lesson": "Général",
+      "index": 684
+    },
+    {
+      "id": "card_k7xut6",
+      "fr": "Ce n'est pas la première fois.",
+      "target": "Das war nicht das erste Mal.",
+      "lesson": "Général",
+      "index": 685
+    },
+    {
+      "id": "card_qofj7c",
+      "fr": "Je suis une personne.",
+      "target": "Ich bin ein Mensch.",
+      "lesson": "Général",
+      "index": 686
+    },
+    {
+      "id": "card_o2hc79",
+      "fr": "Il va beaucoup mieux.",
+      "target": "Es geht ihm schon viel besser.",
+      "lesson": "Général",
+      "index": 687
+    },
+    {
+      "id": "card_n9byh3",
+      "fr": "Mais il ne le sait pas encore.",
+      "target": "Aber er weiß es noch nicht.",
+      "lesson": "Général",
+      "index": 688
+    },
+    {
+      "id": "card_xg5bl2",
+      "fr": "C'est ici que mon père travaille.",
+      "target": "Hier arbeitet mein Vater.",
+      "lesson": "Général",
+      "index": 689
+    },
+    {
+      "id": "card_dez37m",
+      "fr": "Ça ne coûte rien.",
+      "target": "Es kostet nichts.",
+      "lesson": "Général",
+      "index": 690
+    },
+    {
+      "id": "card_edskh4",
+      "fr": "Il y a toujours quelque chose à faire.",
+      "target": "Es gibt immer etwas zu tun.",
+      "lesson": "Général",
+      "index": 691
+    },
+    {
+      "id": "card_u6t8pu",
+      "fr": "Tu as un plan.",
+      "target": "Sie haben einen Plan.",
+      "lesson": "Général",
+      "index": 692
+    },
+    {
+      "id": "card_dz3zzx",
+      "fr": "Je suis en colère contre elle.",
+      "target": "Ich bin wütend auf sie.",
+      "lesson": "Général",
+      "index": 693
+    },
+    {
+      "id": "card_ooy8zk",
+      "fr": "Ça me rend fou.",
+      "target": "Das macht mich verrückt.",
+      "lesson": "Général",
+      "index": 694
+    },
+    {
+      "id": "card_k4y895",
+      "fr": "Il n'est pas des nôtres.",
+      "target": "Er gehört nicht zu uns.",
+      "lesson": "Général",
+      "index": 695
+    },
+    {
+      "id": "card_z0jn4m",
+      "fr": "Elle a ouvert les yeux.",
+      "target": "Sie öffnete ihre Augen.",
+      "lesson": "Général",
+      "index": 696
+    },
+    {
+      "id": "card_of6ot0",
+      "fr": "Elle a claqué la porte.",
+      "target": "Sie schlug die Tür zu.",
+      "lesson": "Général",
+      "index": 697
+    },
+    {
+      "id": "card_rts6ct",
+      "fr": "Ici et là.",
+      "target": "Hier und dort.",
+      "lesson": "Général",
+      "index": 698
+    },
+    {
+      "id": "card_uu9y2o",
+      "fr": "Il est venu à mon secours.",
+      "target": "Er kam mir zu Hilfe.",
+      "lesson": "Général",
+      "index": 699
+    },
+    {
+      "id": "card_n3rn9y",
+      "fr": "Je veux être riche.",
+      "target": "Ich möchte reich sein.",
+      "lesson": "Général",
+      "index": 700
+    },
+    {
+      "id": "card_y7qt8i",
+      "fr": "Tu sais parler anglais ?",
+      "target": "Du kannst Englisch?",
+      "lesson": "Général",
+      "index": 701
+    },
+    {
+      "id": "card_2c705j",
+      "fr": "Il semble être malade.",
+      "target": "Er scheint krank zu sein.",
+      "lesson": "Général",
+      "index": 702
+    },
+    {
+      "id": "card_w191r7",
+      "fr": "J'aime lire des livres.",
+      "target": "Ich lese gerne Bücher.",
+      "lesson": "Général",
+      "index": 703
+    },
+    {
+      "id": "card_bi3mt3",
+      "fr": "Je ne peux pas supporter ça.",
+      "target": "Ich halte das nicht aus.",
+      "lesson": "Général",
+      "index": 704
+    },
+    {
+      "id": "card_1ed9az",
+      "fr": "J'ai été aussi riche que toi.",
+      "target": "Ich war einmal so reich wie du.",
+      "lesson": "Général",
+      "index": 705
+    },
+    {
+      "id": "card_rrk88l",
+      "fr": "C'est toi qui as fait ça ?",
+      "target": "Hast du das getan?",
+      "lesson": "Général",
+      "index": 706
+    },
+    {
+      "id": "card_jrfwfm",
+      "fr": "Tu viens ?",
+      "target": "Kommst du?",
+      "lesson": "Général",
+      "index": 707
+    },
+    {
+      "id": "card_cwl9ph",
+      "fr": "Je n'ai pas aimé.",
+      "target": "Mir hat es nicht gefallen.",
+      "lesson": "Général",
+      "index": 708
+    },
+    {
+      "id": "card_cvd7lj",
+      "fr": "Je n'ai rien à manger.",
+      "target": "Ich habe nichts zu essen.",
+      "lesson": "Général",
+      "index": 709
+    },
+    {
+      "id": "card_wvf8zz",
+      "fr": "Le médecin le lui a donné.",
+      "target": "Der Arzt gab es ihr.",
+      "lesson": "Général",
+      "index": 710
+    },
+    {
+      "id": "card_ukbzfv",
+      "fr": "Que fais-tu ici si tôt ?",
+      "target": "Was machst du so früh hier?",
+      "lesson": "Général",
+      "index": 711
+    },
+    {
+      "id": "card_n2z5qh",
+      "fr": "J'écoute toujours cette chanson.",
+      "target": "Dieses Lied höre ich mir immer an.",
+      "lesson": "Général",
+      "index": 712
+    },
+    {
+      "id": "card_w7p3sy",
+      "fr": "As-tu peur de la mort ?",
+      "target": "Hast du Angst vor dem Tod?",
+      "lesson": "Général",
+      "index": 713
+    },
+    {
+      "id": "card_2vj7r5",
+      "fr": "Elle sait ce qu'elle veut.",
+      "target": "Sie weiß, was sie will.",
+      "lesson": "Général",
+      "index": 714
+    },
+    {
+      "id": "card_3dxgwh",
+      "fr": "Il aime bien dormir.",
+      "target": "Er schläft gerne.",
+      "lesson": "Général",
+      "index": 715
+    },
+    {
+      "id": "card_75c6ei",
+      "fr": "Qui est le propriétaire de cette voiture ?",
+      "target": "Wer ist der Besitzer dieses Autos?",
+      "lesson": "Général",
+      "index": 716
+    },
+    {
+      "id": "card_es8ofy",
+      "fr": "Je le connais.",
+      "target": "Ich kenne ihn.",
+      "lesson": "Général",
+      "index": 717
+    },
+    {
+      "id": "card_ohuymn",
+      "fr": "Oh, regarde ce petit chat !",
+      "target": "Oh, sieh dir die kleine Katze an!",
+      "lesson": "Général",
+      "index": 718
+    },
+    {
+      "id": "card_2ekgsw",
+      "fr": "Je ne t'aime plus.",
+      "target": "Ich mag dich nicht mehr.",
+      "lesson": "Général",
+      "index": 719
+    },
+    {
+      "id": "card_vhfudx",
+      "fr": "Est-ce que tout le monde le veut ?",
+      "target": "Wollen es alle?",
+      "lesson": "Général",
+      "index": 720
+    },
+    {
+      "id": "card_1srtka",
+      "fr": "Je n'aime pas ce chapeau.",
+      "target": "Ich mag diesen Hut nicht.",
+      "lesson": "Général",
+      "index": 721
+    },
+    {
+      "id": "card_mlme5r",
+      "fr": "Que je suis heureuse aujourd'hui !",
+      "target": "Was bin ich heute glücklich!",
+      "lesson": "Général",
+      "index": 722
+    },
+    {
+      "id": "card_4g55t",
+      "fr": "Il a peu d'argent.",
+      "target": "Er hat wenig Geld.",
+      "lesson": "Général",
+      "index": 723
+    },
+    {
+      "id": "card_cx8jma",
+      "fr": "Je ne travaille plus ici.",
+      "target": "Ich arbeite hier nicht mehr.",
+      "lesson": "Général",
+      "index": 724
+    },
+    {
+      "id": "card_sc6rus",
+      "fr": "Je veux une bière.",
+      "target": "Ich will ein Bier.",
+      "lesson": "Général",
+      "index": 725
+    },
+    {
+      "id": "card_n67nmh",
+      "fr": "On dirait un rêve.",
+      "target": "Es klingt wie ein Traum.",
+      "lesson": "Général",
+      "index": 726
+    },
+    {
+      "id": "card_npj730",
+      "fr": "Il n'y avait rien dans la boîte.",
+      "target": "In der Kiste befand sich nichts.",
+      "lesson": "Général",
+      "index": 727
+    },
+    {
+      "id": "card_t17olg",
+      "fr": "Tu dis toujours cela.",
+      "target": "Das sagst du immer.",
+      "lesson": "Général",
+      "index": 728
+    },
+    {
+      "id": "card_qempsx",
+      "fr": "Je mange de tout.",
+      "target": "Ich esse alles.",
+      "lesson": "Général",
+      "index": 729
+    },
+    {
+      "id": "card_66dfn9",
+      "fr": "Je ne veux rien.",
+      "target": "Ich will nichts.",
+      "lesson": "Général",
+      "index": 730
+    },
+    {
+      "id": "card_oexjhc",
+      "fr": "Tout ici m'appartient.",
+      "target": "Alles hier gehört mir.",
+      "lesson": "Général",
+      "index": 731
+    },
+    {
+      "id": "card_ne8d7k",
+      "fr": "J'ai beaucoup de livres.",
+      "target": "Ich habe viele Bücher.",
+      "lesson": "Général",
+      "index": 732
+    },
+    {
+      "id": "card_quibyz",
+      "fr": "Je ne veux pas d'enfants.",
+      "target": "Ich will keine Kinder.",
+      "lesson": "Général",
+      "index": 733
+    },
+    {
+      "id": "card_sn4c9a",
+      "fr": "Il n'a pas d'argent.",
+      "target": "Er hat kein Geld.",
+      "lesson": "Général",
+      "index": 734
+    },
+    {
+      "id": "card_ff8of6",
+      "fr": "De quoi a-t-il l'air ?",
+      "target": "Wie sieht er aus?",
+      "lesson": "Général",
+      "index": 735
+    },
+    {
+      "id": "card_t7lxgh",
+      "fr": "Je me sens toujours fatigué.",
+      "target": "Ich fühle mich immer müde.",
+      "lesson": "Général",
+      "index": 736
+    },
+    {
+      "id": "card_l6fbgm",
+      "fr": "Je me trompe probablement.",
+      "target": "Wahrscheinlich liege ich falsch.",
+      "lesson": "Général",
+      "index": 737
+    },
+    {
+      "id": "card_r0xu86",
+      "fr": "Je ne veux pas te voir.",
+      "target": "Ich will dich nicht sehen.",
+      "lesson": "Général",
+      "index": 738
+    },
+    {
+      "id": "card_u8uh8o",
+      "fr": "Tu es occupé ?",
+      "target": "Bist du beschäftigt?",
+      "lesson": "Général",
+      "index": 739
+    },
+    {
+      "id": "card_2d2r7f",
+      "fr": "Il est meilleur nageur que moi.",
+      "target": "Er ist ein besserer Schwimmer als ich.",
+      "lesson": "Général",
+      "index": 740
+    },
+    {
+      "id": "card_67bd0t",
+      "fr": "Tu as déjà expliqué cela.",
+      "target": "Das hast du schon erklärt.",
+      "lesson": "Général",
+      "index": 741
+    },
+    {
+      "id": "card_a4u7pk",
+      "fr": "On a fini ?",
+      "target": "Sind wir fertig?",
+      "lesson": "Général",
+      "index": 742
+    },
+    {
+      "id": "card_jwplu5",
+      "fr": "Et qu'est-ce qu'on va faire ?",
+      "target": "Und was werden wir machen?",
+      "lesson": "Général",
+      "index": 743
+    },
+    {
+      "id": "card_4f1tkk",
+      "fr": "Il m'a demandé de l'argent.",
+      "target": "Er bat mich um Geld.",
+      "lesson": "Général",
+      "index": 744
+    },
+    {
+      "id": "card_vb6joh",
+      "fr": "Je vais être en retard.",
+      "target": "Ich werde zu spät kommen.",
+      "lesson": "Général",
+      "index": 745
+    },
+    {
+      "id": "card_9bm6ll",
+      "fr": "Je parle beaucoup anglais.",
+      "target": "Ich spreche viel Englisch.",
+      "lesson": "Général",
+      "index": 746
+    },
+    {
+      "id": "card_wyi6h6",
+      "fr": "J'aime le thé.",
+      "target": "Ich mag Tee.",
+      "lesson": "Général",
+      "index": 747
+    },
+    {
+      "id": "card_wiik9c",
+      "fr": "Qu'est-ce que tu fais aujourd'hui ?",
+      "target": "Was machst du heute?",
+      "lesson": "Général",
+      "index": 748
+    },
+    {
+      "id": "card_40ctv4",
+      "fr": "Quand tu veux !",
+      "target": "Wann auch immer!",
+      "lesson": "Général",
+      "index": 749
+    },
+    {
+      "id": "card_19tfji",
+      "fr": "Il a l'air un peu fatigué.",
+      "target": "Er sieht etwas müde aus.",
+      "lesson": "Général",
+      "index": 750
+    },
+    {
+      "id": "card_evxs4o",
+      "fr": "Je l'attends.",
+      "target": "Ich warte auf ihn.",
+      "lesson": "Général",
+      "index": 751
+    },
+    {
+      "id": "card_1f1gs3",
+      "fr": "Tu as une femme ?",
+      "target": "Hast du eine Ehefrau?",
+      "lesson": "Général",
+      "index": 752
+    },
+    {
+      "id": "card_84koze",
+      "fr": "La nouvelle voiture est à elle.",
+      "target": "Das neue Auto gehört ihr.",
+      "lesson": "Général",
+      "index": 753
+    },
+    {
+      "id": "card_v7hfwm",
+      "fr": "Dois-je le faire tout de suite ?",
+      "target": "Muss ich es sofort tun?",
+      "lesson": "Général",
+      "index": 754
+    },
+    {
+      "id": "card_y8ydeg",
+      "fr": "Elle ne voulait pas le faire.",
+      "target": "Sie wollte es nicht tun.",
+      "lesson": "Général",
+      "index": 755
+    },
+    {
+      "id": "card_3q84o3",
+      "fr": "Il dort encore.",
+      "target": "Er schläft noch.",
+      "lesson": "Général",
+      "index": 756
+    },
+    {
+      "id": "card_r7un49",
+      "fr": "Je comprends ce que tu dis.",
+      "target": "Ich verstehe, was du sagst.",
+      "lesson": "Général",
+      "index": 757
+    },
+    {
+      "id": "card_j1jsqq",
+      "fr": "Je suis fatigué maintenant.",
+      "target": "Ich bin jetzt müde.",
+      "lesson": "Général",
+      "index": 758
+    },
+    {
+      "id": "card_3ewgi5",
+      "fr": "Personne ne l'a vu venir.",
+      "target": "Niemand hat es kommen sehen.",
+      "lesson": "Général",
+      "index": 759
+    },
+    {
+      "id": "card_l11jed",
+      "fr": "Je ne veux pas lui faire de mal.",
+      "target": "Ich will ihr nicht weh tun.",
+      "lesson": "Général",
+      "index": 760
+    },
+    {
+      "id": "card_8dj8bo",
+      "fr": "Cela semble facile.",
+      "target": "Das klingt einfach.",
+      "lesson": "Général",
+      "index": 761
+    },
+    {
+      "id": "card_6k1cct",
+      "fr": "Il ne reste que trois jours.",
+      "target": "Es sind nur noch drei Tage.",
+      "lesson": "Général",
+      "index": 762
+    },
+    {
+      "id": "card_ytdws",
+      "fr": "Tu veux en voir plus ?",
+      "target": "Willst du noch mehr sehen?",
+      "lesson": "Général",
+      "index": 763
+    },
+    {
+      "id": "card_wvsa5",
+      "fr": "Quel âge ont les enfants ?",
+      "target": "Wie alt sind die Kinder?",
+      "lesson": "Général",
+      "index": 764
+    },
+    {
+      "id": "card_fqh9xn",
+      "fr": "Où as-tu grandi ?",
+      "target": "Wo bist du aufgewachsen?",
+      "lesson": "Général",
+      "index": 765
+    },
+    {
+      "id": "card_34jxzb",
+      "fr": "Aie confiance en toi.",
+      "target": "Vertraue dir selbst.",
+      "lesson": "Général",
+      "index": 766
+    },
+    {
+      "id": "card_bcucrj",
+      "fr": "Elle a de beaux yeux.",
+      "target": "Sie hat schöne Augen.",
+      "lesson": "Général",
+      "index": 767
+    },
+    {
+      "id": "card_z3x7op",
+      "fr": "Combien de livres as-tu ?",
+      "target": "Wie viele Bücher hast du?",
+      "lesson": "Général",
+      "index": 768
+    },
+    {
+      "id": "card_4h02jt",
+      "fr": "Nous n'avons plus de pain.",
+      "target": "Wir haben kein Brot mehr.",
+      "lesson": "Général",
+      "index": 769
+    },
+    {
+      "id": "card_ujlyk2",
+      "fr": "J'apprends l'allemand.",
+      "target": "Ich lerne gerade Deutsch.",
+      "lesson": "Général",
+      "index": 770
+    },
+    {
+      "id": "card_jrktw8",
+      "fr": "Je veux voir par moi-même.",
+      "target": "Ich möchte es selbst sehen.",
+      "lesson": "Général",
+      "index": 771
+    },
+    {
+      "id": "card_yphmpn",
+      "fr": "Ce n'est pas drôle.",
+      "target": "Das macht keinen Spaß.",
+      "lesson": "Général",
+      "index": 772
+    },
+    {
+      "id": "card_xm8jys",
+      "fr": "J'aime lire.",
+      "target": "Ich lese gerne.",
+      "lesson": "Général",
+      "index": 773
+    },
+    {
+      "id": "card_kwk5ym",
+      "fr": "La vie est amusante.",
+      "target": "Das Leben macht Spaß.",
+      "lesson": "Général",
+      "index": 774
+    },
+    {
+      "id": "card_uuttq4",
+      "fr": "Il sera bientôt père.",
+      "target": "Er wird bald Vater werden.",
+      "lesson": "Général",
+      "index": 775
+    },
+    {
+      "id": "card_cwsaay",
+      "fr": "Tu veux quelque chose de plus ?",
+      "target": "Darf es noch etwas sein?",
+      "lesson": "Général",
+      "index": 776
+    },
+    {
+      "id": "card_n2vd66",
+      "fr": "Je suis mieux.",
+      "target": "Ich bin besser.",
+      "lesson": "Général",
+      "index": 777
+    },
+    {
+      "id": "card_xno114",
+      "fr": "Je ne lui ai rien dit.",
+      "target": "Ich habe ihm nichts gesagt.",
+      "lesson": "Général",
+      "index": 778
+    },
+    {
+      "id": "card_h0e3pt",
+      "fr": "Tu as quelque chose à manger ?",
+      "target": "Hast du etwas zu essen?",
+      "lesson": "Général",
+      "index": 779
+    },
+    {
+      "id": "card_urq52m",
+      "fr": "Tu as quelque chose sur le visage.",
+      "target": "Du hast da was im Gesicht.",
+      "lesson": "Général",
+      "index": 780
+    },
+    {
+      "id": "card_tngmuq",
+      "fr": "Quelle belle nuit !",
+      "target": "Was für eine schöne Nacht!",
+      "lesson": "Général",
+      "index": 781
+    },
+    {
+      "id": "card_f6lncx",
+      "fr": "Je n'ai plus peur.",
+      "target": "Ich habe keine Angst mehr.",
+      "lesson": "Général",
+      "index": 782
+    },
+    {
+      "id": "card_lzqjx6",
+      "fr": "Je veux être comme lui.",
+      "target": "Ich will wie er sein.",
+      "lesson": "Général",
+      "index": 783
+    },
+    {
+      "id": "card_jzcylh",
+      "fr": "J'aime aider.",
+      "target": "Ich helfe gerne.",
+      "lesson": "Général",
+      "index": 784
+    },
+    {
+      "id": "card_nk6i4b",
+      "fr": "Il marche très lentement.",
+      "target": "Er geht sehr langsam.",
+      "lesson": "Général",
+      "index": 785
+    },
+    {
+      "id": "card_7pwpey",
+      "fr": "Je n'aime pas l'école.",
+      "target": "Ich mag keine Schule.",
+      "lesson": "Général",
+      "index": 786
+    },
+    {
+      "id": "card_blwega",
+      "fr": "Je n'ai jamais été aussi fatigué.",
+      "target": "Ich war noch nie so müde.",
+      "lesson": "Général",
+      "index": 787
+    },
+    {
+      "id": "card_h40x7n",
+      "fr": "Connais-tu ces personnes ?",
+      "target": "Kennst du diese Leute?",
+      "lesson": "Général",
+      "index": 788
+    },
+    {
+      "id": "card_f4d6zk",
+      "fr": "Il y a un temps pour tout.",
+      "target": "Alles hat seine Zeit.",
+      "lesson": "Général",
+      "index": 789
+    },
+    {
+      "id": "card_3eqvue",
+      "fr": "Je ne comprends pas l'anglais.",
+      "target": "Ich verstehe kein Englisch.",
+      "lesson": "Général",
+      "index": 790
+    },
+    {
+      "id": "card_2dv0kz",
+      "fr": "J'aime apprendre l'anglais.",
+      "target": "Ich lerne gern Englisch.",
+      "lesson": "Général",
+      "index": 791
+    },
+    {
+      "id": "card_ml85du",
+      "fr": "J'aime beaucoup être seul.",
+      "target": "Ich bin sehr gern allein.",
+      "lesson": "Général",
+      "index": 792
+    },
+    {
+      "id": "card_5d4afi",
+      "fr": "Je sais ce qu'elle a fait.",
+      "target": "Ich weiß, was sie getan hat.",
+      "lesson": "Général",
+      "index": 793
+    },
+    {
+      "id": "card_ggjzlp",
+      "fr": "Il est arrivé juste au moment où je partais.",
+      "target": "Er kam gerade als ich ging.",
+      "lesson": "Général",
+      "index": 794
+    },
+    {
+      "id": "card_5a0jub",
+      "fr": "Il est devant la porte.",
+      "target": "Er steht vor der Tür.",
+      "lesson": "Général",
+      "index": 795
+    },
+    {
+      "id": "card_zckozp",
+      "fr": "Tout le monde est là.",
+      "target": "Alle sind da.",
+      "lesson": "Général",
+      "index": 796
+    },
+    {
+      "id": "card_wi4z7a",
+      "fr": "Il apprend vite.",
+      "target": "Er lernt schnell.",
+      "lesson": "Général",
+      "index": 797
+    },
+    {
+      "id": "card_q1reey",
+      "fr": "Sors du lit avec toi !",
+      "target": "Aus dem Bett mit dir!",
+      "lesson": "Général",
+      "index": 798
+    },
+    {
+      "id": "card_b7xptx",
+      "fr": "Je sais que tu habites ici.",
+      "target": "Ich weiß, dass du hier wohnst.",
+      "lesson": "Général",
+      "index": 799
+    },
+    {
+      "id": "card_lams1d",
+      "fr": "Je ne la connais pas.",
+      "target": "Ich kenne sie nicht.",
+      "lesson": "Général",
+      "index": 800
+    },
+    {
+      "id": "card_musi9g",
+      "fr": "Tu as des enfants ?",
+      "target": "Hast du Kinder?",
+      "lesson": "Général",
+      "index": 801
+    },
+    {
+      "id": "card_j28tky",
+      "fr": "Est-ce qu'elle te connaît ?",
+      "target": "Kennt sie dich?",
+      "lesson": "Général",
+      "index": 802
+    },
+    {
+      "id": "card_1ondvm",
+      "fr": "Sais-tu comment utiliser une boussole ?",
+      "target": "Weißt du, wie man einen Kompass benutzt?",
+      "lesson": "Général",
+      "index": 803
+    },
+    {
+      "id": "card_mrtaiz",
+      "fr": "Je dois y aller ?",
+      "target": "Muss ich gehen?",
+      "lesson": "Général",
+      "index": 804
+    },
+    {
+      "id": "card_jjgwpm",
+      "fr": "J'aime parler.",
+      "target": "Ich rede gern.",
+      "lesson": "Général",
+      "index": 805
+    },
+    {
+      "id": "card_kdsbvo",
+      "fr": "Tu es toujours là ?",
+      "target": "Bist du noch da?",
+      "lesson": "Général",
+      "index": 806
+    },
+    {
+      "id": "card_3af46r",
+      "fr": "Je vais me coucher très tôt.",
+      "target": "Ich gehe sehr früh zu Bett.",
+      "lesson": "Général",
+      "index": 807
+    },
+    {
+      "id": "card_wh5f1l",
+      "fr": "Elle écoutait.",
+      "target": "Sie hörte mir zu.",
+      "lesson": "Général",
+      "index": 808
+    },
+    {
+      "id": "card_piccvk",
+      "fr": "Qu'ils vivent longtemps !",
+      "target": "Mögen sie lange leben!",
+      "lesson": "Général",
+      "index": 809
+    },
+    {
+      "id": "card_7jwovz",
+      "fr": "Tu viens en ville ?",
+      "target": "Kommst du in die Stadt?",
+      "lesson": "Général",
+      "index": 810
+    },
+    {
+      "id": "card_kekhrj",
+      "fr": "Je le connais à peine.",
+      "target": "Ich kenne ihn kaum.",
+      "lesson": "Général",
+      "index": 811
+    },
+    {
+      "id": "card_b00e4z",
+      "fr": "Tu n'as pas cours aujourd'hui ?",
+      "target": "Hast du heute keine Schule?",
+      "lesson": "Général",
+      "index": 812
+    },
+    {
+      "id": "card_v3cger",
+      "fr": "Quelqu'un le connaît ?",
+      "target": "Kennt ihn jemand?",
+      "lesson": "Général",
+      "index": 813
+    },
+    {
+      "id": "card_cseuzf",
+      "fr": "Tu dois y aller ?",
+      "target": "Musst du jetzt gehen?",
+      "lesson": "Général",
+      "index": 814
+    },
+    {
+      "id": "card_2752r",
+      "fr": "Ce n'est pas suffisant.",
+      "target": "Das reicht nicht aus.",
+      "lesson": "Général",
+      "index": 815
+    },
+    {
+      "id": "card_jvv2up",
+      "fr": "Quel âge ai-je ?",
+      "target": "Wie alt bin ich?",
+      "lesson": "Général",
+      "index": 816
+    },
+    {
+      "id": "card_7wihe",
+      "fr": "Je suis resté debout toute la nuit.",
+      "target": "Ich war die ganze Nacht auf.",
+      "lesson": "Général",
+      "index": 817
+    },
+    {
+      "id": "card_ofw1xs",
+      "fr": "C'est bon, non ?",
+      "target": "Schmeckt es nicht gut?",
+      "lesson": "Général",
+      "index": 818
+    },
+    {
+      "id": "card_tvw9wa",
+      "fr": "Je ne vois pas.",
+      "target": "Ich sehe es nicht.",
+      "lesson": "Général",
+      "index": 819
+    },
+    {
+      "id": "card_zehgb3",
+      "fr": "Ne viens pas.",
+      "target": "Komm nicht.",
+      "lesson": "Général",
+      "index": 820
+    },
+    {
+      "id": "card_gwmuql",
+      "fr": "Il n'habite plus ici.",
+      "target": "Er wohnt nicht mehr hier.",
+      "lesson": "Général",
+      "index": 821
+    },
+    {
+      "id": "card_hi979b",
+      "fr": "Ce sont mes parents.",
+      "target": "Das sind meine Eltern.",
+      "lesson": "Général",
+      "index": 822
+    },
+    {
+      "id": "card_mwhtfh",
+      "fr": "Elle n'a pas dit un mot.",
+      "target": "Sie hat kein Wort gesagt.",
+      "lesson": "Général",
+      "index": 823
+    },
+    {
+      "id": "card_t8kuxz",
+      "fr": "J'en ai vraiment besoin.",
+      "target": "Ich brauche es wirklich.",
+      "lesson": "Général",
+      "index": 824
+    },
+    {
+      "id": "card_g0ez22",
+      "fr": "S'il te plaît, ne pars pas !",
+      "target": "Bitte geh nicht!",
+      "lesson": "Général",
+      "index": 825
+    },
+    {
+      "id": "card_llce8",
+      "fr": "Cela ne t'aidera pas.",
+      "target": "Es wird dir nicht helfen.",
+      "lesson": "Général",
+      "index": 826
+    },
+    {
+      "id": "card_owcm8l",
+      "fr": "Qui es-tu, bon sang ?",
+      "target": "Wer zum Teufel bist du?",
+      "lesson": "Général",
+      "index": 827
+    },
+    {
+      "id": "card_r579e5",
+      "fr": "J'étais comme toi autrefois.",
+      "target": "Ich war einmal so wie du.",
+      "lesson": "Général",
+      "index": 828
+    },
+    {
+      "id": "card_6pkxhi",
+      "fr": "Je ne le ferai plus jamais.",
+      "target": "Ich werde es nie wieder tun.",
+      "lesson": "Général",
+      "index": 829
+    },
+    {
+      "id": "card_51qscc",
+      "fr": "Elle a l'air jeune.",
+      "target": "Sie sieht jung aus.",
+      "lesson": "Général",
+      "index": 830
+    },
+    {
+      "id": "card_t3ujmb",
+      "fr": "Je veux avoir une famille.",
+      "target": "Ich will eine Familie haben.",
+      "lesson": "Général",
+      "index": 831
+    },
+    {
+      "id": "card_mj5otv",
+      "fr": "Je comprends.",
+      "target": "Ich verstehe das.",
+      "lesson": "Général",
+      "index": 832
+    },
+    {
+      "id": "card_hieixm",
+      "fr": "Tel père, tel fils.",
+      "target": "Wie der Vater, so der Sohn.",
+      "lesson": "Général",
+      "index": 833
+    },
+    {
+      "id": "card_3dreee",
+      "fr": "Combien en veut-il ?",
+      "target": "Wie viele möchte er?",
+      "lesson": "Général",
+      "index": 834
+    },
+    {
+      "id": "card_l2i2ox",
+      "fr": "Il est aux toilettes.",
+      "target": "Er ist auf der Toilette.",
+      "lesson": "Général",
+      "index": 835
+    },
+    {
+      "id": "card_maemhr",
+      "fr": "Tu as quelque chose à lire ?",
+      "target": "Hast du etwas zu lesen?",
+      "lesson": "Général",
+      "index": 836
+    },
+    {
+      "id": "card_jgqqza",
+      "fr": "Ce n'était pas si difficile.",
+      "target": "Das war nicht so schwer.",
+      "lesson": "Général",
+      "index": 837
+    },
+    {
+      "id": "card_sy3zh9",
+      "fr": "Je ne te comprends pas.",
+      "target": "Ich verstehe dich nicht.",
+      "lesson": "Général",
+      "index": 838
+    },
+    {
+      "id": "card_pri6h4",
+      "fr": "Tu as l'air fatigué.",
+      "target": "Du siehst müde aus.",
+      "lesson": "Général",
+      "index": 839
+    },
+    {
+      "id": "card_nazb5o",
+      "fr": "Je ne suis pas un enfant.",
+      "target": "Ich bin kein Kind.",
+      "lesson": "Général",
+      "index": 840
+    },
+    {
+      "id": "card_9ggc6r",
+      "fr": "Elle prendra la direction des opérations.",
+      "target": "Sie wird die Leitung übernehmen.",
+      "lesson": "Général",
+      "index": 841
+    },
+    {
+      "id": "card_w125fa",
+      "fr": "Je le fais souvent.",
+      "target": "Ich mach das oft.",
+      "lesson": "Général",
+      "index": 842
+    },
+    {
+      "id": "card_z1asng",
+      "fr": "J'arrive tout de suite.",
+      "target": "Ich komme sofort.",
+      "lesson": "Général",
+      "index": 843
+    },
+    {
+      "id": "card_f0kz0n",
+      "fr": "Je suis encore jeune.",
+      "target": "Ich bin noch jung.",
+      "lesson": "Général",
+      "index": 844
+    },
+    {
+      "id": "card_2oaiyv",
+      "fr": "Quelqu'un d'autre marche ?",
+      "target": "Geht noch jemand?",
+      "lesson": "Général",
+      "index": 845
+    },
+    {
+      "id": "card_l2hf19",
+      "fr": "Je suis jeune.",
+      "target": "Ich bin jung.",
+      "lesson": "Général",
+      "index": 846
+    },
+    {
+      "id": "card_ns1ogw",
+      "fr": "J'ai assez d'argent.",
+      "target": "Ich habe genug Geld.",
+      "lesson": "Général",
+      "index": 847
+    },
+    {
+      "id": "card_yvqjvr",
+      "fr": "Ne pars pas si vite !",
+      "target": "Geh nicht so schnell!",
+      "lesson": "Général",
+      "index": 848
+    },
+    {
+      "id": "card_n3r1sa",
+      "fr": "Ce n'est pas ton ex-femme ?",
+      "target": "Ist das nicht deine Ex-Frau?",
+      "lesson": "Général",
+      "index": 849
+    },
+    {
+      "id": "card_o089nm",
+      "fr": "Je lis beaucoup.",
+      "target": "Ich lese viel.",
+      "lesson": "Général",
+      "index": 850
+    },
+    {
+      "id": "card_tj31r8",
+      "fr": "Ne demande pas d'argent.",
+      "target": "Bitte nicht um Geld.",
+      "lesson": "Général",
+      "index": 851
+    },
+    {
+      "id": "card_619qyq",
+      "fr": "Je ne sais pas quand.",
+      "target": "Ich weiß nicht, wann.",
+      "lesson": "Général",
+      "index": 852
+    },
+    {
+      "id": "card_51cot3",
+      "fr": "Est-ce qu'il habite ici ?",
+      "target": "Wohnt er hier?",
+      "lesson": "Général",
+      "index": 853
+    },
+    {
+      "id": "card_2gx78o",
+      "fr": "Il roule très vite.",
+      "target": "Er fährt sehr schnell.",
+      "lesson": "Général",
+      "index": 854
+    },
+    {
+      "id": "card_m6ptz",
+      "fr": "Tu travailles ici ?",
+      "target": "Arbeitest du hier?",
+      "lesson": "Général",
+      "index": 855
+    },
+    {
+      "id": "card_5kqsin",
+      "fr": "J'ai quelque chose à te dire.",
+      "target": "Ich habe dir etwas zu sagen.",
+      "lesson": "Général",
+      "index": 856
+    },
+    {
+      "id": "card_u52276",
+      "fr": "Tu aimes cuisiner ?",
+      "target": "Kochst du gerne?",
+      "lesson": "Général",
+      "index": 857
+    },
+    {
+      "id": "card_4ulou6",
+      "fr": "Il l'aime toujours.",
+      "target": "Er liebt sie noch.",
+      "lesson": "Général",
+      "index": 858
+    },
+    {
+      "id": "card_v6h0qo",
+      "fr": "L'horloge ne fonctionne pas.",
+      "target": "Die Uhr geht nicht.",
+      "lesson": "Général",
+      "index": 859
+    },
+    {
+      "id": "card_lh84t2",
+      "fr": "Quelque chose ne va pas ici.",
+      "target": "Irgendetwas stimmt hier nicht.",
+      "lesson": "Général",
+      "index": 860
+    },
+    {
+      "id": "card_thwhyi",
+      "fr": "J'ai trouvé ça plutôt bien.",
+      "target": "Ich fand es ziemlich gut.",
+      "lesson": "Général",
+      "index": 861
+    },
+    {
+      "id": "card_pjz87q",
+      "fr": "Va dans ta chambre !",
+      "target": "Gehe auf dein Zimmer!",
+      "lesson": "Général",
+      "index": 862
+    },
+    {
+      "id": "card_dea5fz",
+      "fr": "Elle l'écoute.",
+      "target": "Sie hört auf ihn.",
+      "lesson": "Général",
+      "index": 863
+    },
+    {
+      "id": "card_952bby",
+      "fr": "Je suis très fier de toi.",
+      "target": "Ich bin sehr stolz auf dich.",
+      "lesson": "Général",
+      "index": 864
+    },
+    {
+      "id": "card_vqbeyd",
+      "fr": "Tu parles comme ta mère.",
+      "target": "Du sprichst wie deine Mutter.",
+      "lesson": "Général",
+      "index": 865
+    },
+    {
+      "id": "card_s0p1sl",
+      "fr": "J'en ai besoin pour demain.",
+      "target": "Ich brauche es bis morgen.",
+      "lesson": "Général",
+      "index": 866
+    },
+    {
+      "id": "card_q6xst7",
+      "fr": "Vis et apprends.",
+      "target": "Lebe und lerne.",
+      "lesson": "Général",
+      "index": 867
+    },
+    {
+      "id": "card_ouk0rz",
+      "fr": "Personne ne me dit rien.",
+      "target": "Niemand sagt mir etwas.",
+      "lesson": "Général",
+      "index": 868
+    },
+    {
+      "id": "card_c6nf4q",
+      "fr": "Ce que j'ai fait était mal.",
+      "target": "Was ich getan habe, war falsch.",
+      "lesson": "Général",
+      "index": 869
+    },
+    {
+      "id": "card_9bci2a",
+      "fr": "Le bébé s'est endormi.",
+      "target": "Das Baby schlief ein.",
+      "lesson": "Général",
+      "index": 870
+    },
+    {
+      "id": "card_m83g3z",
+      "fr": "J'attends ma mère.",
+      "target": "Ich warte auf meine Mutter.",
+      "lesson": "Général",
+      "index": 871
+    },
+    {
+      "id": "card_hsjyqb",
+      "fr": "Je te donne ce que tu veux.",
+      "target": "Ich gebe dir, was du willst.",
+      "lesson": "Général",
+      "index": 872
+    },
+    {
+      "id": "card_kvjeb2",
+      "fr": "Maintenant ou jamais !",
+      "target": "Jetzt oder nie!",
+      "lesson": "Général",
+      "index": 873
+    },
+    {
+      "id": "card_avbyu2",
+      "fr": "C'est ici qu'elle habite.",
+      "target": "Hier wohnt sie.",
+      "lesson": "Général",
+      "index": 874
+    },
+    {
+      "id": "card_m4k6rv",
+      "fr": "Elle a l'air heureuse.",
+      "target": "Sie sieht glücklich aus.",
+      "lesson": "Général",
+      "index": 875
+    },
+    {
+      "id": "card_cn84h1",
+      "fr": "Ça ne marche pas comme ça.",
+      "target": "So funktioniert das nicht.",
+      "lesson": "Général",
+      "index": 876
+    },
+    {
+      "id": "card_6x9jlx",
+      "fr": "Vas-y, tu peux le faire !",
+      "target": "Los, du kannst das!",
+      "lesson": "Général",
+      "index": 877
+    },
+    {
+      "id": "card_qx571b",
+      "fr": "Ne m'appelle plus.",
+      "target": "Ruf mich nicht mehr an.",
+      "lesson": "Général",
+      "index": 878
+    },
+    {
+      "id": "card_z6k4vj",
+      "fr": "Je ne sais pas où.",
+      "target": "Ich weiß nicht wo.",
+      "lesson": "Général",
+      "index": 879
+    },
+    {
+      "id": "card_kkkfi4",
+      "fr": "Je n'ai pas besoin de voiture.",
+      "target": "Ich brauche kein Auto.",
+      "lesson": "Général",
+      "index": 880
+    },
+    {
+      "id": "card_poxtol",
+      "fr": "Il sait tout.",
+      "target": "Er weiß alles.",
+      "lesson": "Général",
+      "index": 881
+    },
+    {
+      "id": "card_9sy5xe",
+      "fr": "Cela a toujours été le cas.",
+      "target": "Das war immer so.",
+      "lesson": "Général",
+      "index": 882
+    },
+    {
+      "id": "card_wtun87",
+      "fr": "Je n'ai pas assez d'argent.",
+      "target": "Ich habe nicht genug Geld.",
+      "lesson": "Général",
+      "index": 883
+    },
+    {
+      "id": "card_5honr4",
+      "fr": "Je ne peux pas le supporter.",
+      "target": "Ich kann ihn nicht ab.",
+      "lesson": "Général",
+      "index": 884
+    },
+    {
+      "id": "card_mj5otv",
+      "fr": "Je comprends.",
+      "target": "Ich verstehe.",
+      "lesson": "Général",
+      "index": 885
+    },
+    {
+      "id": "card_umjk5w",
+      "fr": "Elle nous regarde.",
+      "target": "Sie sieht uns an.",
+      "lesson": "Général",
+      "index": 886
+    },
+    {
+      "id": "card_cnn13y",
+      "fr": "De quoi avait-elle l'air ?",
+      "target": "Wie sah sie aus?",
+      "lesson": "Général",
+      "index": 887
+    },
+    {
+      "id": "card_jpubgz",
+      "fr": "Est-ce que cette montre fonctionne ?",
+      "target": "Funktioniert diese Uhr?",
+      "lesson": "Général",
+      "index": 888
+    },
+    {
+      "id": "card_ifzeer",
+      "fr": "Il a acheté une voiture.",
+      "target": "Er hat sich ein Auto gekauft.",
+      "lesson": "Général",
+      "index": 889
+    },
+    {
+      "id": "card_28n87z",
+      "fr": "Tu as encore beaucoup à apprendre.",
+      "target": "Du musst noch viel lernen.",
+      "lesson": "Général",
+      "index": 890
+    },
+    {
+      "id": "card_x477nj",
+      "fr": "Je n'ai qu'un seul frère.",
+      "target": "Ich habe nur einen Bruder.",
+      "lesson": "Général",
+      "index": 891
+    },
+    {
+      "id": "card_j5d3dp",
+      "fr": "J'ai eu une bonne idée.",
+      "target": "Ich kam auf eine gute Idee.",
+      "lesson": "Général",
+      "index": 892
+    },
+    {
+      "id": "card_eyh8zz",
+      "fr": "Cette voiture est la sienne.",
+      "target": "Dieses Auto gehört ihr.",
+      "lesson": "Général",
+      "index": 893
+    },
+    {
+      "id": "card_x73ssb",
+      "fr": "Il nage mieux que moi.",
+      "target": "Er schwimmt besser als ich.",
+      "lesson": "Général",
+      "index": 894
+    },
+    {
+      "id": "card_uvqtvp",
+      "fr": "Nous voilà !",
+      "target": "Da sind wir!",
+      "lesson": "Général",
+      "index": 895
+    },
+    {
+      "id": "card_ab7wkb",
+      "fr": "Il ne me parle plus.",
+      "target": "Er redet nicht mehr mit mir.",
+      "lesson": "Général",
+      "index": 896
+    },
+    {
+      "id": "card_x9rz8w",
+      "fr": "Suivant, s'il te plaît.",
+      "target": "Der Nächste, bitte.",
+      "lesson": "Général",
+      "index": 897
+    },
+    {
+      "id": "card_s26n77",
+      "fr": "Je connais ton père.",
+      "target": "Ich kenne deinen Vater.",
+      "lesson": "Général",
+      "index": 898
+    },
+    {
+      "id": "card_z1asng",
+      "fr": "J'arrive tout de suite.",
+      "target": "Ich bin sofort bei dir.",
+      "lesson": "Général",
+      "index": 899
+    },
+    {
+      "id": "card_g066qj",
+      "fr": "Elle était la seule femme.",
+      "target": "Sie war die einzige Frau.",
+      "lesson": "Général",
+      "index": 900
+    },
+    {
+      "id": "card_hofanr",
+      "fr": "Nous avons assez de temps.",
+      "target": "Wir haben genug Zeit.",
+      "lesson": "Général",
+      "index": 901
+    },
+    {
+      "id": "card_b7oq10",
+      "fr": "Elle se lève à sept heures.",
+      "target": "Sie steht um sieben Uhr auf.",
+      "lesson": "Général",
+      "index": 902
+    },
+    {
+      "id": "card_5ekpgn",
+      "fr": "Il y a encore beaucoup à faire.",
+      "target": "Es gibt noch viel zu tun.",
+      "lesson": "Général",
+      "index": 903
+    },
+    {
+      "id": "card_i3gq1z",
+      "fr": "Il parle trop vite.",
+      "target": "Er spricht zu schnell.",
+      "lesson": "Général",
+      "index": 904
+    },
+    {
+      "id": "card_t4eixy",
+      "fr": "Je n'aime pas son visage.",
+      "target": "Ich mag ihr Gesicht nicht.",
+      "lesson": "Général",
+      "index": 905
+    },
+    {
+      "id": "card_vyause",
+      "fr": "Un enfant a besoin d'amour.",
+      "target": "Ein Kind braucht Liebe.",
+      "lesson": "Général",
+      "index": 906
+    },
+    {
+      "id": "card_qmd25q",
+      "fr": "C'est vraiment vrai ?",
+      "target": "Stimmt das wirklich?",
+      "lesson": "Général",
+      "index": 907
+    },
+    {
+      "id": "card_ggx0fh",
+      "fr": "N'y pense plus !",
+      "target": "Vergiss es!",
+      "lesson": "Général",
+      "index": 908
+    },
+    {
+      "id": "card_hmja7",
+      "fr": "As-tu un fils ?",
+      "target": "Hast du einen Sohn?",
+      "lesson": "Général",
+      "index": 909
+    },
+    {
+      "id": "card_b4strq",
+      "fr": "Traversons la rue !",
+      "target": "Gehen wir über die Straße!",
+      "lesson": "Général",
+      "index": 910
+    },
+    {
+      "id": "card_20yseb",
+      "fr": "Je ne suis pas ton père.",
+      "target": "Ich bin nicht dein Vater.",
+      "lesson": "Général",
+      "index": 911
+    },
+    {
+      "id": "card_atgq3l",
+      "fr": "Le chien a l'air malade.",
+      "target": "Der Hund sieht krank aus.",
+      "lesson": "Général",
+      "index": 912
+    },
+    {
+      "id": "card_6cmgkr",
+      "fr": "Nous étions tous fatigués.",
+      "target": "Wir waren alle müde.",
+      "lesson": "Général",
+      "index": 913
+    },
+    {
+      "id": "card_nsoegp",
+      "fr": "Ça n'aide pas.",
+      "target": "Das hilft nicht.",
+      "lesson": "Général",
+      "index": 914
+    },
+    {
+      "id": "card_29racj",
+      "fr": "Même un enfant le sait.",
+      "target": "Selbst ein Kind weiß das.",
+      "lesson": "Général",
+      "index": 915
+    },
+    {
+      "id": "card_3qhd33",
+      "fr": "Je dois voir ce film.",
+      "target": "Ich muss diesen Film sehen.",
+      "lesson": "Général",
+      "index": 916
+    },
+    {
+      "id": "card_k1rilf",
+      "fr": "Il connaît beaucoup de gens.",
+      "target": "Er kennt viele Leute.",
+      "lesson": "Général",
+      "index": 917
+    },
+    {
+      "id": "card_eytdt8",
+      "fr": "Il ne sait pas encore.",
+      "target": "Er weiß es noch nicht.",
+      "lesson": "Général",
+      "index": 918
+    },
+    {
+      "id": "card_wflawk",
+      "fr": "Il se dirigea vers la porte.",
+      "target": "Er ging zur Tür.",
+      "lesson": "Général",
+      "index": 919
+    },
+    {
+      "id": "card_aoze8o",
+      "fr": "Ton ami a raison.",
+      "target": "Dein Freund hat recht.",
+      "lesson": "Général",
+      "index": 920
+    },
+    {
+      "id": "card_905smw",
+      "fr": "Tout le monde est fatigué.",
+      "target": "Alle sind müde.",
+      "lesson": "Général",
+      "index": 921
+    },
+    {
+      "id": "card_ojoqo1",
+      "fr": "Tu as une question ?",
+      "target": "Hast du eine Frage?",
+      "lesson": "Général",
+      "index": 922
+    },
+    {
+      "id": "card_jvskxu",
+      "fr": "J'attends quelqu'un.",
+      "target": "Ich warte auf jemanden.",
+      "lesson": "Général",
+      "index": 923
+    },
+    {
+      "id": "card_bsned9",
+      "fr": "Il vit dans sa voiture.",
+      "target": "Er wohnt in seinem Auto.",
+      "lesson": "Général",
+      "index": 924
+    },
+    {
+      "id": "card_y6lvtg",
+      "fr": "Tu me rends fou.",
+      "target": "Du machst mich verrückt.",
+      "lesson": "Général",
+      "index": 925
+    },
+    {
+      "id": "card_mrqc0l",
+      "fr": "La voiture avait l'air neuve.",
+      "target": "Das Auto sah aus wie neu.",
+      "lesson": "Général",
+      "index": 926
+    },
+    {
+      "id": "card_w7gj0y",
+      "fr": "Il se déteste.",
+      "target": "Er hasst sich selbst.",
+      "lesson": "Général",
+      "index": 927
+    },
+    {
+      "id": "card_w2j53h",
+      "fr": "Je ne veux pas d'argent.",
+      "target": "Ich möchte kein Geld.",
+      "lesson": "Général",
+      "index": 928
+    },
+    {
+      "id": "card_mf8he9",
+      "fr": "Je veux jouer.",
+      "target": "Ich will spielen.",
+      "lesson": "Général",
+      "index": 929
+    },
+    {
+      "id": "card_dpen5a",
+      "fr": "Lève-toi !",
+      "target": "Steh auf!",
+      "lesson": "Général",
+      "index": 930
+    },
+    {
+      "id": "card_43jqwb",
+      "fr": "Nous avons assez d'eau.",
+      "target": "Wir haben genug Wasser.",
+      "lesson": "Général",
+      "index": 931
+    },
+    {
+      "id": "card_8gq5sh",
+      "fr": "Je le fais moi-même.",
+      "target": "Ich mache es selbst.",
+      "lesson": "Général",
+      "index": 932
+    },
+    {
+      "id": "card_h9jcqe",
+      "fr": "Je n'aime pas les enfants.",
+      "target": "Ich mag keine Kinder.",
+      "lesson": "Général",
+      "index": 933
+    },
+    {
+      "id": "card_jw4tq0",
+      "fr": "Je crois qu'il me déteste.",
+      "target": "Ich glaube, er hasst mich.",
+      "lesson": "Général",
+      "index": 934
+    },
+    {
+      "id": "card_k0puye",
+      "fr": "Comment je te connais ?",
+      "target": "Woher kenne ich dich?",
+      "lesson": "Général",
+      "index": 935
+    },
+    {
+      "id": "card_8lhxdw",
+      "fr": "Cela a duré très, très longtemps.",
+      "target": "Es dauerte sehr, sehr lange.",
+      "lesson": "Général",
+      "index": 936
+    },
+    {
+      "id": "card_7caylt",
+      "fr": "Je peux le faire !",
+      "target": "Ich kann das tun!",
+      "lesson": "Général",
+      "index": 937
+    },
+    {
+      "id": "card_b0f8xo",
+      "fr": "Je sais où il habite.",
+      "target": "Ich weiß, wo er wohnt.",
+      "lesson": "Général",
+      "index": 938
+    },
+    {
+      "id": "card_kjjsuq",
+      "fr": "Puis-je faire quelque chose pour toi ?",
+      "target": "Kann ich irgendetwas für dich tun?",
+      "lesson": "Général",
+      "index": 939
+    },
+    {
+      "id": "card_5a2cez",
+      "fr": "Il n'y a pas de retour en arrière.",
+      "target": "Es gibt kein Zurück.",
+      "lesson": "Général",
+      "index": 940
+    },
+    {
+      "id": "card_twqf1k",
+      "fr": "Je serai à la maison demain.",
+      "target": "Ich werde morgen zu Hause sein.",
+      "lesson": "Général",
+      "index": 941
+    },
+    {
+      "id": "card_d3pasc",
+      "fr": "Donne-moi une autre chance.",
+      "target": "Gib mir noch eine Chance.",
+      "lesson": "Général",
+      "index": 942
+    },
+    {
+      "id": "card_dh544e",
+      "fr": "Mais maintenant, je t'aime.",
+      "target": "Aber jetzt liebe ich dich.",
+      "lesson": "Général",
+      "index": 943
+    },
+    {
+      "id": "card_ou8b1l",
+      "fr": "Il se lève à sept heures.",
+      "target": "Er steht um sieben Uhr auf.",
+      "lesson": "Général",
+      "index": 944
+    },
+    {
+      "id": "card_q5b5nk",
+      "fr": "Quand elle arrive, nous mangeons.",
+      "target": "Wenn sie kommt, essen wir.",
+      "lesson": "Général",
+      "index": 945
+    },
+    {
+      "id": "card_l8x97w",
+      "fr": "C'est vrai ?",
+      "target": "Stimmt das?",
+      "lesson": "Général",
+      "index": 946
+    },
+    {
+      "id": "card_g5vvy9",
+      "fr": "Je vois ta maison.",
+      "target": "Ich sehe dein Haus.",
+      "lesson": "Général",
+      "index": 947
+    },
+    {
+      "id": "card_925myv",
+      "fr": "Je pense qu'il fait semblant.",
+      "target": "Ich glaube, er tut nur so.",
+      "lesson": "Général",
+      "index": 948
+    },
+    {
+      "id": "card_glnp05",
+      "fr": "Combien d'argent veux-tu ?",
+      "target": "Wie viel Geld möchtest du?",
+      "lesson": "Général",
+      "index": 949
+    },
+    {
+      "id": "card_9fm09u",
+      "fr": "J'étais le seul homme.",
+      "target": "Ich war der einzige Mann.",
+      "lesson": "Général",
+      "index": 950
+    },
+    {
+      "id": "card_vtlrs",
+      "fr": "Le bébé ne faisait que pleurer.",
+      "target": "Das Baby hat nur geweint.",
+      "lesson": "Général",
+      "index": 951
+    },
+    {
+      "id": "card_4fuqjq",
+      "fr": "Tu le veux ?",
+      "target": "Willst du es?",
+      "lesson": "Général",
+      "index": 952
+    },
+    {
+      "id": "card_sb4teg",
+      "fr": "Je reviens bientôt.",
+      "target": "Ich bin bald wieder zurück.",
+      "lesson": "Général",
+      "index": 953
+    },
+    {
+      "id": "card_j9e34i",
+      "fr": "Tu te sens mieux aujourd'hui ?",
+      "target": "Geht es dir heute besser?",
+      "lesson": "Général",
+      "index": 954
+    },
+    {
+      "id": "card_ifeska",
+      "fr": "Comptons jusqu'à 10.",
+      "target": "Lass uns bis 10 zählen.",
+      "lesson": "Général",
+      "index": 955
+    },
+    {
+      "id": "card_zb4jm4",
+      "fr": "Elle ne signifie rien pour lui.",
+      "target": "Sie bedeutet ihm nichts.",
+      "lesson": "Général",
+      "index": 956
+    },
+    {
+      "id": "card_2e72v6",
+      "fr": "Elle me manque beaucoup.",
+      "target": "Ich vermisse sie sehr.",
+      "lesson": "Général",
+      "index": 957
+    },
+    {
+      "id": "card_7dshv9",
+      "fr": "Sais-tu où je peux le trouver ?",
+      "target": "Weißt du, wo ich es finde?",
+      "lesson": "Général",
+      "index": 958
+    },
+    {
+      "id": "card_v43957",
+      "fr": "Ne reste pas ici !",
+      "target": "Bleibt nicht hier!",
+      "lesson": "Général",
+      "index": 959
+    },
+    {
+      "id": "card_qbxdyq",
+      "fr": "Je sais qui a fait ça.",
+      "target": "Ich weiß, wer das getan hat.",
+      "lesson": "Général",
+      "index": 960
+    },
+    {
+      "id": "card_u4dsv",
+      "fr": "Nous devons y aller ?",
+      "target": "Müssen wir gehen?",
+      "lesson": "Général",
+      "index": 961
+    },
+    {
+      "id": "card_dlwof8",
+      "fr": "A-t-il peur de la mort ?",
+      "target": "Hat er Angst vor dem Tod?",
+      "lesson": "Général",
+      "index": 962
+    },
+    {
+      "id": "card_2jf0d",
+      "fr": "Il vit au-dessus de moi.",
+      "target": "Er wohnt über mir.",
+      "lesson": "Général",
+      "index": 963
+    },
+    {
+      "id": "card_yd2r8q",
+      "fr": "Elle se fatigue vite.",
+      "target": "Sie wird schnell müde.",
+      "lesson": "Général",
+      "index": 964
+    },
+    {
+      "id": "card_93bcvy",
+      "fr": "Je le sais moi-même.",
+      "target": "Ich weiß es selbst.",
+      "lesson": "Général",
+      "index": 965
+    },
+    {
+      "id": "card_nn79t4",
+      "fr": "Je n'ai pas de famille.",
+      "target": "Ich habe keine Familie.",
+      "lesson": "Général",
+      "index": 966
+    },
+    {
+      "id": "card_d5x0mr",
+      "fr": "Il ne pense qu'à lui.",
+      "target": "Er denkt nur an sich.",
+      "lesson": "Général",
+      "index": 967
+    },
+    {
+      "id": "card_vks8jw",
+      "fr": "Il se tenait devant moi.",
+      "target": "Er stand vor mir.",
+      "lesson": "Général",
+      "index": 968
+    },
+    {
+      "id": "card_4fa3lp",
+      "fr": "Cela prend du temps.",
+      "target": "Das braucht Zeit.",
+      "lesson": "Général",
+      "index": 969
+    },
+    {
+      "id": "card_6xa06b",
+      "fr": "Je veux le faire moi-même.",
+      "target": "Ich will es selbst machen.",
+      "lesson": "Général",
+      "index": 970
+    },
+    {
+      "id": "card_hj17qi",
+      "fr": "J'ai un peu d'argent maintenant.",
+      "target": "Ich hab jetzt etwas Geld.",
+      "lesson": "Général",
+      "index": 971
+    },
+    {
+      "id": "card_eduk0j",
+      "fr": "J'adore ça, tout simplement.",
+      "target": "Ich liebe das einfach.",
+      "lesson": "Général",
+      "index": 972
+    },
+    {
+      "id": "card_oyx4ub",
+      "fr": "Je plaisante.",
+      "target": "Ich mache nur Spaß.",
+      "lesson": "Général",
+      "index": 973
+    },
+    {
+      "id": "card_ep7cv6",
+      "fr": "Tu as besoin d'une voiture ?",
+      "target": "Brauchst du ein Auto?",
+      "lesson": "Général",
+      "index": 974
+    },
+    {
+      "id": "card_5vgfe4",
+      "fr": "Comme elle nage vite !",
+      "target": "Wie schnell sie schwimmt!",
+      "lesson": "Général",
+      "index": 975
+    },
+    {
+      "id": "card_m7g91x",
+      "fr": "Je cherche mon frère.",
+      "target": "Ich suche meinen Bruder.",
+      "lesson": "Général",
+      "index": 976
+    },
+    {
+      "id": "card_nu7v72",
+      "fr": "Je veux ça.",
+      "target": "Ich möchte das da.",
+      "lesson": "Général",
+      "index": 977
+    },
+    {
+      "id": "card_xjtkl8",
+      "fr": "Son père est-il encore en vie ?",
+      "target": "Lebt sein Vater noch?",
+      "lesson": "Général",
+      "index": 978
+    },
+    {
+      "id": "card_pzy4dg",
+      "fr": "C'était vraiment bien.",
+      "target": "Es war wirklich gut.",
+      "lesson": "Général",
+      "index": 979
+    },
+    {
+      "id": "card_7acaum",
+      "fr": "Je suis juste derrière toi.",
+      "target": "Ich bin direkt hinter dir.",
+      "lesson": "Général",
+      "index": 980
+    },
+    {
+      "id": "card_99sts8",
+      "fr": "As-tu peur de moi ?",
+      "target": "Hast du Angst vor mir?",
+      "lesson": "Général",
+      "index": 981
+    },
+    {
+      "id": "card_gri4zd",
+      "fr": "Le train part à six heures.",
+      "target": "Der Zug fährt um sechs.",
+      "lesson": "Général",
+      "index": 982
+    },
+    {
+      "id": "card_gw1elo",
+      "fr": "Sans toi, je ne suis rien.",
+      "target": "Ohne dich bin ich nichts.",
+      "lesson": "Général",
+      "index": 983
+    },
+    {
+      "id": "card_3h4arp",
+      "fr": "Je suppose que tu l'aimes bien.",
+      "target": "Ich nehme an, du magst ihn.",
+      "lesson": "Général",
+      "index": 984
+    },
+    {
+      "id": "card_opnfel",
+      "fr": "Je me suis senti mieux.",
+      "target": "Es ging mir schon besser.",
+      "lesson": "Général",
+      "index": 985
+    },
+    {
+      "id": "card_lb5uye",
+      "fr": "Il sait parler français.",
+      "target": "Er kann Französisch.",
+      "lesson": "Général",
+      "index": 986
+    },
+    {
+      "id": "card_3axu5l",
+      "fr": "Je vois quelque chose.",
+      "target": "Ich sehe etwas.",
+      "lesson": "Général",
+      "index": 987
+    },
+    {
+      "id": "card_qc2quu",
+      "fr": "Ta mère le sait-elle ?",
+      "target": "Weiß es deine Mutter?",
+      "lesson": "Général",
+      "index": 988
+    },
+    {
+      "id": "card_5s9qyg",
+      "fr": "Tout le monde le fait.",
+      "target": "Das machen alle.",
+      "lesson": "Général",
+      "index": 989
+    },
+    {
+      "id": "card_rx5god",
+      "fr": "Arrête d'être si gentil !",
+      "target": "Hör auf, so nett zu sein!",
+      "lesson": "Général",
+      "index": 990
+    },
+    {
+      "id": "card_1z4t21",
+      "fr": "Tu as de beaux yeux.",
+      "target": "Du hast schöne Augen.",
+      "lesson": "Général",
+      "index": 991
+    },
+    {
+      "id": "card_wtkmh5",
+      "fr": "J'aime tes yeux.",
+      "target": "Ich mag deine Augen.",
+      "lesson": "Général",
+      "index": 992
+    },
+    {
+      "id": "card_2nj5mk",
+      "fr": "Cela n'a jamais été mon problème.",
+      "target": "Das war nie mein Problem.",
+      "lesson": "Général",
+      "index": 993
+    },
+    {
+      "id": "card_yfwzft",
+      "fr": "Cela ne fera pas mal.",
+      "target": "Es wird nicht wehtun.",
+      "lesson": "Général",
+      "index": 994
+    },
+    {
+      "id": "card_6hjcx9",
+      "fr": "Il semble nous connaître.",
+      "target": "Er scheint uns zu kennen.",
+      "lesson": "Général",
+      "index": 995
+    },
+    {
+      "id": "card_2xu45r",
+      "fr": "Je peux avoir un peu de thé ?",
+      "target": "Kann ich noch etwas Tee haben?",
+      "lesson": "Général",
+      "index": 996
+    },
+    {
+      "id": "card_fm0mbl",
+      "fr": "Je suis bon en histoire.",
+      "target": "Ich bin gut in Geschichte.",
+      "lesson": "Général",
+      "index": 997
+    },
+    {
+      "id": "card_860qij",
+      "fr": "C'est ce que je ferais.",
+      "target": "So würde ich es tun.",
+      "lesson": "Général",
+      "index": 998
+    },
+    {
+      "id": "card_s85d0d",
+      "fr": "Elle mange une pomme.",
+      "target": "Sie isst einen Apfel.",
+      "lesson": "Général",
+      "index": 999
+    }
+  ],
+  "createdAt": "2026-05-23T14:10:54.519Z"
+}

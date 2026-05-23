@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.log
+data/sync/*.json
+public/audio/*.mp3
+google-key.json
+.DS_Store
+dist/
+.claude/

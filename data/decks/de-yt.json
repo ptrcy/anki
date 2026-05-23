@@ -1,0 +1,4977 @@
+{
+  "name": "TDS-DE",
+  "targetLang": "de",
+  "cards": [
+    {
+      "id": "card_3ho7x",
+      "fr": "fr",
+      "target": "de",
+      "lesson": "lesson",
+      "index": 0
+    },
+    {
+      "id": "card_lm3yl9",
+      "fr": "J'ai faim",
+      "target": "Ich habe Hunger",
+      "lesson": "A1",
+      "index": 1
+    },
+    {
+      "id": "card_lmeatt",
+      "fr": "J'ai soif",
+      "target": "Ich habe Durst",
+      "lesson": "A1",
+      "index": 2
+    },
+    {
+      "id": "card_3ne56u",
+      "fr": "J'ai mal",
+      "target": "Ich habe Schmerzen",
+      "lesson": "A1",
+      "index": 3
+    },
+    {
+      "id": "card_jn0kuc",
+      "fr": "J'ai un problème",
+      "target": "Ich habe ein Problem",
+      "lesson": "A1",
+      "index": 4
+    },
+    {
+      "id": "card_z3acg3",
+      "fr": "J'ai de la monnaie",
+      "target": "Ich habe Kleingeld",
+      "lesson": "A1",
+      "index": 5
+    },
+    {
+      "id": "card_z18jrr",
+      "fr": "J'ai trouvé",
+      "target": "Ich habe gefunden",
+      "lesson": "A1",
+      "index": 6
+    },
+    {
+      "id": "card_35nmow",
+      "fr": "J'ai perdu",
+      "target": "Ich habe verloren",
+      "lesson": "A1",
+      "index": 7
+    },
+    {
+      "id": "card_9pojqe",
+      "fr": "J'ai le temps",
+      "target": "Ich habe Zeit",
+      "lesson": "A1",
+      "index": 8
+    },
+    {
+      "id": "card_lmbrjw",
+      "fr": "J'ai peur",
+      "target": "Ich habe Angst",
+      "lesson": "A1",
+      "index": 9
+    },
+    {
+      "id": "card_yd53os",
+      "fr": "J'ai raison",
+      "target": "Ich habe recht",
+      "lesson": "A1",
+      "index": 10
+    },
+    {
+      "id": "card_lmf2sp",
+      "fr": "J'ai tort",
+      "target": "Ich habe unrecht",
+      "lesson": "A1",
+      "index": 11
+    },
+    {
+      "id": "card_tkb5ib",
+      "fr": "J'ai compris",
+      "target": "Ich habe verstanden",
+      "lesson": "A1",
+      "index": 12
+    },
+    {
+      "id": "card_35tyvh",
+      "fr": "Je suis en retard",
+      "target": "Ich habe Verspätung",
+      "lesson": "A1",
+      "index": 13
+    },
+    {
+      "id": "card_p74i9a",
+      "fr": "Je suis pressé",
+      "target": "Ich habe es eilig",
+      "lesson": "A1",
+      "index": 14
+    },
+    {
+      "id": "card_9d66hk",
+      "fr": "Je suis perdu",
+      "target": "Ich habe mich verlaufen",
+      "lesson": "A1",
+      "index": 15
+    },
+    {
+      "id": "card_rxlxbj",
+      "fr": "Avez-vous faim ?",
+      "target": "Haben Sie Hunger?",
+      "lesson": "A1",
+      "index": 16
+    },
+    {
+      "id": "card_my4y6m",
+      "fr": "Avez-vous une chambre?",
+      "target": "Haben Sie ein Zimmer?",
+      "lesson": "A1",
+      "index": 17
+    },
+    {
+      "id": "card_gji4r9",
+      "fr": "As-tu de la monnaie?",
+      "target": "Hast du Kleingeld?",
+      "lesson": "A1",
+      "index": 18
+    },
+    {
+      "id": "card_mygovc",
+      "fr": "A-t-il un plan de la ville?",
+      "target": "Hat er einen Stadtplan?",
+      "lesson": "A1",
+      "index": 19
+    },
+    {
+      "id": "card_vmlu96",
+      "fr": "Il est pressé.",
+      "target": "Er hat es eilig.",
+      "lesson": "A1",
+      "index": 20
+    },
+    {
+      "id": "card_130y5u",
+      "fr": "Avez-vous le temps?",
+      "target": "Haben Sie Zeit?",
+      "lesson": "A1",
+      "index": 21
+    },
+    {
+      "id": "card_5tbe50",
+      "fr": "Ils sont en retard.",
+      "target": "Sie haben Verspätung.",
+      "lesson": "A1",
+      "index": 22
+    },
+    {
+      "id": "card_7rha5t",
+      "fr": "Avez-vous faim?",
+      "target": "Habt ihr Hunger?",
+      "lesson": "A1",
+      "index": 23
+    },
+    {
+      "id": "card_a5e0u4",
+      "fr": "Nous avons compris.",
+      "target": "Wir haben verstanden.",
+      "lesson": "A1",
+      "index": 24
+    },
+    {
+      "id": "card_17nj8c",
+      "fr": "Tu as raison.",
+      "target": "Du hast recht.",
+      "lesson": "A1",
+      "index": 25
+    },
+    {
+      "id": "card_qvz9jf",
+      "fr": "Nous sommes pressés.",
+      "target": "Wir haben es eilig.",
+      "lesson": "A1",
+      "index": 26
+    },
+    {
+      "id": "card_fmh1sb",
+      "fr": "Vous êtes en retard.",
+      "target": "Sie haben Verspätung.",
+      "lesson": "A1",
+      "index": 27
+    },
+    {
+      "id": "card_qs2lce",
+      "fr": "Elle a un problème.",
+      "target": "Sie hat ein Problem.",
+      "lesson": "A1",
+      "index": 28
+    },
+    {
+      "id": "card_2w3uzm",
+      "fr": "A-t-il mal?",
+      "target": "Hat er Schmerzen?",
+      "lesson": "A1",
+      "index": 29
+    },
+    {
+      "id": "card_q3s9nj",
+      "fr": "Nous sommes en retard.",
+      "target": "Wir haben Verspätung.",
+      "lesson": "A1",
+      "index": 30
+    },
+    {
+      "id": "card_17lcs4",
+      "fr": "Vous êtes pressé.",
+      "target": "Ihr habt es eilig.",
+      "lesson": "A1",
+      "index": 31
+    },
+    {
+      "id": "card_pssqh7",
+      "fr": "As-tu compris?",
+      "target": "Hast du verstanden?",
+      "lesson": "A1",
+      "index": 32
+    },
+    {
+      "id": "card_3s9vmd",
+      "fr": "Il a raison.",
+      "target": "Er hat recht.",
+      "lesson": "A1",
+      "index": 33
+    },
+    {
+      "id": "card_w1oo67",
+      "fr": "Je suis fatigué",
+      "target": "Ich bin müde",
+      "lesson": "A2",
+      "index": 34
+    },
+    {
+      "id": "card_mxcxi4",
+      "fr": "Je suis malade",
+      "target": "Ich bin krank",
+      "lesson": "A2",
+      "index": 35
+    },
+    {
+      "id": "card_gxd0c8",
+      "fr": "Je suis monsieur Durand",
+      "target": "Ich bin Herr Durand",
+      "lesson": "A2",
+      "index": 36
+    },
+    {
+      "id": "card_ox5sv1",
+      "fr": "Je suis tout seul",
+      "target": "Ich bin allein",
+      "lesson": "A2",
+      "index": 37
+    },
+    {
+      "id": "card_9ayulm",
+      "fr": "Je suis marié",
+      "target": "Ich bin verheiratet",
+      "lesson": "A2",
+      "index": 38
+    },
+    {
+      "id": "card_tkwnov",
+      "fr": "Je suis célibataire",
+      "target": "Ich bin ledig",
+      "lesson": "A2",
+      "index": 39
+    },
+    {
+      "id": "card_eymexe",
+      "fr": "Je suis intéressé",
+      "target": "Ich bin interessiert",
+      "lesson": "A2",
+      "index": 40
+    },
+    {
+      "id": "card_e4zhu4",
+      "fr": "Je suis à l'hôtel",
+      "target": "Ich bin im Hotel",
+      "lesson": "A2",
+      "index": 41
+    },
+    {
+      "id": "card_pllm6o",
+      "fr": "Je suis surpris",
+      "target": "Ich bin überrascht",
+      "lesson": "A2",
+      "index": 42
+    },
+    {
+      "id": "card_ne3bc3",
+      "fr": "Je suis sale",
+      "target": "Ich bin schmutzig",
+      "lesson": "A2",
+      "index": 43
+    },
+    {
+      "id": "card_dddkz5",
+      "fr": "Je suis en vacances",
+      "target": "Ich bin in Urlaub",
+      "lesson": "A2",
+      "index": 44
+    },
+    {
+      "id": "card_ne550o",
+      "fr": "Je suis prêt",
+      "target": "Ich bin bereit",
+      "lesson": "A2",
+      "index": 45
+    },
+    {
+      "id": "card_i2gm6q",
+      "fr": "J'ai 20 ans.",
+      "target": "Ich bin 20 / zwanzig.",
+      "lesson": "A2",
+      "index": 46
+    },
+    {
+      "id": "card_qxnwn6",
+      "fr": "J'ai froid.",
+      "target": "Mir ist kalt.",
+      "lesson": "A2",
+      "index": 47
+    },
+    {
+      "id": "card_osespf",
+      "fr": "J'ai chaud.",
+      "target": "Mir ist warm.",
+      "lesson": "A2",
+      "index": 48
+    },
+    {
+      "id": "card_rcjui",
+      "fr": "Je suis enchanté(e).",
+      "target": "Es ist mir angenehm.",
+      "lesson": "A2",
+      "index": 49
+    },
+    {
+      "id": "card_xnq4hs",
+      "fr": "Il est l'heure.",
+      "target": "Es ist Zeit. / Es wird Zeit.",
+      "lesson": "A2",
+      "index": 50
+    },
+    {
+      "id": "card_kbugry",
+      "fr": "Es-tu prêt ?",
+      "target": "Bist du bereit ?",
+      "lesson": "A2",
+      "index": 51
+    },
+    {
+      "id": "card_vlvnng",
+      "fr": "Êtes-vous satisfait ?",
+      "target": "Sind Sie zufrieden ? (politesse)",
+      "lesson": "A2",
+      "index": 52
+    },
+    {
+      "id": "card_rrutja",
+      "fr": "Avez-vous fini ?",
+      "target": "Sind Sie fertig/soweit ? (politesse)",
+      "lesson": "A2",
+      "index": 53
+    },
+    {
+      "id": "card_aibjp1",
+      "fr": "As-tu faim ?",
+      "target": "Bist du hungrig ?",
+      "lesson": "A2",
+      "index": 54
+    },
+    {
+      "id": "card_osespf",
+      "fr": "J'ai chaud.",
+      "target": "Mir ist warm/heiß.",
+      "lesson": "A2",
+      "index": 55
+    },
+    {
+      "id": "card_oauznx",
+      "fr": "Il a 20 ans.",
+      "target": "Er ist 20 (Jahre alt).",
+      "lesson": "A2",
+      "index": 56
+    },
+    {
+      "id": "card_wzig9u",
+      "fr": "Êtes-vous tout seul ? (politesse)",
+      "target": "Sind Sie allein ?",
+      "lesson": "A2",
+      "index": 57
+    },
+    {
+      "id": "card_xnq4hs",
+      "fr": "Il est l'heure.",
+      "target": "Es ist Zeit.",
+      "lesson": "A2",
+      "index": 58
+    },
+    {
+      "id": "card_gwvm0h",
+      "fr": "Nous sommes mariés.",
+      "target": "Wir sind verheiratet.",
+      "lesson": "A2",
+      "index": 59
+    },
+    {
+      "id": "card_kxnx5i",
+      "fr": "Es-tu malade ?",
+      "target": "Bist du krank ?",
+      "lesson": "A2",
+      "index": 60
+    },
+    {
+      "id": "card_hi8m1",
+      "fr": "Sont-ils fatigués ?",
+      "target": "Sind sie müde ?",
+      "lesson": "A2",
+      "index": 61
+    },
+    {
+      "id": "card_2z77cp",
+      "fr": "Nous sommes satisfaits.",
+      "target": "Wir sind zufrieden.",
+      "lesson": "A2",
+      "index": 62
+    },
+    {
+      "id": "card_un916u",
+      "fr": "Je suis à l'hôtel.",
+      "target": "Ich bin im Hotel.",
+      "lesson": "A2",
+      "index": 63
+    },
+    {
+      "id": "card_efrqhy",
+      "fr": "Elle est célibataire.",
+      "target": "Sie ist ledig.",
+      "lesson": "A2",
+      "index": 64
+    },
+    {
+      "id": "card_o945nb",
+      "fr": "Tu es en congé.",
+      "target": "Du bist in Urlaub.",
+      "lesson": "A2",
+      "index": 65
+    },
+    {
+      "id": "card_1thjju",
+      "fr": "Elle est sale.",
+      "target": "Sie ist schmutzig.",
+      "lesson": "A2",
+      "index": 66
+    },
+    {
+      "id": "card_qxnwn6",
+      "fr": "J'ai froid.",
+      "target": "Mir ist kalt.",
+      "lesson": "A2",
+      "index": 67
+    },
+    {
+      "id": "card_c7ho9t",
+      "fr": "Nous sommes prêts.",
+      "target": "Wir sind fertig.",
+      "lesson": "A2",
+      "index": 68
+    },
+    {
+      "id": "card_b07fkh",
+      "fr": "Êtes-vous Mme Durand ?",
+      "target": "Sind Sie Frau Durand ?",
+      "lesson": "A2",
+      "index": 69
+    },
+    {
+      "id": "card_89jww7",
+      "fr": "Je viens.",
+      "target": "Ich komme.",
+      "lesson": "A3",
+      "index": 70
+    },
+    {
+      "id": "card_8jp20k",
+      "fr": "Tu es.",
+      "target": "Du bist.",
+      "lesson": "A3",
+      "index": 71
+    },
+    {
+      "id": "card_h91euz",
+      "fr": "Il / Elle téléphone.",
+      "target": "Er / Sie / Es telefoniert.",
+      "lesson": "A3",
+      "index": 72
+    },
+    {
+      "id": "card_wrpf7d",
+      "fr": "Nous avons le temps.",
+      "target": "Wir haben Zeit.",
+      "lesson": "A3",
+      "index": 73
+    },
+    {
+      "id": "card_czswi1",
+      "fr": "Vous payez.",
+      "target": "Ihr zahlt.",
+      "lesson": "A3",
+      "index": 74
+    },
+    {
+      "id": "card_s2s1g5",
+      "fr": "Ils sont là.",
+      "target": "Sie sind da.",
+      "lesson": "A3",
+      "index": 75
+    },
+    {
+      "id": "card_qkcris",
+      "fr": "Vous (politesse) êtes en retard.",
+      "target": "Sie sind spät.",
+      "lesson": "A3",
+      "index": 76
+    },
+    {
+      "id": "card_d7vau2",
+      "fr": "Il m'entend.",
+      "target": "Er hört mich.",
+      "lesson": "A3",
+      "index": 77
+    },
+    {
+      "id": "card_qdd0v5",
+      "fr": "Il t'entend.",
+      "target": "Er hört dich.",
+      "lesson": "A3",
+      "index": 78
+    },
+    {
+      "id": "card_2r27x1",
+      "fr": "Il le cherche.",
+      "target": "Er sucht ihn.",
+      "lesson": "A3",
+      "index": 79
+    },
+    {
+      "id": "card_78j3fd",
+      "fr": "Il la cherche.",
+      "target": "Er sucht sie.",
+      "lesson": "A3",
+      "index": 80
+    },
+    {
+      "id": "card_wtk5u7",
+      "fr": "Il le cherche. (neutre)",
+      "target": "Er sucht es.",
+      "lesson": "A3",
+      "index": 81
+    },
+    {
+      "id": "card_53zgqm",
+      "fr": "Vous nous entendez.",
+      "target": "Ihr hört uns.",
+      "lesson": "A3",
+      "index": 82
+    },
+    {
+      "id": "card_ueldjp",
+      "fr": "Vous entendent-ils ?",
+      "target": "Hören sie euch?",
+      "lesson": "A3",
+      "index": 83
+    },
+    {
+      "id": "card_5jhfin",
+      "fr": "Je les connais.",
+      "target": "Ich kenne sie.",
+      "lesson": "A3",
+      "index": 84
+    },
+    {
+      "id": "card_291ati",
+      "fr": "Je ne vous (politesse) connais pas.",
+      "target": "Ich kenne Sie nicht.",
+      "lesson": "A3",
+      "index": 85
+    },
+    {
+      "id": "card_9vpqjr",
+      "fr": "Je me sens mal.",
+      "target": "Mir ist schlecht / übel.",
+      "lesson": "A3",
+      "index": 86
+    },
+    {
+      "id": "card_1qu19x",
+      "fr": "Je te donne du chocolat.",
+      "target": "Ich gebe dir Schokolade.",
+      "lesson": "A3",
+      "index": 87
+    },
+    {
+      "id": "card_o1at6l",
+      "fr": "Il lui achète un pull-over (à lui).",
+      "target": "Er kauft ihm einen Pullover.",
+      "lesson": "A3",
+      "index": 88
+    },
+    {
+      "id": "card_gk0usl",
+      "fr": "Il lui achète un pull-over (à elle).",
+      "target": "Er kauft ihr einen Pullover.",
+      "lesson": "A3",
+      "index": 89
+    },
+    {
+      "id": "card_3f2ewd",
+      "fr": "Il lui achète un pull-over (à lui = neutre).",
+      "target": "Er kauft ihm einen Pullover.",
+      "lesson": "A3",
+      "index": 90
+    },
+    {
+      "id": "card_v95j1p",
+      "fr": "Nous avons froid.",
+      "target": "Uns ist kalt.",
+      "lesson": "A3",
+      "index": 91
+    },
+    {
+      "id": "card_4nn5j3",
+      "fr": "Nous vous donnons de l'argent.",
+      "target": "Wir geben euch Geld.",
+      "lesson": "A3",
+      "index": 92
+    },
+    {
+      "id": "card_r08od7",
+      "fr": "Je leur paye la place.",
+      "target": "Ich zahle ihnen den Platz.",
+      "lesson": "A3",
+      "index": 93
+    },
+    {
+      "id": "card_91nrjn",
+      "fr": "Je ne vous paye pas votre (politesse) place.",
+      "target": "Ich zahle Ihnen Ihren Platz nicht.",
+      "lesson": "A3",
+      "index": 94
+    },
+    {
+      "id": "card_ev12pk",
+      "fr": "Je m'achète un livre.",
+      "target": "Ich kaufe mir ein Buch.",
+      "lesson": "A3",
+      "index": 95
+    },
+    {
+      "id": "card_cjd2i6",
+      "fr": "Cela vous coûte dix euros.",
+      "target": "Das kostet Sie zehn Euro.",
+      "lesson": "A3",
+      "index": 96
+    },
+    {
+      "id": "card_6qiobt",
+      "fr": "J'aimerais me laver les mains.",
+      "target": "Ich möchte mir die Hände waschen.",
+      "lesson": "A3",
+      "index": 97
+    },
+    {
+      "id": "card_yi4xga",
+      "fr": "Voulez-vous vous asseoir ?",
+      "target": "Wollen Sie sich setzen ?",
+      "lesson": "A3",
+      "index": 98
+    },
+    {
+      "id": "card_iyv8zl",
+      "fr": "J'aimerais lui parler.",
+      "target": "Ich möchte ihn sprechen.",
+      "lesson": "A3",
+      "index": 99
+    },
+    {
+      "id": "card_ev12pk",
+      "fr": "Je m'achète un livre.",
+      "target": "Ich kaufe mir ein Buch.",
+      "lesson": "A3",
+      "index": 100
+    },
+    {
+      "id": "card_xkyo6s",
+      "fr": "J'aimerais lui parler (à lui)",
+      "target": "Ich möchte ihn sprechen.",
+      "lesson": "A3",
+      "index": 101
+    },
+    {
+      "id": "card_5jhfin",
+      "fr": "Je les connais.",
+      "target": "Ich kenne sie.",
+      "lesson": "A3",
+      "index": 102
+    },
+    {
+      "id": "card_875lfl",
+      "fr": "Elle téléphone.",
+      "target": "Sie telefoniert.",
+      "lesson": "A3",
+      "index": 103
+    },
+    {
+      "id": "card_6qiobt",
+      "fr": "J'aimerais me laver les mains.",
+      "target": "Ich möchte mir die Hände waschen.",
+      "lesson": "A3",
+      "index": 104
+    },
+    {
+      "id": "card_5syxdz",
+      "fr": "Nous vous donnons Je l'argent.",
+      "target": "Wir geben euch/Ihnen Geld.",
+      "lesson": "A3",
+      "index": 105
+    },
+    {
+      "id": "card_vuqc1w",
+      "fr": "Vous avez le temps (2e pers. pl.)",
+      "target": "Ihr habt Zeit.",
+      "lesson": "A3",
+      "index": 106
+    },
+    {
+      "id": "card_ui7ioq",
+      "fr": "Il lui achète un pull-over",
+      "target": "Er kauft ihm/ihr einen Pull-over.",
+      "lesson": "A3",
+      "index": 107
+    },
+    {
+      "id": "card_l1kx1h",
+      "fr": "Cela vous coûte 10 euros (politesse)",
+      "target": "Das kostet Sie 10 Euro.",
+      "lesson": "A3",
+      "index": 108
+    },
+    {
+      "id": "card_89jww7",
+      "fr": "Je viens.",
+      "target": "Ich komme.",
+      "lesson": "A3",
+      "index": 109
+    },
+    {
+      "id": "card_w0gn2g",
+      "fr": "Je peux aller à pied",
+      "target": "Ich kann zu Fuß gehen",
+      "lesson": "A4",
+      "index": 110
+    },
+    {
+      "id": "card_yx93ob",
+      "fr": "Je peux acheter les billets",
+      "target": "Ich kann die Eintrittskarten kaufen",
+      "lesson": "A4",
+      "index": 111
+    },
+    {
+      "id": "card_ljvhu8",
+      "fr": "Je peux retirer de l'argent",
+      "target": "Ich kann Geld abheben",
+      "lesson": "A4",
+      "index": 112
+    },
+    {
+      "id": "card_1hb3q9",
+      "fr": "Je peux prendre le bus",
+      "target": "Ich kann den Bus nehmen",
+      "lesson": "A4",
+      "index": 113
+    },
+    {
+      "id": "card_em53yr",
+      "fr": "Je peux louer une voiture",
+      "target": "Ich kann ein Auto mieten",
+      "lesson": "A4",
+      "index": 114
+    },
+    {
+      "id": "card_ocg1jk",
+      "fr": "Je peux rester ce soir",
+      "target": "Ich kann heute abend bleiben",
+      "lesson": "A4",
+      "index": 115
+    },
+    {
+      "id": "card_26qj9t",
+      "fr": "Je sais nager",
+      "target": "Ich kann schwimmen",
+      "lesson": "A4",
+      "index": 116
+    },
+    {
+      "id": "card_fs8oij",
+      "fr": "Je sais rouler à bicyclette",
+      "target": "Ich kann radfahren",
+      "lesson": "A4",
+      "index": 117
+    },
+    {
+      "id": "card_63pgbg",
+      "fr": "Je ne peux pas attendre",
+      "target": "Ich kann nicht warten",
+      "lesson": "A4",
+      "index": 118
+    },
+    {
+      "id": "card_3wnl0x",
+      "fr": "Je ne peux pas venir",
+      "target": "Ich kann nicht kommen",
+      "lesson": "A4",
+      "index": 119
+    },
+    {
+      "id": "card_csnsj7",
+      "fr": "Je ne peux pas voir",
+      "target": "Ich kann nicht sehen",
+      "lesson": "A4",
+      "index": 120
+    },
+    {
+      "id": "card_lpcn00",
+      "fr": "Pouvez-vous me dire où est la poste, s'il vous plaît ?",
+      "target": "Können Sie mir bitte sagen, wo die Post ist ?",
+      "lesson": "A4",
+      "index": 121
+    },
+    {
+      "id": "card_1jnoff",
+      "fr": "Pouvez-vous me dire le prix de ..., s'il vous plaît ?",
+      "target": "Können Sie mir bitte sagen, wieviel der ... (die, das) kostet ?",
+      "lesson": "A4",
+      "index": 122
+    },
+    {
+      "id": "card_wlkttw",
+      "fr": "Pouvez-vous parler plus lentement, s'il vous plaît ?",
+      "target": "Können Sie bitte langsamer sprechen ?",
+      "lesson": "A4",
+      "index": 123
+    },
+    {
+      "id": "card_6gbgtp",
+      "fr": "Pouvez-vous ne pas quitter, s'il vous plaît ?",
+      "target": "Können Sie am Apparat bleiben, bitte ?",
+      "lesson": "A4",
+      "index": 124
+    },
+    {
+      "id": "card_y0r9wj",
+      "fr": "Pouvez-vous m'épeler votre nom, s'il vous plaît ?",
+      "target": "Können Sie mir Ihren Namen buchstabieren, bitte ?",
+      "lesson": "A4",
+      "index": 125
+    },
+    {
+      "id": "card_rkoskc",
+      "fr": "Pouvez-vous réparer ?",
+      "target": "Können Sie reparieren ?",
+      "lesson": "A4",
+      "index": 126
+    },
+    {
+      "id": "card_clu1sl",
+      "fr": "Comment puis-je payer ?",
+      "target": "Wie kann ich zahlen ?",
+      "lesson": "A4",
+      "index": 127
+    },
+    {
+      "id": "card_vfordf",
+      "fr": "Je peux avoir de la monnaie ?",
+      "target": "Kann ich Kleingeld haben ?",
+      "lesson": "A4",
+      "index": 128
+    },
+    {
+      "id": "card_mdvt5r",
+      "fr": "Que puis-je pour vous ?",
+      "target": "Was kann ich für Sie tun ?",
+      "lesson": "A4",
+      "index": 129
+    },
+    {
+      "id": "card_14szwn",
+      "fr": "Pouvez-vous appeler la police ?",
+      "target": "Können Sie die Polizei rufen ?",
+      "lesson": "A4",
+      "index": 130
+    },
+    {
+      "id": "card_jam8sw",
+      "fr": "Je n'en peux plus.",
+      "target": "Ich kann nicht mehr.",
+      "lesson": "A4",
+      "index": 131
+    },
+    {
+      "id": "card_ts6tvc",
+      "fr": "Je ne peux pas dormir.",
+      "target": "Ich kann nicht schlafen.",
+      "lesson": "A4",
+      "index": 132
+    },
+    {
+      "id": "card_4c6zo3",
+      "fr": "Je peux téléphoner ?",
+      "target": "Kann ich telefonieren ?",
+      "lesson": "A4",
+      "index": 133
+    },
+    {
+      "id": "card_vhnz7q",
+      "fr": "Puis-je vous être utile ?",
+      "target": "Kann ich helfen ?",
+      "lesson": "A4",
+      "index": 134
+    },
+    {
+      "id": "card_2sai3k",
+      "fr": "Nous ne pouvons pas attendre.",
+      "target": "Wir können nicht warten.",
+      "lesson": "A4",
+      "index": 135
+    },
+    {
+      "id": "card_q2818g",
+      "fr": "Pouvez-vous m'aider ?",
+      "target": "Können Sie mir helfen ?",
+      "lesson": "A4",
+      "index": 136
+    },
+    {
+      "id": "card_dgcs1b",
+      "fr": "Puis-je avoir un programme ?",
+      "target": "Kann ich ein Programm",
+      "lesson": "A4",
+      "index": 137
+    },
+    {
+      "id": "card_jj2yxb",
+      "fr": "Nous pouvons louer une voiture.",
+      "target": "Wir können ein Auto mieten.",
+      "lesson": "A4",
+      "index": 138
+    },
+    {
+      "id": "card_iqa41r",
+      "fr": "Je dois téléphoner",
+      "target": "Ich muß telefonieren",
+      "lesson": "A5",
+      "index": 139
+    },
+    {
+      "id": "card_t7npdm",
+      "fr": "Je dois attendre",
+      "target": "Ich muß warten",
+      "lesson": "A5",
+      "index": 140
+    },
+    {
+      "id": "card_rlkmar",
+      "fr": "Je dois changer la roue",
+      "target": "Ich muß das Rad wechseln",
+      "lesson": "A5",
+      "index": 141
+    },
+    {
+      "id": "card_wtxw97",
+      "fr": "Je dois prendre de l'essence",
+      "target": "Ich muß tanken",
+      "lesson": "A5",
+      "index": 142
+    },
+    {
+      "id": "card_mid0tj",
+      "fr": "Je dois aller chez le médecin",
+      "target": "Ich muß zum Arzt",
+      "lesson": "A5",
+      "index": 143
+    },
+    {
+      "id": "card_54zn1x",
+      "fr": "Je dois aller à la poste",
+      "target": "Ich muß zur Post",
+      "lesson": "A5",
+      "index": 144
+    },
+    {
+      "id": "card_tz10lb",
+      "fr": "Je dois aller à la gare",
+      "target": "Ich muß zum Bahnhof",
+      "lesson": "A5",
+      "index": 145
+    },
+    {
+      "id": "card_3typ2n",
+      "fr": "Je dois réserver une chambre",
+      "target": "Ich muß ein Zimmer reservieren",
+      "lesson": "A5",
+      "index": 146
+    },
+    {
+      "id": "card_vcc8fp",
+      "fr": "Je dois partir",
+      "target": "Ich muß gehen",
+      "lesson": "A5",
+      "index": 147
+    },
+    {
+      "id": "card_4286ny",
+      "fr": "Je dois prendre le train",
+      "target": "Ich muß den Zug nehmen",
+      "lesson": "A5",
+      "index": 148
+    },
+    {
+      "id": "card_6glzf6",
+      "fr": "Je dois prendre le bus",
+      "target": "Ich muß den Bus nehmen",
+      "lesson": "A5",
+      "index": 149
+    },
+    {
+      "id": "card_2fqe2u",
+      "fr": "Je dois impérativement changer de l'argent",
+      "target": "Ich muß unbedingt Geld wechseln",
+      "lesson": "A5",
+      "index": 150
+    },
+    {
+      "id": "card_n0gwn4",
+      "fr": "Il me faut absolument de l'argent liquide",
+      "target": "unbedingt Bargeld haben",
+      "lesson": "A5",
+      "index": 151
+    },
+    {
+      "id": "card_kuse7i",
+      "fr": "Il me faut me rendre à Munich",
+      "target": "nach München",
+      "lesson": "A5",
+      "index": 152
+    },
+    {
+      "id": "card_65g53d",
+      "fr": "Il me faut me dépêcher",
+      "target": "mich beeilen",
+      "lesson": "A5",
+      "index": 153
+    },
+    {
+      "id": "card_8m1px9",
+      "fr": "Il me faut aller à la pharmacie",
+      "target": "in die Apotheke",
+      "lesson": "A5",
+      "index": 154
+    },
+    {
+      "id": "card_kggzm5",
+      "fr": "Il me faut partir ce soir",
+      "target": "heute abend fort",
+      "lesson": "A5",
+      "index": 155
+    },
+    {
+      "id": "card_gimm0p",
+      "fr": "Où dois-je aller ?",
+      "target": "Wohin muß ich gehen ?",
+      "lesson": "A5",
+      "index": 156
+    },
+    {
+      "id": "card_zhueig",
+      "fr": "Je dois l'appeler (lui).",
+      "target": "Ich muß ihn anrufen.",
+      "lesson": "A5",
+      "index": 157
+    },
+    {
+      "id": "card_vgox6o",
+      "fr": "Je dois l'appeler (elle).",
+      "target": "Ich muß sie anrufen.",
+      "lesson": "A5",
+      "index": 158
+    },
+    {
+      "id": "card_na34yl",
+      "fr": "Je dois appeler la police.",
+      "target": "Ich muß die Polizei rufen.",
+      "lesson": "A5",
+      "index": 159
+    },
+    {
+      "id": "card_poh6c8",
+      "fr": "Signez ici.",
+      "target": "Sie müssen hier unterschreiben.",
+      "lesson": "A5",
+      "index": 160
+    },
+    {
+      "id": "card_genlyj",
+      "fr": "Que doit-elle faire ?",
+      "target": "Was muß sie tun ?",
+      "lesson": "A5",
+      "index": 161
+    },
+    {
+      "id": "card_jqtzpi",
+      "fr": "Vous devez aller à la poste.",
+      "target": "Sie müssen/Ihr müßt zur Post.",
+      "lesson": "A5",
+      "index": 162
+    },
+    {
+      "id": "card_iyadys",
+      "fr": "Vous devez vous dépêcher.",
+      "target": "So müssen sich beeilen./ Ihr müßt euch beeilen.",
+      "lesson": "A5",
+      "index": 163
+    },
+    {
+      "id": "card_ufli5u",
+      "fr": "Je voudrais boire",
+      "target": "Ich möchte trinken",
+      "lesson": "A6",
+      "index": 164
+    },
+    {
+      "id": "card_gpnhzv",
+      "fr": "Je voudrais manger",
+      "target": "Ich möchte essen",
+      "lesson": "A6",
+      "index": 165
+    },
+    {
+      "id": "card_5of275",
+      "fr": "Je voudrais un plan de la ville",
+      "target": "Ich möchte einen Stadtplan",
+      "lesson": "A6",
+      "index": 166
+    },
+    {
+      "id": "card_bgqfz7",
+      "fr": "Je voudrais un billet (d'entrée)",
+      "target": "Ich möchte eine Eintrittskarte",
+      "lesson": "A6",
+      "index": 167
+    },
+    {
+      "id": "card_4ut1up",
+      "fr": "Je voudrais téléphoner",
+      "target": "Ich möchte telefonieren/anrufen",
+      "lesson": "A6",
+      "index": 168
+    },
+    {
+      "id": "card_vgqd9a",
+      "fr": "Je voudrais louer une voiture",
+      "target": "Ich möchte ein Auto mieten",
+      "lesson": "A6",
+      "index": 169
+    },
+    {
+      "id": "card_jfejz9",
+      "fr": "Je voudrais une chambre",
+      "target": "Ich möchte ein Zimmer",
+      "lesson": "A6",
+      "index": 170
+    },
+    {
+      "id": "card_r971yu",
+      "fr": "Je voudrais changer de l'argent",
+      "target": "Ich möchte Geld wechseln",
+      "lesson": "A6",
+      "index": 171
+    },
+    {
+      "id": "card_gnzc13",
+      "fr": "Je voudrais ma clé",
+      "target": "Ich möchte meinen Schlüssel",
+      "lesson": "A6",
+      "index": 172
+    },
+    {
+      "id": "card_t1t76g",
+      "fr": "Je voudrais une pellicule",
+      "target": "Ich möchte einen Film",
+      "lesson": "A6",
+      "index": 173
+    },
+    {
+      "id": "card_flxg4t",
+      "fr": "Je voudrais réserver",
+      "target": "Ich möchte reservieren",
+      "lesson": "A6",
+      "index": 174
+    },
+    {
+      "id": "card_sqau7d",
+      "fr": "Je voudrais commander",
+      "target": "Ich möchte bestellen",
+      "lesson": "A6",
+      "index": 175
+    },
+    {
+      "id": "card_kw0u3s",
+      "fr": "Je voudrais une table pour trois",
+      "target": "Ich möchte einen Tisch für drei",
+      "lesson": "A6",
+      "index": 176
+    },
+    {
+      "id": "card_ah64sz",
+      "fr": "Je ne veux pas de sauce",
+      "target": "Ich möchte keine Sauce",
+      "lesson": "A6",
+      "index": 177
+    },
+    {
+      "id": "card_vbw5g3",
+      "fr": "Je ne veux pas manger",
+      "target": "Ich möchte nicht essen",
+      "lesson": "A6",
+      "index": 178
+    },
+    {
+      "id": "card_ireyoa",
+      "fr": "Voulez-vous une autre bière ?",
+      "target": "Möchten Sie noch ein Bier ?",
+      "lesson": "A6",
+      "index": 179
+    },
+    {
+      "id": "card_2s22qs",
+      "fr": "Voulez-vous jouer aux cartes avec nous ?",
+      "target": "Möchten Sie mit uns Karten spielen ?",
+      "lesson": "A6",
+      "index": 180
+    },
+    {
+      "id": "card_9bxhk0",
+      "fr": "Voulez-vous danser ?",
+      "target": "Möchten Sie tanzen ?",
+      "lesson": "A6",
+      "index": 181
+    },
+    {
+      "id": "card_c5uvgd",
+      "fr": "Voulez-vous manger ?",
+      "target": "Möchten Sie essen ?",
+      "lesson": "A6",
+      "index": 182
+    },
+    {
+      "id": "card_pb3b6i",
+      "fr": "Voulez-vous aller au cinéma ?",
+      "target": "Möchten Sie ins Kino ?",
+      "lesson": "A6",
+      "index": 183
+    },
+    {
+      "id": "card_klry6p",
+      "fr": "Voulez-vous du thé ou du café ?",
+      "target": "Möchten Sie Tee oder Kaffee ?",
+      "lesson": "A6",
+      "index": 184
+    },
+    {
+      "id": "card_g16zy0",
+      "fr": "Je n'ai pas envie de sortir.",
+      "target": "Ich möchte nicht ausgehen.",
+      "lesson": "A6",
+      "index": 185
+    },
+    {
+      "id": "card_4zxfua",
+      "fr": "Aimeriez-vous manger ?",
+      "target": "Möchten Sie essen ?",
+      "lesson": "A6",
+      "index": 186
+    },
+    {
+      "id": "card_g9rwni",
+      "fr": "Je voudrais deux cartes postales.",
+      "target": "Ich möchte zwei Postkarten.",
+      "lesson": "A6",
+      "index": 187
+    },
+    {
+      "id": "card_6vkw5o",
+      "fr": "Elle ne voudrait pas de sauce.",
+      "target": "Sie möchte keine Sauce.",
+      "lesson": "A6",
+      "index": 188
+    },
+    {
+      "id": "card_u56tnd",
+      "fr": "Nous aimerions commander",
+      "target": "Wir möchten bestellen.",
+      "lesson": "A6",
+      "index": 189
+    },
+    {
+      "id": "card_pvphyc",
+      "fr": "Aimerais-tu aller au cinéma ?",
+      "target": "Möchtest du ins Kino ?",
+      "lesson": "A6",
+      "index": 190
+    },
+    {
+      "id": "card_19ue1i",
+      "fr": "Amerais-tu manger ?",
+      "target": "Möchtest du essen ?",
+      "lesson": "A6",
+      "index": 191
+    },
+    {
+      "id": "card_udi7o8",
+      "fr": "Nous voudrions une table pour trois.",
+      "target": "Wir möchten sehen Tisch für drei.",
+      "lesson": "A6",
+      "index": 192
+    },
+    {
+      "id": "card_1s9dh0",
+      "fr": "Voudriez-vous commander ?",
+      "target": "Möchten Sie bestellen ?",
+      "lesson": "A6",
+      "index": 193
+    },
+    {
+      "id": "card_x7e4v6",
+      "fr": "Nous voudrions payer.",
+      "target": "Wir möchten sehen",
+      "lesson": "A6",
+      "index": 194
+    },
+    {
+      "id": "card_xc0ab5",
+      "fr": "Il se fait tard.",
+      "target": "Es wird spät.",
+      "lesson": "A7",
+      "index": 195
+    },
+    {
+      "id": "card_2xxxzp",
+      "fr": "C'est l'heure.",
+      "target": "Es wird Zeit.",
+      "lesson": "A7",
+      "index": 196
+    },
+    {
+      "id": "card_froiyh",
+      "fr": "Le temps se rafraîchit.",
+      "target": "Es wird kalt.",
+      "lesson": "A7",
+      "index": 197
+    },
+    {
+      "id": "card_dgcjsl",
+      "fr": "Il va pleuvoir.",
+      "target": "Es wird regnen.",
+      "lesson": "A7",
+      "index": 198
+    },
+    {
+      "id": "card_svb3op",
+      "fr": "Cela commence bientôt.",
+      "target": "Es wird bald beginnen.",
+      "lesson": "A7",
+      "index": 199
+    },
+    {
+      "id": "card_7fq0wz",
+      "fr": "Il va faire beau.",
+      "target": "Es wird schön.",
+      "lesson": "A7",
+      "index": 200
+    },
+    {
+      "id": "card_iso1bz",
+      "fr": "La nuit tombe. / Il commence à faire sombre.",
+      "target": "Es wird dunkel.",
+      "lesson": "A7",
+      "index": 201
+    },
+    {
+      "id": "card_j28arw",
+      "fr": "Je viendrai.",
+      "target": "Ich werde kommen.",
+      "lesson": "A7",
+      "index": 202
+    },
+    {
+      "id": "card_6d0aq0",
+      "fr": "Comment viendrez-vous ?",
+      "target": "Wie werden Sie kommen ?",
+      "lesson": "A7",
+      "index": 203
+    },
+    {
+      "id": "card_abtho3",
+      "fr": "Tu verras bien.",
+      "target": "Du wirst schon sehen.",
+      "lesson": "A7",
+      "index": 204
+    },
+    {
+      "id": "card_7wt9ta",
+      "fr": "Tu téléphoneras.",
+      "target": "Du wirst telefonieren.",
+      "lesson": "A7",
+      "index": 205
+    },
+    {
+      "id": "card_osespf",
+      "fr": "J'ai chaud.",
+      "target": "Mir wird heiß.",
+      "lesson": "A7",
+      "index": 206
+    },
+    {
+      "id": "card_qxnwn6",
+      "fr": "J'ai froid.",
+      "target": "Mir wird kalt.",
+      "lesson": "A7",
+      "index": 207
+    },
+    {
+      "id": "card_9vpqjr",
+      "fr": "Je me sens mal.",
+      "target": "Mir wird schlecht.",
+      "lesson": "A7",
+      "index": 208
+    },
+    {
+      "id": "card_pwkcs4",
+      "fr": "Que joue-t-on au cinéma ?",
+      "target": "Was wird im Kino gespielt ?",
+      "lesson": "A7",
+      "index": 209
+    },
+    {
+      "id": "card_f8dum3",
+      "fr": "Que joue-t-on à l'opéra ?",
+      "target": "Was wird in der Oper gegeben ?",
+      "lesson": "A7",
+      "index": 210
+    },
+    {
+      "id": "card_8u3oo5",
+      "fr": "Où le joue-t-on ?",
+      "target": "Wo wird es gespielt ?",
+      "lesson": "A7",
+      "index": 211
+    },
+    {
+      "id": "card_hju2lf",
+      "fr": "Où joue-t-on le film ?",
+      "target": "Wo wird der Film gegeben ?",
+      "lesson": "A7",
+      "index": 212
+    },
+    {
+      "id": "card_r59r0i",
+      "fr": "C'est pour bientôt ? / Ça vient, oui ou non ?",
+      "target": "Wird's bald ?",
+      "lesson": "A7",
+      "index": 213
+    },
+    {
+      "id": "card_xc0ab5",
+      "fr": "Il se fait tard.",
+      "target": "Es wird spät.",
+      "lesson": "A7",
+      "index": 214
+    },
+    {
+      "id": "card_dgcjsl",
+      "fr": "Il va pleuvoir.",
+      "target": "Es wird regnen.",
+      "lesson": "A7",
+      "index": 215
+    },
+    {
+      "id": "card_osespf",
+      "fr": "J'ai chaud.",
+      "target": "Mir wird heiß.",
+      "lesson": "A7",
+      "index": 216
+    },
+    {
+      "id": "card_uihney",
+      "fr": "Je téléphonerai.",
+      "target": "Ich werde anrufen.",
+      "lesson": "A7",
+      "index": 217
+    },
+    {
+      "id": "card_f8dum3",
+      "fr": "Que joue-t-on à l'Opéra ?",
+      "target": "Was wird in der Oper gegeben ?",
+      "lesson": "A7",
+      "index": 218
+    },
+    {
+      "id": "card_owxngi",
+      "fr": "Quand viendrez-vous ?",
+      "target": "Wann werden Sie kommen ?",
+      "lesson": "A7",
+      "index": 219
+    },
+    {
+      "id": "card_1e5r7a",
+      "fr": "Le film va bientôt commencer.",
+      "target": "Der Film wird bald beginnen.",
+      "lesson": "A7",
+      "index": 220
+    },
+    {
+      "id": "card_9vpqjr",
+      "fr": "Je me sens mal.",
+      "target": "Mir wird schlecht.",
+      "lesson": "A7",
+      "index": 221
+    },
+    {
+      "id": "card_hhhqm",
+      "fr": "Ça vient ?",
+      "target": "Wird's bald ?",
+      "lesson": "A7",
+      "index": 222
+    },
+    {
+      "id": "card_2xxxzp",
+      "fr": "C'est l'heure.",
+      "target": "Es wird Zeit.",
+      "lesson": "A7",
+      "index": 223
+    },
+    {
+      "id": "card_pwkcs4",
+      "fr": "Que joue-t-on au cinéma ?",
+      "target": "Was wird im Kino gespielt ?",
+      "lesson": "A7",
+      "index": 224
+    },
+    {
+      "id": "card_owxngi",
+      "fr": "Quand viendrez-vous ?",
+      "target": "Wann werden Sie kommen ?",
+      "lesson": "A7",
+      "index": 225
+    },
+    {
+      "id": "card_qgny3i",
+      "fr": "Je commence à avoir froid.",
+      "target": "Mir wird schlecht.",
+      "lesson": "A7",
+      "index": 226
+    },
+    {
+      "id": "card_1pedq6",
+      "fr": "Il commence à faire sombre.",
+      "target": "Es wird dunkel.",
+      "lesson": "A7",
+      "index": 227
+    },
+    {
+      "id": "card_9vpqjr",
+      "fr": "Je me sens mal.",
+      "target": "Mir wird schlecht.",
+      "lesson": "A7",
+      "index": 228
+    },
+    {
+      "id": "card_hju2lf",
+      "fr": "Où joue-t-on le film ?",
+      "target": "Wo wird der Film gegeben ?",
+      "lesson": "A7",
+      "index": 229
+    },
+    {
+      "id": "card_y8n0iz",
+      "fr": "Viens !",
+      "target": "Komm !",
+      "lesson": "A8",
+      "index": 230
+    },
+    {
+      "id": "card_tr89bd",
+      "fr": "Venez ! (politesse)",
+      "target": "Kommen Sie !",
+      "lesson": "A8",
+      "index": 231
+    },
+    {
+      "id": "card_lcfi9d",
+      "fr": "Venez par ici ! (politesse)",
+      "target": "Kommen Sie hierher !",
+      "lesson": "A8",
+      "index": 232
+    },
+    {
+      "id": "card_3i69t6",
+      "fr": "Allez là-bas ! (politesse)",
+      "target": "Gehen Sie dorthin !",
+      "lesson": "A8",
+      "index": 233
+    },
+    {
+      "id": "card_2f3evf",
+      "fr": "Allons-y !",
+      "target": "Gehen wir !",
+      "lesson": "A8",
+      "index": 234
+    },
+    {
+      "id": "card_y2ko37",
+      "fr": "Asseyez-vous ! (politesse)",
+      "target": "Setzen Sie sich !",
+      "lesson": "A8",
+      "index": 235
+    },
+    {
+      "id": "card_tn1sbs",
+      "fr": "Prenez place ! (politesse)",
+      "target": "Nehmen Sie bitte Platz !",
+      "lesson": "A8",
+      "index": 236
+    },
+    {
+      "id": "card_k3k9jx",
+      "fr": "Regardez ! (politesse)",
+      "target": "Schauen Sie mal !",
+      "lesson": "A8",
+      "index": 237
+    },
+    {
+      "id": "card_30bfzi",
+      "fr": "Écoutez ! (politesse)",
+      "target": "Hören Sie zu !",
+      "lesson": "A8",
+      "index": 238
+    },
+    {
+      "id": "card_ly40jh",
+      "fr": "Donnez ! (politesse)",
+      "target": "Geben Sie mal !",
+      "lesson": "A8",
+      "index": 239
+    },
+    {
+      "id": "card_zhww76",
+      "fr": "Montrez ! (politesse)",
+      "target": "Zeigen Sie mal !",
+      "lesson": "A8",
+      "index": 240
+    },
+    {
+      "id": "card_tff75a",
+      "fr": "Aidez-moi ! (politesse)",
+      "target": "Helfen Sie mir !",
+      "lesson": "A8",
+      "index": 241
+    },
+    {
+      "id": "card_50pbvo",
+      "fr": "Payez à la caisse, s'il vous plaît ! (politesse)",
+      "target": "Zahlen Sie bitte an der Kasse !",
+      "lesson": "A8",
+      "index": 242
+    },
+    {
+      "id": "card_octk7u",
+      "fr": "Rapporte-moi cela !",
+      "target": "Bring mir das zurück !",
+      "lesson": "A8",
+      "index": 243
+    },
+    {
+      "id": "card_408rfj",
+      "fr": "Ne touchez pas !",
+      "target": "Bitte nicht anfassen !",
+      "lesson": "A8",
+      "index": 244
+    },
+    {
+      "id": "card_iogwsd",
+      "fr": "Répétez, s'il vous plaît ! (politesse)",
+      "target": "Wiederholen Sie, bitte !",
+      "lesson": "A8",
+      "index": 245
+    },
+    {
+      "id": "card_33cwbx",
+      "fr": "Essayez ! (politesse)",
+      "target": "Probieren Sie mal !",
+      "lesson": "A8",
+      "index": 246
+    },
+    {
+      "id": "card_vfaxtt",
+      "fr": "Répondez, s'il vous plaît ! (politesse)",
+      "target": "Antworten Sie, bitte !",
+      "lesson": "A8",
+      "index": 247
+    },
+    {
+      "id": "card_o9mghc",
+      "fr": "Apportez cela !",
+      "target": "Bringen Sie das !",
+      "lesson": "A8",
+      "index": 248
+    },
+    {
+      "id": "card_yrbmm3",
+      "fr": "Montre !",
+      "target": "Zeig mal !",
+      "lesson": "A8",
+      "index": 249
+    },
+    {
+      "id": "card_u4djmo",
+      "fr": "Viens ici !",
+      "target": "Komm hierher !",
+      "lesson": "A8",
+      "index": 250
+    },
+    {
+      "id": "card_e47mg7",
+      "fr": "Taisiez-vous !",
+      "target": "Seien Sie still !",
+      "lesson": "A8",
+      "index": 251
+    },
+    {
+      "id": "card_5whm4g",
+      "fr": "Regarde !",
+      "target": "Schau mal !",
+      "lesson": "A8",
+      "index": 252
+    },
+    {
+      "id": "card_a5b3dv",
+      "fr": "Patientez ! (politesse)",
+      "target": "Warten Sie, bitte !",
+      "lesson": "A8",
+      "index": 253
+    },
+    {
+      "id": "card_ia8ay5",
+      "fr": "Allez-y ! (politesse)",
+      "target": "Gehen Sie !",
+      "lesson": "A8",
+      "index": 254
+    },
+    {
+      "id": "card_y8n0iz",
+      "fr": "Viens !",
+      "target": "Komm mal !",
+      "lesson": "A8",
+      "index": 255
+    },
+    {
+      "id": "card_y4178a",
+      "fr": "Prenez place ! (2° pers.)",
+      "target": "Setzt euch !",
+      "lesson": "A8",
+      "index": 256
+    },
+    {
+      "id": "card_i5f1lo",
+      "fr": "Où est la gare ?",
+      "target": "Wo ist der Bahnhof ?",
+      "lesson": "A9",
+      "index": 257
+    },
+    {
+      "id": "card_sjbho0",
+      "fr": "Où est la poste ?",
+      "target": "Wo ist die Post ?",
+      "lesson": "A9",
+      "index": 258
+    },
+    {
+      "id": "card_6krfz9",
+      "fr": "Où est l'aéroport ?",
+      "target": "Wo ist der Flughafen ?",
+      "lesson": "A9",
+      "index": 259
+    },
+    {
+      "id": "card_9v1iwi",
+      "fr": "Où est le restaurant ?",
+      "target": "Wo ist das Restaurant ?",
+      "lesson": "A9",
+      "index": 260
+    },
+    {
+      "id": "card_exbdjp",
+      "fr": "Où est le commissariat ?",
+      "target": "Wo ist die Polizeiwache ?",
+      "lesson": "A9",
+      "index": 261
+    },
+    {
+      "id": "card_qnz9qk",
+      "fr": "Où est le musée ?",
+      "target": "Wo ist das Museum ?",
+      "lesson": "A9",
+      "index": 262
+    },
+    {
+      "id": "card_9he8ap",
+      "fr": "Où est l'hôpital ?",
+      "target": "Wo ist das Krankenhaus ?",
+      "lesson": "A9",
+      "index": 263
+    },
+    {
+      "id": "card_5sd0g1",
+      "fr": "Où est la banque ?",
+      "target": "Wo ist die Bank ?",
+      "lesson": "A9",
+      "index": 264
+    },
+    {
+      "id": "card_3s5g15",
+      "fr": "Où est la rue x ?",
+      "target": "Wo ist die x Straße ?",
+      "lesson": "A9",
+      "index": 265
+    },
+    {
+      "id": "card_ewjgsf",
+      "fr": "Où est l'arrêt de bus ?",
+      "target": "Wo ist die Bushaltestelle ?",
+      "lesson": "A9",
+      "index": 266
+    },
+    {
+      "id": "card_zdkwqg",
+      "fr": "Où est l'office de tourisme ?",
+      "target": "Wo ist das Verkehrsbüro ?",
+      "lesson": "A9",
+      "index": 267
+    },
+    {
+      "id": "card_mkkhqo",
+      "fr": "Où est ma femme ?",
+      "target": "Wo ist meine Frau ?",
+      "lesson": "A9",
+      "index": 268
+    },
+    {
+      "id": "card_b0z8qw",
+      "fr": "Où est ma chambre ?",
+      "target": "Wo ist mein Zimmer ?",
+      "lesson": "A9",
+      "index": 269
+    },
+    {
+      "id": "card_u6mcdw",
+      "fr": "Où est ma voiture ?",
+      "target": "Wo ist mein Wagen ?",
+      "lesson": "A9",
+      "index": 270
+    },
+    {
+      "id": "card_d35dvb",
+      "fr": "Où est votre hôtel ?",
+      "target": "Wo ist euer/Ihr Hotel ?",
+      "lesson": "A9",
+      "index": 271
+    },
+    {
+      "id": "card_cazps4",
+      "fr": "Où sont vos papiers ?",
+      "target": "Wo sind Ihre Papiere ?",
+      "lesson": "A9",
+      "index": 272
+    },
+    {
+      "id": "card_95jvau",
+      "fr": "Où sont nos amis ?",
+      "target": "Wo sind unsere Freunde ?",
+      "lesson": "A9",
+      "index": 273
+    },
+    {
+      "id": "card_8greqg",
+      "fr": "Où sont nos places ?",
+      "target": "Wo sind unsere Plätze ?",
+      "lesson": "A9",
+      "index": 274
+    },
+    {
+      "id": "card_or8dx9",
+      "fr": "Où sont les billets ?",
+      "target": "Wo sind die Fahrkarten ?",
+      "lesson": "A9",
+      "index": 275
+    },
+    {
+      "id": "card_vg0u27",
+      "fr": "Où sont les toilettes ?",
+      "target": "Wo sind die Toiletten ?",
+      "lesson": "A9",
+      "index": 276
+    },
+    {
+      "id": "card_i58jaa",
+      "fr": "Où est mon billet ?",
+      "target": "Wo ist meine Karte ?",
+      "lesson": "A9",
+      "index": 277
+    },
+    {
+      "id": "card_qhar30",
+      "fr": "Où est mon chéquier ?",
+      "target": "Wo ist mein Scheckbuch/Scheckheft ?",
+      "lesson": "A9",
+      "index": 278
+    },
+    {
+      "id": "card_93c776",
+      "fr": "Où est notre chambre ?",
+      "target": "Wo ist unser Zimmer ?",
+      "lesson": "A9",
+      "index": 279
+    },
+    {
+      "id": "card_b6870s",
+      "fr": "Où est l'hôtel ?",
+      "target": "Wo ist das Hotel ?",
+      "lesson": "A9",
+      "index": 280
+    },
+    {
+      "id": "card_d0l6zj",
+      "fr": "Où est ta chambre ?",
+      "target": "Wo ist dein Zimmer ?",
+      "lesson": "A9",
+      "index": 281
+    },
+    {
+      "id": "card_tgk1bb",
+      "fr": "Où allons-nous ? (en voiture)",
+      "target": "Wohin fahren wir ?",
+      "lesson": "A10",
+      "index": 282
+    },
+    {
+      "id": "card_pvww8c",
+      "fr": "Où vas-tu ?",
+      "target": "Wohin gehst du ?",
+      "lesson": "A10",
+      "index": 283
+    },
+    {
+      "id": "card_mwy9wr",
+      "fr": "Où va ce bus ?",
+      "target": "Wohin fährt der Bus ?",
+      "lesson": "A10",
+      "index": 284
+    },
+    {
+      "id": "card_ms32f1",
+      "fr": "Où aimerais-tu aller ?",
+      "target": "Wohin möchtest du ?",
+      "lesson": "A10",
+      "index": 285
+    },
+    {
+      "id": "card_gimm0p",
+      "fr": "Où dois-je aller ?",
+      "target": "Wohin muß ich gehen ?",
+      "lesson": "A10",
+      "index": 286
+    },
+    {
+      "id": "card_w6xzhg",
+      "fr": "Où envoies-tu le paquet ?",
+      "target": "Wohin schickst du das Paket ?",
+      "lesson": "A10",
+      "index": 287
+    },
+    {
+      "id": "card_k92uwr",
+      "fr": "Où voulez-vous aller ?",
+      "target": "Wohin wollen Sie ?",
+      "lesson": "A10",
+      "index": 288
+    },
+    {
+      "id": "card_jv3xmf",
+      "fr": "Où voulez-vous téléphoner ?",
+      "target": "Wohin wollen Sie telefonieren ?",
+      "lesson": "A10",
+      "index": 289
+    },
+    {
+      "id": "card_9y8o2h",
+      "fr": "D'où venez-vous ?",
+      "target": "Woher kommen Sie ?",
+      "lesson": "A10",
+      "index": 290
+    },
+    {
+      "id": "card_crgses",
+      "fr": "D'où vient le train ?",
+      "target": "Woher kommt der Zug ?",
+      "lesson": "A10",
+      "index": 291
+    },
+    {
+      "id": "card_f5cfn6",
+      "fr": "D'où sais-tu cela ?",
+      "target": "Woher weißt du das ?",
+      "lesson": "A10",
+      "index": 292
+    },
+    {
+      "id": "card_3mqyp9",
+      "fr": "D'où viennent les fleurs ?",
+      "target": "Woher kommen die Blumen ?",
+      "lesson": "A10",
+      "index": 293
+    },
+    {
+      "id": "card_n5t0gc",
+      "fr": "D'où téléphones-tu ?",
+      "target": "Woher telefonierst du ?",
+      "lesson": "A10",
+      "index": 294
+    },
+    {
+      "id": "card_dplug3",
+      "fr": "(à) gauche",
+      "target": "links",
+      "lesson": "A11",
+      "index": 295
+    },
+    {
+      "id": "card_c3l2al",
+      "fr": "(à) droite",
+      "target": "rechts",
+      "lesson": "A11",
+      "index": 296
+    },
+    {
+      "id": "card_ykfqnf",
+      "fr": "dans",
+      "target": "in",
+      "lesson": "A11",
+      "index": 297
+    },
+    {
+      "id": "card_377icf",
+      "fr": "sur",
+      "target": "auf",
+      "lesson": "A11",
+      "index": 298
+    },
+    {
+      "id": "card_cwze4l",
+      "fr": "plus loin",
+      "target": "weiter",
+      "lesson": "A11",
+      "index": 299
+    },
+    {
+      "id": "card_9oz3tr",
+      "fr": "vers la gauche",
+      "target": "nach links",
+      "lesson": "A11",
+      "index": 300
+    },
+    {
+      "id": "card_82ybo9",
+      "fr": "vers la droite",
+      "target": "nach rechts",
+      "lesson": "A11",
+      "index": 301
+    },
+    {
+      "id": "card_jgk0ml",
+      "fr": "tout droit",
+      "target": "geradeaus",
+      "lesson": "A11",
+      "index": 302
+    },
+    {
+      "id": "card_s6fl2i",
+      "fr": "en haut",
+      "target": "oben",
+      "lesson": "A11",
+      "index": 303
+    },
+    {
+      "id": "card_1ar2aa",
+      "fr": "en bas",
+      "target": "unten",
+      "lesson": "A11",
+      "index": 304
+    },
+    {
+      "id": "card_3779h6",
+      "fr": "ici",
+      "target": "hier",
+      "lesson": "A11",
+      "index": 305
+    },
+    {
+      "id": "card_5h4ar8",
+      "fr": "là-bas",
+      "target": "dort",
+      "lesson": "A11",
+      "index": 306
+    },
+    {
+      "id": "card_my6ui2",
+      "fr": "de l'autre côté",
+      "target": "dort drüben",
+      "lesson": "A11",
+      "index": 307
+    },
+    {
+      "id": "card_22kepl",
+      "fr": "devant",
+      "target": "vor",
+      "lesson": "A11",
+      "index": 308
+    },
+    {
+      "id": "card_f30kxm",
+      "fr": "derrière",
+      "target": "hinter",
+      "lesson": "A11",
+      "index": 309
+    },
+    {
+      "id": "card_5siknt",
+      "fr": "à côté",
+      "target": "neben",
+      "lesson": "A11",
+      "index": 310
+    },
+    {
+      "id": "card_49m4hv",
+      "fr": "entre",
+      "target": "zwischen",
+      "lesson": "A11",
+      "index": 311
+    },
+    {
+      "id": "card_s6e153",
+      "fr": "en face",
+      "target": "gegenüber",
+      "lesson": "A11",
+      "index": 312
+    },
+    {
+      "id": "card_hijek5",
+      "fr": "monter l'escalier",
+      "target": "die Treppe hoch !",
+      "lesson": "A11",
+      "index": 313
+    },
+    {
+      "id": "card_u71he4",
+      "fr": "un étage plus bas",
+      "target": "einen Stock tiefer",
+      "lesson": "A11",
+      "index": 314
+    },
+    {
+      "id": "card_17ts10",
+      "fr": "la prochaine rue à gauche",
+      "target": "nächste Straße links",
+      "lesson": "A11",
+      "index": 315
+    },
+    {
+      "id": "card_xlal3p",
+      "fr": "trois rues plus loin",
+      "target": "drei Straßen weiter",
+      "lesson": "A11",
+      "index": 316
+    },
+    {
+      "id": "card_3euzf9",
+      "fr": "traverser le pont",
+      "target": "die Brücke überqueren",
+      "lesson": "A11",
+      "index": 317
+    },
+    {
+      "id": "card_kjflhb",
+      "fr": "passer devant l'hôtel x",
+      "target": "am Hotel x vorbeigehen",
+      "lesson": "A11",
+      "index": 318
+    },
+    {
+      "id": "card_9u6num",
+      "fr": "toujours tout droit",
+      "target": "immer geradeaus",
+      "lesson": "A11",
+      "index": 319
+    },
+    {
+      "id": "card_2pnxxu",
+      "fr": "à gauche du musée",
+      "target": "links vom Museum",
+      "lesson": "A11",
+      "index": 320
+    },
+    {
+      "id": "card_2wc2vz",
+      "fr": "Tout droit.",
+      "target": "Geradeaus.",
+      "lesson": "A11",
+      "index": 321
+    },
+    {
+      "id": "card_wd43zu",
+      "fr": "La prochaine à gauche.",
+      "target": "Nächste Straße links.",
+      "lesson": "A11",
+      "index": 322
+    },
+    {
+      "id": "card_t0xepp",
+      "fr": "À côté du musée.",
+      "target": "Neben dem Museum.",
+      "lesson": "A11",
+      "index": 323
+    },
+    {
+      "id": "card_e8u4rz",
+      "fr": "Derrière la banque.",
+      "target": "Hinter der Bank.",
+      "lesson": "A11",
+      "index": 324
+    },
+    {
+      "id": "card_tftmxp",
+      "fr": "Traverser le pont.",
+      "target": "Die Brücke überqueren.",
+      "lesson": "A11",
+      "index": 325
+    },
+    {
+      "id": "card_20s6be",
+      "fr": "Un étage plus bas.",
+      "target": "Einen Stock tiefer.",
+      "lesson": "A11",
+      "index": 326
+    },
+    {
+      "id": "card_slr5s9",
+      "fr": "Passer devant l'hôtel.",
+      "target": "Am Hotel vorbeigehen.",
+      "lesson": "A11",
+      "index": 327
+    },
+    {
+      "id": "card_eo250n",
+      "fr": "Le musée se trouve ici.",
+      "target": "Hier ist das Museum.",
+      "lesson": "A11",
+      "index": 328
+    },
+    {
+      "id": "card_ny9lyg",
+      "fr": "La banque se trouve là-bas.",
+      "target": "Die Bank ist dort.",
+      "lesson": "A11",
+      "index": 329
+    },
+    {
+      "id": "card_hezimx",
+      "fr": "Vers la droite.",
+      "target": "Nach rechts.",
+      "lesson": "A11",
+      "index": 330
+    },
+    {
+      "id": "card_z9drkj",
+      "fr": "Vers la gauche.",
+      "target": "Nach links.",
+      "lesson": "A11",
+      "index": 331
+    },
+    {
+      "id": "card_9qvwoz",
+      "fr": "Monter l'escalier.",
+      "target": "Die Treppe hoch.",
+      "lesson": "A11",
+      "index": 332
+    },
+    {
+      "id": "card_rqoo10",
+      "fr": "Derrière le musée.",
+      "target": "Hinter dem Museum.",
+      "lesson": "A11",
+      "index": 333
+    },
+    {
+      "id": "card_h54dgp",
+      "fr": "En face du restaurant.",
+      "target": "Gegenüber dem Restaurant.",
+      "lesson": "A11",
+      "index": 334
+    },
+    {
+      "id": "card_uhges4",
+      "fr": "Toujours tout droit.",
+      "target": "Immer geradeaus.",
+      "lesson": "A11",
+      "index": 335
+    },
+    {
+      "id": "card_60e330",
+      "fr": "Sept rues plus loin.",
+      "target": "Sieben Straßen weiter.",
+      "lesson": "A11",
+      "index": 336
+    },
+    {
+      "id": "card_tftmxp",
+      "fr": "Traverser le pont.",
+      "target": "Die Brücke überqueren.",
+      "lesson": "A11",
+      "index": 337
+    },
+    {
+      "id": "card_eipv28",
+      "fr": "La prochaine à droite.",
+      "target": "Nächste Straße rechts.",
+      "lesson": "A11",
+      "index": 338
+    },
+    {
+      "id": "card_3j8p2v",
+      "fr": "Passer devant le musée.",
+      "target": "Am Museum vorbeigehen.",
+      "lesson": "A11",
+      "index": 339
+    },
+    {
+      "id": "card_pnt6xk",
+      "fr": "Isn't der ? Non, là-bas.",
+      "target": "Hier? Nein, dort.",
+      "lesson": "A11",
+      "index": 340
+    },
+    {
+      "id": "card_deqtn3",
+      "fr": "Y a-t-il une auberge de jeunesse ?",
+      "target": "Gibt es eine Jugendherberge ?",
+      "lesson": "A12",
+      "index": 341
+    },
+    {
+      "id": "card_nodt8r",
+      "fr": "Y a-t-il un cinéma ?",
+      "target": "Gibt es ein Kino ?",
+      "lesson": "A12",
+      "index": 342
+    },
+    {
+      "id": "card_8pm99b",
+      "fr": "Y a-t-il un terrain de camping ?",
+      "target": "Gibt es einen Campingplatz ?",
+      "lesson": "A12",
+      "index": 343
+    },
+    {
+      "id": "card_x4awkd",
+      "fr": "Y a-t-il un médecin ?",
+      "target": "Gibt es einen Arzt ?",
+      "lesson": "A12",
+      "index": 344
+    },
+    {
+      "id": "card_833vnp",
+      "fr": "Y a-t-il une banque ?",
+      "target": "Gibt es eine Bank ?",
+      "lesson": "A12",
+      "index": 345
+    },
+    {
+      "id": "card_v0xe38",
+      "fr": "Y a-t-il un bon restaurant ?",
+      "target": "Gibt es ein gutes Restaurant ?",
+      "lesson": "A12",
+      "index": 346
+    },
+    {
+      "id": "card_o5d2jw",
+      "fr": "Y a-t-il un snack ?",
+      "target": "Gibt es eine Imbißstube ?",
+      "lesson": "A12",
+      "index": 347
+    },
+    {
+      "id": "card_4hythl",
+      "fr": "Y a-t-il encore une chambre ?",
+      "target": "Gibt es noch ein Zimmer ?",
+      "lesson": "A12",
+      "index": 348
+    },
+    {
+      "id": "card_dy1pk",
+      "fr": "Y a-t-il encore des billets ?",
+      "target": "Gibt es noch Karten ?",
+      "lesson": "A12",
+      "index": 349
+    },
+    {
+      "id": "card_od2vnc",
+      "fr": "Y a-t-il encore de la place ?",
+      "target": "Gibt es noch Platz ?",
+      "lesson": "A12",
+      "index": 350
+    },
+    {
+      "id": "card_67gpbl",
+      "fr": "Il n'y a pas de boulangerie.",
+      "target": "Es gibt keine Bäckerei.",
+      "lesson": "A12",
+      "index": 351
+    },
+    {
+      "id": "card_rlv41b",
+      "fr": "Il n'y a pas de piscine.",
+      "target": "Es gibt kein Schwimmbad.",
+      "lesson": "A12",
+      "index": 352
+    },
+    {
+      "id": "card_1otd0w",
+      "fr": "Il n'y a pas de parking.",
+      "target": "Es gibt keinen Parkplatz.",
+      "lesson": "A12",
+      "index": 353
+    },
+    {
+      "id": "card_o5xagm",
+      "fr": "Il n'y a plus de chambre.",
+      "target": "Es gibt kein Zimmer mehr.",
+      "lesson": "A12",
+      "index": 354
+    },
+    {
+      "id": "card_f189zg",
+      "fr": "Il n'y a plus de pain.",
+      "target": "Es gibt kein Brot mehr.",
+      "lesson": "A12",
+      "index": 355
+    },
+    {
+      "id": "card_vm0af",
+      "fr": "Il n'y a plus de place.",
+      "target": "Es gibt keinen Platz mehr.",
+      "lesson": "A12",
+      "index": 356
+    },
+    {
+      "id": "card_ac1kco",
+      "fr": "Il y a un supermarché.",
+      "target": "Es gibt einen Supermarkt.",
+      "lesson": "A12",
+      "index": 357
+    },
+    {
+      "id": "card_mxqcis",
+      "fr": "Il y a beaucoup de circulation.",
+      "target": "Es gibt viel Verkehr.",
+      "lesson": "A12",
+      "index": 358
+    },
+    {
+      "id": "card_kzwd2m",
+      "fr": "Il y a beaucoup de monde.",
+      "target": "Es gibt viele Leute.",
+      "lesson": "A12",
+      "index": 359
+    },
+    {
+      "id": "card_w8uo94",
+      "fr": "Y a-t-il un garage x ici ?",
+      "target": "Gibt es hier eine x Werkstatt ?",
+      "lesson": "A12",
+      "index": 360
+    },
+    {
+      "id": "card_czompa",
+      "fr": "Y a-t-il une visite guidée en français ?",
+      "target": "Gibt es eine Führung auf Französisch ?",
+      "lesson": "A12",
+      "index": 361
+    },
+    {
+      "id": "card_x9bd02",
+      "fr": "Y a-t-il un médecin ici ?",
+      "target": "Gibt es einen Arzt hier ?",
+      "lesson": "A12",
+      "index": 362
+    },
+    {
+      "id": "card_gn0bys",
+      "fr": "Il n'y a pas d'auberge de jeunesse.",
+      "target": "Es gibt keine Jugendherberge.",
+      "lesson": "A12",
+      "index": 363
+    },
+    {
+      "id": "card_s1xgvv",
+      "fr": "Il y a beaucoup de bruit.",
+      "target": "Es gibt viel Lärm.",
+      "lesson": "A12",
+      "index": 364
+    },
+    {
+      "id": "card_em14cm",
+      "fr": "J'ai besoin d'argent.",
+      "target": "Ich brauche Geld.",
+      "lesson": "A13",
+      "index": 365
+    },
+    {
+      "id": "card_gsdmj6",
+      "fr": "J'ai besoin de la voiture.",
+      "target": "Ich brauche das Auto.",
+      "lesson": "A13",
+      "index": 366
+    },
+    {
+      "id": "card_7vlyt",
+      "fr": "J'ai besoin d'un médecin.",
+      "target": "Ich brauche einen Arzt.",
+      "lesson": "A13",
+      "index": 367
+    },
+    {
+      "id": "card_iwa2p8",
+      "fr": "J'ai besoin d'aide.",
+      "target": "Ich brauche Hilfe.",
+      "lesson": "A13",
+      "index": 368
+    },
+    {
+      "id": "card_cm8tdl",
+      "fr": "J'ai besoin d'un plan.",
+      "target": "Ich brauche einen Plan.",
+      "lesson": "A13",
+      "index": 369
+    },
+    {
+      "id": "card_79zuz7",
+      "fr": "J'ai besoin de timbres.",
+      "target": "Ich brauche Briefmarken.",
+      "lesson": "A13",
+      "index": 370
+    },
+    {
+      "id": "card_p1sjsk",
+      "fr": "J'ai besoin d'un sachet.",
+      "target": "Ich brauche eine Tüte",
+      "lesson": "A13",
+      "index": 371
+    },
+    {
+      "id": "card_r6tjmm",
+      "fr": "J'ai besoin d'un pull-over.",
+      "target": "Ich brauche einen Pullover",
+      "lesson": "A13",
+      "index": 372
+    },
+    {
+      "id": "card_evw4c6",
+      "fr": "J'ai besoin d'un cachet d'aspirine.",
+      "target": "Ich brauche eine Aspirintablette",
+      "lesson": "A13",
+      "index": 373
+    },
+    {
+      "id": "card_oqup8a",
+      "fr": "Il a besoin d'essence.",
+      "target": "Er braucht Benzin.",
+      "lesson": "A13",
+      "index": 374
+    },
+    {
+      "id": "card_bxlisl",
+      "fr": "Il a besoin de repos.",
+      "target": "Er braucht Ruhe.",
+      "lesson": "A13",
+      "index": 375
+    },
+    {
+      "id": "card_j098j9",
+      "fr": "As-tu besoin de quelque chose ?",
+      "target": "Brauchst du etwas ?",
+      "lesson": "A13",
+      "index": 376
+    },
+    {
+      "id": "card_8ev94n",
+      "fr": "As-tu besoin de tes papiers ?",
+      "target": "Brauchst du deine Papiere ?",
+      "lesson": "A13",
+      "index": 377
+    },
+    {
+      "id": "card_h81xq",
+      "fr": "Avez-vous besoin de cela ?",
+      "target": "Brauchen Sie das ?",
+      "lesson": "A13",
+      "index": 378
+    },
+    {
+      "id": "card_2jnun9",
+      "fr": "Nous avons besoin d'eau.",
+      "target": "Wir brauchen Wasser.",
+      "lesson": "A13",
+      "index": 379
+    },
+    {
+      "id": "card_cjr27j",
+      "fr": "Nous avons besoin de repos.",
+      "target": "Wir brauchen Ruhe.",
+      "lesson": "A13",
+      "index": 380
+    },
+    {
+      "id": "card_jwq5l7",
+      "fr": "Nous n'avons besoin de rien.",
+      "target": "Wir brauchen nichts.",
+      "lesson": "A13",
+      "index": 381
+    },
+    {
+      "id": "card_xn8ylm",
+      "fr": "Ce n'est pas la peine que tu viennes.",
+      "target": "Du brauchst nicht zu kommen.",
+      "lesson": "A13",
+      "index": 382
+    },
+    {
+      "id": "card_8ln0oa",
+      "fr": "Vous faut-il autre chose ?",
+      "target": "Brauchen Sie sonst noch etwas?",
+      "lesson": "A13",
+      "index": 383
+    },
+    {
+      "id": "card_e7e5fg",
+      "fr": "Cela consomme peu (d'électricité).",
+      "target": "Es braucht wenig Strom.",
+      "lesson": "A13",
+      "index": 384
+    },
+    {
+      "id": "card_bakfyt",
+      "fr": "Il a besoin d'argent.",
+      "target": "Er braucht Geld.",
+      "lesson": "A13",
+      "index": 385
+    },
+    {
+      "id": "card_6hv024",
+      "fr": "As-tu besoin d'aide ?",
+      "target": "Brauchst du Hilfe ?",
+      "lesson": "A13",
+      "index": 386
+    },
+    {
+      "id": "card_tnn79d",
+      "fr": "Oui, il me faut un médecin.",
+      "target": "Ja, ich brauche einen Arzt.",
+      "lesson": "A13",
+      "index": 387
+    },
+    {
+      "id": "card_16pnks",
+      "fr": "Il lui faut du repos.",
+      "target": "Er braucht Ruhe.",
+      "lesson": "A13",
+      "index": 388
+    },
+    {
+      "id": "card_ojqnei",
+      "fr": "Vous faut-il de l'eau ?",
+      "target": "Braucht ihr Wasser ?",
+      "lesson": "A13",
+      "index": 389
+    },
+    {
+      "id": "card_8ln0oa",
+      "fr": "Vous faut-il autre chose ?",
+      "target": "Brauchen Sie noch etwas ?",
+      "lesson": "A13",
+      "index": 390
+    },
+    {
+      "id": "card_a52xgx",
+      "fr": "Il te faut tes papiers.",
+      "target": "Du brauchst deine Papiere.",
+      "lesson": "A13",
+      "index": 391
+    },
+    {
+      "id": "card_vrk86o",
+      "fr": "Il lui faut un plan.",
+      "target": "Er/Sie braucht einen Plan.",
+      "lesson": "A13",
+      "index": 392
+    },
+    {
+      "id": "card_re9djc",
+      "fr": "Elle a besoin de repos.",
+      "target": "Sie braucht Ruhe.",
+      "lesson": "A13",
+      "index": 393
+    },
+    {
+      "id": "card_7xl0b5",
+      "fr": "Il nous faut des timbres.",
+      "target": "Wir brauchen Briefmarken.",
+      "lesson": "A13",
+      "index": 394
+    },
+    {
+      "id": "card_q1w2hu",
+      "fr": "Non, nous n'avons besoin de rien.",
+      "target": "Nein, wir brauchen nichts.",
+      "lesson": "A13",
+      "index": 395
+    },
+    {
+      "id": "card_gsdmj6",
+      "fr": "J'ai besoin de la voiture.",
+      "target": "Ich brauche das Auto.",
+      "lesson": "A13",
+      "index": 396
+    },
+    {
+      "id": "card_i9bqcl",
+      "fr": "Avez-vous (politesse) besoin d'aide ?",
+      "target": "Brauchen Sie Hilfe ?",
+      "lesson": "A13",
+      "index": 397
+    },
+    {
+      "id": "card_l091d0",
+      "fr": "Combien d'argent voulez-vous changer ?",
+      "target": "Wieviel Geld möchten Sie wechseln ?",
+      "lesson": "A14",
+      "index": 398
+    },
+    {
+      "id": "card_rhgxpy",
+      "fr": "Combien d'argent liquide avez-vous ?",
+      "target": "Wieviel Bargeld haben Sie ?",
+      "lesson": "A14",
+      "index": 399
+    },
+    {
+      "id": "card_qm3bvb",
+      "fr": "Comment allez-vous ?",
+      "target": "Wie geht es ?",
+      "lesson": "A14",
+      "index": 400
+    },
+    {
+      "id": "card_40m1yn",
+      "fr": "Comment vous appelez-vous ?",
+      "target": "Wie heißen Sie ?",
+      "lesson": "A14",
+      "index": 401
+    },
+    {
+      "id": "card_olxswv",
+      "fr": "Comment cela fonctionne ?",
+      "target": "Wie funktioniert es ?",
+      "lesson": "A14",
+      "index": 402
+    },
+    {
+      "id": "card_1c9c14",
+      "fr": "Comment êtes-vous venus ?",
+      "target": "Wie sind Sie gekommen ?",
+      "lesson": "A14",
+      "index": 403
+    },
+    {
+      "id": "card_1nrnr",
+      "fr": "Quel âge avez-vous ?",
+      "target": "Wie alt sind Sie ?",
+      "lesson": "A14",
+      "index": 404
+    },
+    {
+      "id": "card_y121ru",
+      "fr": "Quel est votre numéro de téléphone ?",
+      "target": "Wie ist Ihre Telefonnummer ?",
+      "lesson": "A14",
+      "index": 405
+    },
+    {
+      "id": "card_qfo37",
+      "fr": "Quelle heure est-il ?",
+      "target": "Wieviel Uhr ist es ?",
+      "lesson": "A14",
+      "index": 406
+    },
+    {
+      "id": "card_27ywof",
+      "fr": "Quelle est votre adresse ?",
+      "target": "Wie ist Ihre Adresse ?",
+      "lesson": "A14",
+      "index": 407
+    },
+    {
+      "id": "card_jhuy8n",
+      "fr": "À quelle distance ?",
+      "target": "Wie weit ist es ?",
+      "lesson": "A14",
+      "index": 408
+    },
+    {
+      "id": "card_2scv8z",
+      "fr": "Combien de temps ?",
+      "target": "Wie lange ?",
+      "lesson": "A14",
+      "index": 409
+    },
+    {
+      "id": "card_5pb37s",
+      "fr": "Pardon ?",
+      "target": "Wie bitte ?",
+      "lesson": "A14",
+      "index": 410
+    },
+    {
+      "id": "card_i890sl",
+      "fr": "À quelle heure ?",
+      "target": "Um wieviel Uhr ?",
+      "lesson": "A14",
+      "index": 411
+    },
+    {
+      "id": "card_ce2u7e",
+      "fr": "Combien de temps restez-vous ?",
+      "target": "Wie lange bleiben Sie ? (bläfchen)",
+      "lesson": "A14",
+      "index": 412
+    },
+    {
+      "id": "card_jspc8r",
+      "fr": "Combien pèse ... ?",
+      "target": "Wie schwer ist ... ?",
+      "lesson": "A14",
+      "index": 413
+    },
+    {
+      "id": "card_fdnpds",
+      "fr": "À quelle distance se trouve la gare ?",
+      "target": "Wie weit ist der Bahnhof ?",
+      "lesson": "A14",
+      "index": 414
+    },
+    {
+      "id": "card_m2uf1w",
+      "fr": "À quelle distance se trouve la poste ?",
+      "target": "Wie weit ist die Post ?",
+      "lesson": "A14",
+      "index": 415
+    },
+    {
+      "id": "card_syee85",
+      "fr": "Comment puis-je aller au centre ?",
+      "target": "Wie komme ich zum Zentrum ? (touum teleitrou)",
+      "lesson": "A14",
+      "index": 416
+    },
+    {
+      "id": "card_p2ehlx",
+      "fr": "Combien de temps cela dure-t-il ?",
+      "target": "Wie lange dauert es ? (dauert)",
+      "lesson": "A14",
+      "index": 417
+    },
+    {
+      "id": "card_itlfor",
+      "fr": "Combien d'enfants avez-vous ?",
+      "target": "Wieviel Kinder haben Sie ?",
+      "lesson": "A14",
+      "index": 418
+    },
+    {
+      "id": "card_qm3bvb",
+      "fr": "Comment allez-vous ?",
+      "target": "Wie geht es ?",
+      "lesson": "A14",
+      "index": 419
+    },
+    {
+      "id": "card_lprd3j",
+      "fr": "Combien ça coûte ?",
+      "target": "Wieviel kostet es ?",
+      "lesson": "A14",
+      "index": 420
+    },
+    {
+      "id": "card_fdnpds",
+      "fr": "À quelle distance se trouve la gare ?",
+      "target": "Wie weit ist der Bahnhof ?",
+      "lesson": "A14",
+      "index": 421
+    },
+    {
+      "id": "card_qfo37",
+      "fr": "Quelle heure est-il ?",
+      "target": "Wieviel Uhr ist es ?",
+      "lesson": "A14",
+      "index": 422
+    },
+    {
+      "id": "card_y5k8qx",
+      "fr": "Comment s'appelle-t-il ?",
+      "target": "Wie heißt er ?",
+      "lesson": "A14",
+      "index": 423
+    },
+    {
+      "id": "card_x84c4z",
+      "fr": "Combien de temps restez-vous ? (politesse)",
+      "target": "Wie lange bleiben Sie ?",
+      "lesson": "A14",
+      "index": 424
+    },
+    {
+      "id": "card_sty88i",
+      "fr": "Comment ça fonctionne ?",
+      "target": "Wie funktioniert es ?",
+      "lesson": "A14",
+      "index": 425
+    },
+    {
+      "id": "card_fkx1tk",
+      "fr": "Quelle est votre adresse ? (politesse)",
+      "target": "Wie ist Ihre Adresse ?",
+      "lesson": "A14",
+      "index": 426
+    },
+    {
+      "id": "card_qm3bvb",
+      "fr": "Comment allez-vous ?",
+      "target": "Wie geht es ?",
+      "lesson": "A14",
+      "index": 427
+    },
+    {
+      "id": "card_5pb37s",
+      "fr": "Pardon ?",
+      "target": "Wie bitte ?",
+      "lesson": "A14",
+      "index": 428
+    },
+    {
+      "id": "card_i890sl",
+      "fr": "À quelle heure ?",
+      "target": "Um wieviel Uhr ?",
+      "lesson": "A14",
+      "index": 429
+    },
+    {
+      "id": "card_y5k8qx",
+      "fr": "Comment s'appelle-t-il ?",
+      "target": "Wie heißt er ?",
+      "lesson": "A14",
+      "index": 430
+    },
+    {
+      "id": "card_demxhp",
+      "fr": "Quel âge as-tu ?",
+      "target": "Wie alt bist du ?",
+      "lesson": "A14",
+      "index": 431
+    },
+    {
+      "id": "card_y5otyl",
+      "fr": "À quelle distance se trouve la poste",
+      "target": "Wie weit ist die Post ?",
+      "lesson": "A14",
+      "index": 432
+    },
+    {
+      "id": "card_2vui31",
+      "fr": "Quand part le train pour ... ?",
+      "target": "Wann ist der Zug nach ... ?",
+      "lesson": "A15",
+      "index": 433
+    },
+    {
+      "id": "card_8u6n3",
+      "fr": "Quand part le bus pour ... ?",
+      "target": "Wann ist der Bus nach ... ?",
+      "lesson": "A15",
+      "index": 434
+    },
+    {
+      "id": "card_6ozf0k",
+      "fr": "Quand pouvez-vous venir ?",
+      "target": "Wann können Sie kommen ?",
+      "lesson": "A15",
+      "index": 435
+    },
+    {
+      "id": "card_hhcv1e",
+      "fr": "Quand puis-je venir ?",
+      "target": "Wann kann ich kommen ?",
+      "lesson": "A15",
+      "index": 436
+    },
+    {
+      "id": "card_a2mpk5",
+      "fr": "Quand la chambre sera-t-elle libre ?",
+      "target": "Wann ist das Zimmer frei ?",
+      "lesson": "A15",
+      "index": 437
+    },
+    {
+      "id": "card_meaiw8",
+      "fr": "Quand le petit déjeuner sera-t-il prêt ?",
+      "target": "Wann ist das Frühstück bereit/fertig ?",
+      "lesson": "A15",
+      "index": 438
+    },
+    {
+      "id": "card_uo41rx",
+      "fr": "Quand commence le concert ?",
+      "target": "Wann beginnt das Konzert ?",
+      "lesson": "A15",
+      "index": 439
+    },
+    {
+      "id": "card_fq49wo",
+      "fr": "Quand commence la représentation ?",
+      "target": "Wann beginnt die Vorstellung ?",
+      "lesson": "A15",
+      "index": 440
+    },
+    {
+      "id": "card_6njzcs",
+      "fr": "Quand le musée est-il ouvert ?",
+      "target": "Wann ist das Museum offen ?",
+      "lesson": "A15",
+      "index": 441
+    },
+    {
+      "id": "card_zc0m4b",
+      "fr": "Quand les magasins sont-ils ouverts ?",
+      "target": "Wann sind die Geschäfte offen ?",
+      "lesson": "A15",
+      "index": 442
+    },
+    {
+      "id": "card_a3s3jp",
+      "fr": "Quand est-ce arrivé ?",
+      "target": "Wann ist es passiert ?",
+      "lesson": "A15",
+      "index": 443
+    },
+    {
+      "id": "card_umyec0",
+      "fr": "Quel est le jour de fermeture ?",
+      "target": "Wann ist Ruhetag ?",
+      "lesson": "A15",
+      "index": 444
+    },
+    {
+      "id": "card_td4ggu",
+      "fr": "À quelle heure est le petit déjeuner ?",
+      "target": "Wann wird gefrühstückt ?",
+      "lesson": "A15",
+      "index": 445
+    },
+    {
+      "id": "card_2rmkpg",
+      "fr": "Depuis quand êtes-vous ici ?",
+      "target": "Seit wann sind Sie hier ?",
+      "lesson": "A15",
+      "index": 446
+    },
+    {
+      "id": "card_4qiyhs",
+      "fr": "Depuis quand attendez-vous ?",
+      "target": "Seit wann warten Sie ?",
+      "lesson": "A15",
+      "index": 447
+    },
+    {
+      "id": "card_r98v9t",
+      "fr": "Depuis quand avez-vous mal ?",
+      "target": "Seit wann haben Sie Schmerzen ?",
+      "lesson": "A15",
+      "index": 448
+    },
+    {
+      "id": "card_qzxccs",
+      "fr": "Jusqu'à quand pouvez-vous rester ?",
+      "target": "Bis wann können Sie bleiben ?",
+      "lesson": "A15",
+      "index": 449
+    },
+    {
+      "id": "card_k01bdq",
+      "fr": "Jusqu'à quand dure la pièce ?",
+      "target": "Bis wann dauert das Stück ?",
+      "lesson": "A15",
+      "index": 450
+    },
+    {
+      "id": "card_w6rw1r",
+      "fr": "Jusqu'à quand êtes-vous ici ?",
+      "target": "Bis wann sind Sie hier ?",
+      "lesson": "A15",
+      "index": 451
+    },
+    {
+      "id": "card_zb33vq",
+      "fr": "Quand ferme le guichet ?",
+      "target": "Wann schließt der Schalter ?",
+      "lesson": "A15",
+      "index": 452
+    },
+    {
+      "id": "card_wbfho9",
+      "fr": "Quand mangeons-nous ?",
+      "target": "Wann essen wir ?",
+      "lesson": "A15",
+      "index": 453
+    },
+    {
+      "id": "card_iwgs2m",
+      "fr": "Depuis quand joue-t-on le film ?",
+      "target": "Seit wann läuft der Film ?",
+      "lesson": "A15",
+      "index": 454
+    },
+    {
+      "id": "card_d7f3ln",
+      "fr": "Depuis quand ça a commencé ?",
+      "target": "Seit wann hat es angefangen ?",
+      "lesson": "A15",
+      "index": 455
+    },
+    {
+      "id": "card_6bzazc",
+      "fr": "Quand viens-tu ?",
+      "target": "Wann kommst du ?",
+      "lesson": "A15",
+      "index": 456
+    },
+    {
+      "id": "card_drcle2",
+      "fr": "Quand partons-nous ?",
+      "target": "Wann fahren wir ?",
+      "lesson": "A15",
+      "index": 457
+    },
+    {
+      "id": "card_i0cwxp",
+      "fr": "Quand commence le film ?",
+      "target": "Wann beginnt der Film ?",
+      "lesson": "A15",
+      "index": 458
+    },
+    {
+      "id": "card_6z1fgl",
+      "fr": "Quand vient-il ?",
+      "target": "Wann kommt er ?",
+      "lesson": "A15",
+      "index": 459
+    },
+    {
+      "id": "card_orj637",
+      "fr": "Quand part le train pour Munich ?",
+      "target": "Wann fährt der Zug nach München ?",
+      "lesson": "A15",
+      "index": 460
+    },
+    {
+      "id": "card_jjba2e",
+      "fr": "Pourquoi venez-vous ?",
+      "target": "Warum kommen Sie ?",
+      "lesson": "A16",
+      "index": 461
+    },
+    {
+      "id": "card_y66qhv",
+      "fr": "Pourquoi téléphones-tu ?",
+      "target": "Warum telefonierst du ?",
+      "lesson": "A16",
+      "index": 462
+    },
+    {
+      "id": "card_f9pbbh",
+      "fr": "Pourquoi êtes-vous ici ?",
+      "target": "Warum sind Sie hier ?",
+      "lesson": "A16",
+      "index": 463
+    },
+    {
+      "id": "card_7odzm8",
+      "fr": "Pourquoi dites-vous cela ?",
+      "target": "Warum sagen Sie das ?",
+      "lesson": "A16",
+      "index": 464
+    },
+    {
+      "id": "card_abohpv",
+      "fr": "Pourquoi faites-vous cela ?",
+      "target": "Warum tun/machen Sie das ?",
+      "lesson": "A16",
+      "index": 465
+    },
+    {
+      "id": "card_p7pa5v",
+      "fr": "Pourquoi achètes-tu cela ?",
+      "target": "Warum kaufst du das ?",
+      "lesson": "A16",
+      "index": 466
+    },
+    {
+      "id": "card_4o0fh",
+      "fr": "Pourquoi écris-tu cela ?",
+      "target": "Warum schreibst du das ?",
+      "lesson": "A16",
+      "index": 467
+    },
+    {
+      "id": "card_5fu9ku",
+      "fr": "Pourquoi laisses-tu la voiture ici ?",
+      "target": "Warum läßt du das Auto hier ?",
+      "lesson": "A16",
+      "index": 468
+    },
+    {
+      "id": "card_vh1oty",
+      "fr": "Pourquoi attendez-vous ici ?",
+      "target": "Warum warten Sie hier ?",
+      "lesson": "A16",
+      "index": 469
+    },
+    {
+      "id": "card_4go9qx",
+      "fr": "Pourquoi prends-tu le train ?",
+      "target": "Warum nimmst du den Zug ?",
+      "lesson": "A16",
+      "index": 470
+    },
+    {
+      "id": "card_k9occx",
+      "fr": "Pourquoi vas-tu à la banque ?",
+      "target": "Warum gehst du zur Bank ?",
+      "lesson": "A16",
+      "index": 471
+    },
+    {
+      "id": "card_eojpa9",
+      "fr": "Pourquoi demandez-vous cela ?",
+      "target": "Warum fragen Sie das ?",
+      "lesson": "A16",
+      "index": 472
+    },
+    {
+      "id": "card_g90n4g",
+      "fr": "Pourquoi te faut-il de l'argent ?",
+      "target": "Warum brauchst du Geld ?",
+      "lesson": "A16",
+      "index": 473
+    },
+    {
+      "id": "card_i9vstg",
+      "fr": "Pourquoi vous faut-il cela?",
+      "target": "Wozu brauchen Sie das?",
+      "lesson": "A16",
+      "index": 474
+    },
+    {
+      "id": "card_klq79v",
+      "fr": "Pourquoi dis-tu cela?",
+      "target": "Wozu sagst du das?",
+      "lesson": "A16",
+      "index": 475
+    },
+    {
+      "id": "card_8le0fw",
+      "fr": "Pourquoi ne répondez-vous pas?",
+      "target": "Warum antworten Sie nicht?",
+      "lesson": "A16",
+      "index": 476
+    },
+    {
+      "id": "card_9hx144",
+      "fr": "Pourquoi laisse-t-il la voiture ici ?",
+      "target": "Warum läßt er das Auto hier ?",
+      "lesson": "A16",
+      "index": 477
+    },
+    {
+      "id": "card_ix5mpd",
+      "fr": "Parce qu'elle est cassée.",
+      "target": "Weil es kaputt ist.",
+      "lesson": "A16",
+      "index": 478
+    },
+    {
+      "id": "card_4go9qx",
+      "fr": "Pourquoi prends-tu le train ?",
+      "target": "Warum nimmst du den Zug ?",
+      "lesson": "A16",
+      "index": 479
+    },
+    {
+      "id": "card_g90n4g",
+      "fr": "Pourquoi te faut-il de l'argent ?",
+      "target": "Wozu brauchst du Geld ?",
+      "lesson": "A16",
+      "index": 480
+    },
+    {
+      "id": "card_8h8gc6",
+      "fr": "Pourquoi fais-tu cela ?",
+      "target": "Warum machst du das ?",
+      "lesson": "A16",
+      "index": 481
+    },
+    {
+      "id": "card_p7pa5v",
+      "fr": "Pourquoi achètes-tu cela ?",
+      "target": "Warum kaufst du das ?",
+      "lesson": "A16",
+      "index": 482
+    },
+    {
+      "id": "card_1q7tq2",
+      "fr": "jamais",
+      "target": "nie",
+      "lesson": "A17",
+      "index": 483
+    },
+    {
+      "id": "card_pmth5z",
+      "fr": "souvent",
+      "target": "oft",
+      "lesson": "A17",
+      "index": 484
+    },
+    {
+      "id": "card_rt2ztz",
+      "fr": "parfois",
+      "target": "manchmal",
+      "lesson": "A17",
+      "index": 485
+    },
+    {
+      "id": "card_qvd00",
+      "fr": "toujours",
+      "target": "immer",
+      "lesson": "A17",
+      "index": 486
+    },
+    {
+      "id": "card_x96pfj",
+      "fr": "bientôt",
+      "target": "bald",
+      "lesson": "A17",
+      "index": 487
+    },
+    {
+      "id": "card_9duxtg",
+      "fr": "maintenant",
+      "target": "jetzt / nun",
+      "lesson": "A17",
+      "index": 488
+    },
+    {
+      "id": "card_cwtju4",
+      "fr": "plus tard",
+      "target": "später",
+      "lesson": "A17",
+      "index": 489
+    },
+    {
+      "id": "card_x4meri",
+      "fr": "une fois",
+      "target": "einmal",
+      "lesson": "A17",
+      "index": 490
+    },
+    {
+      "id": "card_5tyz4i",
+      "fr": "plutôt",
+      "target": "lieber",
+      "lesson": "A17",
+      "index": 491
+    },
+    {
+      "id": "card_4f59u5",
+      "fr": "mieux",
+      "target": "besser",
+      "lesson": "A17",
+      "index": 492
+    },
+    {
+      "id": "card_muhsi1",
+      "fr": "seulement",
+      "target": "nur",
+      "lesson": "A17",
+      "index": 493
+    },
+    {
+      "id": "card_46xtje",
+      "fr": "aussi",
+      "target": "auch",
+      "lesson": "A17",
+      "index": 494
+    },
+    {
+      "id": "card_19b533",
+      "fr": "encore",
+      "target": "noch",
+      "lesson": "A17",
+      "index": 495
+    },
+    {
+      "id": "card_ykp8tl",
+      "fr": "plus",
+      "target": "mehr",
+      "lesson": "A17",
+      "index": 496
+    },
+    {
+      "id": "card_46w9qj",
+      "fr": "assez",
+      "target": "genug",
+      "lesson": "A17",
+      "index": 497
+    },
+    {
+      "id": "card_smdls4",
+      "fr": "bien, volontiers",
+      "target": "gern",
+      "lesson": "A17",
+      "index": 498
+    },
+    {
+      "id": "card_ceyfzm",
+      "fr": "bien, bon",
+      "target": "gut",
+      "lesson": "A17",
+      "index": 499
+    },
+    {
+      "id": "card_ks8lyd",
+      "fr": "mauvais",
+      "target": "schlecht",
+      "lesson": "A17",
+      "index": 500
+    },
+    {
+      "id": "card_x63kwo",
+      "fr": "d'abord",
+      "target": "erst",
+      "lesson": "A17",
+      "index": 501
+    },
+    {
+      "id": "card_ttbif6",
+      "fr": "ensuite",
+      "target": "dann",
+      "lesson": "A17",
+      "index": 502
+    },
+    {
+      "id": "card_nr1njw",
+      "fr": "tout à fait, entièrement",
+      "target": "ganz",
+      "lesson": "A17",
+      "index": 503
+    },
+    {
+      "id": "card_yktsn1",
+      "fr": "vite",
+      "target": "schnell",
+      "lesson": "A17",
+      "index": 504
+    },
+    {
+      "id": "card_wremgh",
+      "fr": "lentement",
+      "target": "langsam",
+      "lesson": "A17",
+      "index": 505
+    },
+    {
+      "id": "card_b2spz2",
+      "fr": "sûrement",
+      "target": "sicher",
+      "lesson": "A17",
+      "index": 506
+    },
+    {
+      "id": "card_qemvvp",
+      "fr": "peut-être",
+      "target": "vielleicht",
+      "lesson": "A17",
+      "index": 507
+    },
+    {
+      "id": "card_f38hh5",
+      "fr": "beaucoup",
+      "target": "sehr",
+      "lesson": "A17",
+      "index": 508
+    },
+    {
+      "id": "card_4pmjhz",
+      "fr": "si, tellement",
+      "target": "so",
+      "lesson": "A17",
+      "index": 509
+    },
+    {
+      "id": "card_f38hh5",
+      "fr": "beaucoup",
+      "target": "viel",
+      "lesson": "A17",
+      "index": 510
+    },
+    {
+      "id": "card_377ff3",
+      "fr": "peu",
+      "target": "wenig",
+      "lesson": "A17",
+      "index": 511
+    },
+    {
+      "id": "card_bsqiaz",
+      "fr": "encore (une nouvelle fois)",
+      "target": "wieder",
+      "lesson": "A17",
+      "index": 512
+    },
+    {
+      "id": "card_yksgmi",
+      "fr": "trop",
+      "target": "zu / zu viel",
+      "lesson": "A17",
+      "index": 513
+    },
+    {
+      "id": "card_4jdzm4",
+      "fr": "sinon",
+      "target": "sonst",
+      "lesson": "A17",
+      "index": 514
+    },
+    {
+      "id": "card_tv6qau",
+      "fr": "environ",
+      "target": "etwa",
+      "lesson": "A17",
+      "index": 515
+    },
+    {
+      "id": "card_jx0k22",
+      "fr": "Je préfère aller à l'hôtel.",
+      "target": "Ich gehe lieber ins Hotel.",
+      "lesson": "A17",
+      "index": 516
+    },
+    {
+      "id": "card_wj2u9c",
+      "fr": "Il nous accompagne volontiers.",
+      "target": "Er kommt gern mit.",
+      "lesson": "A17",
+      "index": 517
+    },
+    {
+      "id": "card_fbm95r",
+      "fr": "Faites vite, s'il vous plaît!",
+      "target": "Machen Sie bitte schnell!",
+      "lesson": "A17",
+      "index": 518
+    },
+    {
+      "id": "card_buylrf",
+      "fr": "Désirez-vous autre chose?",
+      "target": "Wünschen Sie noch etwas?",
+      "lesson": "A17",
+      "index": 519
+    },
+    {
+      "id": "card_4svdus",
+      "fr": "Il préfère aller à l'hôtel.",
+      "target": "Er geht lieber ins Hotel.",
+      "lesson": "A17",
+      "index": 520
+    },
+    {
+      "id": "card_q6f2c",
+      "fr": "Il ne téléphone jamais.",
+      "target": "Er telefoniert nie.",
+      "lesson": "A17",
+      "index": 521
+    },
+    {
+      "id": "card_iiebtq",
+      "fr": "Il vient souvent.",
+      "target": "Er kommt oft.",
+      "lesson": "A17",
+      "index": 522
+    },
+    {
+      "id": "card_57mcnf",
+      "fr": "C'est beaucoup trop!",
+      "target": "Es ist viel zuviel!",
+      "lesson": "A17",
+      "index": 523
+    },
+    {
+      "id": "card_udyb7m",
+      "fr": "Cela coûte environ 10 euros.",
+      "target": "Es kostet etwa 10 Euro.",
+      "lesson": "A17",
+      "index": 524
+    },
+    {
+      "id": "card_xye1zt",
+      "fr": "0 zéro",
+      "target": "0 null",
+      "lesson": "A18",
+      "index": 525
+    },
+    {
+      "id": "card_yjay0p",
+      "fr": "1 un",
+      "target": "1 eins",
+      "lesson": "A18",
+      "index": 526
+    },
+    {
+      "id": "card_z8fn8t",
+      "fr": "2 deux",
+      "target": "2 zwei",
+      "lesson": "A18",
+      "index": 527
+    },
+    {
+      "id": "card_n43fav",
+      "fr": "3 trois",
+      "target": "3 drei",
+      "lesson": "A18",
+      "index": 528
+    },
+    {
+      "id": "card_b7th63",
+      "fr": "4 quatre",
+      "target": "4 vier",
+      "lesson": "A18",
+      "index": 529
+    },
+    {
+      "id": "card_xuso3f",
+      "fr": "5 cinq",
+      "target": "5 fünf",
+      "lesson": "A18",
+      "index": 530
+    },
+    {
+      "id": "card_3arcmn",
+      "fr": "6 six",
+      "target": "6 sechs",
+      "lesson": "A18",
+      "index": 531
+    },
+    {
+      "id": "card_wjutm0",
+      "fr": "7 sept",
+      "target": "7 sieben",
+      "lesson": "A18",
+      "index": 532
+    },
+    {
+      "id": "card_vws4ax",
+      "fr": "8 huit",
+      "target": "8 acht",
+      "lesson": "A18",
+      "index": 533
+    },
+    {
+      "id": "card_v9d20k",
+      "fr": "9 neuf",
+      "target": "9 neun",
+      "lesson": "A18",
+      "index": 534
+    },
+    {
+      "id": "card_yuz4gb",
+      "fr": "10 dix",
+      "target": "10 zehn",
+      "lesson": "A18",
+      "index": 535
+    },
+    {
+      "id": "card_ejxlr7",
+      "fr": "11 onze",
+      "target": "11 elf",
+      "lesson": "A18",
+      "index": 536
+    },
+    {
+      "id": "card_4769m7",
+      "fr": "12 douze",
+      "target": "12 zwölf",
+      "lesson": "A18",
+      "index": 537
+    },
+    {
+      "id": "card_1fvrjw",
+      "fr": "13 treize",
+      "target": "13 dreizehn",
+      "lesson": "A18",
+      "index": 538
+    },
+    {
+      "id": "card_ezcuv9",
+      "fr": "14 quatorze",
+      "target": "14 vierzehn",
+      "lesson": "A18",
+      "index": 539
+    },
+    {
+      "id": "card_be80pl",
+      "fr": "15 quinze",
+      "target": "15 fünfzehn",
+      "lesson": "A18",
+      "index": 540
+    },
+    {
+      "id": "card_iw22gc",
+      "fr": "16 seize",
+      "target": "16 sechzehn",
+      "lesson": "A18",
+      "index": 541
+    },
+    {
+      "id": "card_b6o4kl",
+      "fr": "17 dix-sept",
+      "target": "17 siebzehn",
+      "lesson": "A18",
+      "index": 542
+    },
+    {
+      "id": "card_a2j0g6",
+      "fr": "18 dix-huit",
+      "target": "18 achtzehn",
+      "lesson": "A18",
+      "index": 543
+    },
+    {
+      "id": "card_8y1jch",
+      "fr": "19 dix-neuf",
+      "target": "19 neunzehn",
+      "lesson": "A18",
+      "index": 544
+    },
+    {
+      "id": "card_rdud67",
+      "fr": "20 vingt",
+      "target": "20 zwanzig",
+      "lesson": "A18",
+      "index": 545
+    },
+    {
+      "id": "card_qcy3kc",
+      "fr": "21 vingt et un",
+      "target": "21 einundzwanzig",
+      "lesson": "A18",
+      "index": 546
+    },
+    {
+      "id": "card_peau50",
+      "fr": "22 vingt-deux",
+      "target": "22 zweiundzwanzig",
+      "lesson": "A18",
+      "index": 547
+    },
+    {
+      "id": "card_82yy34",
+      "fr": "23 vingt-trois",
+      "target": "23 dreiundzwanzig",
+      "lesson": "A18",
+      "index": 548
+    },
+    {
+      "id": "card_bhhfyy",
+      "fr": "30 trente",
+      "target": "30 dreißig",
+      "lesson": "A18",
+      "index": 549
+    },
+    {
+      "id": "card_klp6l2",
+      "fr": "40 quarante",
+      "target": "40 vierzig",
+      "lesson": "A18",
+      "index": 550
+    },
+    {
+      "id": "card_5o8sk2",
+      "fr": "50 cinquante",
+      "target": "50 fünfzig",
+      "lesson": "A18",
+      "index": 551
+    },
+    {
+      "id": "card_9dkdl6",
+      "fr": "60 soixante",
+      "target": "60 sechzig",
+      "lesson": "A18",
+      "index": 552
+    },
+    {
+      "id": "card_wzn7u1",
+      "fr": "70 soixante-dix",
+      "target": "70 siebzig",
+      "lesson": "A18",
+      "index": 553
+    },
+    {
+      "id": "card_5his61",
+      "fr": "80 quatre-vingts",
+      "target": "80 achtzig",
+      "lesson": "A18",
+      "index": 554
+    },
+    {
+      "id": "card_g9w2mx",
+      "fr": "90 quatre-vingt-dix",
+      "target": "90 neunzig",
+      "lesson": "A18",
+      "index": 555
+    },
+    {
+      "id": "card_ti468w",
+      "fr": "100 cent",
+      "target": "100 hundert",
+      "lesson": "A18",
+      "index": 556
+    },
+    {
+      "id": "card_izst0q",
+      "fr": "200 deux cents",
+      "target": "200 zweihundert",
+      "lesson": "A18",
+      "index": 557
+    },
+    {
+      "id": "card_awzpev",
+      "fr": "1 000 mille",
+      "target": "1 000 tausend",
+      "lesson": "A18",
+      "index": 558
+    },
+    {
+      "id": "card_kwwvzk",
+      "fr": "2 000 deux mille",
+      "target": "2 000 zweitausend",
+      "lesson": "A18",
+      "index": 559
+    },
+    {
+      "id": "card_wl6ixi",
+      "fr": "37 trente-sept",
+      "target": "37 siebenunddreißig",
+      "lesson": "A18",
+      "index": 560
+    },
+    {
+      "id": "card_pqjspl",
+      "fr": "45 quarante-cinq",
+      "target": "45 fünfundvierzig",
+      "lesson": "A18",
+      "index": 561
+    },
+    {
+      "id": "card_jlun7q",
+      "fr": "73 soixante-treize",
+      "target": "73 dreiundsiebzig",
+      "lesson": "A18",
+      "index": 562
+    },
+    {
+      "id": "card_6slgdt",
+      "fr": "85 quatre-vingt-cinq",
+      "target": "85 fünfundachzig",
+      "lesson": "A18",
+      "index": 563
+    },
+    {
+      "id": "card_ulgneo",
+      "fr": "114 cent quatorze",
+      "target": "114 hundertvierzehn",
+      "lesson": "A18",
+      "index": 564
+    },
+    {
+      "id": "card_gixw08",
+      "fr": "340 trois cent quarante",
+      "target": "340 dreihundertvierzig",
+      "lesson": "A18",
+      "index": 565
+    },
+    {
+      "id": "card_37jnlh",
+      "fr": "11,20",
+      "target": "elf Komma zwanzig",
+      "lesson": "A18",
+      "index": 566
+    },
+    {
+      "id": "card_yjc0z0",
+      "fr": "20 %",
+      "target": "zwanzig Prozent",
+      "lesson": "A18",
+      "index": 567
+    },
+    {
+      "id": "card_1zhp9s",
+      "fr": "calculer",
+      "target": "rechnen",
+      "lesson": "A18",
+      "index": 568
+    },
+    {
+      "id": "card_1r6sy1",
+      "fr": "13 + 46 = 59",
+      "target": "dreizehn und sechsundvierzig ist neunundfünfzig",
+      "lesson": "A18",
+      "index": 569
+    },
+    {
+      "id": "card_j9k6ch",
+      "fr": "27 - 12 = 15",
+      "target": "siebenundzwanzig weniger zwölf ist fünfzehn",
+      "lesson": "A18",
+      "index": 570
+    },
+    {
+      "id": "card_csp9x2",
+      "fr": "14 × 8 = 112",
+      "target": "vierzehn mal acht ist hundertzwölf",
+      "lesson": "A18",
+      "index": 571
+    },
+    {
+      "id": "card_48xi7g",
+      "fr": "douze",
+      "target": "zwölf",
+      "lesson": "A18",
+      "index": 572
+    },
+    {
+      "id": "card_19y08g",
+      "fr": "soixante",
+      "target": "sechzig",
+      "lesson": "A18",
+      "index": 573
+    },
+    {
+      "id": "card_ykja8v",
+      "fr": "huit",
+      "target": "acht",
+      "lesson": "A18",
+      "index": 574
+    },
+    {
+      "id": "card_t0avow",
+      "fr": "vingt-deux",
+      "target": "zweiundzwanzig",
+      "lesson": "A18",
+      "index": 575
+    },
+    {
+      "id": "card_ynxtp2",
+      "fr": "cent quatorze",
+      "target": "hundertvierzehn",
+      "lesson": "A18",
+      "index": 576
+    },
+    {
+      "id": "card_q4riif",
+      "fr": "quarante-deux",
+      "target": "zweiundvierzig",
+      "lesson": "A18",
+      "index": 577
+    },
+    {
+      "id": "card_6gedrt",
+      "fr": "quatre-vingt-dix-neuf",
+      "target": "neunundneunzig",
+      "lesson": "A18",
+      "index": 578
+    },
+    {
+      "id": "card_nwl4d1",
+      "fr": "sept cent dix-neuf",
+      "target": "siebenhundertneunzehn",
+      "lesson": "A18",
+      "index": 579
+    },
+    {
+      "id": "card_8esf9b",
+      "fr": "trois cent quarante",
+      "target": "dreihundertvierzig",
+      "lesson": "A18",
+      "index": 580
+    },
+    {
+      "id": "card_ykf5n4",
+      "fr": "cinq",
+      "target": "fünf",
+      "lesson": "A18",
+      "index": 581
+    },
+    {
+      "id": "card_t0avow",
+      "fr": "vingt-deux",
+      "target": "zweiundzwanzig",
+      "lesson": "A18",
+      "index": 582
+    },
+    {
+      "id": "card_w313sw",
+      "fr": "cent trois",
+      "target": "hundertdrei",
+      "lesson": "A18",
+      "index": 583
+    },
+    {
+      "id": "card_yr63u4",
+      "fr": "quatre cent cinq",
+      "target": "vierhundertfünf",
+      "lesson": "A18",
+      "index": 584
+    },
+    {
+      "id": "card_la4mv5",
+      "fr": "deux cent onze",
+      "target": "zweihundertelf",
+      "lesson": "A18",
+      "index": 585
+    },
+    {
+      "id": "card_4jasrp",
+      "fr": "seize",
+      "target": "sechzehn",
+      "lesson": "A18",
+      "index": 586
+    },
+    {
+      "id": "card_8j25rr",
+      "fr": "trente",
+      "target": "dreißig",
+      "lesson": "A18",
+      "index": 587
+    },
+    {
+      "id": "card_8zrfn0",
+      "fr": "deux mille cent soixante-quinze",
+      "target": "zweitausendhundertfünfundsiebzig",
+      "lesson": "A18",
+      "index": 588
+    },
+    {
+      "id": "card_j19b62",
+      "fr": "cinquante-sept",
+      "target": "siebenundfünfzig",
+      "lesson": "A18",
+      "index": 589
+    },
+    {
+      "id": "card_yknjgz",
+      "fr": "neuf",
+      "target": "neun",
+      "lesson": "A18",
+      "index": 590
+    },
+    {
+      "id": "card_q2y3o3",
+      "fr": "soixante-deux",
+      "target": "zweiundsechzig",
+      "lesson": "A18",
+      "index": 591
+    },
+    {
+      "id": "card_ogxw2n",
+      "fr": "la quantité",
+      "target": "die Menge",
+      "lesson": "A19",
+      "index": 592
+    },
+    {
+      "id": "card_at0sx6",
+      "fr": "le mètre",
+      "target": "das / der Meter",
+      "lesson": "A19",
+      "index": 593
+    },
+    {
+      "id": "card_g2jamd",
+      "fr": "le kilomètre",
+      "target": "das / der Kilometer",
+      "lesson": "A19",
+      "index": 594
+    },
+    {
+      "id": "card_e8o387",
+      "fr": "le centimètre",
+      "target": "das / der Zentimeter",
+      "lesson": "A19",
+      "index": 595
+    },
+    {
+      "id": "card_tsx6o5",
+      "fr": "le kilo",
+      "target": "das Kilo",
+      "lesson": "A19",
+      "index": 596
+    },
+    {
+      "id": "card_payi6k",
+      "fr": "la livre",
+      "target": "das Pfund",
+      "lesson": "A19",
+      "index": 597
+    },
+    {
+      "id": "card_7np71t",
+      "fr": "le gramme",
+      "target": "das Gramm",
+      "lesson": "A19",
+      "index": 598
+    },
+    {
+      "id": "card_awg1l6",
+      "fr": "le litre",
+      "target": "das / der Liter",
+      "lesson": "A19",
+      "index": 599
+    },
+    {
+      "id": "card_fvgaiq",
+      "fr": "le morceau",
+      "target": "das Stück",
+      "lesson": "A19",
+      "index": 600
+    },
+    {
+      "id": "card_wq8bqs",
+      "fr": "un morceau",
+      "target": "ein Stück",
+      "lesson": "A19",
+      "index": 601
+    },
+    {
+      "id": "card_49cm3h",
+      "fr": "quelques-uns",
+      "target": "einige / ein Paar",
+      "lesson": "A19",
+      "index": 602
+    },
+    {
+      "id": "card_rym41q",
+      "fr": "une paire",
+      "target": "ein Paar",
+      "lesson": "A19",
+      "index": 603
+    },
+    {
+      "id": "card_i2zcm5",
+      "fr": "la moitié",
+      "target": "die Hälfte",
+      "lesson": "A19",
+      "index": 604
+    },
+    {
+      "id": "card_aso5h9",
+      "fr": "le quart",
+      "target": "das Viertel",
+      "lesson": "A19",
+      "index": 605
+    },
+    {
+      "id": "card_5jtteo",
+      "fr": "un et demi",
+      "target": "eineinhalb / anderthalb",
+      "lesson": "A19",
+      "index": 606
+    },
+    {
+      "id": "card_s1g0q5",
+      "fr": "une tasse",
+      "target": "eine Tasse",
+      "lesson": "A19",
+      "index": 607
+    },
+    {
+      "id": "card_l87626",
+      "fr": "deux tasses",
+      "target": "zwei Tassen",
+      "lesson": "A19",
+      "index": 608
+    },
+    {
+      "id": "card_9ue05w",
+      "fr": "un verre",
+      "target": "ein Glas",
+      "lesson": "A19",
+      "index": 609
+    },
+    {
+      "id": "card_6q9ww5",
+      "fr": "deux verres de bière",
+      "target": "zwei Glas Bier",
+      "lesson": "A19",
+      "index": 610
+    },
+    {
+      "id": "card_nnnc8n",
+      "fr": "la bouteille",
+      "target": "die Flasche",
+      "lesson": "A19",
+      "index": 611
+    },
+    {
+      "id": "card_2sh5e9",
+      "fr": "la douzaine",
+      "target": "das Dutzend",
+      "lesson": "A19",
+      "index": 612
+    },
+    {
+      "id": "card_bol1i5",
+      "fr": "la demi-douzaine",
+      "target": "das Halbdutzend",
+      "lesson": "A19",
+      "index": 613
+    },
+    {
+      "id": "card_f38hh5",
+      "fr": "beaucoup",
+      "target": "viel / viele",
+      "lesson": "A19",
+      "index": 614
+    },
+    {
+      "id": "card_gvdsu1",
+      "fr": "quelque chose",
+      "target": "etwas",
+      "lesson": "A19",
+      "index": 615
+    },
+    {
+      "id": "card_qexofv",
+      "fr": "un peu de",
+      "target": "ein wenig",
+      "lesson": "A19",
+      "index": 616
+    },
+    {
+      "id": "card_pht9jq",
+      "fr": "la boîte",
+      "target": "die Schachtel",
+      "lesson": "A19",
+      "index": 617
+    },
+    {
+      "id": "card_ctbbku",
+      "fr": "une boîte de camembert",
+      "target": "eine Schachtel Camembert",
+      "lesson": "A19",
+      "index": 618
+    },
+    {
+      "id": "card_99kw3s",
+      "fr": "une douzaine d'œufs",
+      "target": "ein Dutzend Eier",
+      "lesson": "A19",
+      "index": 619
+    },
+    {
+      "id": "card_dz3ggd",
+      "fr": "une paire de chaussures",
+      "target": "ein Paar Schuhe",
+      "lesson": "A19",
+      "index": 620
+    },
+    {
+      "id": "card_e032sr",
+      "fr": "un morceau de gâteau",
+      "target": "ein Stück Kuchen",
+      "lesson": "A19",
+      "index": 621
+    },
+    {
+      "id": "card_958ht",
+      "fr": "un morceau de sucre",
+      "target": "ein Stück Zucker",
+      "lesson": "A19",
+      "index": 622
+    },
+    {
+      "id": "card_4cok91",
+      "fr": "un peu de lait",
+      "target": "etwas Milch",
+      "lesson": "A19",
+      "index": 623
+    },
+    {
+      "id": "card_vz3ta2",
+      "fr": "un brick de lait",
+      "target": "eine Tüte Milch",
+      "lesson": "A19",
+      "index": 624
+    },
+    {
+      "id": "card_254aoh",
+      "fr": "une barre de chocolat",
+      "target": "ein Riegel Schokolade",
+      "lesson": "A19",
+      "index": 625
+    },
+    {
+      "id": "card_2j5rcf",
+      "fr": "un paquet de chewing-gums",
+      "target": "ein Päckchen Kaugummi",
+      "lesson": "A19",
+      "index": 626
+    },
+    {
+      "id": "card_u81i2n",
+      "fr": "une cartouche de cigarettes",
+      "target": "eine Stange Zigaretten",
+      "lesson": "A19",
+      "index": 627
+    },
+    {
+      "id": "card_ww7430",
+      "fr": "un paquet de cigarettes",
+      "target": "eine Schachtel Zigaretten",
+      "lesson": "A19",
+      "index": 628
+    },
+    {
+      "id": "card_u6dm4b",
+      "fr": "beaucoup d'argent",
+      "target": "viel Geld",
+      "lesson": "A19",
+      "index": 629
+    },
+    {
+      "id": "card_f21wf1",
+      "fr": "quelques mètres plus loin",
+      "target": "einige Meter weiter/entfernt",
+      "lesson": "A19",
+      "index": 630
+    },
+    {
+      "id": "card_qv3wh5",
+      "fr": "à une distance de quelques mètres",
+      "target": "einige Meter weiter/entfernt",
+      "lesson": "A19",
+      "index": 631
+    },
+    {
+      "id": "card_lg395",
+      "fr": "Deux douzaines d'œufs.",
+      "target": "Zwei Dutzend Eier.",
+      "lesson": "A19",
+      "index": 632
+    },
+    {
+      "id": "card_el3ow9",
+      "fr": "Je voudrais une paire de chaussures.",
+      "target": "Ich möchte ein Paar Schuhe.",
+      "lesson": "A19",
+      "index": 633
+    },
+    {
+      "id": "card_lzfoeb",
+      "fr": "Trois cents grammes de café, s'il vous plaît !",
+      "target": "Dreihundert Gramm Kaffee, bitte !",
+      "lesson": "A19",
+      "index": 634
+    },
+    {
+      "id": "card_vwvhk5",
+      "fr": "Un morceau de gâteau, s.v.p. !",
+      "target": "Ein Stück Kuchen, bitte !",
+      "lesson": "A19",
+      "index": 635
+    },
+    {
+      "id": "card_vm9rna",
+      "fr": "Deux vertes de limonade, s.v.p. !",
+      "target": "Zwei Glas Limonade, bitte !",
+      "lesson": "A19",
+      "index": 636
+    },
+    {
+      "id": "card_llws9i",
+      "fr": "Deux bouteilles de bière, s.v.p. !",
+      "target": "Zwei Flaschen Bier, bitte !",
+      "lesson": "A19",
+      "index": 637
+    },
+    {
+      "id": "card_eifo0l",
+      "fr": "Un peu de sucre.",
+      "target": "Ein wenig Zucker.",
+      "lesson": "A19",
+      "index": 638
+    },
+    {
+      "id": "card_2xssst",
+      "fr": "Une cartouche de cigarettes.",
+      "target": "Eine Stange Zigaretten.",
+      "lesson": "A19",
+      "index": 639
+    },
+    {
+      "id": "card_c69kt",
+      "fr": "Une barre de chocolat.",
+      "target": "Ein Riegel Schokolade.",
+      "lesson": "A19",
+      "index": 640
+    },
+    {
+      "id": "card_rd5p6r",
+      "fr": "Un quart.",
+      "target": "Ein Viertel.",
+      "lesson": "A19",
+      "index": 641
+    },
+    {
+      "id": "card_shi4iz",
+      "fr": "La moitié.",
+      "target": "Die Hälfte.",
+      "lesson": "A19",
+      "index": 642
+    },
+    {
+      "id": "card_npz2mo",
+      "fr": "À cent mètres.",
+      "target": "Hundert Meter entfernt.",
+      "lesson": "A19",
+      "index": 643
+    },
+    {
+      "id": "card_xqxhrn",
+      "fr": "Deux tasses de thé et un morceau de gâteau.",
+      "target": "Zwei Tassen Tee und ein Stück Kuchen.",
+      "lesson": "A19",
+      "index": 644
+    },
+    {
+      "id": "card_tswk7q",
+      "fr": "le jour",
+      "target": "der Tag",
+      "lesson": "A20",
+      "index": 645
+    },
+    {
+      "id": "card_864qms",
+      "fr": "la semaine",
+      "target": "die Woche",
+      "lesson": "A20",
+      "index": 646
+    },
+    {
+      "id": "card_4epan5",
+      "fr": "lundi",
+      "target": "Montag",
+      "lesson": "A20",
+      "index": 647
+    },
+    {
+      "id": "card_4ezehe",
+      "fr": "mardi",
+      "target": "Dienstag",
+      "lesson": "A20",
+      "index": 648
+    },
+    {
+      "id": "card_fcjxii",
+      "fr": "vendredi",
+      "target": "Freitag",
+      "lesson": "A20",
+      "index": 649
+    },
+    {
+      "id": "card_yibi34",
+      "fr": "mercredi",
+      "target": "Mittwoch",
+      "lesson": "A20",
+      "index": 650
+    },
+    {
+      "id": "card_7jx6ig",
+      "fr": "samedi",
+      "target": "Samstag",
+      "lesson": "A20",
+      "index": 651
+    },
+    {
+      "id": "card_4cyaqe",
+      "fr": "jeudi",
+      "target": "Donnerstag",
+      "lesson": "A20",
+      "index": 652
+    },
+    {
+      "id": "card_px1ogu",
+      "fr": "dimanche",
+      "target": "Sonntag",
+      "lesson": "A20",
+      "index": 653
+    },
+    {
+      "id": "card_ykj025",
+      "fr": "hier",
+      "target": "gestern",
+      "lesson": "A20",
+      "index": 654
+    },
+    {
+      "id": "card_fi97kc",
+      "fr": "aujourd'hui",
+      "target": "heute",
+      "lesson": "A20",
+      "index": 655
+    },
+    {
+      "id": "card_22rcel",
+      "fr": "demain",
+      "target": "morgen",
+      "lesson": "A20",
+      "index": 656
+    },
+    {
+      "id": "card_eqbv9a",
+      "fr": "après-demain",
+      "target": "übermorgen",
+      "lesson": "A20",
+      "index": 657
+    },
+    {
+      "id": "card_avwskx",
+      "fr": "le matin",
+      "target": "der Morgen / der Vormittag",
+      "lesson": "A20",
+      "index": 658
+    },
+    {
+      "id": "card_bh2wyi",
+      "fr": "l'après-midi",
+      "target": "der Nachmittag",
+      "lesson": "A20",
+      "index": 659
+    },
+    {
+      "id": "card_tt3hgz",
+      "fr": "le soir",
+      "target": "der Abend",
+      "lesson": "A20",
+      "index": 660
+    },
+    {
+      "id": "card_r7sjma",
+      "fr": "la nuit",
+      "target": "die Nacht",
+      "lesson": "A20",
+      "index": 661
+    },
+    {
+      "id": "card_5sn0nc",
+      "fr": "à midi",
+      "target": "mittags",
+      "lesson": "A20",
+      "index": 662
+    },
+    {
+      "id": "card_aei7tx",
+      "fr": "à minuit",
+      "target": "um Mitternacht",
+      "lesson": "A20",
+      "index": 663
+    },
+    {
+      "id": "card_qfo37",
+      "fr": "Quelle heure est-il ?",
+      "target": "Wieviel Uhr ist es ?",
+      "lesson": "A20",
+      "index": 664
+    },
+    {
+      "id": "card_n2uirh",
+      "fr": "À quelle heure ? Quand ?",
+      "target": "Um wieviel Uhr ? Wann ?",
+      "lesson": "A20",
+      "index": 665
+    },
+    {
+      "id": "card_4caghj",
+      "fr": "Il est 7 heures.",
+      "target": "Es ist sieben Uhr.",
+      "lesson": "A20",
+      "index": 666
+    },
+    {
+      "id": "card_xhvwwx",
+      "fr": "Il est 9 heures et quart.",
+      "target": "Es ist Viertel nach neun.",
+      "lesson": "A20",
+      "index": 667
+    },
+    {
+      "id": "card_cqrroo",
+      "fr": "Il est 14 heures 30.",
+      "target": "Es ist 14 Uhr dreißig / halb drei.",
+      "lesson": "A20",
+      "index": 668
+    },
+    {
+      "id": "card_1wswr",
+      "fr": "Il est 10 heures moins le quart.",
+      "target": "Es ist Viertel vor zehn.",
+      "lesson": "A20",
+      "index": 669
+    },
+    {
+      "id": "card_dc1umv",
+      "fr": "Il est 11 heures moins 10.",
+      "target": "Es ist zehn vor elf.",
+      "lesson": "A20",
+      "index": 670
+    },
+    {
+      "id": "card_tsyv3i",
+      "fr": "le mois",
+      "target": "der Monat",
+      "lesson": "A20",
+      "index": 671
+    },
+    {
+      "id": "card_dys7zg",
+      "fr": "janvier",
+      "target": "Januar",
+      "lesson": "A20",
+      "index": 672
+    },
+    {
+      "id": "card_14iste",
+      "fr": "juillet",
+      "target": "Juli",
+      "lesson": "A20",
+      "index": 673
+    },
+    {
+      "id": "card_b80q5g",
+      "fr": "février",
+      "target": "Februar",
+      "lesson": "A20",
+      "index": 674
+    },
+    {
+      "id": "card_ykdutg",
+      "fr": "août",
+      "target": "August",
+      "lesson": "A20",
+      "index": 675
+    },
+    {
+      "id": "card_ykmobc",
+      "fr": "mars",
+      "target": "März",
+      "lesson": "A20",
+      "index": 676
+    },
+    {
+      "id": "card_hlli7g",
+      "fr": "septembre",
+      "target": "September",
+      "lesson": "A20",
+      "index": 677
+    },
+    {
+      "id": "card_46yk6b",
+      "fr": "avril",
+      "target": "April",
+      "lesson": "A20",
+      "index": 678
+    },
+    {
+      "id": "card_n7bi6r",
+      "fr": "octobre",
+      "target": "Oktober",
+      "lesson": "A20",
+      "index": 679
+    },
+    {
+      "id": "card_377csc",
+      "fr": "mai",
+      "target": "Mai",
+      "lesson": "A20",
+      "index": 680
+    },
+    {
+      "id": "card_y5tjgj",
+      "fr": "novembre",
+      "target": "November",
+      "lesson": "A20",
+      "index": 681
+    },
+    {
+      "id": "card_ykktp7",
+      "fr": "juin",
+      "target": "Juni",
+      "lesson": "A20",
+      "index": 682
+    },
+    {
+      "id": "card_gshn9c",
+      "fr": "décembre",
+      "target": "Dezember",
+      "lesson": "A20",
+      "index": 683
+    },
+    {
+      "id": "card_hwzkug",
+      "fr": "dans ... jours",
+      "target": "in ... Tagen",
+      "lesson": "A20",
+      "index": 684
+    },
+    {
+      "id": "card_mm142d",
+      "fr": "dans une semaine",
+      "target": "in einer Woche",
+      "lesson": "A20",
+      "index": 685
+    },
+    {
+      "id": "card_kcu652",
+      "fr": "ce soir",
+      "target": "heute abend",
+      "lesson": "A20",
+      "index": 686
+    },
+    {
+      "id": "card_u6vy1t",
+      "fr": "vendredi dernier",
+      "target": "letzten Freitag",
+      "lesson": "A20",
+      "index": 687
+    },
+    {
+      "id": "card_avwue5",
+      "fr": "le mardi",
+      "target": "am Dienstag / dienstags",
+      "lesson": "A20",
+      "index": 688
+    },
+    {
+      "id": "card_ayxurp",
+      "fr": "fermé le lundi",
+      "target": "am Montag geschlossen",
+      "lesson": "A20",
+      "index": 689
+    },
+    {
+      "id": "card_ayxurp",
+      "fr": "fermé le lundi",
+      "target": "montags geschlossen",
+      "lesson": "A20",
+      "index": 690
+    },
+    {
+      "id": "card_9s2co4",
+      "fr": "dans 15 jours",
+      "target": "in 14 Tagen",
+      "lesson": "A20",
+      "index": 691
+    },
+    {
+      "id": "card_qfo37",
+      "fr": "Quelle heure est-il ?",
+      "target": "Wieviel Uhr ist es ?",
+      "lesson": "A20",
+      "index": 692
+    },
+    {
+      "id": "card_do8k8q",
+      "fr": "Il est 11 heures moins le quart.",
+      "target": "Es ist Viertel vor elf.",
+      "lesson": "A20",
+      "index": 693
+    },
+    {
+      "id": "card_jzlw3r",
+      "fr": "Il est sept heures et demie.",
+      "target": "Es ist halb acht.",
+      "lesson": "A20",
+      "index": 694
+    },
+    {
+      "id": "card_4o1bo9",
+      "fr": "Il est 10 heures et quart.",
+      "target": "Es ist Viertel nach zehn.",
+      "lesson": "A20",
+      "index": 695
+    },
+    {
+      "id": "card_whn4tk",
+      "fr": "Ce soir.",
+      "target": "Heute abend.",
+      "lesson": "A20",
+      "index": 696
+    },
+    {
+      "id": "card_sy24w7",
+      "fr": "Dans cinq semaines.",
+      "target": "In fünf Wochen.",
+      "lesson": "A20",
+      "index": 697
+    },
+    {
+      "id": "card_wfenqm",
+      "fr": "Dans 15 jours.",
+      "target": "In 14 Tagen.",
+      "lesson": "A20",
+      "index": 698
+    },
+    {
+      "id": "card_b2wqac",
+      "fr": "Après-demain.",
+      "target": "Übermorgen.",
+      "lesson": "A20",
+      "index": 699
+    },
+    {
+      "id": "card_oc3rlz",
+      "fr": "Il est 8 heures 10.",
+      "target": "Es ist zehn nach acht.",
+      "lesson": "A20",
+      "index": 700
+    },
+    {
+      "id": "card_i890sl",
+      "fr": "À quelle heure ?",
+      "target": "Um wieviel Uhr ?",
+      "lesson": "A20",
+      "index": 701
+    },
+    {
+      "id": "card_59q0iw",
+      "fr": "Fermé le jeudi.",
+      "target": "Donnerstags geschlossen.",
+      "lesson": "A20",
+      "index": 702
+    },
+    {
+      "id": "card_z57vj1",
+      "fr": "Dans une semaine.",
+      "target": "In einer Woche.",
+      "lesson": "A20",
+      "index": 703
+    },
+    {
+      "id": "card_9o48gh",
+      "fr": "Hier à 14 heures 30.",
+      "target": "Gestern um 14 Uhr 30.",
+      "lesson": "A20",
+      "index": 704
+    },
+    {
+      "id": "card_8n7wna",
+      "fr": "Il est 4 heures et quart.",
+      "target": "Es ist Viertel nach vier.",
+      "lesson": "A20",
+      "index": 705
+    },
+    {
+      "id": "card_21q77r",
+      "fr": "Il est 9 heures.",
+      "target": "Es ist fünf nach neun.",
+      "lesson": "A20",
+      "index": 706
+    },
+    {
+      "id": "card_74s428",
+      "fr": "Fermé le matin.",
+      "target": "Am Morgen geschlossen.",
+      "lesson": "A20",
+      "index": 707
+    },
+    {
+      "id": "card_d55lwt",
+      "fr": "Ce soir à 18 heures.",
+      "target": "Heute abend um 18 Uhr.",
+      "lesson": "A20",
+      "index": 708
+    },
+    {
+      "id": "card_rb19yl",
+      "fr": "Il est 6 heures et demie.",
+      "target": "Es ist halb sieben.",
+      "lesson": "A20",
+      "index": 709
+    }
+  ],
+  "createdAt": "2026-05-22T19:02:12.528Z"
+}

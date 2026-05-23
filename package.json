@@ -1,0 +1,21 @@
+{
+  "name": "anki-deck-trainer",
+  "version": "1.0.0",
+  "description": "Multi-Deck Anki Trainer Hub with Spaced Repetition, Stats, TTS Audio, and Syncing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^6.4.1",
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "playwright": "^1.60.0"
+  }
+}

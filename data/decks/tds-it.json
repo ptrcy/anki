@@ -1,0 +1,6846 @@
+{
+  "name": "TDS-IT",
+  "targetLang": "it",
+  "cards": [
+    {
+      "id": "card_3ho7x",
+      "fr": "FR",
+      "target": "IT",
+      "lesson": "Lesson",
+      "index": 0
+    },
+    {
+      "id": "card_wpw3ha",
+      "fr": "Je suis le monsieur avec la barbe ?",
+      "target": "Chi è il signore con la barba ?",
+      "lesson": "A10",
+      "index": 1
+    },
+    {
+      "id": "card_1b5wl1",
+      "fr": "Je suis à ta fête ?",
+      "target": "Viene alla tua festa ?",
+      "lesson": "A10",
+      "index": 2
+    },
+    {
+      "id": "card_796dtu",
+      "fr": "Je réponds à leur question ?",
+      "target": "Risponde alla loro domanda ?",
+      "lesson": "A10",
+      "index": 3
+    },
+    {
+      "id": "card_9mwnkl",
+      "fr": "Je conduis ta voiture ?",
+      "target": "Guida la tua macchina ?",
+      "lesson": "A10",
+      "index": 4
+    },
+    {
+      "id": "card_c1cx3o",
+      "fr": "Je prends notre place ?",
+      "target": "Prende il nostro posto ?",
+      "lesson": "A10",
+      "index": 5
+    },
+    {
+      "id": "card_8byltp",
+      "fr": "Qui êtes-vous ?",
+      "target": "Chi siete ?",
+      "lesson": "A10",
+      "index": 6
+    },
+    {
+      "id": "card_71e35z",
+      "fr": "Qui est ton ami ?",
+      "target": "Chi è il tuo amico ?",
+      "lesson": "A10",
+      "index": 7
+    },
+    {
+      "id": "card_xigkn",
+      "fr": "Qui invites-tu à dîner ce soir ?",
+      "target": "Chi inviti a cena ?",
+      "lesson": "A10",
+      "index": 8
+    },
+    {
+      "id": "card_qaxdeh",
+      "fr": "Vous vous prenez pour qui ?",
+      "target": "Chi pensa di essere ?",
+      "lesson": "A10",
+      "index": 9
+    },
+    {
+      "id": "card_kdil2",
+      "fr": "Tu te prends pour quoi ?",
+      "target": "Ti credi di essere ?",
+      "lesson": "A10",
+      "index": 10
+    },
+    {
+      "id": "card_qbrj3g",
+      "fr": "Qu'est-ce qu'il désire ?",
+      "target": "Che cosa desidera ?",
+      "lesson": "A10",
+      "index": 11
+    },
+    {
+      "id": "card_1fea7e",
+      "fr": "Qu'est-ce que vous cherchez ?",
+      "target": "Che cosa cercate ?",
+      "lesson": "A10",
+      "index": 12
+    },
+    {
+      "id": "card_wau8n5",
+      "fr": "Qu'est-ce qu'il choisit comme entrée ?",
+      "target": "Che cosa sceglie come primo ?",
+      "lesson": "A10",
+      "index": 13
+    },
+    {
+      "id": "card_en5phb",
+      "fr": "Qu'est-ce que tu manges ?",
+      "target": "Che cosa mangi ?",
+      "lesson": "A10",
+      "index": 14
+    },
+    {
+      "id": "card_yggx6z",
+      "fr": "Qu'est-ce qu'il a dit ? Je ne comprends pas.",
+      "target": "Che cosa ha detto ? Non capisco.",
+      "lesson": "A10",
+      "index": 15
+    },
+    {
+      "id": "card_667gn2",
+      "fr": "Qu'est-ce que ça veut dire « camera matrimoniale » ?",
+      "target": "Che cosa significa « camera matrimoniale » ?",
+      "lesson": "A10",
+      "index": 16
+    },
+    {
+      "id": "card_8tk6v1",
+      "fr": "Qu'est-ce que tu préfères, du thé ou du café ?",
+      "target": "Che cosa preferisci, té o caffè ?",
+      "lesson": "A10",
+      "index": 17
+    },
+    {
+      "id": "card_tn1903",
+      "fr": "Qu'est-ce que vous pensez de l'Italie ?",
+      "target": "Che cosa pensate dell’Italia ?",
+      "lesson": "A10",
+      "index": 18
+    },
+    {
+      "id": "card_xxqx9s",
+      "fr": "Qu'est-ce qu'il conseille comme vin ?",
+      "target": "Che cosa consiglia come vino ?",
+      "lesson": "A10",
+      "index": 19
+    },
+    {
+      "id": "card_jvdrea",
+      "fr": "Qu'est-ce qu'il se passe dans le monde ?",
+      "target": "Che cosa succede nel mondo ?",
+      "lesson": "A10",
+      "index": 20
+    },
+    {
+      "id": "card_9fnip5",
+      "fr": "À qui penses-tu ?",
+      "target": "A chi pensi ?",
+      "lesson": "A10",
+      "index": 21
+    },
+    {
+      "id": "card_15yeka",
+      "fr": "À quoi penses-tu ?",
+      "target": "A che cosa pensi ?",
+      "lesson": "A10",
+      "index": 22
+    },
+    {
+      "id": "card_1bz5q3",
+      "fr": "Que dis-tu ?",
+      "target": "Cosa dici ?",
+      "lesson": "A10",
+      "index": 23
+    },
+    {
+      "id": "card_1bz5q3",
+      "fr": "Que dis-tu ?",
+      "target": "Che dici ?",
+      "lesson": "A10",
+      "index": 24
+    },
+    {
+      "id": "card_bbq11e",
+      "fr": "Qu'est-ce que c'est, cette voiture ?",
+      "target": "Cos'è questa macchina ?",
+      "lesson": "A10",
+      "index": 25
+    },
+    {
+      "id": "card_6u98ew",
+      "fr": "Qu'est-ce qu'il se passe ?",
+      "target": "Che succede ?",
+      "lesson": "A10",
+      "index": 26
+    },
+    {
+      "id": "card_4628gu",
+      "fr": "Il se passe beaucoup de choses.",
+      "target": "Succedono molte cose.",
+      "lesson": "A10",
+      "index": 27
+    },
+    {
+      "id": "card_gk11fu",
+      "fr": "Il passe avec le rouge.",
+      "target": "Passa col rosso.",
+      "lesson": "A10",
+      "index": 28
+    },
+    {
+      "id": "card_223ags",
+      "fr": "Qu'est-ce que vous désirez ?",
+      "target": "Che cosa desidera ?",
+      "lesson": "A10",
+      "index": 29
+    },
+    {
+      "id": "card_b5adbh",
+      "fr": "Vingt-huit timbres et trente-deux cartes postales.",
+      "target": "Ventotto francobolli e trentadue cartoline.",
+      "lesson": "A10",
+      "index": 30
+    },
+    {
+      "id": "card_15yeka",
+      "fr": "À quoi penses-tu ?",
+      "target": "A che cosa pensi ?",
+      "lesson": "A10",
+      "index": 31
+    },
+    {
+      "id": "card_id0l0k",
+      "fr": "De qui parlez-vous ?",
+      "target": "Di chi parlate ?",
+      "lesson": "A10",
+      "index": 32
+    },
+    {
+      "id": "card_r1jhgw",
+      "fr": "Qui téléphone à Louise ?",
+      "target": "Chi telefona a Luisa ?",
+      "lesson": "A10",
+      "index": 33
+    },
+    {
+      "id": "card_ebf5pf",
+      "fr": "Qui répond à sa lettre ?",
+      "target": "Chi risponde alla sua lettera ?",
+      "lesson": "A10",
+      "index": 34
+    },
+    {
+      "id": "card_y4nhtv",
+      "fr": "Où est mon argent ?",
+      "target": "Dove sono i miei soldi ?",
+      "lesson": "A10",
+      "index": 35
+    },
+    {
+      "id": "card_ffaw1n",
+      "fr": "Combien coûtent tes chaussures ?",
+      "target": "Quanto costano le tue scarpe ?",
+      "lesson": "A10",
+      "index": 36
+    },
+    {
+      "id": "card_g95yve",
+      "fr": "Tu prends sa voiture.",
+      "target": "Prendi la sua macchina.",
+      "lesson": "A10",
+      "index": 37
+    },
+    {
+      "id": "card_49d7oo",
+      "fr": "Je pars avec mon ami.",
+      "target": "Parto con il mio amico.",
+      "lesson": "A10",
+      "index": 38
+    },
+    {
+      "id": "card_p9hij8",
+      "fr": "Où est ta maison ?",
+      "target": "Dov'è la tua casa ?",
+      "lesson": "A10",
+      "index": 39
+    },
+    {
+      "id": "card_w2gl3n",
+      "fr": "Qui vient avec moi à la plage ?",
+      "target": "Chi viene con me alla spiaggia ?",
+      "lesson": "A10",
+      "index": 40
+    },
+    {
+      "id": "card_drppme",
+      "fr": "Ce soir, j'invite cinquante-six personnes.",
+      "target": "Questa sera invito cinquantasei persone.",
+      "lesson": "A10",
+      "index": 41
+    },
+    {
+      "id": "card_b4h250",
+      "fr": "J'envoie cent invitations.",
+      "target": "Spedisco cento inviti.",
+      "lesson": "A10",
+      "index": 42
+    },
+    {
+      "id": "card_uavmtx",
+      "fr": "Qu'est-ce qui se passe ?",
+      "target": "Che cosa succede ?",
+      "lesson": "A10",
+      "index": 43
+    },
+    {
+      "id": "card_3opao1",
+      "fr": "Ils viennent avec leurs amis français.",
+      "target": "Vengono con i loro amici francesi.",
+      "lesson": "A10",
+      "index": 44
+    },
+    {
+      "id": "card_3qgvoi",
+      "fr": "De quoi parle-t-il ?",
+      "target": "Di che cosa parla ?",
+      "lesson": "A10",
+      "index": 45
+    },
+    {
+      "id": "card_qgkc0o",
+      "fr": "Je passe à neuf heures.",
+      "target": "Passo alle 9.",
+      "lesson": "A10",
+      "index": 46
+    },
+    {
+      "id": "card_a7osf0",
+      "fr": "Il vient avec son amie Franca.",
+      "target": "Viene con la sua amica Franca.",
+      "lesson": "A10",
+      "index": 47
+    },
+    {
+      "id": "card_d07yhm",
+      "fr": "Je veux un café allongé.",
+      "target": "Voglio un caffè lungo.",
+      "lesson": "A11",
+      "index": 48
+    },
+    {
+      "id": "card_8t5hlv",
+      "fr": "Je veux partir samedi prochain.",
+      "target": "Voglio partire sabato prossimo.",
+      "lesson": "A11",
+      "index": 49
+    },
+    {
+      "id": "card_u4bwut",
+      "fr": "Je veux aller dans un hôtel de luxe.",
+      "target": "Voglio andare in un hotel di lusso.",
+      "lesson": "A11",
+      "index": 50
+    },
+    {
+      "id": "card_6zrha",
+      "fr": "Je veux dormir. Je suis très fatigué.",
+      "target": "Voglio dormire. Sono molto stanco.",
+      "lesson": "A11",
+      "index": 51
+    },
+    {
+      "id": "card_7gsjxb",
+      "fr": "Je veux m'en aller d'ici.",
+      "target": "Voglio andare via di qui.",
+      "lesson": "A11",
+      "index": 52
+    },
+    {
+      "id": "card_pxpabc",
+      "fr": "Je veux rester seul.",
+      "target": "Voglio stare da solo.",
+      "lesson": "A11",
+      "index": 53
+    },
+    {
+      "id": "card_2gacjj",
+      "fr": "Je voudrais une chambre pour une personne.",
+      "target": "Vorrei una camera singola.",
+      "lesson": "A11",
+      "index": 54
+    },
+    {
+      "id": "card_z4bqus",
+      "fr": "Je voudrais des vacances d'un an.",
+      "target": "Vorrei una vacanza di un anno.",
+      "lesson": "A11",
+      "index": 55
+    },
+    {
+      "id": "card_gswebv",
+      "fr": "Je voudrais fumer, est-ce possible ? Je dérange ?",
+      "target": "Vorrei fumare. E' permesso? Disturbo?",
+      "lesson": "A11",
+      "index": 56
+    },
+    {
+      "id": "card_a40moi",
+      "fr": "Je voudrais parler avec elle/vous.",
+      "target": "Vorrei parlare con lei.",
+      "lesson": "A11",
+      "index": 57
+    },
+    {
+      "id": "card_gyqgbh",
+      "fr": "Je voudrais aller au restaurant ce soir.",
+      "target": "Vorrei andare al ristorante stasera.",
+      "lesson": "A11",
+      "index": 58
+    },
+    {
+      "id": "card_9agwg8",
+      "fr": "Je voudrais rester encore quelques jours.",
+      "target": "Vorrei restare ancora qualche giorno.",
+      "lesson": "A11",
+      "index": 59
+    },
+    {
+      "id": "card_i9pd88",
+      "fr": "Voulez-vous essayer une autre paire de chaussures ?",
+      "target": "Vuole provare un altro paio di scarpe?",
+      "lesson": "A11",
+      "index": 60
+    },
+    {
+      "id": "card_epu5rc",
+      "fr": "Voulez-vous une chambre (avec vue) sur la mer ?",
+      "target": "Vuole una camera (con vista) sul mare?",
+      "lesson": "A11",
+      "index": 61
+    },
+    {
+      "id": "card_8fae0o",
+      "fr": "Voulez-vous une couchette ou un wagon-lit ?",
+      "target": "Vuole una cuccetta o un vagone letto?",
+      "lesson": "A11",
+      "index": 62
+    },
+    {
+      "id": "card_4l62g7",
+      "fr": "Voulez-vous un reçu ?",
+      "target": "Vuole una ricevuta?",
+      "lesson": "A11",
+      "index": 63
+    },
+    {
+      "id": "card_4cfjjj",
+      "fr": "Désirez-vous un autre café ?",
+      "target": "Desidera un altro caffè?",
+      "lesson": "A11",
+      "index": 64
+    },
+    {
+      "id": "card_v7km0a",
+      "fr": "Désirez-vous un digestif ?",
+      "target": "Desidera un digestivo?",
+      "lesson": "A11",
+      "index": 65
+    },
+    {
+      "id": "card_cwnpk4",
+      "fr": "je veux",
+      "target": "voglio",
+      "lesson": "A11",
+      "index": 66
+    },
+    {
+      "id": "card_224juy",
+      "fr": "tu veux",
+      "target": "vuoi",
+      "lesson": "A11",
+      "index": 67
+    },
+    {
+      "id": "card_7zujkg",
+      "fr": "il/elle veut / vous voulez",
+      "target": "vuole",
+      "lesson": "A11",
+      "index": 68
+    },
+    {
+      "id": "card_v459q8",
+      "fr": "nous voulons",
+      "target": "vogliamo",
+      "lesson": "A11",
+      "index": 69
+    },
+    {
+      "id": "card_h5eo8n",
+      "fr": "vous voulez",
+      "target": "volete",
+      "lesson": "A11",
+      "index": 70
+    },
+    {
+      "id": "card_dkoiwk",
+      "fr": "ils/elles veulent",
+      "target": "vogliono",
+      "lesson": "A11",
+      "index": 71
+    },
+    {
+      "id": "card_ivtzl",
+      "fr": "Je voudrais.",
+      "target": "Vorrei.",
+      "lesson": "A11",
+      "index": 72
+    },
+    {
+      "id": "card_1g50ox",
+      "fr": "J'aimerais bien partir.",
+      "target": "Vorrei partire.",
+      "lesson": "A11",
+      "index": 73
+    },
+    {
+      "id": "card_xvfg07",
+      "fr": "Quelques amis viennent.",
+      "target": "Qualche amico viene.",
+      "lesson": "A11",
+      "index": 74
+    },
+    {
+      "id": "card_4epan5",
+      "fr": "lundi",
+      "target": "lunedì",
+      "lesson": "A11",
+      "index": 75
+    },
+    {
+      "id": "card_4ezehe",
+      "fr": "mardi",
+      "target": "martedì",
+      "lesson": "A11",
+      "index": 76
+    },
+    {
+      "id": "card_yibi34",
+      "fr": "mercredi",
+      "target": "mercoledì",
+      "lesson": "A11",
+      "index": 77
+    },
+    {
+      "id": "card_4cyaqe",
+      "fr": "jeudi",
+      "target": "giovedì",
+      "lesson": "A11",
+      "index": 78
+    },
+    {
+      "id": "card_fcjxii",
+      "fr": "vendredi",
+      "target": "venerdì",
+      "lesson": "A11",
+      "index": 79
+    },
+    {
+      "id": "card_7jx6ig",
+      "fr": "samedi",
+      "target": "sabato",
+      "lesson": "A11",
+      "index": 80
+    },
+    {
+      "id": "card_px1ogu",
+      "fr": "dimanche",
+      "target": "domenica (F.)",
+      "lesson": "A11",
+      "index": 81
+    },
+    {
+      "id": "card_97emeh",
+      "fr": "les saisons",
+      "target": "le stagioni",
+      "lesson": "A11",
+      "index": 82
+    },
+    {
+      "id": "card_7bkt54",
+      "fr": "le printemps",
+      "target": "la primavera",
+      "lesson": "A11",
+      "index": 83
+    },
+    {
+      "id": "card_4d43mm",
+      "fr": "l'été",
+      "target": "l'estate (F.)",
+      "lesson": "A11",
+      "index": 84
+    },
+    {
+      "id": "card_on7cnl",
+      "fr": "l'automne",
+      "target": "l'autunno",
+      "lesson": "A11",
+      "index": 85
+    },
+    {
+      "id": "card_8wvzey",
+      "fr": "l'hiver",
+      "target": "l'inverno",
+      "lesson": "A11",
+      "index": 86
+    },
+    {
+      "id": "card_1at9pd",
+      "fr": "Je veux une chambre double.",
+      "target": "Voglio una camera doppia.",
+      "lesson": "A11",
+      "index": 87
+    },
+    {
+      "id": "card_9rgpfu",
+      "fr": "Ils veulent la vue sur le lac.",
+      "target": "Vogliono la vista sul lago.",
+      "lesson": "A11",
+      "index": 88
+    },
+    {
+      "id": "card_y729c4",
+      "fr": "Vous désirez, madame?",
+      "target": "Desidera, signora?",
+      "lesson": "A11",
+      "index": 89
+    },
+    {
+      "id": "card_mvk0tt",
+      "fr": "Je voudrais parler au directeur de l'hôtel.",
+      "target": "Vorrei parlare con il direttore dell'hotel.",
+      "lesson": "A11",
+      "index": 90
+    },
+    {
+      "id": "card_o780ut",
+      "fr": "Voulez-vous un billet de première ou de seconde?",
+      "target": "Vuole un biglietto di prima o di seconda classe?",
+      "lesson": "A11",
+      "index": 91
+    },
+    {
+      "id": "card_l3lu20",
+      "fr": "Avec qui veut-il partir en vacances, Laurent?",
+      "target": "Con chi vuole partire in vacanza, Lorenzo?",
+      "lesson": "A11",
+      "index": 92
+    },
+    {
+      "id": "card_xapua4",
+      "fr": "Ils veulent trois chambres pour une personne.",
+      "target": "Vogliono tre camere singole.",
+      "lesson": "A11",
+      "index": 93
+    },
+    {
+      "id": "card_97d6xp",
+      "fr": "Je voudrais essayer tes chaussures.",
+      "target": "Vorrei provare le tue scarpe.",
+      "lesson": "A11",
+      "index": 94
+    },
+    {
+      "id": "card_jbgipq",
+      "fr": "Qui veut venir avec moi au restaurant?",
+      "target": "Chi vuole venire con me al ristorante?",
+      "lesson": "A11",
+      "index": 95
+    },
+    {
+      "id": "card_7ekzvh",
+      "fr": "Tu veux inviter soixante personnes ce soir?",
+      "target": "Vuoi invitare sessanta persone questa sera?",
+      "lesson": "A11",
+      "index": 96
+    },
+    {
+      "id": "card_bacxoc",
+      "fr": "Je voudrais partir à dix heures trente.",
+      "target": "Vorrei partire alle dieci e mezzo.",
+      "lesson": "A11",
+      "index": 97
+    },
+    {
+      "id": "card_g00dia",
+      "fr": "Voulez-vous un apéritif?",
+      "target": "Vuole/volete un aperitivo?",
+      "lesson": "A11",
+      "index": 98
+    },
+    {
+      "id": "card_uhns6m",
+      "fr": "Je voudrais fumer une cigarette.",
+      "target": "Vorrei fumare una sigaretta.",
+      "lesson": "A11",
+      "index": 99
+    },
+    {
+      "id": "card_l2qbku",
+      "fr": "Qu'est-ce que vous désirez, monsieur?",
+      "target": "Che cosa desidera, signora?",
+      "lesson": "A11",
+      "index": 100
+    },
+    {
+      "id": "card_u9ei2j",
+      "fr": "Ils veulent s'en aller d'ici.",
+      "target": "Vogliono andare via di qui.",
+      "lesson": "A11",
+      "index": 101
+    },
+    {
+      "id": "card_me1dx",
+      "fr": "Nous voulons acheter quelques journaux.",
+      "target": "Vogliamo comprare qualche giornale (invariable sg.).",
+      "lesson": "A11",
+      "index": 102
+    },
+    {
+      "id": "card_dmx2kd",
+      "fr": "Avec qui voulez-vous partir?",
+      "target": "Con chi volete partire?",
+      "lesson": "A11",
+      "index": 103
+    },
+    {
+      "id": "card_3ho7x",
+      "fr": "FR",
+      "target": "IT",
+      "lesson": "A11",
+      "index": 104
+    },
+    {
+      "id": "card_cwnpk4",
+      "fr": "Je veux",
+      "target": "Voglio",
+      "lesson": "A11",
+      "index": 105
+    },
+    {
+      "id": "card_noxyan",
+      "fr": "Je voudrais",
+      "target": "Vorrei",
+      "lesson": "A11",
+      "index": 106
+    },
+    {
+      "id": "card_7q7jiw",
+      "fr": "Désirez-vous ?",
+      "target": "Desidera?",
+      "lesson": "A11",
+      "index": 107
+    },
+    {
+      "id": "card_7q7jiw",
+      "fr": "Désirez-vous ?",
+      "target": "Vuole?",
+      "lesson": "A11",
+      "index": 108
+    },
+    {
+      "id": "card_6afno6",
+      "fr": "Je veux une chambre",
+      "target": "Voglio una camera",
+      "lesson": "A11",
+      "index": 109
+    },
+    {
+      "id": "card_jfejz9",
+      "fr": "Je voudrais une chambre",
+      "target": "Vorrei una camera",
+      "lesson": "A11",
+      "index": 110
+    },
+    {
+      "id": "card_h5rn82",
+      "fr": "Désirez-vous une chambre ?",
+      "target": "Desidera una camera?",
+      "lesson": "A11",
+      "index": 111
+    },
+    {
+      "id": "card_h5rn82",
+      "fr": "Désirez-vous une chambre ?",
+      "target": "Vuole una camera?",
+      "lesson": "A11",
+      "index": 112
+    },
+    {
+      "id": "card_a4ds26",
+      "fr": "Je veux un café",
+      "target": "Voglio un caffè",
+      "lesson": "A11",
+      "index": 113
+    },
+    {
+      "id": "card_iyer5j",
+      "fr": "Je voudrais un café",
+      "target": "Vorrei un caffè",
+      "lesson": "A11",
+      "index": 114
+    },
+    {
+      "id": "card_tk40ry",
+      "fr": "Désirez-vous un café ?",
+      "target": "Desidera un caffè?",
+      "lesson": "A11",
+      "index": 115
+    },
+    {
+      "id": "card_tk40ry",
+      "fr": "Désirez-vous un café ?",
+      "target": "Vuole un caffè?",
+      "lesson": "A11",
+      "index": 116
+    },
+    {
+      "id": "card_krd9sa",
+      "fr": "Je veux manger",
+      "target": "Voglio mangiare",
+      "lesson": "A11",
+      "index": 117
+    },
+    {
+      "id": "card_gpnhzv",
+      "fr": "Je voudrais manger",
+      "target": "Vorrei mangiare",
+      "lesson": "A11",
+      "index": 118
+    },
+    {
+      "id": "card_m3ti36",
+      "fr": "Désirez-vous manger ?",
+      "target": "Desidera mangiare?",
+      "lesson": "A11",
+      "index": 119
+    },
+    {
+      "id": "card_m3ti36",
+      "fr": "Désirez-vous manger ?",
+      "target": "Vuole mangiare?",
+      "lesson": "A11",
+      "index": 120
+    },
+    {
+      "id": "card_itdgnm",
+      "fr": "Je veux partir",
+      "target": "Voglio partire",
+      "lesson": "A11",
+      "index": 121
+    },
+    {
+      "id": "card_innb4j",
+      "fr": "Je voudrais partir",
+      "target": "Vorrei partire",
+      "lesson": "A11",
+      "index": 122
+    },
+    {
+      "id": "card_8io0zu",
+      "fr": "Désirez-vous partir ?",
+      "target": "Desidera partire?",
+      "lesson": "A11",
+      "index": 123
+    },
+    {
+      "id": "card_8io0zu",
+      "fr": "Désirez-vous partir ?",
+      "target": "Vuole partire?",
+      "lesson": "A11",
+      "index": 124
+    },
+    {
+      "id": "card_5fdns4",
+      "fr": "Je veux voir",
+      "target": "Voglio vedere",
+      "lesson": "A11",
+      "index": 125
+    },
+    {
+      "id": "card_17uz3z",
+      "fr": "Je voudrais voir",
+      "target": "Vorrei vedere",
+      "lesson": "A11",
+      "index": 126
+    },
+    {
+      "id": "card_emhlfs",
+      "fr": "Désirez-vous voir ?",
+      "target": "Desidera vedere?",
+      "lesson": "A11",
+      "index": 127
+    },
+    {
+      "id": "card_emhlfs",
+      "fr": "Désirez-vous voir ?",
+      "target": "Vuole vedere?",
+      "lesson": "A11",
+      "index": 128
+    },
+    {
+      "id": "card_gt91c8",
+      "fr": "Je veux acheter",
+      "target": "Voglio comprare",
+      "lesson": "A11",
+      "index": 129
+    },
+    {
+      "id": "card_c9jhvh",
+      "fr": "Je voudrais acheter",
+      "target": "Vorrei comprare",
+      "lesson": "A11",
+      "index": 130
+    },
+    {
+      "id": "card_bjy2x8",
+      "fr": "Désirez-vous acheter ?",
+      "target": "Desidera comprare?",
+      "lesson": "A11",
+      "index": 131
+    },
+    {
+      "id": "card_bjy2x8",
+      "fr": "Désirez-vous acheter ?",
+      "target": "Vuole comprare?",
+      "lesson": "A11",
+      "index": 132
+    },
+    {
+      "id": "card_qiv24x",
+      "fr": "Je dois téléphoner en France.",
+      "target": "Devo telefonare in Francia.",
+      "lesson": "A12",
+      "index": 133
+    },
+    {
+      "id": "card_cj52hs",
+      "fr": "Je dois m'en aller, il est tard.",
+      "target": "Devo andare, è tardi.",
+      "lesson": "A12",
+      "index": 134
+    },
+    {
+      "id": "card_bp6xs7",
+      "fr": "Je dois changer 1 000 francs.",
+      "target": "Devo cambiare mille franchi.",
+      "lesson": "A12",
+      "index": 135
+    },
+    {
+      "id": "card_q18fia",
+      "fr": "Je dois partir avant que prévu.",
+      "target": "Devo partire prima del previsto.",
+      "lesson": "A12",
+      "index": 136
+    },
+    {
+      "id": "card_6yfqr2",
+      "fr": "Je dois louer une voiture.",
+      "target": "Devo affittare una macchina.",
+      "lesson": "A12",
+      "index": 137
+    },
+    {
+      "id": "card_4tfafw",
+      "fr": "Dois-je payer au comptoir ou à la caisse ?",
+      "target": "Devo pagare al banco o alla cassa?",
+      "lesson": "A12",
+      "index": 138
+    },
+    {
+      "id": "card_2autsj",
+      "fr": "Je peux vous demander une faveur ?",
+      "target": "Posso chiederle un favore?",
+      "lesson": "A12",
+      "index": 139
+    },
+    {
+      "id": "card_94be8b",
+      "fr": "Est-ce que je peux fumer ici ?",
+      "target": "Posso fumare qui?",
+      "lesson": "A12",
+      "index": 140
+    },
+    {
+      "id": "card_yijasd",
+      "fr": "Est-ce que je peux m'asseoir à votre table ?",
+      "target": "Posso sedermi al suo tavolo?",
+      "lesson": "A12",
+      "index": 141
+    },
+    {
+      "id": "card_vr367k",
+      "fr": "Je peux payer par carte de crédit ?",
+      "target": "Posso pagare con la carta di credito?",
+      "lesson": "A12",
+      "index": 142
+    },
+    {
+      "id": "card_79ryrh",
+      "fr": "Je peux payer (au) comptant ?",
+      "target": "Posso pagare in contanti?",
+      "lesson": "A12",
+      "index": 143
+    },
+    {
+      "id": "card_fnraep",
+      "fr": "Je peux fermer la fenêtre ?",
+      "target": "Posso chiudere il finestrino?",
+      "lesson": "A12",
+      "index": 144
+    },
+    {
+      "id": "card_157m1r",
+      "fr": "Je sais nager.",
+      "target": "So nuotare.",
+      "lesson": "A12",
+      "index": 145
+    },
+    {
+      "id": "card_73q19u",
+      "fr": "Je sais jouer au poker.",
+      "target": "So giocare a poker.",
+      "lesson": "A12",
+      "index": 146
+    },
+    {
+      "id": "card_8bpdy6",
+      "fr": "Je sais parler un peu l'italien.",
+      "target": "So parlare un po' italiano.",
+      "lesson": "A12",
+      "index": 147
+    },
+    {
+      "id": "card_66cihk",
+      "fr": "Je sais faire la cuisine (très bien cuisiner).",
+      "target": "So cucinare molto bene.",
+      "lesson": "A12",
+      "index": 148
+    },
+    {
+      "id": "card_7nve74",
+      "fr": "Je sais reconnaître un bon vin.",
+      "target": "So riconoscere un buon vino!",
+      "lesson": "A12",
+      "index": 149
+    },
+    {
+      "id": "card_f7nf1l",
+      "fr": "Je sais que dimanche il y a le match Italie-France.",
+      "target": "So che domenica c'è la partita Italia-Francia.",
+      "lesson": "A12",
+      "index": 150
+    },
+    {
+      "id": "card_w7mey5",
+      "fr": "Je veux aller à Rome.",
+      "target": "Voglio andare a Roma.",
+      "lesson": "A12",
+      "index": 151
+    },
+    {
+      "id": "card_mg9ddb",
+      "fr": "Est-ce que je dois payer ?",
+      "target": "Devo pagare?",
+      "lesson": "A12",
+      "index": 152
+    },
+    {
+      "id": "card_9wqmsq",
+      "fr": "Pouvons-nous parler ?",
+      "target": "Possiamo parlare?",
+      "lesson": "A12",
+      "index": 153
+    },
+    {
+      "id": "card_25i466",
+      "fr": "Je sais lire.",
+      "target": "So leggere.",
+      "lesson": "A12",
+      "index": 154
+    },
+    {
+      "id": "card_dys7zg",
+      "fr": "janvier",
+      "target": "gennaio",
+      "lesson": "A12",
+      "index": 155
+    },
+    {
+      "id": "card_b80q5g",
+      "fr": "février",
+      "target": "febbraio",
+      "lesson": "A12",
+      "index": 156
+    },
+    {
+      "id": "card_ykmobc",
+      "fr": "mars",
+      "target": "marzo",
+      "lesson": "A12",
+      "index": 157
+    },
+    {
+      "id": "card_46yk6b",
+      "fr": "avril",
+      "target": "aprile",
+      "lesson": "A12",
+      "index": 158
+    },
+    {
+      "id": "card_377csc",
+      "fr": "mai",
+      "target": "maggio",
+      "lesson": "A12",
+      "index": 159
+    },
+    {
+      "id": "card_ykktp7",
+      "fr": "juin",
+      "target": "giugno",
+      "lesson": "A12",
+      "index": 160
+    },
+    {
+      "id": "card_14iste",
+      "fr": "juillet",
+      "target": "luglio",
+      "lesson": "A12",
+      "index": 161
+    },
+    {
+      "id": "card_ykdutg",
+      "fr": "août",
+      "target": "agosto",
+      "lesson": "A12",
+      "index": 162
+    },
+    {
+      "id": "card_hlli7g",
+      "fr": "septembre",
+      "target": "settembre",
+      "lesson": "A12",
+      "index": 163
+    },
+    {
+      "id": "card_n7bi6r",
+      "fr": "octobre",
+      "target": "ottobre",
+      "lesson": "A12",
+      "index": 164
+    },
+    {
+      "id": "card_y5tjgj",
+      "fr": "novembre",
+      "target": "novembre",
+      "lesson": "A12",
+      "index": 165
+    },
+    {
+      "id": "card_gshn9c",
+      "fr": "décembre",
+      "target": "dicembre",
+      "lesson": "A12",
+      "index": 166
+    },
+    {
+      "id": "card_gf41gx",
+      "fr": "C'est son anniversaire ?",
+      "target": "È il suo compleanno?",
+      "lesson": "A12",
+      "index": 167
+    },
+    {
+      "id": "card_nl1wy5",
+      "fr": "C'est votre fête ?",
+      "target": "È il suo onomastico?",
+      "lesson": "A12",
+      "index": 168
+    },
+    {
+      "id": "card_uvigov",
+      "fr": "Vous ne devez pas être en retard.",
+      "target": "Non dovete essere in ritardo.",
+      "lesson": "A12",
+      "index": 169
+    },
+    {
+      "id": "card_1yk39",
+      "fr": "Vous pouvez payer demain !",
+      "target": "Potete pagare domani.",
+      "lesson": "A12",
+      "index": 170
+    },
+    {
+      "id": "card_80q01c",
+      "fr": "Je dois prendre le train.",
+      "target": "Devo prendere il treno.",
+      "lesson": "A12",
+      "index": 171
+    },
+    {
+      "id": "card_lw6lpo",
+      "fr": "Savez-vous chanter ?",
+      "target": "Sapete cantare?",
+      "lesson": "A12",
+      "index": 172
+    },
+    {
+      "id": "card_uoxjyk",
+      "fr": "Savent-ils comment arriver jusqu'ici ?",
+      "target": "Sanno come arrivare qui?",
+      "lesson": "A12",
+      "index": 173
+    },
+    {
+      "id": "card_qi86zz",
+      "fr": "Nous ne pouvons pas manquer le train.",
+      "target": "Non possiamo perdere il treno!",
+      "lesson": "A12",
+      "index": 174
+    },
+    {
+      "id": "card_uixo79",
+      "fr": "Pourquoi ne peuvent-ils venir ?",
+      "target": "Perché non possono venire?",
+      "lesson": "A12",
+      "index": 175
+    },
+    {
+      "id": "card_jz9bk7",
+      "fr": "Nous devons partir demain.",
+      "target": "Dobbiamo partire domani.",
+      "lesson": "A12",
+      "index": 176
+    },
+    {
+      "id": "card_z6kw98",
+      "fr": "Ils peuvent venir en mars.",
+      "target": "Possono venire in marzo.",
+      "lesson": "A12",
+      "index": 177
+    },
+    {
+      "id": "card_lf1cva",
+      "fr": "Je dois prendre cet avion.",
+      "target": "Devo prendere questo aereo.",
+      "lesson": "A12",
+      "index": 178
+    },
+    {
+      "id": "card_w86xya",
+      "fr": "Je ne peux pas payer comptant.",
+      "target": "Non posso pagare in contanti.",
+      "lesson": "A12",
+      "index": 179
+    },
+    {
+      "id": "card_cl9h21",
+      "fr": "Ils doivent quitter (lasciare) l'hôtel demain.",
+      "target": "Devono lasciare l'hotel domani.",
+      "lesson": "A12",
+      "index": 180
+    },
+    {
+      "id": "card_cdxiag",
+      "fr": "Savez-vous où se trouve la gare ?",
+      "target": "Sa dove si trova la stazione?",
+      "lesson": "A12",
+      "index": 181
+    },
+    {
+      "id": "card_9m4w5l",
+      "fr": "Je ne sais pas.",
+      "target": "Non so / Non lo so.",
+      "lesson": "A12",
+      "index": 182
+    },
+    {
+      "id": "card_yknuvt",
+      "fr": "Noël",
+      "target": "25 dicembre",
+      "lesson": "A12",
+      "index": 183
+    },
+    {
+      "id": "card_fbam0q",
+      "fr": "St-Valentin",
+      "target": "14 febbraio",
+      "lesson": "A12",
+      "index": 184
+    },
+    {
+      "id": "card_426rdm",
+      "fr": "fête du Travail",
+      "target": "1 maggio.",
+      "lesson": "A12",
+      "index": 185
+    },
+    {
+      "id": "card_s9y8j2",
+      "fr": "Assomption",
+      "target": "15 agosto",
+      "lesson": "A12",
+      "index": 186
+    },
+    {
+      "id": "card_407s4m",
+      "fr": "Armistice",
+      "target": "11 novembre",
+      "lesson": "A12",
+      "index": 187
+    },
+    {
+      "id": "card_lxxdps",
+      "fr": "Jour de l'An",
+      "target": "1 gennaio",
+      "lesson": "A12",
+      "index": 188
+    },
+    {
+      "id": "card_82asba",
+      "fr": "J'aime le café italien.",
+      "target": "Mi piace il caffè italiano.",
+      "lesson": "A13",
+      "index": 189
+    },
+    {
+      "id": "card_zei7ap",
+      "fr": "J'aime votre voiture !",
+      "target": "Mi piace la sua macchina!",
+      "lesson": "A13",
+      "index": 190
+    },
+    {
+      "id": "card_xm8jys",
+      "fr": "J'aime lire.",
+      "target": "Mi piace leggere.",
+      "lesson": "A13",
+      "index": 191
+    },
+    {
+      "id": "card_sljmkb",
+      "fr": "J'aime faire de longues promenades.",
+      "target": "Mi piace fare lunghe passeggiate.",
+      "lesson": "A13",
+      "index": 192
+    },
+    {
+      "id": "card_n9fzoc",
+      "fr": "J'aime discuter en italien.",
+      "target": "Mi piace discutere in italiano.",
+      "lesson": "A13",
+      "index": 193
+    },
+    {
+      "id": "card_p78zif",
+      "fr": "Je n'aime pas le mauvais temps.",
+      "target": "Non mi piace il brutto tempo.",
+      "lesson": "A13",
+      "index": 194
+    },
+    {
+      "id": "card_kctetu",
+      "fr": "Je n'aime pas cette ville si moderne.",
+      "target": "Non mi piace questa città così moderna.",
+      "lesson": "A13",
+      "index": 195
+    },
+    {
+      "id": "card_qvqam6",
+      "fr": "Je n'aime pas la plage bondée.",
+      "target": "Non mi piace la spiaggia affollata.",
+      "lesson": "A13",
+      "index": 196
+    },
+    {
+      "id": "card_7c95oi",
+      "fr": "Je n'aime pas cette chambre.",
+      "target": "Non mi piace questa camera.",
+      "lesson": "A13",
+      "index": 197
+    },
+    {
+      "id": "card_grx6r6",
+      "fr": "Je n'aime pas voyager seule.",
+      "target": "Non mi piace viaggiare da sola.",
+      "lesson": "A13",
+      "index": 198
+    },
+    {
+      "id": "card_xt5ty7",
+      "fr": "J'aime les glaces italiennes.",
+      "target": "Mi piacciono i gelati italiani.",
+      "lesson": "A13",
+      "index": 199
+    },
+    {
+      "id": "card_gfewzt",
+      "fr": "J'aime les films policiers.",
+      "target": "Mi piacciono i film gialli.",
+      "lesson": "A13",
+      "index": 200
+    },
+    {
+      "id": "card_7hb17w",
+      "fr": "J'aime ces spaghettis aux palourdes.",
+      "target": "Mi piacciono questi spaghetti alle vongole.",
+      "lesson": "A13",
+      "index": 201
+    },
+    {
+      "id": "card_cjlz3m",
+      "fr": "J'aime ces sandales de couleur.",
+      "target": "Mi piacciono questi sandali colorati.",
+      "lesson": "A13",
+      "index": 202
+    },
+    {
+      "id": "card_6o4lj5",
+      "fr": "J'aime ces vacances.",
+      "target": "Mi piacciono queste vacanze.",
+      "lesson": "A13",
+      "index": 203
+    },
+    {
+      "id": "card_r1a4vx",
+      "fr": "Je n'aime pas les produits surgelés.",
+      "target": "Non mi piacciono i prodotti surgelati.",
+      "lesson": "A13",
+      "index": 204
+    },
+    {
+      "id": "card_t40eni",
+      "fr": "Je n'aime pas les journaux à scandale.",
+      "target": "Non mi piacciono i giornali scandalistici.",
+      "lesson": "A13",
+      "index": 205
+    },
+    {
+      "id": "card_ssdmu8",
+      "fr": "Je n'aime pas les animaux dans un restaurant.",
+      "target": "Non mi piacciono gli animali in un ristorante.",
+      "lesson": "A13",
+      "index": 206
+    },
+    {
+      "id": "card_fllfvm",
+      "fr": "Je n'aime pas les personnes malpolies.",
+      "target": "Non mi piacciono le persone maleducate.",
+      "lesson": "A13",
+      "index": 207
+    },
+    {
+      "id": "card_ykp2el",
+      "fr": "Je n'aime pas les journées d'hiver.",
+      "target": "Non mi piacciono le giornate invernali.",
+      "lesson": "A13",
+      "index": 208
+    },
+    {
+      "id": "card_xm8jys",
+      "fr": "J'aime lire.",
+      "target": "Mi piace leggere.",
+      "lesson": "A13",
+      "index": 209
+    },
+    {
+      "id": "card_1w21r9",
+      "fr": "J'aime la pizza.",
+      "target": "Mi piace la pizza.",
+      "lesson": "A13",
+      "index": 210
+    },
+    {
+      "id": "card_u81kjb",
+      "fr": "J'aime les chats.",
+      "target": "Mi piacciono i gatti.",
+      "lesson": "A13",
+      "index": 211
+    },
+    {
+      "id": "card_sodqqb",
+      "fr": "Tu me téléphones.",
+      "target": "Mi telefoni.",
+      "lesson": "A13",
+      "index": 212
+    },
+    {
+      "id": "card_czypzv",
+      "fr": "Je te dis.",
+      "target": "Ti dico.",
+      "lesson": "A13",
+      "index": 213
+    },
+    {
+      "id": "card_aejyr0",
+      "fr": "Je lui parle (M.).",
+      "target": "Gli parlo.",
+      "lesson": "A13",
+      "index": 214
+    },
+    {
+      "id": "card_aeekn9",
+      "fr": "Je lui parle (F.).",
+      "target": "Le parlo.",
+      "lesson": "A13",
+      "index": 215
+    },
+    {
+      "id": "card_imvimg",
+      "fr": "Tu nous donnes.",
+      "target": "Ci dai.",
+      "lesson": "A13",
+      "index": 216
+    },
+    {
+      "id": "card_br7ed",
+      "fr": "Je vous envoie.",
+      "target": "Vi spedisco.",
+      "lesson": "A13",
+      "index": 217
+    },
+    {
+      "id": "card_t0bn8o",
+      "fr": "Je leur demande.",
+      "target": "Chiedo loro.",
+      "lesson": "A13",
+      "index": 218
+    },
+    {
+      "id": "card_yv9dtu",
+      "fr": "Je leur demande (familier).",
+      "target": "Gli chiedo.",
+      "lesson": "A13",
+      "index": 219
+    },
+    {
+      "id": "card_ogpttg",
+      "fr": "Tu me dois dix mille lires.",
+      "target": "Mi devi diecimila lire.",
+      "lesson": "A13",
+      "index": 220
+    },
+    {
+      "id": "card_qaqago",
+      "fr": "Nous pouvons vous appeler.",
+      "target": "Vi possiamo telefonare.",
+      "lesson": "A13",
+      "index": 221
+    },
+    {
+      "id": "card_psod5v",
+      "fr": "Je veux lui/leur dire la vérité.",
+      "target": "Gli voglio dire la verità.",
+      "lesson": "A13",
+      "index": 222
+    },
+    {
+      "id": "card_3ldggd",
+      "fr": "Je dois lui/vous demander de m'excuser.",
+      "target": "Le devo chiedere scusa.",
+      "lesson": "A13",
+      "index": 223
+    },
+    {
+      "id": "card_jxhi3o",
+      "fr": "Puis-je t'accompagner ?",
+      "target": "Ti posso accompagnare?",
+      "lesson": "A13",
+      "index": 224
+    },
+    {
+      "id": "card_8s3ql3",
+      "fr": "Ils veulent nous parler.",
+      "target": "Ci vogliono parlare.",
+      "lesson": "A13",
+      "index": 225
+    },
+    {
+      "id": "card_czw60k",
+      "fr": "Nous n'aimons pas conduire cette voiture.",
+      "target": "Non ci piace guidare questa macchina.",
+      "lesson": "A13",
+      "index": 226
+    },
+    {
+      "id": "card_ngwzzh",
+      "fr": "Il aime/ils aiment les films d'aventure.",
+      "target": "Gli piacciono i film d'avventura.",
+      "lesson": "A13",
+      "index": 227
+    },
+    {
+      "id": "card_yoqubt",
+      "fr": "Giuseppe et Carla s'aiment.",
+      "target": "Giuseppe e Carla si amano.",
+      "lesson": "A13",
+      "index": 228
+    },
+    {
+      "id": "card_qskzhr",
+      "fr": "Nous aimons votre chat.",
+      "target": "Ci piace il vostro gatto.",
+      "lesson": "A13",
+      "index": 229
+    },
+    {
+      "id": "card_q864dc",
+      "fr": "Nous te devons beaucoup d'argent.",
+      "target": "Ti dobbiamo molti soldi.",
+      "lesson": "A13",
+      "index": 230
+    },
+    {
+      "id": "card_tcce95",
+      "fr": "Aimez-vous ce vin?",
+      "target": "Vi piace questo vino?",
+      "lesson": "A13",
+      "index": 231
+    },
+    {
+      "id": "card_r2ip0d",
+      "fr": "Je n'aime pas la pluie.",
+      "target": "Non mi piace la pioggia.",
+      "lesson": "A13",
+      "index": 232
+    },
+    {
+      "id": "card_8414qk",
+      "fr": "Il aime/ils aiment les grosses voitures.",
+      "target": "Gli piacciono le macchine grosse.",
+      "lesson": "A13",
+      "index": 233
+    },
+    {
+      "id": "card_ni18br",
+      "fr": "Vous n'aimez pas rester dans cet hôtel.",
+      "target": "Non vi piace restare in questo hotel.",
+      "lesson": "A13",
+      "index": 234
+    },
+    {
+      "id": "card_2r0e9l",
+      "fr": "Il aime les romans d'amour.",
+      "target": "Gli piacciono i romanzi d'amore.",
+      "lesson": "A13",
+      "index": 235
+    },
+    {
+      "id": "card_9seqpz",
+      "fr": "Nous n'aimons pas aller à la mer.",
+      "target": "Non ci piace andare al mare.",
+      "lesson": "A13",
+      "index": 236
+    },
+    {
+      "id": "card_fdo7oi",
+      "fr": "Ils aiment tous les chiens.",
+      "target": "Gli piacciono tutti i cani.",
+      "lesson": "A13",
+      "index": 237
+    },
+    {
+      "id": "card_kx3aqb",
+      "fr": "Elle n'aime pas rester à la maison.",
+      "target": "Non le piace restare a casa.",
+      "lesson": "A13",
+      "index": 238
+    },
+    {
+      "id": "card_mixwrq",
+      "fr": "J'aime ce village ancien.",
+      "target": "Mi piace questo villaggio antico.",
+      "lesson": "A13",
+      "index": 239
+    },
+    {
+      "id": "card_j2m7wd",
+      "fr": "Non le piace stare in spiaggia?",
+      "target": "Non le piace stare in spiaggia?",
+      "lesson": "A13",
+      "index": 240
+    },
+    {
+      "id": "card_7vfici",
+      "fr": "Non vi piace andare in aereo?",
+      "target": "Non vi piace andare in aereo?",
+      "lesson": "A13",
+      "index": 241
+    },
+    {
+      "id": "card_g67kbf",
+      "fr": "Non gli piacciono i cavalli?",
+      "target": "Non gli piacciono i cavalli?",
+      "lesson": "A13",
+      "index": 242
+    },
+    {
+      "id": "card_vbcbli",
+      "fr": "Non vi piacciono queste case?",
+      "target": "Non vi piacciono queste case?",
+      "lesson": "A13",
+      "index": 243
+    },
+    {
+      "id": "card_246pjd",
+      "fr": "Pouvez-vous me dire votre nom ?",
+      "target": "Può dirmi il suo nome ?",
+      "lesson": "A14",
+      "index": 244
+    },
+    {
+      "id": "card_967nb8",
+      "fr": "Pouvez-vous me dire le prix de ce livre ?",
+      "target": "Può dirmi il prezzo di questo libro ?",
+      "lesson": "A14",
+      "index": 245
+    },
+    {
+      "id": "card_i1n8xt",
+      "fr": "Pouvez-vous me dire quelle heure il est ?",
+      "target": "Può dirmi che ore sono ?",
+      "lesson": "A14",
+      "index": 246
+    },
+    {
+      "id": "card_i358u4",
+      "fr": "Pouvez-vous me dire à quelle heure part le train ?",
+      "target": "Può dirmi a che ora parte il treno ?",
+      "lesson": "A14",
+      "index": 247
+    },
+    {
+      "id": "card_5hlr7c",
+      "fr": "Pouvez-vous me dire qui est cette belle dame ?",
+      "target": "Può dirmi chi è quella bella signora ?",
+      "lesson": "A14",
+      "index": 248
+    },
+    {
+      "id": "card_vvtwbp",
+      "fr": "Pouvez-vous me dire quand nous arrivons à la gare ?",
+      "target": "Può dirmi quando arriviamo alla stazione ?",
+      "lesson": "A14",
+      "index": 249
+    },
+    {
+      "id": "card_7bexu3",
+      "fr": "Pouvez-vous me dire quand finit le spectacle ?",
+      "target": "Può dirmi quando finisce lo spettacolo ?",
+      "lesson": "A14",
+      "index": 250
+    },
+    {
+      "id": "card_hm17ho",
+      "fr": "Pouvez-vous me dire combien coûte cette robe / ce costume ?",
+      "target": "Può dirmi quanto costa questo vestito ?",
+      "lesson": "A14",
+      "index": 251
+    },
+    {
+      "id": "card_qr2oqw",
+      "fr": "Pouvez-vous me dire à qui est cette belle maison ?",
+      "target": "Può dirmi di chi è questa bella casa ?",
+      "lesson": "A14",
+      "index": 252
+    },
+    {
+      "id": "card_fowei4",
+      "fr": "Pouvez-vous me dire comment on arrive à la cathédrale ?",
+      "target": "Può dirmi come si arriva alla cattedrale ?",
+      "lesson": "A14",
+      "index": 253
+    },
+    {
+      "id": "card_g02fvu",
+      "fr": "Pouvez-vous m'indiquer la direction de l'aéroport ?",
+      "target": "Può indicarmi la direzione per l'aeroporto ?",
+      "lesson": "A14",
+      "index": 254
+    },
+    {
+      "id": "card_7flvzh",
+      "fr": "Pouvez-vous m'indiquer la route pour sortir de la ville ?",
+      "target": "Può indicarmi la strada per uscire dalla città ?",
+      "lesson": "A14",
+      "index": 255
+    },
+    {
+      "id": "card_kuzq87",
+      "fr": "Pouvez-vous m'indiquer un bon restaurant ?",
+      "target": "Può indicarmi un buon ristorante ?",
+      "lesson": "A14",
+      "index": 256
+    },
+    {
+      "id": "card_zdubi6",
+      "fr": "Pouvez-vous m'indiquer un magasin de jouets ?",
+      "target": "Può indicarmi un negozio di giocattoli ?",
+      "lesson": "A14",
+      "index": 257
+    },
+    {
+      "id": "card_14irkn",
+      "fr": "Pouvez-vous m'indiquer où se trouve une station-service ?",
+      "target": "Può indicarmi dove si trova un distributore ?",
+      "lesson": "A14",
+      "index": 258
+    },
+    {
+      "id": "card_6swrip",
+      "fr": "Pouvez-vous me suggérer où passer la soirée ?",
+      "target": "Può suggerirmi dove passare la serata ?",
+      "lesson": "A14",
+      "index": 259
+    },
+    {
+      "id": "card_ydb0ly",
+      "fr": "Pouvez-vous me suggérer le nom d'un bon hôtel ?",
+      "target": "Può suggerirmi il nome di un buon albergo ?",
+      "lesson": "A14",
+      "index": 260
+    },
+    {
+      "id": "card_1g0uxx",
+      "fr": "Pouvez-vous me suggérer le nom d'une bonne pâtisserie ?",
+      "target": "Può suggerirmi il nome di una buona pasticceria ?",
+      "lesson": "A14",
+      "index": 261
+    },
+    {
+      "id": "card_ihfaiq",
+      "fr": "Pouvez-vous me suggérer une alternative à la visite au musée ?",
+      "target": "Può suggerirmi un'alternativa alla visita al museo ?",
+      "lesson": "A14",
+      "index": 262
+    },
+    {
+      "id": "card_lclcc5",
+      "fr": "Pouvez-vous me suggérer un itinéraire touristique pour aller à Rome ?",
+      "target": "Può suggerirmi un itinerario turistico per andare a Roma ?",
+      "lesson": "A14",
+      "index": 263
+    },
+    {
+      "id": "card_hlcumm",
+      "fr": "il me voit",
+      "target": "mi vede",
+      "lesson": "A14",
+      "index": 264
+    },
+    {
+      "id": "card_p1h845",
+      "fr": "il te voit",
+      "target": "ti vede",
+      "lesson": "A14",
+      "index": 265
+    },
+    {
+      "id": "card_3rjsfn",
+      "fr": "il le voit",
+      "target": "lo vede",
+      "lesson": "A14",
+      "index": 266
+    },
+    {
+      "id": "card_6cr0on",
+      "fr": "il la voit",
+      "target": "la vede",
+      "lesson": "A14",
+      "index": 267
+    },
+    {
+      "id": "card_5jc49r",
+      "fr": "il nous voit",
+      "target": "ci vede",
+      "lesson": "A14",
+      "index": 268
+    },
+    {
+      "id": "card_v3er2v",
+      "fr": "il vous voit",
+      "target": "vi vede",
+      "lesson": "A14",
+      "index": 269
+    },
+    {
+      "id": "card_1h31u4",
+      "fr": "il les voit (M.)",
+      "target": "li vede",
+      "lesson": "A14",
+      "index": 270
+    },
+    {
+      "id": "card_1h2vyd",
+      "fr": "il les voit (F.)",
+      "target": "le vede",
+      "lesson": "A14",
+      "index": 271
+    },
+    {
+      "id": "card_tsrspm",
+      "fr": "le dire",
+      "target": "dirlo",
+      "lesson": "A14",
+      "index": 272
+    },
+    {
+      "id": "card_soulqe",
+      "fr": "m'indiquer",
+      "target": "indicarmi",
+      "lesson": "A14",
+      "index": 273
+    },
+    {
+      "id": "card_lfmygj",
+      "fr": "lui dire",
+      "target": "dirgli",
+      "lesson": "A14",
+      "index": 274
+    },
+    {
+      "id": "card_tp102f",
+      "fr": "les voir",
+      "target": "vederli/le",
+      "lesson": "A14",
+      "index": 275
+    },
+    {
+      "id": "card_6zsn1u",
+      "fr": "nous croire",
+      "target": "crederci",
+      "lesson": "A14",
+      "index": 276
+    },
+    {
+      "id": "card_d8gpd0",
+      "fr": "te raconter",
+      "target": "raccontarti",
+      "lesson": "A14",
+      "index": 277
+    },
+    {
+      "id": "card_6turlv",
+      "fr": "Pouvez-vous parler plus lentement?",
+      "target": "Può parlare più lentamente?",
+      "lesson": "A14",
+      "index": 278
+    },
+    {
+      "id": "card_d1744k",
+      "fr": "Ce fromage, je ne veux pas le manger, il n'est pas frais.",
+      "target": "Questo formaggio non voglio mangiarlo, non è fresco!",
+      "lesson": "A14",
+      "index": 279
+    },
+    {
+      "id": "card_vil95h",
+      "fr": "Ils veulent nous dire la vérité.",
+      "target": "Vogliono dirci la verità.",
+      "lesson": "A14",
+      "index": 280
+    },
+    {
+      "id": "card_gbnoxt",
+      "fr": "Il ne veut pas me donner le reçu.",
+      "target": "Non vuole darmi la ricevuta.",
+      "lesson": "A14",
+      "index": 281
+    },
+    {
+      "id": "card_awsdnm",
+      "fr": "La réservation, il doit/vous devez la confirmer par téléphone.",
+      "target": "La prenotazione, deve confermarla per telefono.",
+      "lesson": "A14",
+      "index": 282
+    },
+    {
+      "id": "card_ksu0i4",
+      "fr": "L'excursion, on doit la payer tout de suite.",
+      "target": "L'escursione si deve pagarla subito.",
+      "lesson": "A14",
+      "index": 283
+    },
+    {
+      "id": "card_y6vx5k",
+      "fr": "L'herbe dans le jardin est trop haute, je dois la couper.",
+      "target": "L'erba in giardino è troppo alta: devo tagliarla.",
+      "lesson": "A14",
+      "index": 284
+    },
+    {
+      "id": "card_ldur5u",
+      "fr": "Leur voiture est sale, ils doivent la laver.",
+      "target": "La loro macchina è sporca, devono lavarla.",
+      "lesson": "A14",
+      "index": 285
+    },
+    {
+      "id": "card_lpfudz",
+      "fr": "Ils veulent lui raconter leur voyage.",
+      "target": "Vogliono raccontargli il loro viaggio.",
+      "lesson": "A14",
+      "index": 286
+    },
+    {
+      "id": "card_90t6s7",
+      "fr": "Quand elle me voit, elle me demande toujours de te saluer.",
+      "target": "Quando mi vede, mi chiede sempre di salutarti.",
+      "lesson": "A14",
+      "index": 287
+    },
+    {
+      "id": "card_knz6x7",
+      "fr": "Ce livre est très long, mais je dois le lire.",
+      "target": "Questo libro è molto lungo, ma devo leggerlo.",
+      "lesson": "A14",
+      "index": 288
+    },
+    {
+      "id": "card_esfhp3",
+      "fr": "Parlez-vous français?",
+      "target": "Parla/parlate francese?",
+      "lesson": "A14",
+      "index": 289
+    },
+    {
+      "id": "card_9hj2nr",
+      "fr": "Pouvez-vous me dire à quelle heure part le train pour Paris?",
+      "target": "Mi può dire a che ora parte il treno per Parigi?",
+      "lesson": "A14",
+      "index": 290
+    },
+    {
+      "id": "card_73b9km",
+      "fr": "Pouvez-vous m'indiquer un bon restaurant en ville?",
+      "target": "Può/potete indicarmi un buon ristorante in città?",
+      "lesson": "A14",
+      "index": 291
+    },
+    {
+      "id": "card_375x2u",
+      "fr": "100",
+      "target": "cento",
+      "lesson": "A14",
+      "index": 292
+    },
+    {
+      "id": "card_375x2v",
+      "fr": "101",
+      "target": "centouno",
+      "lesson": "A14",
+      "index": 293
+    },
+    {
+      "id": "card_375x2w",
+      "fr": "102",
+      "target": "centodue",
+      "lesson": "A14",
+      "index": 294
+    },
+    {
+      "id": "card_375xx3",
+      "fr": "200",
+      "target": "duecento",
+      "lesson": "A14",
+      "index": 295
+    },
+    {
+      "id": "card_375yrc",
+      "fr": "300",
+      "target": "trecento",
+      "lesson": "A14",
+      "index": 296
+    },
+    {
+      "id": "card_376nie",
+      "fr": "1 000",
+      "target": "mille",
+      "lesson": "A14",
+      "index": 297
+    },
+    {
+      "id": "card_376ocn",
+      "fr": "1 100",
+      "target": "millecento",
+      "lesson": "A14",
+      "index": 298
+    },
+    {
+      "id": "card_376vaz",
+      "fr": "1 993",
+      "target": "millenovecentonovantatre",
+      "lesson": "A14",
+      "index": 299
+    },
+    {
+      "id": "card_37w2kn",
+      "fr": "2 000",
+      "target": "duemila",
+      "lesson": "A14",
+      "index": 300
+    },
+    {
+      "id": "card_38lhmw",
+      "fr": "3 000",
+      "target": "tremila",
+      "lesson": "A14",
+      "index": 301
+    },
+    {
+      "id": "card_s1vwcy",
+      "fr": "900 000",
+      "target": "novecentomila",
+      "lesson": "A14",
+      "index": 302
+    },
+    {
+      "id": "card_o9wloq",
+      "fr": "1 000 000",
+      "target": "un milione",
+      "lesson": "A14",
+      "index": 303
+    },
+    {
+      "id": "card_81n3g7",
+      "fr": "2 000 000",
+      "target": "due milioni",
+      "lesson": "A14",
+      "index": 304
+    },
+    {
+      "id": "card_9inhdc",
+      "fr": "999 000 000",
+      "target": "novecentonovantanove milioni",
+      "lesson": "A14",
+      "index": 305
+    },
+    {
+      "id": "card_h8lgyi",
+      "fr": "1 000 000 000",
+      "target": "un miliardo",
+      "lesson": "A14",
+      "index": 306
+    },
+    {
+      "id": "card_4s7y3r",
+      "fr": "2 000 000 000",
+      "target": "due miliardi",
+      "lesson": "A14",
+      "index": 307
+    },
+    {
+      "id": "card_376pbh",
+      "fr": "1 250",
+      "target": "milleduecentocinquanta",
+      "lesson": "A14",
+      "index": 308
+    },
+    {
+      "id": "card_e0v4eq",
+      "fr": "306 000",
+      "target": "trecentoseimila",
+      "lesson": "A14",
+      "index": 309
+    },
+    {
+      "id": "card_3cu7kn",
+      "fr": "9 900",
+      "target": "novemila-novecento",
+      "lesson": "A14",
+      "index": 310
+    },
+    {
+      "id": "card_fz1xax",
+      "fr": "4 950 000",
+      "target": "quattro milioni novecentocinquantamila",
+      "lesson": "A14",
+      "index": 311
+    },
+    {
+      "id": "card_fnt3ht",
+      "fr": "Je suis allé au cinéma.",
+      "target": "Sono andato al cinema.",
+      "lesson": "A15",
+      "index": 312
+    },
+    {
+      "id": "card_n7m504",
+      "fr": "Anne est arrivée en voiture.",
+      "target": "Anna è arrivata in macchina.",
+      "lesson": "A15",
+      "index": 313
+    },
+    {
+      "id": "card_lpr9fx",
+      "fr": "Paul est parti tôt.",
+      "target": "Paolo è partito presto.",
+      "lesson": "A15",
+      "index": 314
+    },
+    {
+      "id": "card_2yoaye",
+      "fr": "Nous sommes allés à la campagne.",
+      "target": "Siamo stati in campagna.",
+      "lesson": "A15",
+      "index": 315
+    },
+    {
+      "id": "card_tthjg0",
+      "fr": "Louise et Sylvie sont entrées gratuitement.",
+      "target": "Luisa e Silvia sono entrate gratis.",
+      "lesson": "A15",
+      "index": 316
+    },
+    {
+      "id": "card_75a0ou",
+      "fr": "Avez-vous assisté au spectacle ?",
+      "target": "Avete assistito allo spettacolo?",
+      "lesson": "A15",
+      "index": 317
+    },
+    {
+      "id": "card_wzbtxx",
+      "fr": "Ils ont demandé un renseignement.",
+      "target": "Hanno chiesto un'informazione.",
+      "lesson": "A15",
+      "index": 318
+    },
+    {
+      "id": "card_jg157w",
+      "fr": "Paul a dit ce qu'il pense.",
+      "target": "Paolo ha detto quello che pensa.",
+      "lesson": "A15",
+      "index": 319
+    },
+    {
+      "id": "card_ie0l4h",
+      "fr": "Anne a écouté un disque.",
+      "target": "Anna ha ascoltato un disco.",
+      "lesson": "A15",
+      "index": 320
+    },
+    {
+      "id": "card_aaqtaz",
+      "fr": "Tu as eu peur d'être en retard.",
+      "target": "Hai avuto paura di essere in ritardo.",
+      "lesson": "A15",
+      "index": 321
+    },
+    {
+      "id": "card_fvq5pw",
+      "fr": "Vous avez rencontré mes parents.",
+      "target": "Avete incontrato i miei genitori.",
+      "lesson": "A15",
+      "index": 322
+    },
+    {
+      "id": "card_qs2elp",
+      "fr": "J'ai déjeuné au bistrot.",
+      "target": "Ho pranzato in trattoria.",
+      "lesson": "A15",
+      "index": 323
+    },
+    {
+      "id": "card_ftyp6",
+      "fr": "Vous êtes allés aux États-Unis.",
+      "target": "Siete andati negli Stati Uniti.",
+      "lesson": "A15",
+      "index": 324
+    },
+    {
+      "id": "card_aljaoz",
+      "fr": "Nous n'avons pas pris de vacances.",
+      "target": "Non abbiamo fatto vacanze.",
+      "lesson": "A15",
+      "index": 325
+    },
+    {
+      "id": "card_xjs81k",
+      "fr": "J'ai gagné un concours de peinture.",
+      "target": "Ho vinto un concorso di pittura.",
+      "lesson": "A15",
+      "index": 326
+    },
+    {
+      "id": "card_5djy2p",
+      "fr": "Il/elle a acheté un bel appartement.",
+      "target": "Ha comprato un bell'appartamento.",
+      "lesson": "A15",
+      "index": 327
+    },
+    {
+      "id": "card_7boivz",
+      "fr": "Vous avez eu du beau temps en août.",
+      "target": "Avete avuto bel tempo in agosto.",
+      "lesson": "A15",
+      "index": 328
+    },
+    {
+      "id": "card_7mpywa",
+      "fr": "Nous sommes partis tard.",
+      "target": "Siamo partiti tardi.",
+      "lesson": "A15",
+      "index": 329
+    },
+    {
+      "id": "card_cmhb4h",
+      "fr": "Nous sommes parties tard.",
+      "target": "Siamo partite tardi.",
+      "lesson": "A15",
+      "index": 330
+    },
+    {
+      "id": "card_3nb8ey",
+      "fr": "j'ai été",
+      "target": "sono stato",
+      "lesson": "A15",
+      "index": 331
+    },
+    {
+      "id": "card_j9euqi",
+      "fr": "j'ai eu",
+      "target": "ho avuto",
+      "lesson": "A15",
+      "index": 332
+    },
+    {
+      "id": "card_jbbr8x",
+      "fr": "Lise est allée...",
+      "target": "Lisa è andata...",
+      "lesson": "A15",
+      "index": 333
+    },
+    {
+      "id": "card_g6uicf",
+      "fr": "Paul est venu",
+      "target": "Paolo è venuto",
+      "lesson": "A15",
+      "index": 334
+    },
+    {
+      "id": "card_al8035",
+      "fr": "Louise a acheté...",
+      "target": "Luisa ha comprato...",
+      "lesson": "A15",
+      "index": 335
+    },
+    {
+      "id": "card_4a19u4",
+      "fr": "faire",
+      "target": "fare",
+      "lesson": "A15",
+      "index": 336
+    },
+    {
+      "id": "card_ykh9zd",
+      "fr": "fait",
+      "target": "fatto",
+      "lesson": "A15",
+      "index": 337
+    },
+    {
+      "id": "card_4lf5qh",
+      "fr": "venir",
+      "target": "venire",
+      "lesson": "A15",
+      "index": 338
+    },
+    {
+      "id": "card_yktp4z",
+      "fr": "venu",
+      "target": "venuto",
+      "lesson": "A15",
+      "index": 339
+    },
+    {
+      "id": "card_3r3rg6",
+      "fr": "mettre",
+      "target": "mettere",
+      "lesson": "A15",
+      "index": 340
+    },
+    {
+      "id": "card_377czy",
+      "fr": "mis",
+      "target": "messo",
+      "lesson": "A15",
+      "index": 341
+    },
+    {
+      "id": "card_h1zsrv",
+      "fr": "prendre",
+      "target": "prendere",
+      "lesson": "A15",
+      "index": 342
+    },
+    {
+      "id": "card_ykpdk3",
+      "fr": "pris",
+      "target": "preso",
+      "lesson": "A15",
+      "index": 343
+    },
+    {
+      "id": "card_ykfxgp",
+      "fr": "dire",
+      "target": "dire",
+      "lesson": "A15",
+      "index": 344
+    },
+    {
+      "id": "card_3775fq",
+      "fr": "dit",
+      "target": "detto",
+      "lesson": "A15",
+      "index": 345
+    },
+    {
+      "id": "card_5d1k4s",
+      "fr": "ouvrir",
+      "target": "aprire",
+      "lesson": "A15",
+      "index": 346
+    },
+    {
+      "id": "card_5d19fu",
+      "fr": "ouvert",
+      "target": "aperto",
+      "lesson": "A15",
+      "index": 347
+    },
+    {
+      "id": "card_s1lne",
+      "fr": "fermer",
+      "target": "chiudere",
+      "lesson": "A15",
+      "index": 348
+    },
+    {
+      "id": "card_4a4kag",
+      "fr": "fermé",
+      "target": "chiuso",
+      "lesson": "A15",
+      "index": 349
+    },
+    {
+      "id": "card_1vo385",
+      "fr": "donner",
+      "target": "dare",
+      "lesson": "A15",
+      "index": 350
+    },
+    {
+      "id": "card_48xc4d",
+      "fr": "donné",
+      "target": "dato",
+      "lesson": "A15",
+      "index": 351
+    },
+    {
+      "id": "card_yktxet",
+      "fr": "voir",
+      "target": "vedere",
+      "lesson": "A15",
+      "index": 352
+    },
+    {
+      "id": "card_3homo",
+      "fr": "vu",
+      "target": "visto",
+      "lesson": "A15",
+      "index": 353
+    },
+    {
+      "id": "card_igl5cr",
+      "fr": "rester, être",
+      "target": "stare",
+      "lesson": "A15",
+      "index": 354
+    },
+    {
+      "id": "card_4ilm24",
+      "fr": "resté",
+      "target": "stato",
+      "lesson": "A15",
+      "index": 355
+    },
+    {
+      "id": "card_t51wz1",
+      "fr": "vaincre",
+      "target": "vincere",
+      "lesson": "A15",
+      "index": 356
+    },
+    {
+      "id": "card_9hqqbv",
+      "fr": "vaincu",
+      "target": "vinto",
+      "lesson": "A15",
+      "index": 357
+    },
+    {
+      "id": "card_ykm3ap",
+      "fr": "lire",
+      "target": "leggere",
+      "lesson": "A15",
+      "index": 358
+    },
+    {
+      "id": "card_3hodi",
+      "fr": "lu",
+      "target": "letto",
+      "lesson": "A15",
+      "index": 359
+    },
+    {
+      "id": "card_7vxbgx",
+      "fr": "Mezz'ora fa, il y a une demi-heure.",
+      "target": "Mezz'ora fa",
+      "lesson": "A15",
+      "index": 360
+    },
+    {
+      "id": "card_od85t",
+      "fr": "Hier j'ai bien dormi.",
+      "target": "Ieri ho ben dormito.",
+      "lesson": "A15",
+      "index": 361
+    },
+    {
+      "id": "card_ush559",
+      "fr": "Avant-hier j'ai vu un film.",
+      "target": "L'altro ieri ho visto un film.",
+      "lesson": "A15",
+      "index": 362
+    },
+    {
+      "id": "card_ush559",
+      "fr": "Avant-hier j'ai vu un film.",
+      "target": "Ieri l'altro ho visto un film.",
+      "lesson": "A15",
+      "index": 363
+    },
+    {
+      "id": "card_pyruwy",
+      "fr": "Je suis parti il y a deux jours.",
+      "target": "Due giorni fa sono partito.",
+      "lesson": "A15",
+      "index": 364
+    },
+    {
+      "id": "card_edy28n",
+      "fr": "Hier je suis allé au cinéma.",
+      "target": "Ieri sono stato al cinema.",
+      "lesson": "A15",
+      "index": 365
+    },
+    {
+      "id": "card_9y4jdt",
+      "fr": "Avez-vous eu de la chance avec le temps?",
+      "target": "Avete avuto fortuna con il tempo?",
+      "lesson": "A15",
+      "index": 366
+    },
+    {
+      "id": "card_mva0aj",
+      "fr": "Nous avons acheté une voiture rouge.",
+      "target": "Abbiamo comprato una macchina rossa.",
+      "lesson": "A15",
+      "index": 367
+    },
+    {
+      "id": "card_xkryn9",
+      "fr": "Je ne crois pas à ce qu'il a dit.",
+      "target": "Non credo a quello che ha detto.",
+      "lesson": "A15",
+      "index": 368
+    },
+    {
+      "id": "card_4penw8",
+      "fr": "Nous avons fini le livre.",
+      "target": "Abbiamo finito il libro.",
+      "lesson": "A15",
+      "index": 369
+    },
+    {
+      "id": "card_5fr43h",
+      "fr": "Avez-vous demandé un renseignement?",
+      "target": "Avete chiesto un'informazione?",
+      "lesson": "A15",
+      "index": 370
+    },
+    {
+      "id": "card_55t2z1",
+      "fr": "Quand êtes-vous arrivés?",
+      "target": "Quando siete arrivati?",
+      "lesson": "A15",
+      "index": 371
+    },
+    {
+      "id": "card_enlrmf",
+      "fr": "Pourquoi es-tu parti en avance?",
+      "target": "Perché sei partito in anticipo?",
+      "lesson": "A15",
+      "index": 372
+    },
+    {
+      "id": "card_kja3i9",
+      "fr": "As-tu fait un bon voyage?",
+      "target": "Hai fatto buon viaggio?",
+      "lesson": "A15",
+      "index": 373
+    },
+    {
+      "id": "card_w5m3wp",
+      "fr": "Combien de glaces as-tu achetées?",
+      "target": "Quanti gelati hai comprato?",
+      "lesson": "A15",
+      "index": 374
+    },
+    {
+      "id": "card_p6cj0o",
+      "fr": "Comment avez-vous trouvé le dîner?",
+      "target": "Come avete trovato la cena?",
+      "lesson": "A15",
+      "index": 375
+    },
+    {
+      "id": "card_afb2q3",
+      "fr": "Ils ont acheté une nouvelle moto.",
+      "target": "Hanno comprato una nuova moto.",
+      "lesson": "A15",
+      "index": 376
+    },
+    {
+      "id": "card_basj3e",
+      "fr": "L'année dernière vous avez réservé en avance.",
+      "target": "L'anno scorso avete prenotato in anticipo.",
+      "lesson": "A15",
+      "index": 377
+    },
+    {
+      "id": "card_pevtgo",
+      "fr": "L'as-tu vu il y a une demi-heure?",
+      "target": "L'hai visto mezz'ora fa?",
+      "lesson": "A15",
+      "index": 378
+    },
+    {
+      "id": "card_3nvowj",
+      "fr": "Anne est arrivée par avion.",
+      "target": "Anna è arrivata in aereo.",
+      "lesson": "A15",
+      "index": 379
+    },
+    {
+      "id": "card_5zbpzn",
+      "fr": "Ils ont trouvé leurs clefs.",
+      "target": "Hanno trovato le loro chiavi.",
+      "lesson": "A15",
+      "index": 380
+    },
+    {
+      "id": "card_fnt3ht",
+      "fr": "Je suis allé au cinéma.",
+      "target": "Sono andato al cinema.",
+      "lesson": "A15",
+      "index": 381
+    },
+    {
+      "id": "card_u1lpx0",
+      "fr": "J'ai vu Paolo il y a deux jours.",
+      "target": "Ho visto Paolo due giorni fa.",
+      "lesson": "A15",
+      "index": 382
+    },
+    {
+      "id": "card_m2deus",
+      "fr": "J'ai lu un livre il y a deux jours.",
+      "target": "Due giorni fa ho letto un libro.",
+      "lesson": "A15",
+      "index": 383
+    },
+    {
+      "id": "card_3j64wp",
+      "fr": "J'ai déjeuné à la trattoria il y a une demi-heure.",
+      "target": "Mezz'ora fa ho pranzato in trattoria.",
+      "lesson": "A15",
+      "index": 384
+    },
+    {
+      "id": "card_rj1ww2",
+      "fr": "Je suis content / contente",
+      "target": "Sono contento / contenta",
+      "lesson": "A16",
+      "index": 385
+    },
+    {
+      "id": "card_pq2svy",
+      "fr": "J'ai envie de marcher",
+      "target": "Ho voglia di camminare",
+      "lesson": "A16",
+      "index": 386
+    },
+    {
+      "id": "card_sf7cme",
+      "fr": "Je vais à Rome",
+      "target": "Vado a Roma",
+      "lesson": "A16",
+      "index": 387
+    },
+    {
+      "id": "card_3qveoh",
+      "fr": "Je viens chez toi",
+      "target": "Vengo a casa tua",
+      "lesson": "A16",
+      "index": 388
+    },
+    {
+      "id": "card_tih3bz",
+      "fr": "Je peux t'appeler (te téléphoner) à 3 heures",
+      "target": "Posso telefonarti alle 3 (tre)",
+      "lesson": "A16",
+      "index": 389
+    },
+    {
+      "id": "card_zfn6ec",
+      "fr": "Je dois aller chez le docteur",
+      "target": "Devo andare dal dottore",
+      "lesson": "A16",
+      "index": 390
+    },
+    {
+      "id": "card_kl6t6f",
+      "fr": "Je connais (sais) les résultats de l'examen",
+      "target": "So i risultati dell'esame",
+      "lesson": "A16",
+      "index": 391
+    },
+    {
+      "id": "card_1sjfvt",
+      "fr": "Je déjeune au restaurant",
+      "target": "Pranzo al ristorante",
+      "lesson": "A16",
+      "index": 392
+    },
+    {
+      "id": "card_fa90gn",
+      "fr": "Je lave la voiture",
+      "target": "Lavo la macchina",
+      "lesson": "A16",
+      "index": 393
+    },
+    {
+      "id": "card_oy5sau",
+      "fr": "Je serai content (car je pars/partirai)",
+      "target": "Sarò contento (perché parto/partirò)",
+      "lesson": "A16",
+      "index": 394
+    },
+    {
+      "id": "card_m17p8i",
+      "fr": "J'aurai le temps",
+      "target": "Avrò tempo",
+      "lesson": "A16",
+      "index": 395
+    },
+    {
+      "id": "card_ah2x6p",
+      "fr": "Je vais (j'irai) à Rome",
+      "target": "Vado (andrò) a Roma",
+      "lesson": "A16",
+      "index": 396
+    },
+    {
+      "id": "card_g9i881",
+      "fr": "Je viens (je viendrai) chez toi",
+      "target": "Vengo (verrò) a casa tua",
+      "lesson": "A16",
+      "index": 397
+    },
+    {
+      "id": "card_uzxzi",
+      "fr": "Je peux (je pourrai) te téléphoner à 3 heures",
+      "target": "Posso (potrò) telefonarti alle 3 (tre)",
+      "lesson": "A16",
+      "index": 398
+    },
+    {
+      "id": "card_wz9rk1",
+      "fr": "Je dois (je devrai) aller chez le docteur",
+      "target": "Devo (dovrò) andare dal dottore",
+      "lesson": "A16",
+      "index": 399
+    },
+    {
+      "id": "card_3y7gt2",
+      "fr": "Je connaîtrai les résultats de l'examen",
+      "target": "Saprò i risultati dell'esame",
+      "lesson": "A16",
+      "index": 400
+    },
+    {
+      "id": "card_gq4hj",
+      "fr": "Je déjeune (je déjeunerai) au restaurant",
+      "target": "Pranzo (pranzerò) al ristorante",
+      "lesson": "A16",
+      "index": 401
+    },
+    {
+      "id": "card_tlgmlh",
+      "fr": "Je lave (je laverai) la voiture",
+      "target": "Lavo (laverò) la macchina",
+      "lesson": "A16",
+      "index": 402
+    },
+    {
+      "id": "card_9ql6n8",
+      "fr": "l'année prochaine",
+      "target": "l'anno prossimo",
+      "lesson": "A16",
+      "index": 403
+    },
+    {
+      "id": "card_beybfw",
+      "fr": "dans une heure",
+      "target": "fra un'ora",
+      "lesson": "A16",
+      "index": 404
+    },
+    {
+      "id": "card_ikq3lh",
+      "fr": "dans dix minutes",
+      "target": "fra 10 minuti",
+      "lesson": "A16",
+      "index": 405
+    },
+    {
+      "id": "card_6tk7c",
+      "fr": "je serai",
+      "target": "sarò",
+      "lesson": "A16",
+      "index": 406
+    },
+    {
+      "id": "card_30tiek",
+      "fr": "tu seras",
+      "target": "sarai",
+      "lesson": "A16",
+      "index": 407
+    },
+    {
+      "id": "card_wr7vqu",
+      "fr": "il/elle sera",
+      "target": "sarà",
+      "lesson": "A16",
+      "index": 408
+    },
+    {
+      "id": "card_33wa9w",
+      "fr": "nous serons",
+      "target": "saremo",
+      "lesson": "A16",
+      "index": 409
+    },
+    {
+      "id": "card_wqp5x7",
+      "fr": "vous serez",
+      "target": "sarete",
+      "lesson": "A16",
+      "index": 410
+    },
+    {
+      "id": "card_7zma50",
+      "fr": "ils/elles seront",
+      "target": "saranno",
+      "lesson": "A16",
+      "index": 411
+    },
+    {
+      "id": "card_j9q0a0",
+      "fr": "j'aurai",
+      "target": "avrò",
+      "lesson": "A16",
+      "index": 412
+    },
+    {
+      "id": "card_2ogay2",
+      "fr": "tu auras",
+      "target": "avrai",
+      "lesson": "A16",
+      "index": 413
+    },
+    {
+      "id": "card_wque2c",
+      "fr": "il/elle aura",
+      "target": "avrà",
+      "lesson": "A16",
+      "index": 414
+    },
+    {
+      "id": "card_887jum",
+      "fr": "nous aurons",
+      "target": "avremo",
+      "lesson": "A16",
+      "index": 415
+    },
+    {
+      "id": "card_webygp",
+      "fr": "vous aurez",
+      "target": "avrete",
+      "lesson": "A16",
+      "index": 416
+    },
+    {
+      "id": "card_jbq49i",
+      "fr": "ils/elles auront",
+      "target": "avranno",
+      "lesson": "A16",
+      "index": 417
+    },
+    {
+      "id": "card_qfo37",
+      "fr": "Quelle heure est-il ?",
+      "target": "Che ore sono ?",
+      "lesson": "A16",
+      "index": 418
+    },
+    {
+      "id": "card_2e2svt",
+      "fr": "Il est probablement (il doit être) 10 heures",
+      "target": "Saranno le 10 (dieci)",
+      "lesson": "A16",
+      "index": 419
+    },
+    {
+      "id": "card_65yd6s",
+      "fr": "Que fait Hugues ?",
+      "target": "Che cosa fa Ugo ?",
+      "lesson": "A16",
+      "index": 420
+    },
+    {
+      "id": "card_cglh86",
+      "fr": "Il dort probablement encore",
+      "target": "Dormirà ancora",
+      "lesson": "A16",
+      "index": 421
+    },
+    {
+      "id": "card_ptf5xi",
+      "fr": "Où est Anne ?",
+      "target": "Dov'è Anna ?",
+      "lesson": "A16",
+      "index": 422
+    },
+    {
+      "id": "card_b2y72r",
+      "fr": "Elle regarde probablement la télévision",
+      "target": "Guarderà la televisione",
+      "lesson": "A16",
+      "index": 423
+    },
+    {
+      "id": "card_3ho7x",
+      "fr": "FR",
+      "target": "IT",
+      "lesson": "A1",
+      "index": 424
+    },
+    {
+      "id": "card_nljesw",
+      "fr": "Je suis français/française.",
+      "target": "Sono francese.",
+      "lesson": "A1",
+      "index": 425
+    },
+    {
+      "id": "card_l2hf19",
+      "fr": "Je suis jeune.",
+      "target": "Sono giovane.",
+      "lesson": "A1",
+      "index": 426
+    },
+    {
+      "id": "card_iqqa51",
+      "fr": "Je suis étranger/étrangère.",
+      "target": "Sono straniero/straniera.",
+      "lesson": "A1",
+      "index": 427
+    },
+    {
+      "id": "card_btwy1g",
+      "fr": "Je suis fatigué/fatiguée.",
+      "target": "Sono stanco/stanca.",
+      "lesson": "A1",
+      "index": 428
+    },
+    {
+      "id": "card_varl1s",
+      "fr": "Je suis content/contente.",
+      "target": "Sono contento/contenta.",
+      "lesson": "A1",
+      "index": 429
+    },
+    {
+      "id": "card_qsn4u4",
+      "fr": "Je suis étonné/étonnée.",
+      "target": "Sono stupito/stupita.",
+      "lesson": "A1",
+      "index": 430
+    },
+    {
+      "id": "card_za9hjk",
+      "fr": "Je suis vieux/vieille.",
+      "target": "Sono vecchio/vecchia.",
+      "lesson": "A1",
+      "index": 431
+    },
+    {
+      "id": "card_yzh2wy",
+      "fr": "Je suis désolé/désolée.",
+      "target": "Sono dispiaciuto/dispiaciuta.",
+      "lesson": "A1",
+      "index": 432
+    },
+    {
+      "id": "card_so51yg",
+      "fr": "Je suis malade (je suis mal).",
+      "target": "Sono ammalato/ammalata (sto male).",
+      "lesson": "A1",
+      "index": 433
+    },
+    {
+      "id": "card_x78ltb",
+      "fr": "Je suis intéressé/intéressée (ça m'intéresse).",
+      "target": "Sono interessato/interessata (mi interessa).",
+      "lesson": "A1",
+      "index": 434
+    },
+    {
+      "id": "card_oj8aim",
+      "fr": "Je suis étudiant/étudiante.",
+      "target": "Sono studente/studentessa.",
+      "lesson": "A1",
+      "index": 435
+    },
+    {
+      "id": "card_mnpp9b",
+      "fr": "Je suis médecin.",
+      "target": "Sono medico.",
+      "lesson": "A1",
+      "index": 436
+    },
+    {
+      "id": "card_gpnbvo",
+      "fr": "Je suis avocat.",
+      "target": "Sono avvocato.",
+      "lesson": "A1",
+      "index": 437
+    },
+    {
+      "id": "card_z0t1bg",
+      "fr": "Je suis en forme (je suis bien).",
+      "target": "Sono in forma (sto bene).",
+      "lesson": "A1",
+      "index": 438
+    },
+    {
+      "id": "card_z0nbh5",
+      "fr": "Je suis en avance.",
+      "target": "Sono in anticipo.",
+      "lesson": "A1",
+      "index": 439
+    },
+    {
+      "id": "card_xbcwwr",
+      "fr": "Je suis en retard.",
+      "target": "Sono in ritardo.",
+      "lesson": "A1",
+      "index": 440
+    },
+    {
+      "id": "card_gqpq2k",
+      "fr": "Je suis en voyage.",
+      "target": "Sono in viaggio.",
+      "lesson": "A1",
+      "index": 441
+    },
+    {
+      "id": "card_f2rwbn",
+      "fr": "Je suis en vacances.",
+      "target": "Sono in vacanza.",
+      "lesson": "A1",
+      "index": 442
+    },
+    {
+      "id": "card_377d56",
+      "fr": "Moi",
+      "target": "je suis italien",
+      "lesson": "A1",
+      "index": 443
+    },
+    {
+      "id": "card_twkc3w",
+      "fr": "Je suis italien.",
+      "target": "Sono italiano.",
+      "lesson": "A1",
+      "index": 444
+    },
+    {
+      "id": "card_8exnyg",
+      "fr": "Ils sont italiens.",
+      "target": "Sono italiani.",
+      "lesson": "A1",
+      "index": 445
+    },
+    {
+      "id": "card_x9ktjm",
+      "fr": "Es-tu fâché ?",
+      "target": "Sei arrabbiato ?",
+      "lesson": "A1",
+      "index": 446
+    },
+    {
+      "id": "card_6lg7qi",
+      "fr": "Sommes-nous loin de Pise ?",
+      "target": "Siamo lontani da Pisa ?",
+      "lesson": "A1",
+      "index": 447
+    },
+    {
+      "id": "card_2cv2f6",
+      "fr": "Est-il à l'heure ?",
+      "target": "E' in orario ?",
+      "lesson": "A1",
+      "index": 448
+    },
+    {
+      "id": "card_djif6w",
+      "fr": "Êtes-vous en appartement ?",
+      "target": "Siete in appartamento ?",
+      "lesson": "A1",
+      "index": 449
+    },
+    {
+      "id": "card_30pskz",
+      "fr": "Suis-je en voiture ? / Sont-ils en voiture ?",
+      "target": "Sono in macchina ?",
+      "lesson": "A1",
+      "index": 450
+    },
+    {
+      "id": "card_ylnhdp",
+      "fr": "Il est fatigué.",
+      "target": "E' stanco.",
+      "lesson": "A1",
+      "index": 451
+    },
+    {
+      "id": "card_i1a6fy",
+      "fr": "Êtes-vous contents ?",
+      "target": "Siete contenti ?",
+      "lesson": "A1",
+      "index": 452
+    },
+    {
+      "id": "card_d8r8iy",
+      "fr": "Je suis désolé.",
+      "target": "Mi dispiace.",
+      "lesson": "A1",
+      "index": 453
+    },
+    {
+      "id": "card_g03yx6",
+      "fr": "Je suis/ils sont en retard.",
+      "target": "Sono in ritardo.",
+      "lesson": "A1",
+      "index": 454
+    },
+    {
+      "id": "card_qilzyu",
+      "fr": "Nous sommes jeunes.",
+      "target": "Siamo giovani.",
+      "lesson": "A1",
+      "index": 455
+    },
+    {
+      "id": "card_jf96x7",
+      "fr": "Tu es en avance.",
+      "target": "Sei in anticipo.",
+      "lesson": "A1",
+      "index": 456
+    },
+    {
+      "id": "card_bejsr2",
+      "fr": "Êtes-vous (des) avocats ?",
+      "target": "Siete avvocati ?",
+      "lesson": "A1",
+      "index": 457
+    },
+    {
+      "id": "card_aein8w",
+      "fr": "Je suis vieille.",
+      "target": "Sono vecchia.",
+      "lesson": "A1",
+      "index": 458
+    },
+    {
+      "id": "card_ncz22p",
+      "fr": "Ce sont des amis de Louise.",
+      "target": "Sono amici di Luisa.",
+      "lesson": "A1",
+      "index": 459
+    },
+    {
+      "id": "card_rna4by",
+      "fr": "Vous êtes fatigués.",
+      "target": "Siete stanchi.",
+      "lesson": "A1",
+      "index": 460
+    },
+    {
+      "id": "card_lmr9y3",
+      "fr": "Nous sommes fâchés.",
+      "target": "Siamo arrabbiati.",
+      "lesson": "A1",
+      "index": 461
+    },
+    {
+      "id": "card_wtx1gh",
+      "fr": "Êtes-vous français ?",
+      "target": "Siete francesi ?",
+      "lesson": "A1",
+      "index": 462
+    },
+    {
+      "id": "card_8exnyg",
+      "fr": "Ils sont italiens.",
+      "target": "Sono italiani.",
+      "lesson": "A1",
+      "index": 463
+    },
+    {
+      "id": "card_swkmqf",
+      "fr": "Je suis vieux.",
+      "target": "Sono vecchio.",
+      "lesson": "A1",
+      "index": 464
+    },
+    {
+      "id": "card_86ojpz",
+      "fr": "Es-tu en vacances ?",
+      "target": "Sei in vacanza ?",
+      "lesson": "A1",
+      "index": 465
+    },
+    {
+      "id": "card_1ldzel",
+      "fr": "C'est un ami de Louise.",
+      "target": "E' un amico di Luisa.",
+      "lesson": "A1",
+      "index": 466
+    },
+    {
+      "id": "card_zg9fy7",
+      "fr": "Je suis content.",
+      "target": "Sono contento.",
+      "lesson": "A1",
+      "index": 467
+    },
+    {
+      "id": "card_990qse",
+      "fr": "Vous êtes en forme.",
+      "target": "Siete in forma.",
+      "lesson": "A1",
+      "index": 468
+    },
+    {
+      "id": "card_9dglr7",
+      "fr": "Ils sont étonnés.",
+      "target": "Sono stupiti.",
+      "lesson": "A1",
+      "index": 469
+    },
+    {
+      "id": "card_pbliit",
+      "fr": "Ça m'intéresse.",
+      "target": "Mi interessa.",
+      "lesson": "A1",
+      "index": 470
+    },
+    {
+      "id": "card_4eqszy",
+      "fr": "Je suis en forme.",
+      "target": "Sto bene.",
+      "lesson": "A1",
+      "index": 471
+    },
+    {
+      "id": "card_ordw3a",
+      "fr": "Je suis malade.",
+      "target": "Sono ammalato/a.",
+      "lesson": "A1",
+      "index": 472
+    },
+    {
+      "id": "card_qxnwn6",
+      "fr": "J'ai froid.",
+      "target": "Ho freddo.",
+      "lesson": "A2",
+      "index": 473
+    },
+    {
+      "id": "card_osespf",
+      "fr": "J'ai chaud.",
+      "target": "Ho caldo.",
+      "lesson": "A2",
+      "index": 474
+    },
+    {
+      "id": "card_37zdlr",
+      "fr": "J'ai soif.",
+      "target": "Ho sete.",
+      "lesson": "A2",
+      "index": 475
+    },
+    {
+      "id": "card_2yi5rf",
+      "fr": "J'ai faim.",
+      "target": "Ho fame.",
+      "lesson": "A2",
+      "index": 476
+    },
+    {
+      "id": "card_24ryzo",
+      "fr": "J'ai sommeil.",
+      "target": "Ho sonno.",
+      "lesson": "A2",
+      "index": 477
+    },
+    {
+      "id": "card_l2z5uc",
+      "fr": "J'ai confiance.",
+      "target": "Ho fiducia.",
+      "lesson": "A2",
+      "index": 478
+    },
+    {
+      "id": "card_35npii",
+      "fr": "J'ai peur.",
+      "target": "Ho paura.",
+      "lesson": "A2",
+      "index": 479
+    },
+    {
+      "id": "card_38p0l3",
+      "fr": "J'ai tort.",
+      "target": "Ho torto.",
+      "lesson": "A2",
+      "index": 480
+    },
+    {
+      "id": "card_2g4huu",
+      "fr": "J'ai raison.",
+      "target": "Ho ragione.",
+      "lesson": "A2",
+      "index": 481
+    },
+    {
+      "id": "card_ev9bfv",
+      "fr": "Je suis pressé (mot à mot j'ai hâte).",
+      "target": "Ho fretta.",
+      "lesson": "A2",
+      "index": 482
+    },
+    {
+      "id": "card_bgzsvc",
+      "fr": "J'ai l'adresse.",
+      "target": "Ho l'indirizzo.",
+      "lesson": "A2",
+      "index": 483
+    },
+    {
+      "id": "card_lioj3p",
+      "fr": "J'ai de la monnaie.",
+      "target": "Ho gli spiccioli.",
+      "lesson": "A2",
+      "index": 484
+    },
+    {
+      "id": "card_qgnhhw",
+      "fr": "J'ai un fils et une fille.",
+      "target": "Ho un figlio e una figlia.",
+      "lesson": "A2",
+      "index": 485
+    },
+    {
+      "id": "card_2yc4ph",
+      "fr": "J'ai une grande voiture.",
+      "target": "Ho una macchina grande.",
+      "lesson": "A2",
+      "index": 486
+    },
+    {
+      "id": "card_99uxqs",
+      "fr": "J'ai une belle chambre.",
+      "target": "Ho una bella camera.",
+      "lesson": "A2",
+      "index": 487
+    },
+    {
+      "id": "card_lmmwzc",
+      "fr": "J'ai un travail intéressant.",
+      "target": "Ho un lavoro interessante.",
+      "lesson": "A2",
+      "index": 488
+    },
+    {
+      "id": "card_7klvuf",
+      "fr": "J'ai deux mois de vacances.",
+      "target": "Ho due mesi di vacanza.",
+      "lesson": "A2",
+      "index": 489
+    },
+    {
+      "id": "card_o22ur4",
+      "fr": "J'ai vingt-cinq ans.",
+      "target": "Ho venticinque anni.",
+      "lesson": "A2",
+      "index": 490
+    },
+    {
+      "id": "card_lg9dsd",
+      "fr": "J'ai beaucoup/peu de temps.",
+      "target": "Ho molto/poco tempo.",
+      "lesson": "A2",
+      "index": 491
+    },
+    {
+      "id": "card_vxjv9t",
+      "fr": "Avons-nous assez d'argent ?",
+      "target": "Abbiamo abbastanza soldi ?",
+      "lesson": "A2",
+      "index": 492
+    },
+    {
+      "id": "card_e2wv78",
+      "fr": "Tu as peu de temps.",
+      "target": "Hai poco tempo.",
+      "lesson": "A2",
+      "index": 493
+    },
+    {
+      "id": "card_g7huhj",
+      "fr": "Avez-vous très froid ?",
+      "target": "Avete molto freddo ?",
+      "lesson": "A2",
+      "index": 494
+    },
+    {
+      "id": "card_aobg4",
+      "fr": "Ils ont beaucoup d'argent.",
+      "target": "Hanno molto denaro.",
+      "lesson": "A2",
+      "index": 495
+    },
+    {
+      "id": "card_yp15l",
+      "fr": "Il (elle) a faim.",
+      "target": "Ha fame.",
+      "lesson": "A2",
+      "index": 496
+    },
+    {
+      "id": "card_fmkk72",
+      "fr": "Ils (elles) ont raison.",
+      "target": "Hanno ragione.",
+      "lesson": "A2",
+      "index": 497
+    },
+    {
+      "id": "card_cangg9",
+      "fr": "Avons-nous l'adresse ?",
+      "target": "Abbiamo l'indirizzo ?",
+      "lesson": "A2",
+      "index": 498
+    },
+    {
+      "id": "card_18vvz9",
+      "fr": "Il (elle) a tort.",
+      "target": "Ha torto !",
+      "lesson": "A2",
+      "index": 499
+    },
+    {
+      "id": "card_ic7dtu",
+      "fr": "Tu as deux fils et deux filles.",
+      "target": "Hai due figli e due figlie.",
+      "lesson": "A2",
+      "index": 500
+    },
+    {
+      "id": "card_2ejr6u",
+      "fr": "Il (elle) a un travail intéressant.",
+      "target": "Ha un lavoro interessante.",
+      "lesson": "A2",
+      "index": 501
+    },
+    {
+      "id": "card_4so05e",
+      "fr": "Vous avez une très grande voiture.",
+      "target": "Avete una macchina molto grande.",
+      "lesson": "A2",
+      "index": 502
+    },
+    {
+      "id": "card_t4dg8m",
+      "fr": "J'ai peur d'avoir froid.",
+      "target": "Ho paura di avere freddo.",
+      "lesson": "A2",
+      "index": 503
+    },
+    {
+      "id": "card_wxhf62",
+      "fr": "Vous avez beaucoup d'argent.",
+      "target": "Avete molto denaro.",
+      "lesson": "A2",
+      "index": 504
+    },
+    {
+      "id": "card_x7yhrs",
+      "fr": "Il (elle) a peu de temps.",
+      "target": "Ha poco tempo.",
+      "lesson": "A2",
+      "index": 505
+    },
+    {
+      "id": "card_le34mk",
+      "fr": "Ils ont une très grande voiture.",
+      "target": "Hanno una macchina molto grande.",
+      "lesson": "A2",
+      "index": 506
+    },
+    {
+      "id": "card_6j6q2z",
+      "fr": "Nous avons sommeil.",
+      "target": "Abbiamo sonno.",
+      "lesson": "A2",
+      "index": 507
+    },
+    {
+      "id": "card_lioj3p",
+      "fr": "J'ai de la monnaie.",
+      "target": "Ho spiccioli.",
+      "lesson": "A2",
+      "index": 508
+    },
+    {
+      "id": "card_7jur4o",
+      "fr": "A-t-il beaucoup de travail ?",
+      "target": "Ha molto lavoro ?",
+      "lesson": "A2",
+      "index": 509
+    },
+    {
+      "id": "card_51l32g",
+      "fr": "As-tu l'adresse ?",
+      "target": "Hai l'indirizzo ?",
+      "lesson": "A2",
+      "index": 510
+    },
+    {
+      "id": "card_2q4vns",
+      "fr": "travail",
+      "target": "lavoro",
+      "lesson": "A2",
+      "index": 511
+    },
+    {
+      "id": "card_6wjmkx",
+      "fr": "raison",
+      "target": "ragione",
+      "lesson": "A2",
+      "index": 512
+    },
+    {
+      "id": "card_yklu3s",
+      "fr": "hâte",
+      "target": "fretta",
+      "lesson": "A2",
+      "index": 513
+    },
+    {
+      "id": "card_ykse6m",
+      "fr": "tort",
+      "target": "torto",
+      "lesson": "A2",
+      "index": 514
+    },
+    {
+      "id": "card_h56gyx",
+      "fr": "chambre",
+      "target": "camera",
+      "lesson": "A2",
+      "index": 515
+    },
+    {
+      "id": "card_4a7i1d",
+      "fr": "fille",
+      "target": "figlia",
+      "lesson": "A2",
+      "index": 516
+    },
+    {
+      "id": "card_ykrm7q",
+      "fr": "soif",
+      "target": "sete",
+      "lesson": "A2",
+      "index": 517
+    },
+    {
+      "id": "card_psnrd1",
+      "fr": "sommeil",
+      "target": "sonno",
+      "lesson": "A2",
+      "index": 518
+    },
+    {
+      "id": "card_46w9qj",
+      "fr": "assez",
+      "target": "abbastanza",
+      "lesson": "A2",
+      "index": 519
+    },
+    {
+      "id": "card_bv5ed0",
+      "fr": "monnaie",
+      "target": "spiccioli",
+      "lesson": "A2",
+      "index": 520
+    },
+    {
+      "id": "card_wtpsml",
+      "fr": "voiture",
+      "target": "macchina",
+      "lesson": "A2",
+      "index": 521
+    },
+    {
+      "id": "card_x9cv3f",
+      "fr": "confiance",
+      "target": "fiducia",
+      "lesson": "A2",
+      "index": 522
+    },
+    {
+      "id": "card_48283u",
+      "fr": "chaud",
+      "target": "caldo",
+      "lesson": "A2",
+      "index": 523
+    },
+    {
+      "id": "card_37730c",
+      "fr": "ami",
+      "target": "amico",
+      "lesson": "A2",
+      "index": 524
+    },
+    {
+      "id": "card_ykkoyt",
+      "fr": "jour",
+      "target": "giorno",
+      "lesson": "A2",
+      "index": 525
+    },
+    {
+      "id": "card_f6yqir",
+      "fr": "Je ne suis pas italien / italienne",
+      "target": "Non sono italiano / italiana",
+      "lesson": "A3",
+      "index": 526
+    },
+    {
+      "id": "card_yqsx3b",
+      "fr": "Je ne suis pas content / contente",
+      "target": "Non sono contento / contenta",
+      "lesson": "A3",
+      "index": 527
+    },
+    {
+      "id": "card_n35l9f",
+      "fr": "Je ne suis pas prêt / prête",
+      "target": "Non sono pronto / pronta",
+      "lesson": "A3",
+      "index": 528
+    },
+    {
+      "id": "card_b2w6vp",
+      "fr": "Je ne suis pas fatigué / fatiguée",
+      "target": "Non sono stanco / stanca",
+      "lesson": "A3",
+      "index": 529
+    },
+    {
+      "id": "card_qoxpnr",
+      "fr": "Je ne suis pas marié / mariée",
+      "target": "Non sono sposato / sposata",
+      "lesson": "A3",
+      "index": 530
+    },
+    {
+      "id": "card_hdmtd2",
+      "fr": "Je ne suis pas en vacances",
+      "target": "Non sono in vacanza",
+      "lesson": "A3",
+      "index": 531
+    },
+    {
+      "id": "card_yn2dek",
+      "fr": "Je ne suis pas en retard",
+      "target": "Non sono in ritardo",
+      "lesson": "A3",
+      "index": 532
+    },
+    {
+      "id": "card_bkpvkt",
+      "fr": "Je ne suis pas à la maison",
+      "target": "Non sono in casa",
+      "lesson": "A3",
+      "index": 533
+    },
+    {
+      "id": "card_s3gmh",
+      "fr": "Je ne suis pas au bureau",
+      "target": "Non sono in ufficio",
+      "lesson": "A3",
+      "index": 534
+    },
+    {
+      "id": "card_l6130y",
+      "fr": "Je ne suis pas à moto",
+      "target": "Non sono in moto",
+      "lesson": "A3",
+      "index": 535
+    },
+    {
+      "id": "card_y1mr4c",
+      "fr": "Je n'ai pas faim",
+      "target": "Non ho fame",
+      "lesson": "A3",
+      "index": 536
+    },
+    {
+      "id": "card_mv1qlp",
+      "fr": "Je n'ai pas sommeil",
+      "target": "Non ho sonno",
+      "lesson": "A3",
+      "index": 537
+    },
+    {
+      "id": "card_l49kwz",
+      "fr": "Je n'ai pas beaucoup de temps",
+      "target": "Non ho molto tempo",
+      "lesson": "A3",
+      "index": 538
+    },
+    {
+      "id": "card_n9kgcz",
+      "fr": "Je n'ai pas un chien / un chat",
+      "target": "Non ho un cane / un gatto",
+      "lesson": "A3",
+      "index": 539
+    },
+    {
+      "id": "card_iseegi",
+      "fr": "Je n'ai pas de bagages avec moi",
+      "target": "Non ho bagagli con me",
+      "lesson": "A3",
+      "index": 540
+    },
+    {
+      "id": "card_cc9caw",
+      "fr": "Je n'ai pas de ticket / de billet",
+      "target": "Non ho il biglietto",
+      "lesson": "A3",
+      "index": 541
+    },
+    {
+      "id": "card_pyx6ex",
+      "fr": "Je n'ai pas le téléphone dans la chambre",
+      "target": "Non ho il telefono in camera",
+      "lesson": "A3",
+      "index": 542
+    },
+    {
+      "id": "card_ld6xba",
+      "fr": "Je n'ai pas de vélo",
+      "target": "Non ho la bicicletta",
+      "lesson": "A3",
+      "index": 543
+    },
+    {
+      "id": "card_6rjpvu",
+      "fr": "Je n'ai pas de réservation",
+      "target": "Non ho la prenotazione",
+      "lesson": "A3",
+      "index": 544
+    },
+    {
+      "id": "card_dylbj7",
+      "fr": "Je n'ai pas compris. Pouvez-vous répéter ?",
+      "target": "Non ho capito. Può ripetere?",
+      "lesson": "A3",
+      "index": 545
+    },
+    {
+      "id": "card_w3oiuv",
+      "fr": "je n'ai pas",
+      "target": "non ho",
+      "lesson": "A3",
+      "index": 546
+    },
+    {
+      "id": "card_umgg2n",
+      "fr": "je ne parle pas",
+      "target": "non parlo",
+      "lesson": "A3",
+      "index": 547
+    },
+    {
+      "id": "card_fxyj75",
+      "fr": "je ne suis pas",
+      "target": "non sono",
+      "lesson": "A3",
+      "index": 548
+    },
+    {
+      "id": "card_1nrbt8",
+      "fr": "ils/elles ne sont pas",
+      "target": "non sono",
+      "lesson": "A3",
+      "index": 549
+    },
+    {
+      "id": "card_pqmcty",
+      "fr": "je ne comprends pas",
+      "target": "non capisco",
+      "lesson": "A3",
+      "index": 550
+    },
+    {
+      "id": "card_tsqzpy",
+      "fr": "le chat",
+      "target": "il gatto",
+      "lesson": "A3",
+      "index": 551
+    },
+    {
+      "id": "card_aqvxxd",
+      "fr": "le temps",
+      "target": "il tempo",
+      "lesson": "A3",
+      "index": 552
+    },
+    {
+      "id": "card_8wrkeq",
+      "fr": "l'homme",
+      "target": "l'uomo",
+      "lesson": "A3",
+      "index": 553
+    },
+    {
+      "id": "card_tstc10",
+      "fr": "le fils",
+      "target": "il figlio",
+      "lesson": "A3",
+      "index": 554
+    },
+    {
+      "id": "card_pf7942",
+      "fr": "la fille",
+      "target": "la figlia",
+      "lesson": "A3",
+      "index": 555
+    },
+    {
+      "id": "card_1vm7jo",
+      "fr": "l'amie",
+      "target": "l'amica",
+      "lesson": "A3",
+      "index": 556
+    },
+    {
+      "id": "card_ht3gyh",
+      "fr": "la maison",
+      "target": "la casa",
+      "lesson": "A3",
+      "index": 557
+    },
+    {
+      "id": "card_tt8n8w",
+      "fr": "le vélo",
+      "target": "la bicicletta",
+      "lesson": "A3",
+      "index": 558
+    },
+    {
+      "id": "card_tt406d",
+      "fr": "le père",
+      "target": "il padre",
+      "lesson": "A3",
+      "index": 559
+    },
+    {
+      "id": "card_r7ugqm",
+      "fr": "la mère",
+      "target": "la madre",
+      "lesson": "A3",
+      "index": 560
+    },
+    {
+      "id": "card_20ipq",
+      "fr": "le soleil",
+      "target": "il sole",
+      "lesson": "A3",
+      "index": 561
+    },
+    {
+      "id": "card_l1li9q",
+      "fr": "la raison",
+      "target": "la ragione",
+      "lesson": "A3",
+      "index": 562
+    },
+    {
+      "id": "card_tt0uxf",
+      "fr": "le pays",
+      "target": "il paese",
+      "lesson": "A3",
+      "index": 563
+    },
+    {
+      "id": "card_r7lwz3",
+      "fr": "la faim",
+      "target": "la fame",
+      "lesson": "A3",
+      "index": 564
+    },
+    {
+      "id": "card_hqanc3",
+      "fr": "le directeur",
+      "target": "il direttore",
+      "lesson": "A3",
+      "index": 565
+    },
+    {
+      "id": "card_r7w97n",
+      "fr": "la soif",
+      "target": "la sete",
+      "lesson": "A3",
+      "index": 566
+    },
+    {
+      "id": "card_aqvxxd",
+      "fr": "le temps",
+      "target": "il tempo",
+      "lesson": "A3",
+      "index": 567
+    },
+    {
+      "id": "card_4d0x2n",
+      "fr": "l'ami",
+      "target": "l'amico",
+      "lesson": "A3",
+      "index": 568
+    },
+    {
+      "id": "card_ht3gyh",
+      "fr": "la maison",
+      "target": "la casa",
+      "lesson": "A3",
+      "index": 569
+    },
+    {
+      "id": "card_b2tug3",
+      "fr": "le chien",
+      "target": "il cane",
+      "lesson": "A3",
+      "index": 570
+    },
+    {
+      "id": "card_8run4n",
+      "fr": "l'oncle",
+      "target": "lo zio",
+      "lesson": "A3",
+      "index": 571
+    },
+    {
+      "id": "card_p5hi6q",
+      "fr": "la tante",
+      "target": "la zia",
+      "lesson": "A3",
+      "index": 572
+    },
+    {
+      "id": "card_tsqzpy",
+      "fr": "le chat",
+      "target": "il gatto",
+      "lesson": "A3",
+      "index": 573
+    },
+    {
+      "id": "card_notrhi",
+      "fr": "l'étudiant",
+      "target": "lo studente",
+      "lesson": "A3",
+      "index": 574
+    },
+    {
+      "id": "card_k9yq10",
+      "fr": "la rue/route",
+      "target": "la strada",
+      "lesson": "A3",
+      "index": 575
+    },
+    {
+      "id": "card_sw249u",
+      "fr": "cet hôtel",
+      "target": "questo hotel",
+      "lesson": "A3",
+      "index": 576
+    },
+    {
+      "id": "card_4ra7d4",
+      "fr": "ce voyage",
+      "target": "questo viaggio",
+      "lesson": "A3",
+      "index": 577
+    },
+    {
+      "id": "card_r562ns",
+      "fr": "cette pizza",
+      "target": "questa pizza",
+      "lesson": "A3",
+      "index": 578
+    },
+    {
+      "id": "card_axxry4",
+      "fr": "cette personne",
+      "target": "questa persona",
+      "lesson": "A3",
+      "index": 579
+    },
+    {
+      "id": "card_q5m8q2",
+      "fr": "N'avez-vous pas faim ?",
+      "target": "Non avete fame ?",
+      "lesson": "A3",
+      "index": 580
+    },
+    {
+      "id": "card_tj7ujh",
+      "fr": "Nous ne sommes pas à vélo.",
+      "target": "Non siamo in bicicletta.",
+      "lesson": "A3",
+      "index": 581
+    },
+    {
+      "id": "card_u80jko",
+      "fr": "Cette maison n'est pas belle.",
+      "target": "Questa casa non è bella.",
+      "lesson": "A3",
+      "index": 582
+    },
+    {
+      "id": "card_kzd3gc",
+      "fr": "Ce pays n'est-il pas froid ?",
+      "target": "Questo paese non è freddo ?",
+      "lesson": "A3",
+      "index": 583
+    },
+    {
+      "id": "card_w7scso",
+      "fr": "Nous n'avons pas de monnaie.",
+      "target": "Non abbiamo spiccioli.",
+      "lesson": "A3",
+      "index": 584
+    },
+    {
+      "id": "card_fmn4xr",
+      "fr": "Il n'est pas marié.",
+      "target": "Non è sposato.",
+      "lesson": "A3",
+      "index": 585
+    },
+    {
+      "id": "card_djrz1f",
+      "fr": "Je ne suis pas prêt.",
+      "target": "Non sono pronto.",
+      "lesson": "A3",
+      "index": 586
+    },
+    {
+      "id": "card_vif4tu",
+      "fr": "Il n'a pas de billet de train.",
+      "target": "Non ha il biglietto del treno.",
+      "lesson": "A3",
+      "index": 587
+    },
+    {
+      "id": "card_mtjrnn",
+      "fr": "Est-ce qu'ils n'ont pas de réservation ?",
+      "target": "Non hanno la prenotazione ?",
+      "lesson": "A3",
+      "index": 588
+    },
+    {
+      "id": "card_x9nc12",
+      "fr": "Madame, est-ce que vous n'avez pas compris ?",
+      "target": "Signora, non ha capito ?",
+      "lesson": "A3",
+      "index": 589
+    },
+    {
+      "id": "card_cqbg3c",
+      "fr": "Il y a du vent.",
+      "target": "C'è vento.",
+      "lesson": "A4",
+      "index": 590
+    },
+    {
+      "id": "card_zgb5kl",
+      "fr": "Il y a du soleil/le soleil.",
+      "target": "C'è il sole.",
+      "lesson": "A4",
+      "index": 591
+    },
+    {
+      "id": "card_r8b7to",
+      "fr": "Il y a un client.",
+      "target": "C'è un cliente.",
+      "lesson": "A4",
+      "index": 592
+    },
+    {
+      "id": "card_wxf8zm",
+      "fr": "Il y a une fenêtre ouverte.",
+      "target": "C'è una finestra aperta.",
+      "lesson": "A4",
+      "index": 593
+    },
+    {
+      "id": "card_5p1740",
+      "fr": "Il y a une banque au village.",
+      "target": "C'è una banca in paese.",
+      "lesson": "A4",
+      "index": 594
+    },
+    {
+      "id": "card_64mprk",
+      "fr": "Est-ce qu'il y a une salle de bains ?",
+      "target": "C'è il bagno ?",
+      "lesson": "A4",
+      "index": 595
+    },
+    {
+      "id": "card_chsw7u",
+      "fr": "Est-ce qu'il y a un spectacle nocturne ?",
+      "target": "C'è uno spettacolo notturno ?",
+      "lesson": "A4",
+      "index": 596
+    },
+    {
+      "id": "card_1vd4kj",
+      "fr": "Est-ce qu'il y a une pharmacie ouverte ?",
+      "target": "C'è una farmacia aperta ?",
+      "lesson": "A4",
+      "index": 597
+    },
+    {
+      "id": "card_kl1ood",
+      "fr": "Est-ce qu'il y a un restaurant ?",
+      "target": "C'è un ristorante ?",
+      "lesson": "A4",
+      "index": 598
+    },
+    {
+      "id": "card_laynrk",
+      "fr": "Est-ce qu'il y a la clef de la chambre ?",
+      "target": "C'è la chiave della camera ?",
+      "lesson": "A4",
+      "index": 599
+    },
+    {
+      "id": "card_xze44w",
+      "fr": "Il y a des touristes.",
+      "target": "Ci sono turisti.",
+      "lesson": "A4",
+      "index": 600
+    },
+    {
+      "id": "card_haaavi",
+      "fr": "Il y a des restaurants ouverts.",
+      "target": "Ci sono ristoranti aperti.",
+      "lesson": "A4",
+      "index": 601
+    },
+    {
+      "id": "card_twvqco",
+      "fr": "Il y a des courts de tennis.",
+      "target": "Ci sono campi da tennis.",
+      "lesson": "A4",
+      "index": 602
+    },
+    {
+      "id": "card_pljsp9",
+      "fr": "Il y a des parasols sur la plage.",
+      "target": "Ci sono ombrelloni sulla spiaggia.",
+      "lesson": "A4",
+      "index": 603
+    },
+    {
+      "id": "card_nwi288",
+      "fr": "Il y a des couples étrangers.",
+      "target": "Ci sono coppie straniere.",
+      "lesson": "A4",
+      "index": 604
+    },
+    {
+      "id": "card_5nqpqs",
+      "fr": "Est-ce qu'il y a des toilettes publiques ?",
+      "target": "Ci sono bagni pubblici ?",
+      "lesson": "A4",
+      "index": 605
+    },
+    {
+      "id": "card_aylv8c",
+      "fr": "Est-ce qu'il y a des journaux français ?",
+      "target": "Ci sono giornali francesi ?",
+      "lesson": "A4",
+      "index": 606
+    },
+    {
+      "id": "card_a778qv",
+      "fr": "Est-ce qu'il y a des bus pour la gare ?",
+      "target": "Ci sono autobus per la stazione ?",
+      "lesson": "A4",
+      "index": 607
+    },
+    {
+      "id": "card_dnqa7t",
+      "fr": "Est-ce qu'il y a des magazines français ?",
+      "target": "Ci sono riviste francesi ?",
+      "lesson": "A4",
+      "index": 608
+    },
+    {
+      "id": "card_8gruuj",
+      "fr": "Est-ce qu'il y a des excursions sur le lac ?",
+      "target": "Ci sono escursioni sul lago ?",
+      "lesson": "A4",
+      "index": 609
+    },
+    {
+      "id": "card_5duh7w",
+      "fr": "Il y a une personne.",
+      "target": "C'è una persona.",
+      "lesson": "A4",
+      "index": 610
+    },
+    {
+      "id": "card_crtldh",
+      "fr": "Il y a deux personnes.",
+      "target": "Ci sono due persone.",
+      "lesson": "A4",
+      "index": 611
+    },
+    {
+      "id": "card_r8hywx",
+      "fr": "Il n'y a pas de vent.",
+      "target": "Non c'è vento.",
+      "lesson": "A4",
+      "index": 612
+    },
+    {
+      "id": "card_t1jdfa",
+      "fr": "Il n'y a pas de touristes.",
+      "target": "Non ci sono turisti.",
+      "lesson": "A4",
+      "index": 613
+    },
+    {
+      "id": "card_6tmuqw",
+      "fr": "le(s) bain(s)/les toilettes",
+      "target": "il bagno, i bagni",
+      "lesson": "A4",
+      "index": 614
+    },
+    {
+      "id": "card_uydk4n",
+      "fr": "le(s) restaurant(s)",
+      "target": "il ristorante, i ristoranti",
+      "lesson": "A4",
+      "index": 615
+    },
+    {
+      "id": "card_kqzowx",
+      "fr": "la/les clé(s)",
+      "target": "la chiave, le chiavi",
+      "lesson": "A4",
+      "index": 616
+    },
+    {
+      "id": "card_btkis0",
+      "fr": "la/les revue(s)",
+      "target": "la rivista, le riviste",
+      "lesson": "A4",
+      "index": 617
+    },
+    {
+      "id": "card_d5dgdv",
+      "fr": "Il y a trois chiens.",
+      "target": "Ci sono tre cani.",
+      "lesson": "A4",
+      "index": 618
+    },
+    {
+      "id": "card_r8hywx",
+      "fr": "Il n'y a pas de vent.",
+      "target": "Non c'è vento.",
+      "lesson": "A4",
+      "index": 619
+    },
+    {
+      "id": "card_uafpm3",
+      "fr": "J'ai quatorze ans.",
+      "target": "Ho quattordici anni.",
+      "lesson": "A4",
+      "index": 620
+    },
+    {
+      "id": "card_q2xajn",
+      "fr": "Y a-t-il quatre couples étrangers ?",
+      "target": "Ci sono quattro coppie straniere ?",
+      "lesson": "A4",
+      "index": 621
+    },
+    {
+      "id": "card_sj1hlc",
+      "fr": "Y a-t-il une salle de bains ?",
+      "target": "C'è il bagno ?",
+      "lesson": "A4",
+      "index": 622
+    },
+    {
+      "id": "card_dknjdl",
+      "fr": "Il y a dix clients.",
+      "target": "Ci sono dieci ospiti.",
+      "lesson": "A4",
+      "index": 623
+    },
+    {
+      "id": "card_3mb536",
+      "fr": "Il y a cinq parasols sur la plage.",
+      "target": "Ci sono cinque ombrelloni sulla spiaggia.",
+      "lesson": "A4",
+      "index": 624
+    },
+    {
+      "id": "card_5xhqr2",
+      "fr": "Il y a six restaurants.",
+      "target": "Ci sono sei ristoranti.",
+      "lesson": "A4",
+      "index": 625
+    },
+    {
+      "id": "card_rxcnc9",
+      "fr": "Nous avons vingt ans.",
+      "target": "Abbiamo venti anni.",
+      "lesson": "A4",
+      "index": 626
+    },
+    {
+      "id": "card_7qzr2b",
+      "fr": "Y a-t-il une pharmacie ouverte ?",
+      "target": "C'è una farmacia aperta ?",
+      "lesson": "A4",
+      "index": 627
+    },
+    {
+      "id": "card_629xfm",
+      "fr": "J'ai dix-sept ans.",
+      "target": "Ho diciassette anni.",
+      "lesson": "A4",
+      "index": 628
+    },
+    {
+      "id": "card_w8vxza",
+      "fr": "Nous avons huit chambres réservées.",
+      "target": "Abbiamo otto camere prenotate.",
+      "lesson": "A4",
+      "index": 629
+    },
+    {
+      "id": "card_fmw369",
+      "fr": "Y a-t-il une banque ouverte ?",
+      "target": "C'è una banca aperta ?",
+      "lesson": "A4",
+      "index": 630
+    },
+    {
+      "id": "card_mtz8cv",
+      "fr": "Il y a trois restaurants.",
+      "target": "Ci sono tre ristoranti.",
+      "lesson": "A4",
+      "index": 631
+    },
+    {
+      "id": "card_fdwac5",
+      "fr": "Il n'y a pas de téléphone dans la chambre.",
+      "target": "Non c'è il telefono in camera.",
+      "lesson": "A4",
+      "index": 632
+    },
+    {
+      "id": "card_vj6f2e",
+      "fr": "Il y a des spectacles nocturnes.",
+      "target": "Ci sono spettacoli notturni.",
+      "lesson": "A4",
+      "index": 633
+    },
+    {
+      "id": "card_o03ii1",
+      "fr": "Y a-t-il des bus pour aller à la gare ?",
+      "target": "Ci sono bus per andare alla stazione ?",
+      "lesson": "A4",
+      "index": 634
+    },
+    {
+      "id": "card_ez7z9f",
+      "fr": "Il y a trois magazines français.",
+      "target": "Ci sono tre riviste francesi.",
+      "lesson": "A4",
+      "index": 635
+    },
+    {
+      "id": "card_exzudm",
+      "fr": "C'est un touriste français.",
+      "target": "È un turista francese.",
+      "lesson": "A4",
+      "index": 636
+    },
+    {
+      "id": "card_aw3t3c",
+      "fr": "C'est un problème compliqué.",
+      "target": "È un problema complicato.",
+      "lesson": "A4",
+      "index": 637
+    },
+    {
+      "id": "card_d7nwz",
+      "fr": "Rome est une belle ville (Rome et Florence sont...).",
+      "target": "Roma è una bella città (Roma e Firenze sono...).",
+      "lesson": "A4",
+      "index": 638
+    },
+    {
+      "id": "card_3gel2g",
+      "fr": "Ce sont des touristes français.",
+      "target": "Sono turisti francesi.",
+      "lesson": "A4",
+      "index": 639
+    },
+    {
+      "id": "card_idhl8z",
+      "fr": "Ce sont des problèmes compliqués.",
+      "target": "Sono problemi complicati.",
+      "lesson": "A4",
+      "index": 640
+    },
+    {
+      "id": "card_519lsw",
+      "fr": "Rome et Florence sont de belles villes.",
+      "target": "Roma e Firenze sono belle città.",
+      "lesson": "A4",
+      "index": 641
+    },
+    {
+      "id": "card_w0jjhj",
+      "fr": "Cette personne est très drôle/amusante.",
+      "target": "Questa persona è molto divertente.",
+      "lesson": "A5",
+      "index": 642
+    },
+    {
+      "id": "card_9lwbxu",
+      "fr": "Il fait très chaud.",
+      "target": "C'è molto caldo/fa molto caldo.",
+      "lesson": "A5",
+      "index": 643
+    },
+    {
+      "id": "card_kzwd2m",
+      "fr": "Il y a beaucoup de monde.",
+      "target": "C'è molta gente.",
+      "lesson": "A5",
+      "index": 644
+    },
+    {
+      "id": "card_6t3vuo",
+      "fr": "Il y a beaucoup de touristes (M./F.).",
+      "target": "Ci sono molti turisti/molte turiste.",
+      "lesson": "A5",
+      "index": 645
+    },
+    {
+      "id": "card_y40cvc",
+      "fr": "Cette excursion est peu chère.",
+      "target": "Questa escursione è poco cara.",
+      "lesson": "A5",
+      "index": 646
+    },
+    {
+      "id": "card_i6p3tv",
+      "fr": "Il y a peu de soleil.",
+      "target": "C'è poco sole.",
+      "lesson": "A5",
+      "index": 647
+    },
+    {
+      "id": "card_d1jut4",
+      "fr": "Il y a peu de monde.",
+      "target": "C'è poca gente.",
+      "lesson": "A5",
+      "index": 648
+    },
+    {
+      "id": "card_34br06",
+      "fr": "Il y a peu de touristes (M./F.).",
+      "target": "Ci sono pochi turisti/poche turiste.",
+      "lesson": "A5",
+      "index": 649
+    },
+    {
+      "id": "card_nhmu6n",
+      "fr": "J'ai trop de travail.",
+      "target": "Ho troppo lavoro.",
+      "lesson": "A5",
+      "index": 650
+    },
+    {
+      "id": "card_dgbs76",
+      "fr": "Ces lasagnes sont trop chaudes.",
+      "target": "Queste lasagne sono troppo calde.",
+      "lesson": "A5",
+      "index": 651
+    },
+    {
+      "id": "card_mc9gxk",
+      "fr": "Ils ont trop de pâtes.",
+      "target": "Hanno troppa pasta.",
+      "lesson": "A5",
+      "index": 652
+    },
+    {
+      "id": "card_lxbpul",
+      "fr": "Il y a trop de touristes (M./F.)",
+      "target": "Ci sono troppi turisti/troppe turiste.",
+      "lesson": "A5",
+      "index": 653
+    },
+    {
+      "id": "card_d3hrxh",
+      "fr": "Il n'y a pas assez de sauce.",
+      "target": "Non c'è abbastanza sugo.",
+      "lesson": "A5",
+      "index": 654
+    },
+    {
+      "id": "card_mn7ip4",
+      "fr": "Il n'y a pas assez de couples pour danser.",
+      "target": "Non ci sono abbastanza coppie per ballare.",
+      "lesson": "A5",
+      "index": 655
+    },
+    {
+      "id": "card_es14rf",
+      "fr": "Cet hôtel n'est pas assez luxueux.",
+      "target": "Questo albergo non è abbastanza lussuoso.",
+      "lesson": "A5",
+      "index": 656
+    },
+    {
+      "id": "card_ei3wgr",
+      "fr": "Il n'y a pas assez de tagliatelles.",
+      "target": "Queste tagliatelle non sono abbastanza.",
+      "lesson": "A5",
+      "index": 657
+    },
+    {
+      "id": "card_g05l35",
+      "fr": "Il y a un peu de soleil ce matin.",
+      "target": "C'è un po' di sole questa mattina.",
+      "lesson": "A5",
+      "index": 658
+    },
+    {
+      "id": "card_38uk0m",
+      "fr": "Il y a un peu de pâtes.",
+      "target": "C'è un po' di pasta.",
+      "lesson": "A5",
+      "index": 659
+    },
+    {
+      "id": "card_arbip2",
+      "fr": "Cette année j'ai pris un peu de vacances.",
+      "target": "Quest'anno ho preso un po' di vacanze.",
+      "lesson": "A5",
+      "index": 660
+    },
+    {
+      "id": "card_efsapa",
+      "fr": "Ces clients sont un peu malpolis.",
+      "target": "Questi clienti sono un po' maleducati.",
+      "lesson": "A5",
+      "index": 661
+    },
+    {
+      "id": "card_u6dm4b",
+      "fr": "beaucoup d'argent",
+      "target": "molto denaro",
+      "lesson": "A5",
+      "index": 662
+    },
+    {
+      "id": "card_ohljip",
+      "fr": "beaucoup de gens",
+      "target": "molta gente",
+      "lesson": "A5",
+      "index": 663
+    },
+    {
+      "id": "card_wgp6v8",
+      "fr": "peu d'amis",
+      "target": "pochi amici",
+      "lesson": "A5",
+      "index": 664
+    },
+    {
+      "id": "card_jv42gj",
+      "fr": "trop de revues",
+      "target": "troppe riviste",
+      "lesson": "A5",
+      "index": 665
+    },
+    {
+      "id": "card_he0g6w",
+      "fr": "très cher",
+      "target": "molto caro",
+      "lesson": "A5",
+      "index": 666
+    },
+    {
+      "id": "card_az7pqr",
+      "fr": "très intéressants",
+      "target": "molto interessanti",
+      "lesson": "A5",
+      "index": 667
+    },
+    {
+      "id": "card_fe2dwi",
+      "fr": "peu luxueuses",
+      "target": "poco lussuose",
+      "lesson": "A5",
+      "index": 668
+    },
+    {
+      "id": "card_ow01m6",
+      "fr": "trop belle",
+      "target": "troppo bella",
+      "lesson": "A5",
+      "index": 669
+    },
+    {
+      "id": "card_djc6i9",
+      "fr": "assez belle",
+      "target": "abbastanza bella",
+      "lesson": "A5",
+      "index": 670
+    },
+    {
+      "id": "card_djcfi8",
+      "fr": "assez beaux",
+      "target": "abbastanza belli",
+      "lesson": "A5",
+      "index": 671
+    },
+    {
+      "id": "card_4cok91",
+      "fr": "un peu de lait",
+      "target": "un po' di latte",
+      "lesson": "A5",
+      "index": 672
+    },
+    {
+      "id": "card_2h8x9l",
+      "fr": "quelques personnes",
+      "target": "un po' di persone",
+      "lesson": "A5",
+      "index": 673
+    },
+    {
+      "id": "card_w3jis2",
+      "fr": "beaucoup de gens/beaucoup de monde",
+      "target": "molta gente",
+      "lesson": "A5",
+      "index": 674
+    },
+    {
+      "id": "card_mutec5",
+      "fr": "tout le monde",
+      "target": "tutti",
+      "lesson": "A5",
+      "index": 675
+    },
+    {
+      "id": "card_xe41gw",
+      "fr": "le monde entier",
+      "target": "tutto il mondo",
+      "lesson": "A5",
+      "index": 676
+    },
+    {
+      "id": "card_s3smmp",
+      "fr": "Ça, c'est (c'en est) trop !",
+      "target": "Questo è troppo !",
+      "lesson": "A5",
+      "index": 677
+    },
+    {
+      "id": "card_o3ljzu",
+      "fr": "J'en ai assez !",
+      "target": "Ne ho abbastanza !",
+      "lesson": "A5",
+      "index": 678
+    },
+    {
+      "id": "card_thv0zi",
+      "fr": "Dites-moi donc...",
+      "target": "Dica un po'",
+      "lesson": "A5",
+      "index": 679
+    },
+    {
+      "id": "card_1ujll3",
+      "fr": "Il n'y a pas de quoi rire !",
+      "target": "C'è poco da ridere !",
+      "lesson": "A5",
+      "index": 680
+    },
+    {
+      "id": "card_hof7if",
+      "fr": "Pas de raison de lever la voix !",
+      "target": "C'è poco da urlare !",
+      "lesson": "A5",
+      "index": 681
+    },
+    {
+      "id": "card_yv1o3s",
+      "fr": "Ces enfants sont très gentils.",
+      "target": "Questi bambini sono molto gentili.",
+      "lesson": "A5",
+      "index": 682
+    },
+    {
+      "id": "card_rmrqhx",
+      "fr": "L'hôtel est trop cher pour nous.",
+      "target": "L'hotel è troppo caro per noi.",
+      "lesson": "A5",
+      "index": 683
+    },
+    {
+      "id": "card_89uwfn",
+      "fr": "Ces spaghetti sont peu cuits.",
+      "target": "Questi spaghetti sono poco cotti.",
+      "lesson": "A5",
+      "index": 684
+    },
+    {
+      "id": "card_txfz62",
+      "fr": "Il y a peu de parasols sur la plage.",
+      "target": "Ci sono pochi ombrelloni sulla spiaggia.",
+      "lesson": "A5",
+      "index": 685
+    },
+    {
+      "id": "card_vwczcm",
+      "fr": "Il y a un peu de vent ce matin.",
+      "target": "C'è un po' di vento questa mattina.",
+      "lesson": "A5",
+      "index": 686
+    },
+    {
+      "id": "card_2v9xwy",
+      "fr": "Il n'y a pas assez de soleil.",
+      "target": "Non c'è abbastanza sole.",
+      "lesson": "A5",
+      "index": 687
+    },
+    {
+      "id": "card_lp4dkf",
+      "fr": "Il y a beaucoup de circulation à Rome.",
+      "target": "C'è molto traffico a Roma.",
+      "lesson": "A5",
+      "index": 688
+    },
+    {
+      "id": "card_nov4im",
+      "fr": "Il y a trop de monde au restaurant.",
+      "target": "C'è troppa gente al ristorante.",
+      "lesson": "A5",
+      "index": 689
+    },
+    {
+      "id": "card_f3a2v",
+      "fr": "Y a-t-il assez de biscuits pour tous ?",
+      "target": "Ci sono abbastanza biscotti per tutti ?",
+      "lesson": "A5",
+      "index": 690
+    },
+    {
+      "id": "card_sc2yo0",
+      "fr": "Il y a beaucoup d'enfants sur la plage.",
+      "target": "Ci sono molti bambini sulla spiaggia.",
+      "lesson": "A5",
+      "index": 691
+    },
+    {
+      "id": "card_zi7bdr",
+      "fr": "Ces tagliatelles sont trop cuites.",
+      "target": "Queste tagliatelle sono troppo cotte.",
+      "lesson": "A5",
+      "index": 692
+    },
+    {
+      "id": "card_1dj0oy",
+      "fr": "Ces touristes sont très impolis.",
+      "target": "Questi turisti sono molto maleducati.",
+      "lesson": "A5",
+      "index": 693
+    },
+    {
+      "id": "card_vt7tje",
+      "fr": "Y a-t-il des excursions pas trop chères ?",
+      "target": "Ci sono escursioni non troppo care ?",
+      "lesson": "A5",
+      "index": 694
+    },
+    {
+      "id": "card_xqz7a2",
+      "fr": "Non c'è poca gente.",
+      "target": "Non c'è molta gente.",
+      "lesson": "A5",
+      "index": 695
+    },
+    {
+      "id": "card_g84fuv",
+      "fr": "Non ho abbastanza lasagne.",
+      "target": "Ho troppe lasagne.",
+      "lesson": "A5",
+      "index": 696
+    },
+    {
+      "id": "card_9xv3fy",
+      "fr": "Abbiamo molto tempo.",
+      "target": "Abbiamo poco tempo.",
+      "lesson": "A5",
+      "index": 697
+    },
+    {
+      "id": "card_k4tslo",
+      "fr": "Ci sono molti spaghetti.",
+      "target": "Ci sono pochi spaghetti.",
+      "lesson": "A5",
+      "index": 698
+    },
+    {
+      "id": "card_yj2irw",
+      "fr": "Il viaggio è poco lungo.",
+      "target": "Il viaggio è molto lungo.",
+      "lesson": "A5",
+      "index": 699
+    },
+    {
+      "id": "card_93vpk2",
+      "fr": "C'è poco vento.",
+      "target": "C'è molto vento.",
+      "lesson": "A5",
+      "index": 700
+    },
+    {
+      "id": "card_1qf272",
+      "fr": "Je suis français / française",
+      "target": "Sono francese",
+      "lesson": "A6",
+      "index": 701
+    },
+    {
+      "id": "card_cizfsm",
+      "fr": "Où est le restaurant « Chez Pippo » ?",
+      "target": "Dov'è il ristorante « da Pippo » ?",
+      "lesson": "A6",
+      "index": 702
+    },
+    {
+      "id": "card_ncsw59",
+      "fr": "Où est le marché ?",
+      "target": "Dov'è il mercato ?",
+      "lesson": "A6",
+      "index": 703
+    },
+    {
+      "id": "card_g4yr94",
+      "fr": "Où est l'église ?",
+      "target": "Dov'è la chiesa ?",
+      "lesson": "A6",
+      "index": 704
+    },
+    {
+      "id": "card_i5f1lo",
+      "fr": "Où est la gare ?",
+      "target": "Dov'è la stazione ?",
+      "lesson": "A6",
+      "index": 705
+    },
+    {
+      "id": "card_um9oqe",
+      "fr": "Où est le kiosque ?",
+      "target": "Dov'è l'edicola ?",
+      "lesson": "A6",
+      "index": 706
+    },
+    {
+      "id": "card_oj08az",
+      "fr": "Où sont les valises ?",
+      "target": "Dove sono le valigie ?",
+      "lesson": "A6",
+      "index": 707
+    },
+    {
+      "id": "card_ezps1u",
+      "fr": "Où sont les clefs de la maison ?",
+      "target": "Dove sono le chiavi di casa ?",
+      "lesson": "A6",
+      "index": 708
+    },
+    {
+      "id": "card_w3riyn",
+      "fr": "Où sont les voisins ?",
+      "target": "Dove sono i vicini ?",
+      "lesson": "A6",
+      "index": 709
+    },
+    {
+      "id": "card_eqk8xu",
+      "fr": "Où sont les billets de théâtre ?",
+      "target": "Dove sono i biglietti del teatro ?",
+      "lesson": "A6",
+      "index": 710
+    },
+    {
+      "id": "card_96cr9l",
+      "fr": "Où sont les livres ?",
+      "target": "Dove sono i libri ?",
+      "lesson": "A6",
+      "index": 711
+    },
+    {
+      "id": "card_pvww8c",
+      "fr": "Où vas-tu ?",
+      "target": "Dove vai ?",
+      "lesson": "A6",
+      "index": 712
+    },
+    {
+      "id": "card_s1fqka",
+      "fr": "Où va-t-il ?",
+      "target": "Dove va ?",
+      "lesson": "A6",
+      "index": 713
+    },
+    {
+      "id": "card_oye16q",
+      "fr": "Où allez-vous ?",
+      "target": "Dove andate ?",
+      "lesson": "A6",
+      "index": 714
+    },
+    {
+      "id": "card_i6u1zt",
+      "fr": "Où allons-nous ?",
+      "target": "Dove andiamo ?",
+      "lesson": "A6",
+      "index": 715
+    },
+    {
+      "id": "card_cfffgi",
+      "fr": "Où habites-tu ?",
+      "target": "Dove abiti ?",
+      "lesson": "A6",
+      "index": 716
+    },
+    {
+      "id": "card_p2c9r0",
+      "fr": "Où habite-t-il ?",
+      "target": "Dove abita ?",
+      "lesson": "A6",
+      "index": 717
+    },
+    {
+      "id": "card_1q459p",
+      "fr": "Où habitez-vous ?",
+      "target": "Dove abitate ?",
+      "lesson": "A6",
+      "index": 718
+    },
+    {
+      "id": "card_yr57ci",
+      "fr": "Où cours-tu ?",
+      "target": "Dove corri ?",
+      "lesson": "A6",
+      "index": 719
+    },
+    {
+      "id": "card_y432v9",
+      "fr": "Où court-il ?",
+      "target": "Dove corre ?",
+      "lesson": "A6",
+      "index": 720
+    },
+    {
+      "id": "card_7wqr8e",
+      "fr": "Où courez-vous ?",
+      "target": "Dove correte ?",
+      "lesson": "A6",
+      "index": 721
+    },
+    {
+      "id": "card_gc6570",
+      "fr": "Où vis-tu ?",
+      "target": "Dove vivi ?",
+      "lesson": "A6",
+      "index": 722
+    },
+    {
+      "id": "card_fp40pr",
+      "fr": "Où vit-il ?",
+      "target": "Dove vive ?",
+      "lesson": "A6",
+      "index": 723
+    },
+    {
+      "id": "card_iequwq",
+      "fr": "Où vivez-vous ?",
+      "target": "Dove vivete ?",
+      "lesson": "A6",
+      "index": 724
+    },
+    {
+      "id": "card_qqyvja",
+      "fr": "Où se trouve Milan ?",
+      "target": "Dove si trova Milano ?",
+      "lesson": "A6",
+      "index": 725
+    },
+    {
+      "id": "card_stluo3",
+      "fr": "Où téléphone-t-on ?",
+      "target": "Dove si telefona ?",
+      "lesson": "A6",
+      "index": 726
+    },
+    {
+      "id": "card_ip1jzb",
+      "fr": "Où achète-t-on des journaux français ?",
+      "target": "Dove si comprano giornali francesi ?",
+      "lesson": "A6",
+      "index": 727
+    },
+    {
+      "id": "card_yr33on",
+      "fr": "Où mange-t-on une bonne pizza ?",
+      "target": "Dove si mangia una buona pizza ?",
+      "lesson": "A6",
+      "index": 728
+    },
+    {
+      "id": "card_526n4y",
+      "fr": "Où achète-t-on les timbres ?",
+      "target": "Dove si comprano i francobolli ?",
+      "lesson": "A6",
+      "index": 729
+    },
+    {
+      "id": "card_8sycuk",
+      "fr": "Où vend-on des cartes postales ?",
+      "target": "Dove si vendono cartoline ?",
+      "lesson": "A6",
+      "index": 730
+    },
+    {
+      "id": "card_cwnt89",
+      "fr": "je vais",
+      "target": "vado",
+      "lesson": "A6",
+      "index": 731
+    },
+    {
+      "id": "card_8eoxsd",
+      "fr": "nous allons",
+      "target": "andiamo",
+      "lesson": "A6",
+      "index": 732
+    },
+    {
+      "id": "card_8jpfw8",
+      "fr": "tu vas",
+      "target": "vai",
+      "lesson": "A6",
+      "index": 733
+    },
+    {
+      "id": "card_we4vuy",
+      "fr": "vous allez",
+      "target": "andate",
+      "lesson": "A6",
+      "index": 734
+    },
+    {
+      "id": "card_gcapku",
+      "fr": "il/elle va",
+      "target": "va",
+      "lesson": "A6",
+      "index": 735
+    },
+    {
+      "id": "card_aat6wo",
+      "fr": "ils/elles vont",
+      "target": "vanno",
+      "lesson": "A6",
+      "index": 736
+    },
+    {
+      "id": "card_pydl2i",
+      "fr": "je rentre chez moi (m. à m. : je vais à la maison)",
+      "target": "vado a casa",
+      "lesson": "A6",
+      "index": 737
+    },
+    {
+      "id": "card_i2oq6m",
+      "fr": "(nous) allons au marché",
+      "target": "andiamo al mercato",
+      "lesson": "A6",
+      "index": 738
+    },
+    {
+      "id": "card_lgospu",
+      "fr": "ils/elles vont acheter...",
+      "target": "vanno a comprare...",
+      "lesson": "A6",
+      "index": 739
+    },
+    {
+      "id": "card_82efz5",
+      "fr": "acheter",
+      "target": "comprare",
+      "lesson": "A6",
+      "index": 740
+    },
+    {
+      "id": "card_cwnhgr",
+      "fr": "je vois",
+      "target": "vedo",
+      "lesson": "A6",
+      "index": 741
+    },
+    {
+      "id": "card_3q0b8d",
+      "fr": "j'achète",
+      "target": "compro",
+      "lesson": "A6",
+      "index": 742
+    },
+    {
+      "id": "card_224brl",
+      "fr": "tu vois",
+      "target": "vedi",
+      "lesson": "A6",
+      "index": 743
+    },
+    {
+      "id": "card_6bzrma",
+      "fr": "tu achètes",
+      "target": "compri",
+      "lesson": "A6",
+      "index": 744
+    },
+    {
+      "id": "card_25xx14",
+      "fr": "il/elle achète",
+      "target": "compra",
+      "lesson": "A6",
+      "index": 745
+    },
+    {
+      "id": "card_wraf4d",
+      "fr": "il/elle voit",
+      "target": "vede",
+      "lesson": "A6",
+      "index": 746
+    },
+    {
+      "id": "card_om6la7",
+      "fr": "nous achetons",
+      "target": "compriamo",
+      "lesson": "A6",
+      "index": 747
+    },
+    {
+      "id": "card_590a6w",
+      "fr": "nous voyons",
+      "target": "vediamo",
+      "lesson": "A6",
+      "index": 748
+    },
+    {
+      "id": "card_wnqiui",
+      "fr": "vous achetez",
+      "target": "comprate",
+      "lesson": "A6",
+      "index": 749
+    },
+    {
+      "id": "card_wt1aa7",
+      "fr": "vous voyez",
+      "target": "vedete",
+      "lesson": "A6",
+      "index": 750
+    },
+    {
+      "id": "card_h35yn4",
+      "fr": "ils/elles achètent",
+      "target": "comprano",
+      "lesson": "A6",
+      "index": 751
+    },
+    {
+      "id": "card_5uuuai",
+      "fr": "ils/elles voient",
+      "target": "vedono",
+      "lesson": "A6",
+      "index": 752
+    },
+    {
+      "id": "card_1r6nc3",
+      "fr": "en France on parle français",
+      "target": "In Francia si parla francese",
+      "lesson": "A6",
+      "index": 753
+    },
+    {
+      "id": "card_oqqgp7",
+      "fr": "on voit la mer",
+      "target": "Si vede il mare",
+      "lesson": "A6",
+      "index": 754
+    },
+    {
+      "id": "card_ujkkto",
+      "fr": "on voit les montagnes",
+      "target": "Si vedono le montagne",
+      "lesson": "A6",
+      "index": 755
+    },
+    {
+      "id": "card_9v1li7",
+      "fr": "va-t-il en vacances ? ou allez-vous en vacances ?",
+      "target": "Va in vacanza ?",
+      "lesson": "A6",
+      "index": 756
+    },
+    {
+      "id": "card_sjbho0",
+      "fr": "Où est la poste ?",
+      "target": "Dov'è l'ufficio postale ?",
+      "lesson": "A6",
+      "index": 757
+    },
+    {
+      "id": "card_wp53oh",
+      "fr": "Nous payons (au) comptant.",
+      "target": "Paghiamo in contanti.",
+      "lesson": "A6",
+      "index": 758
+    },
+    {
+      "id": "card_dczyto",
+      "fr": "Où est la maison ?",
+      "target": "Dov'è la casa ?",
+      "lesson": "A6",
+      "index": 759
+    },
+    {
+      "id": "card_1ikfuz",
+      "fr": "Avons-nous les clefs de la maison ?",
+      "target": "Abbiamo le chiavi di casa ?",
+      "lesson": "A6",
+      "index": 760
+    },
+    {
+      "id": "card_q4v1yo",
+      "fr": "Où habitent-ils ?",
+      "target": "Dove vivono ?",
+      "lesson": "A6",
+      "index": 761
+    },
+    {
+      "id": "card_97t6n8",
+      "fr": "(Nous) mangeons une bonne pizza !",
+      "target": "Mangiamo una buona pizza !",
+      "lesson": "A6",
+      "index": 762
+    },
+    {
+      "id": "card_wik3lf",
+      "fr": "Vous achetez trop de fromage.",
+      "target": "Comprate troppo formaggio.",
+      "lesson": "A6",
+      "index": 763
+    },
+    {
+      "id": "card_oye16q",
+      "fr": "Où allez-vous ?",
+      "target": "Dove andate ?",
+      "lesson": "A6",
+      "index": 764
+    },
+    {
+      "id": "card_kqjo0i",
+      "fr": "Dans ce restaurant on mange très bien.",
+      "target": "In questo ristorante si mangia molto bene.",
+      "lesson": "A6",
+      "index": 765
+    },
+    {
+      "id": "card_um9oqe",
+      "fr": "Où est le kiosque ?",
+      "target": "Dov'è l'edicola ?",
+      "lesson": "A6",
+      "index": 766
+    },
+    {
+      "id": "card_iequwq",
+      "fr": "Où vivez-vous ?",
+      "target": "Dove vive/vivete ?",
+      "lesson": "A6",
+      "index": 767
+    },
+    {
+      "id": "card_mwy9wr",
+      "fr": "Où va ce bus ?",
+      "target": "Dove va questo autobus ?",
+      "lesson": "A6",
+      "index": 768
+    },
+    {
+      "id": "card_mvezl5",
+      "fr": "Nous allons à la plage.",
+      "target": "Andiamo alla spiaggia.",
+      "lesson": "A6",
+      "index": 769
+    },
+    {
+      "id": "card_yfyljy",
+      "fr": "Vous achetez un peu de pain.",
+      "target": "Compra/comprate un po' di pane.",
+      "lesson": "A6",
+      "index": 770
+    },
+    {
+      "id": "card_7bum3t",
+      "fr": "Je vais à la maison.",
+      "target": "Vado a casa.",
+      "lesson": "A6",
+      "index": 771
+    },
+    {
+      "id": "card_i6u1zt",
+      "fr": "Où allons-nous ?",
+      "target": "Dove andiamo ?",
+      "lesson": "A6",
+      "index": 772
+    },
+    {
+      "id": "card_8sycuk",
+      "fr": "Où vend-on des cartes postales ?",
+      "target": "Dove si vendono cartoline ?",
+      "lesson": "A6",
+      "index": 773
+    },
+    {
+      "id": "card_c6sb32",
+      "fr": "Je suis heureuse",
+      "target": "Sono italiana",
+      "lesson": "A7",
+      "index": 774
+    },
+    {
+      "id": "card_yezejc",
+      "fr": "Je suis enchanté(e)",
+      "target": "Sono italiana",
+      "lesson": "A7",
+      "index": 775
+    },
+    {
+      "id": "card_p9euyh",
+      "fr": "Je suis étranger/étrangère",
+      "target": "Sono straniera",
+      "lesson": "A7",
+      "index": 776
+    },
+    {
+      "id": "card_bh6nnm",
+      "fr": "Je suis français/française",
+      "target": "Sono francese",
+      "lesson": "A7",
+      "index": 777
+    },
+    {
+      "id": "card_rvuee3",
+      "fr": "Je suis fier/fière",
+      "target": "Sono fiera",
+      "lesson": "A7",
+      "index": 778
+    },
+    {
+      "id": "card_itk64a",
+      "fr": "Je suis italien/italienne",
+      "target": "Sono italiana",
+      "lesson": "A7",
+      "index": 779
+    },
+    {
+      "id": "card_vn8k8w",
+      "fr": "Je suis marié(e)",
+      "target": "Sono sposata",
+      "lesson": "A7",
+      "index": 780
+    },
+    {
+      "id": "card_gxd0c8",
+      "fr": "Je suis Monsieur Durand",
+      "target": "Sono il Signor Rossi",
+      "lesson": "A7",
+      "index": 781
+    },
+    {
+      "id": "card_b787a8",
+      "fr": "Je suis ravi(e)",
+      "target": "Sono lieta",
+      "lesson": "A7",
+      "index": 782
+    },
+    {
+      "id": "card_z4oypz",
+      "fr": "Je suis seul(e)",
+      "target": "Sono sola",
+      "lesson": "A7",
+      "index": 783
+    },
+    {
+      "id": "card_rsetcj",
+      "fr": "Je suis triste",
+      "target": "Sono triste",
+      "lesson": "A7",
+      "index": 784
+    },
+    {
+      "id": "card_ln23p0",
+      "fr": "Je suis votre/hôte",
+      "target": "Sono il suo ospite",
+      "lesson": "A7",
+      "index": 785
+    },
+    {
+      "id": "card_7o9uot",
+      "fr": "arrive l'avion ?",
+      "target": "arriva l’aereo ?",
+      "lesson": "A7",
+      "index": 786
+    },
+    {
+      "id": "card_68xq40",
+      "fr": "commence le spectacle ?",
+      "target": "comincia lo spettacolo ?",
+      "lesson": "A7",
+      "index": 787
+    },
+    {
+      "id": "card_y9uldj",
+      "fr": "Il est midi.",
+      "target": "E’ mezzogiorno.",
+      "lesson": "A7",
+      "index": 788
+    },
+    {
+      "id": "card_wxop4a",
+      "fr": "Il est minuit.",
+      "target": "E’ mezzanotte.",
+      "lesson": "A7",
+      "index": 789
+    },
+    {
+      "id": "card_v518ob",
+      "fr": "Il est une heure (précise).",
+      "target": "E’ l’una (in punto).",
+      "lesson": "A7",
+      "index": 790
+    },
+    {
+      "id": "card_iy91sr",
+      "fr": "Il est dix heures.",
+      "target": "Sono le dieci.",
+      "lesson": "A7",
+      "index": 791
+    },
+    {
+      "id": "card_9lacl1",
+      "fr": "Il est dix heures et quart.",
+      "target": "Sono le dieci e un quarto.",
+      "lesson": "A7",
+      "index": 792
+    },
+    {
+      "id": "card_ib8ila",
+      "fr": "Il est dix heures et demie.",
+      "target": "Sono le dieci e mezzo/a.",
+      "lesson": "A7",
+      "index": 793
+    },
+    {
+      "id": "card_obinxc",
+      "fr": "Il est onze heures moins le quart.",
+      "target": "Sono le undici meno un quarto.",
+      "lesson": "A7",
+      "index": 794
+    },
+    {
+      "id": "card_m6t6yb",
+      "fr": "Il est onze heures moins cinq.",
+      "target": "Sono le undici meno cinque.",
+      "lesson": "A7",
+      "index": 795
+    },
+    {
+      "id": "card_m6wmcu",
+      "fr": "Il est quatre heures vingt-cinq.",
+      "target": "Sono le quattro e venticinque.",
+      "lesson": "A7",
+      "index": 796
+    },
+    {
+      "id": "card_xfdh21",
+      "fr": "Il est six heures dix.",
+      "target": "Sono le sei e dieci.",
+      "lesson": "A7",
+      "index": 797
+    },
+    {
+      "id": "card_s4v257",
+      "fr": "Il est huit heures moins dix.",
+      "target": "Sono le otto meno dieci.",
+      "lesson": "A7",
+      "index": 798
+    },
+    {
+      "id": "card_g10ht9",
+      "fr": "Il est dix heures moins vingt.",
+      "target": "Sono le dieci meno venti.",
+      "lesson": "A7",
+      "index": 799
+    },
+    {
+      "id": "card_gvm38z",
+      "fr": "ferme le restaurant ?",
+      "target": "chiude il ristorante ?",
+      "lesson": "A7",
+      "index": 800
+    },
+    {
+      "id": "card_ib7eea",
+      "fr": "envoient-ils la lettre ?",
+      "target": "spediscono la lettera ?",
+      "lesson": "A7",
+      "index": 801
+    },
+    {
+      "id": "card_gh34xc",
+      "fr": "pars-tu ?",
+      "target": "parti ?",
+      "lesson": "A7",
+      "index": 802
+    },
+    {
+      "id": "card_e621vh",
+      "fr": "le dîner est-il servi ?",
+      "target": "si serve la cena ?",
+      "lesson": "A7",
+      "index": 803
+    },
+    {
+      "id": "card_977v52",
+      "fr": "ouvre le magasin ?",
+      "target": "apre il negozio ?",
+      "lesson": "A7",
+      "index": 804
+    },
+    {
+      "id": "card_h3taxr",
+      "fr": "spedisco",
+      "target": "j'envoie",
+      "lesson": "A7",
+      "index": 805
+    },
+    {
+      "id": "card_pb74qy",
+      "fr": "spedisi",
+      "target": "tu envoies",
+      "lesson": "A7",
+      "index": 806
+    },
+    {
+      "id": "card_h3taxh",
+      "fr": "spedisce",
+      "target": "il/elle envoie",
+      "lesson": "A7",
+      "index": 807
+    },
+    {
+      "id": "card_h3sw2f",
+      "fr": "spediamo",
+      "target": "nous envoyons",
+      "lesson": "A7",
+      "index": 808
+    },
+    {
+      "id": "card_pb74q5",
+      "fr": "spedite",
+      "target": "vous envoyez",
+      "lesson": "A7",
+      "index": 809
+    },
+    {
+      "id": "card_i9xkak",
+      "fr": "spediscono",
+      "target": "ils/elles envoient",
+      "lesson": "A7",
+      "index": 810
+    },
+    {
+      "id": "card_ykds5z",
+      "fr": "apro",
+      "target": "j'ouvre",
+      "lesson": "A7",
+      "index": 811
+    },
+    {
+      "id": "card_4h3o2z",
+      "fr": "parto",
+      "target": "je pars",
+      "lesson": "A7",
+      "index": 812
+    },
+    {
+      "id": "card_la1a3c",
+      "fr": "mi diverto",
+      "target": "je m'amuse",
+      "lesson": "A7",
+      "index": 813
+    },
+    {
+      "id": "card_ykds5t",
+      "fr": "apri",
+      "target": "tu ouvres",
+      "lesson": "A7",
+      "index": 814
+    },
+    {
+      "id": "card_4h3o2t",
+      "fr": "parti",
+      "target": "tu pars",
+      "lesson": "A7",
+      "index": 815
+    },
+    {
+      "id": "card_t4lt89",
+      "fr": "ti diverti",
+      "target": "tu t'amuses",
+      "lesson": "A7",
+      "index": 816
+    },
+    {
+      "id": "card_ykds5p",
+      "fr": "apre",
+      "target": "apre",
+      "lesson": "A7",
+      "index": 817
+    },
+    {
+      "id": "card_4h3o2p",
+      "fr": "parte",
+      "target": "parte",
+      "lesson": "A7",
+      "index": 818
+    },
+    {
+      "id": "card_s08lck",
+      "fr": "si diverte",
+      "target": "si diverte",
+      "lesson": "A7",
+      "index": 819
+    },
+    {
+      "id": "card_gofrke",
+      "fr": "apriamo",
+      "target": "apriamo",
+      "lesson": "A7",
+      "index": 820
+    },
+    {
+      "id": "card_60gwwy",
+      "fr": "partiamo",
+      "target": "partiamo",
+      "lesson": "A7",
+      "index": 821
+    },
+    {
+      "id": "card_uvf3dn",
+      "fr": "ci divertiamo",
+      "target": "ci divertiamo",
+      "lesson": "A7",
+      "index": 822
+    },
+    {
+      "id": "card_3ss49i",
+      "fr": "aprite",
+      "target": "aprite",
+      "lesson": "A7",
+      "index": 823
+    },
+    {
+      "id": "card_rsscea",
+      "fr": "partite",
+      "target": "partite",
+      "lesson": "A7",
+      "index": 824
+    },
+    {
+      "id": "card_3bmjqk",
+      "fr": "vi divertite",
+      "target": "vi divertite",
+      "lesson": "A7",
+      "index": 825
+    },
+    {
+      "id": "card_3srzd8",
+      "fr": "aprono",
+      "target": "aprono",
+      "lesson": "A7",
+      "index": 826
+    },
+    {
+      "id": "card_rss7i0",
+      "fr": "partono",
+      "target": "partono",
+      "lesson": "A7",
+      "index": 827
+    },
+    {
+      "id": "card_qymkor",
+      "fr": "si divertono",
+      "target": "si divertono",
+      "lesson": "A7",
+      "index": 828
+    },
+    {
+      "id": "card_q6mbsu",
+      "fr": "orario di apertura",
+      "target": "horaire d'ouverture",
+      "lesson": "A7",
+      "index": 829
+    },
+    {
+      "id": "card_aw71fk",
+      "fr": "dalle 9 (nove) alle 18 (diciotto)",
+      "target": "de 9 h à 18 h",
+      "lesson": "A7",
+      "index": 830
+    },
+    {
+      "id": "card_v7u4h6",
+      "fr": "Mi alzo alle 7 (sette).",
+      "target": "Je me lève à 7 h.",
+      "lesson": "A7",
+      "index": 831
+    },
+    {
+      "id": "card_8avpvb",
+      "fr": "Faccio colazione alle 8 (otto).",
+      "target": "Je prends mon petit déjeuner à 8 h.",
+      "lesson": "A7",
+      "index": 832
+    },
+    {
+      "id": "card_86o82i",
+      "fr": "Vado a lavorare alle 9 (nove).",
+      "target": "Je vais travailler à 9 h.",
+      "lesson": "A7",
+      "index": 833
+    },
+    {
+      "id": "card_radju9",
+      "fr": "Pranzo all'una.",
+      "target": "Je déjeune à 1 (13) h.",
+      "lesson": "A7",
+      "index": 834
+    },
+    {
+      "id": "card_hbqetg",
+      "fr": "Torno a casa alle 6 (sei).",
+      "target": "Je rentre à 6 h.",
+      "lesson": "A7",
+      "index": 835
+    },
+    {
+      "id": "card_8oglgl",
+      "fr": "Ceno alle 8 (otto).",
+      "target": "Je dîne à 8 h.",
+      "lesson": "A7",
+      "index": 836
+    },
+    {
+      "id": "card_c6sb32",
+      "fr": "Je suis heureuse",
+      "target": "Sono italiana",
+      "lesson": "A7",
+      "index": 837
+    },
+    {
+      "id": "card_yezejc",
+      "fr": "Je suis enchanté(e)",
+      "target": "Sono italiana",
+      "lesson": "A7",
+      "index": 838
+    },
+    {
+      "id": "card_p9euyh",
+      "fr": "Je suis étranger/étrangère",
+      "target": "Sono straniera",
+      "lesson": "A7",
+      "index": 839
+    },
+    {
+      "id": "card_bh6nnm",
+      "fr": "Je suis français/française",
+      "target": "Sono francese",
+      "lesson": "A7",
+      "index": 840
+    },
+    {
+      "id": "card_rvuee3",
+      "fr": "Je suis fier/fière",
+      "target": "Sono fiera",
+      "lesson": "A7",
+      "index": 841
+    },
+    {
+      "id": "card_itk64a",
+      "fr": "Je suis italien/italienne",
+      "target": "Sono italiana",
+      "lesson": "A7",
+      "index": 842
+    },
+    {
+      "id": "card_vn8k8w",
+      "fr": "Je suis marié(e)",
+      "target": "Sono sposata",
+      "lesson": "A7",
+      "index": 843
+    },
+    {
+      "id": "card_gxd0c8",
+      "fr": "Je suis Monsieur Durand",
+      "target": "Sono il Signor Rossi",
+      "lesson": "A7",
+      "index": 844
+    },
+    {
+      "id": "card_b787a8",
+      "fr": "Je suis ravi(e)",
+      "target": "Sono lieta",
+      "lesson": "A7",
+      "index": 845
+    },
+    {
+      "id": "card_z4oypz",
+      "fr": "Je suis seul(e)",
+      "target": "Sono sola",
+      "lesson": "A7",
+      "index": 846
+    },
+    {
+      "id": "card_rsetcj",
+      "fr": "Je suis triste",
+      "target": "Sono triste",
+      "lesson": "A7",
+      "index": 847
+    },
+    {
+      "id": "card_ln23p0",
+      "fr": "Je suis votre/hôte",
+      "target": "Sono il suo ospite",
+      "lesson": "A7",
+      "index": 848
+    },
+    {
+      "id": "card_7o9uot",
+      "fr": "arrive l'avion ?",
+      "target": "arriva l’aereo ?",
+      "lesson": "A7",
+      "index": 849
+    },
+    {
+      "id": "card_68xq40",
+      "fr": "commence le spectacle ?",
+      "target": "comincia lo spettacolo ?",
+      "lesson": "A7",
+      "index": 850
+    },
+    {
+      "id": "card_y9uldj",
+      "fr": "Il est midi.",
+      "target": "E’ mezzogiorno.",
+      "lesson": "A7",
+      "index": 851
+    },
+    {
+      "id": "card_wxop4a",
+      "fr": "Il est minuit.",
+      "target": "E’ mezzanotte.",
+      "lesson": "A7",
+      "index": 852
+    },
+    {
+      "id": "card_v518ob",
+      "fr": "Il est une heure (précise).",
+      "target": "E’ l’una (in punto).",
+      "lesson": "A7",
+      "index": 853
+    },
+    {
+      "id": "card_iy91sr",
+      "fr": "Il est dix heures.",
+      "target": "Sono le dieci.",
+      "lesson": "A7",
+      "index": 854
+    },
+    {
+      "id": "card_9lacl1",
+      "fr": "Il est dix heures et quart.",
+      "target": "Sono le dieci e un quarto.",
+      "lesson": "A7",
+      "index": 855
+    },
+    {
+      "id": "card_ib8ila",
+      "fr": "Il est dix heures et demie.",
+      "target": "Sono le dieci e mezzo/a.",
+      "lesson": "A7",
+      "index": 856
+    },
+    {
+      "id": "card_obinxc",
+      "fr": "Il est onze heures moins le quart.",
+      "target": "Sono le undici meno un quarto.",
+      "lesson": "A7",
+      "index": 857
+    },
+    {
+      "id": "card_m6t6yb",
+      "fr": "Il est onze heures moins cinq.",
+      "target": "Sono le undici meno cinque.",
+      "lesson": "A7",
+      "index": 858
+    },
+    {
+      "id": "card_m6wmcu",
+      "fr": "Il est quatre heures vingt-cinq.",
+      "target": "Sono le quattro e venticinque.",
+      "lesson": "A7",
+      "index": 859
+    },
+    {
+      "id": "card_xfdh21",
+      "fr": "Il est six heures dix.",
+      "target": "Sono le sei e dieci.",
+      "lesson": "A7",
+      "index": 860
+    },
+    {
+      "id": "card_s4v257",
+      "fr": "Il est huit heures moins dix.",
+      "target": "Sono le otto meno dieci.",
+      "lesson": "A7",
+      "index": 861
+    },
+    {
+      "id": "card_g10ht9",
+      "fr": "Il est dix heures moins vingt.",
+      "target": "Sono le dieci meno venti.",
+      "lesson": "A7",
+      "index": 862
+    },
+    {
+      "id": "card_gvm38z",
+      "fr": "ferme le restaurant ?",
+      "target": "chiude il ristorante ?",
+      "lesson": "A7",
+      "index": 863
+    },
+    {
+      "id": "card_ib7eea",
+      "fr": "envoient-ils la lettre ?",
+      "target": "spediscono la lettera ?",
+      "lesson": "A7",
+      "index": 864
+    },
+    {
+      "id": "card_gh34xc",
+      "fr": "pars-tu ?",
+      "target": "parti ?",
+      "lesson": "A7",
+      "index": 865
+    },
+    {
+      "id": "card_e621vh",
+      "fr": "le dîner est-il servi ?",
+      "target": "si serve la cena ?",
+      "lesson": "A7",
+      "index": 866
+    },
+    {
+      "id": "card_977v52",
+      "fr": "ouvre le magasin ?",
+      "target": "apre il negozio ?",
+      "lesson": "A7",
+      "index": 867
+    },
+    {
+      "id": "card_lprd3j",
+      "fr": "Combien ça coûte ?",
+      "target": "Quanto costa ?",
+      "lesson": "A8",
+      "index": 868
+    },
+    {
+      "id": "card_pqrm9f",
+      "fr": "Combien ça fait ?",
+      "target": "Quanto viene ?",
+      "lesson": "A8",
+      "index": 869
+    },
+    {
+      "id": "card_1yxdet",
+      "fr": "Combien consomme cette voiture ?",
+      "target": "Quanto consuma questa macchina ?",
+      "lesson": "A8",
+      "index": 870
+    },
+    {
+      "id": "card_pvbj90",
+      "fr": "Combien peut-il/pouvez-vous payer ?",
+      "target": "Quanto può pagare ?",
+      "lesson": "A8",
+      "index": 871
+    },
+    {
+      "id": "card_39v988",
+      "fr": "Combien de pain achètes-tu ?",
+      "target": "Quanto pane compri ?",
+      "lesson": "A8",
+      "index": 872
+    },
+    {
+      "id": "card_ka2iub",
+      "fr": "Combien de temps as-tu ?",
+      "target": "Quanto tempo hai ?",
+      "lesson": "A8",
+      "index": 873
+    },
+    {
+      "id": "card_97ryba",
+      "fr": "Combien de café prépares-tu (Quelle quantité de) ?",
+      "target": "Quanto caffè prepari ?",
+      "lesson": "A8",
+      "index": 874
+    },
+    {
+      "id": "card_4ut85j",
+      "fr": "Combien de pâtes manges-tu ?",
+      "target": "Quanta pasta mangi ?",
+      "lesson": "A8",
+      "index": 875
+    },
+    {
+      "id": "card_4dw97w",
+      "fr": "Combien de gens (personnes) viendront demain ?",
+      "target": "Quanta gente viene domani ?",
+      "lesson": "A8",
+      "index": 876
+    },
+    {
+      "id": "card_y4qmxx",
+      "fr": "Combien de gens (personnes) connais-tu ici ?",
+      "target": "Quanta gente conosci qui ?",
+      "lesson": "A8",
+      "index": 877
+    },
+    {
+      "id": "card_v1zfye",
+      "fr": "Combien de frères ont-ils ?",
+      "target": "Quanti fratelli hanno ?",
+      "lesson": "A8",
+      "index": 878
+    },
+    {
+      "id": "card_q03yep",
+      "fr": "Combien de spaghettis as-tu achetés ?",
+      "target": "Quanti spaghetti hai comprato ?",
+      "lesson": "A8",
+      "index": 879
+    },
+    {
+      "id": "card_n1z699",
+      "fr": "Combien de journaux achètes-tu chaque jour ?",
+      "target": "Quanti giornali compri ogni giorno ?",
+      "lesson": "A8",
+      "index": 880
+    },
+    {
+      "id": "card_u9r17x",
+      "fr": "Quel âge as-tu ? (Combien d'années as-tu ?)",
+      "target": "Quanti anni hai ?",
+      "lesson": "A8",
+      "index": 881
+    },
+    {
+      "id": "card_7zeas4",
+      "fr": "Combien de sœurs as-tu ?",
+      "target": "Quante sorelle hai ?",
+      "lesson": "A8",
+      "index": 882
+    },
+    {
+      "id": "card_wc3ril",
+      "fr": "Combien de personnes viennent ce soir ?",
+      "target": "Quante persone vengono stasera ?",
+      "lesson": "A8",
+      "index": 883
+    },
+    {
+      "id": "card_cc7ebj",
+      "fr": "Combien de magazines français as-tu achetés ?",
+      "target": "Quante riviste francesi hai comprato ?",
+      "lesson": "A8",
+      "index": 884
+    },
+    {
+      "id": "card_exggr8",
+      "fr": "Combien d'églises y a-t-il à Rome ?",
+      "target": "Quante chiese ci sono a Roma ?",
+      "lesson": "A8",
+      "index": 885
+    },
+    {
+      "id": "card_wagb40",
+      "fr": "Combien coûte cette valise ?",
+      "target": "Quanto costa questa valigia ?",
+      "lesson": "A8",
+      "index": 886
+    },
+    {
+      "id": "card_aywlge",
+      "fr": "combien de travail",
+      "target": "quanto lavoro",
+      "lesson": "A8",
+      "index": 887
+    },
+    {
+      "id": "card_jvskxj",
+      "fr": "combien de monde (de gens, de personnes)",
+      "target": "quanta gente",
+      "lesson": "A8",
+      "index": 888
+    },
+    {
+      "id": "card_3nzgvd",
+      "fr": "combien d'amis",
+      "target": "quanti amici",
+      "lesson": "A8",
+      "index": 889
+    },
+    {
+      "id": "card_7bq4vv",
+      "fr": "combien de maisons",
+      "target": "quante case",
+      "lesson": "A8",
+      "index": 890
+    },
+    {
+      "id": "card_om22fh",
+      "fr": "que de monde !",
+      "target": "quanta gente !",
+      "lesson": "A8",
+      "index": 891
+    },
+    {
+      "id": "card_lot706",
+      "fr": "combien coûtent",
+      "target": "quanto vengono",
+      "lesson": "A8",
+      "index": 892
+    },
+    {
+      "id": "card_fjv3n7",
+      "fr": "Combien (de temps) attends-tu ?",
+      "target": "Quanto (tempo) aspetti ?",
+      "lesson": "A8",
+      "index": 893
+    },
+    {
+      "id": "card_7lp3tx",
+      "fr": "Pour combien de temps restes-tu ?",
+      "target": "Per quanto (tempo) resti ?",
+      "lesson": "A8",
+      "index": 894
+    },
+    {
+      "id": "card_p0zu9m",
+      "fr": "À quelle vitesse va cette moto ?",
+      "target": "A quanto va questa moto ?",
+      "lesson": "A8",
+      "index": 895
+    },
+    {
+      "id": "card_k7dzpy",
+      "fr": "Combien coûte ce journal ?",
+      "target": "Quanto costa questo giornale ?",
+      "lesson": "A8",
+      "index": 896
+    },
+    {
+      "id": "card_sugogy",
+      "fr": "Combien d'amis viennent ce soir ?",
+      "target": "Quanti amici vengono stasera ?",
+      "lesson": "A8",
+      "index": 897
+    },
+    {
+      "id": "card_aoedcg",
+      "fr": "Combien de sœurs ont-ils ?",
+      "target": "Quante sorelle hanno ?",
+      "lesson": "A8",
+      "index": 898
+    },
+    {
+      "id": "card_93chy6",
+      "fr": "Depuis quand êtes-vous en Italie ?",
+      "target": "Da quanto siete in Italia ?",
+      "lesson": "A8",
+      "index": 899
+    },
+    {
+      "id": "card_ebdnse",
+      "fr": "Et pour combien de temps ?",
+      "target": "E per quanto tempo ?",
+      "lesson": "A8",
+      "index": 900
+    },
+    {
+      "id": "card_p0zu9m",
+      "fr": "À quelle vitesse va cette moto ?",
+      "target": "A quanto va questa moto ?",
+      "lesson": "A8",
+      "index": 901
+    },
+    {
+      "id": "card_demxhp",
+      "fr": "Quel âge as-tu ?",
+      "target": "Quanti anni hai ?",
+      "lesson": "A8",
+      "index": 902
+    },
+    {
+      "id": "card_msnbwr",
+      "fr": "Combien de restaurants connais-tu à Florence ?",
+      "target": "Quanti ristoranti conosci a Firenze ?",
+      "lesson": "A8",
+      "index": 903
+    },
+    {
+      "id": "card_svhstu",
+      "fr": "Combien de monde y a-t-il à la maison ?",
+      "target": "Quanta gente c'è a casa ?",
+      "lesson": "A8",
+      "index": 904
+    },
+    {
+      "id": "card_uy7tq0",
+      "fr": "Depuis combien de temps attendent-ils au restaurant ?",
+      "target": "Da quanto aspettano al ristorante ?",
+      "lesson": "A8",
+      "index": 905
+    },
+    {
+      "id": "card_1nrnr",
+      "fr": "Quel âge avez-vous ?",
+      "target": "Quanti anni avete ?",
+      "lesson": "A8",
+      "index": 906
+    },
+    {
+      "id": "card_kfr1dm",
+      "fr": "Combien de restaurants y a-t-il dans cette ville ?",
+      "target": "Quanti ristoranti ci sono in questa città ?",
+      "lesson": "A8",
+      "index": 907
+    },
+    {
+      "id": "card_applph",
+      "fr": "Combien pouvez-vous payer ?",
+      "target": "Quanto può/potete pagare ?",
+      "lesson": "A8",
+      "index": 908
+    },
+    {
+      "id": "card_r58uxl",
+      "fr": "Ce soir nous venons à dix heures.",
+      "target": "Questa sera veniamo alle dieci.",
+      "lesson": "A8",
+      "index": 909
+    },
+    {
+      "id": "card_chhrm0",
+      "fr": "Ils viennent à huit heures.",
+      "target": "Vengono alle otto.",
+      "lesson": "A8",
+      "index": 910
+    },
+    {
+      "id": "card_k5z0rr",
+      "fr": "Venez-vous en voiture ?",
+      "target": "Venite in macchina ?",
+      "lesson": "A8",
+      "index": 911
+    },
+    {
+      "id": "card_c4vg69",
+      "fr": "À combien de kilomètres se trouve la plage ?",
+      "target": "A quanti chilometri si trova il mare ?",
+      "lesson": "A8",
+      "index": 912
+    },
+    {
+      "id": "card_jsd2p0",
+      "fr": "Combien d'enfants avez-vous, madame ?",
+      "target": "Quanti figli ha, signora ?",
+      "lesson": "A8",
+      "index": 913
+    },
+    {
+      "id": "card_om22fh",
+      "fr": "Que de monde !",
+      "target": "Quanta gente !",
+      "lesson": "A8",
+      "index": 914
+    },
+    {
+      "id": "card_ddlq2f",
+      "fr": "À combien de kilomètres se trouve Florence ?",
+      "target": "A quanti chilometri è Firenze ?",
+      "lesson": "A8",
+      "index": 915
+    },
+    {
+      "id": "card_jx331t",
+      "fr": "Combien coûte ce livre ?",
+      "target": "Quanto viene questo libro ?",
+      "lesson": "A8",
+      "index": 916
+    },
+    {
+      "id": "card_6dypo6",
+      "fr": "Comment ça va ?",
+      "target": "Come stai ?",
+      "lesson": "A9",
+      "index": 917
+    },
+    {
+      "id": "card_s09nia",
+      "fr": "Comment t'appelles-tu ?",
+      "target": "Come ti chiami ?",
+      "lesson": "A9",
+      "index": 918
+    },
+    {
+      "id": "card_ox2y62",
+      "fr": "Comment fait-on pour aller à...",
+      "target": "Come si fa per andare a...",
+      "lesson": "A9",
+      "index": 919
+    },
+    {
+      "id": "card_rpcnpr",
+      "fr": "Comment t'habilles-tu ce soir ?",
+      "target": "Come ti vesti stasera ?",
+      "lesson": "A9",
+      "index": 920
+    },
+    {
+      "id": "card_z7r8zq",
+      "fr": "Comment dit-on gare en italien ?",
+      "target": "Come si dice gare in italiano ?",
+      "lesson": "A9",
+      "index": 921
+    },
+    {
+      "id": "card_uhnb17",
+      "fr": "Comment fait-on pour manger les spaghettis ?",
+      "target": "Come si mangiano gli spaghetti ?",
+      "lesson": "A9",
+      "index": 922
+    },
+    {
+      "id": "card_lwxp08",
+      "fr": "Comment sont les Italiens ?",
+      "target": "Come sono gli italiani ?",
+      "lesson": "A9",
+      "index": 923
+    },
+    {
+      "id": "card_z6ecgk",
+      "fr": "Comment fonctionne cette machine ?",
+      "target": "Come funziona questa macchina ?",
+      "lesson": "A9",
+      "index": 924
+    },
+    {
+      "id": "card_y34h8q",
+      "fr": "Comment se fait-il que tu es en retard ?",
+      "target": "Come mai sei in ritardo ?",
+      "lesson": "A9",
+      "index": 925
+    },
+    {
+      "id": "card_cuvuox",
+      "fr": "Pourquoi ne viens-tu pas ce soir ?",
+      "target": "Perché non vieni stasera ?",
+      "lesson": "A9",
+      "index": 926
+    },
+    {
+      "id": "card_lumo0c",
+      "fr": "Pourquoi ris-tu ?",
+      "target": "Perché ridi ?",
+      "lesson": "A9",
+      "index": 927
+    },
+    {
+      "id": "card_g4wroi",
+      "fr": "Pourquoi pleures-tu ?",
+      "target": "Perché piangi ?",
+      "lesson": "A9",
+      "index": 928
+    },
+    {
+      "id": "card_pkgqz8",
+      "fr": "Pourquoi n'appelles-tu pas le docteur ?",
+      "target": "Perché non chiami il dottore ?",
+      "lesson": "A9",
+      "index": 929
+    },
+    {
+      "id": "card_1k4xna",
+      "fr": "Pourquoi t'en vas-tu ?",
+      "target": "Perché vai via ?",
+      "lesson": "A9",
+      "index": 930
+    },
+    {
+      "id": "card_dv3xx0",
+      "fr": "Pourquoi ne réponds-tu pas ?",
+      "target": "Perché non rispondi ?",
+      "lesson": "A9",
+      "index": 931
+    },
+    {
+      "id": "card_y66qhv",
+      "fr": "Pourquoi téléphones-tu ?",
+      "target": "Perché telefoni ?",
+      "lesson": "A9",
+      "index": 932
+    },
+    {
+      "id": "card_8i8nr1",
+      "fr": "Pourquoi rentrez-vous chez vous ?",
+      "target": "Perché tornate a casa ?",
+      "lesson": "A9",
+      "index": 933
+    },
+    {
+      "id": "card_fbrqw1",
+      "fr": "Pourquoi ne restez-vous pas encore un peu ?",
+      "target": "Perché non restate ancora un po' ?",
+      "lesson": "A9",
+      "index": 934
+    },
+    {
+      "id": "card_dhyoxv",
+      "fr": "Pourquoi êtes-vous en Italie ?",
+      "target": "Perché siete in Italia ?",
+      "lesson": "A9",
+      "index": 935
+    },
+    {
+      "id": "card_6dypo6",
+      "fr": "Comment ça va ?",
+      "target": "Come stai ?",
+      "lesson": "A9",
+      "index": 936
+    },
+    {
+      "id": "card_ctuto9",
+      "fr": "Je reste / je suis",
+      "target": "sto",
+      "lesson": "A9",
+      "index": 937
+    },
+    {
+      "id": "card_1xdid0",
+      "fr": "Tu restes / tu es",
+      "target": "stai",
+      "lesson": "A9",
+      "index": 938
+    },
+    {
+      "id": "card_ydk9wz",
+      "fr": "Il reste / il est",
+      "target": "sta",
+      "lesson": "A9",
+      "index": 939
+    },
+    {
+      "id": "card_y6p03k",
+      "fr": "Nous restons / nous sommes",
+      "target": "stiamo",
+      "lesson": "A9",
+      "index": 940
+    },
+    {
+      "id": "card_c0mfa9",
+      "fr": "Vous restez / vous êtes",
+      "target": "state",
+      "lesson": "A9",
+      "index": 941
+    },
+    {
+      "id": "card_aj43ar",
+      "fr": "Ils restent / ils sont",
+      "target": "stanno",
+      "lesson": "A9",
+      "index": 942
+    },
+    {
+      "id": "card_cx04w9",
+      "fr": "Je fais",
+      "target": "faccio",
+      "lesson": "A9",
+      "index": 943
+    },
+    {
+      "id": "card_22gz73",
+      "fr": "Tu fais",
+      "target": "fai",
+      "lesson": "A9",
+      "index": 944
+    },
+    {
+      "id": "card_tqt4iq",
+      "fr": "Il fait",
+      "target": "fa",
+      "lesson": "A9",
+      "index": 945
+    },
+    {
+      "id": "card_z8od31",
+      "fr": "Nous faisons",
+      "target": "facciamo",
+      "lesson": "A9",
+      "index": 946
+    },
+    {
+      "id": "card_6iguby",
+      "fr": "Vous faites",
+      "target": "fate",
+      "lesson": "A9",
+      "index": 947
+    },
+    {
+      "id": "card_5tmq1o",
+      "fr": "Ils font",
+      "target": "fanno",
+      "lesson": "A9",
+      "index": 948
+    },
+    {
+      "id": "card_6dypo6",
+      "fr": "Comment ça va ?",
+      "target": "Come stai ?",
+      "lesson": "A9",
+      "index": 949
+    },
+    {
+      "id": "card_hrnmzf",
+      "fr": "Il crie comme un fou",
+      "target": "Grida come un matto",
+      "lesson": "A9",
+      "index": 950
+    },
+    {
+      "id": "card_s6rgpa",
+      "fr": "Pourquoi ris-tu ? Parce que je m'amuse.",
+      "target": "Perché ridi ? Perché mi diverto.",
+      "lesson": "A9",
+      "index": 951
+    },
+    {
+      "id": "card_moqydv",
+      "fr": "J'habite rue Rossi.",
+      "target": "Abito in via Rossi.",
+      "lesson": "A9",
+      "index": 952
+    },
+    {
+      "id": "card_ozw3bw",
+      "fr": "Je m'en vais.",
+      "target": "Vado via.",
+      "lesson": "A9",
+      "index": 953
+    },
+    {
+      "id": "card_m1bctf",
+      "fr": "Sauve-toi !",
+      "target": "Corri via !",
+      "lesson": "A9",
+      "index": 954
+    },
+    {
+      "id": "card_jdu2t2",
+      "fr": "Sors/sortons/sortez d'ici !",
+      "target": "Via di qui !",
+      "lesson": "A9",
+      "index": 955
+    },
+    {
+      "id": "card_4cy9xb",
+      "fr": "jeter",
+      "target": "gettare/buttare via",
+      "lesson": "A9",
+      "index": 956
+    },
+    {
+      "id": "card_sun3z2",
+      "fr": "céder, donner",
+      "target": "dare via",
+      "lesson": "A9",
+      "index": 957
+    },
+    {
+      "id": "card_5uojrb",
+      "fr": "J'envoie la lettre par avion.",
+      "target": "Mando la lettera via aerea.",
+      "lesson": "A9",
+      "index": 958
+    },
+    {
+      "id": "card_9cxzug",
+      "fr": "Ils partent pour deux jours.",
+      "target": "Stanno via due giorni.",
+      "lesson": "A9",
+      "index": 959
+    },
+    {
+      "id": "card_cpyxlt",
+      "fr": "Ce soir nous restons à la maison.",
+      "target": "Stasera stiamo a casa.",
+      "lesson": "A9",
+      "index": 960
+    },
+    {
+      "id": "card_lsz2v8",
+      "fr": "Pourquoi partent-ils pour un mois ?",
+      "target": "Perché stanno via un mese ?",
+      "lesson": "A9",
+      "index": 961
+    },
+    {
+      "id": "card_a89vgb",
+      "fr": "Nous allons bien, merci.",
+      "target": "Stiamo bene, grazie.",
+      "lesson": "A9",
+      "index": 962
+    },
+    {
+      "id": "card_30dir",
+      "fr": "Comment sont les lasagnes ?",
+      "target": "Come sono le lasagne ?",
+      "lesson": "A9",
+      "index": 963
+    },
+    {
+      "id": "card_fbhqex",
+      "fr": "Comment fait-on pour aller à la gare ?",
+      "target": "Come si fa per andare alla stazione ?",
+      "lesson": "A9",
+      "index": 964
+    },
+    {
+      "id": "card_lye7bf",
+      "fr": "Comment se fait-il que nous ne rentrons pas à la maison ?",
+      "target": "Come mai non andiamo a casa ?",
+      "lesson": "A9",
+      "index": 965
+    },
+    {
+      "id": "card_dhyoxv",
+      "fr": "Pourquoi êtes-vous en Italie ?",
+      "target": "Perché siete in Italia ?",
+      "lesson": "A9",
+      "index": 966
+    },
+    {
+      "id": "card_grfsbr",
+      "fr": "Parce que nous sommes en vacances.",
+      "target": "Perché siamo in vacanza.",
+      "lesson": "A9",
+      "index": 967
+    },
+    {
+      "id": "card_palfxh",
+      "fr": "Elle ne téléphone pas. Pourquoi ?",
+      "target": "Non telefona. Perché ?",
+      "lesson": "A9",
+      "index": 968
+    },
+    {
+      "id": "card_91rumz",
+      "fr": "Comment s'appelle le chat ?",
+      "target": "Come si chiama il gatto ?",
+      "lesson": "A9",
+      "index": 969
+    },
+    {
+      "id": "card_de8zc2",
+      "fr": "Comment dit-on maison en italien ?",
+      "target": "Come si dice maison in italiano ?",
+      "lesson": "A9",
+      "index": 970
+    },
+    {
+      "id": "card_moes0g",
+      "fr": "Pourquoi cet enfant pleure-t-il ?",
+      "target": "Perché piange questo bambino ?",
+      "lesson": "A9",
+      "index": 971
+    },
+    {
+      "id": "card_9p0auo",
+      "fr": "Pourquoi ne viens-tu pas à la plage ?",
+      "target": "Perché non vieni alla spiaggia ?",
+      "lesson": "A9",
+      "index": 972
+    },
+    {
+      "id": "card_7sfz3q",
+      "fr": "Nous habitons rue Verdi.",
+      "target": "Abitiamo in via Verdi.",
+      "lesson": "A9",
+      "index": 973
+    },
+    {
+      "id": "card_g9mzq2",
+      "fr": "Ne jetons pas ce livre !",
+      "target": "Non buttiamo via questo libro !",
+      "lesson": "A9",
+      "index": 974
+    },
+    {
+      "id": "card_nj92nl",
+      "fr": "Ils s'en vont.",
+      "target": "Vanno via.",
+      "lesson": "A9",
+      "index": 975
+    },
+    {
+      "id": "card_snk3gn",
+      "fr": "Ce soir ils restent à l'hôtel.",
+      "target": "Stasera restano all'hôtel.",
+      "lesson": "A9",
+      "index": 976
+    }
+  ],
+  "createdAt": "2026-05-22T17:03:12.896Z"
+}

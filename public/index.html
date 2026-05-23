@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anki Trainer Hub</title>
+  <!-- Modern clean typography from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="header-brand" id="header-logo">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+        </svg>
+        <span class="brand-title">Anki Trainer Hub</span>
+      </div>
+      <button id="back-to-dashboard-btn" class="btn btn-outline hide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+        </svg>
+        Tableau de Bord
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="app-main">
+
+    <!-- 1. DASHBOARD VIEW -->
+    <section id="dashboard-view" class="view-section">
+      <div class="welcome-banner">
+        <div class="banner-content">
+          <h1>Entraîneur de Langues</h1>
+          <p>Importez vos phrases en format CSV et maîtrisez-les grâce à la répétition espacée.</p>
+        </div>
+        <button id="open-upload-modal-btn" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="btn-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+          Créer un Deck
+        </button>
+      </div>
+
+      <!-- Global Sync Code -->
+      <div class="sync-bar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;flex-shrink:0;">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
+        </svg>
+        <input type="text" id="sync-code-input" placeholder="Code de synchronisation" maxlength="30" class="input-text sync-bar-input">
+        <button id="sync-connect-btn" class="btn btn-sm btn-primary">Connecter</button>
+        <button id="sync-disconnect-btn" class="btn btn-sm btn-outline hide">Déconnecter</button>
+        <span id="sync-status" class="sync-status-msg"></span>
+      </div>
+
+      <div class="deck-grid-header">
+        <h2>Vos Decks</h2>
+        <span id="deck-count-badge" class="badge">0 deck</span>
+      </div>
+
+      <div id="decks-list" class="deck-grid">
+        <!-- Decks cards will be dynamically rendered here -->
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>Chargement des decks...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. TRAINER VIEW -->
+    <section id="trainer-view" class="view-section hide">
+      <div class="trainer-header">
+        <div class="trainer-title-area">
+          <img id="active-deck-flag" class="trainer-flag hide" src="" alt="Drapeau" />
+          <h2 id="active-deck-title">Deck Title</h2>
+          <span id="active-deck-lang" class="badge badge-indigo">IT</span>
+        </div>
+        <div id="lesson-filter-container" class="lesson-filter-wrapper hide">
+          <label for="lesson-select">Leçon :</label>
+          <div class="select-wrapper">
+            <select id="lesson-select">
+              <option value="all">Toutes les leçons</option>
+            </select>
+          </div>
+          <div class="select-mode-wrapper">
+            <label class="radio-label">
+              <input type="radio" name="lesson-mode" value="exact" checked> Exacte
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="lesson-mode" value="cumulative"> Cumulée (≤)
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="trainer-layout">
+        <!-- Sidebar: Stats & Sync -->
+        <aside class="trainer-sidebar">
+          
+          <!-- Spaced Repetition Card Distribution -->
+          <div class="card sidebar-card">
+            <h3>Distribution des cartes</h3>
+            
+            <div class="distribution-list">
+              <div class="dist-item">
+                <span class="dist-dot" style="background-color: #94a3b8;"></span>
+                <span class="dist-label">Nouvelles</span>
+                <span id="stat-new" class="dist-value">0</span>
+              </div>
+              <div class="dist-item">
+                <span class="dist-dot" style="background-color: #ef4444;"></span>
+                <span class="dist-label">À réviser (Dues)</span>
+                <span id="stat-due" class="dist-value">0</span>
+              </div>
+              <div class="dist-item">
+                <span class="dist-dot" style="background-color: #f97316;"></span>
+                <span class="dist-label">Demain</span>
+                <span id="stat-tomorrow" class="dist-value">0</span>
+              </div>
+              <div class="dist-item">
+                <span class="dist-dot" style="background-color: #eab308;"></span>
+                <span class="dist-label">2–3 jours</span>
+                <span id="stat-days23" class="dist-value">0</span>
+              </div>
+              <div class="dist-item">
+                <span class="dist-dot" style="background-color: #3b82f6;"></span>
+                <span class="dist-label">Cette semaine</span>
+                <span id="stat-week" class="dist-value">0</span>
+              </div>
+              <div class="dist-item">
+                <span class="dist-dot" style="background-color: #22c55e;"></span>
+                <span class="dist-label">Plus tard</span>
+                <span id="stat-later" class="dist-value">0</span>
+              </div>
+            </div>
+
+            <div class="overall-progress">
+              <div class="progress-info">
+                <span>Vues au moins une fois</span>
+                <strong id="stat-seen-fraction">0 / 0</strong>
+              </div>
+              <div class="progress-track">
+                <div id="stat-seen-progress-bar" class="progress-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session Stats -->
+          <div class="card sidebar-card">
+            <h3>Statistiques de la session</h3>
+            <div class="session-stats-grid">
+              <div class="session-stat-box">
+                <span class="label">Vues</span>
+                <span id="session-seen" class="val">0</span>
+              </div>
+              <div class="session-stat-box">
+                <span class="label">Réussies</span>
+                <span id="session-correct" class="val">0</span>
+              </div>
+              <div class="session-stat-box">
+                <span class="label">Précision</span>
+                <span id="session-accuracy" class="val">0%</span>
+              </div>
+            </div>
+            <button id="reset-session-btn" class="btn btn-sm btn-outline-danger w-full mt-12">
+              Réinitialiser la session
+            </button>
+          </div>
+
+          <!-- Reset -->
+          <div class="card sidebar-card">
+            <button id="reset-deck-progress-btn" class="btn btn-sm btn-outline-danger w-full">
+              Réinitialiser toute la progression
+            </button>
+          </div>
+
+        </aside>
+
+        <!-- Main Workspace: Active Card -->
+        <div class="trainer-content">
+          
+          <div id="study-container" class="card study-card">
+            
+            <!-- Card Counter Header -->
+            <div class="card-counter">
+              <span id="current-card-lesson">Leçon</span>
+              <span id="due-badge" class="badge badge-danger hide">Dû</span>
+              <button id="autoplay-toggle-btn" class="audio-btn" title="Lecture automatique (cliquez pour activer/désactiver)">
+                <svg id="autoplay-icon-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="audio-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+                </svg>
+                <svg id="autoplay-icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="audio-icon hide">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 9.75 19.5 12m0 0 2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6 4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Front Side: Origin Sentence -->
+            <div class="sentence-display">
+              <div id="sentence-prompt-label" class="sentence-label">Traduisez en français :</div>
+              <div id="origin-sentence-text" class="sentence-text">Origin Sentence Text</div>
+            </div>
+
+            <!-- Answer Submission Area -->
+            <div class="answer-section">
+              <textarea id="user-answer-input" class="input-textarea" placeholder="Tapez votre réponse ici..." rows="2" autofocus></textarea>
+              <div class="answer-shortcut-tip">Appuyez sur <kbd>Entrée</kbd> pour valider</div>
+
+              <div class="action-buttons-row">
+                <button id="submit-answer-btn" class="btn btn-indigo flex-1">
+                  Valider
+                </button>
+                <button id="skip-card-btn" class="btn btn-outline" title="Passer la carte sans la noter (Raccourci: Touche S ou Flèche Droite)">
+                  Passer
+                </button>
+              </div>
+            </div>
+
+            <!-- Back Side / Feedback Section (hidden initially) -->
+            <div id="feedback-section" class="feedback-container hide">
+              
+              <!-- Difference Highlighting -->
+              <div class="feedback-block">
+                <div class="sentence-label">Votre réponse analysée :</div>
+                <div id="diff-highlight-output" class="diff-output"></div>
+              </div>
+
+              <!-- Correct Reference & Audio Speech -->
+              <div class="feedback-block bg-reference">
+                <div class="reference-header">
+                  <span class="sentence-label">Réponse attendue :</span>
+                  <button id="speak-audio-btn" class="audio-btn" title="Écouter la prononciation (Raccourci: Touche V)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="audio-icon">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+                    </svg>
+                    Écouter
+                  </button>
+                </div>
+                <div id="target-sentence-text" class="reference-text">Target Sentence Text</div>
+              </div>
+
+              <!-- Anki Rating Buttons -->
+              <div class="rating-section">
+                <div class="rating-label">Comment évaluez-vous votre réponse ?</div>
+                
+                <div class="rating-buttons-grid">
+                  <!-- AGAIN -->
+                  <button id="rate-again-btn" class="rating-btn rate-red">
+                    <span class="btn-name">À revoir</span>
+                    <span class="btn-interval" id="interval-again">10m</span>
+                    <span class="kbd-hint">1</span>
+                  </button>
+                  <!-- HARD -->
+                  <button id="rate-hard-btn" class="rating-btn rate-orange">
+                    <span class="btn-name">Difficile</span>
+                    <span class="btn-interval" id="interval-hard">1j</span>
+                    <span class="kbd-hint">2</span>
+                  </button>
+                  <!-- GOOD -->
+                  <button id="rate-good-btn" class="rating-btn rate-blue">
+                    <span class="btn-name">Correct</span>
+                    <span class="btn-interval" id="interval-good">4j</span>
+                    <span class="kbd-hint">3</span>
+                  </button>
+                  <!-- EASY -->
+                  <button id="rate-easy-btn" class="rating-btn rate-green">
+                    <span class="btn-name">Facile</span>
+                    <span class="btn-interval" id="interval-easy">7j</span>
+                    <span class="kbd-hint">4</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Empty State (No cards due) -->
+          <div id="no-cards-state" class="card empty-card hide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="empty-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+            </svg>
+            <h2>Excellent travail !</h2>
+            <p>Toutes les cartes programmées pour aujourd'hui ont été révisées.</p>
+            <div class="empty-actions">
+              <button id="study-ahead-btn" class="btn btn-indigo">
+                Étudier les cartes futures
+              </button>
+              <button id="empty-state-back-btn" class="btn btn-outline">
+                Retour au Tableau de Bord
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 3. CREATE DECK OVERLAY MODAL -->
+  <div id="create-deck-modal" class="modal-overlay hide">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Créer un Nouveau Deck</h3>
+        <button id="close-modal-btn" class="close-btn" title="Fermer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="close-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      
+      <form id="create-deck-form" class="modal-form">
+        <!-- Deck Name -->
+        <div class="form-group">
+          <label for="deck-name-input">Nom du Deck :</label>
+          <input type="text" id="deck-name-input" placeholder="ex: Vocabulaire Italien ou Phrases Françaises" required class="input-text">
+        </div>
+
+        <!-- Target Language (Audio) -->
+        <div class="form-group">
+          <label for="deck-lang-select">Langue de Prononciation (TTS) :</label>
+          <div class="select-wrapper">
+            <select id="deck-lang-select">
+              <option value="it" selected>Italien (it-IT)</option>
+              <option value="en">Anglais (en-US)</option>
+              <option value="es">Espagnol (es-ES)</option>
+              <option value="de">Allemand (de-DE)</option>
+              <option value="fr">Français (fr-FR)</option>
+              <option value="pt">Portugais (pt-PT)</option>
+              <option value="ja">Japonais (ja-JP)</option>
+              <option value="ru">Russe (ru-RU)</option>
+            </select>
+          </div>
+          <span class="help-text">Utilisé pour lire à haute voix la réponse attendue.</span>
+        </div>
+
+        <!-- File Upload -->
+        <div class="form-group">
+          <label for="deck-file-input">Fichier CSV :</label>
+          <div class="file-drop-area">
+            <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
+            </svg>
+            <span class="file-label">Cliquez pour choisir un fichier CSV</span>
+            <input type="file" id="deck-file-input" accept=".csv" required class="hide">
+            <span id="selected-file-name" class="file-selected-text"></span>
+          </div>
+          
+          <div class="csv-format-help">
+            <strong>Structure attendue du CSV :</strong>
+            <ul>
+              <li><strong>Version standard (3 colonnes) :</strong> Phrase d'origine (français), Phrase cible (traduction), Nom de leçon.</li>
+              <li><strong>Version simple (2 colonnes) :</strong> Phrase d'origine (français), Phrase cible (traduction).</li>
+              <li>Exemple : <code>Bonjour,Buongiorno,Leçon 1</code></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Error Messages -->
+        <div id="modal-error-message" class="error-msg hide"></div>
+
+        <!-- Action Buttons -->
+        <div class="modal-footer">
+          <button type="button" id="cancel-modal-btn" class="btn btn-outline">Annuler</button>
+          <button type="submit" id="submit-deck-btn" class="btn btn-indigo">
+            <div class="spinner spinner-white hide" id="modal-spinner"></div>
+            <span>Importer</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

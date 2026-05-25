@@ -4,6 +4,16 @@ const { existsSync, mkdirSync } = require('fs'); // Keep sync for startup/initia
 const path = require('path');
 const { synthesizeText } = require('./tts-helper');
 
+// DJB2 hash — mirrors the client-side hashText() in app.js
+function hashText(text) {
+  let hash = 5381;
+  const s = (text || '').trim().toLowerCase();
+  for (let i = 0; i < s.length; i++) {
+    hash = ((hash << 5) + hash) + s.charCodeAt(i);
+  }
+  return Math.abs(hash & hash).toString(36);
+}
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -37,17 +47,24 @@ app.get('/audio/:filename', async (req, res, next) => {
   // If not, try to find the card in the decks to get the text
   console.log(`Generating on-demand audio for: ${filename}`);
   try {
-    const cardId = filename.replace('.mp3', '');
+    // Filename format: "${hash(fr)}_${hash(target)}.mp3" (e.g. "card_abc_xyz.mp3")
+    const nameWithoutExt = filename.replace('.mp3', '');
+    const match = nameWithoutExt.match(/^(card_[a-z0-9]+)_([a-z0-9]+)$/);
+    if (!match) {
+      return res.status(404).send('Invalid audio filename format');
+    }
+    const [, cardId, targetHash] = match;
+
     const deckFiles = await fs.readdir(DECKS_DIR);
-    
     let cardText = null;
     let targetLang = 'it';
 
-    // Search through decks to find the card content
+    // Find the card whose fr-hash matches cardId and target-hash matches targetHash.
+    // This uniquely identifies the exact target text and its language.
     for (const file of deckFiles) {
       if (!file.endsWith('.json')) continue;
       const deck = JSON.parse(await fs.readFile(path.join(DECKS_DIR, file), 'utf8'));
-      const card = deck.cards.find(c => c.id === cardId);
+      const card = deck.cards.find(c => c.id === cardId && hashText(c.target) === targetHash);
       if (card) {
         cardText = card.target;
         targetLang = deck.targetLang;

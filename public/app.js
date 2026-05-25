@@ -5,6 +5,100 @@
 // Handle for the auto-easy timeout so it can be cancelled on manual rating
 let autoEasyTimeout = null;
 
+// Long-press special character picker state
+let longPressTimer = null;
+let longPressKey = null;
+let specialCharPopupOpen = false;
+let replacedCharPos = -1;
+let replacedChar = '';
+let popupOptions = [];
+let highlightedOptionIdx = 0;
+const pressedKeys = new Set();
+
+const SPECIAL_CHARS = {
+  it: { a: ['à','á'], e: ['è','é'], i: ['ì','í'], o: ['ò','ó'], u: ['ù','ú'] },
+  de: { a: ['ä'], o: ['ö'], u: ['ü'], s: ['ß'] },
+  es: { a: ['á'], e: ['é'], i: ['í'], n: ['ñ'], o: ['ó'], u: ['ú','ü'] },
+  fr: { a: ['à','â','æ'], c: ['ç'], e: ['è','é','ê','ë'], i: ['î','ï'], o: ['ô','œ'], u: ['ù','û','ü'] },
+  pt: { a: ['á','â','ã','à'], c: ['ç'], e: ['é','ê'], i: ['í'], o: ['ó','ô','õ'], u: ['ú'] },
+};
+
+function showSpecialCharPopup(baseChar, variants, textarea) {
+  const popup = document.getElementById('special-char-popup');
+  popup.innerHTML = '';
+
+  popupOptions = [baseChar, ...variants];
+  highlightedOptionIdx = 0;
+
+  popupOptions.forEach((ch, idx) => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'special-char-btn';
+    if (idx === highlightedOptionIdx) {
+      btn.classList.add('active');
+    }
+    btn.dataset.char = ch;
+    btn.dataset.num = idx + 1;
+    btn.innerHTML = `<span class="sc-char">${ch}</span><span class="sc-num">${idx + 1}</span>`;
+    
+    btn.addEventListener('mouseenter', () => {
+      updatePopupHighlight(idx);
+    });
+
+    btn.addEventListener('mousedown', (e) => {
+      e.preventDefault();
+      replaceCharAtPos(ch, textarea);
+      hideSpecialCharPopup();
+    });
+    popup.appendChild(btn);
+  });
+
+  const rect = textarea.getBoundingClientRect();
+  const estimatedPopupH = 64;
+  if (rect.top - estimatedPopupH - 8 >= 4) {
+    popup.style.top = (rect.top - estimatedPopupH - 8) + 'px';
+  } else {
+    popup.style.top = (rect.bottom + 8) + 'px';
+  }
+  const left = Math.min(rect.left, window.innerWidth - popup.offsetWidth - 8);
+  popup.style.left = Math.max(4, left) + 'px';
+
+  popup.classList.remove('hide');
+  specialCharPopupOpen = true;
+}
+
+function hideSpecialCharPopup() {
+  document.getElementById('special-char-popup').classList.add('hide');
+  specialCharPopupOpen = false;
+}
+
+function updatePopupHighlight(idx) {
+  highlightedOptionIdx = idx;
+  const buttons = document.querySelectorAll('#special-char-popup .special-char-btn');
+  buttons.forEach((btn, i) => {
+    btn.classList.toggle('active', i === idx);
+  });
+}
+
+function replaceCharAtPos(char, textarea) {
+  const val = textarea.value;
+  if (replacedCharPos >= 0 && replacedCharPos < val.length && val[replacedCharPos] === replacedChar) {
+    textarea.value = val.slice(0, replacedCharPos) + char + val.slice(replacedCharPos + 1);
+    textarea.selectionStart = textarea.selectionEnd = replacedCharPos + char.length;
+  } else {
+    insertCharAtCursor(char, textarea);
+  }
+  textarea.focus();
+}
+
+function insertCharAtCursor(char, textarea) {
+  const start = textarea.selectionStart;
+  const end = textarea.selectionEnd;
+  textarea.value = textarea.value.slice(0, start) + char + textarea.value.slice(end);
+  textarea.selectionStart = textarea.selectionEnd = start + char.length;
+  textarea.focus();
+}
+
 // Persistent auto-play preference
 let autoPlayEnabled = localStorage.getItem('anki-autoplay') !== 'false';
 
@@ -130,14 +224,19 @@ if ('speechSynthesis' in window) {
   };
 }
 
+// DJB2 hash — shared algorithm used for both card IDs and audio filenames
+function hashText(text) {
+  let hash = 5381;
+  const s = (text || '').trim().toLowerCase();
+  for (let i = 0; i < s.length; i++) {
+    hash = ((hash << 5) + hash) + s.charCodeAt(i);
+  }
+  return Math.abs(hash & hash).toString(36);
+}
+
 // Stable hashing function for Card IDs (DJB2 algorithm)
 function generateStableId(frText) {
-  let hash = 5381;
-  const cleanStr = frText.trim().toLowerCase();
-  for (let i = 0; i < cleanStr.length; i++) {
-    hash = ((hash << 5) + hash) + cleanStr.charCodeAt(i);
-  }
-  return 'card_' + Math.abs(hash & hash).toString(36);
+  return 'card_' + hashText(frText);
 }
 
 // CSV Parser supporting quotes, escaped quotes, and newlines in cells
@@ -909,7 +1008,10 @@ function speakAudio() {
   let fallbackFired = false;
   const fallback = () => { if (!fallbackFired) { fallbackFired = true; speakBrowserTTS(); } };
 
-  const audio = new Audio(`/audio/${cardId}.mp3`);
+  // Filename = hash(fr) + "_" + hash(target) — uniquely identifies the audio
+  // content regardless of deck or language, no collisions possible.
+  const targetHash = hashText(state.currentCard.target);
+  const audio = new Audio(`/audio/${cardId}_${targetHash}.mp3`);
   audio.onerror = fallback;
   audio.play().catch(fallback);
 }
@@ -1285,13 +1387,136 @@ document.addEventListener('DOMContentLoaded', () => {
   excludeBtn.addEventListener('mouseleave', () => excludeBtn.style.color = 'var(--text-light)');
   counterHeader.appendChild(excludeBtn);
   
+  // Long-press special char picker — wired to the answer textarea
+  const answerTextarea = document.getElementById('user-answer-input');
+
+  answerTextarea.addEventListener('keydown', (e) => {
+    // Track pressed keys to manually detect repeating key presses (robust browser/OS fallback)
+    const isRepeat = e.repeat || pressedKeys.has(e.key);
+    pressedKeys.add(e.key);
+
+    // Block key-repeat of the held key
+    if (isRepeat) {
+      if (e.key === longPressKey) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      return;
+    }
+
+    // Popup is open: handle navigation and select keypresses
+    if (specialCharPopupOpen) {
+      e.stopPropagation();
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        hideSpecialCharPopup();
+        return;
+      }
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const selectedChar = popupOptions[highlightedOptionIdx];
+        if (selectedChar) {
+          replaceCharAtPos(selectedChar, answerTextarea);
+        }
+        hideSpecialCharPopup();
+        return;
+      }
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        const nextIdx = (highlightedOptionIdx + 1) % popupOptions.length;
+        updatePopupHighlight(nextIdx);
+        return;
+      }
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const prevIdx = (highlightedOptionIdx - 1 + popupOptions.length) % popupOptions.length;
+        updatePopupHighlight(prevIdx);
+        return;
+      }
+      if (/^[1-9]$/.test(e.key)) {
+        const btn = document.querySelector(`#special-char-popup [data-num="${e.key}"]`);
+        if (btn) {
+          e.preventDefault();
+          replaceCharAtPos(btn.dataset.char, answerTextarea);
+          hideSpecialCharPopup();
+        }
+        return;
+      }
+      // Any other key (e.g. Backspace, letters): close the popup and let key go through
+      hideSpecialCharPopup();
+      return;
+    }
+
+    // Clear active timer if a DIFFERENT key is pressed
+    if (e.key !== longPressKey && longPressTimer !== null) {
+      clearTimeout(longPressTimer);
+      longPressTimer = null;
+      longPressKey = null;
+    }
+
+    // Match 2-character language base code (e.g. pt-BR -> pt)
+    const lang = (state.activeDeck?.targetLang || '').toLowerCase().slice(0, 2);
+    const map = SPECIAL_CHARS[lang] || {};
+    const variants = map[e.key.toLowerCase()];
+    if (!variants || variants.length === 0) return;
+
+    // Start timer, but let the default behavior insert the character immediately
+    longPressKey = e.key;
+    const key = e.key;
+    longPressTimer = setTimeout(() => {
+      longPressTimer = null;
+      const isUpper = key !== key.toLowerCase();
+      const casedVariants = isUpper ? variants.map(c => c.toUpperCase()) : variants;
+      const baseChar = isUpper ? key.toUpperCase() : key.toLowerCase();
+      
+      // Note the position of the character we just typed so we can replace it on selection
+      const pos = answerTextarea.selectionStart;
+      if (pos > 0 && answerTextarea.value[pos - 1] === key) {
+        replacedCharPos = pos - 1;
+        replacedChar = key;
+      } else {
+        replacedCharPos = -1;
+        replacedChar = '';
+      }
+      
+      showSpecialCharPopup(baseChar, casedVariants, answerTextarea);
+    }, 400);
+  });
+
+  answerTextarea.addEventListener('keyup', (e) => {
+    pressedKeys.delete(e.key);
+    if (e.key === longPressKey) {
+      if (longPressTimer !== null) {
+        clearTimeout(longPressTimer);
+        longPressTimer = null;
+      }
+      longPressKey = null;
+    }
+  });
+
+  answerTextarea.addEventListener('blur', () => {
+    pressedKeys.clear();
+    if (longPressTimer !== null) {
+      clearTimeout(longPressTimer);
+      longPressTimer = null;
+    }
+    longPressKey = null;
+  });
+
+  // Close popup when clicking outside
+  document.addEventListener('mousedown', (e) => {
+    if (specialCharPopupOpen && !e.target.closest('#special-char-popup')) {
+      hideSpecialCharPopup();
+    }
+  });
+
   // Keyboard Shortcuts Support
   document.addEventListener('keydown', (e) => {
     // Avoid shortcuts firing inside text inputs
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
-      
-      // ENTER triggers validation inside Answer Textarea
-      if (e.key === 'Enter' && e.target.id === 'user-answer-input' && !e.shiftKey) {
+
+      // ENTER triggers validation inside Answer Textarea (skip if popup is open)
+      if (e.key === 'Enter' && e.target.id === 'user-answer-input' && !e.shiftKey && !specialCharPopupOpen) {
         e.preventDefault();
         verifyAnswer();
       }

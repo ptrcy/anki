@@ -23,11 +23,11 @@ const SPECIAL_CHARS = {
   pt: { a: ['á','â','ã','à'], c: ['ç'], e: ['é','ê'], i: ['í'], o: ['ó','ô','õ'], u: ['ú'] },
 };
 
-function showSpecialCharPopup(baseChar, variants, textarea) {
+function showSpecialCharPopup(variants, textarea) {
   const popup = document.getElementById('special-char-popup');
   popup.innerHTML = '';
 
-  popupOptions = [baseChar, ...variants];
+  popupOptions = variants;
   highlightedOptionIdx = 0;
 
   popupOptions.forEach((ch, idx) => {
@@ -1467,7 +1467,6 @@ document.addEventListener('DOMContentLoaded', () => {
       longPressTimer = null;
       const isUpper = key !== key.toLowerCase();
       const casedVariants = isUpper ? variants.map(c => c.toUpperCase()) : variants;
-      const baseChar = isUpper ? key.toUpperCase() : key.toLowerCase();
       
       // Note the position of the character we just typed so we can replace it on selection
       const pos = answerTextarea.selectionStart;
@@ -1479,7 +1478,11 @@ document.addEventListener('DOMContentLoaded', () => {
         replacedChar = '';
       }
       
-      showSpecialCharPopup(baseChar, casedVariants, answerTextarea);
+      if (casedVariants.length === 1) {
+        replaceCharAtPos(casedVariants[0], answerTextarea);
+      } else {
+        showSpecialCharPopup(casedVariants, answerTextarea);
+      }
     }, 400);
   });
 

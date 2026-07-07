@@ -521,6 +521,16 @@ async function fetchDecks() {
           <button class="btn btn-indigo btn-sm deck-btn-practice" onclick="navigateTo('#deck/${deck.id}')">
             Étudier
           </button>
+          <button class="deck-btn-delete" title="Enrichir le deck" onclick="event.stopPropagation(); openEnrichModal('${deck.id}', '${escapeHtml(deck.name)}')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 21l-.813-5.096L3.1 15.09l5.087-.805L9 9.186l.813 5.098 5.087.805-5.087.815zm10.742-8.528L19.5 12l-1.055-4.624L13.82 6.32l4.625-1.056L19.5 1l1.055 4.264 4.625 1.056-4.625 1.056z" />
+            </svg>
+          </button>
+          <button class="deck-btn-delete" title="Exporter le deck" onclick="event.stopPropagation(); exportDeck('${deck.id}', '${escapeHtml(deck.name)}')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+          </button>
           <button class="deck-btn-delete" title="Renommer le deck" onclick="event.stopPropagation(); renameDeck('${deck.id}', '${escapeHtml(deck.name)}')">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px;">
               <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125" />
@@ -545,12 +555,19 @@ async function loadDeck(deckId) {
     const res = await fetch(`/api/decks/${deckId}`);
     if (!res.ok) throw new Error('Deck non trouvé sur le serveur');
 
+    // If route changed while fetching, abort to prevent race conditions
+    if (window.location.hash !== '#deck/' + deckId) return;
+
     state.activeDeck = await res.json();
     state.activeDeck.id = deckId;
 
     // Pull latest sync data before reading localStorage, so we always have fresh progress
     const syncCode = localStorage.getItem('anki-sync-code');
-    if (syncCode) await loadAllProgress(syncCode, true);
+    if (syncCode) {
+      await loadAllProgress(syncCode, true);
+      // If route changed while loading sync progress, abort
+      if (window.location.hash !== '#deck/' + deckId) return;
+    }
 
     // Load local storage progress & exclusions
     const localProgress = localStorage.getItem(`progress_${deckId}`);
@@ -567,6 +584,9 @@ async function loadDeck(deckId) {
     state.studyAheadMode = false;
     state.showAnswer = false;
     
+    // Safety check in case activeDeck was cleared
+    if (!state.activeDeck) return;
+
     const langMeta = getLanguageMeta(state.activeDeck.targetLang);
     document.getElementById('active-deck-title').innerText = state.activeDeck.name;
     document.getElementById('active-deck-lang').innerText = (state.activeDeck.targetLang || 'it').toUpperCase();
@@ -602,6 +622,97 @@ async function loadDeck(deckId) {
   } catch (err) {
     alert(`Erreur : ${err.message}`);
     navigateTo('#dashboard');
+  }
+}
+
+async function exportDeck(deckId, deckName) {
+  try {
+    const res = await fetch(`/api/decks/${deckId}`);
+    if (!res.ok) throw new Error("Impossible de charger le deck.");
+    const deck = await res.json();
+    const cards = deck.cards || [];
+
+    const progress = JSON.parse(localStorage.getItem(`progress_${deckId}`) || '{}');
+
+    const headers = [
+      "Index",
+      "Langue Cible",
+      "Traduction (fr)",
+      "Target (Cible)",
+      "Lecon",
+      "Classification Grammaticale",
+      "Phrase a trou (cloze)",
+      "Nombre de revisions",
+      "Repetitions réussies",
+      "Intervalle (jours)",
+      "Facteur de facilite",
+      "Prochaine revision",
+      "Temps d'attente restant"
+    ];
+
+    const rows = cards.map(c => {
+      const prog = progress[c.id] || {};
+      const reps = prog.reps || 0;
+      const interval = prog.interval || 0;
+      const ease = prog.ease || 2.5;
+      const reviews = prog.reviews || 0;
+      const dueAt = prog.dueAt || '';
+
+      let waitTime = "Jamais revise";
+      if (reps > 0) {
+        if (!dueAt || new Date(dueAt) <= new Date()) {
+          waitTime = "Pret a reviser";
+        } else {
+          const diffMs = new Date(dueAt) - new Date();
+          const diffHours = Math.round(diffMs / (60 * 60 * 1000));
+          if (diffHours < 24) {
+            waitTime = `${diffHours} heure${diffHours > 1 ? 's' : ''}`;
+          } else {
+            const diffDays = Math.round(diffMs / (24 * 60 * 60 * 1000));
+            waitTime = `${diffDays} jour${diffDays > 1 ? 's' : ''}`;
+          }
+        }
+      }
+
+      const formattedDue = dueAt ? new Date(dueAt).toLocaleString('fr-FR') : '';
+
+      return [
+        c.index,
+        deck.targetLang.toUpperCase(),
+        c.fr || '',
+        c.target || '',
+        c.lesson || 'General',
+        c.grammatical || '',
+        c.cloze || '',
+        reviews,
+        reps,
+        interval,
+        ease.toFixed(2),
+        formattedDue,
+        waitTime
+      ];
+    });
+
+    const csvContent = [headers, ...rows].map(row => 
+      row.map(val => {
+        const text = String(val === null || val === undefined ? '' : val);
+        return `"${text.replace(/"/g, '""')}"`;
+      }).join(';')
+    ).join('\n');
+
+    const blob = new Blob(['\uFEFF' + csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement("a");
+    const url = URL.createObjectURL(blob);
+    link.setAttribute("href", url);
+    
+    const safeName = deckName.replace(/[^a-z0-9_-]/gi, '_');
+    link.setAttribute("download", `export_deck_${safeName}.csv`);
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } catch (err) {
+    alert(`Erreur d'exportation : ${err.message}`);
   }
 }
 
@@ -779,6 +890,29 @@ function showNextCard() {
   document.getElementById('study-container').classList.remove('hide');
   document.getElementById('no-cards-state').classList.add('hide');
   document.getElementById('origin-sentence-text').innerText = nextCard.fr;
+  
+  // Update grammar classification hint
+  const grammarEl = document.getElementById('card-grammar-hint');
+  if (grammarEl) {
+    if (nextCard.grammatical) {
+      grammarEl.innerText = nextCard.grammatical;
+      grammarEl.classList.remove('hide');
+    } else {
+      grammarEl.classList.add('hide');
+    }
+  }
+
+  // Update cloze sentence hint
+  const clozeEl = document.getElementById('card-cloze-hint');
+  if (clozeEl) {
+    if (nextCard.cloze) {
+      clozeEl.innerText = nextCard.cloze;
+      clozeEl.classList.remove('hide');
+    } else {
+      clozeEl.classList.add('hide');
+    }
+  }
+
   document.getElementById('current-card-lesson').innerText = nextCard.lesson || 'Général';
   
   // Show Due badge if it's actually due
@@ -1008,10 +1142,11 @@ function speakAudio() {
   let fallbackFired = false;
   const fallback = () => { if (!fallbackFired) { fallbackFired = true; speakBrowserTTS(); } };
 
-  // Filename = hash(fr) + "_" + hash(target) — uniquely identifies the audio
-  // content regardless of deck or language, no collisions possible.
+  // Filename = hash(fr) + "_" + hash(target) + "_" + lang — uniquely identifies the audio
+  // content per language, ensuring no cross-language collisions.
+  const targetLang = (state.activeDeck.targetLang || 'it').toLowerCase();
   const targetHash = hashText(state.currentCard.target);
-  const audio = new Audio(`/audio/${cardId}_${targetHash}.mp3`);
+  const audio = new Audio(`/audio/${cardId}_${targetHash}_${targetLang}.mp3`);
   audio.onerror = fallback;
   audio.play().catch(fallback);
 }
@@ -1564,4 +1699,134 @@ function escapeHtml(str) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+// ----------------------------------------------------
+// ENRICH DECK FEATURES (LLM Bulk Generator)
+// ----------------------------------------------------
+
+function openEnrichModal(deckId, deckName) {
+  document.getElementById('enrich-deck-id').value = deckId;
+  
+  // Set modal title
+  const titleEl = document.querySelector('#enrich-deck-modal h3');
+  if (titleEl) titleEl.innerText = `Enrichir le Deck : ${deckName}`;
+  
+  // Reset fields
+  document.getElementById('enrich-lang-select').value = 'fr';
+  document.getElementById('enrich-grammar-checkbox').checked = true;
+  document.getElementById('enrich-cloze-checkbox').checked = true;
+  
+  // Load saved API key from localStorage
+  const savedKey = localStorage.getItem('gemini-api-key') || '';
+  document.getElementById('enrich-api-key-input').value = savedKey;
+
+  // Hide progress and errors
+  document.getElementById('enrich-progress-container').classList.add('hide');
+  document.getElementById('enrich-error-message').classList.add('hide');
+  document.getElementById('enrich-modal-actions').classList.remove('hide');
+
+  // Show Modal
+  document.getElementById('enrich-deck-modal').classList.remove('hide');
+}
+
+function closeEnrichModal() {
+  document.getElementById('enrich-deck-modal').classList.add('hide');
+}
+
+// Bind modal close buttons
+document.getElementById('close-enrich-modal-btn').addEventListener('click', closeEnrichModal);
+document.getElementById('cancel-enrich-btn').addEventListener('click', closeEnrichModal);
+
+// Handle Form Submission
+document.getElementById('enrich-deck-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const deckId = document.getElementById('enrich-deck-id').value;
+  const translationLang = document.getElementById('enrich-lang-select').value;
+  const includeGrammar = document.getElementById('enrich-grammar-checkbox').checked;
+  const includeCloze = document.getElementById('enrich-cloze-checkbox').checked;
+  const apiKey = document.getElementById('enrich-api-key-input').value.trim();
+
+  // Save API key if provided
+  if (apiKey) {
+    localStorage.setItem('gemini-api-key', apiKey);
+  } else {
+    localStorage.removeItem('gemini-api-key');
+  }
+
+  // Show progress spinner, hide buttons/errors
+  const progressContainer = document.getElementById('enrich-progress-container');
+  const errorEl = document.getElementById('enrich-error-message');
+  const modalActions = document.getElementById('enrich-modal-actions');
+
+  progressContainer.classList.remove('hide');
+  errorEl.classList.add('hide');
+  modalActions.classList.add('hide');
+
+  try {
+    const res = await fetch(`/api/decks/${deckId}/enrich`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        translationLang,
+        includeGrammar,
+        includeCloze,
+        apiKey
+      })
+    });
+
+    const result = await res.json();
+    if (!res.ok) throw new Error(result.error || "Une erreur est survenue lors de l'enrichissement");
+
+    // Success! Update local progress mapping
+    if (result.idChanges) {
+      updateLocalProgressKeys(deckId, result.idChanges);
+    }
+
+    closeEnrichModal();
+    alert('Deck enrichi avec succès ! Le serveur a mis à jour les cartes et synchronisé votre progression.');
+    fetchDecks(); // reload dashboard deck counts and list
+
+  } catch (err) {
+    errorEl.innerText = err.message;
+    errorEl.classList.remove('hide');
+    modalActions.classList.remove('hide');
+    progressContainer.classList.add('hide');
+  }
+});
+
+// Helper to rename localStorage progress keys based on server-side ID changes
+function updateLocalProgressKeys(deckId, idChanges) {
+  const localProgKey = `progress_${deckId}`;
+  const localExclKey = `excluded_${deckId}`;
+
+  const progress = JSON.parse(localStorage.getItem(localProgKey) || '{}');
+  const excluded = JSON.parse(localStorage.getItem(localExclKey) || '[]');
+
+  const newProgress = {};
+  const newExcluded = new Set();
+
+  Object.entries(progress).forEach(([oldId, val]) => {
+    const newId = idChanges[oldId];
+    if (newId) {
+      newProgress[newId] = val;
+    } else {
+      newProgress[oldId] = val;
+    }
+  });
+
+  excluded.forEach(oldId => {
+    const newId = idChanges[oldId];
+    if (newId) {
+      newExcluded.add(newId);
+    } else {
+      newExcluded.add(oldId);
+    }
+  });
+
+  localStorage.setItem(localProgKey, JSON.stringify(newProgress));
+  localStorage.setItem(localExclKey, JSON.stringify(Array.from(newExcluded)));
 }

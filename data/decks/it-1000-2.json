@@ -1,0 +1,7252 @@
+{
+  "name": "IT-1000-2",
+  "targetLang": "it",
+  "cards": [
+    {
+      "id": "card_3ho6w",
+      "fr": "EN",
+      "target": "IT",
+      "lesson": "Général",
+      "index": 1
+    },
+    {
+      "id": "card_4k2ipr",
+      "fr": "thing",
+      "target": "cosa",
+      "lesson": "Général",
+      "index": 2
+    },
+    {
+      "id": "card_ykvzzq",
+      "fr": "year",
+      "target": "anno",
+      "lesson": "Général",
+      "index": 3
+    },
+    {
+      "id": "card_377csh",
+      "fr": "man",
+      "target": "uomo",
+      "lesson": "Général",
+      "index": 4
+    },
+    {
+      "id": "card_3vukl",
+      "fr": "day (1)",
+      "target": "giorno",
+      "lesson": "Général",
+      "index": 5
+    },
+    {
+      "id": "card_3vuli",
+      "fr": "day (2)",
+      "target": "giornata",
+      "lesson": "Général",
+      "index": 6
+    },
+    {
+      "id": "card_9bzdqu",
+      "fr": "time (1)",
+      "target": "volta",
+      "lesson": "Général",
+      "index": 7
+    },
+    {
+      "id": "card_9bzdrr",
+      "fr": "time (2)",
+      "target": "tempo",
+      "lesson": "Général",
+      "index": 8
+    },
+    {
+      "id": "card_ykj5am",
+      "fr": "home",
+      "target": "casa",
+      "lesson": "Général",
+      "index": 9
+    },
+    {
+      "id": "card_ykozi4",
+      "fr": "part",
+      "target": "parte",
+      "lesson": "Général",
+      "index": 10
+    },
+    {
+      "id": "card_ykm2zp",
+      "fr": "life",
+      "target": "vita",
+      "lesson": "Général",
+      "index": 11
+    },
+    {
+      "id": "card_4mc91j",
+      "fr": "woman",
+      "target": "donna",
+      "lesson": "Général",
+      "index": 12
+    },
+    {
+      "id": "card_ykitk0",
+      "fr": "hand",
+      "target": "mano",
+      "lesson": "Général",
+      "index": 13
+    },
+    {
+      "id": "card_3776o8",
+      "fr": "eye",
+      "target": "occhio",
+      "lesson": "Général",
+      "index": 14
+    },
+    {
+      "id": "card_9mek0r",
+      "fr": "now (1)",
+      "target": "ora",
+      "lesson": "Général",
+      "index": 15
+    },
+    {
+      "id": "card_9mek1o",
+      "fr": "now (2)",
+      "target": "adesso",
+      "lesson": "Général",
+      "index": 16
+    },
+    {
+      "id": "card_9mek2l",
+      "fr": "now (3)",
+      "target": "oramai",
+      "lesson": "Général",
+      "index": 17
+    },
+    {
+      "id": "card_377d6a",
+      "fr": "Mr.",
+      "target": "signore",
+      "lesson": "Général",
+      "index": 18
+    },
+    {
+      "id": "card_cygsj7",
+      "fr": "country, town",
+      "target": "paese",
+      "lesson": "Général",
+      "index": 19
+    },
+    {
+      "id": "card_v0a4nr",
+      "fr": "moment (1)",
+      "target": "momento",
+      "lesson": "Général",
+      "index": 20
+    },
+    {
+      "id": "card_v0a4oo",
+      "fr": "moment (2)",
+      "target": "attimo",
+      "lesson": "Général",
+      "index": 21
+    },
+    {
+      "id": "card_k9kb3c",
+      "fr": "way (1)",
+      "target": "modo",
+      "lesson": "Général",
+      "index": 22
+    },
+    {
+      "id": "card_k9kb2f",
+      "fr": "way (2)",
+      "target": "maniera",
+      "lesson": "Général",
+      "index": 23
+    },
+    {
+      "id": "card_4mcdil",
+      "fr": "world",
+      "target": "mondo",
+      "lesson": "Général",
+      "index": 24
+    },
+    {
+      "id": "card_ykupcx",
+      "fr": "word",
+      "target": "parola",
+      "lesson": "Général",
+      "index": 25
+    },
+    {
+      "id": "card_utun5",
+      "fr": "father",
+      "target": "padre",
+      "lesson": "Général",
+      "index": 26
+    },
+    {
+      "id": "card_4he8kv",
+      "fr": "point",
+      "target": "punto",
+      "lesson": "Général",
+      "index": 27
+    },
+    {
+      "id": "card_ykupd4",
+      "fr": "work",
+      "target": "lavoro",
+      "lesson": "Général",
+      "index": 28
+    },
+    {
+      "id": "card_4jm5ty",
+      "fr": "state",
+      "target": "stato",
+      "lesson": "Général",
+      "index": 29
+    },
+    {
+      "id": "card_ykez1d",
+      "fr": "case",
+      "target": "caso",
+      "lesson": "Général",
+      "index": 30
+    },
+    {
+      "id": "card_ykf5su",
+      "fr": "city",
+      "target": "città",
+      "lesson": "Général",
+      "index": 31
+    },
+    {
+      "id": "card_377l73",
+      "fr": "war",
+      "target": "guerra",
+      "lesson": "Général",
+      "index": 32
+    },
+    {
+      "id": "card_j29wj",
+      "fr": "friend",
+      "target": "amico",
+      "lesson": "Général",
+      "index": 33
+    },
+    {
+      "id": "card_ykg2ej",
+      "fr": "done",
+      "target": "fatto",
+      "lesson": "Général",
+      "index": 34
+    },
+    {
+      "id": "card_5ow8h6",
+      "fr": "people",
+      "target": "gente",
+      "lesson": "Général",
+      "index": 35
+    },
+    {
+      "id": "card_ykm8fv",
+      "fr": "love",
+      "target": "amore",
+      "lesson": "Général",
+      "index": 36
+    },
+    {
+      "id": "card_jmeplj",
+      "fr": "history",
+      "target": "storia",
+      "lesson": "Général",
+      "index": 37
+    },
+    {
+      "id": "card_3772wx",
+      "fr": "air",
+      "target": "aria",
+      "lesson": "Général",
+      "index": 38
+    },
+    {
+      "id": "card_5v8fmc",
+      "fr": "power (1)",
+      "target": "forza",
+      "lesson": "Général",
+      "index": 39
+    },
+    {
+      "id": "card_5v8fn9",
+      "fr": "power (2)",
+      "target": "potere",
+      "lesson": "Général",
+      "index": 40
+    },
+    {
+      "id": "card_5v8fo6",
+      "fr": "power (3)",
+      "target": "potenza",
+      "lesson": "Général",
+      "index": 41
+    },
+    {
+      "id": "card_5v8fp3",
+      "fr": "power (4)",
+      "target": "energia",
+      "lesson": "Général",
+      "index": 42
+    },
+    {
+      "id": "card_i5he13",
+      "fr": "head (1)",
+      "target": "testa",
+      "lesson": "Général",
+      "index": 43
+    },
+    {
+      "id": "card_i5he06",
+      "fr": "head (2)",
+      "target": "capo",
+      "lesson": "Général",
+      "index": 44
+    },
+    {
+      "id": "card_7nrcjz",
+      "fr": "reason (1)",
+      "target": "ragione",
+      "lesson": "Général",
+      "index": 45
+    },
+    {
+      "id": "card_7nrckw",
+      "fr": "reason (2)",
+      "target": "motivo",
+      "lesson": "Général",
+      "index": 46
+    },
+    {
+      "id": "card_377hxa",
+      "fr": "sea",
+      "target": "mare",
+      "lesson": "Général",
+      "index": 47
+    },
+    {
+      "id": "card_4fa3qj",
+      "fr": "month",
+      "target": "mese",
+      "lesson": "Général",
+      "index": 48
+    },
+    {
+      "id": "card_448km9",
+      "fr": "light (1)",
+      "target": "luce",
+      "lesson": "Général",
+      "index": 49
+    },
+    {
+      "id": "card_448klc",
+      "fr": "light (2)",
+      "target": "leggero",
+      "lesson": "Général",
+      "index": 50
+    },
+    {
+      "id": "card_377icb",
+      "fr": "Sun",
+      "target": "sole",
+      "lesson": "Général",
+      "index": 51
+    },
+    {
+      "id": "card_uz7q1",
+      "fr": "family",
+      "target": "famiglia",
+      "lesson": "Général",
+      "index": 52
+    },
+    {
+      "id": "card_ykhlwd",
+      "fr": "foot",
+      "target": "piede",
+      "lesson": "Général",
+      "index": 53
+    },
+    {
+      "id": "card_5oym9o",
+      "fr": "person",
+      "target": "persona",
+      "lesson": "Général",
+      "index": 54
+    },
+    {
+      "id": "card_7xfzdo",
+      "fr": "street",
+      "target": "via",
+      "lesson": "Général",
+      "index": 55
+    },
+    {
+      "id": "card_ykn2kl",
+      "fr": "Mrs.",
+      "target": "signora",
+      "lesson": "Général",
+      "index": 56
+    },
+    {
+      "id": "card_mi4cxi",
+      "fr": "government",
+      "target": "governo",
+      "lesson": "Général",
+      "index": 57
+    },
+    {
+      "id": "card_4jawsj",
+      "fr": "sense",
+      "target": "senso",
+      "lesson": "Général",
+      "index": 58
+    },
+    {
+      "id": "card_4gphz0",
+      "fr": "Opera",
+      "target": "opera",
+      "lesson": "Général",
+      "index": 59
+    },
+    {
+      "id": "card_gv4xiy",
+      "fr": "product",
+      "target": "prodotto",
+      "lesson": "Général",
+      "index": 60
+    },
+    {
+      "id": "card_edz0nd",
+      "fr": "party (1)",
+      "target": "festa",
+      "lesson": "Général",
+      "index": 61
+    },
+    {
+      "id": "card_edz0mg",
+      "fr": "party (2)",
+      "target": "partito",
+      "lesson": "Général",
+      "index": 62
+    },
+    {
+      "id": "card_yki1sv",
+      "fr": "game",
+      "target": "gioco",
+      "lesson": "Général",
+      "index": 63
+    },
+    {
+      "id": "card_yks5t1",
+      "fr": "test",
+      "target": "prova",
+      "lesson": "Général",
+      "index": 64
+    },
+    {
+      "id": "card_3am7du",
+      "fr": "countryside",
+      "target": "campagna",
+      "lesson": "Général",
+      "index": 65
+    },
+    {
+      "id": "card_n5qzw",
+      "fr": "flower",
+      "target": "fiore",
+      "lesson": "Général",
+      "index": 66
+    },
+    {
+      "id": "card_a56tsf",
+      "fr": "room, hall",
+      "target": "sala",
+      "lesson": "Général",
+      "index": 67
+    },
+    {
+      "id": "card_il7l49",
+      "fr": "measure",
+      "target": "misura",
+      "lesson": "Général",
+      "index": 68
+    },
+    {
+      "id": "card_lchj22",
+      "fr": "position",
+      "target": "posizione",
+      "lesson": "Général",
+      "index": 69
+    },
+    {
+      "id": "card_4bkx3o",
+      "fr": "nature",
+      "target": "natura",
+      "lesson": "Général",
+      "index": 70
+    },
+    {
+      "id": "card_523qsx",
+      "fr": "office",
+      "target": "ufficio",
+      "lesson": "Général",
+      "index": 71
+    },
+    {
+      "id": "card_pb7wtr",
+      "fr": "species",
+      "target": "specie",
+      "lesson": "Général",
+      "index": 72
+    },
+    {
+      "id": "card_m44sn6",
+      "fr": "success",
+      "target": "successO",
+      "lesson": "Général",
+      "index": 73
+    },
+    {
+      "id": "card_ykdti6",
+      "fr": "area",
+      "target": "zona",
+      "lesson": "Général",
+      "index": 74
+    },
+    {
+      "id": "card_ykhgx7",
+      "fr": "fire",
+      "target": "fuoco",
+      "lesson": "Général",
+      "index": 75
+    },
+    {
+      "id": "card_ptk0q1",
+      "fr": "soldier",
+      "target": "soldato",
+      "lesson": "Général",
+      "index": 76
+    },
+    {
+      "id": "card_ykts9s",
+      "fr": "view",
+      "target": "vista",
+      "lesson": "Général",
+      "index": 77
+    },
+    {
+      "id": "card_hjwz3t",
+      "fr": "freedom",
+      "target": "libertà",
+      "lesson": "Général",
+      "index": 78
+    },
+    {
+      "id": "card_kzbfeu",
+      "fr": "result (1)",
+      "target": "risultato",
+      "lesson": "Général",
+      "index": 79
+    },
+    {
+      "id": "card_kzbffr",
+      "fr": "result (2)",
+      "target": "conseguenza",
+      "lesson": "Général",
+      "index": 80
+    },
+    {
+      "id": "card_jlkw9j",
+      "fr": "importance",
+      "target": "importance",
+      "lesson": "Général",
+      "index": 81
+    },
+    {
+      "id": "card_48xhlv",
+      "fr": "doubt",
+      "target": "dubbio",
+      "lesson": "Général",
+      "index": 82
+    },
+    {
+      "id": "card_9t4d4i",
+      "fr": "Research",
+      "target": "ricerca",
+      "lesson": "Général",
+      "index": 83
+    },
+    {
+      "id": "card_37783j",
+      "fr": "God",
+      "target": "dio",
+      "lesson": "Général",
+      "index": 84
+    },
+    {
+      "id": "card_pg7dl",
+      "fr": "figure",
+      "target": "figura",
+      "lesson": "Général",
+      "index": 85
+    },
+    {
+      "id": "card_7vdyc6",
+      "fr": "square",
+      "target": "piazza",
+      "lesson": "Général",
+      "index": 86
+    },
+    {
+      "id": "card_z5xrq7",
+      "fr": "question (1)",
+      "target": "questione",
+      "lesson": "Général",
+      "index": 87
+    },
+    {
+      "id": "card_z5xrr4",
+      "fr": "question (2)",
+      "target": "domanda",
+      "lesson": "Général",
+      "index": 88
+    },
+    {
+      "id": "card_49lrs3",
+      "fr": "enemy",
+      "target": "nemico",
+      "lesson": "Général",
+      "index": 89
+    },
+    {
+      "id": "card_r6cpcg",
+      "fr": "punishment",
+      "target": "pena",
+      "lesson": "Général",
+      "index": 90
+    },
+    {
+      "id": "card_es5nwt",
+      "fr": "experience",
+      "target": "esperienza",
+      "lesson": "Général",
+      "index": 91
+    },
+    {
+      "id": "card_3qy95q",
+      "fr": "memory",
+      "target": "ricordo",
+      "lesson": "Général",
+      "index": 92
+    },
+    {
+      "id": "card_yksgd1",
+      "fr": "tree",
+      "target": "albero",
+      "lesson": "Général",
+      "index": 93
+    },
+    {
+      "id": "card_5vvxth",
+      "fr": "policy",
+      "target": "politica",
+      "lesson": "Général",
+      "index": 94
+    },
+    {
+      "id": "card_gv62ak",
+      "fr": "process",
+      "target": "processo",
+      "lesson": "Général",
+      "index": 95
+    },
+    {
+      "id": "card_ykuk7s",
+      "fr": "wine",
+      "target": "vino",
+      "lesson": "Général",
+      "index": 96
+    },
+    {
+      "id": "card_ykg2ft",
+      "fr": "door",
+      "target": "porta",
+      "lesson": "Général",
+      "index": 97
+    },
+    {
+      "id": "card_4jirzs",
+      "fr": "south",
+      "target": "sud",
+      "lesson": "Général",
+      "index": 98
+    },
+    {
+      "id": "card_48zfbi",
+      "fr": "dream",
+      "target": "sogno",
+      "lesson": "Général",
+      "index": 99
+    },
+    {
+      "id": "card_3775kv",
+      "fr": "dog",
+      "target": "cane",
+      "lesson": "Général",
+      "index": 100
+    },
+    {
+      "id": "card_1fls68",
+      "fr": "island",
+      "target": "isola",
+      "lesson": "Général",
+      "index": 101
+    },
+    {
+      "id": "card_ve31e8",
+      "fr": "movement",
+      "target": "movimento",
+      "lesson": "Général",
+      "index": 102
+    },
+    {
+      "id": "card_mq3fe9",
+      "fr": "mind (1)",
+      "target": "mente",
+      "lesson": "Général",
+      "index": 103
+    },
+    {
+      "id": "card_mq3fdc",
+      "fr": "mind (2)",
+      "target": "animo",
+      "lesson": "Général",
+      "index": 104
+    },
+    {
+      "id": "card_k6qf4y",
+      "fr": "opportunity",
+      "target": "occasione",
+      "lesson": "Général",
+      "index": 105
+    },
+    {
+      "id": "card_4hgjh4",
+      "fr": "price",
+      "target": "prezzo",
+      "lesson": "Général",
+      "index": 106
+    },
+    {
+      "id": "card_47xara",
+      "fr": "cause",
+      "target": "causa",
+      "lesson": "Général",
+      "index": 107
+    },
+    {
+      "id": "card_5oyduw",
+      "fr": "period",
+      "target": "periodo",
+      "lesson": "Général",
+      "index": 108
+    },
+    {
+      "id": "card_25p8eg",
+      "fr": "development",
+      "target": "sviluppo",
+      "lesson": "Général",
+      "index": 109
+    },
+    {
+      "id": "card_7ppi0v",
+      "fr": "sister",
+      "target": "sorella",
+      "lesson": "Général",
+      "index": 110
+    },
+    {
+      "id": "card_1ewf66",
+      "fr": "effect",
+      "target": "effetto",
+      "lesson": "Général",
+      "index": 111
+    },
+    {
+      "id": "card_7koei",
+      "fr": "garden",
+      "target": "giardino",
+      "lesson": "Général",
+      "index": 112
+    },
+    {
+      "id": "card_y2ku4m",
+      "fr": "activities",
+      "target": "attività",
+      "lesson": "Général",
+      "index": 113
+    },
+    {
+      "id": "card_ykuk65",
+      "fr": "will",
+      "target": "volontà",
+      "lesson": "Général",
+      "index": 114
+    },
+    {
+      "id": "card_kaa1qi",
+      "fr": "face (1)",
+      "target": "volto",
+      "lesson": "Général",
+      "index": 115
+    },
+    {
+      "id": "card_kaa1pl",
+      "fr": "face (2)",
+      "target": "faccia",
+      "lesson": "Général",
+      "index": 116
+    },
+    {
+      "id": "card_kaa1oo",
+      "fr": "face (3)",
+      "target": "viso",
+      "lesson": "Général",
+      "index": 117
+    },
+    {
+      "id": "card_477trr",
+      "fr": "basis",
+      "target": "base",
+      "lesson": "Général",
+      "index": 118
+    },
+    {
+      "id": "card_n9g5v0",
+      "fr": "character (1)",
+      "target": "carattere",
+      "lesson": "Général",
+      "index": 119
+    },
+    {
+      "id": "card_n9g5u3",
+      "fr": "character (2)",
+      "target": "personaggio",
+      "lesson": "Général",
+      "index": 120
+    },
+    {
+      "id": "card_57kbmr",
+      "fr": "disease",
+      "target": "malattia",
+      "lesson": "Général",
+      "index": 121
+    },
+    {
+      "id": "card_xn92sh",
+      "fr": "science",
+      "target": "scienza",
+      "lesson": "Général",
+      "index": 122
+    },
+    {
+      "id": "card_c6399x",
+      "fr": "function",
+      "target": "funzione",
+      "lesson": "Général",
+      "index": 123
+    },
+    {
+      "id": "card_ym3bh3",
+      "fr": "wall (1)",
+      "target": "parete",
+      "lesson": "Général",
+      "index": 124
+    },
+    {
+      "id": "card_ym3bi0",
+      "fr": "Wall (2)",
+      "target": "muro",
+      "lesson": "Général",
+      "index": 125
+    },
+    {
+      "id": "card_4k820j",
+      "fr": "tooth",
+      "target": "dente",
+      "lesson": "Général",
+      "index": 126
+    },
+    {
+      "id": "card_u5zpo0",
+      "fr": "distance",
+      "target": "distanza",
+      "lesson": "Général",
+      "index": 127
+    },
+    {
+      "id": "card_4jxd5y",
+      "fr": "taste",
+      "target": "gusto",
+      "lesson": "Général",
+      "index": 128
+    },
+    {
+      "id": "card_47ylu6",
+      "fr": "impression",
+      "target": "impressione",
+      "lesson": "Général",
+      "index": 129
+    },
+    {
+      "id": "card_6mkhwy",
+      "fr": "institute",
+      "target": "istituto",
+      "lesson": "Général",
+      "index": 130
+    },
+    {
+      "id": "card_2rsqn",
+      "fr": "painting",
+      "target": "quadro",
+      "lesson": "Général",
+      "index": 131
+    },
+    {
+      "id": "card_26sz0l",
+      "fr": "attention",
+      "target": "attenzione",
+      "lesson": "Général",
+      "index": 132
+    },
+    {
+      "id": "card_3p7ig8",
+      "fr": "author",
+      "target": "autore",
+      "lesson": "Général",
+      "index": 133
+    },
+    {
+      "id": "card_p8mjaw",
+      "fr": "difficulty",
+      "target": "difficoltà",
+      "lesson": "Général",
+      "index": 134
+    },
+    {
+      "id": "card_rs3p6m",
+      "fr": "passion",
+      "target": "passione",
+      "lesson": "Général",
+      "index": 135
+    },
+    {
+      "id": "card_pmv256",
+      "fr": "commission",
+      "target": "commissione",
+      "lesson": "Général",
+      "index": 136
+    },
+    {
+      "id": "card_pb5cw",
+      "fr": "finger",
+      "target": "dito",
+      "lesson": "Général",
+      "index": 137
+    },
+    {
+      "id": "card_4jm5sj",
+      "fr": "Start",
+      "target": "inizio",
+      "lesson": "Général",
+      "index": 138
+    },
+    {
+      "id": "card_gv2owz",
+      "fr": "program",
+      "target": "programma",
+      "lesson": "Général",
+      "index": 139
+    },
+    {
+      "id": "card_ykrghy",
+      "fr": "show",
+      "target": "spettacolo",
+      "lesson": "Général",
+      "index": 140
+    },
+    {
+      "id": "card_4k3jmv",
+      "fr": "title",
+      "target": "titolo",
+      "lesson": "Général",
+      "index": 141
+    },
+    {
+      "id": "card_7ie6xn",
+      "fr": "communication",
+      "target": "comunicazione",
+      "lesson": "Général",
+      "index": 142
+    },
+    {
+      "id": "card_qavf5w",
+      "fr": "phenomenon",
+      "target": "fenomeno",
+      "lesson": "Général",
+      "index": 143
+    },
+    {
+      "id": "card_377css",
+      "fr": "May",
+      "target": "maggio",
+      "lesson": "Général",
+      "index": 144
+    },
+    {
+      "id": "card_4hggj6",
+      "fr": "press",
+      "target": "stampa",
+      "lesson": "Général",
+      "index": 145
+    },
+    {
+      "id": "card_4fa3d9",
+      "fr": "money",
+      "target": "denaro",
+      "lesson": "Général",
+      "index": 146
+    },
+    {
+      "id": "card_2motxh",
+      "fr": "destiny",
+      "target": "destino",
+      "lesson": "Général",
+      "index": 147
+    },
+    {
+      "id": "card_ykg7m3",
+      "fr": "duty",
+      "target": "dovere",
+      "lesson": "Général",
+      "index": 148
+    },
+    {
+      "id": "card_ykjzlp",
+      "fr": "iron",
+      "target": "ferro",
+      "lesson": "Général",
+      "index": 149
+    },
+    {
+      "id": "card_377ivm",
+      "fr": "tip",
+      "target": "punta",
+      "lesson": "Général",
+      "index": 150
+    },
+    {
+      "id": "card_ck77ou",
+      "fr": "kingdom",
+      "target": "regno",
+      "lesson": "Général",
+      "index": 151
+    },
+    {
+      "id": "card_3776hp",
+      "fr": "era",
+      "target": "epoca",
+      "lesson": "Général",
+      "index": 152
+    },
+    {
+      "id": "card_ykmzzy",
+      "fr": "moon",
+      "target": "luna",
+      "lesson": "Général",
+      "index": 153
+    },
+    {
+      "id": "card_c1u8p7",
+      "fr": "province",
+      "target": "provincia",
+      "lesson": "Général",
+      "index": 154
+    },
+    {
+      "id": "card_ykukcg",
+      "fr": "wish",
+      "target": "voglia",
+      "lesson": "Général",
+      "index": 155
+    },
+    {
+      "id": "card_mxoak0",
+      "fr": "difference",
+      "target": "differenza",
+      "lesson": "Général",
+      "index": 156
+    },
+    {
+      "id": "card_ccqm8q",
+      "fr": "control",
+      "target": "controllo",
+      "lesson": "Général",
+      "index": 157
+    },
+    {
+      "id": "card_4b3l6v",
+      "fr": "grace",
+      "target": "grazia",
+      "lesson": "Général",
+      "index": 158
+    },
+    {
+      "id": "card_5vvxsx",
+      "fr": "police",
+      "target": "polizia",
+      "lesson": "Général",
+      "index": 159
+    },
+    {
+      "id": "card_m8oaq",
+      "fr": "solution",
+      "target": "soluzione",
+      "lesson": "Général",
+      "index": 160
+    },
+    {
+      "id": "card_3rbk4x",
+      "fr": "kilometer",
+      "target": "chilometro",
+      "lesson": "Général",
+      "index": 161
+    },
+    {
+      "id": "card_3y5no4",
+      "fr": "mother",
+      "target": "madre",
+      "lesson": "Général",
+      "index": 162
+    },
+    {
+      "id": "card_ykhd4z",
+      "fr": "fear",
+      "target": "paura",
+      "lesson": "Général",
+      "index": 163
+    },
+    {
+      "id": "card_4bj061",
+      "fr": "heart",
+      "target": "cuore",
+      "lesson": "Général",
+      "index": 164
+    },
+    {
+      "id": "card_ykjnko",
+      "fr": "idea",
+      "target": "idea",
+      "lesson": "Général",
+      "index": 165
+    },
+    {
+      "id": "card_spramd",
+      "fr": "background",
+      "target": "fondo",
+      "lesson": "Général",
+      "index": 166
+    },
+    {
+      "id": "card_z3o07j",
+      "fr": "example",
+      "target": "esempio",
+      "lesson": "Général",
+      "index": 167
+    },
+    {
+      "id": "card_4gr09t",
+      "fr": "order",
+      "target": "ordine",
+      "lesson": "Général",
+      "index": 168
+    },
+    {
+      "id": "card_my75ro",
+      "fr": "place (1)",
+      "target": "posto",
+      "lesson": "Général",
+      "index": 169
+    },
+    {
+      "id": "card_my75qr",
+      "fr": "place (2)",
+      "target": "luogo",
+      "lesson": "Général",
+      "index": 170
+    },
+    {
+      "id": "card_4a7c5l",
+      "fr": "field",
+      "target": "campo",
+      "lesson": "Général",
+      "index": 171
+    },
+    {
+      "id": "card_ykuk0g",
+      "fr": "wife",
+      "target": "moglie",
+      "lesson": "Général",
+      "index": 172
+    },
+    {
+      "id": "card_3773wv",
+      "fr": "boy",
+      "target": "ragazzo",
+      "lesson": "Général",
+      "index": 173
+    },
+    {
+      "id": "card_mllg1v",
+      "fr": "need (1)",
+      "target": "bisogno",
+      "lesson": "Général",
+      "index": 174
+    },
+    {
+      "id": "card_mllg2s",
+      "fr": "need (2)",
+      "target": "necessità",
+      "lesson": "Général",
+      "index": 175
+    },
+    {
+      "id": "card_mllg3p",
+      "fr": "need (3)",
+      "target": "bisognare",
+      "lesson": "Général",
+      "index": 176
+    },
+    {
+      "id": "card_377i3g",
+      "fr": "sky",
+      "target": "cielo",
+      "lesson": "Général",
+      "index": 177
+    },
+    {
+      "id": "card_3773n4",
+      "fr": "bed",
+      "target": "letto",
+      "lesson": "Général",
+      "index": 178
+    },
+    {
+      "id": "card_4aei6m",
+      "fr": "front",
+      "target": "fronte",
+      "lesson": "Général",
+      "index": 179
+    },
+    {
+      "id": "card_ykeduw",
+      "fr": "bill",
+      "target": "conto",
+      "lesson": "Général",
+      "index": 180
+    },
+    {
+      "id": "card_ykeipf",
+      "fr": "body",
+      "target": "corpo",
+      "lesson": "Général",
+      "index": 181
+    },
+    {
+      "id": "card_4pjfym",
+      "fr": "number",
+      "target": "numero",
+      "lesson": "Général",
+      "index": 182
+    },
+    {
+      "id": "card_mkqlbk",
+      "fr": "minister",
+      "target": "ministro",
+      "lesson": "Général",
+      "index": 183
+    },
+    {
+      "id": "card_gv6oi2",
+      "fr": "problem",
+      "target": "problema",
+      "lesson": "Général",
+      "index": 184
+    },
+    {
+      "id": "card_2nrcbi",
+      "fr": "church",
+      "target": "chiesa",
+      "lesson": "Général",
+      "index": 185
+    },
+    {
+      "id": "card_377351",
+      "fr": "arm",
+      "target": "braccio",
+      "lesson": "Général",
+      "index": 186
+    },
+    {
+      "id": "card_vfwgut",
+      "fr": "child (1)",
+      "target": "bambino",
+      "lesson": "Général",
+      "index": 187
+    },
+    {
+      "id": "card_vfwgtw",
+      "fr": "child (2)",
+      "target": "bambina",
+      "lesson": "Général",
+      "index": 188
+    },
+    {
+      "id": "card_pzt0m3",
+      "fr": "society",
+      "target": "società",
+      "lesson": "Général",
+      "index": 189
+    },
+    {
+      "id": "card_4jmm8u",
+      "fr": "study",
+      "target": "studio",
+      "lesson": "Général",
+      "index": 190
+    },
+    {
+      "id": "card_377byh",
+      "fr": "law",
+      "target": "legge",
+      "lesson": "Général",
+      "index": 191
+    },
+    {
+      "id": "card_ykeiz4",
+      "fr": "book",
+      "target": "libro",
+      "lesson": "Général",
+      "index": 192
+    },
+    {
+      "id": "card_2ejemx",
+      "fr": "daughter",
+      "target": "figlia",
+      "lesson": "Général",
+      "index": 193
+    },
+    {
+      "id": "card_ykqmcj",
+      "fr": "rest",
+      "target": "resto",
+      "lesson": "Général",
+      "index": 194
+    },
+    {
+      "id": "card_vz5rxo",
+      "fr": "condition",
+      "target": "condizione",
+      "lesson": "Général",
+      "index": 195
+    },
+    {
+      "id": "card_b5fujj",
+      "fr": "teacher",
+      "target": "professore",
+      "lesson": "Général",
+      "index": 196
+    },
+    {
+      "id": "card_rdm7ca",
+      "fr": "husband",
+      "target": "marito",
+      "lesson": "Général",
+      "index": 197
+    },
+    {
+      "id": "card_4kai8s",
+      "fr": "truth",
+      "target": "verità",
+      "lesson": "Général",
+      "index": 198
+    },
+    {
+      "id": "card_ykrh4m",
+      "fr": "sign",
+      "target": "segno",
+      "lesson": "Général",
+      "index": 199
+    },
+    {
+      "id": "card_naajq3",
+      "fr": "right (1)",
+      "target": "diritto",
+      "lesson": "Général",
+      "index": 200
+    },
+    {
+      "id": "card_naajp6",
+      "fr": "right (2)",
+      "target": "destro",
+      "lesson": "Général",
+      "index": 201
+    },
+    {
+      "id": "card_33sy2d",
+      "fr": "letter",
+      "target": "lettera",
+      "lesson": "Général",
+      "index": 202
+    },
+    {
+      "id": "card_yki8nn",
+      "fr": "girl",
+      "target": "ragazza",
+      "lesson": "Général",
+      "index": 203
+    },
+    {
+      "id": "card_7l8eod",
+      "fr": "school",
+      "target": "scuola",
+      "lesson": "Général",
+      "index": 204
+    },
+    {
+      "id": "card_ykqun6",
+      "fr": "room",
+      "target": "camera",
+      "lesson": "Général",
+      "index": 205
+    },
+    {
+      "id": "card_4b3xf6",
+      "fr": "group",
+      "target": "gruppo",
+      "lesson": "Général",
+      "index": 206
+    },
+    {
+      "id": "card_4j95n7",
+      "fr": "scene",
+      "target": "scena",
+      "lesson": "Général",
+      "index": 207
+    },
+    {
+      "id": "card_4zd24c",
+      "fr": "object",
+      "target": "oggetto",
+      "lesson": "Général",
+      "index": 208
+    },
+    {
+      "id": "card_1ynx28",
+      "fr": "possibility",
+      "target": "possibilità",
+      "lesson": "Général",
+      "index": 209
+    },
+    {
+      "id": "card_377d5a",
+      "fr": "mom",
+      "target": "mamma",
+      "lesson": "Général",
+      "index": 210
+    },
+    {
+      "id": "card_5imtyy",
+      "fr": "presence",
+      "target": "presenza",
+      "lesson": "Général",
+      "index": 211
+    },
+    {
+      "id": "card_94r0ha",
+      "fr": "theater",
+      "target": "teatro",
+      "lesson": "Général",
+      "index": 212
+    },
+    {
+      "id": "card_2j58ur",
+      "fr": "coffee",
+      "target": "caffè",
+      "lesson": "Général",
+      "index": 213
+    },
+    {
+      "id": "card_jvwlit",
+      "fr": "principle",
+      "target": "principio",
+      "lesson": "Général",
+      "index": 214
+    },
+    {
+      "id": "card_yks5rx",
+      "fr": "term",
+      "target": "termine",
+      "lesson": "Général",
+      "index": 215
+    },
+    {
+      "id": "card_8h4oaf",
+      "fr": "tongue",
+      "target": "lingua",
+      "lesson": "Général",
+      "index": 216
+    },
+    {
+      "id": "card_4h9ijv",
+      "fr": "piece",
+      "target": "pezzo",
+      "lesson": "Général",
+      "index": 217
+    },
+    {
+      "id": "card_ykitft",
+      "fr": "hair",
+      "target": "capello",
+      "lesson": "Général",
+      "index": 218
+    },
+    {
+      "id": "card_6zbiyx",
+      "fr": "region",
+      "target": "regione",
+      "lesson": "Général",
+      "index": 219
+    },
+    {
+      "id": "card_8nei1e",
+      "fr": "Mountain (1)",
+      "target": "monte",
+      "lesson": "Général",
+      "index": 220
+    },
+    {
+      "id": "card_8nei2b",
+      "fr": "mountain (2)",
+      "target": "montagna",
+      "lesson": "Général",
+      "index": 221
+    },
+    {
+      "id": "card_vp1tpj",
+      "fr": "university",
+      "target": "università",
+      "lesson": "Général",
+      "index": 222
+    },
+    {
+      "id": "card_4ka15v",
+      "fr": "train",
+      "target": "treno",
+      "lesson": "Général",
+      "index": 223
+    },
+    {
+      "id": "card_aasvmm",
+      "fr": "winter",
+      "target": "inverno",
+      "lesson": "Général",
+      "index": 224
+    },
+    {
+      "id": "card_4bkmy6",
+      "fr": "nation",
+      "target": "nazione",
+      "lesson": "Général",
+      "index": 225
+    },
+    {
+      "id": "card_ykoz7m",
+      "fr": "page",
+      "target": "pagina",
+      "lesson": "Général",
+      "index": 226
+    },
+    {
+      "id": "card_e5keff",
+      "fr": "purpose (1)",
+      "target": "scopo",
+      "lesson": "Général",
+      "index": 227
+    },
+    {
+      "id": "card_e5keei",
+      "fr": "purpose (2)",
+      "target": "proposito",
+      "lesson": "Général",
+      "index": 228
+    },
+    {
+      "id": "card_rss8kf",
+      "fr": "partner",
+      "target": "compagno",
+      "lesson": "Général",
+      "index": 229
+    },
+    {
+      "id": "card_4feu12",
+      "fr": "music",
+      "target": "musica",
+      "lesson": "Général",
+      "index": 230
+    },
+    {
+      "id": "card_ti5ib2",
+      "fr": "doctor (1)",
+      "target": "dottore",
+      "lesson": "Général",
+      "index": 231
+    },
+    {
+      "id": "card_ti5ia5",
+      "fr": "doctor (2)",
+      "target": "medico",
+      "lesson": "Général",
+      "index": 232
+    },
+    {
+      "id": "card_pynyn5",
+      "fr": "feeling",
+      "target": "sentimento",
+      "lesson": "Général",
+      "index": 233
+    },
+    {
+      "id": "card_ykrgc9",
+      "fr": "ship",
+      "target": "nave",
+      "lesson": "Général",
+      "index": 234
+    },
+    {
+      "id": "card_4jmhfy",
+      "fr": "Stone",
+      "target": "pietra",
+      "lesson": "Général",
+      "index": 235
+    },
+    {
+      "id": "card_w8j65o",
+      "fr": "production",
+      "target": "produzione",
+      "lesson": "Général",
+      "index": 236
+    },
+    {
+      "id": "card_ykj5dd",
+      "fr": "hope",
+      "target": "speranza",
+      "lesson": "Général",
+      "index": 237
+    },
+    {
+      "id": "card_ykdgza",
+      "fr": "ache",
+      "target": "dolore",
+      "lesson": "Général",
+      "index": 238
+    },
+    {
+      "id": "card_ykmr8s",
+      "fr": "meat",
+      "target": "carne",
+      "lesson": "Général",
+      "index": 239
+    },
+    {
+      "id": "card_4fjqvx",
+      "fr": "general",
+      "target": "generale",
+      "lesson": "Général",
+      "index": 240
+    },
+    {
+      "id": "card_s8ns33",
+      "fr": "element",
+      "target": "elemento",
+      "lesson": "Général",
+      "index": 241
+    },
+    {
+      "id": "card_i9b5pc",
+      "fr": "railway station",
+      "target": "stazione",
+      "lesson": "Général",
+      "index": 242
+    },
+    {
+      "id": "card_3oa2vm",
+      "fr": "matter",
+      "target": "materia",
+      "lesson": "Général",
+      "index": 243
+    },
+    {
+      "id": "card_30mkpd",
+      "fr": "ladder",
+      "target": "scala",
+      "lesson": "Général",
+      "index": 244
+    },
+    {
+      "id": "card_a7p3sf",
+      "fr": "weapon",
+      "target": "arma",
+      "lesson": "Général",
+      "index": 245
+    },
+    {
+      "id": "card_5pg2s2",
+      "fr": "authority",
+      "target": "autorità",
+      "lesson": "Général",
+      "index": 246
+    },
+    {
+      "id": "card_377c1p",
+      "fr": "leg",
+      "target": "gamba",
+      "lesson": "Général",
+      "index": 247
+    },
+    {
+      "id": "card_9ts4lv",
+      "fr": "homeland",
+      "target": "patria",
+      "lesson": "Général",
+      "index": 248
+    },
+    {
+      "id": "card_4br535",
+      "fr": "hotel",
+      "target": "albergo",
+      "lesson": "Général",
+      "index": 249
+    },
+    {
+      "id": "card_377amv",
+      "fr": "joy",
+      "target": "gioia",
+      "lesson": "Général",
+      "index": 250
+    },
+    {
+      "id": "card_4k82kk",
+      "fr": "topic",
+      "target": "argomento",
+      "lesson": "Général",
+      "index": 251
+    },
+    {
+      "id": "card_ykm89m",
+      "fr": "look",
+      "target": "sguardo",
+      "lesson": "Général",
+      "index": 252
+    },
+    {
+      "id": "card_6zilnl",
+      "fr": "report",
+      "target": "relazione",
+      "lesson": "Général",
+      "index": 253
+    },
+    {
+      "id": "card_485azf",
+      "fr": "class",
+      "target": "classe",
+      "lesson": "Général",
+      "index": 254
+    },
+    {
+      "id": "card_3g0sn3",
+      "fr": "battle",
+      "target": "battaglia",
+      "lesson": "Général",
+      "index": 255
+    },
+    {
+      "id": "card_4bp0os",
+      "fr": "gesture",
+      "target": "gesto",
+      "lesson": "Général",
+      "index": 256
+    },
+    {
+      "id": "card_bsbj9d",
+      "fr": "morning",
+      "target": "mattino",
+      "lesson": "Général",
+      "index": 257
+    },
+    {
+      "id": "card_vefse9",
+      "fr": "opinion",
+      "target": "opinione",
+      "lesson": "Général",
+      "index": 258
+    },
+    {
+      "id": "card_349j66",
+      "fr": "bridge",
+      "target": "ponte",
+      "lesson": "Général",
+      "index": 259
+    },
+    {
+      "id": "card_4jgy8v",
+      "fr": "smile",
+      "target": "sorriso",
+      "lesson": "Général",
+      "index": 260
+    },
+    {
+      "id": "card_5r2gfc",
+      "fr": "phrase",
+      "target": "frase",
+      "lesson": "Général",
+      "index": 261
+    },
+    {
+      "id": "card_4eg16s",
+      "fr": "limit",
+      "target": "limite",
+      "lesson": "Général",
+      "index": 262
+    },
+    {
+      "id": "card_6zltlx",
+      "fr": "return",
+      "target": "ritorno",
+      "lesson": "Général",
+      "index": 263
+    },
+    {
+      "id": "card_ykupa6",
+      "fr": "wood",
+      "target": "bosco",
+      "lesson": "Général",
+      "index": 264
+    },
+    {
+      "id": "card_ykh1dc",
+      "fr": "exam",
+      "target": "esame",
+      "lesson": "Général",
+      "index": 265
+    },
+    {
+      "id": "card_8zhivg",
+      "fr": "side (1)",
+      "target": "lato",
+      "lesson": "Général",
+      "index": 266
+    },
+    {
+      "id": "card_8zhiwd",
+      "fr": "side (2)",
+      "target": "fianco",
+      "lesson": "Général",
+      "index": 267
+    },
+    {
+      "id": "card_hxkrrq",
+      "fr": "operation",
+      "target": "operazione",
+      "lesson": "Général",
+      "index": 268
+    },
+    {
+      "id": "card_4epam7",
+      "fr": "lunch",
+      "target": "pranzo",
+      "lesson": "Général",
+      "index": 269
+    },
+    {
+      "id": "card_tf0nf6",
+      "fr": "it costs",
+      "target": "costa",
+      "lesson": "Général",
+      "index": 270
+    },
+    {
+      "id": "card_3qor36",
+      "fr": "meadow",
+      "target": "prato",
+      "lesson": "Général",
+      "index": 271
+    },
+    {
+      "id": "card_ij15h8",
+      "fr": "Revolution",
+      "target": "rivoluzione",
+      "lesson": "Général",
+      "index": 272
+    },
+    {
+      "id": "card_ykdw9p",
+      "fr": "aunt",
+      "target": "zia",
+      "lesson": "Général",
+      "index": 273
+    },
+    {
+      "id": "card_x8jilc",
+      "fr": "comparison",
+      "target": "confronto",
+      "lesson": "Général",
+      "index": 274
+    },
+    {
+      "id": "card_1ew6dx",
+      "fr": "effort",
+      "target": "sforzo",
+      "lesson": "Général",
+      "index": 275
+    },
+    {
+      "id": "card_7jrstt",
+      "fr": "safety",
+      "target": "sicurezza",
+      "lesson": "Général",
+      "index": 276
+    },
+    {
+      "id": "card_vribfi",
+      "fr": "official",
+      "target": "ufficiale",
+      "lesson": "Général",
+      "index": 277
+    },
+    {
+      "id": "card_2gydfy",
+      "fr": "crisis",
+      "target": "crisi",
+      "lesson": "Général",
+      "index": 278
+    },
+    {
+      "id": "card_cocq97",
+      "fr": "kitchen",
+      "target": "cucina",
+      "lesson": "Général",
+      "index": 279
+    },
+    {
+      "id": "card_3774e5",
+      "fr": "cat",
+      "target": "gatto",
+      "lesson": "Général",
+      "index": 280
+    },
+    {
+      "id": "card_ykp6a3",
+      "fr": "pity",
+      "target": "pietà",
+      "lesson": "Général",
+      "index": 281
+    },
+    {
+      "id": "card_ke86nt",
+      "fr": "territory",
+      "target": "territorio",
+      "lesson": "Général",
+      "index": 282
+    },
+    {
+      "id": "card_23hye",
+      "fr": "civilization",
+      "target": "civiltà",
+      "lesson": "Général",
+      "index": 283
+    },
+    {
+      "id": "card_ccr0tr",
+      "fr": "contact",
+      "target": "contatto",
+      "lesson": "Général",
+      "index": 284
+    },
+    {
+      "id": "card_49p5nz",
+      "fr": "error",
+      "target": "errore",
+      "lesson": "Général",
+      "index": 285
+    },
+    {
+      "id": "card_4bvq4f",
+      "fr": "hurry",
+      "target": "fretta",
+      "lesson": "Général",
+      "index": 286
+    },
+    {
+      "id": "card_54cubh",
+      "fr": "intention",
+      "target": "intenzione",
+      "lesson": "Général",
+      "index": 287
+    },
+    {
+      "id": "card_8icjef",
+      "fr": "culture",
+      "target": "cultura",
+      "lesson": "Général",
+      "index": 288
+    },
+    {
+      "id": "card_dmm2ko",
+      "fr": "judgement",
+      "target": "giudizio",
+      "lesson": "Général",
+      "index": 289
+    },
+    {
+      "id": "card_yt8xlv",
+      "fr": "expense",
+      "target": "spesa",
+      "lesson": "Général",
+      "index": 290
+    },
+    {
+      "id": "card_ykiwvi",
+      "fr": "Help",
+      "target": "aiuto",
+      "lesson": "Général",
+      "index": 291
+    },
+    {
+      "id": "card_de3osa",
+      "fr": "environment",
+      "target": "ambiente",
+      "lesson": "Général",
+      "index": 292
+    },
+    {
+      "id": "card_47ahtg",
+      "fr": "beast",
+      "target": "bestia",
+      "lesson": "Général",
+      "index": 293
+    },
+    {
+      "id": "card_mbrbzy",
+      "fr": "courtyard",
+      "target": "cortile",
+      "lesson": "Général",
+      "index": 294
+    },
+    {
+      "id": "card_ykriuy",
+      "fr": "skin",
+      "target": "pelle",
+      "lesson": "Général",
+      "index": 295
+    },
+    {
+      "id": "card_bxqgut",
+      "fr": "proposal",
+      "target": "proposta",
+      "lesson": "Général",
+      "index": 296
+    },
+    {
+      "id": "card_4jd8sm",
+      "fr": "shore",
+      "target": "riva",
+      "lesson": "Général",
+      "index": 297
+    },
+    {
+      "id": "card_mrt5g7",
+      "fr": "secretary",
+      "target": "segretario",
+      "lesson": "Général",
+      "index": 298
+    },
+    {
+      "id": "card_7jvmg8",
+      "fr": "dress (1)",
+      "target": "abito",
+      "lesson": "Général",
+      "index": 299
+    },
+    {
+      "id": "card_7jvmh5",
+      "fr": "dress (2)",
+      "target": "vestito",
+      "lesson": "Général",
+      "index": 300
+    },
+    {
+      "id": "card_377b7y",
+      "fr": "key",
+      "target": "chiave",
+      "lesson": "Général",
+      "index": 301
+    },
+    {
+      "id": "card_8e5y0o",
+      "fr": "current",
+      "target": "corrente",
+      "lesson": "Général",
+      "index": 302
+    },
+    {
+      "id": "card_af49cv",
+      "fr": "worker",
+      "target": "operaio",
+      "lesson": "Général",
+      "index": 303
+    },
+    {
+      "id": "card_2iteh6",
+      "fr": "course",
+      "target": "corso",
+      "lesson": "Général",
+      "index": 304
+    },
+    {
+      "id": "card_aasifx",
+      "fr": "window",
+      "target": "finestra",
+      "lesson": "Général",
+      "index": 305
+    },
+    {
+      "id": "card_377358",
+      "fr": "art",
+      "target": "arte",
+      "lesson": "Général",
+      "index": 306
+    },
+    {
+      "id": "card_81070q",
+      "fr": "system",
+      "target": "sistema",
+      "lesson": "Général",
+      "index": 307
+    },
+    {
+      "id": "card_ykp8b4",
+      "fr": "plan",
+      "target": "piano",
+      "lesson": "Général",
+      "index": 308
+    },
+    {
+      "id": "card_4fa9ma",
+      "fr": "mouth",
+      "target": "bocca",
+      "lesson": "Général",
+      "index": 309
+    },
+    {
+      "id": "card_ykrmiw",
+      "fr": "soul",
+      "target": "anima",
+      "lesson": "Général",
+      "index": 310
+    },
+    {
+      "id": "card_5lzw7f",
+      "fr": "palace",
+      "target": "palazzo",
+      "lesson": "Général",
+      "index": 311
+    },
+    {
+      "id": "card_ykrqbl",
+      "fr": "step",
+      "target": "passo",
+      "lesson": "Général",
+      "index": 312
+    },
+    {
+      "id": "card_w5xpwq",
+      "fr": "service",
+      "target": "servizio",
+      "lesson": "Général",
+      "index": 313
+    },
+    {
+      "id": "card_4w5kad",
+      "fr": "shoulder",
+      "target": "spalla",
+      "lesson": "Général",
+      "index": 314
+    },
+    {
+      "id": "card_tpbz88",
+      "fr": "silence",
+      "target": "silenzio",
+      "lesson": "Général",
+      "index": 315
+    },
+    {
+      "id": "card_4162j3",
+      "fr": "Advice",
+      "target": "consiglio",
+      "lesson": "Général",
+      "index": 316
+    },
+    {
+      "id": "card_5xy006",
+      "fr": "prince",
+      "target": "principe",
+      "lesson": "Général",
+      "index": 317
+    },
+    {
+      "id": "card_8iz977",
+      "fr": "travel",
+      "target": "viaggio",
+      "lesson": "Général",
+      "index": 318
+    },
+    {
+      "id": "card_yklbgr",
+      "fr": "kind",
+      "target": "genere",
+      "lesson": "Général",
+      "index": 319
+    },
+    {
+      "id": "card_52fda2",
+      "fr": "newspaper",
+      "target": "giornale",
+      "lesson": "Général",
+      "index": 320
+    },
+    {
+      "id": "card_7ufolc",
+      "fr": "spirit",
+      "target": "spirito",
+      "lesson": "Général",
+      "index": 321
+    },
+    {
+      "id": "card_4br3ra",
+      "fr": "horse",
+      "target": "cavallo",
+      "lesson": "Général",
+      "index": 322
+    },
+    {
+      "id": "card_anx2g5",
+      "fr": "situation",
+      "target": "situazione",
+      "lesson": "Général",
+      "index": 323
+    },
+    {
+      "id": "card_ykm371",
+      "fr": "line",
+      "target": "linea",
+      "lesson": "Général",
+      "index": 324
+    },
+    {
+      "id": "card_4itcrx",
+      "fr": "round",
+      "target": "giro",
+      "lesson": "Général",
+      "index": 325
+    },
+    {
+      "id": "card_3774e3",
+      "fr": "car",
+      "target": "automobile",
+      "lesson": "Général",
+      "index": 326
+    },
+    {
+      "id": "card_3772rh",
+      "fr": "act",
+      "target": "atto",
+      "lesson": "Général",
+      "index": 327
+    },
+    {
+      "id": "card_p0xdsl",
+      "fr": "appearance",
+      "target": "aspetto",
+      "lesson": "Général",
+      "index": 328
+    },
+    {
+      "id": "card_3772uq",
+      "fr": "age",
+      "target": "età",
+      "lesson": "Général",
+      "index": 329
+    },
+    {
+      "id": "card_ykmd04",
+      "fr": "luck",
+      "target": "fortuna",
+      "lesson": "Général",
+      "index": 330
+    },
+    {
+      "id": "card_ykidjf",
+      "fr": "gold",
+      "target": "oro",
+      "lesson": "Général",
+      "index": 331
+    },
+    {
+      "id": "card_l58qg6",
+      "fr": "machine",
+      "target": "macchina",
+      "lesson": "Général",
+      "index": 332
+    },
+    {
+      "id": "card_4h3m0t",
+      "fr": "paper",
+      "target": "carta",
+      "lesson": "Général",
+      "index": 333
+    },
+    {
+      "id": "card_3tsu7r",
+      "fr": "minute",
+      "target": "minuto",
+      "lesson": "Général",
+      "index": 334
+    },
+    {
+      "id": "card_mgsg4e",
+      "fr": "stretch",
+      "target": "tratto",
+      "lesson": "Général",
+      "index": 335
+    },
+    {
+      "id": "card_ykugmp",
+      "fr": "week",
+      "target": "settimana",
+      "lesson": "Général",
+      "index": 336
+    },
+    {
+      "id": "card_yknjj6",
+      "fr": "news",
+      "target": "notizia",
+      "lesson": "Général",
+      "index": 337
+    },
+    {
+      "id": "card_vr1nph",
+      "fr": "brother",
+      "target": "fratello",
+      "lesson": "Général",
+      "index": 338
+    },
+    {
+      "id": "card_h61w3j",
+      "fr": "reality",
+      "target": "realtà",
+      "lesson": "Général",
+      "index": 339
+    },
+    {
+      "id": "card_suz58n",
+      "fr": "industry",
+      "target": "industria",
+      "lesson": "Général",
+      "index": 340
+    },
+    {
+      "id": "card_j30iw6",
+      "fr": "pleasure",
+      "target": "piacere",
+      "lesson": "Général",
+      "index": 341
+    },
+    {
+      "id": "card_283isz",
+      "fr": "master (1)",
+      "target": "maestro",
+      "lesson": "Général",
+      "index": 342
+    },
+    {
+      "id": "card_283itw",
+      "fr": "master (2)",
+      "target": "padrone",
+      "lesson": "Général",
+      "index": 343
+    },
+    {
+      "id": "card_3jnvld",
+      "fr": "afternoon",
+      "target": "pomeriggio",
+      "lesson": "Général",
+      "index": 344
+    },
+    {
+      "id": "card_3dlq6p",
+      "fr": "beauty",
+      "target": "bellezza",
+      "lesson": "Général",
+      "index": 345
+    },
+    {
+      "id": "card_4hbqo4",
+      "fr": "plant",
+      "target": "pianta",
+      "lesson": "Général",
+      "index": 346
+    },
+    {
+      "id": "card_5zwtk4",
+      "fr": "public",
+      "target": "pubblico",
+      "lesson": "Général",
+      "index": 347
+    },
+    {
+      "id": "card_ykrdma",
+      "fr": "seat",
+      "target": "sede",
+      "lesson": "Général",
+      "index": 348
+    },
+    {
+      "id": "card_46s564",
+      "fr": "angle",
+      "target": "angolo",
+      "lesson": "Général",
+      "index": 349
+    },
+    {
+      "id": "card_cdjiis",
+      "fr": "company",
+      "target": "compagnia",
+      "lesson": "Général",
+      "index": 350
+    },
+    {
+      "id": "card_3y4yd",
+      "fr": "expression",
+      "target": "espressione",
+      "lesson": "Général",
+      "index": 351
+    },
+    {
+      "id": "card_377c5m",
+      "fr": "lip",
+      "target": "labbro",
+      "lesson": "Général",
+      "index": 352
+    },
+    {
+      "id": "card_4li719",
+      "fr": "villa",
+      "target": "villa",
+      "lesson": "Général",
+      "index": 353
+    },
+    {
+      "id": "card_22mj33",
+      "fr": "desire",
+      "target": "desiderio",
+      "lesson": "Général",
+      "index": 354
+    },
+    {
+      "id": "card_7mussw",
+      "fr": "series",
+      "target": "serie",
+      "lesson": "Général",
+      "index": 355
+    },
+    {
+      "id": "card_4licus",
+      "fr": "visit",
+      "target": "visita",
+      "lesson": "Général",
+      "index": 356
+    },
+    {
+      "id": "card_c7umr9",
+      "fr": "courage",
+      "target": "coraggio",
+      "lesson": "Général",
+      "index": 357
+    },
+    {
+      "id": "card_t85bhd",
+      "fr": "director",
+      "target": "direttore",
+      "lesson": "Général",
+      "index": 358
+    },
+    {
+      "id": "card_ykdtq6",
+      "fr": "army",
+      "target": "esercito",
+      "lesson": "Général",
+      "index": 359
+    },
+    {
+      "id": "card_4ilj8x",
+      "fr": "reply",
+      "target": "risposta",
+      "lesson": "Général",
+      "index": 360
+    },
+    {
+      "id": "card_4jwyod",
+      "fr": "table",
+      "target": "tavola",
+      "lesson": "Général",
+      "index": 361
+    },
+    {
+      "id": "card_4cekrs",
+      "fr": "image",
+      "target": "immagine",
+      "lesson": "Général",
+      "index": 362
+    },
+    {
+      "id": "card_jlfe95",
+      "fr": "wedding ring",
+      "target": "fede",
+      "lesson": "Général",
+      "index": 363
+    },
+    {
+      "id": "card_47kl6r",
+      "fr": "bread",
+      "target": "pane",
+      "lesson": "Général",
+      "index": 364
+    },
+    {
+      "id": "card_khkt9y",
+      "fr": "following",
+      "target": "seguito",
+      "lesson": "Général",
+      "index": 365
+    },
+    {
+      "id": "card_7y1qim",
+      "fr": "summer",
+      "target": "estate",
+      "lesson": "Général",
+      "index": 366
+    },
+    {
+      "id": "card_4faa6d",
+      "fr": "movie",
+      "target": "film",
+      "lesson": "Général",
+      "index": 367
+    },
+    {
+      "id": "card_4aen3j",
+      "fr": "fruit",
+      "target": "frutto",
+      "lesson": "Général",
+      "index": 368
+    },
+    {
+      "id": "card_4br0az",
+      "fr": "honor",
+      "target": "onore",
+      "lesson": "Général",
+      "index": 369
+    },
+    {
+      "id": "card_25k3ze",
+      "fr": "danger",
+      "target": "pericolo",
+      "lesson": "Général",
+      "index": 370
+    },
+    {
+      "id": "card_ah1sjm",
+      "fr": "writer",
+      "target": "scrittore",
+      "lesson": "Général",
+      "index": 371
+    },
+    {
+      "id": "card_ykj08e",
+      "fr": "hill",
+      "target": "collina",
+      "lesson": "Général",
+      "index": 372
+    },
+    {
+      "id": "card_4kwf24",
+      "fr": "uncle",
+      "target": "zio",
+      "lesson": "Général",
+      "index": 373
+    },
+    {
+      "id": "card_2d6y33",
+      "fr": "defence",
+      "target": "difesa",
+      "lesson": "Général",
+      "index": 374
+    },
+    {
+      "id": "card_4f2j42",
+      "fr": "meter",
+      "target": "metro",
+      "lesson": "Général",
+      "index": 375
+    },
+    {
+      "id": "card_yknj0m",
+      "fr": "neck",
+      "target": "collo",
+      "lesson": "Général",
+      "index": 376
+    },
+    {
+      "id": "card_ykez0g",
+      "fr": "care",
+      "target": "cura",
+      "lesson": "Général",
+      "index": 377
+    },
+    {
+      "id": "card_3130o3",
+      "fr": "layout",
+      "target": "disposizione",
+      "lesson": "Général",
+      "index": 378
+    },
+    {
+      "id": "card_7y2al5",
+      "fr": "Sunday",
+      "target": "Domenica",
+      "lesson": "Général",
+      "index": 379
+    },
+    {
+      "id": "card_oh4h1p",
+      "fr": "young man",
+      "target": "giovanotto",
+      "lesson": "Général",
+      "index": 380
+    },
+    {
+      "id": "card_ykpaxp",
+      "fr": "poet",
+      "target": "poeta",
+      "lesson": "Général",
+      "index": 381
+    },
+    {
+      "id": "card_7mhy26",
+      "fr": "season",
+      "target": "stagione",
+      "lesson": "Général",
+      "index": 382
+    },
+    {
+      "id": "card_a7v1vx",
+      "fr": "weight",
+      "target": "peso",
+      "lesson": "Général",
+      "index": 383
+    },
+    {
+      "id": "card_ykse2j",
+      "fr": "tone",
+      "target": "tono",
+      "lesson": "Général",
+      "index": 384
+    },
+    {
+      "id": "card_48a94f",
+      "fr": "cross",
+      "target": "croce",
+      "lesson": "Général",
+      "index": 385
+    },
+    {
+      "id": "card_57afxv",
+      "fr": "decision",
+      "target": "decisione",
+      "lesson": "Général",
+      "index": 386
+    },
+    {
+      "id": "card_5vqtc8",
+      "fr": "poetry",
+      "target": "poesia",
+      "lesson": "Général",
+      "index": 387
+    },
+    {
+      "id": "card_w619eb",
+      "fr": "confidence",
+      "target": "fiducia",
+      "lesson": "Général",
+      "index": 388
+    },
+    {
+      "id": "card_ykukbg",
+      "fr": "wire",
+      "target": "filo",
+      "lesson": "Général",
+      "index": 389
+    },
+    {
+      "id": "card_48a97o",
+      "fr": "crowd",
+      "target": "folla",
+      "lesson": "Général",
+      "index": 390
+    },
+    {
+      "id": "card_65y61a",
+      "fr": "quality",
+      "target": "qualità",
+      "lesson": "Général",
+      "index": 391
+    },
+    {
+      "id": "card_4jmma5",
+      "fr": "stuff",
+      "target": "roba",
+      "lesson": "Général",
+      "index": 392
+    },
+    {
+      "id": "card_pfey2j",
+      "fr": "knowledge",
+      "target": "conoscenza",
+      "lesson": "Général",
+      "index": 393
+    },
+    {
+      "id": "card_4a1koz",
+      "fr": "favor",
+      "target": "favore",
+      "lesson": "Général",
+      "index": 394
+    },
+    {
+      "id": "card_2wj8j4",
+      "fr": "population",
+      "target": "popolazione",
+      "lesson": "Général",
+      "index": 395
+    },
+    {
+      "id": "card_ykse3n",
+      "fr": "tool",
+      "target": "strumento",
+      "lesson": "Général",
+      "index": 396
+    },
+    {
+      "id": "card_377jyq",
+      "fr": "use",
+      "target": "USO",
+      "lesson": "Général",
+      "index": 397
+    },
+    {
+      "id": "card_d3c7jl",
+      "fr": "business",
+      "target": "commercio",
+      "lesson": "Général",
+      "index": 398
+    },
+    {
+      "id": "card_sl3q0z",
+      "fr": "factory",
+      "target": "fabbrica",
+      "lesson": "Général",
+      "index": 399
+    },
+    {
+      "id": "card_ykkttj",
+      "fr": "June",
+      "target": "giugno",
+      "lesson": "Général",
+      "index": 400
+    },
+    {
+      "id": "card_xaixw",
+      "fr": "justice",
+      "target": "giustizia",
+      "lesson": "Général",
+      "index": 401
+    },
+    {
+      "id": "card_311p7d",
+      "fr": "lawyer",
+      "target": "avvocato",
+      "lesson": "Général",
+      "index": 402
+    },
+    {
+      "id": "card_ykmoc9",
+      "fr": "mass",
+      "target": "messa",
+      "lesson": "Général",
+      "index": 403
+    },
+    {
+      "id": "card_37762l",
+      "fr": "ear",
+      "target": "orecchio",
+      "lesson": "Général",
+      "index": 404
+    },
+    {
+      "id": "card_4jg2zi",
+      "fr": "sleep",
+      "target": "sonno",
+      "lesson": "Général",
+      "index": 405
+    },
+    {
+      "id": "card_i939wp",
+      "fr": "congress",
+      "target": "congresso",
+      "lesson": "Général",
+      "index": 406
+    },
+    {
+      "id": "card_ykpb9m",
+      "fr": "port",
+      "target": "porto",
+      "lesson": "Général",
+      "index": 407
+    },
+    {
+      "id": "card_2plvi0",
+      "fr": "football",
+      "target": "calcio",
+      "lesson": "Général",
+      "index": 408
+    },
+    {
+      "id": "card_sdcg2t",
+      "fr": "fantasy",
+      "target": "fantasia",
+      "lesson": "Général",
+      "index": 409
+    },
+    {
+      "id": "card_meoap9",
+      "fr": "marriage",
+      "target": "matrimonio",
+      "lesson": "Général",
+      "index": 410
+    },
+    {
+      "id": "card_5q9k3b",
+      "fr": "Hospital",
+      "target": "ospedale",
+      "lesson": "Général",
+      "index": 411
+    },
+    {
+      "id": "card_q9y7ea",
+      "fr": "sacrifice",
+      "target": "sacrificio",
+      "lesson": "Général",
+      "index": 412
+    },
+    {
+      "id": "card_24x8c7",
+      "fr": "attitude",
+      "target": "atteggiamento",
+      "lesson": "Général",
+      "index": 413
+    },
+    {
+      "id": "card_cd40j3",
+      "fr": "concept",
+      "target": "concetto",
+      "lesson": "Général",
+      "index": 414
+    },
+    {
+      "id": "card_489x11",
+      "fr": "craft",
+      "target": "mestiere",
+      "lesson": "Général",
+      "index": 415
+    },
+    {
+      "id": "card_kj0qmg",
+      "fr": "waiting",
+      "target": "attesa",
+      "lesson": "Général",
+      "index": 416
+    },
+    {
+      "id": "card_cqkfcx",
+      "fr": "bathroom",
+      "target": "bagno",
+      "lesson": "Général",
+      "index": 417
+    },
+    {
+      "id": "card_yklzi5",
+      "fr": "leaf",
+      "target": "foglia",
+      "lesson": "Général",
+      "index": 418
+    },
+    {
+      "id": "card_qtazve",
+      "fr": "instant",
+      "target": "istante",
+      "lesson": "Général",
+      "index": 419
+    },
+    {
+      "id": "card_yklwea",
+      "fr": "lake",
+      "target": "lago",
+      "lesson": "Général",
+      "index": 420
+    },
+    {
+      "id": "card_yks82l",
+      "fr": "this",
+      "target": "questo",
+      "lesson": "Général",
+      "index": 421
+    },
+    {
+      "id": "card_tzauw9",
+      "fr": "one (1)",
+      "target": "quello",
+      "lesson": "Général",
+      "index": 422
+    },
+    {
+      "id": "card_tzaux6",
+      "fr": "one (2)",
+      "target": "uno",
+      "lesson": "Général",
+      "index": 423
+    },
+    {
+      "id": "card_ykn02g",
+      "fr": "more",
+      "target": "più",
+      "lesson": "Général",
+      "index": 424
+    },
+    {
+      "id": "card_3772zi",
+      "fr": "all",
+      "target": "tutto",
+      "lesson": "Général",
+      "index": 425
+    },
+    {
+      "id": "card_3778sp",
+      "fr": "his",
+      "target": "SUO",
+      "lesson": "Général",
+      "index": 426
+    },
+    {
+      "id": "card_4gsn3b",
+      "fr": "other",
+      "target": "altro",
+      "lesson": "Général",
+      "index": 427
+    },
+    {
+      "id": "card_3hoej",
+      "fr": "my",
+      "target": "mio",
+      "lesson": "Général",
+      "index": 428
+    },
+    {
+      "id": "card_u1ul7q",
+      "fr": "which (1)",
+      "target": "quale",
+      "lesson": "Général",
+      "index": 429
+    },
+    {
+      "id": "card_u1ul6t",
+      "fr": "which (2)",
+      "target": "cui",
+      "lesson": "Général",
+      "index": 430
+    },
+    {
+      "id": "card_ykn4qa",
+      "fr": "much",
+      "target": "tanto",
+      "lesson": "Général",
+      "index": 431
+    },
+    {
+      "id": "card_4b3oig",
+      "fr": "great",
+      "target": "grande",
+      "lesson": "Général",
+      "index": 432
+    },
+    {
+      "id": "card_36mmhf",
+      "fr": "little",
+      "target": "poco",
+      "lesson": "Général",
+      "index": 433
+    },
+    {
+      "id": "card_cebjcj",
+      "fr": "very (1)",
+      "target": "molto",
+      "lesson": "Général",
+      "index": 434
+    },
+    {
+      "id": "card_cebjbm",
+      "fr": "very (2)",
+      "target": "assai",
+      "lesson": "Général",
+      "index": 435
+    },
+    {
+      "id": "card_377ezf",
+      "fr": "our",
+      "target": "nostro",
+      "lesson": "Général",
+      "index": 436
+    },
+    {
+      "id": "card_dzu843",
+      "fr": "same (1)",
+      "target": "stesso",
+      "lesson": "Général",
+      "index": 437
+    },
+    {
+      "id": "card_dzu836",
+      "fr": "same (2)",
+      "target": "medesimo",
+      "lesson": "Général",
+      "index": 438
+    },
+    {
+      "id": "card_4a7n9p",
+      "fr": "first",
+      "target": "primo",
+      "lesson": "Général",
+      "index": 439
+    },
+    {
+      "id": "card_4k2f8h",
+      "fr": "their",
+      "target": "loro",
+      "lesson": "Général",
+      "index": 440
+    },
+    {
+      "id": "card_49rxqo",
+      "fr": "every",
+      "target": "ogni",
+      "lesson": "Général",
+      "index": 441
+    },
+    {
+      "id": "card_377f15",
+      "fr": "own",
+      "target": "proprio",
+      "lesson": "Général",
+      "index": 442
+    },
+    {
+      "id": "card_1752qx",
+      "fr": "only (1)",
+      "target": "solo",
+      "lesson": "Général",
+      "index": 443
+    },
+    {
+      "id": "card_1752ru",
+      "fr": "only (2)",
+      "target": "soltanto",
+      "lesson": "Général",
+      "index": 444
+    },
+    {
+      "id": "card_4pgp1c",
+      "fr": "how much",
+      "target": "quanto",
+      "lesson": "Général",
+      "index": 445
+    },
+    {
+      "id": "card_12us6e",
+      "fr": "beautiful",
+      "target": "bello",
+      "lesson": "Général",
+      "index": 446
+    },
+    {
+      "id": "card_ykrmbd",
+      "fr": "some",
+      "target": "qualche",
+      "lesson": "Général",
+      "index": 447
+    },
+    {
+      "id": "card_377dqn",
+      "fr": "new",
+      "target": "nuovo",
+      "lesson": "Général",
+      "index": 448
+    },
+    {
+      "id": "card_tmj00d",
+      "fr": "of course (1)",
+      "target": "certo",
+      "lesson": "Général",
+      "index": 449
+    },
+    {
+      "id": "card_tmj01a",
+      "fr": "of course (2)",
+      "target": "naturalmente",
+      "lesson": "Général",
+      "index": 450
+    },
+    {
+      "id": "card_tmj027",
+      "fr": "of course (3)",
+      "target": "certamente",
+      "lesson": "Général",
+      "index": 451
+    },
+    {
+      "id": "card_yksgrp",
+      "fr": "true",
+      "target": "vero",
+      "lesson": "Général",
+      "index": 452
+    },
+    {
+      "id": "card_ykidm6",
+      "fr": "good",
+      "target": "buono",
+      "lesson": "Général",
+      "index": 453
+    },
+    {
+      "id": "card_qj90yy",
+      "fr": "your (1)",
+      "target": "tuo",
+      "lesson": "Général",
+      "index": 454
+    },
+    {
+      "id": "card_qj90y1",
+      "fr": "your (2)",
+      "target": "vostro",
+      "lesson": "Général",
+      "index": 455
+    },
+    {
+      "id": "card_4l2rgw",
+      "fr": "nobody",
+      "target": "nessuno",
+      "lesson": "Général",
+      "index": 456
+    },
+    {
+      "id": "card_37731p",
+      "fr": "any",
+      "target": "alcuno",
+      "lesson": "Général",
+      "index": 457
+    },
+    {
+      "id": "card_nado2h",
+      "fr": "Italian",
+      "target": "italiano",
+      "lesson": "Général",
+      "index": 458
+    },
+    {
+      "id": "card_yklwm1",
+      "fr": "last",
+      "target": "ultimo",
+      "lesson": "Général",
+      "index": 459
+    },
+    {
+      "id": "card_377eqs",
+      "fr": "old",
+      "target": "vecchio",
+      "lesson": "Général",
+      "index": 460
+    },
+    {
+      "id": "card_4jgrj2",
+      "fr": "small",
+      "target": "piccolo",
+      "lesson": "Général",
+      "index": 461
+    },
+    {
+      "id": "card_4l7zuk",
+      "fr": "too much",
+      "target": "troppo",
+      "lesson": "Général",
+      "index": 462
+    },
+    {
+      "id": "card_ykrr3s",
+      "fr": "such",
+      "target": "tale",
+      "lesson": "Général",
+      "index": 463
+    },
+    {
+      "id": "card_4nra7r",
+      "fr": "young",
+      "target": "giovane",
+      "lesson": "Général",
+      "index": 464
+    },
+    {
+      "id": "card_yks29e",
+      "fr": "tall",
+      "target": "alto",
+      "lesson": "Général",
+      "index": 465
+    },
+    {
+      "id": "card_1ggu9w",
+      "fr": "different",
+      "target": "diverso",
+      "lesson": "Général",
+      "index": 466
+    },
+    {
+      "id": "card_3d74k5",
+      "fr": "better",
+      "target": "meglio",
+      "lesson": "Général",
+      "index": 467
+    },
+    {
+      "id": "card_ykm88l",
+      "fr": "long",
+      "target": "lungo",
+      "lesson": "Général",
+      "index": 468
+    },
+    {
+      "id": "card_ykpb6t",
+      "fr": "poor",
+      "target": "povero",
+      "lesson": "Général",
+      "index": 469
+    },
+    {
+      "id": "card_3swy8f",
+      "fr": "greater",
+      "target": "maggiore",
+      "lesson": "Général",
+      "index": 470
+    },
+    {
+      "id": "card_ykiti8",
+      "fr": "half",
+      "target": "mezzo",
+      "lesson": "Général",
+      "index": 471
+    },
+    {
+      "id": "card_7mje4h",
+      "fr": "second",
+      "target": "secondo",
+      "lesson": "Général",
+      "index": 472
+    },
+    {
+      "id": "card_3776wu",
+      "fr": "far",
+      "target": "lontano",
+      "lesson": "Général",
+      "index": 473
+    },
+    {
+      "id": "card_485mqj",
+      "fr": "close",
+      "target": "vicino",
+      "lesson": "Général",
+      "index": 474
+    },
+    {
+      "id": "card_ljb2p2",
+      "fr": "possible",
+      "target": "possibile",
+      "lesson": "Général",
+      "index": 475
+    },
+    {
+      "id": "card_ykftoh",
+      "fr": "Dear",
+      "target": "caro",
+      "lesson": "Général",
+      "index": 476
+    },
+    {
+      "id": "card_ykhquw",
+      "fr": "full",
+      "target": "pieno",
+      "lesson": "Général",
+      "index": 477
+    },
+    {
+      "id": "card_47fvia",
+      "fr": "black",
+      "target": "nero",
+      "lesson": "Général",
+      "index": 478
+    },
+    {
+      "id": "card_rvppu2",
+      "fr": "Russian",
+      "target": "russo",
+      "lesson": "Général",
+      "index": 479
+    },
+    {
+      "id": "card_nrfi04",
+      "fr": "continuous",
+      "target": "continuo",
+      "lesson": "Général",
+      "index": 480
+    },
+    {
+      "id": "card_7xijwe",
+      "fr": "stupid",
+      "target": "stupido",
+      "lesson": "Général",
+      "index": 481
+    },
+    {
+      "id": "card_yq5gld",
+      "fr": "extreme",
+      "target": "estremo",
+      "lesson": "Général",
+      "index": 482
+    },
+    {
+      "id": "card_ykifwc",
+      "fr": "Grey",
+      "target": "grigio",
+      "lesson": "Général",
+      "index": 483
+    },
+    {
+      "id": "card_ykqlvt",
+      "fr": "real",
+      "target": "reale",
+      "lesson": "Général",
+      "index": 484
+    },
+    {
+      "id": "card_tr8sq7",
+      "fr": "interesting",
+      "target": "interessante",
+      "lesson": "Général",
+      "index": 485
+    },
+    {
+      "id": "card_ytojaw",
+      "fr": "religious",
+      "target": "religioso",
+      "lesson": "Général",
+      "index": 486
+    },
+    {
+      "id": "card_4e9zhs",
+      "fr": "large",
+      "target": "ampio",
+      "lesson": "Général",
+      "index": 487
+    },
+    {
+      "id": "card_47g7jo",
+      "fr": "blond",
+      "target": "biondo",
+      "lesson": "Général",
+      "index": 488
+    },
+    {
+      "id": "card_lcg2qh",
+      "fr": "careful",
+      "target": "attento",
+      "lesson": "Général",
+      "index": 489
+    },
+    {
+      "id": "card_ykja6m",
+      "fr": "huge",
+      "target": "enorme",
+      "lesson": "Général",
+      "index": 490
+    },
+    {
+      "id": "card_yks82g",
+      "fr": "thin",
+      "target": "sottile",
+      "lesson": "Général",
+      "index": 491
+    },
+    {
+      "id": "card_377htp",
+      "fr": "sad",
+      "target": "triste",
+      "lesson": "Général",
+      "index": 492
+    },
+    {
+      "id": "card_bij3kx",
+      "fr": "yellow",
+      "target": "giallo",
+      "lesson": "Général",
+      "index": 493
+    },
+    {
+      "id": "card_489xji",
+      "fr": "crazy",
+      "target": "pazzo",
+      "lesson": "Général",
+      "index": 494
+    },
+    {
+      "id": "card_7jps5z",
+      "fr": "sacred",
+      "target": "sacro",
+      "lesson": "Général",
+      "index": 495
+    },
+    {
+      "id": "card_u7rfhv",
+      "fr": "comfortable",
+      "target": "comodo",
+      "lesson": "Général",
+      "index": 496
+    },
+    {
+      "id": "card_8clhm8",
+      "fr": "electric",
+      "target": "elettrico",
+      "lesson": "Général",
+      "index": 497
+    },
+    {
+      "id": "card_vywxp8",
+      "fr": "absolute",
+      "target": "assoluto",
+      "lesson": "Général",
+      "index": 498
+    },
+    {
+      "id": "card_9hxjq8",
+      "fr": "varied",
+      "target": "vario",
+      "lesson": "Général",
+      "index": 499
+    },
+    {
+      "id": "card_bai3yj",
+      "fr": "quite right",
+      "target": "giusto",
+      "lesson": "Général",
+      "index": 500
+    },
+    {
+      "id": "card_j55j9",
+      "fr": "French",
+      "target": "francese",
+      "lesson": "Général",
+      "index": 501
+    },
+    {
+      "id": "card_6zr36",
+      "fr": "I live",
+      "target": "vivo",
+      "lesson": "Général",
+      "index": 502
+    },
+    {
+      "id": "card_ykqpaj",
+      "fr": "rich",
+      "target": "ricco",
+      "lesson": "Général",
+      "index": 503
+    },
+    {
+      "id": "card_3773qv",
+      "fr": "big",
+      "target": "grosso",
+      "lesson": "Général",
+      "index": 504
+    },
+    {
+      "id": "card_4wqmy6",
+      "fr": "necessary",
+      "target": "necessario",
+      "lesson": "Général",
+      "index": 505
+    },
+    {
+      "id": "card_ykho5j",
+      "fr": "free",
+      "target": "libero",
+      "lesson": "Général",
+      "index": 506
+    },
+    {
+      "id": "card_i1unq3",
+      "fr": "national",
+      "target": "nazionale",
+      "lesson": "Général",
+      "index": 507
+    },
+    {
+      "id": "card_yke7bi",
+      "fr": "bass",
+      "target": "basso",
+      "lesson": "Général",
+      "index": 508
+    },
+    {
+      "id": "card_7pksgf",
+      "fr": "simple",
+      "target": "semplice",
+      "lesson": "Général",
+      "index": 509
+    },
+    {
+      "id": "card_n8e0q7",
+      "fr": "serious (1)",
+      "target": "grave",
+      "lesson": "Général",
+      "index": 510
+    },
+    {
+      "id": "card_n8e0pa",
+      "fr": "serious (2)",
+      "target": "serio",
+      "lesson": "Général",
+      "index": 511
+    },
+    {
+      "id": "card_2izolu",
+      "fr": "common",
+      "target": "comune",
+      "lesson": "Général",
+      "index": 512
+    },
+    {
+      "id": "card_ykfamf",
+      "fr": "cold",
+      "target": "freddo",
+      "lesson": "Général",
+      "index": 513
+    },
+    {
+      "id": "card_482ayu",
+      "fr": "cheap",
+      "target": "economico",
+      "lesson": "Général",
+      "index": 514
+    },
+    {
+      "id": "card_y4ww7r",
+      "fr": "happy (1)",
+      "target": "felice",
+      "lesson": "Général",
+      "index": 515
+    },
+    {
+      "id": "card_y4ww6u",
+      "fr": "happy (2)",
+      "target": "contento",
+      "lesson": "Général",
+      "index": 516
+    },
+    {
+      "id": "card_1dyckh",
+      "fr": "difficult",
+      "target": "difficile",
+      "lesson": "Général",
+      "index": 517
+    },
+    {
+      "id": "card_4qsox",
+      "fr": "German",
+      "target": "tedesco",
+      "lesson": "Général",
+      "index": 518
+    },
+    {
+      "id": "card_4jd8t1",
+      "fr": "short",
+      "target": "breve",
+      "lesson": "Général",
+      "index": 519
+    },
+    {
+      "id": "card_4il6fu",
+      "fr": "ready",
+      "target": "pronto",
+      "lesson": "Général",
+      "index": 520
+    },
+    {
+      "id": "card_74mqhm",
+      "fr": "here I'm",
+      "target": "presente",
+      "lesson": "Général",
+      "index": 521
+    },
+    {
+      "id": "card_ykeaoj",
+      "fr": "best",
+      "target": "migliore",
+      "lesson": "Général",
+      "index": 522
+    },
+    {
+      "id": "card_ykgiif",
+      "fr": "easy",
+      "target": "facile",
+      "lesson": "Général",
+      "index": 523
+    },
+    {
+      "id": "card_4k2itc",
+      "fr": "third",
+      "target": "terzo",
+      "lesson": "Général",
+      "index": 524
+    },
+    {
+      "id": "card_3778y8",
+      "fr": "hot",
+      "target": "caldo",
+      "lesson": "Général",
+      "index": 525
+    },
+    {
+      "id": "card_42nuky",
+      "fr": "abroad",
+      "target": "estero",
+      "lesson": "Général",
+      "index": 526
+    },
+    {
+      "id": "card_ykujym",
+      "fr": "wide",
+      "target": "largo",
+      "lesson": "Général",
+      "index": 527
+    },
+    {
+      "id": "card_qvtxc2",
+      "fr": "pricipale",
+      "target": "pricipale",
+      "lesson": "Général",
+      "index": 528
+    },
+    {
+      "id": "card_4b3oly",
+      "fr": "green",
+      "target": "verde",
+      "lesson": "Général",
+      "index": 529
+    },
+    {
+      "id": "card_4it5qa",
+      "fr": "Roman",
+      "target": "romano",
+      "lesson": "Général",
+      "index": 530
+    },
+    {
+      "id": "card_4bvlha",
+      "fr": "human",
+      "target": "umano",
+      "lesson": "Général",
+      "index": 531
+    },
+    {
+      "id": "card_jcon1l",
+      "fr": "useless",
+      "target": "inutile",
+      "lesson": "Général",
+      "index": 532
+    },
+    {
+      "id": "card_3xt9t6",
+      "fr": "modern",
+      "target": "moderno",
+      "lesson": "Général",
+      "index": 533
+    },
+    {
+      "id": "card_efg5z7",
+      "fr": "numeroUS",
+      "target": "numeroSO",
+      "lesson": "Général",
+      "index": 534
+    },
+    {
+      "id": "card_tojiyy",
+      "fr": "similar",
+      "target": "simile",
+      "lesson": "Général",
+      "index": 535
+    },
+    {
+      "id": "card_4ae9wd",
+      "fr": "fresh",
+      "target": "fresco",
+      "lesson": "Général",
+      "index": 536
+    },
+    {
+      "id": "card_nvbvcg",
+      "fr": "military",
+      "target": "militare",
+      "lesson": "Général",
+      "index": 537
+    },
+    {
+      "id": "card_j4fuez",
+      "fr": "American",
+      "target": "americano",
+      "lesson": "Général",
+      "index": 538
+    },
+    {
+      "id": "card_49l9h0",
+      "fr": "empty",
+      "target": "vuoto",
+      "lesson": "Général",
+      "index": 539
+    },
+    {
+      "id": "card_ykgi3a",
+      "fr": "each",
+      "target": "ciascuno",
+      "lesson": "Général",
+      "index": 540
+    },
+    {
+      "id": "card_9ja88h",
+      "fr": "quiet (1)",
+      "target": "tranquillo",
+      "lesson": "Général",
+      "index": 541
+    },
+    {
+      "id": "card_9ja87k",
+      "fr": "quiet (2)",
+      "target": "zitto",
+      "lesson": "Général",
+      "index": 542
+    },
+    {
+      "id": "card_mf7hop",
+      "fr": "historical",
+      "target": "storico",
+      "lesson": "Général",
+      "index": 543
+    },
+    {
+      "id": "card_l53i4",
+      "fr": "higher",
+      "target": "superiore",
+      "lesson": "Général",
+      "index": 544
+    },
+    {
+      "id": "card_ykfts3",
+      "fr": "deep",
+      "target": "profondo",
+      "lesson": "Général",
+      "index": 545
+    },
+    {
+      "id": "card_7tlfds",
+      "fr": "social",
+      "target": "sociale",
+      "lesson": "Général",
+      "index": 546
+    },
+    {
+      "id": "card_s0cu3y",
+      "fr": "bad (1)",
+      "target": "cattivo",
+      "lesson": "Général",
+      "index": 547
+    },
+    {
+      "id": "card_s0cu4v",
+      "fr": "bad (2)",
+      "target": "male",
+      "lesson": "Général",
+      "index": 548
+    },
+    {
+      "id": "card_7xule0",
+      "fr": "sudden",
+      "target": "improvviso",
+      "lesson": "Général",
+      "index": 549
+    },
+    {
+      "id": "card_uz2gg",
+      "fr": "famous",
+      "target": "famoso",
+      "lesson": "Général",
+      "index": 550
+    },
+    {
+      "id": "card_1x467a",
+      "fr": "foreigner",
+      "target": "straniero",
+      "lesson": "Général",
+      "index": 551
+    },
+    {
+      "id": "card_483h6k",
+      "fr": "civil",
+      "target": "civile",
+      "lesson": "Général",
+      "index": 552
+    },
+    {
+      "id": "card_mm8uyr",
+      "fr": "international",
+      "target": "internazionale",
+      "lesson": "Général",
+      "index": 553
+    },
+    {
+      "id": "card_w4nly6",
+      "fr": "internal",
+      "target": "interno",
+      "lesson": "Général",
+      "index": 554
+    },
+    {
+      "id": "card_y5fd8g",
+      "fr": "extensive",
+      "target": "vasto",
+      "lesson": "Général",
+      "index": 555
+    },
+    {
+      "id": "card_7mjgff",
+      "fr": "secret",
+      "target": "segreto",
+      "lesson": "Général",
+      "index": 556
+    },
+    {
+      "id": "card_4b3olv",
+      "fr": "Greek",
+      "target": "greco",
+      "lesson": "Général",
+      "index": 557
+    },
+    {
+      "id": "card_g4j8sl",
+      "fr": "citizen",
+      "target": "cittadino",
+      "lesson": "Général",
+      "index": 558
+    },
+    {
+      "id": "card_3vas7w",
+      "fr": "European",
+      "target": "europeo",
+      "lesson": "Général",
+      "index": 559
+    },
+    {
+      "id": "card_kb93j4",
+      "fr": "average",
+      "target": "medio",
+      "lesson": "Général",
+      "index": 560
+    },
+    {
+      "id": "card_z5360b",
+      "fr": "whatever",
+      "target": "qualunque",
+      "lesson": "Général",
+      "index": 561
+    },
+    {
+      "id": "card_kfwdv3",
+      "fr": "extraordinary",
+      "target": "straordinario",
+      "lesson": "Général",
+      "index": 562
+    },
+    {
+      "id": "card_4fonoo",
+      "fr": "naked",
+      "target": "nudo",
+      "lesson": "Général",
+      "index": 563
+    },
+    {
+      "id": "card_gp65c",
+      "fr": "future",
+      "target": "futuro",
+      "lesson": "Général",
+      "index": 564
+    },
+    {
+      "id": "card_79amss",
+      "fr": "Catholic",
+      "target": "cattolico",
+      "lesson": "Général",
+      "index": 565
+    },
+    {
+      "id": "card_ykdg8p",
+      "fr": "able",
+      "target": "capace",
+      "lesson": "Général",
+      "index": 566
+    },
+    {
+      "id": "card_xdcyck",
+      "fr": "industrial",
+      "target": "industriale",
+      "lesson": "Général",
+      "index": 567
+    },
+    {
+      "id": "card_4jm5h5",
+      "fr": "staff",
+      "target": "personale",
+      "lesson": "Général",
+      "index": 568
+    },
+    {
+      "id": "card_itqp82",
+      "fr": "central",
+      "target": "centrale",
+      "lesson": "Général",
+      "index": 569
+    },
+    {
+      "id": "card_m8my8g",
+      "fr": "technical",
+      "target": "tecnico",
+      "lesson": "Général",
+      "index": 570
+    },
+    {
+      "id": "card_4jok0d",
+      "fr": "sweet",
+      "target": "dolce",
+      "lesson": "Général",
+      "index": 571
+    },
+    {
+      "id": "card_4fa6m8",
+      "fr": "moral",
+      "target": "morale",
+      "lesson": "Général",
+      "index": 572
+    },
+    {
+      "id": "card_gw69hx",
+      "fr": "helpful",
+      "target": "utile",
+      "lesson": "Général",
+      "index": 573
+    },
+    {
+      "id": "card_ii9mc7",
+      "fr": "contrary",
+      "target": "contrario",
+      "lesson": "Général",
+      "index": 574
+    },
+    {
+      "id": "card_pb7wxm",
+      "fr": "special",
+      "target": "speciale",
+      "lesson": "Général",
+      "index": 575
+    },
+    {
+      "id": "card_4mcdp1",
+      "fr": "worse",
+      "target": "peggio",
+      "lesson": "Général",
+      "index": 576
+    },
+    {
+      "id": "card_4ekvv2",
+      "fr": "lower",
+      "target": "minore",
+      "lesson": "Général",
+      "index": 577
+    },
+    {
+      "id": "card_uv9we",
+      "fr": "farmer",
+      "target": "contadino",
+      "lesson": "Général",
+      "index": 578
+    },
+    {
+      "id": "card_4k6767",
+      "fr": "to be",
+      "target": "essere",
+      "lesson": "Général",
+      "index": 579
+    },
+    {
+      "id": "card_67x87m",
+      "fr": "to have (1)",
+      "target": "avere",
+      "lesson": "Général",
+      "index": 580
+    },
+    {
+      "id": "card_67x86p",
+      "fr": "to have (2)",
+      "target": "disporre",
+      "lesson": "Général",
+      "index": 581
+    },
+    {
+      "id": "card_8fgv05",
+      "fr": "to say",
+      "target": "dire",
+      "lesson": "Général",
+      "index": 582
+    },
+    {
+      "id": "card_3774dz",
+      "fr": "can",
+      "target": "potere",
+      "lesson": "Général",
+      "index": 583
+    },
+    {
+      "id": "card_ykudi7",
+      "fr": "want",
+      "target": "volere",
+      "lesson": "Général",
+      "index": 584
+    },
+    {
+      "id": "card_xalgon",
+      "fr": "to know (1)",
+      "target": "sapere",
+      "lesson": "Général",
+      "index": 585
+    },
+    {
+      "id": "card_xalgnq",
+      "fr": "to know (2)",
+      "target": "conoscere",
+      "lesson": "Général",
+      "index": 586
+    },
+    {
+      "id": "card_t0pek5",
+      "fr": "to stay (1)",
+      "target": "stare",
+      "lesson": "Général",
+      "index": 587
+    },
+    {
+      "id": "card_t0pej8",
+      "fr": "to stay (2)",
+      "target": "rimanere",
+      "lesson": "Général",
+      "index": 588
+    },
+    {
+      "id": "card_ykn55a",
+      "fr": "must",
+      "target": "dovere",
+      "lesson": "Général",
+      "index": 589
+    },
+    {
+      "id": "card_8fgv39",
+      "fr": "to see",
+      "target": "vedere",
+      "lesson": "Général",
+      "index": 590
+    },
+    {
+      "id": "card_4k67b2",
+      "fr": "to go",
+      "target": "andare",
+      "lesson": "Général",
+      "index": 591
+    },
+    {
+      "id": "card_5ybswk",
+      "fr": "to come",
+      "target": "venire",
+      "lesson": "Général",
+      "index": 592
+    },
+    {
+      "id": "card_5y8ust",
+      "fr": "to give",
+      "target": "dare",
+      "lesson": "Général",
+      "index": 593
+    },
+    {
+      "id": "card_gxty2k",
+      "fr": "to speak",
+      "target": "parlare",
+      "lesson": "Général",
+      "index": 594
+    },
+    {
+      "id": "card_5y9mqf",
+      "fr": "to find",
+      "target": "trovare",
+      "lesson": "Général",
+      "index": 595
+    },
+    {
+      "id": "card_ddli9f",
+      "fr": "to feel, to hear",
+      "target": "sentire",
+      "lesson": "Général",
+      "index": 596
+    },
+    {
+      "id": "card_y6euif",
+      "fr": "to leave (1)",
+      "target": "lasciare",
+      "lesson": "Général",
+      "index": 597
+    },
+    {
+      "id": "card_y6eujc",
+      "fr": "to leave (2)",
+      "target": "partire",
+      "lesson": "Général",
+      "index": 598
+    },
+    {
+      "id": "card_81ky7l",
+      "fr": "to take (1)",
+      "target": "prendere",
+      "lesson": "Général",
+      "index": 599
+    },
+    {
+      "id": "card_81ky6o",
+      "fr": "to take (2)",
+      "target": "occorrere",
+      "lesson": "Général",
+      "index": 600
+    },
+    {
+      "id": "card_5y4vab",
+      "fr": "to look",
+      "target": "guardare",
+      "lesson": "Général",
+      "index": 601
+    },
+    {
+      "id": "card_8fgszl",
+      "fr": "to put",
+      "target": "mettere",
+      "lesson": "Général",
+      "index": 602
+    },
+    {
+      "id": "card_gydazq",
+      "fr": "to think",
+      "target": "pensare",
+      "lesson": "Général",
+      "index": 603
+    },
+    {
+      "id": "card_5y240x",
+      "fr": "to pass",
+      "target": "passare",
+      "lesson": "Général",
+      "index": 604
+    },
+    {
+      "id": "card_zhnz50",
+      "fr": "to believe",
+      "target": "credere",
+      "lesson": "Général",
+      "index": 605
+    },
+    {
+      "id": "card_glvh5m",
+      "fr": "to bring",
+      "target": "portare",
+      "lesson": "Général",
+      "index": 606
+    },
+    {
+      "id": "card_5xzpu6",
+      "fr": "to seem",
+      "target": "parere",
+      "lesson": "Général",
+      "index": 607
+    },
+    {
+      "id": "card_oo7vu2",
+      "fr": "to return (1)",
+      "target": "tornare",
+      "lesson": "Général",
+      "index": 608
+    },
+    {
+      "id": "card_oo7vuz",
+      "fr": "to return (2)",
+      "target": "ritornare",
+      "lesson": "Général",
+      "index": 609
+    },
+    {
+      "id": "card_oo7vvw",
+      "fr": "to return (3)",
+      "target": "rimettere",
+      "lesson": "Général",
+      "index": 610
+    },
+    {
+      "id": "card_ylo8bp",
+      "fr": "to seem, to look like",
+      "target": "sembrare",
+      "lesson": "Général",
+      "index": 611
+    },
+    {
+      "id": "card_5y5vo3",
+      "fr": "to keep",
+      "target": "tenere",
+      "lesson": "Général",
+      "index": 612
+    },
+    {
+      "id": "card_rg542",
+      "fr": "to understand (1)",
+      "target": "capire",
+      "lesson": "Général",
+      "index": 613
+    },
+    {
+      "id": "card_rg54z",
+      "fr": "to understand (2)",
+      "target": "comprendere",
+      "lesson": "Général",
+      "index": 614
+    },
+    {
+      "id": "card_8fgil6",
+      "fr": "to die",
+      "target": "morire",
+      "lesson": "Général",
+      "index": 615
+    },
+    {
+      "id": "card_5yc4os",
+      "fr": "to call",
+      "target": "chiamare",
+      "lesson": "Général",
+      "index": 616
+    },
+    {
+      "id": "card_gllevh",
+      "fr": "to begin",
+      "target": "cominciare",
+      "lesson": "Général",
+      "index": 617
+    },
+    {
+      "id": "card_4oamb1",
+      "fr": "to answer, to reply",
+      "target": "rispondere",
+      "lesson": "Général",
+      "index": 618
+    },
+    {
+      "id": "card_5xwq6b",
+      "fr": "to wait",
+      "target": "aspettare",
+      "lesson": "Général",
+      "index": 619
+    },
+    {
+      "id": "card_hf9y0s",
+      "fr": "to succeed",
+      "target": "riuscire",
+      "lesson": "Général",
+      "index": 620
+    },
+    {
+      "id": "card_gmgf0e",
+      "fr": "to close",
+      "target": "chiudere",
+      "lesson": "Général",
+      "index": 621
+    },
+    {
+      "id": "card_hs3i53",
+      "fr": "to finish",
+      "target": "finire",
+      "lesson": "Général",
+      "index": 622
+    },
+    {
+      "id": "card_ku5owf",
+      "fr": "to arrive",
+      "target": "arrivare",
+      "lesson": "Général",
+      "index": 623
+    },
+    {
+      "id": "card_h0p9mb",
+      "fr": "to write",
+      "target": "scrivere",
+      "lesson": "Général",
+      "index": 624
+    },
+    {
+      "id": "card_vpgbpn",
+      "fr": "to become (1)",
+      "target": "diventare",
+      "lesson": "Général",
+      "index": 625
+    },
+    {
+      "id": "card_vpgboq",
+      "fr": "to become (2)",
+      "target": "divenire",
+      "lesson": "Général",
+      "index": 626
+    },
+    {
+      "id": "card_a3cgcc",
+      "fr": "to remain",
+      "target": "restare",
+      "lesson": "Général",
+      "index": 627
+    },
+    {
+      "id": "card_hnwgsl",
+      "fr": "to follow",
+      "target": "seguire",
+      "lesson": "Général",
+      "index": 628
+    },
+    {
+      "id": "card_hd3ac3",
+      "fr": "to suffice",
+      "target": "bastare",
+      "lesson": "Général",
+      "index": 629
+    },
+    {
+      "id": "card_5y4v6t",
+      "fr": "to lose",
+      "target": "perdere",
+      "lesson": "Général",
+      "index": 630
+    },
+    {
+      "id": "card_z6w4d2",
+      "fr": "to make (big, small..)",
+      "target": "rendere",
+      "lesson": "Général",
+      "index": 631
+    },
+    {
+      "id": "card_8fgunx",
+      "fr": "to run",
+      "target": "correre",
+      "lesson": "Général",
+      "index": 632
+    },
+    {
+      "id": "card_5xzsrt",
+      "fr": "to save",
+      "target": "salvane",
+      "lesson": "Général",
+      "index": 633
+    },
+    {
+      "id": "card_gna821",
+      "fr": "to dress",
+      "target": "vestire",
+      "lesson": "Général",
+      "index": 634
+    },
+    {
+      "id": "card_glxsag",
+      "fr": "to build",
+      "target": "costruire",
+      "lesson": "Général",
+      "index": 635
+    },
+    {
+      "id": "card_5xwq3t",
+      "fr": "to walk",
+      "target": "camminare",
+      "lesson": "Général",
+      "index": 636
+    },
+    {
+      "id": "card_tx2sxj",
+      "fr": "to find again",
+      "target": "ritrovare",
+      "lesson": "Général",
+      "index": 637
+    },
+    {
+      "id": "card_5y56xw",
+      "fr": "to last",
+      "target": "durare",
+      "lesson": "Général",
+      "index": 638
+    },
+    {
+      "id": "card_48eua6",
+      "fr": "to turn on",
+      "target": "accendere",
+      "lesson": "Général",
+      "index": 639
+    },
+    {
+      "id": "card_gl99x7",
+      "fr": "to avoid",
+      "target": "evitare",
+      "lesson": "Général",
+      "index": 640
+    },
+    {
+      "id": "card_n4qau6",
+      "fr": "to imagine",
+      "target": "immaginare",
+      "lesson": "Général",
+      "index": 641
+    },
+    {
+      "id": "card_a3ix9c",
+      "fr": "to reduce",
+      "target": "ridurre",
+      "lesson": "Général",
+      "index": 642
+    },
+    {
+      "id": "card_7nw5os",
+      "fr": "to contain",
+      "target": "contenere",
+      "lesson": "Général",
+      "index": 643
+    },
+    {
+      "id": "card_8fgka7",
+      "fr": "to fix",
+      "target": "fissare",
+      "lesson": "Général",
+      "index": 644
+    },
+    {
+      "id": "card_gon1hz",
+      "fr": "to force",
+      "target": "costringere",
+      "lesson": "Général",
+      "index": 645
+    },
+    {
+      "id": "card_bz74u3",
+      "fr": "to abandon",
+      "target": "abbandonare",
+      "lesson": "Général",
+      "index": 646
+    },
+    {
+      "id": "card_ph60qk",
+      "fr": "to wait for",
+      "target": "attendere",
+      "lesson": "Général",
+      "index": 647
+    },
+    {
+      "id": "card_b4xodw",
+      "fr": "to prefer",
+      "target": "preferire",
+      "lesson": "Général",
+      "index": 648
+    },
+    {
+      "id": "card_jqofmf",
+      "fr": "to choose",
+      "target": "scegliere",
+      "lesson": "Général",
+      "index": 649
+    },
+    {
+      "id": "card_5xwpy8",
+      "fr": "to warn",
+      "target": "avvertire",
+      "lesson": "Général",
+      "index": 650
+    },
+    {
+      "id": "card_c60yfk",
+      "fr": "to propose",
+      "target": "proporre",
+      "lesson": "Général",
+      "index": 651
+    },
+    {
+      "id": "card_5y9qey",
+      "fr": "to fear",
+      "target": "temere",
+      "lesson": "Général",
+      "index": 652
+    },
+    {
+      "id": "card_u449ou",
+      "fr": "to express",
+      "target": "esprimere",
+      "lesson": "Général",
+      "index": 653
+    },
+    {
+      "id": "card_5y1n88",
+      "fr": "to push",
+      "target": "spingere",
+      "lesson": "Général",
+      "index": 654
+    },
+    {
+      "id": "card_gpegvz",
+      "fr": "to greet",
+      "target": "salutare",
+      "lesson": "Général",
+      "index": 655
+    },
+    {
+      "id": "card_55j8fq",
+      "fr": "to hear (1)",
+      "target": "udire",
+      "lesson": "Général",
+      "index": 656
+    },
+    {
+      "id": "card_55j8et",
+      "fr": "to hear (2)",
+      "target": "intendere",
+      "lesson": "Général",
+      "index": 657
+    },
+    {
+      "id": "card_f20si6",
+      "fr": "to stick up for",
+      "target": "difendere",
+      "lesson": "Général",
+      "index": 658
+    },
+    {
+      "id": "card_j2m53x",
+      "fr": "to direct",
+      "target": "dirigere",
+      "lesson": "Général",
+      "index": 659
+    },
+    {
+      "id": "card_5xzm93",
+      "fr": "to sing",
+      "target": "cantare",
+      "lesson": "Général",
+      "index": 660
+    },
+    {
+      "id": "card_5y0dut",
+      "fr": "to rise",
+      "target": "sorgere",
+      "lesson": "Général",
+      "index": 661
+    },
+    {
+      "id": "card_ibr36u",
+      "fr": "to ensure",
+      "target": "assicurare",
+      "lesson": "Général",
+      "index": 662
+    },
+    {
+      "id": "card_5y8368",
+      "fr": "to hire",
+      "target": "assumere",
+      "lesson": "Général",
+      "index": 663
+    },
+    {
+      "id": "card_5xyxvx",
+      "fr": "to tend",
+      "target": "tendere",
+      "lesson": "Général",
+      "index": 664
+    },
+    {
+      "id": "card_j2iytf",
+      "fr": "to divide",
+      "target": "dividere",
+      "lesson": "Général",
+      "index": 665
+    },
+    {
+      "id": "card_i5187f",
+      "fr": "to excuse",
+      "target": "scusare",
+      "lesson": "Général",
+      "index": 666
+    },
+    {
+      "id": "card_t8g4op",
+      "fr": "to maintain",
+      "target": "mantenere",
+      "lesson": "Général",
+      "index": 667
+    },
+    {
+      "id": "card_4b4q67",
+      "fr": "to consider (1)",
+      "target": "ritenere",
+      "lesson": "Général",
+      "index": 668
+    },
+    {
+      "id": "card_4b4q5a",
+      "fr": "to consider (2)",
+      "target": "considerare",
+      "lesson": "Général",
+      "index": 669
+    },
+    {
+      "id": "card_uw7n1x",
+      "fr": "to conclude",
+      "target": "concludere",
+      "lesson": "Général",
+      "index": 670
+    },
+    {
+      "id": "card_5y69r0",
+      "fr": "to jump",
+      "target": "saltare",
+      "lesson": "Général",
+      "index": 671
+    },
+    {
+      "id": "card_im1sm1",
+      "fr": "to establish",
+      "target": "stabilire",
+      "lesson": "Général",
+      "index": 672
+    },
+    {
+      "id": "card_kg5t6p",
+      "fr": "to belong",
+      "target": "appartenere",
+      "lesson": "Général",
+      "index": 673
+    },
+    {
+      "id": "card_e11mko",
+      "fr": "to possess",
+      "target": "possedere",
+      "lesson": "Général",
+      "index": 674
+    },
+    {
+      "id": "card_a37d2x",
+      "fr": "to result",
+      "target": "risultare",
+      "lesson": "Général",
+      "index": 675
+    },
+    {
+      "id": "card_tmzuxs",
+      "fr": "to play (1)",
+      "target": "suonare",
+      "lesson": "Général",
+      "index": 676
+    },
+    {
+      "id": "card_tmzuyp",
+      "fr": "to play (2)",
+      "target": "giocare",
+      "lesson": "Général",
+      "index": 677
+    },
+    {
+      "id": "card_yx0gwk",
+      "fr": "to cover up",
+      "target": "coprire",
+      "lesson": "Général",
+      "index": 678
+    },
+    {
+      "id": "card_gyasst",
+      "fr": "to teach",
+      "target": "insegnare",
+      "lesson": "Général",
+      "index": 679
+    },
+    {
+      "id": "card_ktflk6",
+      "fr": "to assert",
+      "target": "affermare",
+      "lesson": "Général",
+      "index": 680
+    },
+    {
+      "id": "card_a35fmh",
+      "fr": "to reveal",
+      "target": "rivelare",
+      "lesson": "Général",
+      "index": 681
+    },
+    {
+      "id": "card_i8p8j8",
+      "fr": "to preserve",
+      "target": "conservare",
+      "lesson": "Général",
+      "index": 682
+    },
+    {
+      "id": "card_gxtcr5",
+      "fr": "to solve",
+      "target": "risolvere",
+      "lesson": "Général",
+      "index": 683
+    },
+    {
+      "id": "card_gpedr8",
+      "fr": "to grant",
+      "target": "concedere",
+      "lesson": "Général",
+      "index": 684
+    },
+    {
+      "id": "card_gsqtgn",
+      "fr": "to limit",
+      "target": "limitare",
+      "lesson": "Général",
+      "index": 685
+    },
+    {
+      "id": "card_5y505k",
+      "fr": "to live",
+      "target": "abitare",
+      "lesson": "Général",
+      "index": 686
+    },
+    {
+      "id": "card_v9k459",
+      "fr": "to convince",
+      "target": "convincere",
+      "lesson": "Général",
+      "index": 687
+    },
+    {
+      "id": "card_8fgh88",
+      "fr": "to buy",
+      "target": "comprare",
+      "lesson": "Général",
+      "index": 688
+    },
+    {
+      "id": "card_8fgw16",
+      "fr": "to tie",
+      "target": "legare",
+      "lesson": "Général",
+      "index": 689
+    },
+    {
+      "id": "card_h3m8vl",
+      "fr": "to sustain",
+      "target": "sostenere",
+      "lesson": "Général",
+      "index": 690
+    },
+    {
+      "id": "card_xzv0lc",
+      "fr": "to be born",
+      "target": "nascere",
+      "lesson": "Général",
+      "index": 691
+    },
+    {
+      "id": "card_79275h",
+      "fr": "to introduce",
+      "target": "presentare",
+      "lesson": "Général",
+      "index": 692
+    },
+    {
+      "id": "card_5yb9vm",
+      "fr": "to deal",
+      "target": "trattare",
+      "lesson": "Général",
+      "index": 693
+    },
+    {
+      "id": "card_5y50fn",
+      "fr": "to like",
+      "target": "piacere",
+      "lesson": "Général",
+      "index": 694
+    },
+    {
+      "id": "card_v85ah9",
+      "fr": "to continue",
+      "target": "continuare",
+      "lesson": "Général",
+      "index": 695
+    },
+    {
+      "id": "card_gxlsi5",
+      "fr": "to serve",
+      "target": "servire",
+      "lesson": "Général",
+      "index": 696
+    },
+    {
+      "id": "card_k4uv8w",
+      "fr": "to stop (1)",
+      "target": "giungere",
+      "lesson": "Général",
+      "index": 697
+    },
+    {
+      "id": "card_k4uv7z",
+      "fr": "to stop (2)",
+      "target": "arrestare",
+      "lesson": "Général",
+      "index": 698
+    },
+    {
+      "id": "card_k4uv72",
+      "fr": "to stop (3)",
+      "target": "smettere",
+      "lesson": "Général",
+      "index": 699
+    },
+    {
+      "id": "card_ue16df",
+      "fr": "to appear (1)",
+      "target": "apparire",
+      "lesson": "Général",
+      "index": 700
+    },
+    {
+      "id": "card_ue16ec",
+      "fr": "to appear (2)",
+      "target": "figurare",
+      "lesson": "Général",
+      "index": 701
+    },
+    {
+      "id": "card_5y4v42",
+      "fr": "to love",
+      "target": "amare",
+      "lesson": "Général",
+      "index": 702
+    },
+    {
+      "id": "card_go4cut",
+      "fr": "to exist",
+      "target": "esistere",
+      "lesson": "Général",
+      "index": 703
+    },
+    {
+      "id": "card_gpak4j",
+      "fr": "to go up",
+      "target": "salire",
+      "lesson": "Général",
+      "index": 704
+    },
+    {
+      "id": "card_5y48ho",
+      "fr": "to miss",
+      "target": "mancare",
+      "lesson": "Général",
+      "index": 705
+    },
+    {
+      "id": "card_gskuah",
+      "fr": "to laugh",
+      "target": "ridere",
+      "lesson": "Général",
+      "index": 706
+    },
+    {
+      "id": "card_5xwe6t",
+      "fr": "to work",
+      "target": "lavorare",
+      "lesson": "Général",
+      "index": 707
+    },
+    {
+      "id": "card_1xl4ap",
+      "fr": "to raise up",
+      "target": "alzare",
+      "lesson": "Général",
+      "index": 708
+    },
+    {
+      "id": "card_hqx2cy",
+      "fr": "to recognize",
+      "target": "riconoscere",
+      "lesson": "Général",
+      "index": 709
+    },
+    {
+      "id": "card_ur4ycw",
+      "fr": "to sit down",
+      "target": "sedere",
+      "lesson": "Général",
+      "index": 710
+    },
+    {
+      "id": "card_5y0hoc",
+      "fr": "to read",
+      "target": "leggere",
+      "lesson": "Général",
+      "index": 711
+    },
+    {
+      "id": "card_5y9ti1",
+      "fr": "to fall",
+      "target": "cadere",
+      "lesson": "Général",
+      "index": 712
+    },
+    {
+      "id": "card_8fgj8i",
+      "fr": "to eat",
+      "target": "mangiare",
+      "lesson": "Général",
+      "index": 713
+    },
+    {
+      "id": "card_gxqv9d",
+      "fr": "to sleep",
+      "target": "dormire",
+      "lesson": "Général",
+      "index": 714
+    },
+    {
+      "id": "card_gwvyob",
+      "fr": "to reach",
+      "target": "raggiungere",
+      "lesson": "Général",
+      "index": 715
+    },
+    {
+      "id": "card_kyl6v3",
+      "fr": "to alight",
+      "target": "scendere",
+      "lesson": "Général",
+      "index": 716
+    },
+    {
+      "id": "card_as6vmy",
+      "fr": "to fulfill",
+      "target": "compiere",
+      "lesson": "Général",
+      "index": 717
+    },
+    {
+      "id": "card_gyiywb",
+      "fr": "to touch",
+      "target": "toccare",
+      "lesson": "Général",
+      "index": 718
+    },
+    {
+      "id": "card_5y43dt",
+      "fr": "to move",
+      "target": "muovere",
+      "lesson": "Général",
+      "index": 719
+    },
+    {
+      "id": "card_3r1479",
+      "fr": "to tighten",
+      "target": "stringere",
+      "lesson": "Général",
+      "index": 720
+    },
+    {
+      "id": "card_5xzpm6",
+      "fr": "to send",
+      "target": "mandare",
+      "lesson": "Général",
+      "index": 721
+    },
+    {
+      "id": "card_8fggbr",
+      "fr": "to ask",
+      "target": "domandare",
+      "lesson": "Général",
+      "index": 722
+    },
+    {
+      "id": "card_dw6k89",
+      "fr": "to listen",
+      "target": "ascoltare",
+      "lesson": "Général",
+      "index": 723
+    },
+    {
+      "id": "card_j5r9x6",
+      "fr": "to decide",
+      "target": "decidere",
+      "lesson": "Général",
+      "index": 724
+    },
+    {
+      "id": "card_omrxf1",
+      "fr": "to receive (1)",
+      "target": "ricevere",
+      "lesson": "Général",
+      "index": 725
+    },
+    {
+      "id": "card_omrxfy",
+      "fr": "to receive (2)",
+      "target": "accogliere",
+      "lesson": "Général",
+      "index": 726
+    },
+    {
+      "id": "card_r7ytb2",
+      "fr": "to observe",
+      "target": "osservare",
+      "lesson": "Général",
+      "index": 727
+    },
+    {
+      "id": "card_d4rci1",
+      "fr": "to allow (1)",
+      "target": "permettere",
+      "lesson": "Général",
+      "index": 728
+    },
+    {
+      "id": "card_d4rciy",
+      "fr": "to allow (2)",
+      "target": "consentire",
+      "lesson": "Général",
+      "index": 729
+    },
+    {
+      "id": "card_guq86c",
+      "fr": "to occur",
+      "target": "avvenire",
+      "lesson": "Général",
+      "index": 730
+    },
+    {
+      "id": "card_u48zon",
+      "fr": "to explain",
+      "target": "spiegare",
+      "lesson": "Général",
+      "index": 731
+    },
+    {
+      "id": "card_7ph2fm",
+      "fr": "to collect",
+      "target": "raccogliere",
+      "lesson": "Général",
+      "index": 732
+    },
+    {
+      "id": "card_c37qm3",
+      "fr": "to obtain",
+      "target": "ottenere",
+      "lesson": "Général",
+      "index": 733
+    },
+    {
+      "id": "card_guslh6",
+      "fr": "to offer",
+      "target": "offrire",
+      "lesson": "Général",
+      "index": 734
+    },
+    {
+      "id": "card_u9ymiz",
+      "fr": "to exhibit",
+      "target": "mostrare",
+      "lesson": "Général",
+      "index": 735
+    },
+    {
+      "id": "card_c4d6bn",
+      "fr": "to accompany",
+      "target": "accompagnare",
+      "lesson": "Général",
+      "index": 736
+    },
+    {
+      "id": "card_hnryvl",
+      "fr": "to forget",
+      "target": "dimenticare",
+      "lesson": "Général",
+      "index": 737
+    },
+    {
+      "id": "card_5y1q70",
+      "fr": "to pray",
+      "target": "pregare",
+      "lesson": "Général",
+      "index": 738
+    },
+    {
+      "id": "card_5xyxxj",
+      "fr": "to tell",
+      "target": "raccontare",
+      "lesson": "Général",
+      "index": 739
+    },
+    {
+      "id": "card_ffume6",
+      "fr": "to drinking",
+      "target": "bere",
+      "lesson": "Général",
+      "index": 740
+    },
+    {
+      "id": "card_jqz8z6",
+      "fr": "to change",
+      "target": "cambiare",
+      "lesson": "Général",
+      "index": 741
+    },
+    {
+      "id": "card_m9sg0e",
+      "fr": "to demonstrate",
+      "target": "dimostrare",
+      "lesson": "Général",
+      "index": 742
+    },
+    {
+      "id": "card_5y7y6k",
+      "fr": "to hope",
+      "target": "sperare",
+      "lesson": "Général",
+      "index": 743
+    },
+    {
+      "id": "card_gta74j",
+      "fr": "to marry",
+      "target": "sposare",
+      "lesson": "Général",
+      "index": 744
+    },
+    {
+      "id": "card_gkvd4n",
+      "fr": "to admit",
+      "target": "ammettere",
+      "lesson": "Général",
+      "index": 745
+    },
+    {
+      "id": "card_wt0jox",
+      "fr": "to run away (1)",
+      "target": "fuggire",
+      "lesson": "Général",
+      "index": 746
+    },
+    {
+      "id": "card_wt0jpu",
+      "fr": "to run away (2)",
+      "target": "scappare",
+      "lesson": "Général",
+      "index": 747
+    },
+    {
+      "id": "card_5y9fee",
+      "fr": "to free",
+      "target": "liberare",
+      "lesson": "Général",
+      "index": 748
+    },
+    {
+      "id": "card_af1rfe",
+      "fr": "to report (1)",
+      "target": "riferire",
+      "lesson": "Général",
+      "index": 749
+    },
+    {
+      "id": "card_af1reh",
+      "fr": "to report (2)",
+      "target": "riportare",
+      "lesson": "Général",
+      "index": 750
+    },
+    {
+      "id": "card_ft4aln",
+      "fr": "to wake up",
+      "target": "svegliare",
+      "lesson": "Général",
+      "index": 751
+    },
+    {
+      "id": "card_3z302u",
+      "fr": "to happen (1)",
+      "target": "capitare",
+      "lesson": "Général",
+      "index": 752
+    },
+    {
+      "id": "card_3z303r",
+      "fr": "to happen (2)",
+      "target": "succedere",
+      "lesson": "Général",
+      "index": 753
+    },
+    {
+      "id": "card_3z304o",
+      "fr": "to happen (3)",
+      "target": "accadere",
+      "lesson": "Général",
+      "index": 754
+    },
+    {
+      "id": "card_t8rnwx",
+      "fr": "to place (1)",
+      "target": "posare",
+      "lesson": "Général",
+      "index": 755
+    },
+    {
+      "id": "card_t8rnw0",
+      "fr": "to place (2)",
+      "target": "porre",
+      "lesson": "Général",
+      "index": 756
+    },
+    {
+      "id": "card_ccyr78",
+      "fr": "to prevent",
+      "target": "impedire",
+      "lesson": "Général",
+      "index": 757
+    },
+    {
+      "id": "card_41tihu",
+      "fr": "to throw (1)",
+      "target": "gettare",
+      "lesson": "Général",
+      "index": 758
+    },
+    {
+      "id": "card_41tigx",
+      "fr": "to throw (2)",
+      "target": "buttare",
+      "lesson": "Général",
+      "index": 759
+    },
+    {
+      "id": "card_5xzpns",
+      "fr": "to sell",
+      "target": "vendere",
+      "lesson": "Général",
+      "index": 760
+    },
+    {
+      "id": "card_bz98cz",
+      "fr": "to distinguish",
+      "target": "distinguere",
+      "lesson": "Général",
+      "index": 761
+    },
+    {
+      "id": "card_c0or3a",
+      "fr": "to offend",
+      "target": "offendere",
+      "lesson": "Général",
+      "index": 762
+    },
+    {
+      "id": "card_glvdgt",
+      "fr": "to break",
+      "target": "rompere",
+      "lesson": "Général",
+      "index": 763
+    },
+    {
+      "id": "card_gnwob1",
+      "fr": "to enjoy",
+      "target": "godere",
+      "lesson": "Général",
+      "index": 764
+    },
+    {
+      "id": "card_frbq7f",
+      "fr": "to impose",
+      "target": "imporre",
+      "lesson": "Général",
+      "index": 765
+    },
+    {
+      "id": "card_5y4cbb",
+      "fr": "to mean",
+      "target": "significare",
+      "lesson": "Général",
+      "index": 766
+    },
+    {
+      "id": "card_j5exwc",
+      "fr": "to desire",
+      "target": "desiderare",
+      "lesson": "Général",
+      "index": 767
+    },
+    {
+      "id": "card_gl2hnn",
+      "fr": "to amuse",
+      "target": "divertire",
+      "lesson": "Général",
+      "index": 768
+    },
+    {
+      "id": "card_2co1t9",
+      "fr": "to turn (1)",
+      "target": "volgefe",
+      "lesson": "Général",
+      "index": 769
+    },
+    {
+      "id": "card_2co1sc",
+      "fr": "to turn (2)",
+      "target": "voltare",
+      "lesson": "Général",
+      "index": 770
+    },
+    {
+      "id": "card_2co1rf",
+      "fr": "to turn (3)",
+      "target": "girare",
+      "lesson": "Général",
+      "index": 771
+    },
+    {
+      "id": "card_2co1qi",
+      "fr": "to turn (4)",
+      "target": "rivolgere",
+      "lesson": "Général",
+      "index": 772
+    },
+    {
+      "id": "card_grl0gn",
+      "fr": "to judge",
+      "target": "giudicare",
+      "lesson": "Général",
+      "index": 773
+    },
+    {
+      "id": "card_c6a2jq",
+      "fr": "to produce",
+      "target": "produrre",
+      "lesson": "Général",
+      "index": 774
+    },
+    {
+      "id": "card_68c822",
+      "fr": "to approach",
+      "target": "avvicinare",
+      "lesson": "Général",
+      "index": 775
+    },
+    {
+      "id": "card_9863sp",
+      "fr": "to spread",
+      "target": "diffondere",
+      "lesson": "Général",
+      "index": 776
+    },
+    {
+      "id": "card_5xzh3k",
+      "fr": "to sort",
+      "target": "ordinare",
+      "lesson": "Général",
+      "index": 777
+    },
+    {
+      "id": "card_fqhts9",
+      "fr": "to invite",
+      "target": "invitare",
+      "lesson": "Général",
+      "index": 778
+    },
+    {
+      "id": "card_9we3za",
+      "fr": "to discuss",
+      "target": "discutere",
+      "lesson": "Général",
+      "index": 779
+    },
+    {
+      "id": "card_1zd439",
+      "fr": "to make a mistake",
+      "target": "sbagliare",
+      "lesson": "Général",
+      "index": 780
+    },
+    {
+      "id": "card_un384v",
+      "fr": "to look after",
+      "target": "badare",
+      "lesson": "Général",
+      "index": 781
+    },
+    {
+      "id": "card_8fgi2c",
+      "fr": "to cut",
+      "target": "tagliare",
+      "lesson": "Général",
+      "index": 782
+    },
+    {
+      "id": "card_ahe70h",
+      "fr": "to publish",
+      "target": "pubblicare",
+      "lesson": "Général",
+      "index": 783
+    },
+    {
+      "id": "card_kspiio",
+      "fr": "to attack",
+      "target": "attaccare",
+      "lesson": "Général",
+      "index": 784
+    },
+    {
+      "id": "card_gsngoq",
+      "fr": "to learn",
+      "target": "imparare",
+      "lesson": "Général",
+      "index": 785
+    },
+    {
+      "id": "card_h303dr",
+      "fr": "to forecast",
+      "target": "prevedere",
+      "lesson": "Général",
+      "index": 786
+    },
+    {
+      "id": "card_2mwwbv",
+      "fr": "to switch off",
+      "target": "spegnere",
+      "lesson": "Général",
+      "index": 787
+    },
+    {
+      "id": "card_kqdlrz",
+      "fr": "to announce",
+      "target": "annunciare",
+      "lesson": "Général",
+      "index": 788
+    },
+    {
+      "id": "card_5y5ry6",
+      "fr": "to kiss",
+      "target": "baciare",
+      "lesson": "Général",
+      "index": 789
+    },
+    {
+      "id": "card_i4rcro",
+      "fr": "to expose",
+      "target": "esporre",
+      "lesson": "Général",
+      "index": 790
+    },
+    {
+      "id": "card_f46ksa",
+      "fr": "go across",
+      "target": "attraversare",
+      "lesson": "Général",
+      "index": 791
+    },
+    {
+      "id": "card_z6n2rn",
+      "fr": "to provide (1)",
+      "target": "fornire",
+      "lesson": "Général",
+      "index": 792
+    },
+    {
+      "id": "card_z6n2sk",
+      "fr": "to provide (2)",
+      "target": "provvedere",
+      "lesson": "Général",
+      "index": 793
+    },
+    {
+      "id": "card_5y4f8t",
+      "fr": "to mark",
+      "target": "segnare",
+      "lesson": "Général",
+      "index": 794
+    },
+    {
+      "id": "card_wxfxqw",
+      "fr": "to overcome",
+      "target": "superare",
+      "lesson": "Général",
+      "index": 795
+    },
+    {
+      "id": "card_a35c5i",
+      "fr": "to review",
+      "target": "rivedere",
+      "lesson": "Général",
+      "index": 796
+    },
+    {
+      "id": "card_8b6eyg",
+      "fr": "to remove (1)",
+      "target": "allontanare",
+      "lesson": "Général",
+      "index": 797
+    },
+    {
+      "id": "card_8b6ezd",
+      "fr": "to remove (2)",
+      "target": "togliere",
+      "lesson": "Général",
+      "index": 798
+    },
+    {
+      "id": "card_8b6f0a",
+      "fr": "to remove (3)",
+      "target": "staccare",
+      "lesson": "Général",
+      "index": 799
+    },
+    {
+      "id": "card_6kkx6",
+      "fr": "to kill (1)",
+      "target": "ammazzare",
+      "lesson": "Général",
+      "index": 800
+    },
+    {
+      "id": "card_6kkw9",
+      "fr": "to kill (2)",
+      "target": "uccidere",
+      "lesson": "Général",
+      "index": 801
+    },
+    {
+      "id": "card_h0n5yj",
+      "fr": "to worry",
+      "target": "preoccupare",
+      "lesson": "Général",
+      "index": 802
+    },
+    {
+      "id": "card_mnskth",
+      "fr": "to cause (1)",
+      "target": "provocare",
+      "lesson": "Général",
+      "index": 803
+    },
+    {
+      "id": "card_mnsksk",
+      "fr": "to cause (2)",
+      "target": "recare",
+      "lesson": "Général",
+      "index": 804
+    },
+    {
+      "id": "card_5y9ms1",
+      "fr": "to fill",
+      "target": "riempire",
+      "lesson": "Général",
+      "index": 805
+    },
+    {
+      "id": "card_ipthqc",
+      "fr": "to take part",
+      "target": "partecipare",
+      "lesson": "Général",
+      "index": 806
+    },
+    {
+      "id": "card_gvmixz",
+      "fr": "to plant",
+      "target": "piantare",
+      "lesson": "Général",
+      "index": 807
+    },
+    {
+      "id": "card_mrjsba",
+      "fr": "to re-enter",
+      "target": "rientrare",
+      "lesson": "Général",
+      "index": 808
+    },
+    {
+      "id": "card_m6ea9d",
+      "fr": "to request",
+      "target": "richiedere",
+      "lesson": "Général",
+      "index": 809
+    },
+    {
+      "id": "card_5y83j2",
+      "fr": "to hide",
+      "target": "nascondere",
+      "lesson": "Général",
+      "index": 810
+    },
+    {
+      "id": "card_a3a1zr",
+      "fr": "to repeat",
+      "target": "ripetere",
+      "lesson": "Général",
+      "index": 811
+    },
+    {
+      "id": "card_sgr6nt",
+      "fr": "to discover",
+      "target": "scoprire",
+      "lesson": "Général",
+      "index": 812
+    },
+    {
+      "id": "card_h1ybu4",
+      "fr": "prepare",
+      "target": "preparare",
+      "lesson": "Général",
+      "index": 813
+    },
+    {
+      "id": "card_gxqyl5",
+      "fr": "to slide",
+      "target": "scorrere",
+      "lesson": "Général",
+      "index": 814
+    },
+    {
+      "id": "card_mazme8",
+      "fr": "to represent",
+      "target": "rappresentare",
+      "lesson": "Général",
+      "index": 815
+    },
+    {
+      "id": "card_a37d2f",
+      "fr": "to resume",
+      "target": "riprendere",
+      "lesson": "Général",
+      "index": 816
+    },
+    {
+      "id": "card_wp1gau",
+      "fr": "to constitute",
+      "target": "costituire",
+      "lesson": "Général",
+      "index": 817
+    },
+    {
+      "id": "card_5y4c7h",
+      "fr": "to meet",
+      "target": "incontrare",
+      "lesson": "Général",
+      "index": 818
+    },
+    {
+      "id": "card_qxlu80",
+      "fr": "be worth",
+      "target": "valere",
+      "lesson": "Général",
+      "index": 819
+    },
+    {
+      "id": "card_66ddgs",
+      "fr": "to notice (1)",
+      "target": "accorgersi",
+      "lesson": "Général",
+      "index": 820
+    },
+    {
+      "id": "card_66ddhp",
+      "fr": "to notice (2)",
+      "target": "notare",
+      "lesson": "Général",
+      "index": 821
+    },
+    {
+      "id": "card_8fgw9z",
+      "fr": "to try",
+      "target": "provare",
+      "lesson": "Général",
+      "index": 822
+    },
+    {
+      "id": "card_5y9hl0",
+      "fr": "to form",
+      "target": "formare",
+      "lesson": "Général",
+      "index": 823
+    },
+    {
+      "id": "card_5y1nej",
+      "fr": "to pull",
+      "target": "tirare",
+      "lesson": "Général",
+      "index": 824
+    },
+    {
+      "id": "card_8fgfxt",
+      "fr": "to add",
+      "target": "aggiungere",
+      "lesson": "Général",
+      "index": 825
+    },
+    {
+      "id": "card_8fgshe",
+      "fr": "to pay",
+      "target": "pagare",
+      "lesson": "Général",
+      "index": 826
+    },
+    {
+      "id": "card_nztw6f",
+      "fr": "to attempt",
+      "target": "tentare",
+      "lesson": "Général",
+      "index": 827
+    },
+    {
+      "id": "card_jjua10",
+      "fr": "to create",
+      "target": "creare",
+      "lesson": "Général",
+      "index": 828
+    },
+    {
+      "id": "card_frbq7x",
+      "fr": "to import",
+      "target": "importare",
+      "lesson": "Général",
+      "index": 829
+    },
+    {
+      "id": "card_h0f8t8",
+      "fr": "to weigh",
+      "target": "pesare",
+      "lesson": "Général",
+      "index": 830
+    },
+    {
+      "id": "card_8fgx4l",
+      "fr": "to use",
+      "target": "usare",
+      "lesson": "Général",
+      "index": 831
+    },
+    {
+      "id": "card_l52ma0",
+      "fr": "to accept",
+      "target": "accettare",
+      "lesson": "Général",
+      "index": 832
+    },
+    {
+      "id": "card_towed3",
+      "fr": "to indicate",
+      "target": "indicare",
+      "lesson": "Général",
+      "index": 833
+    },
+    {
+      "id": "card_5yctbw",
+      "fr": "to beat",
+      "target": "battere",
+      "lesson": "Général",
+      "index": 834
+    },
+    {
+      "id": "card_jelibu",
+      "fr": "to interest",
+      "target": "interessare",
+      "lesson": "Général",
+      "index": 835
+    },
+    {
+      "id": "card_gxrqiq",
+      "fr": "to smile",
+      "target": "sorridere",
+      "lesson": "Général",
+      "index": 836
+    },
+    {
+      "id": "card_7o80p4",
+      "fr": "to conduct",
+      "target": "condurre",
+      "lesson": "Général",
+      "index": 837
+    },
+    {
+      "id": "card_gtd9qw",
+      "fr": "to merge",
+      "target": "unire",
+      "lesson": "Général",
+      "index": 838
+    },
+    {
+      "id": "card_5y86of",
+      "fr": "to help",
+      "target": "aiutare",
+      "lesson": "Général",
+      "index": 839
+    },
+    {
+      "id": "card_8fghzq",
+      "fr": "to cry",
+      "target": "piangere",
+      "lesson": "Général",
+      "index": 840
+    },
+    {
+      "id": "card_5y50jt",
+      "fr": "to lift",
+      "target": "levare",
+      "lesson": "Général",
+      "index": 841
+    },
+    {
+      "id": "card_94w8a5",
+      "fr": "to suffer",
+      "target": "soffrire",
+      "lesson": "Général",
+      "index": 842
+    },
+    {
+      "id": "card_7o95hs",
+      "fr": "to concern",
+      "target": "riguardare",
+      "lesson": "Général",
+      "index": 843
+    },
+    {
+      "id": "card_plasu6",
+      "fr": "to be silent",
+      "target": "tacere",
+      "lesson": "Général",
+      "index": 844
+    },
+    {
+      "id": "card_8fgyk6",
+      "fr": "to win",
+      "target": "vincere",
+      "lesson": "Général",
+      "index": 845
+    },
+    {
+      "id": "card_kj0wd9",
+      "fr": "to perform",
+      "target": "svolgere",
+      "lesson": "Général",
+      "index": 846
+    },
+    {
+      "id": "card_gxxeip",
+      "fr": "to study",
+      "target": "studiare",
+      "lesson": "Général",
+      "index": 847
+    },
+    {
+      "id": "card_8p8zpo",
+      "fr": "to grow up",
+      "target": "crescere",
+      "lesson": "Général",
+      "index": 848
+    },
+    {
+      "id": "card_gxo15n",
+      "fr": "to shout",
+      "target": "gridare",
+      "lesson": "Général",
+      "index": 849
+    },
+    {
+      "id": "card_702ng8",
+      "fr": "to declare",
+      "target": "dichiarare",
+      "lesson": "Général",
+      "index": 850
+    },
+    {
+      "id": "card_gmiv4h",
+      "fr": "to count",
+      "target": "contare",
+      "lesson": "Général",
+      "index": 851
+    },
+    {
+      "id": "card_ktfi69",
+      "fr": "to assist",
+      "target": "assistere",
+      "lesson": "Général",
+      "index": 852
+    },
+    {
+      "id": "card_u5swfi",
+      "fr": "to increase",
+      "target": "aumentare",
+      "lesson": "Général",
+      "index": 853
+    },
+    {
+      "id": "card_e1sid9",
+      "fr": "to launch",
+      "target": "lanciare",
+      "lesson": "Général",
+      "index": 854
+    },
+    {
+      "id": "card_snswrp",
+      "fr": "to determine",
+      "target": "determinare",
+      "lesson": "Général",
+      "index": 855
+    },
+    {
+      "id": "card_5y6eun",
+      "fr": "to joke",
+      "target": "scherzare",
+      "lesson": "Général",
+      "index": 856
+    },
+    {
+      "id": "card_gwt2vw",
+      "fr": "to raise",
+      "target": "elevare",
+      "lesson": "Général",
+      "index": 857
+    },
+    {
+      "id": "card_c63ent",
+      "fr": "to promise",
+      "target": "promettere",
+      "lesson": "Général",
+      "index": 858
+    },
+    {
+      "id": "card_h8h7xb",
+      "fr": "to disappear",
+      "target": "scomparire",
+      "lesson": "Général",
+      "index": 859
+    },
+    {
+      "id": "card_5yayy2",
+      "fr": "to draw",
+      "target": "trarre",
+      "lesson": "Général",
+      "index": 860
+    },
+    {
+      "id": "card_7bjwia",
+      "fr": "to destroy",
+      "target": "distruggere",
+      "lesson": "Général",
+      "index": 861
+    },
+    {
+      "id": "card_7b8cqe",
+      "fr": "to deserve",
+      "target": "meritare",
+      "lesson": "Général",
+      "index": 862
+    },
+    {
+      "id": "card_j5chm9",
+      "fr": "to devote",
+      "target": "dedicare",
+      "lesson": "Général",
+      "index": 863
+    },
+    {
+      "id": "card_gxwy2e",
+      "fr": "to start",
+      "target": "iniziare",
+      "lesson": "Général",
+      "index": 864
+    },
+    {
+      "id": "card_37qx51",
+      "fr": "to surprise",
+      "target": "sorprendere",
+      "lesson": "Général",
+      "index": 865
+    },
+    {
+      "id": "card_7oqhry",
+      "fr": "to commute",
+      "target": "trasformare",
+      "lesson": "Général",
+      "index": 866
+    },
+    {
+      "id": "card_7o6u9z",
+      "fr": "to confess",
+      "target": "confessare",
+      "lesson": "Général",
+      "index": 867
+    },
+    {
+      "id": "card_gyd49q",
+      "fr": "to thank",
+      "target": "ringraziare",
+      "lesson": "Général",
+      "index": 868
+    },
+    {
+      "id": "card_habge5",
+      "fr": "to gather",
+      "target": "riunire",
+      "lesson": "Général",
+      "index": 869
+    },
+    {
+      "id": "card_8fgkcz",
+      "fr": "to fly",
+      "target": "volare",
+      "lesson": "Général",
+      "index": 870
+    },
+    {
+      "id": "card_gon4as",
+      "fr": "to found",
+      "target": "fondare",
+      "lesson": "Général",
+      "index": 871
+    },
+    {
+      "id": "card_gnabhe",
+      "fr": "to drive",
+      "target": "guidare",
+      "lesson": "Général",
+      "index": 872
+    },
+    {
+      "id": "card_5y7t2t",
+      "fr": "to hurt",
+      "target": "ferire",
+      "lesson": "Général",
+      "index": 873
+    },
+    {
+      "id": "card_btemn6",
+      "fr": "to oppose",
+      "target": "opporre",
+      "lesson": "Général",
+      "index": 874
+    },
+    {
+      "id": "card_c6b7o6",
+      "fr": "to proceed",
+      "target": "procedere",
+      "lesson": "Général",
+      "index": 875
+    },
+    {
+      "id": "card_dxwa7o",
+      "fr": "to fall in love",
+      "target": "innamorarsi",
+      "lesson": "Général",
+      "index": 876
+    },
+    {
+      "id": "card_onzgbr",
+      "fr": "to organize",
+      "target": "organizzare",
+      "lesson": "Général",
+      "index": 877
+    },
+    {
+      "id": "card_a3eobf",
+      "fr": "to reject",
+      "target": "rifiutare",
+      "lesson": "Général",
+      "index": 878
+    },
+    {
+      "id": "card_j5hcjs",
+      "fr": "to depend",
+      "target": "dipendere",
+      "lesson": "Général",
+      "index": 879
+    },
+    {
+      "id": "card_5yayyi",
+      "fr": "to drag",
+      "target": "trascinare",
+      "lesson": "Général",
+      "index": 880
+    },
+    {
+      "id": "card_gxrvjb",
+      "fr": "to smoke",
+      "target": "fumare",
+      "lesson": "Général",
+      "index": 881
+    },
+    {
+      "id": "card_gly01k",
+      "fr": "to burst",
+      "target": "scoppiare",
+      "lesson": "Général",
+      "index": 882
+    },
+    {
+      "id": "card_gna7ld",
+      "fr": "to dream",
+      "target": "sognare",
+      "lesson": "Général",
+      "index": 883
+    },
+    {
+      "id": "card_h5t8zf",
+      "fr": "to support",
+      "target": "appoggiare",
+      "lesson": "Général",
+      "index": 884
+    },
+    {
+      "id": "card_8fggaw",
+      "fr": "to arm",
+      "target": "armare",
+      "lesson": "Général",
+      "index": 885
+    },
+    {
+      "id": "card_wrytu9",
+      "fr": "to celebrate",
+      "target": "celebrare",
+      "lesson": "Général",
+      "index": 886
+    },
+    {
+      "id": "card_s5wd7t",
+      "fr": "to describe",
+      "target": "descruire",
+      "lesson": "Général",
+      "index": 887
+    },
+    {
+      "id": "card_a37mzi",
+      "fr": "to resist",
+      "target": "resistere",
+      "lesson": "Général",
+      "index": 888
+    },
+    {
+      "id": "card_5ycfgh",
+      "fr": "to burn",
+      "target": "bruciare",
+      "lesson": "Général",
+      "index": 889
+    },
+    {
+      "id": "card_8fglyl",
+      "fr": "to hit",
+      "target": "colpire",
+      "lesson": "Général",
+      "index": 890
+    },
+    {
+      "id": "card_i4oids",
+      "fr": "to extend",
+      "target": "estendere",
+      "lesson": "Général",
+      "index": 891
+    },
+    {
+      "id": "card_6mbp1b",
+      "fr": "to face up to",
+      "target": "affrontare",
+      "lesson": "Général",
+      "index": 892
+    },
+    {
+      "id": "card_3q97lv",
+      "fr": "to push forward",
+      "target": "avanzare",
+      "lesson": "Général",
+      "index": 893
+    },
+    {
+      "id": "card_7oobnm",
+      "fr": "to compose",
+      "target": "comporre",
+      "lesson": "Général",
+      "index": 894
+    },
+    {
+      "id": "card_udeytq",
+      "fr": "to exclude",
+      "target": "escludere",
+      "lesson": "Général",
+      "index": 895
+    },
+    {
+      "id": "card_fqk4zi",
+      "fr": "to insist",
+      "target": "insistere",
+      "lesson": "Général",
+      "index": 896
+    },
+    {
+      "id": "card_966w48",
+      "fr": "the (1)",
+      "target": "il",
+      "lesson": "Général",
+      "index": 897
+    },
+    {
+      "id": "card_966w3b",
+      "fr": "the (2)",
+      "target": "lo",
+      "lesson": "Général",
+      "index": 898
+    },
+    {
+      "id": "card_3hofu",
+      "fr": "of",
+      "target": "di",
+      "lesson": "Général",
+      "index": 899
+    },
+    {
+      "id": "card_3hoap",
+      "fr": "is",
+      "target": "e",
+      "lesson": "Général",
+      "index": 900
+    },
+    {
+      "id": "card_3hoko",
+      "fr": "to",
+      "target": "a",
+      "lesson": "Général",
+      "index": 901
+    },
+    {
+      "id": "card_3t3a",
+      "fr": "a",
+      "target": "un",
+      "lesson": "Général",
+      "index": 902
+    },
+    {
+      "id": "card_3hoak",
+      "fr": "in",
+      "target": "in",
+      "lesson": "Général",
+      "index": 903
+    },
+    {
+      "id": "card_yks7va",
+      "fr": "that",
+      "target": "che",
+      "lesson": "Général",
+      "index": 904
+    },
+    {
+      "id": "card_377dzq",
+      "fr": "not",
+      "target": "non",
+      "lesson": "Général",
+      "index": 905
+    },
+    {
+      "id": "card_377mza",
+      "fr": "yes",
+      "target": "si",
+      "lesson": "Général",
+      "index": 906
+    },
+    {
+      "id": "card_ykhoex",
+      "fr": "from",
+      "target": "da",
+      "lesson": "Général",
+      "index": 907
+    },
+    {
+      "id": "card_37779o",
+      "fr": "for",
+      "target": "per",
+      "lesson": "Général",
+      "index": 908
+    },
+    {
+      "id": "card_ykukdd",
+      "fr": "with",
+      "target": "con",
+      "lesson": "Général",
+      "index": 909
+    },
+    {
+      "id": "card_377428",
+      "fr": "but",
+      "target": "ma",
+      "lesson": "Général",
+      "index": 910
+    },
+    {
+      "id": "card_3778yb",
+      "fr": "how",
+      "target": "come",
+      "lesson": "Général",
+      "index": 911
+    },
+    {
+      "id": "card_3holm",
+      "fr": "up",
+      "target": "SU",
+      "lesson": "Général",
+      "index": 912
+    },
+    {
+      "id": "card_3hodz",
+      "fr": "me",
+      "target": "mi",
+      "lesson": "Général",
+      "index": 913
+    },
+    {
+      "id": "card_viv2ve",
+      "fr": "also (1)",
+      "target": "anche",
+      "lesson": "Général",
+      "index": 914
+    },
+    {
+      "id": "card_viv2uh",
+      "fr": "also (2)",
+      "target": "pure",
+      "lesson": "Général",
+      "index": 915
+    },
+    {
+      "id": "card_591ako",
+      "fr": "or (1)",
+      "target": "Ο",
+      "lesson": "Général",
+      "index": 916
+    },
+    {
+      "id": "card_591all",
+      "fr": "or (2)",
+      "target": "oppure",
+      "lesson": "Général",
+      "index": 917
+    },
+    {
+      "id": "card_ykrdvz",
+      "fr": "self",
+      "target": "se",
+      "lesson": "Général",
+      "index": 918
+    },
+    {
+      "id": "card_umak4d",
+      "fr": "because",
+      "target": "perché",
+      "lesson": "Général",
+      "index": 919
+    },
+    {
+      "id": "card_aalrsv",
+      "fr": "there (1)",
+      "target": "li",
+      "lesson": "Général",
+      "index": 920
+    },
+    {
+      "id": "card_aalrts",
+      "fr": "there (2)",
+      "target": "là",
+      "lesson": "Général",
+      "index": 921
+    },
+    {
+      "id": "card_3holp",
+      "fr": "US",
+      "target": "ci",
+      "lesson": "Général",
+      "index": 922
+    },
+    {
+      "id": "card_8yw622",
+      "fr": "neither (1)",
+      "target": "ne",
+      "lesson": "Général",
+      "index": 923
+    },
+    {
+      "id": "card_8yw615",
+      "fr": "neither (2)",
+      "target": "né",
+      "lesson": "Général",
+      "index": 924
+    },
+    {
+      "id": "card_8yw608",
+      "fr": "neither (3)",
+      "target": "neppure",
+      "lesson": "Général",
+      "index": 925
+    },
+    {
+      "id": "card_8yw5zb",
+      "fr": "neither (4)",
+      "target": "neanche",
+      "lesson": "Général",
+      "index": 926
+    },
+    {
+      "id": "card_377i05",
+      "fr": "she",
+      "target": "lei",
+      "lesson": "Général",
+      "index": 927
+    },
+    {
+      "id": "card_377mzb",
+      "fr": "yet",
+      "target": "ancora",
+      "lesson": "Général",
+      "index": 928
+    },
+    {
+      "id": "card_vfmlno",
+      "fr": "you (1)",
+      "target": "tu",
+      "lesson": "Général",
+      "index": 929
+    },
+    {
+      "id": "card_vfmlol",
+      "fr": "you (2)",
+      "target": "vi",
+      "lesson": "Général",
+      "index": 930
+    },
+    {
+      "id": "card_vfmlpi",
+      "fr": "you (3)",
+      "target": "voi",
+      "lesson": "Général",
+      "index": 931
+    },
+    {
+      "id": "card_gr7bo",
+      "fr": "he (1)",
+      "target": "lui",
+      "lesson": "Général",
+      "index": 932
+    },
+    {
+      "id": "card_gr7cl",
+      "fr": "he (2)",
+      "target": "egli",
+      "lesson": "Général",
+      "index": 933
+    },
+    {
+      "id": "card_f53ryf",
+      "fr": "without",
+      "target": "senza",
+      "lesson": "Général",
+      "index": 934
+    },
+    {
+      "id": "card_ykugt5",
+      "fr": "well",
+      "target": "bene",
+      "lesson": "Général",
+      "index": 935
+    },
+    {
+      "id": "card_377ldf",
+      "fr": "who",
+      "target": "chi",
+      "lesson": "Général",
+      "index": 936
+    },
+    {
+      "id": "card_e35g6f",
+      "fr": "already",
+      "target": "già",
+      "lesson": "Général",
+      "index": 937
+    },
+    {
+      "id": "card_46ma3b",
+      "fr": "after",
+      "target": "dopo",
+      "lesson": "Général",
+      "index": 938
+    },
+    {
+      "id": "card_3hon5",
+      "fr": "we",
+      "target": "noi",
+      "lesson": "Général",
+      "index": 939
+    },
+    {
+      "id": "card_4m6on4",
+      "fr": "where",
+      "target": "dove",
+      "lesson": "Général",
+      "index": 940
+    },
+    {
+      "id": "card_74o8wl",
+      "fr": "here (1)",
+      "target": "qui",
+      "lesson": "Général",
+      "index": 941
+    },
+    {
+      "id": "card_74o8vo",
+      "fr": "here (2)",
+      "target": "ecco",
+      "lesson": "Général",
+      "index": 942
+    },
+    {
+      "id": "card_74o8ur",
+      "fr": "here (3)",
+      "target": "qua",
+      "lesson": "Général",
+      "index": 943
+    },
+    {
+      "id": "card_3hof6",
+      "fr": "no",
+      "target": "no",
+      "lesson": "Général",
+      "index": 944
+    },
+    {
+      "id": "card_h0yy96",
+      "fr": "then (1)",
+      "target": "allora",
+      "lesson": "Général",
+      "index": 945
+    },
+    {
+      "id": "card_h0yy89",
+      "fr": "then (2)",
+      "target": "quindi",
+      "lesson": "Général",
+      "index": 946
+    },
+    {
+      "id": "card_z0w7g1",
+      "fr": "between (1)",
+      "target": "tra",
+      "lesson": "Général",
+      "index": 947
+    },
+    {
+      "id": "card_z0w7gy",
+      "fr": "between (2)",
+      "target": "fra",
+      "lesson": "Général",
+      "index": 948
+    },
+    {
+      "id": "card_kq00e2",
+      "fr": "before (1)",
+      "target": "prima",
+      "lesson": "Général",
+      "index": 949
+    },
+    {
+      "id": "card_kq00ez",
+      "fr": "before (2)",
+      "target": "dinanzi",
+      "lesson": "Général",
+      "index": 950
+    },
+    {
+      "id": "card_p7ujpk",
+      "fr": "perhaps",
+      "target": "forse",
+      "lesson": "Général",
+      "index": 951
+    },
+    {
+      "id": "card_377ndv",
+      "fr": "yup",
+      "target": "si",
+      "lesson": "Général",
+      "index": 952
+    },
+    {
+      "id": "card_4kwfqb",
+      "fr": "under",
+      "target": "sotto",
+      "lesson": "Général",
+      "index": 953
+    },
+    {
+      "id": "card_yks8ze",
+      "fr": "till",
+      "target": "fino",
+      "lesson": "Général",
+      "index": 954
+    },
+    {
+      "id": "card_4k7sau",
+      "fr": "today",
+      "target": "oggi",
+      "lesson": "Général",
+      "index": 955
+    },
+    {
+      "id": "card_3vpi4r",
+      "fr": "almost",
+      "target": "quasi",
+      "lesson": "Général",
+      "index": 956
+    },
+    {
+      "id": "card_4m6rum",
+      "fr": "while",
+      "target": "mentre",
+      "lesson": "Général",
+      "index": 957
+    },
+    {
+      "id": "card_9krgst",
+      "fr": "versus",
+      "target": "contro",
+      "lesson": "Général",
+      "index": 958
+    },
+    {
+      "id": "card_qtawur",
+      "fr": "instead",
+      "target": "invece",
+      "lesson": "Général",
+      "index": 959
+    },
+    {
+      "id": "card_1enabo",
+      "fr": "it (1)",
+      "target": "esso",
+      "lesson": "Général",
+      "index": 960
+    },
+    {
+      "id": "card_1enacl",
+      "fr": "it (2)",
+      "target": "ciò",
+      "lesson": "Général",
+      "index": 961
+    },
+    {
+      "id": "card_1enadi",
+      "fr": "it (3)",
+      "target": "essa",
+      "lesson": "Général",
+      "index": 962
+    },
+    {
+      "id": "card_pdhxmh",
+      "fr": "however (1)",
+      "target": "per",
+      "lesson": "Général",
+      "index": 963
+    },
+    {
+      "id": "card_pdhxlk",
+      "fr": "however (2)",
+      "target": "tuttavia",
+      "lesson": "Général",
+      "index": 964
+    },
+    {
+      "id": "card_pdhxkn",
+      "fr": "however (3)",
+      "target": "comunque",
+      "lesson": "Général",
+      "index": 965
+    },
+    {
+      "id": "card_ec963d",
+      "fr": "immediately",
+      "target": "subito",
+      "lesson": "Général",
+      "index": 966
+    },
+    {
+      "id": "card_48xvmf",
+      "fr": "towards",
+      "target": "verso",
+      "lesson": "Général",
+      "index": 967
+    },
+    {
+      "id": "card_yut9r6",
+      "fr": "outside",
+      "target": "fuori",
+      "lesson": "Général",
+      "index": 968
+    },
+    {
+      "id": "card_yklzz0",
+      "fr": "less",
+      "target": "meno",
+      "lesson": "Général",
+      "index": 969
+    },
+    {
+      "id": "card_oafkla",
+      "fr": "nothing (1)",
+      "target": "niente",
+      "lesson": "Général",
+      "index": 970
+    },
+    {
+      "id": "card_oafkm7",
+      "fr": "nothing (2)",
+      "target": "nulla",
+      "lesson": "Général",
+      "index": 971
+    },
+    {
+      "id": "card_9780cu",
+      "fr": "that is",
+      "target": "cioè",
+      "lesson": "Général",
+      "index": 972
+    },
+    {
+      "id": "card_3ho9a",
+      "fr": "ha",
+      "target": "ah",
+      "lesson": "Général",
+      "index": 973
+    },
+    {
+      "id": "card_3hofw",
+      "fr": "oh",
+      "target": "oh",
+      "lesson": "Général",
+      "index": 974
+    },
+    {
+      "id": "card_fvoo7g",
+      "fr": "as soon as",
+      "target": "appena",
+      "lesson": "Général",
+      "index": 975
+    },
+    {
+      "id": "card_8erhsp",
+      "fr": "together",
+      "target": "insieme",
+      "lesson": "Général",
+      "index": 976
+    },
+    {
+      "id": "card_g4vvcb",
+      "fr": "therefore (1)",
+      "target": "dunque",
+      "lesson": "Général",
+      "index": 977
+    },
+    {
+      "id": "card_g4vvd8",
+      "fr": "therefore (2)",
+      "target": "perciò",
+      "lesson": "Général",
+      "index": 978
+    },
+    {
+      "id": "card_1c89fl",
+      "fr": "inside",
+      "target": "dentro",
+      "lesson": "Général",
+      "index": 979
+    },
+    {
+      "id": "card_1rclwy",
+      "fr": "during",
+      "target": "durante",
+      "lesson": "Général",
+      "index": 980
+    },
+    {
+      "id": "card_ekr983",
+      "fr": "at least",
+      "target": "almeno",
+      "lesson": "Général",
+      "index": 981
+    },
+    {
+      "id": "card_u6aqnh",
+      "fr": "rather (1)",
+      "target": "anzi",
+      "lesson": "Général",
+      "index": 982
+    },
+    {
+      "id": "card_u6aqoe",
+      "fr": "rather (2)",
+      "target": "piuttosto",
+      "lesson": "Général",
+      "index": 983
+    },
+    {
+      "id": "card_ykop35",
+      "fr": "over",
+      "target": "oltre",
+      "lesson": "Général",
+      "index": 984
+    },
+    {
+      "id": "card_3rfbea",
+      "fr": "around",
+      "target": "intorno",
+      "lesson": "Général",
+      "index": 985
+    },
+    {
+      "id": "card_46j3ea",
+      "fr": "above",
+      "target": "sopra",
+      "lesson": "Général",
+      "index": 986
+    },
+    {
+      "id": "card_3dgmc1",
+      "fr": "behind",
+      "target": "dietro",
+      "lesson": "Général",
+      "index": 987
+    },
+    {
+      "id": "card_qeek56",
+      "fr": "in front of",
+      "target": "davanti",
+      "lesson": "Général",
+      "index": 988
+    },
+    {
+      "id": "card_1bwm5q",
+      "fr": "indeed",
+      "target": "infatti",
+      "lesson": "Général",
+      "index": 989
+    },
+    {
+      "id": "card_ve1377",
+      "fr": "something",
+      "target": "qualcosa",
+      "lesson": "Général",
+      "index": 990
+    },
+    {
+      "id": "card_4gi4yp",
+      "fr": "often",
+      "target": "spesso",
+      "lesson": "Général",
+      "index": 991
+    },
+    {
+      "id": "card_q4jssd",
+      "fr": "agreement",
+      "target": "accordo",
+      "lesson": "Général",
+      "index": 992
+    },
+    {
+      "id": "card_8iqps1",
+      "fr": "yesterday",
+      "target": "ieri",
+      "lesson": "Général",
+      "index": 993
+    },
+    {
+      "id": "card_1ihufk",
+      "fr": "really (1)",
+      "target": "davvero",
+      "lesson": "Général",
+      "index": 994
+    },
+    {
+      "id": "card_1ihuen",
+      "fr": "really (2)",
+      "target": "veramente",
+      "lesson": "Général",
+      "index": 995
+    },
+    {
+      "id": "card_pstoo5",
+      "fr": "someone",
+      "target": "qualcuno",
+      "lesson": "Général",
+      "index": 996
+    },
+    {
+      "id": "card_cdti56",
+      "fr": "come on",
+      "target": "avanti",
+      "lesson": "Général",
+      "index": 997
+    },
+    {
+      "id": "card_ykrmdg",
+      "fr": "soon",
+      "target": "presto",
+      "lesson": "Général",
+      "index": 998
+    },
+    {
+      "id": "card_4bxrle",
+      "fr": "tomorrow",
+      "target": "domani",
+      "lesson": "Général",
+      "index": 999
+    },
+    {
+      "id": "card_1kbz6",
+      "fr": "about (1)",
+      "target": "circa",
+      "lesson": "Général",
+      "index": 1000
+    },
+    {
+      "id": "card_1kc03",
+      "fr": "about (2)",
+      "target": "attorno",
+      "lesson": "Général",
+      "index": 1001
+    },
+    {
+      "id": "card_ykg2n1",
+      "fr": "down",
+      "target": "giù",
+      "lesson": "Général",
+      "index": 1002
+    },
+    {
+      "id": "card_3y567h",
+      "fr": "mostly",
+      "target": "soprattutto",
+      "lesson": "Général",
+      "index": 1003
+    },
+    {
+      "id": "card_vicco4",
+      "fr": "not even",
+      "target": "nemmeno",
+      "lesson": "Général",
+      "index": 1004
+    },
+    {
+      "id": "card_6ktinc",
+      "fr": "thank you",
+      "target": "grazie",
+      "lesson": "Général",
+      "index": 1005
+    },
+    {
+      "id": "card_ykktyj",
+      "fr": "just",
+      "target": "appunto",
+      "lesson": "Général",
+      "index": 1006
+    },
+    {
+      "id": "card_37793e",
+      "fr": "huh",
+      "target": "eh",
+      "lesson": "Général",
+      "index": 1007
+    },
+    {
+      "id": "card_yklwmj",
+      "fr": "late",
+      "target": "tardi",
+      "lesson": "Général",
+      "index": 1008
+    },
+    {
+      "id": "card_42kcah",
+      "fr": "in conclusion",
+      "target": "insomma",
+      "lesson": "Général",
+      "index": 1009
+    },
+    {
+      "id": "card_3ho3e",
+      "fr": "at",
+      "target": "presso",
+      "lesson": "Général",
+      "index": 1010
+    },
+    {
+      "id": "card_obcudp",
+      "fr": "in the meantime",
+      "target": "intanto",
+      "lesson": "Général",
+      "index": 1011
+    },
+    {
+      "id": "card_4f4qhq",
+      "fr": "tonight",
+      "target": "stasera",
+      "lesson": "Général",
+      "index": 1012
+    },
+    {
+      "id": "card_yknjk4",
+      "fr": "next",
+      "target": "accanto",
+      "lesson": "Général",
+      "index": 1013
+    },
+    {
+      "id": "card_treg66",
+      "fr": "but yet",
+      "target": "eppure",
+      "lesson": "Général",
+      "index": 1014
+    },
+    {
+      "id": "card_3776jl",
+      "fr": "etc",
+      "target": "eccetera",
+      "lesson": "Général",
+      "index": 1015
+    },
+    {
+      "id": "card_fr5q7e",
+      "fr": "finally (1)",
+      "target": "finalmente",
+      "lesson": "Général",
+      "index": 1016
+    },
+    {
+      "id": "card_fr5q6h",
+      "fr": "finally (2)",
+      "target": "infine",
+      "lesson": "Général",
+      "index": 1017
+    },
+    {
+      "id": "card_3ho3d",
+      "fr": "as",
+      "target": "poiché",
+      "lesson": "Général",
+      "index": 1018
+    },
+    {
+      "id": "card_191rkl",
+      "fr": "enough",
+      "target": "abbastanza",
+      "lesson": "Général",
+      "index": 1019
+    },
+    {
+      "id": "card_377i1b",
+      "fr": "sin",
+      "target": "peccato",
+      "lesson": "Général",
+      "index": 1020
+    },
+    {
+      "id": "card_yks7z3",
+      "fr": "they",
+      "target": "coloro",
+      "lesson": "Général",
+      "index": 1021
+    },
+    {
+      "id": "card_4ezkb7",
+      "fr": "maybe",
+      "target": "magari",
+      "lesson": "Général",
+      "index": 1022
+    },
+    {
+      "id": "card_xz8c4s",
+      "fr": "moreover",
+      "target": "inoltre",
+      "lesson": "Général",
+      "index": 1023
+    },
+    {
+      "id": "card_yke6wm",
+      "fr": "back",
+      "target": "indietro",
+      "lesson": "Général",
+      "index": 1024
+    },
+    {
+      "id": "card_3hog2",
+      "fr": "on",
+      "target": "addosso",
+      "lesson": "Général",
+      "index": 1025
+    },
+    {
+      "id": "card_908v3p",
+      "fr": "even (1)",
+      "target": "addirittura",
+      "lesson": "Général",
+      "index": 1026
+    },
+    {
+      "id": "card_908v4m",
+      "fr": "even (2)",
+      "target": "perfino",
+      "lesson": "Général",
+      "index": 1027
+    },
+    {
+      "id": "card_8ephjx",
+      "fr": "as long as",
+      "target": "finché",
+      "lesson": "Général",
+      "index": 1028
+    },
+    {
+      "id": "card_3rpsq5",
+      "fr": "at all",
+      "target": "affatto",
+      "lesson": "Général",
+      "index": 1029
+    },
+    {
+      "id": "card_2zyvyv",
+      "fr": "this morning",
+      "target": "stamattina",
+      "lesson": "Général",
+      "index": 1030
+    },
+    {
+      "id": "card_ux7ybh",
+      "fr": "completely",
+      "target": "completamente",
+      "lesson": "Général",
+      "index": 1031
+    },
+    {
+      "id": "card_bnjfs0",
+      "fr": "probably",
+      "target": "probabilmente",
+      "lesson": "Général",
+      "index": 1032
+    },
+    {
+      "id": "card_g6sufv",
+      "fr": "who knows",
+      "target": "chissà",
+      "lesson": "Général",
+      "index": 1033
+    },
+    {
+      "id": "card_eqwolk",
+      "fr": "each one",
+      "target": "ognuno",
+      "lesson": "Général",
+      "index": 1034
+    },
+    {
+      "id": "card_aax80o",
+      "fr": "within",
+      "target": "entro",
+      "lesson": "Général",
+      "index": 1035
+    }
+  ],
+  "createdAt": "2026-06-30T11:52:24.344Z"
+}

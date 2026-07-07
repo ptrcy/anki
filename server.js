@@ -47,27 +47,26 @@ app.get('/audio/:filename', async (req, res, next) => {
   // If not, try to find the card in the decks to get the text
   console.log(`Generating on-demand audio for: ${filename}`);
   try {
-    // Filename format: "${hash(fr)}_${hash(target)}.mp3" (e.g. "card_abc_xyz.mp3")
+    // Filename format: "${hash(fr)}_${hash(target)}_${targetLang}.mp3" (e.g. "card_abc_xyz_it.mp3")
     const nameWithoutExt = filename.replace('.mp3', '');
-    const match = nameWithoutExt.match(/^(card_[a-z0-9]+)_([a-z0-9]+)$/);
+    const match = nameWithoutExt.match(/^(card_[a-z0-9]+)_([a-z0-9]+)_([a-z]{2})$/);
     if (!match) {
       return res.status(404).send('Invalid audio filename format');
     }
-    const [, cardId, targetHash] = match;
+    const [, cardId, targetHash, targetLang] = match;
 
     const deckFiles = await fs.readdir(DECKS_DIR);
     let cardText = null;
-    let targetLang = 'it';
 
-    // Find the card whose fr-hash matches cardId and target-hash matches targetHash.
+    // Find the card whose fr-hash matches cardId, target-hash matches targetHash, and deck language matches targetLang.
     // This uniquely identifies the exact target text and its language.
     for (const file of deckFiles) {
       if (!file.endsWith('.json')) continue;
       const deck = JSON.parse(await fs.readFile(path.join(DECKS_DIR, file), 'utf8'));
+      if (deck.targetLang.toLowerCase() !== targetLang.toLowerCase()) continue;
       const card = deck.cards.find(c => c.id === cardId && hashText(c.target) === targetHash);
       if (card) {
         cardText = card.target;
-        targetLang = deck.targetLang;
         break;
       }
     }
@@ -249,6 +248,235 @@ app.delete('/api/decks/:id', async (req, res) => {
     }
     console.error(`Failed to delete deck ${deckId}:`, err);
     res.status(500).json({ error: 'Failed to delete deck file' });
+  }
+});// 5b. Enrich deck (LLM Bulk Generator)
+const { GoogleGenAI } = require('@google/genai');
+
+const LANG_NAMES = {
+  it: 'italien',
+  en: 'anglais',
+  es: 'espagnol',
+  de: 'allemand',
+  fr: 'français',
+  pt: 'portugais',
+  ja: 'japonais',
+  ru: 'russe'
+};
+
+// Concurrency-limited parallel execution helper
+async function promiseAllLimit(limit, items, iteratorFn) {
+  const results = [];
+  const executing = [];
+  for (const item of items) {
+    const p = Promise.resolve().then(() => iteratorFn(item));
+    results.push(p);
+    if (limit <= items.length) {
+      const e = p.then(() => executing.splice(executing.indexOf(e), 1));
+      executing.push(e);
+      if (executing.length >= limit) {
+        await Promise.race(executing);
+      }
+    }
+  }
+  return Promise.all(results);
+}
+
+app.post('/api/decks/:id/enrich', async (req, res) => {
+  const deckId = req.params.id;
+  if (!/^[a-z0-9-]+$/.test(deckId)) {
+    return res.status(400).json({ error: 'Invalid deck ID' });
+  }
+  const { translationLang, includeGrammar, includeCloze, apiKey } = req.body;
+
+  // Initialize unified SDK client.
+  // If user provided a key, use Gemini Developer API (AI Studio).
+  // Otherwise, use Vertex AI with VM's default credentials (requires no key).
+  let aiClient;
+  try {
+    if (apiKey) {
+      aiClient = new GoogleGenAI({ apiKey: apiKey });
+    } else {
+      aiClient = new GoogleGenAI({
+        vertexai: true,
+        project: 'gen-lang-client-0670059811',
+        location: 'us-central1'
+      });
+    }
+  } catch (err) {
+    return res.status(400).json({ error: `Failed to initialize Gemini Client: ${err.message}` });
+  }
+
+  const filePath = path.join(DECKS_DIR, `${deckId}.json`);
+  if (!existsSync(filePath)) {
+    return res.status(404).json({ error: 'Deck not found' });
+  }
+
+  try {
+    const deckContent = await fs.readFile(filePath, 'utf8');
+    const deck = JSON.parse(deckContent);
+    const cards = deck.cards || [];
+
+    if (cards.length === 0) {
+      return res.json({ success: true, message: 'Deck has no cards to enrich.' });
+    }
+
+    const targetLangName = LANG_NAMES[deck.targetLang] || deck.targetLang || 'italien';
+    const translationLangName = LANG_NAMES[translationLang] || translationLang || 'français';
+
+    console.log(`Starting bulk enrichment for deck [${deckId}] (${cards.length} cards) to ${translationLangName} using Gemini 2.5 Flash...`);
+
+    // We will batch cards to avoid token limits and speed up calls.
+    const batchSize = 50;
+    const idChanges = {}; // oldId -> newId
+
+    // Prepare batches
+    const batches = [];
+    for (let i = 0; i < cards.length; i += batchSize) {
+      batches.push({
+        batchIndex: Math.floor(i / batchSize) + 1,
+        cards: cards.slice(i, i + batchSize)
+      });
+    }
+
+    const totalBatches = batches.length;
+    console.log(`Starting parallel enrichment with concurrency limit of 2 for ${totalBatches} batches...`);
+
+    // Run parallel batches with a concurrency limit of 2
+    const results = await promiseAllLimit(2, batches, async (batchObj) => {
+      const batch = batchObj.cards;
+      const batchInputs = batch.map(c => ({
+        index: c.index,
+        originalPrompt: c.fr,
+        target: c.target
+      }));
+
+      const grammarInstruction = includeGrammar
+        ? `Provide the grammatical classification of the target word/phrase in ${translationLangName} (e.g. "nom féminin", "nom masculin", "verbe", "adjectif", "adverbe", "expression").`
+        : 'Return null for this field.';
+
+      const clozeInstruction = includeCloze
+        ? `Provide a natural example sentence in the target language (${deck.targetLang}) containing the target word/phrase, where the target word/phrase itself is replaced with "----" (representing a hidden word). The sentence must be simple and illustrative.`
+        : 'Return null for this field.';
+
+      const prompt = `You are an expert language teacher.
+Enrich the following list of vocabulary cards. The target language is ${targetLangName} (which is the correct expression/sentence to learn) and the translation language is ${translationLangName} (which will be shown as the prompt to the user).
+
+Input cards:
+${JSON.stringify(batchInputs)}
+
+For each input card, return an object containing:
+1. "translation": A correct, natural, standard translation of the target text into ${translationLangName}. Improve or replace the originalPrompt translation (which might be in English or poor quality).
+2. "grammar": ${grammarInstruction}
+3. "cloze": ${clozeInstruction}
+
+Return ONLY a valid JSON array of objects matching this schema:
+[{ "index": number, "translation": string, "grammar": string|null, "cloze": string|null }]`;
+
+      let attempt = 0;
+      let batchResults = null;
+      while (attempt < 3 && !batchResults) {
+        try {
+          const response = await aiClient.models.generateContent({
+            model: 'gemini-2.5-flash',
+            contents: prompt,
+            config: {
+              responseMimeType: 'application/json'
+            }
+          });
+          batchResults = JSON.parse(response.text);
+        } catch (err) {
+          attempt++;
+          console.warn(`Attempt ${attempt} failed for batch ${batchObj.batchIndex}: ${err.message}`);
+          if (attempt >= 3) throw err;
+          // Exponential backoff to allow quotas to reset
+          await new Promise(r => setTimeout(r, 2000 * attempt));
+        }
+      }
+
+      return { batch, batchResults };
+    });
+
+    // Apply all batch results to the original cards in-place
+    results.forEach(({ batch, batchResults }) => {
+      if (!batchResults) return;
+      batchResults.forEach(resItem => {
+        const card = batch.find(c => c.index === resItem.index);
+        if (card) {
+          const oldId = card.id;
+
+          // Replace/improve French translation
+          card.fr = resItem.translation.trim();
+          
+          // Generate new unique ID
+          card.id = 'card_' + hashText(card.fr);
+          idChanges[oldId] = card.id;
+
+          if (includeGrammar && resItem.grammar) {
+            card.grammatical = resItem.grammar.trim();
+          } else {
+            delete card.grammatical;
+          }
+
+          if (includeCloze && resItem.cloze) {
+            card.cloze = resItem.cloze.trim();
+          } else {
+            delete card.cloze;
+          }
+        }
+      });
+    });
+
+    // After updating all cards in deck, save it
+    await fs.writeFile(filePath, JSON.stringify(deck, null, 2), 'utf8');
+
+    // Update all sync progress files on server in-place
+    if (existsSync(SYNC_DIR)) {
+      const syncFiles = await fs.readdir(SYNC_DIR);
+      for (const file of syncFiles) {
+        if (!file.endsWith('.json')) continue;
+        const syncPath = path.join(SYNC_DIR, file);
+        try {
+          const syncData = JSON.parse(await fs.readFile(syncPath, 'utf8'));
+          if (syncData.decks && syncData.decks[deckId]) {
+            const deckSync = syncData.decks[deckId];
+            const oldProgress = deckSync.progress || {};
+            const oldExcluded = deckSync.excluded || [];
+            const newProgress = {};
+            const newExcluded = new Set();
+
+            Object.entries(oldProgress).forEach(([oldId, progVal]) => {
+              const newId = idChanges[oldId];
+              if (newId) {
+                newProgress[newId] = progVal;
+              } else {
+                newProgress[oldId] = progVal;
+              }
+            });
+
+            oldExcluded.forEach(oldId => {
+              const newId = idChanges[oldId];
+              if (newId) {
+                newExcluded.add(newId);
+              } else {
+                newExcluded.add(oldId);
+              }
+            });
+
+            deckSync.progress = newProgress;
+            deckSync.excluded = Array.from(newExcluded);
+            await fs.writeFile(syncPath, JSON.stringify(syncData, null, 2), 'utf8');
+          }
+        } catch (err) {
+          console.error(`Failed to update sync file ${file}:`, err);
+        }
+      }
+    }
+
+    res.json({ success: true, idChanges });
+
+  } catch (err) {
+    console.error(`Bulk enrichment failed for deck ${deckId}:`, err);
+    res.status(500).json({ error: `Bulk enrichment failed: ${err.message}` });
   }
 });
 

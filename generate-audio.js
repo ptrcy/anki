@@ -36,7 +36,7 @@ async function main() {
     const lang = deck.targetLang || 'it';
 
     for (const card of deck.cards) {
-      const filename = `${card.id}_${hashText(card.target)}.mp3`;
+      const filename = `${card.id}_${hashText(card.target)}_${lang.toLowerCase()}.mp3`;
       if (seen.has(filename)) continue;
       seen.add(filename);
       jobs.push({ filename, text: card.target, lang, deck: file.replace('.json', '') });

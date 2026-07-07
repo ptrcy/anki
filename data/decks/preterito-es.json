@@ -1,0 +1,1358 @@
+{
+  "name": "PRETERITO-ES",
+  "targetLang": "es",
+  "cards": [
+    {
+      "id": "card_p59562",
+      "fr": "French Translation",
+      "target": "Spanish Conjugation",
+      "lesson": "Général",
+      "index": 1
+    },
+    {
+      "id": "card_atj7a",
+      "fr": "J'ai été / Je suis allé",
+      "target": "yo fui",
+      "lesson": "Général",
+      "index": 2
+    },
+    {
+      "id": "card_fdgnty",
+      "fr": "Tu as été / Tu es allé",
+      "target": "tú fuiste",
+      "lesson": "Général",
+      "index": 3
+    },
+    {
+      "id": "card_wcjqr1",
+      "fr": "Il a été / Il est allé",
+      "target": "él fue",
+      "lesson": "Général",
+      "index": 4
+    },
+    {
+      "id": "card_lnbgr0",
+      "fr": "Nous avons été / Nous sommes allés",
+      "target": "nosotros fuimos",
+      "lesson": "Général",
+      "index": 5
+    },
+    {
+      "id": "card_g3qbcl",
+      "fr": "vous avez été / vous êtes allés",
+      "target": "vosotros fuisteis",
+      "lesson": "Général",
+      "index": 6
+    },
+    {
+      "id": "card_fsi6q5",
+      "fr": "Elles ont été / Elles sont allées",
+      "target": "ellas fueron",
+      "lesson": "Général",
+      "index": 7
+    },
+    {
+      "id": "card_3nb8ey",
+      "fr": "J'ai été",
+      "target": "yo estuve",
+      "lesson": "Général",
+      "index": 8
+    },
+    {
+      "id": "card_har5t4",
+      "fr": "Tu as été",
+      "target": "tú estuviste",
+      "lesson": "Général",
+      "index": 9
+    },
+    {
+      "id": "card_lrffu6",
+      "fr": "Elle a été",
+      "target": "ella estuvo",
+      "lesson": "Général",
+      "index": 10
+    },
+    {
+      "id": "card_b5igev",
+      "fr": "Nous avons été",
+      "target": "nosotros estuvimos",
+      "lesson": "Général",
+      "index": 11
+    },
+    {
+      "id": "card_y8uv6a",
+      "fr": "vous avez été",
+      "target": "vosotros estuvisteis",
+      "lesson": "Général",
+      "index": 12
+    },
+    {
+      "id": "card_sqsxvg",
+      "fr": "Ils ont été",
+      "target": "ellos estuvieron",
+      "lesson": "Général",
+      "index": 13
+    },
+    {
+      "id": "card_j9euqi",
+      "fr": "J'ai eu",
+      "target": "yo tuve",
+      "lesson": "Général",
+      "index": 14
+    },
+    {
+      "id": "card_2ocuos",
+      "fr": "Tu as eu",
+      "target": "tú tuviste",
+      "lesson": "Général",
+      "index": 15
+    },
+    {
+      "id": "card_wwi3h8",
+      "fr": "Vous avez eu (1)",
+      "target": "usted tuvo",
+      "lesson": "Général",
+      "index": 16
+    },
+    {
+      "id": "card_wwi3gb",
+      "fr": "vous avez eu (2)",
+      "target": "vosotros tuvisteis",
+      "lesson": "Général",
+      "index": 17
+    },
+    {
+      "id": "card_8y48a3",
+      "fr": "Nous avons eu",
+      "target": "nosotros tuvimos",
+      "lesson": "Général",
+      "index": 18
+    },
+    {
+      "id": "card_qy3ds5",
+      "fr": "Elles ont eu",
+      "target": "ellas tuvieron",
+      "lesson": "Général",
+      "index": 19
+    },
+    {
+      "id": "card_lm3ylg",
+      "fr": "J'ai fait",
+      "target": "yo hice",
+      "lesson": "Général",
+      "index": 20
+    },
+    {
+      "id": "card_2j6g86",
+      "fr": "Tu as fait",
+      "target": "tú hiciste",
+      "lesson": "Général",
+      "index": 21
+    },
+    {
+      "id": "card_6e5mdd",
+      "fr": "Il a fait",
+      "target": "él hizo",
+      "lesson": "Général",
+      "index": 22
+    },
+    {
+      "id": "card_ctjc39",
+      "fr": "Nous avons fait",
+      "target": "nosotros hicimos",
+      "lesson": "Général",
+      "index": 23
+    },
+    {
+      "id": "card_amw6um",
+      "fr": "vous avez fait (1)",
+      "target": "vosotros hicisteis",
+      "lesson": "Général",
+      "index": 24
+    },
+    {
+      "id": "card_amw6vj",
+      "fr": "Vous avez fait (2)",
+      "target": "ustedes hicieron",
+      "lesson": "Général",
+      "index": 25
+    },
+    {
+      "id": "card_3necjj",
+      "fr": "J'ai dit",
+      "target": "yo dije",
+      "lesson": "Général",
+      "index": 26
+    },
+    {
+      "id": "card_hao1oj",
+      "fr": "Tu as dit",
+      "target": "tú dijiste",
+      "lesson": "Général",
+      "index": 27
+    },
+    {
+      "id": "card_lrcbpl",
+      "fr": "Elle a dit",
+      "target": "ella dijo",
+      "lesson": "Général",
+      "index": 28
+    },
+    {
+      "id": "card_b5fcaa",
+      "fr": "Nous avons dit",
+      "target": "nosotros dijimos",
+      "lesson": "Général",
+      "index": 29
+    },
+    {
+      "id": "card_y8xzav",
+      "fr": "vous avez dit",
+      "target": "vosotros dijisteis",
+      "lesson": "Général",
+      "index": 30
+    },
+    {
+      "id": "card_sqw201",
+      "fr": "Ils ont dit",
+      "target": "ellos dijeron",
+      "lesson": "Général",
+      "index": 31
+    },
+    {
+      "id": "card_j9ev0l",
+      "fr": "J'ai pu",
+      "target": "yo pude",
+      "lesson": "Général",
+      "index": 32
+    },
+    {
+      "id": "card_2ocuyv",
+      "fr": "Tu as pu",
+      "target": "tú pudiste",
+      "lesson": "Général",
+      "index": 33
+    },
+    {
+      "id": "card_tqyhls",
+      "fr": "Il a pu",
+      "target": "él pudo",
+      "lesson": "Général",
+      "index": 34
+    },
+    {
+      "id": "card_8y48k6",
+      "fr": "Nous avons pu",
+      "target": "nosotros pudimos",
+      "lesson": "Général",
+      "index": 35
+    },
+    {
+      "id": "card_ker7ub",
+      "fr": "vous avez pu",
+      "target": "vosotros pudisteis",
+      "lesson": "Général",
+      "index": 36
+    },
+    {
+      "id": "card_qy3e28",
+      "fr": "Elles ont pu",
+      "target": "ellas pudieron",
+      "lesson": "Général",
+      "index": 37
+    },
+    {
+      "id": "card_3ne4zb",
+      "fr": "J'ai mis",
+      "target": "yo puse",
+      "lesson": "Général",
+      "index": 38
+    },
+    {
+      "id": "card_hao98r",
+      "fr": "Tu as mis",
+      "target": "tú pusiste",
+      "lesson": "Général",
+      "index": 39
+    },
+    {
+      "id": "card_2bybo3",
+      "fr": "Vous avez mis (1)",
+      "target": "usted puso",
+      "lesson": "Général",
+      "index": 40
+    },
+    {
+      "id": "card_2bybp0",
+      "fr": "vous avez mis (2)",
+      "target": "vosotros pusisteis",
+      "lesson": "Général",
+      "index": 41
+    },
+    {
+      "id": "card_b5fjui",
+      "fr": "Nous avons mis",
+      "target": "nosotros pusimos",
+      "lesson": "Général",
+      "index": 42
+    },
+    {
+      "id": "card_sqvuft",
+      "fr": "Ils ont mis",
+      "target": "ellos pusieron",
+      "lesson": "Général",
+      "index": 43
+    },
+    {
+      "id": "card_3a3x2z",
+      "fr": "J'ai voulu",
+      "target": "yo quise",
+      "lesson": "Général",
+      "index": 44
+    },
+    {
+      "id": "card_cvekot",
+      "fr": "Tu as voulu",
+      "target": "tú quisiste",
+      "lesson": "Général",
+      "index": 45
+    },
+    {
+      "id": "card_ruxtod",
+      "fr": "Elle a voulu",
+      "target": "ella quiso",
+      "lesson": "Général",
+      "index": 46
+    },
+    {
+      "id": "card_2schp0",
+      "fr": "Nous avons voulu",
+      "target": "nosotros quisimos",
+      "lesson": "Général",
+      "index": 47
+    },
+    {
+      "id": "card_l8znnf",
+      "fr": "vous avez voulu (1)",
+      "target": "vosotros quisisteis",
+      "lesson": "Général",
+      "index": 48
+    },
+    {
+      "id": "card_l8znmi",
+      "fr": "Vous avez voulu (2)",
+      "target": "ustedes quisieron",
+      "lesson": "Général",
+      "index": 49
+    },
+    {
+      "id": "card_j9ev3c",
+      "fr": "J'ai su",
+      "target": "yo supe",
+      "lesson": "Général",
+      "index": 50
+    },
+    {
+      "id": "card_2ocv1m",
+      "fr": "Tu as su",
+      "target": "tú supiste",
+      "lesson": "Général",
+      "index": 51
+    },
+    {
+      "id": "card_tqyhj1",
+      "fr": "Il a su",
+      "target": "él supo",
+      "lesson": "Général",
+      "index": 52
+    },
+    {
+      "id": "card_8y48mx",
+      "fr": "Nous avons su",
+      "target": "nosotros supimos",
+      "lesson": "Général",
+      "index": 53
+    },
+    {
+      "id": "card_ker7rk",
+      "fr": "vous avez su",
+      "target": "vosotros supisteis",
+      "lesson": "Général",
+      "index": 54
+    },
+    {
+      "id": "card_qy3e4z",
+      "fr": "Elles ont su",
+      "target": "ellas supieron",
+      "lesson": "Général",
+      "index": 55
+    },
+    {
+      "id": "card_ne0wq2",
+      "fr": "Je suis venu",
+      "target": "yo vine",
+      "lesson": "Général",
+      "index": 56
+    },
+    {
+      "id": "card_gy1dno",
+      "fr": "Tu es venu",
+      "target": "tú viniste",
+      "lesson": "Général",
+      "index": 57
+    },
+    {
+      "id": "card_1ra5be",
+      "fr": "Elle est venue",
+      "target": "ella vino",
+      "lesson": "Général",
+      "index": 58
+    },
+    {
+      "id": "card_j3ycsv",
+      "fr": "Nous sommes venus",
+      "target": "nosotros vinimos",
+      "lesson": "Général",
+      "index": 59
+    },
+    {
+      "id": "card_5ith6h",
+      "fr": "vous êtes venus",
+      "target": "vosotros vinisteis",
+      "lesson": "Général",
+      "index": 60
+    },
+    {
+      "id": "card_wnb71a",
+      "fr": "Ils sont venus",
+      "target": "ellos vinieron",
+      "lesson": "Général",
+      "index": 61
+    },
+    {
+      "id": "card_jm2rl",
+      "fr": "J'ai apporté",
+      "target": "yo traje",
+      "lesson": "Général",
+      "index": 62
+    },
+    {
+      "id": "card_345ybl",
+      "fr": "Tu as apporté",
+      "target": "tú trajiste",
+      "lesson": "Général",
+      "index": 63
+    },
+    {
+      "id": "card_5osapm",
+      "fr": "Il a apporté",
+      "target": "él trajo",
+      "lesson": "Général",
+      "index": 64
+    },
+    {
+      "id": "card_2yjz80",
+      "fr": "Nous avons apporté",
+      "target": "nosotros trajimos",
+      "lesson": "Général",
+      "index": 65
+    },
+    {
+      "id": "card_yo8vpj",
+      "fr": "vous avez apporté",
+      "target": "vosotros trajisteis",
+      "lesson": "Général",
+      "index": 66
+    },
+    {
+      "id": "card_mj643a",
+      "fr": "Elles ont apporté",
+      "target": "ellas trajeron",
+      "lesson": "Général",
+      "index": 67
+    },
+    {
+      "id": "card_tjuwoa",
+      "fr": "J'ai conduit",
+      "target": "yo conduje",
+      "lesson": "Général",
+      "index": 68
+    },
+    {
+      "id": "card_pw2vl4",
+      "fr": "Tu as conduit",
+      "target": "tú condujiste",
+      "lesson": "Général",
+      "index": 69
+    },
+    {
+      "id": "card_uq8y5c",
+      "fr": "Vous avez conduit (1)",
+      "target": "usted condujo",
+      "lesson": "Général",
+      "index": 70
+    },
+    {
+      "id": "card_uq8y69",
+      "fr": "vous avez conduit (2)",
+      "target": "vosotros condujisteis",
+      "lesson": "Général",
+      "index": 71
+    },
+    {
+      "id": "card_uq8y76",
+      "fr": "Vous avez conduit (3)",
+      "target": "ustedes condujeron",
+      "lesson": "Général",
+      "index": 72
+    },
+    {
+      "id": "card_vyst4p",
+      "fr": "Nous avons conduit",
+      "target": "nosotros condujimos",
+      "lesson": "Général",
+      "index": 73
+    },
+    {
+      "id": "card_jxab43",
+      "fr": "J'ai traduit",
+      "target": "yo traduje",
+      "lesson": "Général",
+      "index": 74
+    },
+    {
+      "id": "card_g9ia0x",
+      "fr": "Tu as traduit",
+      "target": "tú tradujiste",
+      "lesson": "Général",
+      "index": 75
+    },
+    {
+      "id": "card_l4tg91",
+      "fr": "Elle a traduit",
+      "target": "ella tradujo",
+      "lesson": "Général",
+      "index": 76
+    },
+    {
+      "id": "card_mc87ki",
+      "fr": "Nous avons traduit",
+      "target": "nosotros tradujimos",
+      "lesson": "Général",
+      "index": 77
+    },
+    {
+      "id": "card_faknd1",
+      "fr": "vous avez traduit",
+      "target": "vosotros tradujisteis",
+      "lesson": "Général",
+      "index": 78
+    },
+    {
+      "id": "card_bhh6or",
+      "fr": "Ils ont traduit",
+      "target": "ellos tradujeron",
+      "lesson": "Général",
+      "index": 79
+    },
+    {
+      "id": "card_v4tmes",
+      "fr": "J'ai marché",
+      "target": "yo anduve",
+      "lesson": "Général",
+      "index": 80
+    },
+    {
+      "id": "card_7hz0ga",
+      "fr": "Tu as marché",
+      "target": "tú anduviste",
+      "lesson": "Général",
+      "index": 81
+    },
+    {
+      "id": "card_3c9wy7",
+      "fr": "Il a marché",
+      "target": "él anduvo",
+      "lesson": "Général",
+      "index": 82
+    },
+    {
+      "id": "card_r1zta3",
+      "fr": "Nous avons marché",
+      "target": "nosotros anduvimos",
+      "lesson": "Général",
+      "index": 83
+    },
+    {
+      "id": "card_s2ffb8",
+      "fr": "vous avez marché",
+      "target": "vosotros anduvisteis",
+      "lesson": "Général",
+      "index": 84
+    },
+    {
+      "id": "card_64gpk1",
+      "fr": "Elles ont marché",
+      "target": "ellas anduvieron",
+      "lesson": "Général",
+      "index": 85
+    },
+    {
+      "id": "card_lmeuak",
+      "fr": "J'ai tenu",
+      "target": "yo cupe",
+      "lesson": "Général",
+      "index": 86
+    },
+    {
+      "id": "card_2jhbxa",
+      "fr": "Tu as tenu",
+      "target": "tú cupiste",
+      "lesson": "Général",
+      "index": 87
+    },
+    {
+      "id": "card_7riexw",
+      "fr": "Elle a tenu",
+      "target": "ella cupo",
+      "lesson": "Général",
+      "index": 88
+    },
+    {
+      "id": "card_ctu7sd",
+      "fr": "Nous avons tenu",
+      "target": "nosotros cupimos",
+      "lesson": "Général",
+      "index": 89
+    },
+    {
+      "id": "card_6azqw4",
+      "fr": "vous avez tenu",
+      "target": "vosotros cupisteis",
+      "lesson": "Général",
+      "index": 90
+    },
+    {
+      "id": "card_p8kw3q",
+      "fr": "Ils ont tenu",
+      "target": "ellos cupieron",
+      "lesson": "Général",
+      "index": 91
+    },
+    {
+      "id": "card_2xe87s",
+      "fr": "J'ai donné",
+      "target": "yo di",
+      "lesson": "Général",
+      "index": 92
+    },
+    {
+      "id": "card_ciovtm",
+      "fr": "Tu as donné",
+      "target": "tú diste",
+      "lesson": "Général",
+      "index": 93
+    },
+    {
+      "id": "card_232pzn",
+      "fr": "Il a donné",
+      "target": "él dio",
+      "lesson": "Général",
+      "index": 94
+    },
+    {
+      "id": "card_3526k7",
+      "fr": "Nous avons donné",
+      "target": "nosotros dimos",
+      "lesson": "Général",
+      "index": 95
+    },
+    {
+      "id": "card_5bni74",
+      "fr": "vous avez donné",
+      "target": "vosotros disteis",
+      "lesson": "Général",
+      "index": 96
+    },
+    {
+      "id": "card_vxl38j",
+      "fr": "Elles ont donné",
+      "target": "ellas dieron",
+      "lesson": "Général",
+      "index": 97
+    },
+    {
+      "id": "card_j9ev63",
+      "fr": "J'ai vu",
+      "target": "yo vi",
+      "lesson": "Général",
+      "index": 98
+    },
+    {
+      "id": "card_2ocv4d",
+      "fr": "Tu as vu",
+      "target": "tú viste",
+      "lesson": "Général",
+      "index": 99
+    },
+    {
+      "id": "card_lwedez",
+      "fr": "Vous avez vu (1)",
+      "target": "usted vio",
+      "lesson": "Général",
+      "index": 100
+    },
+    {
+      "id": "card_lwede2",
+      "fr": "vous avez vu (2)",
+      "target": "vosotros visteis",
+      "lesson": "Général",
+      "index": 101
+    },
+    {
+      "id": "card_lwedd5",
+      "fr": "Vous avez vu (3)",
+      "target": "ustedes vieron",
+      "lesson": "Général",
+      "index": 102
+    },
+    {
+      "id": "card_8y48po",
+      "fr": "Nous avons vu",
+      "target": "nosotros vimos",
+      "lesson": "Général",
+      "index": 103
+    },
+    {
+      "id": "card_eoq8em",
+      "fr": "J'ai demandé",
+      "target": "yo pedí",
+      "lesson": "Général",
+      "index": 104
+    },
+    {
+      "id": "card_b0y7bg",
+      "fr": "Tu as demandé",
+      "target": "tú pediste",
+      "lesson": "Général",
+      "index": 105
+    },
+    {
+      "id": "card_8gbuxf",
+      "fr": "Il a demandé",
+      "target": "él pidió",
+      "lesson": "Général",
+      "index": 106
+    },
+    {
+      "id": "card_h3o4v1",
+      "fr": "Nous avons demandé",
+      "target": "nosotros pedimos",
+      "lesson": "Général",
+      "index": 107
+    },
+    {
+      "id": "card_kj4q2i",
+      "fr": "vous avez demandé",
+      "target": "vosotros pedisteis",
+      "lesson": "Général",
+      "index": 108
+    },
+    {
+      "id": "card_gq19e8",
+      "fr": "Ils ont demandé",
+      "target": "ellos pidieron",
+      "lesson": "Général",
+      "index": 109
+    },
+    {
+      "id": "card_2xebgb",
+      "fr": "J'ai dormi",
+      "target": "yo dormí",
+      "lesson": "Général",
+      "index": 110
+    },
+    {
+      "id": "card_cioz25",
+      "fr": "Tu as dormi",
+      "target": "tú dormiste",
+      "lesson": "Général",
+      "index": 111
+    },
+    {
+      "id": "card_s7nfb1",
+      "fr": "Elle a dormi",
+      "target": "ella durmió",
+      "lesson": "Général",
+      "index": 112
+    },
+    {
+      "id": "card_3523bo",
+      "fr": "Nous avons dormi",
+      "target": "nosotros dormimos",
+      "lesson": "Général",
+      "index": 113
+    },
+    {
+      "id": "card_5bneyl",
+      "fr": "vous avez dormi",
+      "target": "vosotros dormisteis",
+      "lesson": "Général",
+      "index": 114
+    },
+    {
+      "id": "card_vxl6h2",
+      "fr": "Elles ont dormi",
+      "target": "ellas durmieron",
+      "lesson": "Général",
+      "index": 115
+    },
+    {
+      "id": "card_cmwohf",
+      "fr": "J'ai entendu",
+      "target": "yo oí",
+      "lesson": "Général",
+      "index": 116
+    },
+    {
+      "id": "card_gaopkl",
+      "fr": "Tu as entendu",
+      "target": "tú oíste",
+      "lesson": "Général",
+      "index": 117
+    },
+    {
+      "id": "card_ivb1ym",
+      "fr": "Il a entendu",
+      "target": "él oyó",
+      "lesson": "Général",
+      "index": 118
+    },
+    {
+      "id": "card_a7ys10",
+      "fr": "Nous avons entendu",
+      "target": "nosotros oímos",
+      "lesson": "Général",
+      "index": 119
+    },
+    {
+      "id": "card_n6cf0l",
+      "fr": "vous avez entendu",
+      "target": "vosotros oísteis",
+      "lesson": "Général",
+      "index": 120
+    },
+    {
+      "id": "card_qzfvov",
+      "fr": "Ils ont entendu",
+      "target": "ellos oyeron",
+      "lesson": "Général",
+      "index": 121
+    },
+    {
+      "id": "card_j9euwx",
+      "fr": "J'ai lu",
+      "target": "yo leí",
+      "lesson": "Général",
+      "index": 122
+    },
+    {
+      "id": "card_2ocuv7",
+      "fr": "Tu as lu",
+      "target": "tú leíste",
+      "lesson": "Général",
+      "index": 123
+    },
+    {
+      "id": "card_1hr0l3",
+      "fr": "Elle a lu",
+      "target": "ella leyó",
+      "lesson": "Général",
+      "index": 124
+    },
+    {
+      "id": "card_8y48gi",
+      "fr": "Nous avons lu",
+      "target": "nosotros leímos",
+      "lesson": "Général",
+      "index": 125
+    },
+    {
+      "id": "card_ker7xz",
+      "fr": "vous avez lu",
+      "target": "vosotros leísteis",
+      "lesson": "Général",
+      "index": 126
+    },
+    {
+      "id": "card_qy3dyk",
+      "fr": "Elles ont lu",
+      "target": "ellas leyeron",
+      "lesson": "Général",
+      "index": 127
+    },
+    {
+      "id": "card_3ned5i",
+      "fr": "J'ai cru",
+      "target": "yo creí",
+      "lesson": "Général",
+      "index": 128
+    },
+    {
+      "id": "card_hao12k",
+      "fr": "Tu as cru",
+      "target": "tú creíste",
+      "lesson": "Général",
+      "index": 129
+    },
+    {
+      "id": "card_7pc6no",
+      "fr": "Vous avez cru (1)",
+      "target": "usted creyó",
+      "lesson": "Général",
+      "index": 130
+    },
+    {
+      "id": "card_7pc6ol",
+      "fr": "vous avez cru (2)",
+      "target": "vosotros creísteis",
+      "lesson": "Général",
+      "index": 131
+    },
+    {
+      "id": "card_7pc6pi",
+      "fr": "Vous avez cru (3)",
+      "target": "ustedes creyeron",
+      "lesson": "Général",
+      "index": 132
+    },
+    {
+      "id": "card_b5fbob",
+      "fr": "Nous avons cru",
+      "target": "nosotros creímos",
+      "lesson": "Général",
+      "index": 133
+    },
+    {
+      "id": "card_vnnnmz",
+      "fr": "J'ai préféré",
+      "target": "yo preferí",
+      "lesson": "Général",
+      "index": 134
+    },
+    {
+      "id": "card_rzvmjt",
+      "fr": "Tu as préféré",
+      "target": "tú preferiste",
+      "lesson": "Général",
+      "index": 135
+    },
+    {
+      "id": "card_pf9a5s",
+      "fr": "Il a préféré",
+      "target": "él prefirió",
+      "lesson": "Général",
+      "index": 136
+    },
+    {
+      "id": "card_y2lk3e",
+      "fr": "Nous avons préféré",
+      "target": "nosotros preferimos",
+      "lesson": "Général",
+      "index": 137
+    },
+    {
+      "id": "card_3k7au5",
+      "fr": "vous avez préféré",
+      "target": "vosotros preferisteis",
+      "lesson": "Général",
+      "index": 138
+    },
+    {
+      "id": "card_8w5u5",
+      "fr": "Ils ont préféré",
+      "target": "ellos prefirieron",
+      "lesson": "Général",
+      "index": 139
+    },
+    {
+      "id": "card_ne7ls6",
+      "fr": "Je suis mort",
+      "target": "yo morí",
+      "lesson": "Général",
+      "index": 140
+    },
+    {
+      "id": "card_gxuolk",
+      "fr": "Tu es mort",
+      "target": "tú moriste",
+      "lesson": "Général",
+      "index": 141
+    },
+    {
+      "id": "card_1xf492",
+      "fr": "Elle est morte",
+      "target": "ella murió",
+      "lesson": "Général",
+      "index": 142
+    },
+    {
+      "id": "card_ixtdv7",
+      "fr": "Nous sommes morts",
+      "target": "nosotros morimos",
+      "lesson": "Général",
+      "index": 143
+    },
+    {
+      "id": "card_5coi8t",
+      "fr": "vous êtes morts",
+      "target": "vosotros moristeis",
+      "lesson": "Général",
+      "index": 144
+    },
+    {
+      "id": "card_3nv6g",
+      "fr": "Elles sont mortes",
+      "target": "ellas murieron",
+      "lesson": "Général",
+      "index": 145
+    },
+    {
+      "id": "card_35kk2g",
+      "fr": "J'ai parlé",
+      "target": "yo hablé",
+      "lesson": "Général",
+      "index": 146
+    },
+    {
+      "id": "card_cqv7oa",
+      "fr": "Tu as parlé",
+      "target": "tú hablaste",
+      "lesson": "Général",
+      "index": 147
+    },
+    {
+      "id": "card_2b91ub",
+      "fr": "Il a parlé",
+      "target": "él habló",
+      "lesson": "Général",
+      "index": 148
+    },
+    {
+      "id": "card_2wvupj",
+      "fr": "Nous avons parlé",
+      "target": "nosotros hablamos",
+      "lesson": "Général",
+      "index": 149
+    },
+    {
+      "id": "card_53h6cg",
+      "fr": "vous avez parlé",
+      "target": "vosotros hablasteis",
+      "lesson": "Général",
+      "index": 150
+    },
+    {
+      "id": "card_jfakfq",
+      "fr": "Ils ont parlé",
+      "target": "ellos hablaron",
+      "lesson": "Général",
+      "index": 151
+    },
+    {
+      "id": "card_33g7e4",
+      "fr": "J'ai mangé",
+      "target": "yo comí",
+      "lesson": "Général",
+      "index": 152
+    },
+    {
+      "id": "card_coquzy",
+      "fr": "Tu as mangé",
+      "target": "tú comiste",
+      "lesson": "Général",
+      "index": 153
+    },
+    {
+      "id": "card_s1ljd8",
+      "fr": "Elle a mangé",
+      "target": "ella comió",
+      "lesson": "Général",
+      "index": 154
+    },
+    {
+      "id": "card_2z07dv",
+      "fr": "Nous avons mangé",
+      "target": "nosotros comimos",
+      "lesson": "Général",
+      "index": 155
+    },
+    {
+      "id": "card_55lj0s",
+      "fr": "vous avez mangé",
+      "target": "vosotros comisteis",
+      "lesson": "Général",
+      "index": 156
+    },
+    {
+      "id": "card_w3n2ev",
+      "fr": "Elles ont mangé",
+      "target": "ellas comieron",
+      "lesson": "Général",
+      "index": 157
+    },
+    {
+      "id": "card_lmjgdz",
+      "fr": "J'ai vécu",
+      "target": "yo viví",
+      "lesson": "Général",
+      "index": 158
+    },
+    {
+      "id": "card_2jly0p",
+      "fr": "Tu as vécu",
+      "target": "tú viviste",
+      "lesson": "Général",
+      "index": 159
+    },
+    {
+      "id": "card_hcou0v",
+      "fr": "Vous avez vécu (1)",
+      "target": "usted vivió",
+      "lesson": "Général",
+      "index": 160
+    },
+    {
+      "id": "card_hcotzy",
+      "fr": "vous avez vécu (2)",
+      "target": "vosotros vivisteis",
+      "lesson": "Général",
+      "index": 161
+    },
+    {
+      "id": "card_hcotz1",
+      "fr": "Vous avez vécu (3)",
+      "target": "ustedes vivieron",
+      "lesson": "Général",
+      "index": 162
+    },
+    {
+      "id": "card_ctytvs",
+      "fr": "Nous avons vécu",
+      "target": "nosotros vivimos",
+      "lesson": "Général",
+      "index": 163
+    },
+    {
+      "id": "card_osendj",
+      "fr": "J'ai chanté",
+      "target": "yo canté",
+      "lesson": "Général",
+      "index": 164
+    },
+    {
+      "id": "card_dudzhj",
+      "fr": "Tu as chanté",
+      "target": "tú cantaste",
+      "lesson": "Général",
+      "index": 165
+    },
+    {
+      "id": "card_305232",
+      "fr": "Il a chanté",
+      "target": "él cantó",
+      "lesson": "Général",
+      "index": 166
+    },
+    {
+      "id": "card_xeesbc",
+      "fr": "Nous avons chanté",
+      "target": "nosotros cantamos",
+      "lesson": "Général",
+      "index": 167
+    },
+    {
+      "id": "card_yeuech",
+      "fr": "vous avez chanté",
+      "target": "vosotros cantasteis",
+      "lesson": "Général",
+      "index": 168
+    },
+    {
+      "id": "card_6jng97",
+      "fr": "Ils ont chanté",
+      "target": "ellos cantaron",
+      "lesson": "Général",
+      "index": 169
+    },
+    {
+      "id": "card_j9eunr",
+      "fr": "J'ai bu",
+      "target": "yo bebí",
+      "lesson": "Général",
+      "index": 170
+    },
+    {
+      "id": "card_2ocum1",
+      "fr": "Tu as bu",
+      "target": "tú bebiste",
+      "lesson": "Général",
+      "index": 171
+    },
+    {
+      "id": "card_1hr0u9",
+      "fr": "Elle a bu",
+      "target": "ella bebió",
+      "lesson": "Général",
+      "index": 172
+    },
+    {
+      "id": "card_8y487c",
+      "fr": "Nous avons bu",
+      "target": "nosotros bebimos",
+      "lesson": "Général",
+      "index": 173
+    },
+    {
+      "id": "card_ker875",
+      "fr": "vous avez bu",
+      "target": "vosotros bebisteis",
+      "lesson": "Général",
+      "index": 174
+    },
+    {
+      "id": "card_qy3dpe",
+      "fr": "Elles ont bu",
+      "target": "ellas bebieron",
+      "lesson": "Général",
+      "index": 175
+    },
+    {
+      "id": "card_5j1px7",
+      "fr": "J'ai écrit",
+      "target": "yo escribí",
+      "lesson": "Général",
+      "index": 176
+    },
+    {
+      "id": "card_f4cdj1",
+      "fr": "Tu as écrit",
+      "target": "tú escribiste",
+      "lesson": "Général",
+      "index": 177
+    },
+    {
+      "id": "card_4oq7p2",
+      "fr": "Il a écrit",
+      "target": "él escribió",
+      "lesson": "Général",
+      "index": 178
+    },
+    {
+      "id": "card_jeous",
+      "fr": "Nous avons écrit",
+      "target": "nosotros escribimos",
+      "lesson": "Général",
+      "index": 179
+    },
+    {
+      "id": "card_2q00hp",
+      "fr": "vous avez écrit",
+      "target": "vosotros escribisteis",
+      "lesson": "Général",
+      "index": 180
+    },
+    {
+      "id": "card_lsrqah",
+      "fr": "Ils ont écrit",
+      "target": "ellos escribieron",
+      "lesson": "Général",
+      "index": 181
+    },
+    {
+      "id": "card_m87dyw",
+      "fr": "J'ai travaillé",
+      "target": "yo trabajé",
+      "lesson": "Général",
+      "index": 182
+    },
+    {
+      "id": "card_dnljsm",
+      "fr": "Tu as travaillé",
+      "target": "tú trabajaste",
+      "lesson": "Général",
+      "index": 183
+    },
+    {
+      "id": "card_bzov68",
+      "fr": "Elle a travaillé",
+      "target": "ella trabajó",
+      "lesson": "Général",
+      "index": 184
+    },
+    {
+      "id": "card_o2k5hj",
+      "fr": "Nous avons travaillé",
+      "target": "nosotros trabajamos",
+      "lesson": "Général",
+      "index": 185
+    },
+    {
+      "id": "card_q5k50w",
+      "fr": "vous avez travaillé",
+      "target": "vosotros trabajasteis",
+      "lesson": "Général",
+      "index": 186
+    },
+    {
+      "id": "card_tecz1p",
+      "fr": "Elles ont travaillé",
+      "target": "ellas trabajaron",
+      "lesson": "Général",
+      "index": 187
+    },
+    {
+      "id": "card_nns0of",
+      "fr": "J'ai appris",
+      "target": "yo aprendí",
+      "lesson": "Général",
+      "index": 188
+    },
+    {
+      "id": "card_ez0m6n",
+      "fr": "Tu as appris",
+      "target": "tú aprendiste",
+      "lesson": "Général",
+      "index": 189
+    },
+    {
+      "id": "card_p6cf5l",
+      "fr": "Vous avez appris (1)",
+      "target": "usted aprendió",
+      "lesson": "Général",
+      "index": 190
+    },
+    {
+      "id": "card_p6cf6i",
+      "fr": "vous avez appris (2)",
+      "target": "vosotros aprendisteis",
+      "lesson": "Général",
+      "index": 191
+    },
+    {
+      "id": "card_p6cf7f",
+      "fr": "Vous avez appris (3)",
+      "target": "ustedes aprendieron",
+      "lesson": "Général",
+      "index": 192
+    },
+    {
+      "id": "card_yj1f0g",
+      "fr": "Nous avons appris",
+      "target": "nosotros aprendimos",
+      "lesson": "Général",
+      "index": 193
+    }
+  ],
+  "createdAt": "2026-06-29T07:58:28.954Z"
+}

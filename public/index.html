@@ -205,6 +205,8 @@
             <div class="sentence-display">
               <div id="sentence-prompt-label" class="sentence-label">Traduisez en français :</div>
               <div id="origin-sentence-text" class="sentence-text">Origin Sentence Text</div>
+              <div id="card-grammar-hint" class="grammar-hint-badge hide"></div>
+              <div id="card-cloze-hint" class="cloze-hint-text hide"></div>
             </div>
 
             <!-- Answer Submission Area -->
@@ -372,6 +374,80 @@
           <button type="submit" id="submit-deck-btn" class="btn btn-indigo">
             <div class="spinner spinner-white hide" id="modal-spinner"></div>
             <span>Importer</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 4. ENRICH DECK OVERLAY MODAL -->
+  <div id="enrich-deck-modal" class="modal-overlay hide">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Enrichir le Deck</h3>
+        <button id="close-enrich-modal-btn" class="close-btn" title="Fermer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="close-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      
+      <form id="enrich-deck-form" class="modal-form">
+        <input type="hidden" id="enrich-deck-id">
+        
+        <!-- Translation Language -->
+        <div class="form-group">
+          <label for="enrich-lang-select">Langue de traduction (invite) :</label>
+          <div class="select-wrapper">
+            <select id="enrich-lang-select">
+              <option value="fr" selected>Français (FR)</option>
+              <option value="en">Anglais (EN)</option>
+              <option value="es">Espagnol (ES)</option>
+              <option value="de">Allemand (DE)</option>
+              <option value="it">Italien (IT)</option>
+              <option value="pt">Portugais (PT)</option>
+            </select>
+          </div>
+          <span class="help-text">La langue dans laquelle les invites de traduction seront affichées.</span>
+        </div>
+
+        <!-- Options -->
+        <div class="form-group">
+          <label>Options d'enrichissement :</label>
+          <div style="margin-top: 8px; display: flex; flex-direction: column; gap: 10px;">
+            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px;">
+              <input type="checkbox" id="enrich-grammar-checkbox" checked style="width: 16px; height: 16px; accent-color: #4f46e5;">
+              Mentionner la classification grammaticale (adj, adv, subst, verb, etc.)
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px;">
+              <input type="checkbox" id="enrich-cloze-checkbox" checked style="width: 16px; height: 16px; accent-color: #4f46e5;">
+              Générer une phrase avec mot caché dans la langue cible
+            </label>
+          </div>
+        </div>
+
+        <!-- Gemini API Key -->
+        <div class="form-group">
+          <label for="enrich-api-key-input">Clé API Gemini :</label>
+          <input type="password" id="enrich-api-key-input" placeholder="Saisissez votre clé API Gemini (optionnel)" class="input-text">
+          <span class="help-text">Si vous n'en avez pas, demandez à l'administrateur ou utilisez votre propre clé.</span>
+        </div>
+
+        <!-- Progress Spinner / Message -->
+        <div id="enrich-progress-container" class="form-group hide" style="text-align: center; padding: 10px 0;">
+          <div class="spinner" style="margin: 0 auto 10px auto;"></div>
+          <div id="enrich-progress-text" style="font-size: 14px; font-weight: 500; color: #4f46e5;">Enrichissement en cours (génération par lots)...</div>
+          <div id="enrich-progress-subtext" style="font-size: 12px; color: #64748b; margin-top: 4px;">Cela peut prendre une à deux minutes pour les grands decks.</div>
+        </div>
+
+        <!-- Error Message -->
+        <div id="enrich-error-message" class="error-msg hide"></div>
+
+        <!-- Action Buttons -->
+        <div class="modal-footer" id="enrich-modal-actions">
+          <button type="button" id="cancel-enrich-btn" class="btn btn-outline">Annuler</button>
+          <button type="submit" id="submit-enrich-btn" class="btn btn-indigo">
+            <span>Enrichir</span>
           </button>
         </div>
       </form>

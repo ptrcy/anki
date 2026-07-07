@@ -1,0 +1,3661 @@
+{
+  "name": "TDS-BR",
+  "targetLang": "pt",
+  "cards": [
+    {
+      "id": "card_3ho7x",
+      "fr": "FR",
+      "target": "BR",
+      "lesson": "Lesson",
+      "index": 1
+    },
+    {
+      "id": "card_9hyolj",
+      "fr": "Je suis français(e)",
+      "target": "Eu sou francês / francesa",
+      "lesson": "A1",
+      "index": 2
+    },
+    {
+      "id": "card_got277",
+      "fr": "Je suis brésilien(ne)",
+      "target": "Eu sou brasileiro / brasileira",
+      "lesson": "A1",
+      "index": 3
+    },
+    {
+      "id": "card_gx39qy",
+      "fr": "Je suis professeur",
+      "target": "Eu sou professor / professora",
+      "lesson": "A1",
+      "index": 4
+    },
+    {
+      "id": "card_quzdyz",
+      "fr": "Je suis commerçant(e)",
+      "target": "Eu sou comerciante",
+      "lesson": "A1",
+      "index": 5
+    },
+    {
+      "id": "card_1tkkna",
+      "fr": "Je suis grand(e)",
+      "target": "Eu sou alto / alta",
+      "lesson": "A1",
+      "index": 6
+    },
+    {
+      "id": "card_wg8s8c",
+      "fr": "Je suis petit(e)",
+      "target": "Eu sou baixo / baixa",
+      "lesson": "A1",
+      "index": 7
+    },
+    {
+      "id": "card_tkwnov",
+      "fr": "Je suis célibataire",
+      "target": "Eu sou solteiro / solteira",
+      "lesson": "A1",
+      "index": 8
+    },
+    {
+      "id": "card_du0sk2",
+      "fr": "Je ne suis pas belge",
+      "target": "Não sou belga",
+      "lesson": "A1",
+      "index": 9
+    },
+    {
+      "id": "card_v85z21",
+      "fr": "Je ne suis pas étudiant(e)",
+      "target": "Não sou estudante",
+      "lesson": "A1",
+      "index": 10
+    },
+    {
+      "id": "card_thcb8o",
+      "fr": "Je ne suis pas médecin",
+      "target": "Não sou médico",
+      "lesson": "A1",
+      "index": 11
+    },
+    {
+      "id": "card_fvuhi5",
+      "fr": "Je ne suis pas directeur/directrice",
+      "target": "Não sou diretor / diretora",
+      "lesson": "A1",
+      "index": 12
+    },
+    {
+      "id": "card_ggcyef",
+      "fr": "Je ne suis pas ingénieur",
+      "target": "Não sou engenheiro / engenheira",
+      "lesson": "A1",
+      "index": 13
+    },
+    {
+      "id": "card_9aeowz",
+      "fr": "Je ne suis pas jeune /vieux - vieille",
+      "target": "Não sou jovem/ idoso-idosa",
+      "lesson": "A1",
+      "index": 14
+    },
+    {
+      "id": "card_4t4o7d",
+      "fr": "Je ne suis pas marié(e)",
+      "target": "Não sou casado / casada",
+      "lesson": "A1",
+      "index": 15
+    },
+    {
+      "id": "card_dwzto5",
+      "fr": "Je ne suis pas divorcé(e)",
+      "target": "Não sou divorciado / divorciada",
+      "lesson": "A1",
+      "index": 16
+    },
+    {
+      "id": "card_2rssx4",
+      "fr": "Marta et Luiz sont grands.",
+      "target": "Marta e Luiz são altos.",
+      "lesson": "A1",
+      "index": 17
+    },
+    {
+      "id": "card_dmpknc",
+      "fr": "Brasília est la capitale du Brésil.",
+      "target": "Basilia é a capital do Brasil.",
+      "lesson": "A1",
+      "index": 18
+    },
+    {
+      "id": "card_k1haow",
+      "fr": "Nous ne sommes pas ingénieurs.",
+      "target": "Não somos engenheiros.",
+      "lesson": "A1",
+      "index": 19
+    },
+    {
+      "id": "card_prw1vi",
+      "fr": "Je suis suisse.",
+      "target": "Sou suíssa.",
+      "lesson": "A1",
+      "index": 20
+    },
+    {
+      "id": "card_2gx68y",
+      "fr": "Nous sommes belges.",
+      "target": "Somos belgas.",
+      "lesson": "A1",
+      "index": 21
+    },
+    {
+      "id": "card_y2bjw",
+      "fr": "Je ne suis pas étudiante.",
+      "target": "Não sou estudante.",
+      "lesson": "A1",
+      "index": 22
+    },
+    {
+      "id": "card_x5h1u4",
+      "fr": "Nous sommes commerçants.",
+      "target": "Somos comerciantes.",
+      "lesson": "A1",
+      "index": 23
+    },
+    {
+      "id": "card_bs1xl6",
+      "fr": "Elle n'est pas française.",
+      "target": "(Ela) não é francesa.",
+      "lesson": "A1",
+      "index": 24
+    },
+    {
+      "id": "card_5m3pp6",
+      "fr": "Il est marié.",
+      "target": "(Ele) é casado.",
+      "lesson": "A1",
+      "index": 25
+    },
+    {
+      "id": "card_emm18t",
+      "fr": "C'est beau / magnifique",
+      "target": "É bonito-lindo/magnífico",
+      "lesson": "A2",
+      "index": 26
+    },
+    {
+      "id": "card_qjld0",
+      "fr": "C'est ennuyeux",
+      "target": "É aborrecido-chato",
+      "lesson": "A2",
+      "index": 27
+    },
+    {
+      "id": "card_kk2et5",
+      "fr": "C'est loin d'ici / près d'ici",
+      "target": "É longe daqui/ perto daqui",
+      "lesson": "A2",
+      "index": 28
+    },
+    {
+      "id": "card_r38v48",
+      "fr": "C'est le frère / la sœur de Zé",
+      "target": "É o irmão / a irmã de Zé",
+      "lesson": "A2",
+      "index": 29
+    },
+    {
+      "id": "card_oq15cj",
+      "fr": "C'est l'époux / l'épouse de ...",
+      "target": "É o esposo / a esposa de...",
+      "lesson": "A2",
+      "index": 30
+    },
+    {
+      "id": "card_jy6xlo",
+      "fr": "C'est le fils / la fille d'Ana?",
+      "target": "É o filho / a filha de Ana?",
+      "lesson": "A2",
+      "index": 31
+    },
+    {
+      "id": "card_3wo2j5",
+      "fr": "C'est Felipe?",
+      "target": "É Felipe?",
+      "lesson": "A2",
+      "index": 32
+    },
+    {
+      "id": "card_1hf1sb",
+      "fr": "Ce n'est pas dangereux",
+      "target": "Não é perigoso",
+      "lesson": "A2",
+      "index": 33
+    },
+    {
+      "id": "card_2uivva",
+      "fr": "Ce n'est pas bon / mauvais",
+      "target": "Não é bom / ruim",
+      "lesson": "A2",
+      "index": 34
+    },
+    {
+      "id": "card_kahikj",
+      "fr": "Tu es de Recife",
+      "target": "Você é de Recife",
+      "lesson": "A2",
+      "index": 35
+    },
+    {
+      "id": "card_crxp6o",
+      "fr": "Tu es sympathique",
+      "target": "Você é simpático",
+      "lesson": "A2",
+      "index": 36
+    },
+    {
+      "id": "card_qk8eek",
+      "fr": "Vous êtes français ? (1)",
+      "target": "Vocês são franceses?",
+      "lesson": "A2",
+      "index": 37
+    },
+    {
+      "id": "card_qk8edn",
+      "fr": "Vous êtes français ? (2)",
+      "target": "O Senhor é francês ?",
+      "lesson": "A2",
+      "index": 38
+    },
+    {
+      "id": "card_zetmf1",
+      "fr": "Vous êtes brésiliens ? (1)",
+      "target": "Vocês são brasileiros?",
+      "lesson": "A2",
+      "index": 39
+    },
+    {
+      "id": "card_zetmfy",
+      "fr": "Vous êtes brésiliens ? (2)",
+      "target": "Vocês são brasileiros ?",
+      "lesson": "A2",
+      "index": 40
+    },
+    {
+      "id": "card_gsfhmu",
+      "fr": "Vous êtes amusante",
+      "target": "A senhora é engraçada",
+      "lesson": "A2",
+      "index": 41
+    },
+    {
+      "id": "card_habhcm",
+      "fr": "Vous êtes le père de João.",
+      "target": "O senhor é o pai de João?",
+      "lesson": "A2",
+      "index": 42
+    },
+    {
+      "id": "card_jt4a85",
+      "fr": "Vous êtes les parents d'Iracema ?",
+      "target": "Os senhores são os pais de Iracema?",
+      "lesson": "A2",
+      "index": 43
+    },
+    {
+      "id": "card_mkx9za",
+      "fr": "Vous êtes les enfants de Marcelo ?",
+      "target": "Os senhores são os filhos de Marcelo",
+      "lesson": "A2",
+      "index": 44
+    },
+    {
+      "id": "card_yof9kg",
+      "fr": "Tu es français ?",
+      "target": "Você é francês ?",
+      "lesson": "A2",
+      "index": 45
+    },
+    {
+      "id": "card_wl5nog",
+      "fr": "Vous êtes médecin ?",
+      "target": "O senhor é médico ?",
+      "lesson": "A2",
+      "index": 46
+    },
+    {
+      "id": "card_5m9swh",
+      "fr": "Vous êtes ingénieur ?",
+      "target": "A senhora é engenheira ?",
+      "lesson": "A2",
+      "index": 47
+    },
+    {
+      "id": "card_xd359q",
+      "fr": "Vous êtes les fils de Rui ?",
+      "target": "Os senhores são os filhos de Rui ?",
+      "lesson": "A2",
+      "index": 48
+    },
+    {
+      "id": "card_lmmjuw",
+      "fr": "Vous êtes soeurs ?",
+      "target": "As senhoras são irmãs ?",
+      "lesson": "A2",
+      "index": 49
+    },
+    {
+      "id": "card_s84lgm",
+      "fr": "C'est beau.",
+      "target": "É bonito.",
+      "lesson": "A2",
+      "index": 50
+    },
+    {
+      "id": "card_nb2u7y",
+      "fr": "Est-ce beau ?",
+      "target": "É bonito ?",
+      "lesson": "A2",
+      "index": 51
+    },
+    {
+      "id": "card_81qy8n",
+      "fr": "C'est beau ?",
+      "target": "É bonito ?",
+      "lesson": "A2",
+      "index": 52
+    },
+    {
+      "id": "card_1hhkyu",
+      "fr": "Les enfants de Pedro sont sympathiques.",
+      "target": "Os filhos de Pedro são simpáticos.",
+      "lesson": "A2",
+      "index": 53
+    },
+    {
+      "id": "card_9qz9sv",
+      "fr": "Recife est loin d'ici.",
+      "target": "Recife é longe daqui.",
+      "lesson": "A2",
+      "index": 54
+    },
+    {
+      "id": "card_lr8dxg",
+      "fr": "Tu es belge ?",
+      "target": "Você é belga ?",
+      "lesson": "A2",
+      "index": 55
+    },
+    {
+      "id": "card_xvmaqx",
+      "fr": "Je suis content(e)",
+      "target": "Eu estou contente.",
+      "lesson": "A3",
+      "index": 56
+    },
+    {
+      "id": "card_7kzhuy",
+      "fr": "Je suis malade / fatigué(e)",
+      "target": "Eu estou doente / cansado (a)",
+      "lesson": "A3",
+      "index": 57
+    },
+    {
+      "id": "card_35tyvh",
+      "fr": "Je suis en retard",
+      "target": "Eu estou atrasado / atrasada.",
+      "lesson": "A3",
+      "index": 58
+    },
+    {
+      "id": "card_dddkz5",
+      "fr": "Je suis en vacances",
+      "target": "Eu estou de férias.",
+      "lesson": "A3",
+      "index": 59
+    },
+    {
+      "id": "card_w877cb",
+      "fr": "Je suis en train de conduire",
+      "target": "Eu estou dirigindo.",
+      "lesson": "A3",
+      "index": 60
+    },
+    {
+      "id": "card_iolylm",
+      "fr": "Je suis en train de travailler.",
+      "target": "Eu estou trabalhando.",
+      "lesson": "A3",
+      "index": 61
+    },
+    {
+      "id": "card_5bo0oq",
+      "fr": "Je suis en train de manger.",
+      "target": "Eu estou comendo.",
+      "lesson": "A3",
+      "index": 62
+    },
+    {
+      "id": "card_xex8t0",
+      "fr": "Je suis à Salvador",
+      "target": "Eu estou em Salvador.",
+      "lesson": "A3",
+      "index": 63
+    },
+    {
+      "id": "card_fdohbr",
+      "fr": "Je suis au restaurant",
+      "target": "Eu estou no restaurante",
+      "lesson": "A3",
+      "index": 64
+    },
+    {
+      "id": "card_ql30sb",
+      "fr": "Je suis à l'aéroport",
+      "target": "Eu estou no aeroporto.",
+      "lesson": "A3",
+      "index": 65
+    },
+    {
+      "id": "card_7j2seb",
+      "fr": "J'ai faim / soif",
+      "target": "Estou com fome / sede",
+      "lesson": "A3",
+      "index": 66
+    },
+    {
+      "id": "card_tk8wht",
+      "fr": "J'ai sommeil / de la fièvre",
+      "target": "Estou com sono / febre",
+      "lesson": "A3",
+      "index": 67
+    },
+    {
+      "id": "card_ndwyx4",
+      "fr": "J'ai envie de rester ici.",
+      "target": "Estou com vontade de ficar aqui.",
+      "lesson": "A3",
+      "index": 68
+    },
+    {
+      "id": "card_wgj9vo",
+      "fr": "aujourd'hui, il fait beau.",
+      "target": "hoje o tempo está bom",
+      "lesson": "A3",
+      "index": 69
+    },
+    {
+      "id": "card_o2zrv0",
+      "fr": "il fait chaud / froid.",
+      "target": "está quente / frio.",
+      "lesson": "A3",
+      "index": 70
+    },
+    {
+      "id": "card_p20bzk",
+      "fr": "Je suis à Rio.",
+      "target": "Estou no Rio.",
+      "lesson": "A3",
+      "index": 71
+    },
+    {
+      "id": "card_nn0879",
+      "fr": "Ils sont fatigués.",
+      "target": "Estão cansados.",
+      "lesson": "A3",
+      "index": 72
+    },
+    {
+      "id": "card_fp0q6z",
+      "fr": "Le Sahara est chaud.",
+      "target": "O Sahara é quente.",
+      "lesson": "A3",
+      "index": 73
+    },
+    {
+      "id": "card_k65wyw",
+      "fr": "Aujourd'hui il fait chaud.",
+      "target": "Hoje está quente.",
+      "lesson": "A3",
+      "index": 74
+    },
+    {
+      "id": "card_dqz6ah",
+      "fr": "Elle est malade. (1)",
+      "target": "Ela é doente.",
+      "lesson": "A3",
+      "index": 75
+    },
+    {
+      "id": "card_dqz69k",
+      "fr": "Elle est malade. (2)",
+      "target": "Ela está doente.",
+      "lesson": "A3",
+      "index": 76
+    },
+    {
+      "id": "card_odqh3o",
+      "fr": "Nous sommes en train de parler.",
+      "target": "Estamos falando.",
+      "lesson": "A3",
+      "index": 77
+    },
+    {
+      "id": "card_62nu8v",
+      "fr": "Il est en train de boire.",
+      "target": "Está bebendo.",
+      "lesson": "A3",
+      "index": 78
+    },
+    {
+      "id": "card_xtbszi",
+      "fr": "Je suis à Salvador.",
+      "target": "Estou em Salvador.",
+      "lesson": "A3",
+      "index": 79
+    },
+    {
+      "id": "card_4vffed",
+      "fr": "Nous sommes au restaurant.",
+      "target": "Estamos no restaurante.",
+      "lesson": "A3",
+      "index": 80
+    },
+    {
+      "id": "card_2uh168",
+      "fr": "Nous avons soif.",
+      "target": "Estamos com sede.",
+      "lesson": "A3",
+      "index": 81
+    },
+    {
+      "id": "card_idu8se",
+      "fr": "Vous êtes en retard !",
+      "target": "Estão atrasados !",
+      "lesson": "A3",
+      "index": 82
+    },
+    {
+      "id": "card_c2ak30",
+      "fr": "Ici, il fait froid !",
+      "target": "\"Aqui",
+      "lesson": "está frio.\"",
+      "index": 83
+    },
+    {
+      "id": "card_i1a6fy",
+      "fr": "Êtes-vous contents ?",
+      "target": "Estão contentes ?",
+      "lesson": "A3",
+      "index": 84
+    },
+    {
+      "id": "card_cnr5jw",
+      "fr": "Nous sommes en train de travailler.",
+      "target": "Estamos trabalhando.",
+      "lesson": "A3",
+      "index": 85
+    },
+    {
+      "id": "card_47lomb",
+      "fr": "Vous êtes à Salvador ?",
+      "target": "Estão em Salvador ?",
+      "lesson": "A3",
+      "index": 86
+    },
+    {
+      "id": "card_2g25vr",
+      "fr": "Est-ce que c'est possible ?",
+      "target": "É possível ?",
+      "lesson": "A4",
+      "index": 87
+    },
+    {
+      "id": "card_huiofs",
+      "fr": "Est-ce que c'est vrai ?",
+      "target": "É verdade ?",
+      "lesson": "A4",
+      "index": 88
+    },
+    {
+      "id": "card_bbkmns",
+      "fr": "Est-ce que c'est loin ?",
+      "target": "É longe ?",
+      "lesson": "A4",
+      "index": 89
+    },
+    {
+      "id": "card_o6lfdi",
+      "fr": "Est-ce que c'est permis ?",
+      "target": "É permitido?",
+      "lesson": "A4",
+      "index": 90
+    },
+    {
+      "id": "card_fpa10h",
+      "fr": "Est-ce que je peux téléphoner ?",
+      "target": "É posso telefonar ?",
+      "lesson": "A4",
+      "index": 91
+    },
+    {
+      "id": "card_6gqjqg",
+      "fr": "Est-ce que vous acceptez cette carte de crédit ?",
+      "target": "É aceita este cartão de crédito ?",
+      "lesson": "A4",
+      "index": 92
+    },
+    {
+      "id": "card_drygl0",
+      "fr": "Est-ce que le service est inclus ?",
+      "target": "É o serviço está incluído ?",
+      "lesson": "A4",
+      "index": 93
+    },
+    {
+      "id": "card_qdvokh",
+      "fr": "Est-ce que nous pouvons entrer ?",
+      "target": "É podemos entrar ?",
+      "lesson": "A4",
+      "index": 94
+    },
+    {
+      "id": "card_5orkcr",
+      "fr": "Qu'est-ce que ceci / cela ?",
+      "target": "O que é isto / isso / aquilo ?",
+      "lesson": "A4",
+      "index": 95
+    },
+    {
+      "id": "card_l3qkup",
+      "fr": "Qu'est-ce que vous voulez ?",
+      "target": "O que é que quer ?",
+      "lesson": "A4",
+      "index": 96
+    },
+    {
+      "id": "card_5iacde",
+      "fr": "Qu'est-ce que vous prenez ?",
+      "target": "O que é que toma ?",
+      "lesson": "A4",
+      "index": 97
+    },
+    {
+      "id": "card_6u98ew",
+      "fr": "Qu'est-ce qu'il se passe ?",
+      "target": "O que é que está acontecendo ?",
+      "lesson": "A4",
+      "index": 98
+    },
+    {
+      "id": "card_b0splw",
+      "fr": "Qu'est-ce qu'on attend ?",
+      "target": "O que é que a gente está esperando ?",
+      "lesson": "A4",
+      "index": 99
+    },
+    {
+      "id": "card_4ncdgj",
+      "fr": "Est-ce que c'est beau ?",
+      "target": "É bonito ?",
+      "lesson": "A4",
+      "index": 100
+    },
+    {
+      "id": "card_xc0ilk",
+      "fr": "Est-ce qu'il est ici ?",
+      "target": "Está aqui ?",
+      "lesson": "A4",
+      "index": 101
+    },
+    {
+      "id": "card_uxkpx7",
+      "fr": "Est-ce que c'est Marta ?",
+      "target": "Será que é Marta ?",
+      "lesson": "A4",
+      "index": 102
+    },
+    {
+      "id": "card_pw6m2m",
+      "fr": "Est-ce qu'il y aurait une banque dans le centre ?",
+      "target": "Terá um banco no centro ?",
+      "lesson": "A4",
+      "index": 103
+    },
+    {
+      "id": "card_w9lij3",
+      "fr": "Que veux-tu ? (1)",
+      "target": "O que é que quer ?",
+      "lesson": "A4",
+      "index": 104
+    },
+    {
+      "id": "card_w9lik0",
+      "fr": "Que veux-tu ? (2)",
+      "target": "O que quer ?",
+      "lesson": "A4",
+      "index": 105
+    },
+    {
+      "id": "card_gbka2c",
+      "fr": "Il est en train de téléphoner.",
+      "target": "Está telefonando.",
+      "lesson": "A4",
+      "index": 106
+    },
+    {
+      "id": "card_kvefz5",
+      "fr": "On a de l'argent ?",
+      "target": "A gente tem dinheiro ?",
+      "lesson": "A4",
+      "index": 107
+    },
+    {
+      "id": "card_cc2imq",
+      "fr": "Est-ce qu'on reste ?",
+      "target": "Será que a gente fica ?",
+      "lesson": "A4",
+      "index": 108
+    },
+    {
+      "id": "card_jcix86",
+      "fr": "Qu'es-tu en train de boire ?",
+      "target": "O que está tomando?",
+      "lesson": "A4",
+      "index": 109
+    },
+    {
+      "id": "card_xhxyix",
+      "fr": "C'est près d'ici ?",
+      "target": "É perto daqui ?",
+      "lesson": "A4",
+      "index": 110
+    },
+    {
+      "id": "card_abwpsi",
+      "fr": "Qu'est-ce que cela ?",
+      "target": "O que é isso ?",
+      "lesson": "A4",
+      "index": 111
+    },
+    {
+      "id": "card_kz573a",
+      "fr": "C'est très beau !",
+      "target": "É muito bonito !",
+      "lesson": "A4",
+      "index": 112
+    },
+    {
+      "id": "card_axtil",
+      "fr": "Qu'es-tu en train de manger ?",
+      "target": "O que está comendo ?",
+      "lesson": "A4",
+      "index": 113
+    },
+    {
+      "id": "card_jjys9c",
+      "fr": "Est-ce qu'on est en retard ?",
+      "target": "A gente está atrasada ?",
+      "lesson": "A4",
+      "index": 114
+    },
+    {
+      "id": "card_nl7on0",
+      "fr": "Est-ce que tu es français ?",
+      "target": "Será que é francês ?",
+      "lesson": "A4",
+      "index": 115
+    },
+    {
+      "id": "card_mt977t",
+      "fr": "J'ai de l'argent / de la monnaie",
+      "target": "Tenho dinheiro / troco",
+      "lesson": "A5",
+      "index": 116
+    },
+    {
+      "id": "card_apwry9",
+      "fr": "J'ai une carte de crédit",
+      "target": "Tenho um cartão de crédito",
+      "lesson": "A5",
+      "index": 117
+    },
+    {
+      "id": "card_nyfpv1",
+      "fr": "J'ai deux valises",
+      "target": "Tenho duas malas",
+      "lesson": "A5",
+      "index": 118
+    },
+    {
+      "id": "card_4bp0o6",
+      "fr": "J'ai cinq enfants",
+      "target": "Tenho cinco filhos",
+      "lesson": "A5",
+      "index": 119
+    },
+    {
+      "id": "card_31yb0j",
+      "fr": "Je n'ai pas de plan de la ville",
+      "target": "Não tenho mapa da cidade",
+      "lesson": "A5",
+      "index": 120
+    },
+    {
+      "id": "card_pbkvzw",
+      "fr": "Je n'ai pas de billet d'avion",
+      "target": "Não tenho passagem de avião",
+      "lesson": "A5",
+      "index": 121
+    },
+    {
+      "id": "card_bmm6q0",
+      "fr": "As-tu le temps ?",
+      "target": "Tem tempo?",
+      "lesson": "A5",
+      "index": 122
+    },
+    {
+      "id": "card_o9ovzo",
+      "fr": "As-tu des amis ?",
+      "target": "Tem amigos?",
+      "lesson": "A5",
+      "index": 123
+    },
+    {
+      "id": "card_127aav",
+      "fr": "Il y a une banque au coin de la rue",
+      "target": "Tem / há um banco na esquina",
+      "lesson": "A5",
+      "index": 124
+    },
+    {
+      "id": "card_eijtsg",
+      "fr": "Il y a un problème",
+      "target": "Tem / há um problema",
+      "lesson": "A5",
+      "index": 125
+    },
+    {
+      "id": "card_1hjssp",
+      "fr": "Il y a un distributeur automatique (d'argent)",
+      "target": "Tem / há um caixa automático",
+      "lesson": "A5",
+      "index": 126
+    },
+    {
+      "id": "card_k5osp",
+      "fr": "Il n'y a pas de place dans l'autobus",
+      "target": "Não tem vaga no ônibus",
+      "lesson": "A5",
+      "index": 127
+    },
+    {
+      "id": "card_11ab4x",
+      "fr": "Y a-t'il du poisson ?",
+      "target": "Tem / Há peixe?",
+      "lesson": "A5",
+      "index": 128
+    },
+    {
+      "id": "card_mpki90",
+      "fr": "J'ai une voiture.",
+      "target": "Tenho um carro.",
+      "lesson": "A5",
+      "index": 129
+    },
+    {
+      "id": "card_mdf2m5",
+      "fr": "Il y a une banque ici. (1)",
+      "target": "Tem um banco aqui.",
+      "lesson": "A5",
+      "index": 130
+    },
+    {
+      "id": "card_mdf2n2",
+      "fr": "Il y a une banque ici. (2)",
+      "target": "Há um banco aqui.",
+      "lesson": "A5",
+      "index": 131
+    },
+    {
+      "id": "card_ogs27z",
+      "fr": "Je dois acheter un plan/une carte.",
+      "target": "Tenho que comprar um mapa.",
+      "lesson": "A5",
+      "index": 132
+    },
+    {
+      "id": "card_itag9h",
+      "fr": "Vous devez visiter le Corcovado.",
+      "target": "O senhor tem que visitar o Corcovado.",
+      "lesson": "A5",
+      "index": 133
+    },
+    {
+      "id": "card_37nyc1",
+      "fr": "Une valise",
+      "target": "Uma mala",
+      "lesson": "A5",
+      "index": 134
+    },
+    {
+      "id": "card_brveut",
+      "fr": "J'ai de l'argent.",
+      "target": "Tenho dinheiro.",
+      "lesson": "A5",
+      "index": 135
+    },
+    {
+      "id": "card_sm1fo3",
+      "fr": "Avez-vous de la monnaie ? (1)",
+      "target": "Tem troco ?",
+      "lesson": "A5",
+      "index": 136
+    },
+    {
+      "id": "card_sm1fp0",
+      "fr": "Avez-vous de la monnaie ? (2)",
+      "target": "tem / têm troco ?",
+      "lesson": "A5",
+      "index": 137
+    },
+    {
+      "id": "card_tbih1b",
+      "fr": "Nous avons du temps.",
+      "target": "Temos tempo.",
+      "lesson": "A5",
+      "index": 138
+    },
+    {
+      "id": "card_ex731u",
+      "fr": "Y a-t'il une banque dans la ville ?",
+      "target": "Tem / há um banco na cidade?",
+      "lesson": "A5",
+      "index": 139
+    },
+    {
+      "id": "card_xn6x3o",
+      "fr": "Avez-vous un plan de la ville ?",
+      "target": "tem / têm um mapa da cidade ?",
+      "lesson": "A5",
+      "index": 140
+    },
+    {
+      "id": "card_wxdzvh",
+      "fr": "Tu as un problème ?",
+      "target": "Tem um problema ?",
+      "lesson": "A5",
+      "index": 141
+    },
+    {
+      "id": "card_9dn2sw",
+      "fr": "Vous n'avez pas de monnaie ?",
+      "target": "A senhora não tem troco ?",
+      "lesson": "A5",
+      "index": 142
+    },
+    {
+      "id": "card_z9wqml",
+      "fr": "As-tu une carte de crédit ?",
+      "target": "Tem cartão de crédit ?",
+      "lesson": "A5",
+      "index": 143
+    },
+    {
+      "id": "card_phz4wk",
+      "fr": "Il y a un distributeur automatique au coin (de la rue).",
+      "target": "Há um caixa automático na esquina.",
+      "lesson": "A5",
+      "index": 144
+    },
+    {
+      "id": "card_ig5k3a",
+      "fr": "Il y a deux banques dans la ville.",
+      "target": "Há dois bancos na cidade.",
+      "lesson": "A5",
+      "index": 145
+    },
+    {
+      "id": "card_9863qz",
+      "fr": "J'ai deux valises.",
+      "target": "Tenho duas malas.",
+      "lesson": "A5",
+      "index": 146
+    },
+    {
+      "id": "card_2fctfb",
+      "fr": "Où est la gare routière",
+      "target": "Onde é / Onde fica a (estação) rodoviária",
+      "lesson": "A6",
+      "index": 147
+    },
+    {
+      "id": "card_nb422v",
+      "fr": "Où est le centre ville",
+      "target": "Onde é / Onde fica o centro (da cidade)",
+      "lesson": "A6",
+      "index": 148
+    },
+    {
+      "id": "card_dkmdzt",
+      "fr": "Où est le centre commercial",
+      "target": "Onde é / Onde fica o shopping",
+      "lesson": "A6",
+      "index": 149
+    },
+    {
+      "id": "card_jqjfjj",
+      "fr": "Où est la poste",
+      "target": "Onde é / Onde fica o correio",
+      "lesson": "A6",
+      "index": 150
+    },
+    {
+      "id": "card_jsk3uj",
+      "fr": "Où est la sortie / l'entrée",
+      "target": "Onde é / Onde fica a saída / a entrada",
+      "lesson": "A6",
+      "index": 151
+    },
+    {
+      "id": "card_u680lf",
+      "fr": "Où est l'arrêt d'autobus",
+      "target": "Onde é / Onde fica o ponto de ônibus",
+      "lesson": "A6",
+      "index": 152
+    },
+    {
+      "id": "card_eez5zz",
+      "fr": "Où est ta clef de voiture",
+      "target": "Onde está / cadê sua chave de carro",
+      "lesson": "A6",
+      "index": 153
+    },
+    {
+      "id": "card_8dghz6",
+      "fr": "Où est notre sac à dos",
+      "target": "Onde está / cadê nossa mochila",
+      "lesson": "A6",
+      "index": 154
+    },
+    {
+      "id": "card_27d9ey",
+      "fr": "Où sont les boutiques",
+      "target": "Onde são / Onde ficam as lojas / as butiques",
+      "lesson": "A6",
+      "index": 155
+    },
+    {
+      "id": "card_6uygvl",
+      "fr": "Où sont les restaurants",
+      "target": "Onde são / Onde ficam os restaurantes",
+      "lesson": "A6",
+      "index": 156
+    },
+    {
+      "id": "card_mos8n6",
+      "fr": "Où sont les taxis",
+      "target": "Onde está / cadê os táxis",
+      "lesson": "A6",
+      "index": 157
+    },
+    {
+      "id": "card_m7pt9j",
+      "fr": "Où sont tes sacs",
+      "target": "Onde está / cadê tuas bolsas",
+      "lesson": "A6",
+      "index": 158
+    },
+    {
+      "id": "card_a87slz",
+      "fr": "Où est votre (ta) maison ? (1)",
+      "target": "Onde é sua casa ?",
+      "lesson": "A6",
+      "index": 159
+    },
+    {
+      "id": "card_a87smw",
+      "fr": "Où est votre (ta) maison ? (2)",
+      "target": "onde fica sua casa ?",
+      "lesson": "A6",
+      "index": 160
+    },
+    {
+      "id": "card_ptdx4v",
+      "fr": "Où est votre (ton) bagage ?",
+      "target": "Onde está sua bagagem ?",
+      "lesson": "A6",
+      "index": 161
+    },
+    {
+      "id": "card_755zr3",
+      "fr": "d'où vient-il ?",
+      "target": "De onde vem ?",
+      "lesson": "A6",
+      "index": 162
+    },
+    {
+      "id": "card_acpshl",
+      "fr": "D'où êtes-vous ?",
+      "target": "De onde é ?",
+      "lesson": "A6",
+      "index": 163
+    },
+    {
+      "id": "card_i6u1zt",
+      "fr": "Où allons-nous ?",
+      "target": "Aonde vamos ?",
+      "lesson": "A6",
+      "index": 164
+    },
+    {
+      "id": "card_oye16q",
+      "fr": "Où allez-vous ?",
+      "target": "Aonde vão ?",
+      "lesson": "A6",
+      "index": 165
+    },
+    {
+      "id": "card_6w03qy",
+      "fr": "Où est-il ?",
+      "target": "Cadê ele ?",
+      "lesson": "A6",
+      "index": 166
+    },
+    {
+      "id": "card_bea72e",
+      "fr": "Où est le sac à dos ?",
+      "target": "Cadê a mochila ?",
+      "lesson": "A6",
+      "index": 167
+    },
+    {
+      "id": "card_uvxinn",
+      "fr": "ton frère",
+      "target": "seu irmão",
+      "lesson": "A6",
+      "index": 168
+    },
+    {
+      "id": "card_ces40k",
+      "fr": "votre frère",
+      "target": "seu irmão",
+      "lesson": "A6",
+      "index": 169
+    },
+    {
+      "id": "card_78jegl",
+      "fr": "Son frère (à lui).",
+      "target": "O irmão dele.",
+      "lesson": "A6",
+      "index": 170
+    },
+    {
+      "id": "card_lvrqky",
+      "fr": "Ses parents (à elle).",
+      "target": "Os pais dela.",
+      "lesson": "A6",
+      "index": 171
+    },
+    {
+      "id": "card_dltyw1",
+      "fr": "Le centre ville est loin.",
+      "target": "O coreio é / fica longe.",
+      "lesson": "A6",
+      "index": 172
+    },
+    {
+      "id": "card_29sbet",
+      "fr": "Ton taxi est ici.",
+      "target": "Seu taxi está aqui.",
+      "lesson": "A6",
+      "index": 173
+    },
+    {
+      "id": "card_cdvb3o",
+      "fr": "Tes amis sont au restaurant.",
+      "target": "Seus amigos estão no restaurante.",
+      "lesson": "A6",
+      "index": 174
+    },
+    {
+      "id": "card_yjudhn",
+      "fr": "La banque est à gauche.",
+      "target": "O banco fica / é à esquerda.",
+      "lesson": "A6",
+      "index": 175
+    },
+    {
+      "id": "card_wmcviw",
+      "fr": "J'aime le Brésil",
+      "target": "Gosto do Brasil",
+      "lesson": "A7",
+      "index": 176
+    },
+    {
+      "id": "card_vrmrjg",
+      "fr": "J'aime la cuisine baianaise",
+      "target": "Gosto da cozinha baiana",
+      "lesson": "A7",
+      "index": 177
+    },
+    {
+      "id": "card_il3e0m",
+      "fr": "J'aime les voyages en autocar",
+      "target": "Gosto das voyages de ônibus",
+      "lesson": "A7",
+      "index": 178
+    },
+    {
+      "id": "card_efcgx8",
+      "fr": "J'aime me promener",
+      "target": "Gosto de passear",
+      "lesson": "A7",
+      "index": 179
+    },
+    {
+      "id": "card_8vnlgp",
+      "fr": "J'aime chanter",
+      "target": "Gosto de cantar",
+      "lesson": "A7",
+      "index": 180
+    },
+    {
+      "id": "card_nhkcjk",
+      "fr": "J'aime danser la samba",
+      "target": "Gosto de dançar o samba",
+      "lesson": "A7",
+      "index": 181
+    },
+    {
+      "id": "card_pr2nar",
+      "fr": "Je n'aime pas le café au lait",
+      "target": "Não gosto de café com leite",
+      "lesson": "A7",
+      "index": 182
+    },
+    {
+      "id": "card_x2bguv",
+      "fr": "Je n'aime pas les gâteaux très sucrés",
+      "target": "Não gosto dos bolos muito doces",
+      "lesson": "A7",
+      "index": 183
+    },
+    {
+      "id": "card_ze1i8e",
+      "fr": "Je n'aime pas la chaleur / le froid",
+      "target": "Não gosto do calor / do frio",
+      "lesson": "A7",
+      "index": 184
+    },
+    {
+      "id": "card_i6s8bh",
+      "fr": "Je n'aime pas écouter de la musique",
+      "target": "Não gosto de escutar / de ouvir música",
+      "lesson": "A7",
+      "index": 185
+    },
+    {
+      "id": "card_m4u1l7",
+      "fr": "Aimez-vous faire des achats ?",
+      "target": "Gosta de fazer compras ?",
+      "lesson": "A7",
+      "index": 186
+    },
+    {
+      "id": "card_mvozpm",
+      "fr": "Aimez-vous le cinéma ?",
+      "target": "Gosta de cinema ?",
+      "lesson": "A7",
+      "index": 187
+    },
+    {
+      "id": "card_nggg93",
+      "fr": "J'aimerais beaucoup parler portugais",
+      "target": "Gostaria muito de falar português",
+      "lesson": "A7",
+      "index": 188
+    },
+    {
+      "id": "card_b1tzvy",
+      "fr": "J'aimerais savoir dessiner",
+      "target": "Gostaria de saber desenhar",
+      "lesson": "A7",
+      "index": 189
+    },
+    {
+      "id": "card_6yrsi9",
+      "fr": "J'aimerais prendre une douche",
+      "target": "Gostaria de tomar um banho (de chuveiro)",
+      "lesson": "A7",
+      "index": 190
+    },
+    {
+      "id": "card_6mg2t8",
+      "fr": "J'aimerais regarder la télévision",
+      "target": "Gostaria de assistir televisão",
+      "lesson": "A7",
+      "index": 191
+    },
+    {
+      "id": "card_j83utf",
+      "fr": "J'aime voyager.",
+      "target": "Gosto de viajar.",
+      "lesson": "A7",
+      "index": 192
+    },
+    {
+      "id": "card_qvjqy8",
+      "fr": "Nous aimons la chaleur.",
+      "target": "Gostamos do calor.",
+      "lesson": "A7",
+      "index": 193
+    },
+    {
+      "id": "card_l0i5u",
+      "fr": "j'aime",
+      "target": "gosto",
+      "lesson": "A7",
+      "index": 194
+    },
+    {
+      "id": "card_jjd0gc",
+      "fr": "tu aimes, vous aimez",
+      "target": "gosta",
+      "lesson": "A7",
+      "index": 195
+    },
+    {
+      "id": "card_6hpz0k",
+      "fr": "il, elle aime",
+      "target": "gosta",
+      "lesson": "A7",
+      "index": 196
+    },
+    {
+      "id": "card_8gsf8v",
+      "fr": "nous aimons",
+      "target": "gostamos",
+      "lesson": "A7",
+      "index": 197
+    },
+    {
+      "id": "card_we2lig",
+      "fr": "vous aimez",
+      "target": "gostam",
+      "lesson": "A7",
+      "index": 198
+    },
+    {
+      "id": "card_eka3os",
+      "fr": "ils, elles aiment",
+      "target": "gostam",
+      "lesson": "A7",
+      "index": 199
+    },
+    {
+      "id": "card_i8u8u7",
+      "fr": "j'aimerais",
+      "target": "gostaria",
+      "lesson": "A7",
+      "index": 200
+    },
+    {
+      "id": "card_wjutyw",
+      "fr": "tu aimerais, vous aimeriez",
+      "target": "gostaria",
+      "lesson": "A7",
+      "index": 201
+    },
+    {
+      "id": "card_d5x9yk",
+      "fr": "il, elle aimerait",
+      "target": "gostaria",
+      "lesson": "A7",
+      "index": 202
+    },
+    {
+      "id": "card_xug641",
+      "fr": "nous aimerions",
+      "target": "gostaríamos",
+      "lesson": "A7",
+      "index": 203
+    },
+    {
+      "id": "card_myy54o",
+      "fr": "vous aimeriez",
+      "target": "gostariam",
+      "lesson": "A7",
+      "index": 204
+    },
+    {
+      "id": "card_xto5rh",
+      "fr": "ils, elles aimeraient",
+      "target": "gostariam",
+      "lesson": "A7",
+      "index": 205
+    },
+    {
+      "id": "card_dltn8h",
+      "fr": "la France",
+      "target": "a França",
+      "lesson": "A7",
+      "index": 206
+    },
+    {
+      "id": "card_atac91",
+      "fr": "le Brésil",
+      "target": "o Brasil",
+      "lesson": "A7",
+      "index": 207
+    },
+    {
+      "id": "card_keua1t",
+      "fr": "j'aime le Portugal.",
+      "target": "Gosto de Portugal.",
+      "lesson": "A7",
+      "index": 208
+    },
+    {
+      "id": "card_u8vhjx",
+      "fr": "je suis d'Angola.",
+      "target": "Sou de Angola.",
+      "lesson": "A7",
+      "index": 209
+    },
+    {
+      "id": "card_kmjwyi",
+      "fr": "j'aime écouter de la musique.",
+      "target": "Gosto de ouvir música.",
+      "lesson": "A7",
+      "index": 210
+    },
+    {
+      "id": "card_ldy4jt",
+      "fr": "J'aimerais me promener.",
+      "target": "Gostaria de passear.",
+      "lesson": "A7",
+      "index": 211
+    },
+    {
+      "id": "card_kxn66u",
+      "fr": "J'aime beaucoup le Brésil.",
+      "target": "Gosto muito do Brasil.",
+      "lesson": "A7",
+      "index": 212
+    },
+    {
+      "id": "card_pw4e84",
+      "fr": "Nous aimons voyager.",
+      "target": "Gostamos de viajar.",
+      "lesson": "A7",
+      "index": 213
+    },
+    {
+      "id": "card_49ee26",
+      "fr": "Tu aimes la musique ?",
+      "target": "Gosta de música ?",
+      "lesson": "A7",
+      "index": 214
+    },
+    {
+      "id": "card_sit7b8",
+      "fr": "Vous aimez danser ?",
+      "target": "Gostam de dançar ?",
+      "lesson": "A7",
+      "index": 215
+    },
+    {
+      "id": "card_4ymehr",
+      "fr": "Tu aimes regarder la TV ?",
+      "target": "Gosta de assistir televisão ?",
+      "lesson": "A7",
+      "index": 216
+    },
+    {
+      "id": "card_lkb9co",
+      "fr": "Je veux réserver une chambre",
+      "target": "Quero reservar um quarto",
+      "lesson": "A8",
+      "index": 217
+    },
+    {
+      "id": "card_vrr00l",
+      "fr": "Je veux trois billets pour Belém",
+      "target": "Quero très passagens para Belém",
+      "lesson": "A8",
+      "index": 218
+    },
+    {
+      "id": "card_ca8dj8",
+      "fr": "Je veux partir demain",
+      "target": "Quero ir embora amanhã",
+      "lesson": "A8",
+      "index": 219
+    },
+    {
+      "id": "card_7kkpnr",
+      "fr": "Je veux louer une voiture",
+      "target": "Quero alugar um carro",
+      "lesson": "A8",
+      "index": 220
+    },
+    {
+      "id": "card_dj2d68",
+      "fr": "Je veux aller à Belo Horizonte",
+      "target": "Quero ir a Belo Horizonte",
+      "lesson": "A8",
+      "index": 221
+    },
+    {
+      "id": "card_r971yu",
+      "fr": "Je voudrais changer de l'argent",
+      "target": "Queria cambiar / trocar dinheiro",
+      "lesson": "A8",
+      "index": 222
+    },
+    {
+      "id": "card_c6sisv",
+      "fr": "Je voudrais visiter le Musée des Oratoires",
+      "target": "Queria visitar o Muséu dos Oratórios",
+      "lesson": "A8",
+      "index": 223
+    },
+    {
+      "id": "card_gnl2n",
+      "fr": "Je voudrais trouver un hôtel bon marché",
+      "target": "Queria encontrar um hotel barato",
+      "lesson": "A8",
+      "index": 224
+    },
+    {
+      "id": "card_kkx1we",
+      "fr": "Je voudrais parler avec le directeur",
+      "target": "Queria falar com o director",
+      "lesson": "A8",
+      "index": 225
+    },
+    {
+      "id": "card_1gp5nw",
+      "fr": "Je voudrais manger des crevettes",
+      "target": "Queria comer camarões",
+      "lesson": "A8",
+      "index": 226
+    },
+    {
+      "id": "card_frrzvy",
+      "fr": "Je voudrais de la viande",
+      "target": "Queria carne",
+      "lesson": "A8",
+      "index": 227
+    },
+    {
+      "id": "card_jvacb9",
+      "fr": "Je ne veux pas partir tôt le matin",
+      "target": "Não quero sair cedo de manhã",
+      "lesson": "A8",
+      "index": 228
+    },
+    {
+      "id": "card_fxvg8p",
+      "fr": "Je ne veux pas un hôtel cher",
+      "target": "Não quero um hotel caro",
+      "lesson": "A8",
+      "index": 229
+    },
+    {
+      "id": "card_6ylcxn",
+      "fr": "Je ne veux pas boire du vin rouge / blanc",
+      "target": "Não quero beber vinho tinto / branco",
+      "lesson": "A8",
+      "index": 230
+    },
+    {
+      "id": "card_yx2qx",
+      "fr": "Voulez-vous voyager de nuit ?",
+      "target": "Quer viajar de noite?",
+      "lesson": "A8",
+      "index": 231
+    },
+    {
+      "id": "card_an6y2q",
+      "fr": "Voulez-vous votre viande bien cuite / bleue ?",
+      "target": "Quer sua carne bem passada / mal passada?",
+      "lesson": "A8",
+      "index": 232
+    },
+    {
+      "id": "card_fiec8m",
+      "fr": "Voudriez-vous une chambre avec vue sur la mer ?",
+      "target": "Quer um quarto com vista para o mar?",
+      "lesson": "A8",
+      "index": 233
+    },
+    {
+      "id": "card_epf2ep",
+      "fr": "Voudriez-vous une feijoada ?",
+      "target": "Quer uma feijoada?",
+      "lesson": "A8",
+      "index": 234
+    },
+    {
+      "id": "card_2hvp8",
+      "fr": "je mange",
+      "target": "como",
+      "lesson": "A8",
+      "index": 235
+    },
+    {
+      "id": "card_rm8qxw",
+      "fr": "tu manges, vous mangez",
+      "target": "come",
+      "lesson": "A8",
+      "index": 236
+    },
+    {
+      "id": "card_1drtgw",
+      "fr": "il, elle mange",
+      "target": "come",
+      "lesson": "A8",
+      "index": 237
+    },
+    {
+      "id": "card_8w3ela",
+      "fr": "nous mangeons",
+      "target": "comemos",
+      "lesson": "A8",
+      "index": 238
+    },
+    {
+      "id": "card_b1o1hw",
+      "fr": "vous mangez",
+      "target": "comem",
+      "lesson": "A8",
+      "index": 239
+    },
+    {
+      "id": "card_lfct3s",
+      "fr": "ils, elles mangent",
+      "target": "comem",
+      "lesson": "A8",
+      "index": 240
+    },
+    {
+      "id": "card_765g09",
+      "fr": "je voulais",
+      "target": "queria",
+      "lesson": "A8",
+      "index": 241
+    },
+    {
+      "id": "card_ckdt6w",
+      "fr": "tu voulais, vous vouliez",
+      "target": "queria",
+      "lesson": "A8",
+      "index": 242
+    },
+    {
+      "id": "card_2b7yek",
+      "fr": "il, elle voulait",
+      "target": "queria",
+      "lesson": "A8",
+      "index": 243
+    },
+    {
+      "id": "card_wd4jt5",
+      "fr": "nous voulions",
+      "target": "queríamos",
+      "lesson": "A8",
+      "index": 244
+    },
+    {
+      "id": "card_2ag4yo",
+      "fr": "vous vouliez",
+      "target": "queriam",
+      "lesson": "A8",
+      "index": 245
+    },
+    {
+      "id": "card_ny7lrv",
+      "fr": "ils, elles voulaient",
+      "target": "queriam",
+      "lesson": "A8",
+      "index": 246
+    },
+    {
+      "id": "card_dipx68",
+      "fr": "Je veux du vin.",
+      "target": "Quero vinho.",
+      "lesson": "A8",
+      "index": 247
+    },
+    {
+      "id": "card_g993mn",
+      "fr": "Je ne veux pas de crevettes.",
+      "target": "Não quero camarões.",
+      "lesson": "A8",
+      "index": 248
+    },
+    {
+      "id": "card_k3htlh",
+      "fr": "Je veux du pain.",
+      "target": "Eu quero pão.",
+      "lesson": "A8",
+      "index": 249
+    },
+    {
+      "id": "card_bwpeqk",
+      "fr": "Il boit du vin.",
+      "target": "Ele bebe vinho.",
+      "lesson": "A8",
+      "index": 250
+    },
+    {
+      "id": "card_wag9qc",
+      "fr": "Nous voudrions sortir.",
+      "target": "Nós queríamos sair.",
+      "lesson": "A8",
+      "index": 251
+    },
+    {
+      "id": "card_z0gi0b",
+      "fr": "Ils veulent de la viande.",
+      "target": "Eles querem carne.",
+      "lesson": "A8",
+      "index": 252
+    },
+    {
+      "id": "card_1djcxm",
+      "fr": "Pouvez-vous m’aider s’il vous plait ?",
+      "target": "Pode me ajudar por favor ?",
+      "lesson": "A9",
+      "index": 253
+    },
+    {
+      "id": "card_f4gvbs",
+      "fr": "Pouvez-vous m’indiquer le prix du tee-shirt bleu ?",
+      "target": "Pode me indicar o preço da camiseta azul ?",
+      "lesson": "A9",
+      "index": 254
+    },
+    {
+      "id": "card_eexkll",
+      "fr": "Pouvez-vous me dire où se trouve le Maracanã ?",
+      "target": "Pode me dizer onde fica o Maracanã ?",
+      "lesson": "A9",
+      "index": 255
+    },
+    {
+      "id": "card_c9v5ur",
+      "fr": "Pouvez-vous parler plus lentement ?",
+      "target": "Pode falar mais devagar ?",
+      "lesson": "A9",
+      "index": 256
+    },
+    {
+      "id": "card_25myjc",
+      "fr": "Savez-vous parler français ?",
+      "target": "Sabe falar francês ?",
+      "lesson": "A9",
+      "index": 257
+    },
+    {
+      "id": "card_dqwjgb",
+      "fr": "Savez-vous où est le musée d’art sacré ?",
+      "target": "Sabe onde é o museu de arte sacra ?",
+      "lesson": "A9",
+      "index": 258
+    },
+    {
+      "id": "card_lv6enu",
+      "fr": "Savez-vous d’où part le tramway pour Santa Teresa ?",
+      "target": "Sabe de onde sai o bondinho de Santa Teresa ?",
+      "lesson": "A9",
+      "index": 259
+    },
+    {
+      "id": "card_tfwach",
+      "fr": "Je ne peux pas rester plus longtemps",
+      "target": "Não posso ficar mais tempo",
+      "lesson": "A9",
+      "index": 260
+    },
+    {
+      "id": "card_3p7ayt",
+      "fr": "Je ne peux pas aller à Fortaleza",
+      "target": "Não posso ir a Fortaleza",
+      "lesson": "A9",
+      "index": 261
+    },
+    {
+      "id": "card_fa9xz1",
+      "fr": "Je ne sais pas bien parler portugais",
+      "target": "Não sei falar bem português",
+      "lesson": "A9",
+      "index": 262
+    },
+    {
+      "id": "card_a3dzs7",
+      "fr": "Je ne sais pas comment aller au Pelourinho",
+      "target": "Não sei como ir ao Pelourinho",
+      "lesson": "A9",
+      "index": 263
+    },
+    {
+      "id": "card_mt2rc7",
+      "fr": "Il faut me réveiller très tôt",
+      "target": "É preciso / É necessário me acordar muito cedo",
+      "lesson": "A9",
+      "index": 264
+    },
+    {
+      "id": "card_ydqjvu",
+      "fr": "Il faut prendre le vol de 9 heures",
+      "target": "É preciso / É necessário pegar o vôo das nove (horas)",
+      "lesson": "A9",
+      "index": 265
+    },
+    {
+      "id": "card_cwsbxm",
+      "fr": "je peux",
+      "target": "posso",
+      "lesson": "A9",
+      "index": 266
+    },
+    {
+      "id": "card_ggpu36",
+      "fr": "tu peux, vous pouvez",
+      "target": "pode",
+      "lesson": "A9",
+      "index": 267
+    },
+    {
+      "id": "card_6i1ft2",
+      "fr": "il, elle peut",
+      "target": "pode",
+      "lesson": "A9",
+      "index": 268
+    },
+    {
+      "id": "card_pzytdo",
+      "fr": "nous pouvons",
+      "target": "podemos",
+      "lesson": "A9",
+      "index": 269
+    },
+    {
+      "id": "card_d9m29n",
+      "fr": "vous pouvez",
+      "target": "podem",
+      "lesson": "A9",
+      "index": 270
+    },
+    {
+      "id": "card_h7fdxx",
+      "fr": "ils, elles peuvent",
+      "target": "podem",
+      "lesson": "A9",
+      "index": 271
+    },
+    {
+      "id": "card_cwq4f0",
+      "fr": "je sais",
+      "target": "sei",
+      "lesson": "A9",
+      "index": 272
+    },
+    {
+      "id": "card_apgpog",
+      "fr": "tu sais, vous savez",
+      "target": "sabe",
+      "lesson": "A9",
+      "index": 273
+    },
+    {
+      "id": "card_6i3nbt",
+      "fr": "il, elle sait",
+      "target": "sabe",
+      "lesson": "A9",
+      "index": 274
+    },
+    {
+      "id": "card_315oxw",
+      "fr": "nous savons",
+      "target": "sabemos",
+      "lesson": "A9",
+      "index": 275
+    },
+    {
+      "id": "card_wqm6d7",
+      "fr": "vous savez",
+      "target": "sabem",
+      "lesson": "A9",
+      "index": 276
+    },
+    {
+      "id": "card_q287vj",
+      "fr": "ils, elles savent",
+      "target": "sabem",
+      "lesson": "A9",
+      "index": 277
+    },
+    {
+      "id": "card_2dmgff",
+      "fr": "aller à Fortaleza.",
+      "target": "ir a Fortaleza.",
+      "lesson": "A9",
+      "index": 278
+    },
+    {
+      "id": "card_wcnfwe",
+      "fr": "aller au Pelourinho.",
+      "target": "ir ao Pelourinho.",
+      "lesson": "A9",
+      "index": 279
+    },
+    {
+      "id": "card_i94hds",
+      "fr": "aller au Brésil. (1)",
+      "target": "ir ao Brasil.",
+      "lesson": "A9",
+      "index": 280
+    },
+    {
+      "id": "card_i94hep",
+      "fr": "aller au Brésil. (2)",
+      "target": "ir para o Brasil.",
+      "lesson": "A9",
+      "index": 281
+    },
+    {
+      "id": "card_lgi3jq",
+      "fr": "Puis-je rester ?",
+      "target": "Posso ficar ?",
+      "lesson": "A9",
+      "index": 282
+    },
+    {
+      "id": "card_3arbg2",
+      "fr": "Je ne sais pas où il est.",
+      "target": "Não sei onde está.",
+      "lesson": "A9",
+      "index": 283
+    },
+    {
+      "id": "card_2eupft",
+      "fr": "S'il vous plait..",
+      "target": "Por favor.",
+      "lesson": "A9",
+      "index": 284
+    },
+    {
+      "id": "card_a2nwnu",
+      "fr": "Il faut partir tôt.",
+      "target": "É preciso sair cedo.",
+      "lesson": "A9",
+      "index": 285
+    },
+    {
+      "id": "card_ca7au5",
+      "fr": "Sais-tu comment aller à la plage ?",
+      "target": "Sabe como ir à praia ?",
+      "lesson": "A9",
+      "index": 286
+    },
+    {
+      "id": "card_tixmoo",
+      "fr": "Vous savez danser la samba ?",
+      "target": "Sabem dansar samba ?",
+      "lesson": "A9",
+      "index": 287
+    },
+    {
+      "id": "card_v1igwp",
+      "fr": "Quand voulez-vous partir pour Manaus ?",
+      "target": "Quando quer sair para Manaus ?",
+      "lesson": "A10",
+      "index": 288
+    },
+    {
+      "id": "card_4dp717",
+      "fr": "Quand allez-vous venir à Maceió ?",
+      "target": "Quando vão vir a Maceió ?",
+      "lesson": "A10",
+      "index": 289
+    },
+    {
+      "id": "card_4traiv",
+      "fr": "Quand y-a t'il un bus pour le centre ?",
+      "target": "Quando tem um ônibus para o centro ?",
+      "lesson": "A10",
+      "index": 290
+    },
+    {
+      "id": "card_yqu0xz",
+      "fr": "À quelle heure arriverez-vous ?",
+      "target": "A que horas vão chegar ?",
+      "lesson": "A10",
+      "index": 291
+    },
+    {
+      "id": "card_oyys01",
+      "fr": "À quelle heure ouvre la banque ?",
+      "target": "A que horas abre o banco ?",
+      "lesson": "A10",
+      "index": 292
+    },
+    {
+      "id": "card_a6jsff",
+      "fr": "À quelle heure arrive l'avion de Porto Alegre ?",
+      "target": "A que horas chega o avião de Porto Alegre ?",
+      "lesson": "A10",
+      "index": 293
+    },
+    {
+      "id": "card_rkl1zo",
+      "fr": "À quelle heure ferme la poste ?",
+      "target": "A que horas fecha o correio ?",
+      "lesson": "A10",
+      "index": 294
+    },
+    {
+      "id": "card_aqwtrp",
+      "fr": "À quelle heure servez-vous le petit déjeuner ?",
+      "target": "A que horas servem o café da manhã",
+      "lesson": "A10",
+      "index": 295
+    },
+    {
+      "id": "card_vnqhcu",
+      "fr": "il est huit heures du matin",
+      "target": "são oito da manhã",
+      "lesson": "A10",
+      "index": 296
+    },
+    {
+      "id": "card_ic06fr",
+      "fr": "il est midi",
+      "target": "é meio dia",
+      "lesson": "A10",
+      "index": 297
+    },
+    {
+      "id": "card_xxnm0i",
+      "fr": "il est deux heures de l'après-midi",
+      "target": "são duas da tarde",
+      "lesson": "A10",
+      "index": 298
+    },
+    {
+      "id": "card_8nslg",
+      "fr": "il est six heures du soir",
+      "target": "são seis da noite",
+      "lesson": "A10",
+      "index": 299
+    },
+    {
+      "id": "card_l6l8j8",
+      "fr": "il est sept heures et quart",
+      "target": "são sete e quinze",
+      "lesson": "A10",
+      "index": 300
+    },
+    {
+      "id": "card_8536za",
+      "fr": "il est neuf heure et demie",
+      "target": "são nove e meia",
+      "lesson": "A10",
+      "index": 301
+    },
+    {
+      "id": "card_90zi2j",
+      "fr": "il est dix heures moins le quart",
+      "target": "são quinze para as dez",
+      "lesson": "A10",
+      "index": 302
+    },
+    {
+      "id": "card_czbqmg",
+      "fr": "il est onze heures pile",
+      "target": "são onze em ponto",
+      "lesson": "A10",
+      "index": 303
+    },
+    {
+      "id": "card_5gj98k",
+      "fr": "il est minuit",
+      "target": "é meia noite",
+      "lesson": "A10",
+      "index": 304
+    },
+    {
+      "id": "card_jjlyxz",
+      "fr": "j'ouvre",
+      "target": "abro",
+      "lesson": "A10",
+      "index": 305
+    },
+    {
+      "id": "card_ywysve",
+      "fr": "tu ouvres, vous ouvrez",
+      "target": "abre",
+      "lesson": "A10",
+      "index": 306
+    },
+    {
+      "id": "card_1fm96h",
+      "fr": "il, elle ouvre",
+      "target": "abre",
+      "lesson": "A10",
+      "index": 307
+    },
+    {
+      "id": "card_rkns1y",
+      "fr": "nous ouvrons",
+      "target": "abrimos",
+      "lesson": "A10",
+      "index": 308
+    },
+    {
+      "id": "card_cqkfy5",
+      "fr": "vous ouvrez",
+      "target": "abrem",
+      "lesson": "A10",
+      "index": 309
+    },
+    {
+      "id": "card_67y00x",
+      "fr": "ils, elles ouvrent",
+      "target": "abrem",
+      "lesson": "A10",
+      "index": 310
+    },
+    {
+      "id": "card_6tkm7",
+      "fr": "je sers.",
+      "target": "sirvo.",
+      "lesson": "A10",
+      "index": 311
+    },
+    {
+      "id": "card_cwnt89",
+      "fr": "je vais",
+      "target": "vou",
+      "lesson": "A10",
+      "index": 312
+    },
+    {
+      "id": "card_t1ez5j",
+      "fr": "tu vas, vous allez",
+      "target": "vai",
+      "lesson": "A10",
+      "index": 313
+    },
+    {
+      "id": "card_ilfjnj",
+      "fr": "il, elle va",
+      "target": "vai",
+      "lesson": "A10",
+      "index": 314
+    },
+    {
+      "id": "card_8eoxsd",
+      "fr": "nous allons",
+      "target": "vamos",
+      "lesson": "A10",
+      "index": 315
+    },
+    {
+      "id": "card_we4vuy",
+      "fr": "vous allez",
+      "target": "vão",
+      "lesson": "A10",
+      "index": 316
+    },
+    {
+      "id": "card_9vi2t1",
+      "fr": "ils, elles vont",
+      "target": "vão",
+      "lesson": "A10",
+      "index": 317
+    },
+    {
+      "id": "card_dcfiab",
+      "fr": "demain je vais partir à 6 h.",
+      "target": "amanhã vou sair às seis",
+      "lesson": "A10",
+      "index": 318
+    },
+    {
+      "id": "card_jp2xq1",
+      "fr": "il est une heure",
+      "target": "é uma hora",
+      "lesson": "A10",
+      "index": 319
+    },
+    {
+      "id": "card_tkgpp2",
+      "fr": "il est deux heures.",
+      "target": "são duas (horas)",
+      "lesson": "A10",
+      "index": 320
+    },
+    {
+      "id": "card_xovkb",
+      "fr": "il est cinq heures.",
+      "target": "são cinco",
+      "lesson": "A10",
+      "index": 321
+    },
+    {
+      "id": "card_py5dgv",
+      "fr": "il est 2 h10.",
+      "target": "São duas e dez",
+      "lesson": "A10",
+      "index": 322
+    },
+    {
+      "id": "card_rhe6fv",
+      "fr": "onze heures moins vingt",
+      "target": "vinte para as onze",
+      "lesson": "A10",
+      "index": 323
+    },
+    {
+      "id": "card_6mqzaa",
+      "fr": "à 5 h",
+      "target": "às cinco",
+      "lesson": "A10",
+      "index": 324
+    },
+    {
+      "id": "card_5rbg3z",
+      "fr": "à 11 h",
+      "target": "às onze",
+      "lesson": "A10",
+      "index": 325
+    },
+    {
+      "id": "card_mkzija",
+      "fr": "le vol (l'avion) part à 10 h.",
+      "target": "O vôo sai às dez",
+      "lesson": "A10",
+      "index": 326
+    },
+    {
+      "id": "card_k4ti9n",
+      "fr": "Nous ouvrons à 7h du matin.",
+      "target": "Abrimos às sete da manhã.",
+      "lesson": "A10",
+      "index": 327
+    },
+    {
+      "id": "card_jqz7f6",
+      "fr": "À quelle heure ouvre la poste ?",
+      "target": "A que horas abre o correio ?",
+      "lesson": "A10",
+      "index": 328
+    },
+    {
+      "id": "card_qfo37",
+      "fr": "Quelle heure est-il ?",
+      "target": "Que horas são ?",
+      "lesson": "A10",
+      "index": 329
+    },
+    {
+      "id": "card_g2mnbj",
+      "fr": "Aujourd'hui, je vais à Belém.",
+      "target": "Hoje vou a Belém.",
+      "lesson": "A10",
+      "index": 330
+    },
+    {
+      "id": "card_o31c42",
+      "fr": "Demain, ils vont à la plage.",
+      "target": "Amanhã vão à praia.",
+      "lesson": "A10",
+      "index": 331
+    },
+    {
+      "id": "card_m51lyq",
+      "fr": "Nous allons au Rio de Janeiro.",
+      "target": "Nós vamos ao Rio de Janeiro.",
+      "lesson": "A10",
+      "index": 332
+    },
+    {
+      "id": "card_lnkvd9",
+      "fr": "Combien c'est ? / ça coûte ?",
+      "target": "Quanto é / custa ? / é que custa ?",
+      "lesson": "A11",
+      "index": 333
+    },
+    {
+      "id": "card_8hy790",
+      "fr": "Combien d'argent voulez-vous ?",
+      "target": "Quanto dinheiro quer ?",
+      "lesson": "A11",
+      "index": 334
+    },
+    {
+      "id": "card_jg1j9d",
+      "fr": "Combien de temps dure le voyage ?",
+      "target": "Quanto tempo demora a viagem ?",
+      "lesson": "A11",
+      "index": 335
+    },
+    {
+      "id": "card_ce2u7e",
+      "fr": "Combien de temps restez-vous ?",
+      "target": "Quanto tempo fica ?",
+      "lesson": "A11",
+      "index": 336
+    },
+    {
+      "id": "card_itlfor",
+      "fr": "Combien d'enfants avez-vous ?",
+      "target": "Quantos filhos tem ?",
+      "lesson": "A11",
+      "index": 337
+    },
+    {
+      "id": "card_cuauk4",
+      "fr": "Combien de tunnels y-a t'il à Rio ?",
+      "target": "Quantos túneis tem no Rio ?",
+      "lesson": "A11",
+      "index": 338
+    },
+    {
+      "id": "card_l9sg6y",
+      "fr": "Combien sont-ils ?",
+      "target": "Quantos são ?",
+      "lesson": "A11",
+      "index": 339
+    },
+    {
+      "id": "card_te9rhf",
+      "fr": "Combien de kilomètres y-a t'il ?",
+      "target": "Quantos quilômetros tem / há ?",
+      "lesson": "A11",
+      "index": 340
+    },
+    {
+      "id": "card_x1z2bu",
+      "fr": "Combien de draps bleus y-a t'il ?",
+      "target": "Quantos lençois azuis tem ?",
+      "lesson": "A11",
+      "index": 341
+    },
+    {
+      "id": "card_tewt7e",
+      "fr": "Combien de sœurs avez-vous ?",
+      "target": "Quantas irmãs tem ?",
+      "lesson": "A11",
+      "index": 342
+    },
+    {
+      "id": "card_w7428d",
+      "fr": "Combien de billets désirez-vous ?",
+      "target": "Quantas passagens quer ?",
+      "lesson": "A11",
+      "index": 343
+    },
+    {
+      "id": "card_nhdxsf",
+      "fr": "Combien de valises avez-vous ?",
+      "target": "Quantas malas tem ?",
+      "lesson": "A11",
+      "index": 344
+    },
+    {
+      "id": "card_44myqa",
+      "fr": "Combien de personnes vont venir ?",
+      "target": "Quantas pessoas vão vir ?",
+      "lesson": "A11",
+      "index": 345
+    },
+    {
+      "id": "card_33k7dk",
+      "fr": "Depuis combien de temps êtes-vous au Brésil ?",
+      "target": "Desde quando / há quanto tempo estão / está no Brasil ?",
+      "lesson": "A11",
+      "index": 346
+    },
+    {
+      "id": "card_v2xz9u",
+      "fr": "Depuis combien de temps êtes-vous mariés ?",
+      "target": "Desde quando / há quanto tempo estão casados ?",
+      "lesson": "A11",
+      "index": 347
+    },
+    {
+      "id": "card_z0xmfq",
+      "fr": "Depuis combien de temps attendez-vous ?",
+      "target": "Desde quando / há quanto tempo está / estão esperando ?",
+      "lesson": "A11",
+      "index": 348
+    },
+    {
+      "id": "card_jq4mim",
+      "fr": "Combien est-ce ?",
+      "target": "Quanto é ?",
+      "lesson": "A11",
+      "index": 349
+    },
+    {
+      "id": "card_lw4lw",
+      "fr": "Combien de kilomètres ?",
+      "target": "Quantos quilômetros ?",
+      "lesson": "A11",
+      "index": 350
+    },
+    {
+      "id": "card_s8iy3d",
+      "fr": "Combien de personnes ?",
+      "target": "Quantas pessoas ?",
+      "lesson": "A11",
+      "index": 351
+    },
+    {
+      "id": "card_j3a4a1",
+      "fr": "Combien de gens ?",
+      "target": "Quanta gente ?",
+      "lesson": "A11",
+      "index": 352
+    },
+    {
+      "id": "card_vxr0jn",
+      "fr": "Que d'argent !",
+      "target": "Quanto dinheiro !",
+      "lesson": "A11",
+      "index": 353
+    },
+    {
+      "id": "card_t88u1e",
+      "fr": "Comme il y a du monde !",
+      "target": "Quanta gente !",
+      "lesson": "A11",
+      "index": 354
+    },
+    {
+      "id": "card_om22fh",
+      "fr": "Que de monde !",
+      "target": "Quanta gente !",
+      "lesson": "A11",
+      "index": 355
+    },
+    {
+      "id": "card_nv1yvo",
+      "fr": "Que de touristes !",
+      "target": "Quantos turistas !",
+      "lesson": "A11",
+      "index": 356
+    },
+    {
+      "id": "card_pua31j",
+      "fr": "Que de beautés !",
+      "target": "Quantas belezas !",
+      "lesson": "A11",
+      "index": 357
+    },
+    {
+      "id": "card_3zihj3",
+      "fr": "général / généraux",
+      "target": "geral / gerais",
+      "lesson": "A11",
+      "index": 358
+    },
+    {
+      "id": "card_1w53ut",
+      "fr": "le (s) drap (s)",
+      "target": "o lençol / os lençois",
+      "lesson": "A11",
+      "index": 359
+    },
+    {
+      "id": "card_p32tld",
+      "fr": "bleu (s)",
+      "target": "azul / azuis",
+      "lesson": "A11",
+      "index": 360
+    },
+    {
+      "id": "card_jokf72",
+      "fr": "l' (les) hôtel (s)",
+      "target": "o hotel – os hotéis",
+      "lesson": "A11",
+      "index": 361
+    },
+    {
+      "id": "card_mpwpvw",
+      "fr": "le (s) tunnel (s)",
+      "target": "o túnel – os túneis",
+      "lesson": "A11",
+      "index": 362
+    },
+    {
+      "id": "card_ckup58",
+      "fr": "gentil (s)",
+      "target": "gentil – gentis",
+      "lesson": "A11",
+      "index": 363
+    },
+    {
+      "id": "card_6l05pv",
+      "fr": "facile (s)",
+      "target": "fácil – faceis",
+      "lesson": "A11",
+      "index": 364
+    },
+    {
+      "id": "card_vbydpj",
+      "fr": "Depuis combien de jours ?",
+      "target": "Desde quantos días ?",
+      "lesson": "A11",
+      "index": 365
+    },
+    {
+      "id": "card_vfy2vc",
+      "fr": "Jusqu'à quand restes-tu ?",
+      "target": "Até quando fica ?",
+      "lesson": "A11",
+      "index": 366
+    },
+    {
+      "id": "card_fw1ar8",
+      "fr": "le bus tarde à arriver !",
+      "target": "o ônibus demora para chegar !",
+      "lesson": "A11",
+      "index": 367
+    },
+    {
+      "id": "card_lprd3j",
+      "fr": "Combien ça coûte ?",
+      "target": "Quanto custa ?",
+      "lesson": "A11",
+      "index": 368
+    },
+    {
+      "id": "card_ipz3w8",
+      "fr": "Combien de temps cela dure t'il ?",
+      "target": "Quanto tempo demora ?",
+      "lesson": "A11",
+      "index": 369
+    },
+    {
+      "id": "card_44eh1l",
+      "fr": "Que de fruits !",
+      "target": "Quanta fruta !",
+      "lesson": "A11",
+      "index": 370
+    },
+    {
+      "id": "card_c6t6yx",
+      "fr": "Combien de personnes êtes-vous ?",
+      "target": "Quantas pessoas são ?",
+      "lesson": "A11",
+      "index": 371
+    },
+    {
+      "id": "card_8s64nf",
+      "fr": "Combien de kilos voulez-vous ?",
+      "target": "Quantos quilos quer ?",
+      "lesson": "A11",
+      "index": 372
+    },
+    {
+      "id": "card_htfkdw",
+      "fr": "Combien de jours restez-vous ?",
+      "target": "Quantos dias ficam ?",
+      "lesson": "A11",
+      "index": 373
+    },
+    {
+      "id": "card_cmzc0p",
+      "fr": "Dans une heure je prends l'autocar pour Rio",
+      "target": "Daqui a uma hora pego o ônibus para o Rio",
+      "lesson": "A12",
+      "index": 374
+    },
+    {
+      "id": "card_eq91d8",
+      "fr": "Dans une heure je vais manger chez un ami",
+      "target": "Daqui a uma hora vou comer na casa de um amigo",
+      "lesson": "A12",
+      "index": 375
+    },
+    {
+      "id": "card_1rtd85",
+      "fr": "Dans une heure je lui parlerai",
+      "target": "Daqui a uma hora falarei com ele",
+      "lesson": "A12",
+      "index": 376
+    },
+    {
+      "id": "card_ekm9ke",
+      "fr": "Demain j'achète un hamac",
+      "target": "Amanhã compro uma rede",
+      "lesson": "A12",
+      "index": 377
+    },
+    {
+      "id": "card_oo0nwx",
+      "fr": "Demain je vais assister à un concert de Djavan",
+      "target": "Amanhã vou assistir a um show de Djavan",
+      "lesson": "A12",
+      "index": 378
+    },
+    {
+      "id": "card_1c7mlf",
+      "fr": "Demain nous partirons à 7 heures",
+      "target": "Amanhã vamos sair às sete horas",
+      "lesson": "A12",
+      "index": 379
+    },
+    {
+      "id": "card_9g9j8x",
+      "fr": "La semaine prochaine nous allons devoir payer la location de la voiture",
+      "target": "A semana que vem vamos ter que pagar o aluguel do carro",
+      "lesson": "A12",
+      "index": 380
+    },
+    {
+      "id": "card_bwtdz9",
+      "fr": "La semaine prochaine il arrivera vers 5 h",
+      "target": "A semana que vem vai chegar por volta das 5 horas",
+      "lesson": "A12",
+      "index": 381
+    },
+    {
+      "id": "card_s1bgn",
+      "fr": "La semaine prochaine je vais savoir la vérité",
+      "target": "A semana que vem vou saber a verdade",
+      "lesson": "A12",
+      "index": 382
+    },
+    {
+      "id": "card_5xcbfe",
+      "fr": "Un jour nous irons en France",
+      "target": "Um dia iremos para a França",
+      "lesson": "A12",
+      "index": 383
+    },
+    {
+      "id": "card_2asuya",
+      "fr": "Un jour tu visiteras l'Europe",
+      "target": "Um dia vai visitar a Europa",
+      "lesson": "A12",
+      "index": 384
+    },
+    {
+      "id": "card_8zqtir",
+      "fr": "Un jour ils partiront d'ici",
+      "target": "Um dia vão embora daqui",
+      "lesson": "A12",
+      "index": 385
+    },
+    {
+      "id": "card_futsxg",
+      "fr": "demain je travaille.",
+      "target": "Amanhã trabalho",
+      "lesson": "A12",
+      "index": 386
+    },
+    {
+      "id": "card_g17760",
+      "fr": "demain je vais payer l'hôtel.",
+      "target": "Amanhã vou pagar o hotel.",
+      "lesson": "A12",
+      "index": 387
+    },
+    {
+      "id": "card_ds97tv",
+      "fr": "je vendrai",
+      "target": "venderei",
+      "lesson": "A12",
+      "index": 388
+    },
+    {
+      "id": "card_bno82",
+      "fr": "tu vendras, vous vendre",
+      "target": "venderá",
+      "lesson": "A12",
+      "index": 389
+    },
+    {
+      "id": "card_8k1ftm",
+      "fr": "il vendra",
+      "target": "venderá",
+      "lesson": "A12",
+      "index": 390
+    },
+    {
+      "id": "card_r6u8qh",
+      "fr": "nous vendrons",
+      "target": "venderemos",
+      "lesson": "A12",
+      "index": 391
+    },
+    {
+      "id": "card_gy6x3q",
+      "fr": "vous vendre",
+      "target": "venderão",
+      "lesson": "A12",
+      "index": 392
+    },
+    {
+      "id": "card_prg07x",
+      "fr": "ils vendront",
+      "target": "venderão",
+      "lesson": "A12",
+      "index": 393
+    },
+    {
+      "id": "card_jkckra",
+      "fr": "il achètera un disque.",
+      "target": "Comprará um disco.",
+      "lesson": "A12",
+      "index": 394
+    },
+    {
+      "id": "card_g48fzu",
+      "fr": "nous partirons à 8h.",
+      "target": "Sairemos às 8",
+      "lesson": "A12",
+      "index": 395
+    },
+    {
+      "id": "card_df63qb",
+      "fr": "un jour ils partiront. (1)",
+      "target": "Um dia irão embora",
+      "lesson": "A12",
+      "index": 396
+    },
+    {
+      "id": "card_df63r8",
+      "fr": "un jour ils partiront. (2)",
+      "target": "Um dia vão embora",
+      "lesson": "A12",
+      "index": 397
+    },
+    {
+      "id": "card_othywu",
+      "fr": "est-ce qu'il part ?",
+      "target": "Será que vai embora",
+      "lesson": "A12",
+      "index": 398
+    },
+    {
+      "id": "card_91hv4n",
+      "fr": "où peut bien être Pedro ?",
+      "target": "Onde estará Pedro ?",
+      "lesson": "A12",
+      "index": 399
+    },
+    {
+      "id": "card_2eifn8",
+      "fr": "dans un mois.",
+      "target": "daqui a um mês",
+      "lesson": "A12",
+      "index": 400
+    },
+    {
+      "id": "card_6wt7xa",
+      "fr": "dans deux jours.",
+      "target": "Daqui a dois dias",
+      "lesson": "A12",
+      "index": 401
+    },
+    {
+      "id": "card_8anvdf",
+      "fr": "Je dormirai à l'hôtel.",
+      "target": "Eu dormirei no hotel.",
+      "lesson": "A12",
+      "index": 402
+    },
+    {
+      "id": "card_mwzoch",
+      "fr": "Ils achèteront une voiture.",
+      "target": "Eles comprarão um carro.",
+      "lesson": "A12",
+      "index": 403
+    },
+    {
+      "id": "card_4s5xkf",
+      "fr": "Quand vas-tu partir ?",
+      "target": "Quando é que vai sair ?",
+      "lesson": "A12",
+      "index": 404
+    },
+    {
+      "id": "card_jwrscw",
+      "fr": "Mardi, je vais en France.",
+      "target": "Terça-feira vou à França.",
+      "lesson": "A12",
+      "index": 405
+    },
+    {
+      "id": "card_ynnqi7",
+      "fr": "Hier j'ai visité le théâtre de Manaus",
+      "target": "Ontem visitei o teatro de Manaus",
+      "lesson": "A13",
+      "index": 406
+    },
+    {
+      "id": "card_4imkgy",
+      "fr": "Hier j'ai mangé un acarajé",
+      "target": "Ontem comi um acarajé",
+      "lesson": "A13",
+      "index": 407
+    },
+    {
+      "id": "card_ccktdp",
+      "fr": "Hier j'ai regardé la télévision",
+      "target": "Ontem assisti a televisão",
+      "lesson": "A13",
+      "index": 408
+    },
+    {
+      "id": "card_103pwb",
+      "fr": "Hier il a acheté des billets pour le carnaval",
+      "target": "Ontem comprou ingressos para o carnaval",
+      "lesson": "A13",
+      "index": 409
+    },
+    {
+      "id": "card_wwsq18",
+      "fr": "Hier il a perdu son passeport",
+      "target": "Ontem perdeu o passaporte",
+      "lesson": "A13",
+      "index": 410
+    },
+    {
+      "id": "card_c3a1xc",
+      "fr": "Hier elle a conduit toute la journée",
+      "target": "Ontem dirigiu o dia todo",
+      "lesson": "A13",
+      "index": 411
+    },
+    {
+      "id": "card_mvpej",
+      "fr": "La semaine dernière je suis allé à Parati",
+      "target": "A semana passada fui a Paraty",
+      "lesson": "A13",
+      "index": 412
+    },
+    {
+      "id": "card_4rzbec",
+      "fr": "La semaine dernière il est allé à l'église du Bonfim",
+      "target": "A semana passada foi à igreja do Bonfim",
+      "lesson": "A13",
+      "index": 413
+    },
+    {
+      "id": "card_i6ybvs",
+      "fr": "La semaine dernière je n'ai pas eu le temps de visiter la cathédrale",
+      "target": "A semana passada não tive tempo de visitar a Sé",
+      "lesson": "A13",
+      "index": 414
+    },
+    {
+      "id": "card_47iubu",
+      "fr": "La semaine dernière il a eu un accident de voiture",
+      "target": "A semana passada teve um acidente de carro",
+      "lesson": "A13",
+      "index": 415
+    },
+    {
+      "id": "card_m1hqtn",
+      "fr": "Il y a deux jours, j'ai pris le car pour Salvador",
+      "target": "Há dois dias peguei o ônibus para Salvador",
+      "lesson": "A13",
+      "index": 416
+    },
+    {
+      "id": "card_2gwncz",
+      "fr": "je suis arrivé il y a deux jours",
+      "target": "cheguei há dois dias",
+      "lesson": "A13",
+      "index": 417
+    },
+    {
+      "id": "card_3jlvax",
+      "fr": "nous sommes ici depuis une semaine",
+      "target": "estamos aqui há uma semana",
+      "lesson": "A13",
+      "index": 418
+    },
+    {
+      "id": "card_slf37n",
+      "fr": "il la connaît depuis un mois",
+      "target": "conhece ela há um mês",
+      "lesson": "A13",
+      "index": 419
+    },
+    {
+      "id": "card_nef4ha",
+      "fr": "j'ai acheté",
+      "target": "comprei",
+      "lesson": "A13",
+      "index": 420
+    },
+    {
+      "id": "card_9bng37",
+      "fr": "il a visité",
+      "target": "visitou",
+      "lesson": "A13",
+      "index": 421
+    },
+    {
+      "id": "card_2bc4gr",
+      "fr": "il a perdu",
+      "target": "perdeu",
+      "lesson": "A13",
+      "index": 422
+    },
+    {
+      "id": "card_nbgj73",
+      "fr": "il a conduit",
+      "target": "dirigiu",
+      "lesson": "A13",
+      "index": 423
+    },
+    {
+      "id": "card_33g7e4",
+      "fr": "j'ai mangé",
+      "target": "comi",
+      "lesson": "A13",
+      "index": 424
+    },
+    {
+      "id": "card_zepv6d",
+      "fr": "il a été ingénieur",
+      "target": "ele foi engenheiro",
+      "lesson": "A13",
+      "index": 425
+    },
+    {
+      "id": "card_lsrbq9",
+      "fr": "nous avons été jeunes",
+      "target": "fomos jovens",
+      "lesson": "A13",
+      "index": 426
+    },
+    {
+      "id": "card_rgutxg",
+      "fr": "Il y a un mois je suis allé à Rio.",
+      "target": "Há um mês fui ao Rio.",
+      "lesson": "A13",
+      "index": 427
+    },
+    {
+      "id": "card_2662bj",
+      "fr": "il est ici depuis lundi",
+      "target": "está aqui desde segunda-feira",
+      "lesson": "A13",
+      "index": 428
+    },
+    {
+      "id": "card_o302b1",
+      "fr": "il y a longtemps",
+      "target": "há muito tempo",
+      "lesson": "A13",
+      "index": 429
+    },
+    {
+      "id": "card_94wdri",
+      "fr": "il y a eu",
+      "target": "houve",
+      "lesson": "A13",
+      "index": 430
+    },
+    {
+      "id": "card_6kfdp2",
+      "fr": "il y avait.",
+      "target": "havia",
+      "lesson": "A13",
+      "index": 431
+    },
+    {
+      "id": "card_u347mc",
+      "fr": "il a perdu son passeport",
+      "target": "Perdeu o passaporte",
+      "lesson": "A13",
+      "index": 432
+    },
+    {
+      "id": "card_sanp9a",
+      "fr": "elle et son fils",
+      "target": "ela e o filho",
+      "lesson": "A13",
+      "index": 433
+    },
+    {
+      "id": "card_b1eqt3",
+      "fr": "Il a bu de l'eau.",
+      "target": "Ele bebeu água",
+      "lesson": "A13",
+      "index": 434
+    },
+    {
+      "id": "card_18ywom",
+      "fr": "Nous avons acheté un hamac.",
+      "target": "Nós compramos uma rede.",
+      "lesson": "A13",
+      "index": 435
+    },
+    {
+      "id": "card_b4ir8q",
+      "fr": "Ils ont bien mangé.",
+      "target": "Eles comeram bem.",
+      "lesson": "A13",
+      "index": 436
+    },
+    {
+      "id": "card_yqqelu",
+      "fr": "Vous êtes allé à la banque ?",
+      "target": "Foi ao banco ?",
+      "lesson": "A13",
+      "index": 437
+    },
+    {
+      "id": "card_se89c8",
+      "fr": "Avez-vous eu le temps ?",
+      "target": "Tiveram tempo ?",
+      "lesson": "A13",
+      "index": 438
+    },
+    {
+      "id": "card_dx5kvf",
+      "fr": "Avez-vous aimé la visite ?",
+      "target": "Gostaram da visita ?",
+      "lesson": "A13",
+      "index": 439
+    },
+    {
+      "id": "card_lcwiwy",
+      "fr": "Avant j'aimais le piment",
+      "target": "Antes gostava de pimenta",
+      "lesson": "A14",
+      "index": 440
+    },
+    {
+      "id": "card_9e2l8n",
+      "fr": "Avant il écrivait beaucoup de cartes postales",
+      "target": "Antes escrevia muitos cartões postais",
+      "lesson": "A14",
+      "index": 441
+    },
+    {
+      "id": "card_j6u3bj",
+      "fr": "Avant nous venions toujours à cette plage",
+      "target": "Antes vínhamos sempre a esta praia",
+      "lesson": "A14",
+      "index": 442
+    },
+    {
+      "id": "card_gt1kse",
+      "fr": "Avant il demandait un petit verre de vin",
+      "target": "Antes pedia um copinho de vinho",
+      "lesson": "A14",
+      "index": 443
+    },
+    {
+      "id": "card_cogs8x",
+      "fr": "Avant elles posaient beaucoup de questions",
+      "target": "Antes faziam muitas perguntas",
+      "lesson": "A14",
+      "index": 444
+    },
+    {
+      "id": "card_ahpbox",
+      "fr": "Avant elle demandait souvent si j'étais fatiguée",
+      "target": "Antes perguntava muitas vezes se eu estava cansada",
+      "lesson": "A14",
+      "index": 445
+    },
+    {
+      "id": "card_8wg4fo",
+      "fr": "Avant on achetait toujours des petites bouteilles de sable",
+      "target": "Antes comprávamos sempre garrafinhas de areia",
+      "lesson": "A14",
+      "index": 446
+    },
+    {
+      "id": "card_ivpfym",
+      "fr": "Quand il était petit il parlait bien portugais",
+      "target": "Quand era pequeno falava bien português",
+      "lesson": "A14",
+      "index": 447
+    },
+    {
+      "id": "card_h6hdx5",
+      "fr": "Quand nous allions sortir, il est entré",
+      "target": "Quand íamos sair ele entrou",
+      "lesson": "A14",
+      "index": 448
+    },
+    {
+      "id": "card_er78d7",
+      "fr": "Quand on était au Brésil, on buvait de la bière",
+      "target": "Quand estávamos no Brasil bebíamos cerveja",
+      "lesson": "A14",
+      "index": 449
+    },
+    {
+      "id": "card_yfks8b",
+      "fr": "Quand j'avais l'habitude de voyager en car",
+      "target": "Quand costumava viajar de ônibus",
+      "lesson": "A14",
+      "index": 450
+    },
+    {
+      "id": "card_vsmsz3",
+      "fr": "Quand il était une fois ...",
+      "target": "Quand era uma vez...",
+      "lesson": "A14",
+      "index": 451
+    },
+    {
+      "id": "card_h1gwf8",
+      "fr": "Quand il n'y avait pas moyen de changer des chèques de voyage",
+      "target": "Quand não tinha jeito de trocar cheques de viagem",
+      "lesson": "A14",
+      "index": 452
+    },
+    {
+      "id": "card_yf2u44",
+      "fr": "j'aimais...",
+      "target": "gostava",
+      "lesson": "A14",
+      "index": 453
+    },
+    {
+      "id": "card_jp4id9",
+      "fr": "je mangeais...",
+      "target": "comia",
+      "lesson": "A14",
+      "index": 454
+    },
+    {
+      "id": "card_3dg10q",
+      "fr": "j'allais...",
+      "target": "ia",
+      "lesson": "A14",
+      "index": 455
+    },
+    {
+      "id": "card_w999ju",
+      "fr": "j'étais...",
+      "target": "era",
+      "lesson": "A14",
+      "index": 456
+    },
+    {
+      "id": "card_weam3w",
+      "fr": "j'avais...",
+      "target": "tinha",
+      "lesson": "A14",
+      "index": 457
+    },
+    {
+      "id": "card_86wv2y",
+      "fr": "je venais",
+      "target": "vinha",
+      "lesson": "A14",
+      "index": 458
+    },
+    {
+      "id": "card_17yg8n",
+      "fr": "Il m'a demandé s'il pouvait sortir.",
+      "target": "Ele me perguntou se podia sair.",
+      "lesson": "A14",
+      "index": 459
+    },
+    {
+      "id": "card_l4tacw",
+      "fr": "Demander de l'argent.",
+      "target": "Pedir dinheiro.",
+      "lesson": "A14",
+      "index": 460
+    },
+    {
+      "id": "card_mb40x",
+      "fr": "la petite valise",
+      "target": "a malinha",
+      "lesson": "A14",
+      "index": 461
+    },
+    {
+      "id": "card_lkzvd6",
+      "fr": "le petit chat.",
+      "target": "o gatinho",
+      "lesson": "A14",
+      "index": 462
+    },
+    {
+      "id": "card_fv1ogl",
+      "fr": "ce petit livre",
+      "target": "este livrinho",
+      "lesson": "A14",
+      "index": 463
+    },
+    {
+      "id": "card_5d18zg",
+      "fr": "qu'il est mignon !",
+      "target": "que bonitinho !",
+      "lesson": "A14",
+      "index": 464
+    },
+    {
+      "id": "card_8aaanm",
+      "fr": "ma petite Catia.",
+      "target": "Catinha",
+      "lesson": "A14",
+      "index": 465
+    },
+    {
+      "id": "card_lx7p3",
+      "fr": "Que vouliez-vous ?",
+      "target": "O que é que queria ?",
+      "lesson": "A14",
+      "index": 466
+    },
+    {
+      "id": "card_i7uvc2",
+      "fr": "Nous aimions beaucoup marcher.",
+      "target": "Gostávamos muito de andar.",
+      "lesson": "A14",
+      "index": 467
+    },
+    {
+      "id": "card_f42lma",
+      "fr": "C'était très cher !",
+      "target": "Era muito caro.",
+      "lesson": "A14",
+      "index": 468
+    },
+    {
+      "id": "card_dqad6w",
+      "fr": "Il était à Manaus.",
+      "target": "Ela estava em Manaus.",
+      "lesson": "A14",
+      "index": 469
+    },
+    {
+      "id": "card_iqitsl",
+      "fr": "Nous allions toujours à la plage.",
+      "target": "Íamos sempre à praia.",
+      "lesson": "A14",
+      "index": 470
+    },
+    {
+      "id": "card_42j2uy",
+      "fr": "C'était beau ?",
+      "target": "Era bonito ?",
+      "lesson": "A14",
+      "index": 471
+    },
+    {
+      "id": "card_ewb9lt",
+      "fr": "Y-a t'il un moyen d'entrer ?",
+      "target": "Tem jeito de entrar ?",
+      "lesson": "A14",
+      "index": 472
+    },
+    {
+      "id": "card_4g4fk3",
+      "fr": "Il n'y rien à faire",
+      "target": "Não tem jeito.",
+      "lesson": "A14",
+      "index": 473
+    },
+    {
+      "id": "card_w99jgz",
+      "fr": "Arrangez moi ça !",
+      "target": "Dê um jeitinho.",
+      "lesson": "A14",
+      "index": 474
+    },
+    {
+      "id": "card_mk65xg",
+      "fr": "Je vais arranger cela.",
+      "target": "Vou dar um jeitinho.",
+      "lesson": "A14",
+      "index": 475
+    },
+    {
+      "id": "card_qm3bvb",
+      "fr": "Comment allez-vous ?",
+      "target": "Como está / estão ?",
+      "lesson": "A15",
+      "index": 476
+    },
+    {
+      "id": "card_yr8v2w",
+      "fr": "Comment est le temps à Brasília ?",
+      "target": "Como está o tempo em Brasília ?",
+      "lesson": "A15",
+      "index": 477
+    },
+    {
+      "id": "card_s09nia",
+      "fr": "Comment t'appelles-tu ?",
+      "target": "Como se chama ? / é seu nome ?",
+      "lesson": "A15",
+      "index": 478
+    },
+    {
+      "id": "card_g8dc29",
+      "fr": "Comment ça marche ?",
+      "target": "Como funciona ?",
+      "lesson": "A15",
+      "index": 479
+    },
+    {
+      "id": "card_itgh27",
+      "fr": "Comment êtes-vous allés à Manaus ?",
+      "target": "Como foram a Manaus ?",
+      "lesson": "A15",
+      "index": 480
+    },
+    {
+      "id": "card_b5856c",
+      "fr": "Comment puis-je aller à Feira-de-Santana ?",
+      "target": "Como posso ir a Feira de Santana ?",
+      "lesson": "A15",
+      "index": 481
+    },
+    {
+      "id": "card_rgvptn",
+      "fr": "Pourquoi pars-tu aujourd'hui ?",
+      "target": "Por que vai embora hoje ?",
+      "lesson": "A15",
+      "index": 482
+    },
+    {
+      "id": "card_xg2196",
+      "fr": "Parce que je dois être à Natal demain.",
+      "target": "Porque tenho que estar em Natal amanhã.",
+      "lesson": "A15",
+      "index": 483
+    },
+    {
+      "id": "card_iq0g7n",
+      "fr": "Pourquoi ne restez-vous pas plus longtemps ?",
+      "target": "Por que não ficam mais tempo ?",
+      "lesson": "A15",
+      "index": 484
+    },
+    {
+      "id": "card_p6actd",
+      "fr": "Parce que j'ai déjà acheté mon billet",
+      "target": "Porque já comprei minha passagem.",
+      "lesson": "A15",
+      "index": 485
+    },
+    {
+      "id": "card_2g5db0",
+      "fr": "Pourquoi demandes-tu de l'argent ?",
+      "target": "Para que está pedindo dinheiro ?",
+      "lesson": "A15",
+      "index": 486
+    },
+    {
+      "id": "card_tzic2j",
+      "fr": "C'est pour manger",
+      "target": "É para comer.",
+      "lesson": "A15",
+      "index": 487
+    },
+    {
+      "id": "card_b7kf9u",
+      "fr": "Pourquoi voulez-vous mon passeport ?",
+      "target": "Para que está querendo meu passaporte ?",
+      "lesson": "A15",
+      "index": 488
+    },
+    {
+      "id": "card_uat36u",
+      "fr": "Pour contrôler le visa.",
+      "target": "Para fiscalizar o visto",
+      "lesson": "A15",
+      "index": 489
+    },
+    {
+      "id": "card_njv0sw",
+      "fr": "je vais à Brasília en avion.",
+      "target": "vou a Brasília de avião.",
+      "lesson": "A15",
+      "index": 490
+    },
+    {
+      "id": "card_isd07m",
+      "fr": "nous allons à la plage en bicyclette.",
+      "target": "vamos à praia de bicicleta.",
+      "lesson": "A15",
+      "index": 491
+    },
+    {
+      "id": "card_6h3t9h",
+      "fr": "aller à pied.",
+      "target": "ir a pé.",
+      "lesson": "A15",
+      "index": 492
+    },
+    {
+      "id": "card_cvtpr7",
+      "fr": "Pourquoi êtes-vous arrivés tard ?",
+      "target": "por que chegaram tarde?",
+      "lesson": "A15",
+      "index": 493
+    },
+    {
+      "id": "card_ytt461",
+      "fr": "Pourquoi voulez-vous ma valise ?",
+      "target": "Para que querem minha mala?",
+      "lesson": "A15",
+      "index": 494
+    },
+    {
+      "id": "card_rj6uaw",
+      "fr": "Avez-vous déjà visité Manaus ?",
+      "target": "Já visitaram Manaus?",
+      "lesson": "A15",
+      "index": 495
+    },
+    {
+      "id": "card_xmp7rj",
+      "fr": "Avez-vous déjà mangé des acarajés ?",
+      "target": "Já comeram acarajés?",
+      "lesson": "A15",
+      "index": 496
+    },
+    {
+      "id": "card_a61at2",
+      "fr": "Je pars tout de suite !",
+      "target": "Eu vou já já !",
+      "lesson": "A15",
+      "index": 497
+    },
+    {
+      "id": "card_r5gfxc",
+      "fr": "Tu es déjà allé en France ?",
+      "target": "Já foi à França ?",
+      "lesson": "A15",
+      "index": 498
+    },
+    {
+      "id": "card_tlxdg3",
+      "fr": "Il part ? Pourquoi ?",
+      "target": "Vai embora ? Por quê ?",
+      "lesson": "A15",
+      "index": 499
+    },
+    {
+      "id": "card_o2wand",
+      "fr": "Il va à Rio en bus ?",
+      "target": "Vai ao Rio de ônibus ?",
+      "lesson": "A15",
+      "index": 500
+    },
+    {
+      "id": "card_zaxdbx",
+      "fr": "Tu pars déjà ? Pourquoi ?",
+      "target": "Já vai ? Por quê ?",
+      "lesson": "A15",
+      "index": 501
+    },
+    {
+      "id": "card_giwhgl",
+      "fr": "Tu veux entrer ici pour quoi faire ?",
+      "target": "Para que quer entrar aqui ?",
+      "lesson": "A15",
+      "index": 502
+    },
+    {
+      "id": "card_vouv0t",
+      "fr": "Vous allez à Manaus en bateau ?",
+      "target": "Vão a Manaus de barco ?",
+      "lesson": "A15",
+      "index": 503
+    },
+    {
+      "id": "card_dqbc05",
+      "fr": "Allez à Alcântara, c'est très beau",
+      "target": "Vão a Alcântara é muito bonito",
+      "lesson": "A16",
+      "index": 504
+    },
+    {
+      "id": "card_amg6uo",
+      "fr": "Bois cette cachaça, elle est excellente.",
+      "target": "Beba esta cachaça é excelente",
+      "lesson": "A16",
+      "index": 505
+    },
+    {
+      "id": "card_9l19qh",
+      "fr": "Prenez ce médicament tous les matins",
+      "target": "Tome este remédio todas as manhãs",
+      "lesson": "A16",
+      "index": 506
+    },
+    {
+      "id": "card_ebomdj",
+      "fr": "Lis ce livre, il est très intéressant",
+      "target": "Leia este livro é muito interessante",
+      "lesson": "A16",
+      "index": 507
+    },
+    {
+      "id": "card_6pbj2x",
+      "fr": "Prenez le vol de 7 heures",
+      "target": "Pegue o vôo das sete",
+      "lesson": "A16",
+      "index": 508
+    },
+    {
+      "id": "card_65ez33",
+      "fr": "Marchez jusqu'à l'église, et tournez à droite",
+      "target": "Ande até a igreja e vire à direita",
+      "lesson": "A16",
+      "index": 509
+    },
+    {
+      "id": "card_z82xu3",
+      "fr": "N'allez pas sur cette plage, elle est dangereuse",
+      "target": "Não vá a essa praia é perigosa",
+      "lesson": "A16",
+      "index": 510
+    },
+    {
+      "id": "card_h9d27j",
+      "fr": "N'entrez pas c'est interdit",
+      "target": "Não entre é proibido",
+      "lesson": "A16",
+      "index": 511
+    },
+    {
+      "id": "card_ds7aby",
+      "fr": "Ne conduis pas vite, il y a beaucoup de virages",
+      "target": "Não dirija com velocidade tem muitas curvas",
+      "lesson": "A16",
+      "index": 512
+    },
+    {
+      "id": "card_kjnne",
+      "fr": "Ne ratez pas cette occasion",
+      "target": "Não perca esta oportunidade",
+      "lesson": "A16",
+      "index": 513
+    },
+    {
+      "id": "card_tfdagi",
+      "fr": "Peut-être qu'il va acheter une émeraude",
+      "target": "Talvez compre uma esmeralda",
+      "lesson": "A16",
+      "index": 514
+    },
+    {
+      "id": "card_9s2f4i",
+      "fr": "Il est possible qu'il vienne",
+      "target": "É possível que venha",
+      "lesson": "A16",
+      "index": 515
+    },
+    {
+      "id": "card_2p9sgw",
+      "fr": "Il est probable qu'il pleuve",
+      "target": "É provável que chova",
+      "lesson": "A16",
+      "index": 516
+    },
+    {
+      "id": "card_z8sehg",
+      "fr": "Je veux que tu viennes avec moi",
+      "target": "Quero que venha comigo",
+      "lesson": "A16",
+      "index": 517
+    },
+    {
+      "id": "card_be80t1",
+      "fr": "Il est important que tu téléphones à l'hôtel",
+      "target": "É importante que telefone para o hotel",
+      "lesson": "A16",
+      "index": 518
+    },
+    {
+      "id": "card_v4k7l4",
+      "fr": "Qu'il prenne ce vol",
+      "target": "que pegue esse vôo",
+      "lesson": "A16",
+      "index": 519
+    },
+    {
+      "id": "card_ri2rrq",
+      "fr": "Evitez d'endommager la signalisation.",
+      "target": "Evite danos à sinalização.",
+      "lesson": "A16",
+      "index": 520
+    },
+    {
+      "id": "card_uhbiuv",
+      "fr": "Obéissez à la signalisation, évitez les accidents!",
+      "target": "\"Obedeça à sinalização  evite acidentes!\"",
+      "lesson": "A16",
+      "index": 521
+    },
+    {
+      "id": "card_u9jcyo",
+      "fr": "Doublez toujours à gauche.",
+      "target": "Ultrapasse sempre pela esquerda.",
+      "lesson": "A16",
+      "index": 522
+    }
+  ],
+  "createdAt": "2026-06-12T03:09:30.253Z"
+}

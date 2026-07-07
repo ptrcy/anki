@@ -1,0 +1,854 @@
+{
+  "name": "IT-PRESENTE2",
+  "targetLang": "it",
+  "cards": [
+    {
+      "id": "card_3ho7x",
+      "fr": "FR",
+      "target": "IT",
+      "lesson": "Général",
+      "index": 1
+    },
+    {
+      "id": "card_cwpnm0",
+      "fr": "Je suis",
+      "target": "Io sono",
+      "lesson": "Général",
+      "index": 2
+    },
+    {
+      "id": "card_4katmu",
+      "fr": "Tu es",
+      "target": "Tu sei",
+      "lesson": "Général",
+      "index": 3
+    },
+    {
+      "id": "card_191eti",
+      "fr": "Il est",
+      "target": "Lui è",
+      "lesson": "Général",
+      "index": 4
+    },
+    {
+      "id": "card_3aukce",
+      "fr": "Nous sommes",
+      "target": "Noi siamo",
+      "lesson": "Général",
+      "index": 5
+    },
+    {
+      "id": "card_ml5mnc",
+      "fr": "Vous êtes",
+      "target": "Voi siete",
+      "lesson": "Général",
+      "index": 6
+    },
+    {
+      "id": "card_5tcpkf",
+      "fr": "Ils sont",
+      "target": "Loro sono",
+      "lesson": "Général",
+      "index": 7
+    },
+    {
+      "id": "card_ykizy8",
+      "fr": "J'ai",
+      "target": "Io ho",
+      "lesson": "Général",
+      "index": 8
+    },
+    {
+      "id": "card_4katj6",
+      "fr": "Tu as",
+      "target": "Tu hai",
+      "lesson": "Général",
+      "index": 9
+    },
+    {
+      "id": "card_1ajc54",
+      "fr": "Elle a",
+      "target": "Lei ha",
+      "lesson": "Général",
+      "index": 10
+    },
+    {
+      "id": "card_nfewvl",
+      "fr": "Nous avons",
+      "target": "Noi abbiamo",
+      "lesson": "Général",
+      "index": 11
+    },
+    {
+      "id": "card_mi85fs",
+      "fr": "Vous avez",
+      "target": "Voi avete",
+      "lesson": "Général",
+      "index": 12
+    },
+    {
+      "id": "card_s5ozhe",
+      "fr": "Ils ont",
+      "target": "Loro hanno",
+      "lesson": "Général",
+      "index": 13
+    },
+    {
+      "id": "card_cx04w9",
+      "fr": "Je fais",
+      "target": "Io faccio",
+      "lesson": "Général",
+      "index": 14
+    },
+    {
+      "id": "card_22gz73",
+      "fr": "Tu fais",
+      "target": "Tu fai",
+      "lesson": "Général",
+      "index": 15
+    },
+    {
+      "id": "card_tqt4iq",
+      "fr": "Il fait",
+      "target": "Lui fa",
+      "lesson": "Général",
+      "index": 16
+    },
+    {
+      "id": "card_z8od31",
+      "fr": "Nous faisons",
+      "target": "Noi facciamo",
+      "lesson": "Général",
+      "index": 17
+    },
+    {
+      "id": "card_6iguby",
+      "fr": "Vous faites",
+      "target": "Voi fate",
+      "lesson": "Général",
+      "index": 18
+    },
+    {
+      "id": "card_5tmq1o",
+      "fr": "Ils font",
+      "target": "Loro fanno",
+      "lesson": "Général",
+      "index": 19
+    },
+    {
+      "id": "card_cwnt89",
+      "fr": "Je vais",
+      "target": "Io vado",
+      "lesson": "Général",
+      "index": 20
+    },
+    {
+      "id": "card_8jpfw8",
+      "fr": "Tu vas",
+      "target": "Tu vai",
+      "lesson": "Général",
+      "index": 21
+    },
+    {
+      "id": "card_sddxwe",
+      "fr": "Elle va",
+      "target": "Lei va",
+      "lesson": "Général",
+      "index": 22
+    },
+    {
+      "id": "card_8eoxsd",
+      "fr": "Nous allons",
+      "target": "Noi andiamo",
+      "lesson": "Général",
+      "index": 23
+    },
+    {
+      "id": "card_we4vuy",
+      "fr": "Vous allez",
+      "target": "Voi andate",
+      "lesson": "Général",
+      "index": 24
+    },
+    {
+      "id": "card_5taedo",
+      "fr": "Ils vont",
+      "target": "Loro vanno",
+      "lesson": "Général",
+      "index": 25
+    },
+    {
+      "id": "card_90lq1",
+      "fr": "Je viens",
+      "target": "Io vengo",
+      "lesson": "Général",
+      "index": 26
+    },
+    {
+      "id": "card_330jwz",
+      "fr": "Tu viens",
+      "target": "Tu vieni",
+      "lesson": "Général",
+      "index": 27
+    },
+    {
+      "id": "card_d6cdwg",
+      "fr": "Il vient",
+      "target": "Lui viene",
+      "lesson": "Général",
+      "index": 28
+    },
+    {
+      "id": "card_51pmjn",
+      "fr": "Nous venons",
+      "target": "Noi veniamo",
+      "lesson": "Général",
+      "index": 29
+    },
+    {
+      "id": "card_wstbqy",
+      "fr": "Vous venez",
+      "target": "Voi venite",
+      "lesson": "Général",
+      "index": 30
+    },
+    {
+      "id": "card_yj848k",
+      "fr": "Ils viennent",
+      "target": "Loro vengono",
+      "lesson": "Général",
+      "index": 31
+    },
+    {
+      "id": "card_1re9ck",
+      "fr": "Je dis",
+      "target": "Io dico",
+      "lesson": "Général",
+      "index": 32
+    },
+    {
+      "id": "card_8jp0z2",
+      "fr": "Tu dis",
+      "target": "Tu dici",
+      "lesson": "Général",
+      "index": 33
+    },
+    {
+      "id": "card_cvay6g",
+      "fr": "Elle dit",
+      "target": "Lei dice",
+      "lesson": "Général",
+      "index": 34
+    },
+    {
+      "id": "card_6irdom",
+      "fr": "Nous disons",
+      "target": "Noi diciamo",
+      "lesson": "Général",
+      "index": 35
+    },
+    {
+      "id": "card_wg70kr",
+      "fr": "Vous dites",
+      "target": "Voi dite",
+      "lesson": "Général",
+      "index": 36
+    },
+    {
+      "id": "card_l03k6k",
+      "fr": "Ils disent",
+      "target": "Loro dicono",
+      "lesson": "Général",
+      "index": 37
+    },
+    {
+      "id": "card_3k3h4",
+      "fr": "Je donne",
+      "target": "Io do",
+      "lesson": "Général",
+      "index": 38
+    },
+    {
+      "id": "card_j7f3sl",
+      "fr": "Tu donnes",
+      "target": "Tu dai",
+      "lesson": "Général",
+      "index": 39
+    },
+    {
+      "id": "card_ctropa",
+      "fr": "Il donne",
+      "target": "Lui dà",
+      "lesson": "Général",
+      "index": 40
+    },
+    {
+      "id": "card_1ohmi1",
+      "fr": "Nous donnons",
+      "target": "Noi diamo",
+      "lesson": "Général",
+      "index": 41
+    },
+    {
+      "id": "card_5husow",
+      "fr": "Vous donnez",
+      "target": "Voi date",
+      "lesson": "Général",
+      "index": 42
+    },
+    {
+      "id": "card_l0biqr",
+      "fr": "Ils donnent",
+      "target": "Loro danno",
+      "lesson": "Général",
+      "index": 43
+    },
+    {
+      "id": "card_ydl4op",
+      "fr": "Je reste (1)",
+      "target": "Io sto",
+      "lesson": "Général",
+      "index": 44
+    },
+    {
+      "id": "card_ydl4pm",
+      "fr": "Je reste (2)",
+      "target": "Io rimango",
+      "lesson": "Général",
+      "index": 45
+    },
+    {
+      "id": "card_axrbvq",
+      "fr": "Tu restes (1)",
+      "target": "Tu stai",
+      "lesson": "Général",
+      "index": 46
+    },
+    {
+      "id": "card_axrbwn",
+      "fr": "Tu restes (2)",
+      "target": "Tu rimani",
+      "lesson": "Général",
+      "index": 47
+    },
+    {
+      "id": "card_m4txyi",
+      "fr": "Elle reste",
+      "target": "Lei sta",
+      "lesson": "Général",
+      "index": 48
+    },
+    {
+      "id": "card_ta9ure",
+      "fr": "Nous restons (1)",
+      "target": "Noi stiamo",
+      "lesson": "Général",
+      "index": 49
+    },
+    {
+      "id": "card_ta9usb",
+      "fr": "Nous restons (2)",
+      "target": "Noi rimaniamo",
+      "lesson": "Général",
+      "index": 50
+    },
+    {
+      "id": "card_eslpo1",
+      "fr": "Vous restez (1)",
+      "target": "Voi state",
+      "lesson": "Général",
+      "index": 51
+    },
+    {
+      "id": "card_eslpoy",
+      "fr": "Vous restez (2)",
+      "target": "Voi rimanete",
+      "lesson": "Général",
+      "index": 52
+    },
+    {
+      "id": "card_7lxchg",
+      "fr": "Ils restent (1)",
+      "target": "Loro stanno",
+      "lesson": "Général",
+      "index": 53
+    },
+    {
+      "id": "card_7lxcid",
+      "fr": "Ils restent (2)",
+      "target": "Loro rimangono",
+      "lesson": "Général",
+      "index": 54
+    },
+    {
+      "id": "card_cwsbxm",
+      "fr": "Je peux",
+      "target": "Io posso",
+      "lesson": "Général",
+      "index": 55
+    },
+    {
+      "id": "card_22968g",
+      "fr": "Tu peux",
+      "target": "Tu puoi",
+      "lesson": "Général",
+      "index": 56
+    },
+    {
+      "id": "card_tqlbk8",
+      "fr": "Il peut",
+      "target": "Lui può",
+      "lesson": "Général",
+      "index": 57
+    },
+    {
+      "id": "card_pzytdo",
+      "fr": "Nous pouvons",
+      "target": "Noi possiamo",
+      "lesson": "Général",
+      "index": 58
+    },
+    {
+      "id": "card_d9m29n",
+      "fr": "Vous pouvez",
+      "target": "Voi potete",
+      "lesson": "Général",
+      "index": 59
+    },
+    {
+      "id": "card_d54zrg",
+      "fr": "Ils peuvent",
+      "target": "Loro possono",
+      "lesson": "Général",
+      "index": 60
+    },
+    {
+      "id": "card_cwnpk4",
+      "fr": "Je veux",
+      "target": "Io voglio",
+      "lesson": "Général",
+      "index": 61
+    },
+    {
+      "id": "card_224juy",
+      "fr": "Tu veux",
+      "target": "Tu vuoi",
+      "lesson": "Général",
+      "index": 62
+    },
+    {
+      "id": "card_1h982d",
+      "fr": "Elle veut",
+      "target": "Lei vuole",
+      "lesson": "Général",
+      "index": 63
+    },
+    {
+      "id": "card_v459q8",
+      "fr": "Nous voulons",
+      "target": "Noi vogliamo",
+      "lesson": "Général",
+      "index": 64
+    },
+    {
+      "id": "card_h5eo8n",
+      "fr": "Vous voulez",
+      "target": "Voi volete",
+      "lesson": "Général",
+      "index": 65
+    },
+    {
+      "id": "card_r24ymo",
+      "fr": "Ils veulent",
+      "target": "Loro vogliono",
+      "lesson": "Général",
+      "index": 66
+    },
+    {
+      "id": "card_cx1cl9",
+      "fr": "Je dois",
+      "target": "Io devo",
+      "lesson": "Général",
+      "index": 67
+    },
+    {
+      "id": "card_22i6w3",
+      "fr": "Tu dois",
+      "target": "Tu devi",
+      "lesson": "Général",
+      "index": 68
+    },
+    {
+      "id": "card_tquc7q",
+      "fr": "Il doit",
+      "target": "Lui deve",
+      "lesson": "Général",
+      "index": 69
+    },
+    {
+      "id": "card_6liqqv",
+      "fr": "Nous devons",
+      "target": "Noi dobbiamo",
+      "lesson": "Général",
+      "index": 70
+    },
+    {
+      "id": "card_wg3zcg",
+      "fr": "Vous devez",
+      "target": "Voi dovete",
+      "lesson": "Général",
+      "index": 71
+    },
+    {
+      "id": "card_kwyl9i",
+      "fr": "Ils doivent",
+      "target": "Loro devono",
+      "lesson": "Général",
+      "index": 72
+    },
+    {
+      "id": "card_cwq4f0",
+      "fr": "Je sais",
+      "target": "Io so",
+      "lesson": "Général",
+      "index": 73
+    },
+    {
+      "id": "card_226ypu",
+      "fr": "Tu sais",
+      "target": "Tu sai",
+      "lesson": "Général",
+      "index": 74
+    },
+    {
+      "id": "card_1hbmx4",
+      "fr": "Elle sait",
+      "target": "Lei sa",
+      "lesson": "Général",
+      "index": 75
+    },
+    {
+      "id": "card_315oxw",
+      "fr": "Nous savons",
+      "target": "Noi sappiamo",
+      "lesson": "Général",
+      "index": 76
+    },
+    {
+      "id": "card_wqm6d7",
+      "fr": "Vous savez",
+      "target": "Voi sapete",
+      "lesson": "Général",
+      "index": 77
+    },
+    {
+      "id": "card_bg6hk2",
+      "fr": "Ils savent",
+      "target": "Loro sanno",
+      "lesson": "Général",
+      "index": 78
+    },
+    {
+      "id": "card_cwpsf9",
+      "fr": "Je sors",
+      "target": "Io esco",
+      "lesson": "Général",
+      "index": 79
+    },
+    {
+      "id": "card_226mq3",
+      "fr": "Tu sors",
+      "target": "Tu esci",
+      "lesson": "Général",
+      "index": 80
+    },
+    {
+      "id": "card_tqis1q",
+      "fr": "Il sort",
+      "target": "Lui esce",
+      "lesson": "Général",
+      "index": 81
+    },
+    {
+      "id": "card_x0iqta",
+      "fr": "Nous sortons",
+      "target": "Noi usciamo",
+      "lesson": "Général",
+      "index": 82
+    },
+    {
+      "id": "card_f7g4l5",
+      "fr": "Vous sortez",
+      "target": "Voi uscite",
+      "lesson": "Général",
+      "index": 83
+    },
+    {
+      "id": "card_dooukk",
+      "fr": "Ils sortent",
+      "target": "Loro escono",
+      "lesson": "Général",
+      "index": 84
+    },
+    {
+      "id": "card_cx2w1r",
+      "fr": "Je bois",
+      "target": "Io bevo",
+      "lesson": "Général",
+      "index": 85
+    },
+    {
+      "id": "card_22jqcl",
+      "fr": "Tu bois",
+      "target": "Tu bevi",
+      "lesson": "Général",
+      "index": 86
+    },
+    {
+      "id": "card_1hoejv",
+      "fr": "Elle boit",
+      "target": "Lei beve",
+      "lesson": "Général",
+      "index": 87
+    },
+    {
+      "id": "card_7ktnvd",
+      "fr": "Nous buvons",
+      "target": "Noi beviamo",
+      "lesson": "Général",
+      "index": 88
+    },
+    {
+      "id": "card_wf1gvy",
+      "fr": "Vous buvez",
+      "target": "Voi bevete",
+      "lesson": "Général",
+      "index": 89
+    },
+    {
+      "id": "card_lsuov0",
+      "fr": "Ils boivent",
+      "target": "Loro bevono",
+      "lesson": "Général",
+      "index": 90
+    },
+    {
+      "id": "card_d3fyn1",
+      "fr": "Il reste",
+      "target": "Lui rimane",
+      "lesson": "Général",
+      "index": 91
+    },
+    {
+      "id": "card_8jwns6",
+      "fr": "Je choisis",
+      "target": "Io scelgo",
+      "lesson": "Général",
+      "index": 92
+    },
+    {
+      "id": "card_vckf28",
+      "fr": "Tu choisis",
+      "target": "Tu scegli",
+      "lesson": "Général",
+      "index": 93
+    },
+    {
+      "id": "card_9pp2li",
+      "fr": "Elle choisit",
+      "target": "Lei sceglie",
+      "lesson": "Général",
+      "index": 94
+    },
+    {
+      "id": "card_bykk9t",
+      "fr": "Nous choisissons",
+      "target": "Noi scegliamo",
+      "lesson": "Général",
+      "index": 95
+    },
+    {
+      "id": "card_wqu4om",
+      "fr": "Vous choisissez",
+      "target": "Voi scegliete",
+      "lesson": "Général",
+      "index": 96
+    },
+    {
+      "id": "card_x5whbb",
+      "fr": "Ils choisissent",
+      "target": "Loro scelgono",
+      "lesson": "Général",
+      "index": 97
+    },
+    {
+      "id": "card_2so8n",
+      "fr": "Je monte",
+      "target": "Io salgo",
+      "lesson": "Général",
+      "index": 98
+    },
+    {
+      "id": "card_p14iec",
+      "fr": "Tu montes",
+      "target": "Tu sali",
+      "lesson": "Général",
+      "index": 99
+    },
+    {
+      "id": "card_d04gf1",
+      "fr": "Il monte",
+      "target": "Lui sale",
+      "lesson": "Général",
+      "index": 100
+    },
+    {
+      "id": "card_j6k5hk",
+      "fr": "Nous montons",
+      "target": "Noi saliamo",
+      "lesson": "Général",
+      "index": 101
+    },
+    {
+      "id": "card_bbk7an",
+      "fr": "Vous montez",
+      "target": "Voi salite",
+      "lesson": "Général",
+      "index": 102
+    },
+    {
+      "id": "card_59qr6",
+      "fr": "Ils montent",
+      "target": "Loro salgono",
+      "lesson": "Général",
+      "index": 103
+    },
+    {
+      "id": "card_7lrlj",
+      "fr": "Je tiens",
+      "target": "Io tengo",
+      "lesson": "Général",
+      "index": 104
+    },
+    {
+      "id": "card_31lpsh",
+      "fr": "Tu tiens",
+      "target": "Tu tieni",
+      "lesson": "Général",
+      "index": 105
+    },
+    {
+      "id": "card_m6bj3f",
+      "fr": "Elle tient",
+      "target": "Lei tiene",
+      "lesson": "Général",
+      "index": 106
+    },
+    {
+      "id": "card_3r40f5",
+      "fr": "Nous tenons",
+      "target": "Noi teniamo",
+      "lesson": "Général",
+      "index": 107
+    },
+    {
+      "id": "card_wrehmg",
+      "fr": "Vous tenez",
+      "target": "Voi tenete",
+      "lesson": "Général",
+      "index": 108
+    },
+    {
+      "id": "card_pjh4cu",
+      "fr": "Ils tiennent",
+      "target": "Loro tengono",
+      "lesson": "Général",
+      "index": 109
+    },
+    {
+      "id": "card_2l4sg",
+      "fr": "Je meurs",
+      "target": "Io muoio",
+      "lesson": "Général",
+      "index": 110
+    },
+    {
+      "id": "card_2wl2ze",
+      "fr": "Tu meurs",
+      "target": "Tu muori",
+      "lesson": "Général",
+      "index": 111
+    },
+    {
+      "id": "card_czwwyv",
+      "fr": "Il meurt",
+      "target": "Lui muore",
+      "lesson": "Général",
+      "index": 112
+    },
+    {
+      "id": "card_j1nrib",
+      "fr": "Nous mourons",
+      "target": "Noi moriamo",
+      "lesson": "Général",
+      "index": 113
+    },
+    {
+      "id": "card_bbpjpw",
+      "fr": "Vous mourez",
+      "target": "Voi morite",
+      "lesson": "Général",
+      "index": 114
+    },
+    {
+      "id": "card_66txw3",
+      "fr": "Ils meurent",
+      "target": "Loro muoiono",
+      "lesson": "Général",
+      "index": 115
+    },
+    {
+      "id": "card_moror4",
+      "fr": "Je traduis",
+      "target": "Io traduco",
+      "lesson": "Général",
+      "index": 116
+    },
+    {
+      "id": "card_h7pe3a",
+      "fr": "Tu traduis",
+      "target": "Tu traduci",
+      "lesson": "Général",
+      "index": 117
+    },
+    {
+      "id": "card_4f5ydg",
+      "fr": "Elle traduit",
+      "target": "Lei traduce",
+      "lesson": "Général",
+      "index": 118
+    },
+    {
+      "id": "card_g83bre",
+      "fr": "Nous traduisons",
+      "target": "Noi traduciamo",
+      "lesson": "Général",
+      "index": 119
+    },
+    {
+      "id": "card_ny4pcj",
+      "fr": "Vous traduisez",
+      "target": "Voi traducete",
+      "lesson": "Général",
+      "index": 120
+    },
+    {
+      "id": "card_899yuo",
+      "fr": "Ils traduisent",
+      "target": "Loro traducono",
+      "lesson": "Général",
+      "index": 121
+    }
+  ],
+  "createdAt": "2026-06-30T11:18:20.748Z"
+}

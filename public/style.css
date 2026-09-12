@@ -1419,3 +1419,245 @@ kbd {
   color: var(--text-light);
   line-height: 1;
 }
+
+/* ====================================================
+   AI Memory Coach Styles
+   ==================================================== */
+
+.aicfg-panel {
+  margin-top: 32px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  padding: 24px;
+}
+
+.aicfg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.aicfg-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aicfg-title h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.aicfg-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.aicfg-enable-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+.aicfg-enable-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.aicfg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.aicfg-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.aicfg-test-out {
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.aicfg-note {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 16px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-light);
+}
+
+.aicfg-note code {
+  background: var(--bg-app);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 1px solid var(--border-color);
+  font-family: monospace;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+}
+
+.btn-ghost:hover {
+  background: var(--border-light);
+  color: var(--text-main);
+}
+
+/* AI Feedback in Study Card */
+.ai-feedback-container {
+  margin-top: 14px;
+}
+
+.aiask-btn {
+  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary);
+  border-color: var(--primary-light);
+  background: var(--primary-light);
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s, border-color 0.15s, transform 0.05s;
+}
+
+.aiask-btn:hover {
+  background: #dbe4ff;
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.aihint {
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  margin-top: 8px;
+}
+
+.aihint .aihdr {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aihint .aibody {
+  color: var(--text-main);
+}
+
+.aihint .aibody p {
+  margin: 0 0 8px;
+  line-height: 1.6;
+}
+
+.aihint .aibody p:last-child {
+  margin-bottom: 0;
+}
+
+.aihint .aibody ul {
+  margin: 4px 0 8px 18px;
+  padding: 0;
+}
+
+.aihint .aibody li {
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.aihint .aibody strong {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.aihint .aibody em {
+  font-style: italic;
+  color: var(--primary-dark);
+  font-weight: 500;
+}
+
+.aihint .aibody code {
+  background: #e2e8f0;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 13px;
+  border: 1px solid #cbd5e1;
+  font-family: monospace;
+}
+
+.aihint.err {
+  background: var(--danger-light);
+  color: var(--danger-dark);
+  border-color: #fecaca;
+}
+
+.aihint.err .aihdr {
+  color: var(--danger);
+}
+
+.aihint .retry {
+  margin-top: 10px;
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-main);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.aihint .retry:hover {
+  background: var(--border-light);
+}
+
+.aispin {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--primary);
+  border-top-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  animation: aisp 0.7s linear infinite;
+  flex: none;
+}
+
+@keyframes aisp {
+  to { transform: rotate(360deg); }
+}

@@ -71,6 +71,58 @@
           <p>Chargement des decks...</p>
         </div>
       </div>
+
+      <!-- AI Memory Coach Dashboard Card -->
+      <div class="card aicfg-panel" id="ai-cfg-panel">
+        <div class="aicfg-header">
+          <div class="aicfg-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="aicfg-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+            </svg>
+            <h3>Coach mémoire IA</h3>
+          </div>
+          <label class="aicfg-enable-label">
+            <input type="checkbox" id="ai-enabled-dashboard">
+            <span>Expliquer mes erreurs avec l'IA</span>
+          </label>
+        </div>
+
+        <div class="aicfg-body">
+          <div class="form-group">
+            <label for="ai-key-dashboard">Clé API (OpenAI / OpenRouter / Groq / Gemini...) :</label>
+            <input type="password" id="ai-key-dashboard" placeholder="sk-or-v1-..." autocomplete="off" spellcheck="false" class="input-text">
+          </div>
+          <div class="aicfg-grid">
+            <div class="form-group">
+              <label for="ai-model-dashboard">Modèle (Model) :</label>
+              <input type="text" id="ai-model-dashboard" placeholder="google/gemini-2.5-flash" spellcheck="false" class="input-text">
+            </div>
+            <div class="form-group">
+              <label for="ai-base-url-dashboard">URL de base de l'API (API Base URL) :</label>
+              <input type="text" id="ai-base-url-dashboard" spellcheck="false" placeholder="https://openrouter.ai/api/v1" class="input-text">
+            </div>
+            <div class="form-group">
+              <label for="ai-lang-dashboard">Langue des explications :</label>
+              <div class="select-wrapper">
+                <select id="ai-lang-dashboard">
+                  <option value="fr" selected>Français</option>
+                  <option value="en">English</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="aicfg-actions">
+            <button id="ai-test-btn-dashboard" type="button" class="btn btn-sm btn-outline">Tester la connexion</button>
+            <button id="ai-clear-cache-btn-dashboard" type="button" class="btn btn-sm btn-ghost">Vider le cache d'indices</button>
+            <span id="ai-test-out-dashboard" class="aicfg-test-out"></span>
+          </div>
+          <p class="aicfg-note">
+            Fonctionne avec toute API de chat compatible OpenAI &mdash; OpenRouter (défaut), OpenAI, Groq, Together, ou un serveur local.
+            Indiquez l'URL de base (avant <code>/chat/completions</code>), la clé et le modèle. Votre clé est conservée uniquement dans ce navigateur.
+            En cas d'erreur sur une carte, l'invite source, la réponse cible attendue, votre réponse et le différentiel exact sont analysés pour vous expliquer l'erreur et vous offrir un crochet mémoriel mnémotechnique.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- 2. TRAINER VIEW -->
@@ -173,6 +225,21 @@
             </button>
           </div>
 
+          <!-- AI Coach Sidebar Control -->
+          <div class="card sidebar-card aicfg-sidebar-card">
+            <div class="sidebar-card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <h3 style="margin: 0;">Coach Mémoire IA</h3>
+              <span id="ai-sidebar-badge" class="badge">Inactif</span>
+            </div>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; color: var(--text-main);">
+              <input type="checkbox" id="ai-enabled-sidebar" style="width: 16px; height: 16px; accent-color: var(--primary);">
+              <span>Activer les explications IA</span>
+            </label>
+            <button id="open-ai-settings-btn" type="button" class="btn btn-sm btn-outline w-full mt-12">
+              Paramètres du coach IA
+            </button>
+          </div>
+
           <!-- Reset -->
           <div class="card sidebar-card">
             <button id="reset-deck-progress-btn" class="btn btn-sm btn-outline-danger w-full">
@@ -245,6 +312,14 @@
                   </button>
                 </div>
                 <div id="target-sentence-text" class="reference-text">Target Sentence Text</div>
+              </div>
+
+              <!-- AI Memory Coach (Button + Hint Box) -->
+              <div class="ai-feedback-container">
+                <button type="button" id="ai-ask-btn" class="btn btn-sm btn-outline aiask-btn hide">
+                  <span>💭 Demander au coach</span>
+                </button>
+                <div id="aihint" class="aihint hide"></div>
               </div>
 
               <!-- Anki Rating Buttons -->
@@ -449,6 +524,57 @@
           <button type="submit" id="submit-enrich-btn" class="btn btn-indigo">
             <span>Enrichir</span>
           </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 5. AI COACH SETTINGS OVERLAY MODAL -->
+  <div id="ai-settings-modal" class="modal-overlay hide">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Paramètres du Coach Mémoire IA</h3>
+        <button id="close-ai-settings-modal-btn" class="close-btn" title="Fermer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="close-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <form id="ai-settings-modal-form" class="modal-form" onsubmit="event.preventDefault();">
+        <div class="form-group">
+          <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; font-weight: 500;">
+            <input type="checkbox" id="ai-enabled-modal" style="width: 18px; height: 18px; accent-color: var(--primary);">
+            Activer le coach mémoire IA pour expliquer les erreurs
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="ai-key-modal">Clé API (OpenAI / OpenRouter / Groq / Gemini...) :</label>
+          <input type="password" id="ai-key-modal" placeholder="sk-or-v1-..." autocomplete="off" spellcheck="false" class="input-text">
+        </div>
+        <div class="form-group">
+          <label for="ai-model-modal">Modèle (Model) :</label>
+          <input type="text" id="ai-model-modal" placeholder="google/gemini-2.5-flash" spellcheck="false" class="input-text">
+        </div>
+        <div class="form-group">
+          <label for="ai-base-url-modal">URL de base de l'API (API Base URL) :</label>
+          <input type="text" id="ai-base-url-modal" spellcheck="false" placeholder="https://openrouter.ai/api/v1" class="input-text">
+        </div>
+        <div class="form-group">
+          <label for="ai-lang-modal">Langue des explications :</label>
+          <div class="select-wrapper">
+            <select id="ai-lang-modal">
+              <option value="fr" selected>Français</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+        </div>
+        <div class="aicfg-actions" style="margin-top: 14px;">
+          <button type="button" id="ai-test-btn-modal" class="btn btn-sm btn-outline">Tester la connexion</button>
+          <button type="button" id="ai-clear-cache-btn-modal" class="btn btn-sm btn-ghost">Vider le cache d'indices</button>
+          <span id="ai-test-out-modal" class="aicfg-test-out"></span>
+        </div>
+        <div class="modal-footer" style="margin-top: 24px;">
+          <button type="button" id="save-ai-settings-btn" class="btn btn-indigo">Enregistrer et Fermer</button>
         </div>
       </form>
     </div>

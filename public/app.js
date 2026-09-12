@@ -432,6 +432,760 @@ function extractLessonNumber(lessonStr) {
   return match ? parseInt(match[0], 10) : 0;
 }
 
+/* ====================================================
+   AI Memory Coach Engine (OpenAI-compatible Chat API)
+   Adapted from Teach Yourself German Phrasebook Trainer
+   ==================================================== */
+
+const AI_SETTINGS_KEY = 'anki-ai-v1';
+const AI_CACHE_KEY = 'anki-ai-cache-v1';
+const AI_CACHE_MAX = 400;
+const AI_DEFAULT_MODEL = 'google/gemini-2.5-flash';
+const AI_DEFAULT_BASE = 'https://openrouter.ai/api/v1';
+const AI_DEFAULT_LANG = 'fr';
+
+let ai = (function() {
+  const d = { enabled: false, apiKey: '', model: AI_DEFAULT_MODEL, baseUrl: AI_DEFAULT_BASE, lang: AI_DEFAULT_LANG };
+  try {
+    const r = JSON.parse(localStorage.getItem(AI_SETTINGS_KEY));
+    if (r && typeof r === 'object') {
+      for (const k in d) {
+        if (k in r && r[k] !== undefined && r[k] !== null) d[k] = r[k];
+      }
+      if (!r.baseUrl && typeof r.endpoint === 'string' && r.endpoint) {
+        d.baseUrl = r.endpoint.trim().replace(/\/+$/, '').replace(/\/chat\/completions$/i, '');
+      }
+    }
+  } catch(e) {}
+  if (!d.baseUrl) d.baseUrl = AI_DEFAULT_BASE;
+  if (!d.model) d.model = AI_DEFAULT_MODEL;
+  if (!d.lang) d.lang = AI_DEFAULT_LANG;
+  return d;
+})();
+
+function saveAiSettings() {
+  try { localStorage.setItem(AI_SETTINGS_KEY, JSON.stringify(ai)); } catch(e) {}
+}
+
+function aiConfigured() {
+  return !!(ai.enabled && ai.apiKey && ai.model && ai.baseUrl);
+}
+
+function aiCompletionsUrl() {
+  const b = String(ai.baseUrl || AI_DEFAULT_BASE).trim().replace(/\/+$/, '');
+  return /\/chat\/completions$/i.test(b) ? b : b + '/chat/completions';
+}
+
+function aiIsOpenRouter() {
+  return /openrouter\.ai/i.test(String(ai.baseUrl || ''));
+}
+
+let aiCache = (function() {
+  try {
+    const r = JSON.parse(localStorage.getItem(AI_CACHE_KEY));
+    return (r && typeof r === 'object') ? r : {};
+  } catch(e) {
+    return {};
+  }
+})();
+
+function saveAiCache() {
+  const keys = Object.keys(aiCache);
+  if (keys.length > AI_CACHE_MAX) {
+    keys.sort((a, b) => (aiCache[a].ts || 0) - (aiCache[b].ts || 0));
+    keys.slice(0, keys.length - AI_CACHE_MAX).forEach(k => delete aiCache[k]);
+  }
+  try { localStorage.setItem(AI_CACHE_KEY, JSON.stringify(aiCache)); } catch(e) {}
+}
+
+function aiCacheKey(cardId, userAnswer, wasWrong) {
+  return cardId + '|' + (wasWrong ? normalizeText(userAnswer) : '__ok__') + '|' + (ai.lang || 'fr');
+}
+
+/* Character-level diff for AI coach prompt (guarantees verified diff without model hallucinations) */
+function alignChars(a, b) {
+  const la = a.length, lb = b.length;
+  const dp = [];
+  for (let i = 0; i <= la; i++) {
+    dp.push(new Array(lb + 1));
+    dp[i][0] = i;
+  }
+  for (let j = 0; j <= lb; j++) dp[0][j] = j;
+
+  for (let i = 1; i <= la; i++) {
+    for (let j = 1; j <= lb; j++) {
+      const subCost = (a[i - 1].toLowerCase() === b[j - 1].toLowerCase()) ? 0 : 1;
+      dp[i][j] = Math.min(dp[i - 1][j - 1] + subCost, dp[i - 1][j] + 1, dp[i][j - 1] + 1);
+    }
+  }
+
+  const dist = dp[la][lb];
+  const ops = [];
+  let i = la, j = lb;
+  while (i > 0 || j > 0) {
+    const subCost2 = (i > 0 && j > 0) ? ((a[i - 1].toLowerCase() === b[j - 1].toLowerCase()) ? 0 : 1) : Infinity;
+    if (i > 0 && j > 0 && dp[i][j] === dp[i - 1][j - 1] + subCost2) {
+      ops.push({ type: subCost2 === 0 ? 'equal' : 'sub', aCh: a[i - 1], bCh: b[j - 1] });
+      i--; j--;
+    } else if (i > 0 && dp[i][j] === dp[i - 1][j] + 1) {
+      ops.push({ type: 'del', aCh: a[i - 1], bCh: null });
+      i--;
+    } else {
+      ops.push({ type: 'ins', aCh: null, bCh: b[j - 1] });
+      j--;
+    }
+  }
+  ops.reverse();
+  return { ops, distance: dist };
+}
+
+function summarizeDiff(correct, answer) {
+  const aligned = alignChars(correct, answer);
+  const ops = aligned.ops;
+  const groups = [];
+  let cur = null, pos = 0;
+
+  ops.forEach(op => {
+    if (op.type === 'equal') {
+      if (cur) { groups.push(cur); cur = null; }
+      pos++;
+    } else {
+      if (!cur) cur = { ops: [], startPos: pos };
+      cur.ops.push(op);
+      if (op.type !== 'ins') pos++;
+    }
+  });
+  if (cur) groups.push(cur);
+  if (!groups.length) return null;
+
+  const parts = groups.map(g => {
+    const before = correct.slice(Math.max(0, g.startPos - 4), g.startPos);
+    const consumed = g.ops.filter(o => o.type !== 'ins').length;
+    const endPos = g.startPos + consumed;
+    const after = correct.slice(endPos, endPos + 4);
+    const missing = g.ops.filter(o => o.type === 'del').map(o => o.aCh).join('');
+    const extra = g.ops.filter(o => o.type === 'ins').map(o => o.bCh).join('');
+    const subs = g.ops.filter(o => o.type === 'sub');
+    const desc = [];
+    if (missing) desc.push('manquant "' + missing + '"');
+    if (extra) desc.push('en trop "' + extra + '"');
+    subs.forEach(o => { desc.push('"' + o.bCh + '" au lieu de "' + o.aCh + '"'); });
+    return desc.join(', ') + ' (entre "...' + before + '" et "' + after + '...")';
+  });
+  return { desc: parts.join(' ; '), distance: aligned.distance };
+}
+
+const AI_LANG_NAMES = {
+  de: { en: 'German', fr: 'allemand' },
+  it: { en: 'Italian', fr: 'italien' },
+  es: { en: 'Spanish', fr: 'espagnol' },
+  en: { en: 'English', fr: 'anglais' },
+  fr: { en: 'French', fr: 'français' },
+  pt: { en: 'Portuguese', fr: 'portugais' },
+  ja: { en: 'Japanese', fr: 'japonais' },
+  ru: { en: 'Russian', fr: 'russe' },
+  nl: { en: 'Dutch', fr: 'néerlandais' },
+  zh: { en: 'Chinese', fr: 'chinois' },
+  ar: { en: 'Arabic', fr: 'arabe' }
+};
+
+function getAiLangName(code, inLang) {
+  const c = (code || 'it').toLowerCase();
+  const item = AI_LANG_NAMES[c];
+  if (item) return item[inLang] || item.en;
+  return c;
+}
+
+function buildAiSystemPrompt(targetLangCode, sourceLangCode, explanationLang) {
+  const isFr = (explanationLang || 'fr') === 'fr';
+  const targetEn = getAiLangName(targetLangCode, 'en');
+  const targetFr = getAiLangName(targetLangCode, 'fr');
+  const sourceEn = getAiLangName(sourceLangCode, 'en');
+  const sourceFr = getAiLangName(sourceLangCode, 'fr');
+
+  let targetSpecificTips = '';
+  if (targetLangCode === 'de') {
+    targetSpecificTips = isFr
+      ? [
+          '   - Grammaire & ordre des mots : Si la position du verbe (ex: verbe en 2e position, verbe en fin de proposition subordonnée, verbe modal rejetant l\'infinitif à la fin), les préverbes séparables (particule rejetée à la fin), ou les cas/déclinaisons (accusatif vs datif, prépositions comme mit/zu/nach, der/die/das) posent problème, explique la règle simplement.',
+          '   - Faux amis & vocabulaire : Si un faux-ami ou un autre mot a été utilisé (ex: "bekommen" = recevoir, pas devenir), clarifie la nuance.',
+          '   - Orthographe / Umlauts : Si un tréma (ä/ö/ü), ß vs ss, ou l\'inversion ie/ei a été oublié, indique l\'impact sur le son et le sens (ex: schon = déjà, schön = beau).',
+          '   - Registre : Si le formel (Sie/Ihnen) et le familier (du/dir) ont été confondus, précise le cadre social.'
+        ].join('\n')
+      : [
+          '   - Grammar & word order: If verb placement (e.g. V2 in main clauses, verb at end in subordinate clauses, modal pushing infinitive to the end), separable prefixes, or case/endings (accusative vs dative, prepositions like mit/zu/nach, der/die/das) slipped, explain the rule simply.',
+          '   - False friends & wrong words: If a false friend or wrong word was used (e.g. "bekommen" = get/receive, not become), contrast them.',
+          '   - Spelling / Umlauts: If an umlaut (ä/ö/ü), ß vs ss, or vowel swap (ie vs ei) was missed, explain how that alters pronunciation and meaning.',
+          '   - Register: If formal (Sie/Ihnen) vs familiar (du/dir) was mixed up, note the social setting.'
+        ].join('\n');
+  } else if (targetLangCode === 'it') {
+    targetSpecificTips = isFr
+      ? [
+          '   - Grammaire & accords : Si la conjugaison, le choix de l\'auxiliaire au passé composé (essere vs avere), les pronoms clitiques (ci, ne, mi, ti, lo, la, gli...), les prépositions articulées (del, al, dal, nel, sul) ou les accords de genre/nombre (-o/-a/-i/-e) ont glissé, explique simplement.',
+          '   - Faux amis & vocabulaire : Si un faux cognat (ex: "salire" = monter, pas partir; "camera" = chambre, pas caméra; "curare" = soigner) ou un autre terme a été employé, clarifie.',
+          '   - Orthographe, accents & doubles consonnes (doppie) : Si un accent grave/aigu (è vs é, à, ò, ù) ou une consonne double (ex: fatto vs fato, anno vs ano) manque, souligne l\'impact sur le son et le sens.',
+          '   - Registre : Si le vouvoiement (Lei) et le tutoiement (tu) ont été mélangés, rappelle le contexte.'
+        ].join('\n')
+      : [
+          '   - Grammar & agreement: If verb conjugation, auxiliary choice in compound past (essere vs avere), clitic pronouns (ci, ne, mi, ti, lo, la, gli...), prepositions, or gender/plural agreements slipped, explain simply.',
+          '   - False friends & wrong words: If a false friend or confusing word was used (e.g. "salire" = go up; "camera" = room), clarify.',
+          '   - Spelling, accents & double consonants: If accents (è vs é, à, ò, ù) or double consonants (doppie, e.g. fatto vs fato) were missed, explain the distinction.',
+          '   - Register: If formal (Lei) vs informal (tu) was mixed up, note the context.'
+        ].join('\n');
+  } else if (targetLangCode === 'es') {
+    targetSpecificTips = isFr
+      ? [
+          '   - Grammaire & syntaxe : Si ser vs estar, por vs para, imparfait vs passé simple, le subjonctif, ou la place des pronoms compléments ont glissé, explique simplement.',
+          '   - Faux amis & vocabulaire : (ex: "embarazada" = enceinte, pas embarrassée; "éxito" = succès), clarifie la confusion.',
+          '   - Orthographe & accents (tildes) : Si un accent écrit (á, é, í, ó, ú, ñ) a été oublié, indique la nuance de sens ou d\'accent tonique (ex: está vs esta, hablo vs habló).',
+          '   - Registre : Formel (Usted/Ustedes) vs familier (tú/vosotros).'
+        ].join('\n')
+      : [
+          '   - Grammar & syntax: If ser vs estar, por vs para, preterite vs imperfect, subjunctive, or pronoun placement slipped, explain simply.',
+          '   - False friends & wrong words: (e.g. "embarazada" = pregnant; "éxito" = success), clarify the confusion.',
+          '   - Spelling & accents: If written accents (á, é, í, ó, ú, ñ) were missed, explain the change in stress or meaning (e.g. está vs esta).',
+          '   - Register: Formal (Usted) vs informal (tú).'
+        ].join('\n');
+  } else if (targetLangCode === 'en') {
+    targetSpecificTips = isFr
+      ? [
+          '   - Grammaire & phrasé : Verbes à particule (phrasal verbs), prétérit irrégulier, prépositions (in/on/at), faux amis (ex: actually = en fait, eventually = finalement).',
+          '   - Orthographe : Lettres muettes, consonnes doubles.'
+        ].join('\n')
+      : [
+          '   - Grammar & phrasing: Phrasal verbs, irregular past tense, prepositions (in/on/at), false friends.',
+          '   - Spelling: Silent letters, doubled consonants.'
+        ].join('\n');
+  } else {
+    targetSpecificTips = isFr
+      ? [
+          '   - Grammaire & syntaxe : Ordre des mots, particules/prépositions, accords et conjugaisons.',
+          '   - Faux amis & vocabulaire : Clarifie la différence exacte entre le mot de l\'apprenant et le mot attendu.',
+          '   - Orthographe & diacritiques : Souligne le piège de lettre ou d\'accent.'
+        ].join('\n')
+      : [
+          '   - Grammar & syntax: Word order, particles/prepositions, inflections, or agreement rules.',
+          '   - Wrong word / False friend: Clarify the distinction between learner\'s word and target word.',
+          '   - Spelling & diacritics: Highlight specific character or spelling traps.'
+        ].join('\n');
+  }
+
+  if (isFr) {
+    return [
+      `Tu es un coach linguistique expert, bienveillant et perspicace pour un locuteur de langue ${sourceFr} qui s'entraîne à maîtriser l'${targetFr} avec des cartes de répétition espacée.`,
+      `L'apprenant s'exerce à traduire des phrases pour communiquer en situation réelle. La bonne réponse en ${targetFr} est DÉJÀ affichée à l'écran juste au-dessus de ton message. Tu ne donnes qu'UNE SEULE réponse ; l'apprenant ne peut pas poser de question de suivi.`,
+      '',
+      `TON OBJECTIF PRINCIPAL : Lorsque l'apprenant commet une erreur ou hésite, aide-le à comprendre POURQUOI il a glissé, offre-lui un CROCHET MÉMORIEL (mnémotechnique) percutant pour retenir la tournure en ${targetFr}, et donne-lui un CONSEIL RAPIDE pour réussir la prochaine fois.`,
+      '',
+      'SI L\'APPRENANT A COMMIS UNE ERREUR (Mode : CORRIGER UNE ERREUR) :',
+      'Réponds avec exactement trois sections concises sous titres en gras :',
+      '1. **Pourquoi cela a glissé :** Diagnostique précisément l\'erreur en 1 à 2 phrases amicales et pédagogiques (sans jargon abstrait).',
+      targetSpecificTips,
+      '   - Case vide / hésitation : Si l\'apprenant n\'a rien écrit ou ne savait pas, décompose la logique mot à mot de la phrase cible pour qu\'elle devienne intuitive.',
+      `2. **Crochet mémoriel :** Donne le meilleur moyen mnémotechnique pour faire retenir la bonne réponse en ${targetFr} :`,
+      `   - Cognat ou parenté de mot avec le ${sourceFr} ou l'anglais (liens étymologiques réels, jamais d'étymologie inventée).`,
+      '   - Image mentale vivante, jeu de sonorité ou association d\'idées marquante.',
+      '   - Décomposition littérale des mots composés ou des expressions idiomatiques.',
+      '3. **Conseil rapide :** Une formule réflexe en une ligne, un repère mental ou une astuce de déclic pour ne plus hésiter la prochaine fois.',
+      '',
+      'SI L\'APPRENANT A RÉPONDU CORRECTEMENT (Mode : RENFORCER) :',
+      'Réponds avec exactement deux sections courtes :',
+      `1. **Crochet mémoriel :** Un lien étymologique, un cognat ou une décomposition pour ancrer durablement la tournure en ${targetFr}.`,
+      '2. **Astuce d\'usage :** Une courte nuance sur l\'usage courant à l\'oral, l\'intonation naturelle ou le contexte quotidien.',
+      '',
+      'CONTRAINTES STRICTES :',
+      '- Longueur totale : 70 à 120 mots. Concis, direct et instantanément lisible.',
+      `- Langue de rédaction : Rédige TOUTE ton explication et tes titres en français. Les mots cibles en ${targetFr} doivent être en *italique*.`,
+      '- Ne répète JAMAIS la réponse correcte seule sur la première ligne (l\'apprenant la voit déjà à l\'écran). Entre directement dans l\'explication.',
+      '- Utilise un markdown propre (**gras** pour les titres et mots clés, *italique* pour les termes en langue cible).',
+      '- Ton : Chaleureux, encourageant et très pratique pour la communication réelle.'
+    ].join('\n');
+  } else {
+    return [
+      `You are an expert, encouraging, and perceptive ${targetEn} language coach for a ${sourceEn} speaker practicing with flashcards.`,
+      `The learner is drilling phrases and sentences for real conversation. The correct ${targetEn} answer is already prominently displayed on the learner's screen above your note. You get ONE reply; they cannot ask a follow-up.`,
+      '',
+      `YOUR PRIMARY GOAL: When the learner makes a mistake or gets stuck, help them understand WHY they slipped, give them a vivid memory hook / mnemonic to remember it, and give a quick tip so they get it right next time.`,
+      '',
+      'IF THE LEARNER MADE A MISTAKE (Mode: CORRECT A MISTAKE):',
+      'Respond with three concise, high-value sections using bold headings:',
+      '1. **Why that slipped:** Diagnose the exact mistake clearly in 1-2 friendly sentences (no dry academic jargon).',
+      targetSpecificTips,
+      '   - Left blank / stuck: Break down the literal word-for-word logic so the phrase makes intuitive sense.',
+      `2. **Memory Hook:** Provide the single most memorable hook to make the correct ${targetEn} stick:`,
+      `   - Cognate or word-family connection with ${sourceEn} or English. Never invent false etymology.`,
+      '   - Vivid mental image, sound-alike, or wordplay for unfamiliar words.',
+      '   - Literal breakdown of compound words or idioms.',
+      '3. **Quick Tip:** A punchy 1-line rule-of-thumb, trigger formula, or mental shortcut to nail it next time.',
+      '',
+      'IF THE LEARNER ANSWERED CORRECTLY (Mode: REINFORCE):',
+      'Respond with two short sections:',
+      `1. **Memory Hook:** A memorable cognate, etymological link, or compound word breakdown to deepen long-term retention.`,
+      '2. **Native Tip:** A brief nuance on spoken usage, natural intonation, or phrasebook context.',
+      '',
+      'STRICT CONSTRAINTS:',
+      '- Total length: 70 to 120 words. Concise, punchy, and instantly scannable.',
+      '- Write the explanation and headings in English.',
+      `- Never repeat the correct ${targetEn} answer on its own as line 1 (the learner is already looking at it on screen). Jump straight into the explanation.`,
+      '- Use clean markdown (**bold** for headings and key words, *italics* for target language words and meanings).',
+      '- Tone: Warm, empowering, and practical for real-world communication.'
+    ].join('\n');
+  }
+}
+
+function buildAiUserMsg(card, userAnswer, wasWrong, targetLangCode, opts) {
+  opts = opts || {};
+  const isFr = (ai.lang || 'fr') === 'fr';
+  const targetName = getAiLangName(targetLangCode, isFr ? 'fr' : 'en');
+  const lines = [
+    'Mode: ' + (wasWrong ? 'CORRECT A MISTAKE' : 'REINFORCE - they answered correctly'),
+    'Deck: ' + ((state.activeDeck && state.activeDeck.name) || 'Deck') + ' (' + targetName + ')',
+    'Lesson: ' + (card.lesson || 'Général'),
+    'Prompt line: "' + (card.fr || '') + '"',
+    'Target ' + targetName + ' answer: "' + (card.target || '') + '"'
+  ];
+
+  if (card.grammatical) lines.push('Grammar note: "' + card.grammatical + '"');
+  if (card.cloze) lines.push('Cloze sentence context: "' + card.cloze + '"');
+
+  if (!wasWrong) {
+    lines.push('Learner\'s answer: (answered correctly)');
+  } else {
+    const trimmed = (userAnswer || '').trim();
+    if (!trimmed) {
+      lines.push('Learner\'s answer: (left blank / did not know)');
+      lines.push('Mistake category: The learner was stuck or gave up. Break down the phrase and explain how it is built.');
+    } else {
+      lines.push('Learner\'s answer: "' + trimmed + '"');
+      try {
+        const sDiff = summarizeDiff(card.target, trimmed);
+        if (sDiff && sDiff.desc) {
+          const maxCloseDist = Math.max(2, Math.floor(card.target.length * 0.35));
+          if (sDiff.distance <= maxCloseDist && sDiff.distance <= 4) {
+            lines.push('Verified spelling diff: ' + sDiff.desc);
+            lines.push('Mistake category: Close typo or spelling slip. Highlight the exact letter or accent trap.');
+          } else {
+            lines.push('Mistake category: The learner provided a different word or phrasing ("' + trimmed + '") instead of "' + card.target + '". Contrast them, explain what the learner\'s word means (or why it doesn\'t fit), and clarify the grammatical or vocabulary difference.');
+          }
+        }
+      } catch(e) {}
+    }
+  }
+
+  if (opts.lapses > 1) {
+    lines.push('Missed ' + opts.lapses + ' times before: Earlier hints did not stick. Use an extra vivid or different mnemonic angle.');
+  }
+  if (opts.retry) {
+    lines.push('User requested a different hint: Provide a fresh perspective or an alternative mnemonic.');
+  }
+
+  return lines.join('\n');
+}
+
+let aiCtrl = null;
+let aiReqSeq = 0;
+
+function renderAiMarkdown(text) {
+  if (!text) return '';
+  let escaped = escapeHtml(text);
+  escaped = escaped.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  escaped = escaped.replace(/\*([^\*\n]+?)\*/g, '<em>$1</em>');
+  escaped = escaped.replace(/`([^`\n]+?)`/g, '<code>$1</code>');
+  const lines = escaped.split(/\r?\n/);
+  const out = [];
+  let inList = false;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    const m = line.match(/^[-*•]\s+(.*)$/);
+    if (m) {
+      if (!inList) { out.push('<ul>'); inList = true; }
+      out.push('<li>' + m[1] + '</li>');
+    } else {
+      if (inList) { out.push('</ul>'); inList = false; }
+      if (line) {
+        out.push('<p>' + line + '</p>');
+      }
+    }
+  }
+  if (inList) out.push('</ul>');
+  return out.join('');
+}
+
+function renderAiBox(boxState, text) {
+  const box = document.getElementById('aihint');
+  const askBtn = document.getElementById('ai-ask-btn');
+  if (!box) return;
+
+  box.classList.remove('hide', 'err');
+  if (askBtn) askBtn.classList.add('hide');
+
+  const isFr = (ai.lang || 'fr') === 'fr';
+  const headerText = isFr ? 'Coach mémoire' : 'Memory coach';
+  const retryText = isFr ? 'Autre conseil' : 'Different hint';
+  const errRetryText = isFr ? 'Réessayer' : 'Try again';
+
+  if (boxState === 'loading') {
+    box.innerHTML = `<div class="aihdr"><span class="aispin"></span> ${headerText}</div>`;
+  } else if (boxState === 'ok') {
+    box.innerHTML = `<div class="aihdr">💭 ${headerText}</div>` +
+                    `<div class="aibody">${renderAiMarkdown(text)}</div>` +
+                    `<button type="button" class="retry" id="aiFreshBtn">${retryText}</button>`;
+    const fb = document.getElementById('aiFreshBtn');
+    if (fb) fb.addEventListener('click', () => { askCoach(true); });
+  } else {
+    box.classList.add('err');
+    box.innerHTML = `<div class="aihdr">${headerText} — indisponible</div>` +
+                    `<div class="aibody">${escapeHtml(text)}</div>` +
+                    `<button type="button" class="retry" id="aiRetryBtn">${errRetryText}</button>`;
+    const rb = document.getElementById('aiRetryBtn');
+    if (rb) rb.addEventListener('click', () => { askCoach(true); });
+  }
+}
+
+function hideAiBox() {
+  if (aiCtrl) {
+    try { aiCtrl.abort(); } catch(e) {}
+    aiCtrl = null;
+  }
+  aiReqSeq++;
+  const box = document.getElementById('aihint');
+  if (box) {
+    box.classList.add('hide', 'err');
+    box.innerHTML = '';
+  }
+  const askBtn = document.getElementById('ai-ask-btn');
+  if (askBtn) askBtn.classList.add('hide');
+}
+
+function askCoach(force) {
+  if (!state.currentCard || !aiConfigured()) return;
+
+  if (autoEasyTimeout) {
+    clearTimeout(autoEasyTimeout);
+    autoEasyTimeout = null;
+  }
+
+  const card = state.currentCard;
+  const target = card.target || '';
+  const userAnswer = (document.getElementById('user-answer-input').value || '').trim();
+  const score = checkSimilarity(userAnswer, target);
+  const isAccepted = score >= 0.8;
+  const wasWrong = !isAccepted;
+  const ckey = aiCacheKey(card.id, userAnswer, wasWrong);
+
+  if (!force && aiCache[ckey] && aiCache[ckey].t) {
+    renderAiBox('ok', aiCache[ckey].t);
+    return;
+  }
+
+  if (aiCtrl) {
+    try { aiCtrl.abort(); } catch(e) {}
+  }
+  aiCtrl = ('AbortController' in window) ? new AbortController() : null;
+  const seq = ++aiReqSeq;
+  renderAiBox('loading');
+
+  const headers = {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer ' + ai.apiKey,
+    'X-Title': 'Anki Trainer Hub'
+  };
+  if (/^https?:/i.test(location.origin)) {
+    headers['HTTP-Referer'] = location.origin;
+  }
+
+  const targetLang = (state.activeDeck && state.activeDeck.targetLang) || 'it';
+  const cardProg = state.progress[card.id];
+  const userMsg = buildAiUserMsg(card, userAnswer, wasWrong, targetLang, {
+    lapses: cardProg ? (cardProg.lapses || 0) : 0,
+    retry: !!force
+  });
+  const sysPrompt = buildAiSystemPrompt(targetLang, 'fr', ai.lang || 'fr');
+
+  const body = {
+    model: ai.model,
+    messages: [
+      { role: 'system', content: sysPrompt },
+      { role: 'user', content: userMsg }
+    ],
+    temperature: 0.75,
+    max_tokens: 1200
+  };
+  if (aiIsOpenRouter()) {
+    body.reasoning = { effort: 'low' };
+  }
+
+  fetch(aiCompletionsUrl(), {
+    method: 'POST',
+    headers: headers,
+    body: JSON.stringify(body),
+    signal: aiCtrl ? aiCtrl.signal : undefined
+  })
+  .then(r => r.json().then(j => ({ status: r.status, j }), () => ({ status: r.status, j: null })))
+  .then(res => {
+    if (seq !== aiReqSeq) return;
+    const j = res.j || {};
+    if (res.status < 200 || res.status >= 300 || j.error) {
+      const msg = (j.error && (j.error.message || j.error.type)) || ('HTTP ' + res.status);
+      renderAiBox('error', String(msg));
+      return;
+    }
+    const choice = j && j.choices && j.choices[0];
+    const text = (choice && choice.message && choice.message.content || '').trim();
+    if (!text) {
+      const fr = choice && (choice.finish_reason || choice.native_finish_reason);
+      renderAiBox('error', fr === 'length'
+        ? 'Le modèle a épuisé son quota de tokens avant de répondre. Essayez un modèle non-raisonnant.'
+        : 'Le modèle a renvoyé une réponse vide.');
+      return;
+    }
+    aiCache[ckey] = { t: text, ts: Date.now() };
+    saveAiCache();
+    renderAiBox('ok', text);
+  })
+  .catch(err => {
+    if (seq !== aiReqSeq) return;
+    if (err && err.name === 'AbortError') return;
+    renderAiBox('error', (err && err.message) ? err.message : 'Erreur de connexion avec l\'API.');
+  });
+}
+
+function syncAiToForms() {
+  // Dashboard inputs
+  const ed = document.getElementById('ai-enabled-dashboard');
+  const kd = document.getElementById('ai-key-dashboard');
+  const md = document.getElementById('ai-model-dashboard');
+  const bd = document.getElementById('ai-base-url-dashboard');
+  const ld = document.getElementById('ai-lang-dashboard');
+
+  if (ed) ed.checked = !!ai.enabled;
+  if (kd) kd.value = ai.apiKey || '';
+  if (md) md.value = ai.model || AI_DEFAULT_MODEL;
+  if (bd) bd.value = ai.baseUrl || AI_DEFAULT_BASE;
+  if (ld) ld.value = ai.lang || AI_DEFAULT_LANG;
+
+  // Modal inputs
+  const em = document.getElementById('ai-enabled-modal');
+  const km = document.getElementById('ai-key-modal');
+  const mm = document.getElementById('ai-model-modal');
+  const bm = document.getElementById('ai-base-url-modal');
+  const lm = document.getElementById('ai-lang-modal');
+
+  if (em) em.checked = !!ai.enabled;
+  if (km) km.value = ai.apiKey || '';
+  if (mm) mm.value = ai.model || AI_DEFAULT_MODEL;
+  if (bm) bm.value = ai.baseUrl || AI_DEFAULT_BASE;
+  if (lm) lm.value = ai.lang || AI_DEFAULT_LANG;
+
+  // Sidebar controls
+  const es = document.getElementById('ai-enabled-sidebar');
+  if (es) es.checked = !!ai.enabled;
+
+  const badge = document.getElementById('ai-sidebar-badge');
+  if (badge) {
+    if (ai.enabled) {
+      badge.innerText = 'Actif';
+      badge.className = 'badge badge-success';
+    } else {
+      badge.innerText = 'Inactif';
+      badge.className = 'badge';
+    }
+  }
+}
+
+function syncAiFromDashboard() {
+  const ed = document.getElementById('ai-enabled-dashboard');
+  const kd = document.getElementById('ai-key-dashboard');
+  const md = document.getElementById('ai-model-dashboard');
+  const bd = document.getElementById('ai-base-url-dashboard');
+  const ld = document.getElementById('ai-lang-dashboard');
+
+  if (ed) ai.enabled = ed.checked;
+  if (kd) ai.apiKey = kd.value.trim();
+  if (md) ai.model = md.value.trim() || AI_DEFAULT_MODEL;
+  if (bd) ai.baseUrl = bd.value.trim().replace(/\/+$/, '') || AI_DEFAULT_BASE;
+  if (ld) ai.lang = ld.value || AI_DEFAULT_LANG;
+
+  saveAiSettings();
+  syncAiToForms();
+}
+
+function syncAiFromModal() {
+  const em = document.getElementById('ai-enabled-modal');
+  const km = document.getElementById('ai-key-modal');
+  const mm = document.getElementById('ai-model-modal');
+  const bm = document.getElementById('ai-base-url-modal');
+  const lm = document.getElementById('ai-lang-modal');
+
+  if (em) ai.enabled = em.checked;
+  if (km) ai.apiKey = km.value.trim();
+  if (mm) ai.model = mm.value.trim() || AI_DEFAULT_MODEL;
+  if (bm) ai.baseUrl = bm.value.trim().replace(/\/+$/, '') || AI_DEFAULT_BASE;
+  if (lm) ai.lang = lm.value || AI_DEFAULT_LANG;
+
+  saveAiSettings();
+  syncAiToForms();
+}
+
+function testAiConnection(outputEl) {
+  if (!outputEl) return;
+  if (!ai.apiKey) {
+    outputEl.textContent = '✗ Saisissez d\'abord une clé API.';
+    outputEl.style.color = 'var(--danger)';
+    return;
+  }
+  outputEl.textContent = 'Test en cours…';
+  outputEl.style.color = 'var(--text-muted)';
+
+  const headers = {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer ' + ai.apiKey,
+    'X-Title': 'Anki Trainer Hub'
+  };
+  if (/^https?:/i.test(location.origin)) {
+    headers['HTTP-Referer'] = location.origin;
+  }
+
+  fetch(aiCompletionsUrl(), {
+    method: 'POST',
+    headers: headers,
+    body: JSON.stringify({
+      model: ai.model,
+      messages: [{ role: 'user', content: 'Reply with the single word: OK' }],
+      max_tokens: 5
+    })
+  })
+  .then(r => r.json().then(j => ({ status: r.status, j }), () => ({ status: r.status, j: null })))
+  .then(res => {
+    const j = res.j || {};
+    if (res.status >= 200 && res.status < 300 && j.choices) {
+      outputEl.textContent = '✓ Connecté — ' + ai.model;
+      outputEl.style.color = 'var(--success)';
+    } else {
+      const m = (j.error && (j.error.message || j.error.type)) || ('HTTP ' + res.status);
+      outputEl.textContent = '✗ ' + m;
+      outputEl.style.color = 'var(--danger)';
+    }
+  })
+  .catch(e => {
+    outputEl.textContent = '✗ ' + ((e && e.message) || 'Erreur réseau');
+    outputEl.style.color = 'var(--danger)';
+  });
+}
+
+function initAiCoachUI() {
+  syncAiToForms();
+
+  // Dashboard inputs change/input
+  ['ai-enabled-dashboard', 'ai-key-dashboard', 'ai-model-dashboard', 'ai-base-url-dashboard', 'ai-lang-dashboard'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('change', syncAiFromDashboard);
+      el.addEventListener('input', syncAiFromDashboard);
+    }
+  });
+
+  // Modal inputs change/input
+  ['ai-enabled-modal', 'ai-key-modal', 'ai-model-modal', 'ai-base-url-modal', 'ai-lang-modal'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('change', syncAiFromModal);
+      el.addEventListener('input', syncAiFromModal);
+    }
+  });
+
+  // Sidebar toggle
+  const es = document.getElementById('ai-enabled-sidebar');
+  if (es) {
+    es.addEventListener('change', () => {
+      ai.enabled = es.checked;
+      saveAiSettings();
+      syncAiToForms();
+    });
+  }
+
+  // Dashboard buttons
+  const testBtnDash = document.getElementById('ai-test-btn-dashboard');
+  if (testBtnDash) {
+    testBtnDash.addEventListener('click', () => {
+      syncAiFromDashboard();
+      testAiConnection(document.getElementById('ai-test-out-dashboard'));
+    });
+  }
+
+  const clearBtnDash = document.getElementById('ai-clear-cache-btn-dashboard');
+  if (clearBtnDash) {
+    clearBtnDash.addEventListener('click', () => {
+      aiCache = {};
+      try { localStorage.removeItem(AI_CACHE_KEY); } catch(e) {}
+      const out = document.getElementById('ai-test-out-dashboard');
+      if (out) {
+        out.textContent = 'Cache d\'indices vidé.';
+        out.style.color = 'var(--text-muted)';
+      }
+    });
+  }
+
+  // Modal open/close & buttons
+  const openModalBtn = document.getElementById('open-ai-settings-btn');
+  const modalEl = document.getElementById('ai-settings-modal');
+  const closeModalBtn = document.getElementById('close-ai-settings-modal-btn');
+  const saveModalBtn = document.getElementById('save-ai-settings-btn');
+
+  if (openModalBtn && modalEl) {
+    openModalBtn.addEventListener('click', () => {
+      syncAiToForms();
+      modalEl.classList.remove('hide');
+    });
+  }
+
+  if (closeModalBtn && modalEl) {
+    closeModalBtn.addEventListener('click', () => {
+      modalEl.classList.add('hide');
+    });
+  }
+
+  if (saveModalBtn && modalEl) {
+    saveModalBtn.addEventListener('click', () => {
+      syncAiFromModal();
+      modalEl.classList.add('hide');
+    });
+  }
+
+  const testBtnModal = document.getElementById('ai-test-btn-modal');
+  if (testBtnModal) {
+    testBtnModal.addEventListener('click', () => {
+      syncAiFromModal();
+      testAiConnection(document.getElementById('ai-test-out-modal'));
+    });
+  }
+
+  const clearBtnModal = document.getElementById('ai-clear-cache-btn-modal');
+  if (clearBtnModal) {
+    clearBtnModal.addEventListener('click', () => {
+      aiCache = {};
+      try { localStorage.removeItem(AI_CACHE_KEY); } catch(e) {}
+      const out = document.getElementById('ai-test-out-modal');
+      if (out) {
+        out.textContent = 'Cache vidé.';
+        out.style.color = 'var(--text-muted)';
+      }
+    });
+  }
+
+  // Ask Coach button click in study card
+  const askBtn = document.getElementById('ai-ask-btn');
+  if (askBtn) {
+    askBtn.addEventListener('click', () => {
+      if (autoEasyTimeout) {
+        clearTimeout(autoEasyTimeout);
+        autoEasyTimeout = null;
+      }
+      askCoach(false);
+    });
+  }
+}
+
 // Routing & View Switcher
 function navigateTo(hash) {
   window.location.hash = hash;
@@ -450,6 +1204,7 @@ function handleRoute() {
     headerLogo.style.cursor = 'default';
     state.activeDeck = null;
     fetchDecks();
+    syncAiToForms();
   } else if (hash.startsWith('#deck/')) {
     // Show Trainer
     const deckId = hash.replace('#deck/', '');
@@ -458,6 +1213,7 @@ function handleRoute() {
     backBtn.classList.remove('hide');
     headerLogo.style.cursor = 'pointer';
     loadDeck(deckId);
+    syncAiToForms();
   }
 }
 
@@ -1001,6 +1757,7 @@ function resetTrainerUI() {
   document.getElementById('feedback-section').classList.add('hide');
   document.getElementById('submit-answer-btn').classList.remove('hide');
   document.getElementById('skip-card-btn').classList.remove('hide');
+  hideAiBox();
 }
 
 // Verify User Answer
@@ -1059,6 +1816,16 @@ function verifyAnswer() {
       autoEasyTimeout = null;
       submitCardRating('easy');
     }, 1200);
+  }
+
+  // 6. AI Memory Coach: Auto-explain on a miss, or offer it on demand
+  if (aiConfigured()) {
+    if (!isAccepted) {
+      askCoach(false);
+    } else {
+      const askBtn = document.getElementById('ai-ask-btn');
+      if (askBtn) askBtn.classList.remove('hide');
+    }
   }
 }
 
@@ -1287,6 +2054,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Bind routes
   window.addEventListener('hashchange', handleRoute);
   handleRoute();
+  
+  // Initialize AI Memory Coach UI
+  initAiCoachUI();
   
   // Dashboard Brand click
   document.getElementById('header-logo').addEventListener('click', () => {
@@ -1684,6 +2454,14 @@ document.addEventListener('DOMContentLoaded', () => {
           submitCardRating('easy');
         } else if (key === 'v') {
           speakAudio();
+        } else if (key === 'c') {
+          if (aiConfigured()) {
+            if (autoEasyTimeout) {
+              clearTimeout(autoEasyTimeout);
+              autoEasyTimeout = null;
+            }
+            askCoach(false);
+          }
         }
       }
     }

@@ -1661,3 +1661,23 @@ kbd {
 @keyframes aisp {
   to { transform: rotate(360deg); }
 }
+
+/* ====================================================
+   Session Mistakes & Advanced Agent (ChatGPT) Export
+   ==================================================== */
+
+.session-mistakes-card {
+  border-left: 3px solid var(--primary);
+}
+
+.mistakes-actions-col {
+  display: flex;
+  flex-direction: column;
+}
+
+#mistakes-count-badge.has-mistakes {
+  background: var(--rate-hard-bg);
+  color: var(--rate-hard-text);
+  border: 1px solid var(--rate-hard-border);
+}
+

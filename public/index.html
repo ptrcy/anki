@@ -240,6 +240,35 @@
             </button>
           </div>
 
+          <!-- Session Mistakes (Export for Advanced Agent like ChatGPT) -->
+          <div class="card sidebar-card session-mistakes-card" id="session-mistakes-card">
+            <div class="sidebar-card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <h3 style="margin: 0;">Erreurs de la session</h3>
+              <span id="mistakes-count-badge" class="badge">0</span>
+            </div>
+            <p style="font-size: 12.5px; color: var(--text-muted); margin: 0 0 10px; line-height: 1.4;">
+              Exportez vos erreurs avec un prompt optimisé pour analyse par ChatGPT, Claude, etc.
+            </p>
+            <div class="mistakes-actions-col">
+              <button type="button" id="copy-mistakes-btn" class="btn btn-sm btn-indigo w-full" disabled title="Copier le prompt et la liste des erreurs pour ChatGPT">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon" style="width: 14px; height: 14px;">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copier pour ChatGPT</span>
+              </button>
+              <div style="display: flex; gap: 8px; margin-top: 8px;">
+                <button type="button" id="view-mistakes-btn" class="btn btn-sm btn-outline flex-1" disabled>
+                  Voir la liste
+                </button>
+                <button type="button" id="clear-mistakes-btn" class="btn btn-sm btn-ghost" title="Effacer l'historique des erreurs">
+                  Effacer
+                </button>
+              </div>
+              <span id="copy-mistakes-status" class="aicfg-test-out" style="display: block; margin-top: 6px; text-align: center; font-size: 12px;"></span>
+            </div>
+          </div>
+
           <!-- Reset -->
           <div class="card sidebar-card">
             <button id="reset-deck-progress-btn" class="btn btn-sm btn-outline-danger w-full">
@@ -577,6 +606,39 @@
           <button type="button" id="save-ai-settings-btn" class="btn btn-indigo">Enregistrer et Fermer</button>
         </div>
       </form>
+    </div>
+  </div>
+
+  <!-- 6. SESSION MISTAKES MODAL (ChatGPT / Advanced Agent Export) -->
+  <div id="session-mistakes-modal" class="modal-overlay hide">
+    <div class="modal-card" style="max-width: 680px;">
+      <div class="modal-header">
+        <h3>Erreurs de la session (Prompt ChatGPT / Claude)</h3>
+        <button id="close-mistakes-modal-btn" class="close-btn" title="Fermer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="close-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" style="padding: 16px 0;">
+        <p style="font-size: 13px; color: var(--text-muted); margin-top: 0; line-height: 1.5;">
+          Voici le prompt complet prêt à être copié et collé dans ChatGPT, Claude ou tout autre agent avancé pour obtenir une analyse détaillée, des règles réflexes et des crochets mémoriels :
+        </p>
+        <textarea id="mistakes-prompt-preview" class="input-textarea" rows="13" readonly style="font-family: monospace; font-size: 12.5px; line-height: 1.5; white-space: pre-wrap; width: 100%; resize: vertical; background: var(--bg-app);"></textarea>
+      </div>
+      <div class="modal-footer" style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+        <button type="button" id="clear-mistakes-modal-btn" class="btn btn-sm btn-outline-danger">Vider la liste</button>
+        <div style="display: flex; gap: 8px;">
+          <button type="button" id="close-mistakes-modal-btn-2" class="btn btn-outline">Fermer</button>
+          <button type="button" id="copy-mistakes-modal-btn" class="btn btn-indigo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon" style="width: 14px; height: 14px;">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copier le prompt</span>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 

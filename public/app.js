@@ -1186,6 +1186,283 @@ function initAiCoachUI() {
   }
 }
 
+// ====================================================
+// Session Mistakes Tracking & Export for Advanced Agent (ChatGPT / Claude)
+// ====================================================
+const SESSION_MISTAKES_KEY = 'anki-session-mistakes';
+let sessionMistakes = loadSessionMistakes();
+
+function loadSessionMistakes() {
+  try {
+    const raw = localStorage.getItem(SESSION_MISTAKES_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveSessionMistakes() {
+  try {
+    localStorage.setItem(SESSION_MISTAKES_KEY, JSON.stringify(sessionMistakes));
+  } catch (e) {}
+}
+
+function recordSessionMistake(card, userAnswer) {
+  if (!card) return;
+  const cardId = card.id;
+  const typed = (userAnswer || '').trim();
+  const deckTitle = (state.activeDeck && state.activeDeck.title) || '';
+  const targetLang = (state.activeDeck && state.activeDeck.targetLang) || 'it';
+
+  let diffDesc = '';
+  try {
+    const sDiff = summarizeDiff(card.target, typed);
+    if (sDiff && sDiff.desc) {
+      diffDesc = sDiff.desc;
+    }
+  } catch (e) {}
+
+  const existingIdx = sessionMistakes.findIndex(m => m.id === cardId);
+  const now = Date.now();
+
+  if (existingIdx >= 0) {
+    const existing = sessionMistakes[existingIdx];
+    existing.attempts = (existing.attempts || 1) + 1;
+    if (typed) existing.userAnswer = typed;
+    if (diffDesc) existing.diffDesc = diffDesc;
+    existing.timestamp = now;
+  } else {
+    sessionMistakes.push({
+      id: cardId,
+      deckTitle: deckTitle,
+      targetLang: targetLang,
+      fr: card.fr || '',
+      target: card.target || '',
+      userAnswer: typed,
+      diffDesc: diffDesc,
+      lesson: card.lesson || '',
+      grammatical: card.grammatical || '',
+      cloze: card.cloze || '',
+      timestamp: now,
+      attempts: 1
+    });
+  }
+
+  saveSessionMistakes();
+  updateMistakesUI();
+}
+
+function clearSessionMistakes() {
+  if (sessionMistakes.length === 0) return;
+  if (!confirm(`Voulez-vous vraiment effacer l'historique des ${sessionMistakes.length} erreur(s) de cette session ?`)) {
+    return;
+  }
+  sessionMistakes = [];
+  saveSessionMistakes();
+  updateMistakesUI();
+  const preview = document.getElementById('mistakes-prompt-preview');
+  if (preview) preview.value = '';
+  const modal = document.getElementById('session-mistakes-modal');
+  if (modal && !modal.classList.contains('hide')) {
+    modal.classList.add('hide');
+  }
+}
+
+function generateMistakesPrompt() {
+  if (!sessionMistakes || sessionMistakes.length === 0) {
+    return 'Aucune erreur enregistrée pour cette session.';
+  }
+
+  const isEn = (ai.lang || 'fr') === 'en';
+  const targetLangs = [...new Set(sessionMistakes.map(m => m.targetLang).filter(Boolean))];
+  const langDisplay = targetLangs.map(l => getAiLangName(l, isEn ? 'en' : 'fr')).join(', ') || 'la langue cible';
+
+  const header = isEn
+    ? `You are an expert language tutor and memory coach.\n` +
+      `Below is a list of flashcards / sentences that I got WRONG during my spaced repetition practice session (${langDisplay}).\n\n` +
+      `For EACH item below, provide:\n` +
+      `1. Precise Diagnosis: Why was my answer wrong? (spelling slip, grammatical error, false friend, wrong preposition/case, or completely different word).\n` +
+      `2. Reflex Rule: A concise 1-2 sentence rule or trick to immediately recall the correct structure next time.\n` +
+      `3. Memory Hook / Mnemonic: A vivid association, imagery, or etymological link to anchor the correct answer in memory.\n` +
+      `4. Two Micro-Examples: 2 short, natural example sentences using this target expression in context (with English translations).\n\n` +
+      `At the end, provide a brief synthesis of the top 2-3 grammar or vocabulary patterns I should drill next.\n\n` +
+      `==================================================\n` +
+      `SESSION MISTAKES LIST (${sessionMistakes.length} card${sessionMistakes.length > 1 ? 's' : ''}):\n` +
+      `==================================================\n\n`
+    : `Tu es un tuteur expert en langues vivantes et un pédagogue spécialisé en mémorisation.\n` +
+      `Voici la liste des cartes / phrases sur lesquelles j'ai échoué lors de ma session d'entraînement Anki (${langDisplay}).\n\n` +
+      `Pour CHAQUE carte ci-dessous, donne-moi :\n` +
+      `1. Diagnostic précis : Pourquoi ma réponse est fausse ou inadaptée (faute d'inattention, faux-ami, mauvaise déclinaison/conjugaison, préposition erronée, mot différent, ordre des mots).\n` +
+      `2. Règle réflexe : Une règle simple et percutante en 1 à 2 phrases pour faire le bon choix sans hésiter.\n` +
+      `3. Crochet mémoriel / Mnémotechnique : Une image mentale marquante, un pont étymologique ou une astuce pour ancrer définitivement la bonne réponse.\n` +
+      `4. Deux exemples concrets : 2 phrases courtes et naturelles réutilisant la structure ou le mot clé en contexte (avec leur traduction).\n\n` +
+      `Termine par un court bilan de synthèse des 2 ou 3 points clés à retravailler en priorité d'après cette série d'erreurs.\n\n` +
+      `==================================================\n` +
+      `LISTE DES ERREURS DE LA SESSION (${sessionMistakes.length} carte${sessionMistakes.length > 1 ? 's' : ''}) :\n` +
+      `==================================================\n\n`;
+
+  const items = sessionMistakes.map((m, idx) => {
+    const num = idx + 1;
+    const userAns = m.userAnswer ? `"${m.userAnswer}"` : (isEn ? '(left blank / skipped)' : '(laissé vide / passé)');
+    const diff = m.diffDesc ? ` [Écart : ${m.diffDesc}]` : '';
+    const attempts = m.attempts > 1 ? ` (${m.attempts} échecs)` : '';
+    const lesson = m.lesson ? ` | Leçon : ${m.lesson}` : '';
+    const grammar = m.grammatical ? ` | Grammaire : ${m.grammatical}` : '';
+    const cloze = m.cloze ? ` | Cloze : ${m.cloze}` : '';
+    const deck = m.deckTitle ? ` [Deck : ${m.deckTitle}]` : '';
+
+    return `${num}. Question / Source : "${m.fr}"${deck}\n` +
+           `   • Réponse attendue : "${m.target}"\n` +
+           `   • Ma réponse : ${userAns}${diff}${attempts}\n` +
+           (lesson || grammar || cloze ? `   • Contexte :${lesson}${grammar}${cloze}\n` : '') +
+           `\n`;
+  }).join('');
+
+  return header + items;
+}
+
+function copyTextToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    return navigator.clipboard.writeText(text).catch(() => fallbackCopy(text));
+  }
+  return fallbackCopy(text);
+}
+
+function fallbackCopy(text) {
+  return new Promise((resolve, reject) => {
+    try {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.top = '0';
+      textArea.style.left = '0';
+      textArea.style.width = '2em';
+      textArea.style.height = '2em';
+      textArea.style.padding = '0';
+      textArea.style.border = 'none';
+      textArea.style.outline = 'none';
+      textArea.style.boxShadow = 'none';
+      textArea.style.background = 'transparent';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      const successful = document.execCommand('copy');
+      document.body.removeChild(textArea);
+      if (successful) {
+        resolve();
+      } else {
+        reject(new Error('execCommand copy failed'));
+      }
+    } catch (err) {
+      reject(err);
+    }
+  });
+}
+
+function copyMistakesPrompt(statusEl, btnEl) {
+  if (!sessionMistakes || sessionMistakes.length === 0) {
+    if (statusEl) {
+      statusEl.textContent = 'Aucune erreur à copier.';
+      statusEl.style.color = 'var(--text-muted)';
+      setTimeout(() => { if (statusEl) statusEl.textContent = ''; }, 2500);
+    }
+    return;
+  }
+
+  const promptText = generateMistakesPrompt();
+
+  copyTextToClipboard(promptText).then(() => {
+    if (statusEl) {
+      statusEl.textContent = '✓ Copié ! Prêt pour ChatGPT.';
+      statusEl.style.color = 'var(--success)';
+      setTimeout(() => { if (statusEl) statusEl.textContent = ''; }, 3500);
+    }
+    if (btnEl) {
+      const origHtml = btnEl.innerHTML;
+      btnEl.innerHTML = `<span>✓ Copié !</span>`;
+      setTimeout(() => { if (btnEl) btnEl.innerHTML = origHtml; }, 2000);
+    }
+  }).catch(() => {
+    if (statusEl) {
+      statusEl.textContent = '✗ Impossible de copier automatiquement.';
+      statusEl.style.color = 'var(--danger)';
+    }
+  });
+}
+
+function updateMistakesUI() {
+  const count = sessionMistakes.length;
+  const badge = document.getElementById('mistakes-count-badge');
+  const copyBtn = document.getElementById('copy-mistakes-btn');
+  const viewBtn = document.getElementById('view-mistakes-btn');
+  const preview = document.getElementById('mistakes-prompt-preview');
+
+  if (badge) {
+    badge.textContent = count;
+    if (count > 0) {
+      badge.classList.add('has-mistakes');
+    } else {
+      badge.classList.remove('has-mistakes');
+    }
+  }
+
+  if (copyBtn) copyBtn.disabled = (count === 0);
+  if (viewBtn) viewBtn.disabled = (count === 0);
+
+  if (preview && preview.offsetParent !== null) {
+    preview.value = generateMistakesPrompt();
+  }
+}
+
+function initSessionMistakesUI() {
+  updateMistakesUI();
+
+  const copyBtn = document.getElementById('copy-mistakes-btn');
+  const copyStatus = document.getElementById('copy-mistakes-status');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      copyMistakesPrompt(copyStatus, copyBtn);
+    });
+  }
+
+  const clearBtn = document.getElementById('clear-mistakes-btn');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', clearSessionMistakes);
+  }
+
+  const viewBtn = document.getElementById('view-mistakes-btn');
+  const modal = document.getElementById('session-mistakes-modal');
+  const preview = document.getElementById('mistakes-prompt-preview');
+  if (viewBtn && modal) {
+    viewBtn.addEventListener('click', () => {
+      if (preview) preview.value = generateMistakesPrompt();
+      modal.classList.remove('hide');
+    });
+  }
+
+  const closeBtn1 = document.getElementById('close-mistakes-modal-btn');
+  const closeBtn2 = document.getElementById('close-mistakes-modal-btn-2');
+  [closeBtn1, closeBtn2].forEach(btn => {
+    if (btn && modal) {
+      btn.addEventListener('click', () => {
+        modal.classList.add('hide');
+      });
+    }
+  });
+
+  const modalCopyBtn = document.getElementById('copy-mistakes-modal-btn');
+  if (modalCopyBtn) {
+    modalCopyBtn.addEventListener('click', () => {
+      copyMistakesPrompt(null, modalCopyBtn);
+    });
+  }
+
+  const modalClearBtn = document.getElementById('clear-mistakes-modal-btn');
+  if (modalClearBtn) {
+    modalClearBtn.addEventListener('click', clearSessionMistakes);
+  }
+}
+
 // Routing & View Switcher
 function navigateTo(hash) {
   window.location.hash = hash;
@@ -1205,6 +1482,7 @@ function handleRoute() {
     state.activeDeck = null;
     fetchDecks();
     syncAiToForms();
+    updateMistakesUI();
   } else if (hash.startsWith('#deck/')) {
     // Show Trainer
     const deckId = hash.replace('#deck/', '');
@@ -1214,6 +1492,7 @@ function handleRoute() {
     headerLogo.style.cursor = 'pointer';
     loadDeck(deckId);
     syncAiToForms();
+    updateMistakesUI();
   }
 }
 
@@ -1805,6 +2084,8 @@ function verifyAnswer() {
   state.sessionStats.seen++;
   if (isAccepted) {
     state.sessionStats.correct++;
+  } else {
+    recordSessionMistake(state.currentCard, typed);
   }
   
   // Update intervals on rating buttons
@@ -1864,6 +2145,11 @@ function submitCardRating(rating) {
   
   const cardId = state.currentCard.id;
   const currentProg = state.progress[cardId] || defaultProgress();
+  
+  if (rating === 'again') {
+    const typed = (document.getElementById('user-answer-input') || {}).value || '';
+    recordSessionMistake(state.currentCard, typed);
+  }
   
   // Rate card and save to state
   state.progress[cardId] = rateCard(currentProg, rating);
@@ -2057,6 +2343,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Initialize AI Memory Coach UI
   initAiCoachUI();
+  
+  // Initialize Session Mistakes Export UI
+  initSessionMistakesUI();
   
   // Dashboard Brand click
   document.getElementById('header-logo').addEventListener('click', () => {

@@ -10,7 +10,7 @@ const VOICE_MAP = {
   es: { languageCode: 'es-ES', name: 'es-ES-Wavenet-C' },
   de: { languageCode: 'de-DE', name: 'de-DE-Wavenet-F' },
   fr: { languageCode: 'fr-FR', name: 'fr-FR-Wavenet-C' },
-  pt: { languageCode: 'pt-PT', name: 'pt-PT-Wavenet-A' },
+  pt: { languageCode: 'pt-BR', name: 'pt-BR-Neural2-B' },
   ja: { languageCode: 'ja-JP', name: 'ja-JP-Wavenet-A' },
   ru: { languageCode: 'ru-RU', name: 'ru-RU-Wavenet-A' },
 };

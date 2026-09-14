@@ -261,6 +261,11 @@ body {
   color: var(--danger-dark);
 }
 
+.badge-success {
+  background-color: var(--success-light);
+  color: var(--success-dark);
+}
+
 /* Card layout */
 .card {
   background-color: var(--bg-card);
@@ -591,14 +596,66 @@ body {
 .trainer-sidebar {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
 }
 
-.sidebar-card h3 {
-  font-size: 15px;
+/* Sidebar drawers — collapsed <details> panels so stats stay out of the way
+   until the user wants them (esp. on small screens). */
+.drawer {
+  padding: 0;
+  overflow: hidden;
+}
+
+.drawer-summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  font-size: 14px;
+  font-weight: 700;
   color: var(--text-main);
-  border-bottom: 1px solid var(--border-light);
-  padding-bottom: 12px;
+  user-select: none;
+}
+
+.drawer-summary::-webkit-details-marker {
+  display: none;
+}
+
+.drawer-summary:hover {
+  background-color: var(--bg-card-hover);
+}
+
+.drawer-summary-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.drawer-glance {
+  flex-shrink: 0;
+}
+
+.drawer-chevron {
+  width: 14px;
+  height: 14px;
+  color: var(--text-light);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.drawer[open] .drawer-chevron {
+  transform: rotate(90deg);
+}
+
+.drawer-content {
+  padding: 4px 18px 18px;
+  border-top: 1px solid var(--border-light);
+  padding-top: 16px;
+  animation: slideUp 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 /* Distribution Stats List */
@@ -1116,6 +1173,7 @@ kbd {
   left: 0;
   width: 100vw;
   height: 100vh;
+  padding: 16px;
   background-color: rgba(15, 23, 42, 0.4);
   backdrop-filter: blur(4px);
   z-index: 1000;
@@ -1124,6 +1182,7 @@ kbd {
   justify-content: center;
 }
 
+
 .modal-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -1131,7 +1190,8 @@ kbd {
   box-shadow: var(--shadow-xl);
   width: 100%;
   max-width: 500px;
-  overflow: hidden;
+  max-height: 100%;
+  overflow-y: auto;
   animation: zoomIn 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
@@ -1314,13 +1374,13 @@ kbd {
 @media (max-width: 960px) {
   .trainer-layout {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 16px;
   }
-  
+
   .trainer-sidebar {
     order: 2; /* Sidebar goes below card on mobile */
   }
-  
+
   .welcome-banner {
     flex-direction: column;
     align-items: flex-start;
@@ -1328,21 +1388,128 @@ kbd {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
+  .header-container {
+    height: 56px;
+    padding: 0 16px;
+  }
+
+  .brand-title {
+    font-size: 16px;
+  }
+
+  .brand-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  #back-to-dashboard-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
   .app-main {
-    padding: 20px 16px;
+    padding: 16px 12px;
   }
-  
-  .rating-buttons-grid {
-    grid-template-columns: repeat(2, 1fr);
+
+  .welcome-banner {
+    padding: 18px;
+    margin-bottom: 20px;
   }
-  
+
+  .banner-content h1 {
+    font-size: 22px;
+  }
+
+  .banner-content p {
+    font-size: 13.5px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .study-card {
+    padding: 18px;
+    gap: 16px;
+    min-height: 0;
+  }
+
+  .drawer-summary {
+    padding: 12px 14px;
+  }
+
+  .drawer-content {
+    padding: 4px 14px 14px;
+    padding-top: 14px;
+  }
+
+  .trainer-header {
+    margin-bottom: 16px;
+    gap: 12px;
+  }
+
+  .trainer-title-area h2 {
+    font-size: 19px;
+  }
+
   .sentence-text {
     font-size: 20px;
   }
-  
+
+  .lesson-filter-wrapper {
+    padding: 8px 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .sync-bar {
+    flex-wrap: wrap;
+  }
+
+  .rating-buttons-grid {
+    gap: 8px;
+  }
+
+  .rating-btn {
+    padding: 10px 4px;
+  }
+
+  .action-buttons-row {
+    gap: 10px;
+  }
+
+  .aicfg-panel {
+    padding: 16px;
+    margin-top: 20px;
+  }
+
+  .aicfg-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .rating-buttons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sentence-text {
+    font-size: 19px;
+  }
+
   .diff-output {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+
+  .reference-text {
+    font-size: 17px;
+  }
+
+  .input-textarea {
     font-size: 16px;
+    padding: 12px 14px;
   }
 }
 

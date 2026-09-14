@@ -152,129 +152,142 @@
       </div>
 
       <div class="trainer-layout">
-        <!-- Sidebar: Stats & Sync -->
+        <!-- Sidebar: Stats & Sync — collapsible drawers, closed by default -->
         <aside class="trainer-sidebar">
-          
-          <!-- Spaced Repetition Card Distribution -->
-          <div class="card sidebar-card">
-            <h3>Distribution des cartes</h3>
-            
-            <div class="distribution-list">
-              <div class="dist-item">
-                <span class="dist-dot" style="background-color: #94a3b8;"></span>
-                <span class="dist-label">Nouvelles</span>
-                <span id="stat-new" class="dist-value">0</span>
-              </div>
-              <div class="dist-item">
-                <span class="dist-dot" style="background-color: #ef4444;"></span>
-                <span class="dist-label">À réviser (Dues)</span>
-                <span id="stat-due" class="dist-value">0</span>
-              </div>
-              <div class="dist-item">
-                <span class="dist-dot" style="background-color: #f97316;"></span>
-                <span class="dist-label">Demain</span>
-                <span id="stat-tomorrow" class="dist-value">0</span>
-              </div>
-              <div class="dist-item">
-                <span class="dist-dot" style="background-color: #eab308;"></span>
-                <span class="dist-label">2–3 jours</span>
-                <span id="stat-days23" class="dist-value">0</span>
-              </div>
-              <div class="dist-item">
-                <span class="dist-dot" style="background-color: #3b82f6;"></span>
-                <span class="dist-label">Cette semaine</span>
-                <span id="stat-week" class="dist-value">0</span>
-              </div>
-              <div class="dist-item">
-                <span class="dist-dot" style="background-color: #22c55e;"></span>
-                <span class="dist-label">Plus tard</span>
-                <span id="stat-later" class="dist-value">0</span>
-              </div>
-            </div>
 
-            <div class="overall-progress">
-              <div class="progress-info">
-                <span>Vues au moins une fois</span>
-                <strong id="stat-seen-fraction">0 / 0</strong>
+          <!-- Spaced Repetition Card Distribution -->
+          <details class="card drawer">
+            <summary class="drawer-summary">
+              <span class="drawer-summary-title">Distribution des cartes</span>
+              <span id="stat-due-glance" class="badge badge-danger drawer-glance hide">0 dues</span>
+              <svg class="drawer-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+            </summary>
+            <div class="drawer-content">
+              <div class="distribution-list">
+                <div class="dist-item">
+                  <span class="dist-dot" style="background-color: #94a3b8;"></span>
+                  <span class="dist-label">Nouvelles</span>
+                  <span id="stat-new" class="dist-value">0</span>
+                </div>
+                <div class="dist-item">
+                  <span class="dist-dot" style="background-color: #ef4444;"></span>
+                  <span class="dist-label">À réviser (Dues)</span>
+                  <span id="stat-due" class="dist-value">0</span>
+                </div>
+                <div class="dist-item">
+                  <span class="dist-dot" style="background-color: #f97316;"></span>
+                  <span class="dist-label">Demain</span>
+                  <span id="stat-tomorrow" class="dist-value">0</span>
+                </div>
+                <div class="dist-item">
+                  <span class="dist-dot" style="background-color: #eab308;"></span>
+                  <span class="dist-label">2–3 jours</span>
+                  <span id="stat-days23" class="dist-value">0</span>
+                </div>
+                <div class="dist-item">
+                  <span class="dist-dot" style="background-color: #3b82f6;"></span>
+                  <span class="dist-label">Cette semaine</span>
+                  <span id="stat-week" class="dist-value">0</span>
+                </div>
+                <div class="dist-item">
+                  <span class="dist-dot" style="background-color: #22c55e;"></span>
+                  <span class="dist-label">Plus tard</span>
+                  <span id="stat-later" class="dist-value">0</span>
+                </div>
               </div>
-              <div class="progress-track">
-                <div id="stat-seen-progress-bar" class="progress-fill" style="width: 0%;"></div>
+
+              <div class="overall-progress">
+                <div class="progress-info">
+                  <span>Vues au moins une fois</span>
+                  <strong id="stat-seen-fraction">0 / 0</strong>
+                </div>
+                <div class="progress-track">
+                  <div id="stat-seen-progress-bar" class="progress-fill" style="width: 0%;"></div>
+                </div>
               </div>
             </div>
-          </div>
+          </details>
 
           <!-- Session Stats -->
-          <div class="card sidebar-card">
-            <h3>Statistiques de la session</h3>
-            <div class="session-stats-grid">
-              <div class="session-stat-box">
-                <span class="label">Vues</span>
-                <span id="session-seen" class="val">0</span>
+          <details class="card drawer">
+            <summary class="drawer-summary">
+              <span class="drawer-summary-title">Statistiques de la session</span>
+              <span id="session-accuracy-glance" class="badge drawer-glance">0%</span>
+              <svg class="drawer-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+            </summary>
+            <div class="drawer-content">
+              <div class="session-stats-grid">
+                <div class="session-stat-box">
+                  <span class="label">Vues</span>
+                  <span id="session-seen" class="val">0</span>
+                </div>
+                <div class="session-stat-box">
+                  <span class="label">Réussies</span>
+                  <span id="session-correct" class="val">0</span>
+                </div>
+                <div class="session-stat-box">
+                  <span class="label">Précision</span>
+                  <span id="session-accuracy" class="val">0%</span>
+                </div>
               </div>
-              <div class="session-stat-box">
-                <span class="label">Réussies</span>
-                <span id="session-correct" class="val">0</span>
-              </div>
-              <div class="session-stat-box">
-                <span class="label">Précision</span>
-                <span id="session-accuracy" class="val">0%</span>
-              </div>
+              <button id="reset-session-btn" class="btn btn-sm btn-outline-danger w-full mt-12">
+                Réinitialiser la session
+              </button>
+              <button id="reset-deck-progress-btn" class="btn btn-sm btn-outline-danger w-full mt-12">
+                Réinitialiser toute la progression
+              </button>
             </div>
-            <button id="reset-session-btn" class="btn btn-sm btn-outline-danger w-full mt-12">
-              Réinitialiser la session
-            </button>
-          </div>
+          </details>
 
           <!-- AI Coach Sidebar Control -->
-          <div class="card sidebar-card aicfg-sidebar-card">
-            <div class="sidebar-card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <h3 style="margin: 0;">Coach Mémoire IA</h3>
-              <span id="ai-sidebar-badge" class="badge">Inactif</span>
+          <details class="card drawer aicfg-sidebar-card">
+            <summary class="drawer-summary">
+              <span class="drawer-summary-title">Coach Mémoire IA</span>
+              <span id="ai-sidebar-badge" class="badge drawer-glance">Inactif</span>
+              <svg class="drawer-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+            </summary>
+            <div class="drawer-content">
+              <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; color: var(--text-main);">
+                <input type="checkbox" id="ai-enabled-sidebar" style="width: 16px; height: 16px; accent-color: var(--primary);">
+                <span>Activer les explications IA</span>
+              </label>
+              <button id="open-ai-settings-btn" type="button" class="btn btn-sm btn-outline w-full mt-12">
+                Paramètres du coach IA
+              </button>
             </div>
-            <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; color: var(--text-main);">
-              <input type="checkbox" id="ai-enabled-sidebar" style="width: 16px; height: 16px; accent-color: var(--primary);">
-              <span>Activer les explications IA</span>
-            </label>
-            <button id="open-ai-settings-btn" type="button" class="btn btn-sm btn-outline w-full mt-12">
-              Paramètres du coach IA
-            </button>
-          </div>
+          </details>
 
           <!-- Session Mistakes (Export for Advanced Agent like ChatGPT) -->
-          <div class="card sidebar-card session-mistakes-card" id="session-mistakes-card">
-            <div class="sidebar-card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <h3 style="margin: 0;">Erreurs de la session</h3>
-              <span id="mistakes-count-badge" class="badge">0</span>
-            </div>
-            <p style="font-size: 12.5px; color: var(--text-muted); margin: 0 0 10px; line-height: 1.4;">
-              Exportez vos erreurs avec un prompt optimisé pour analyse par ChatGPT, Claude, etc.
-            </p>
-            <div class="mistakes-actions-col">
-              <button type="button" id="copy-mistakes-btn" class="btn btn-sm btn-indigo w-full" disabled title="Copier le prompt et la liste des erreurs pour ChatGPT">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon" style="width: 14px; height: 14px;">
-                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                </svg>
-                <span>Copier pour ChatGPT</span>
-              </button>
-              <div style="display: flex; gap: 8px; margin-top: 8px;">
-                <button type="button" id="view-mistakes-btn" class="btn btn-sm btn-outline flex-1" disabled>
-                  Voir la liste
+          <details class="card drawer session-mistakes-card" id="session-mistakes-card">
+            <summary class="drawer-summary">
+              <span class="drawer-summary-title">Erreurs de la session</span>
+              <span id="mistakes-count-badge" class="badge drawer-glance">0</span>
+              <svg class="drawer-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+            </summary>
+            <div class="drawer-content">
+              <p style="font-size: 12.5px; color: var(--text-muted); margin: 0 0 10px; line-height: 1.4;">
+                Exportez vos erreurs avec un prompt optimisé pour analyse par ChatGPT, Claude, etc.
+              </p>
+              <div class="mistakes-actions-col">
+                <button type="button" id="copy-mistakes-btn" class="btn btn-sm btn-indigo w-full" disabled title="Copier le prompt et la liste des erreurs pour ChatGPT">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon" style="width: 14px; height: 14px;">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copier pour ChatGPT</span>
                 </button>
-                <button type="button" id="clear-mistakes-btn" class="btn btn-sm btn-ghost" title="Effacer l'historique des erreurs">
-                  Effacer
-                </button>
+                <div style="display: flex; gap: 8px; margin-top: 8px;">
+                  <button type="button" id="view-mistakes-btn" class="btn btn-sm btn-outline flex-1" disabled>
+                    Voir la liste
+                  </button>
+                  <button type="button" id="clear-mistakes-btn" class="btn btn-sm btn-ghost" title="Effacer l'historique des erreurs">
+                    Effacer
+                  </button>
+                </div>
+                <span id="copy-mistakes-status" class="aicfg-test-out" style="display: block; margin-top: 6px; text-align: center; font-size: 12px;"></span>
               </div>
-              <span id="copy-mistakes-status" class="aicfg-test-out" style="display: block; margin-top: 6px; text-align: center; font-size: 12px;"></span>
             </div>
-          </div>
-
-          <!-- Reset -->
-          <div class="card sidebar-card">
-            <button id="reset-deck-progress-btn" class="btn btn-sm btn-outline-danger w-full">
-              Réinitialiser toute la progression
-            </button>
-          </div>
+          </details>
 
         </aside>
 

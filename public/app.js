@@ -5,6 +5,10 @@
 // Handle for the auto-easy timeout so it can be cancelled on manual rating
 let autoEasyTimeout = null;
 
+// Pre-fetched audio for the currently displayed card, warmed up while the
+// user is still typing so playback on submit has no network delay.
+let preloadedAudio = null; // { cardId, audio }
+
 // Long-press special character picker state
 let longPressTimer = null;
 let longPressKey = null;
@@ -985,10 +989,10 @@ function syncAiToForms() {
   if (badge) {
     if (ai.enabled) {
       badge.innerText = 'Actif';
-      badge.className = 'badge badge-success';
+      badge.className = 'badge badge-success drawer-glance';
     } else {
       badge.innerText = 'Inactif';
-      badge.className = 'badge';
+      badge.className = 'badge drawer-glance';
     }
   }
 }
@@ -1920,7 +1924,8 @@ function showNextCard() {
   }
   
   state.currentCard = nextCard;
-  
+  preloadCardAudio(nextCard);
+
   // Populate UI
   document.getElementById('study-container').classList.remove('hide');
   document.getElementById('no-cards-state').classList.add('hide');
@@ -2011,7 +2016,18 @@ function updateStatistics(filteredCards) {
   document.getElementById('stat-days23').innerText = days23Count;
   document.getElementById('stat-week').innerText = weekCount;
   document.getElementById('stat-later').innerText = laterCount;
-  
+
+  // Glance badge on the collapsed drawer header — visible without opening it
+  const dueGlance = document.getElementById('stat-due-glance');
+  if (dueGlance) {
+    if (dueCount > 0) {
+      dueGlance.innerText = `${dueCount} dues`;
+      dueGlance.classList.remove('hide');
+    } else {
+      dueGlance.classList.add('hide');
+    }
+  }
+
   // Seen cards fraction ("Vues au moins une fois")
   // A card is studied/seen if it has reps > 0 in the progress store
   const totalCards = filteredCards.length;
@@ -2025,10 +2041,13 @@ function updateStatistics(filteredCards) {
   document.getElementById('session-seen').innerText = state.sessionStats.seen;
   document.getElementById('session-correct').innerText = state.sessionStats.correct;
   
-  const accuracy = state.sessionStats.seen > 0 
-    ? Math.round((state.sessionStats.correct / state.sessionStats.seen) * 100) 
+  const accuracy = state.sessionStats.seen > 0
+    ? Math.round((state.sessionStats.correct / state.sessionStats.seen) * 100)
     : 0;
   document.getElementById('session-accuracy').innerText = `${accuracy}%`;
+
+  const accuracyGlance = document.getElementById('session-accuracy-glance');
+  if (accuracyGlance) accuracyGlance.innerText = `${accuracy}%`;
 }
 
 // UI Controls Reset
@@ -2187,6 +2206,24 @@ function skipCurrentCard() {
   showNextCard();
 }
 
+// Builds the pre-generated WaveNet MP3 URL for a card in the active deck.
+function audioUrlForCard(card) {
+  const targetLang = (state.activeDeck.targetLang || 'it').toLowerCase();
+  const targetHash = hashText(card.target);
+  return `/audio/${card.id}_${targetHash}_${targetLang}.mp3`;
+}
+
+// Starts fetching the current card's audio in the background as soon as the
+// card is shown, so it is already buffered by the time the user submits an
+// answer and speakAudio() actually plays it.
+function preloadCardAudio(card) {
+  if (!card || !state.activeDeck) return;
+  const audio = new Audio(audioUrlForCard(card));
+  audio.preload = 'auto';
+  audio.onerror = () => {}; // ignored — speakAudio() falls back to browser TTS when played
+  preloadedAudio = { cardId: card.id, audio };
+}
+
 // Text-To-Speech Playback — uses pre-generated WaveNet MP3 if available, falls back to browser TTS
 function speakAudio() {
   if (!state.currentCard || !state.activeDeck) return;
@@ -2195,11 +2232,15 @@ function speakAudio() {
   let fallbackFired = false;
   const fallback = () => { if (!fallbackFired) { fallbackFired = true; speakBrowserTTS(); } };
 
-  // Filename = hash(fr) + "_" + hash(target) + "_" + lang — uniquely identifies the audio
-  // content per language, ensuring no cross-language collisions.
-  const targetLang = (state.activeDeck.targetLang || 'it').toLowerCase();
-  const targetHash = hashText(state.currentCard.target);
-  const audio = new Audio(`/audio/${cardId}_${targetHash}_${targetLang}.mp3`);
+  // Reuse the pre-fetched audio for this card when available so playback
+  // starts immediately instead of waiting on a fresh network request.
+  let audio;
+  if (preloadedAudio && preloadedAudio.cardId === cardId) {
+    audio = preloadedAudio.audio;
+    audio.currentTime = 0;
+  } else {
+    audio = new Audio(audioUrlForCard(state.currentCard));
+  }
   audio.onerror = fallback;
   audio.play().catch(fallback);
 }

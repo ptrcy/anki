@@ -449,7 +449,7 @@ const AI_DEFAULT_BASE = 'https://openrouter.ai/api/v1';
 const AI_DEFAULT_LANG = 'fr';
 
 let ai = (function() {
-  const d = { enabled: false, apiKey: '', model: AI_DEFAULT_MODEL, baseUrl: AI_DEFAULT_BASE, lang: AI_DEFAULT_LANG };
+  const d = { enabled: false, apiKey: '', model: AI_DEFAULT_MODEL, baseUrl: AI_DEFAULT_BASE, lang: AI_DEFAULT_LANG, lastModified: 0 };
   try {
     const r = JSON.parse(localStorage.getItem(AI_SETTINGS_KEY));
     if (r && typeof r === 'object') {
@@ -468,7 +468,44 @@ let ai = (function() {
 })();
 
 function saveAiSettings() {
+  ai.lastModified = Date.now();
   try { localStorage.setItem(AI_SETTINGS_KEY, JSON.stringify(ai)); } catch(e) {}
+  pushAiSettingsToSync();
+}
+
+// Pushes the AI coach config to the sync server (debounced, since settings
+// are saved on every keystroke) so it carries over to other devices.
+let aiSyncPushTimer = null;
+function pushAiSettingsToSync() {
+  const code = localStorage.getItem('anki-sync-code');
+  if (!code) return;
+  clearTimeout(aiSyncPushTimer);
+  aiSyncPushTimer = setTimeout(() => {
+    fetch(`/api/sync?code=${encodeURIComponent(code)}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ aiSettings: ai })
+    }).catch(err => console.error('AI settings sync failed:', err));
+  }, 800);
+}
+
+// Merges a remote AI settings snapshot into the local one if it's newer
+// (last-write-wins), applying it to the UI when it changes anything.
+function mergeRemoteAiSettings(remote) {
+  if (!remote || typeof remote !== 'object') return;
+  const remoteTime = remote.lastModified || 0;
+  if (remoteTime <= (ai.lastModified || 0)) return;
+
+  Object.assign(ai, {
+    enabled: !!remote.enabled,
+    apiKey: typeof remote.apiKey === 'string' ? remote.apiKey : '',
+    model: remote.model || AI_DEFAULT_MODEL,
+    baseUrl: remote.baseUrl || AI_DEFAULT_BASE,
+    lang: remote.lang || AI_DEFAULT_LANG,
+    lastModified: remoteTime
+  });
+  try { localStorage.setItem(AI_SETTINGS_KEY, JSON.stringify(ai)); } catch(e) {}
+  syncAiToForms();
 }
 
 function aiConfigured() {
@@ -2318,6 +2355,8 @@ async function loadAllProgress(code, silent = false) {
     const syncData = await res.json();
     const decks = syncData.decks || {};
 
+    mergeRemoteAiSettings(syncData.aiSettings);
+
     for (const [deckId, deckData] of Object.entries(decks)) {
       const localProg = JSON.parse(localStorage.getItem(`progress_${deckId}`) || '{}');
       const merged = { ...localProg };
@@ -2583,6 +2622,14 @@ document.addEventListener('DOMContentLoaded', () => {
         );
       }
     }
+    // Push current AI coach settings too, so a fresh connection carries them over
+    pushPromises.push(
+      fetch(`/api/sync?code=${encodeURIComponent(code)}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ aiSettings: ai })
+      })
+    );
     await Promise.all(pushPromises);
 
     // Pull the merged server state (404 = new code, that's fine)

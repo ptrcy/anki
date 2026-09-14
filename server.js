@@ -532,9 +532,11 @@ app.post('/api/sync', async (req, res) => {
     return res.status(400).json({ error: 'Sync code must be at least 3 characters long' });
   }
 
-  const { deckId, progress, excluded } = req.body;
-  if (!deckId || !progress) {
-    return res.status(400).json({ error: 'deckId and progress are required' });
+  const { deckId, progress, excluded, aiSettings } = req.body;
+  const hasDeckPayload = deckId && progress;
+  const hasAiPayload = aiSettings && typeof aiSettings === 'object';
+  if (!hasDeckPayload && !hasAiPayload) {
+    return res.status(400).json({ error: 'deckId+progress or aiSettings is required' });
   }
 
   await acquireLock(code);
@@ -555,25 +557,46 @@ app.post('/api/sync', async (req, res) => {
       }
     }
 
-    // Merge incoming deck progress card-by-card
-    const stored = (syncData.decks[deckId] || {});
-    const storedProgress = stored.progress || {};
-    const merged = { ...storedProgress };
-    
-    for (const [cardId, incoming] of Object.entries(progress)) {
-      const existing = merged[cardId];
-      const incomingTime = incoming.lastModified || 0;
-      const existingTime = existing ? (existing.lastModified || 0) : -1;
+    if (hasDeckPayload) {
+      // Merge incoming deck progress card-by-card
+      const stored = (syncData.decks[deckId] || {});
+      const storedProgress = stored.progress || {};
+      const merged = { ...storedProgress };
 
-      if (!existing || incomingTime > existingTime || (incomingTime === existingTime && incoming.reps > existing.reps)) {
-        merged[cardId] = incoming;
+      for (const [cardId, incoming] of Object.entries(progress)) {
+        const existing = merged[cardId];
+        const incomingTime = incoming.lastModified || 0;
+        const existingTime = existing ? (existing.lastModified || 0) : -1;
+
+        if (!existing || incomingTime > existingTime || (incomingTime === existingTime && incoming.reps > existing.reps)) {
+          merged[cardId] = incoming;
+        }
+      }
+
+      syncData.decks[deckId] = {
+        progress: merged,
+        excluded: Array.isArray(excluded) ? excluded.filter(s => typeof s === 'string') : (stored.excluded || [])
+      };
+    }
+
+    if (hasAiPayload) {
+      // Last-write-wins merge, same pattern as card progress
+      const storedAi = syncData.aiSettings || {};
+      const incomingTime = aiSettings.lastModified || 0;
+      const storedTime = storedAi.lastModified || 0;
+
+      if (incomingTime >= storedTime) {
+        syncData.aiSettings = {
+          enabled: !!aiSettings.enabled,
+          apiKey: typeof aiSettings.apiKey === 'string' ? aiSettings.apiKey : (storedAi.apiKey || ''),
+          model: typeof aiSettings.model === 'string' ? aiSettings.model : (storedAi.model || ''),
+          baseUrl: typeof aiSettings.baseUrl === 'string' ? aiSettings.baseUrl : (storedAi.baseUrl || ''),
+          lang: typeof aiSettings.lang === 'string' ? aiSettings.lang : (storedAi.lang || ''),
+          lastModified: incomingTime || Date.now()
+        };
       }
     }
 
-    syncData.decks[deckId] = {
-      progress: merged,
-      excluded: Array.isArray(excluded) ? excluded.filter(s => typeof s === 'string') : (stored.excluded || [])
-    };
     syncData._savedAt = new Date().toISOString();
 
     await fs.writeFile(filePath, JSON.stringify(syncData, null, 2), 'utf8');

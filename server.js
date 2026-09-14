@@ -35,24 +35,31 @@ app.use(express.json({ limit: '10mb' }));
 // On-demand Audio Middleware
 app.get('/audio/:filename', async (req, res, next) => {
   const { filename } = req.params;
-  if (!filename.endsWith('.mp3')) return next();
+  if (!filename || typeof filename !== 'string') return next();
 
-  const filePath = path.join(AUDIO_DIR, filename);
+  // Security (Finding #3): Strict filename validation upfront to prevent path traversal
+  const match = filename.match(/^(card_[a-z0-9]+)_([a-z0-9]+)_([a-z]{2})\.mp3$/i);
+  if (!match) {
+    if (!/^[a-zA-Z0-9_-]+\.mp3$/.test(filename)) {
+      return res.status(400).send('Invalid audio filename format');
+    }
+  }
+
+  const safeFilename = path.basename(filename);
+  const filePath = path.join(AUDIO_DIR, safeFilename);
   
   // If file exists, let express.static handle it
   if (existsSync(filePath)) {
     return next();
   }
 
+  if (!match) {
+    return res.status(404).send('Audio file not found');
+  }
+
   // If not, try to find the card in the decks to get the text
-  console.log(`Generating on-demand audio for: ${filename}`);
+  console.log(`Generating on-demand audio for: ${safeFilename}`);
   try {
-    // Filename format: "${hash(fr)}_${hash(target)}_${targetLang}.mp3" (e.g. "card_abc_xyz_it.mp3")
-    const nameWithoutExt = filename.replace('.mp3', '');
-    const match = nameWithoutExt.match(/^(card_[a-z0-9]+)_([a-z0-9]+)_([a-z]{2})$/);
-    if (!match) {
-      return res.status(404).send('Invalid audio filename format');
-    }
     const [, cardId, targetHash, targetLang] = match;
 
     const deckFiles = await fs.readdir(DECKS_DIR);
@@ -429,13 +436,15 @@ Return ONLY a valid JSON array of objects matching this schema:
     // After updating all cards in deck, save it
     await fs.writeFile(filePath, JSON.stringify(deck, null, 2), 'utf8');
 
-    // Update all sync progress files on server in-place
+    // Update all sync progress files on server in-place under lock
     if (existsSync(SYNC_DIR)) {
       const syncFiles = await fs.readdir(SYNC_DIR);
       for (const file of syncFiles) {
         if (!file.endsWith('.json')) continue;
-        const syncPath = path.join(SYNC_DIR, file);
+        const code = decodeURIComponent(file.slice(0, -5));
+        await acquireLock(code);
         try {
+          const syncPath = path.join(SYNC_DIR, file);
           const syncData = JSON.parse(await fs.readFile(syncPath, 'utf8'));
           if (syncData.decks && syncData.decks[deckId]) {
             const deckSync = syncData.decks[deckId];
@@ -468,6 +477,8 @@ Return ONLY a valid JSON array of objects matching this schema:
           }
         } catch (err) {
           console.error(`Failed to update sync file ${file}:`, err);
+        } finally {
+          releaseLock(code);
         }
       }
     }
@@ -480,25 +491,93 @@ Return ONLY a valid JSON array of objects matching this schema:
   }
 });
 
-// 5. Load progress (Sync)
-app.get('/api/sync', async (req, res) => {
-  const rawCode = req.query.code;
-  if (!rawCode) {
-    return res.status(400).json({ error: 'Sync code is required' });
+// Rate limiting and brute-force protection for /api/sync
+const syncRateLimits = new Map(); // ip -> { requests: [timestamps], blockedUntil: 0, failed404s: 0 }
+
+function checkSyncRateLimit(req, res) {
+  const ip = req.ip || req.connection.remoteAddress || 'unknown';
+  const now = Date.now();
+  let entry = syncRateLimits.get(ip);
+  if (!entry) {
+    entry = { requests: [], blockedUntil: 0, failed404s: 0 };
+    syncRateLimits.set(ip, entry);
   }
 
+  // Check if IP is currently blocked
+  if (entry.blockedUntil > now) {
+    const waitSec = Math.ceil((entry.blockedUntil - now) / 1000);
+    res.status(429).json({ error: `Trop de requêtes. Réessayez dans ${waitSec}s.` });
+    return false;
+  }
+
+  // Window: 60s
+  entry.requests = entry.requests.filter(t => now - t < 60000);
+  if (entry.requests.length >= 40) {
+    entry.blockedUntil = now + 60000;
+    res.status(429).json({ error: 'Limite de requêtes atteinte (max 40/min). Réessayez dans 1 minute.' });
+    return false;
+  }
+
+  entry.requests.push(now);
+  return true;
+}
+
+function recordSync404(req) {
+  const ip = req.ip || req.connection.remoteAddress || 'unknown';
+  const entry = syncRateLimits.get(ip);
+  if (entry) {
+    entry.failed404s = (entry.failed404s || 0) + 1;
+    if (entry.failed404s >= 10) {
+      entry.blockedUntil = Date.now() + 15 * 60 * 1000; // 15m lockout on brute-force probe
+      console.warn(`Blocked IP ${ip} for 15m due to repeated 404 sync probes`);
+    }
+  }
+}
+
+function recordSyncSuccess(req) {
+  const ip = req.ip || req.connection.remoteAddress || 'unknown';
+  const entry = syncRateLimits.get(ip);
+  if (entry) {
+    entry.failed404s = 0;
+  }
+}
+
+const SAFE_SYNC_CODE_REGEX = /^[a-zA-Z0-9_-]{3,64}$/;
+const FORBIDDEN_KEYS = new Set(['__proto__', 'constructor', 'prototype']);
+
+function sanitizeSyncCode(rawCode) {
+  if (typeof rawCode !== 'string') return null;
   const code = rawCode.trim().toLowerCase();
-  if (code.length < 3) {
-    return res.status(400).json({ error: 'Sync code must be at least 3 characters long' });
+  if (!SAFE_SYNC_CODE_REGEX.test(code)) return null;
+  if (FORBIDDEN_KEYS.has(code)) return null;
+  return code;
+}
+
+// 5. Load progress (Sync)
+app.get('/api/sync', async (req, res) => {
+  if (!checkSyncRateLimit(req, res)) return;
+
+  const code = sanitizeSyncCode(req.query.code);
+  if (!code) {
+    return res.status(400).json({ error: 'Sync code invalide (3-64 caractères alphanumériques)' });
   }
 
   const filePath = path.join(SYNC_DIR, `${encodeURIComponent(code)}.json`);
 
   try {
     const syncContent = await fs.readFile(filePath, 'utf8');
-    res.json(JSON.parse(syncContent));
+    const syncData = JSON.parse(syncContent);
+    recordSyncSuccess(req);
+
+    // Security (Finding #1): Do NOT expose plaintext API keys on short or easily guessable sync codes (< 8 chars).
+    if (code.length < 8 && syncData.aiSettings && syncData.aiSettings.apiKey) {
+      syncData.aiSettings = { ...syncData.aiSettings, apiKey: '' };
+    }
+
+    res.json(syncData);
   } catch (err) {
     if (err.code === 'ENOENT') {
+      recordSync404(req);
       return res.status(404).json({ error: 'Aucune donnée pour ce code' });
     }
     console.error(`Failed to read sync progress for ${code}:`, err);
@@ -506,14 +585,20 @@ app.get('/api/sync', async (req, res) => {
   }
 });
 
-// Simple in-memory locking for sync files to prevent race conditions
+// Simple in-memory locking for sync files to prevent race conditions (with timeout)
 const syncLocks = new Map();
 
-async function acquireLock(code) {
+async function acquireLock(code, timeoutMs = 5000) {
+  const start = Date.now();
   while (syncLocks.has(code)) {
+    if (Date.now() - start > timeoutMs) {
+      console.warn(`Sync lock timed out for code ${code} after ${timeoutMs}ms, breaking lock`);
+      syncLocks.delete(code);
+      break;
+    }
     await new Promise(resolve => setTimeout(resolve, 50));
   }
-  syncLocks.set(code, true);
+  syncLocks.set(code, Date.now());
 }
 
 function releaseLock(code) {
@@ -522,21 +607,26 @@ function releaseLock(code) {
 
 // 6. Save progress (Sync) — merges one deck's progress into the stored file
 app.post('/api/sync', async (req, res) => {
-  const rawCode = req.query.code;
-  if (!rawCode) {
-    return res.status(400).json({ error: 'Sync code is required' });
-  }
+  if (!checkSyncRateLimit(req, res)) return;
 
-  const code = rawCode.trim().toLowerCase();
-  if (code.length < 3) {
-    return res.status(400).json({ error: 'Sync code must be at least 3 characters long' });
+  const code = sanitizeSyncCode(req.query.code);
+  if (!code) {
+    return res.status(400).json({ error: 'Sync code invalide (3-64 caractères alphanumériques)' });
   }
 
   const { deckId, progress, excluded, aiSettings } = req.body;
-  const hasDeckPayload = deckId && progress;
+  const hasDeckPayload = deckId && progress && typeof progress === 'object';
   const hasAiPayload = aiSettings && typeof aiSettings === 'object';
   if (!hasDeckPayload && !hasAiPayload) {
     return res.status(400).json({ error: 'deckId+progress or aiSettings is required' });
+  }
+
+  // Security (Finding #3): Prototype pollution prevention and input validation
+  const SAFE_ID_REGEX = /^[a-zA-Z0-9_-]{1,120}$/;
+  if (hasDeckPayload) {
+    if (typeof deckId !== 'string' || !SAFE_ID_REGEX.test(deckId) || FORBIDDEN_KEYS.has(deckId)) {
+      return res.status(400).json({ error: 'deckId invalide' });
+    }
   }
 
   await acquireLock(code);
@@ -549,8 +639,7 @@ app.post('/api/sync', async (req, res) => {
     try {
       const existingContent = await fs.readFile(filePath, 'utf8');
       const existing = JSON.parse(existingContent);
-      // Migrate legacy format (flat progress) to per-deck structure
-      syncData = existing.decks ? existing : { decks: {} };
+      syncData = existing && typeof existing.decks === 'object' ? existing : { decks: {} };
     } catch (err) {
       if (err.code !== 'ENOENT') {
         console.warn(`Sync file ${code} found but error reading:`, err.message);
@@ -558,12 +647,15 @@ app.post('/api/sync', async (req, res) => {
     }
 
     if (hasDeckPayload) {
-      // Merge incoming deck progress card-by-card
-      const stored = (syncData.decks[deckId] || {});
+      const stored = (syncData.decks && syncData.decks[deckId]) || {};
       const storedProgress = stored.progress || {};
-      const merged = { ...storedProgress };
+      const merged = Object.create(null);
+      Object.assign(merged, storedProgress);
 
       for (const [cardId, incoming] of Object.entries(progress)) {
+        if (!SAFE_ID_REGEX.test(cardId) || FORBIDDEN_KEYS.has(cardId)) continue;
+        if (!incoming || typeof incoming !== 'object') continue;
+
         const existing = merged[cardId];
         const incomingTime = incoming.lastModified || 0;
         const existingTime = existing ? (existing.lastModified || 0) : -1;
@@ -573,36 +665,36 @@ app.post('/api/sync', async (req, res) => {
         }
       }
 
-      const incomingExcluded = Array.isArray(excluded) ? excluded.filter(s => typeof s === 'string') : [];
-      const storedExcluded = Array.isArray(stored.excluded) ? stored.excluded.filter(s => typeof s === 'string') : [];
+      const incomingExcluded = Array.isArray(excluded) ? excluded.filter(s => typeof s === 'string' && SAFE_ID_REGEX.test(s) && !FORBIDDEN_KEYS.has(s)) : [];
+      const storedExcluded = Array.isArray(stored.excluded) ? stored.excluded.filter(s => typeof s === 'string' && !FORBIDDEN_KEYS.has(s)) : [];
       const mergedExcluded = Array.from(new Set([...storedExcluded, ...incomingExcluded]));
 
+      if (!syncData.decks) syncData.decks = {};
       syncData.decks[deckId] = {
-        progress: merged,
+        progress: { ...merged },
         excluded: mergedExcluded
       };
     }
 
     if (hasAiPayload) {
-      // Last-write-wins merge, same pattern as card progress
       const storedAi = syncData.aiSettings || {};
       const incomingTime = aiSettings.lastModified || 0;
       const storedTime = storedAi.lastModified || 0;
 
       if (incomingTime >= storedTime) {
-        const incomingKey = typeof aiSettings.apiKey === 'string' ? aiSettings.apiKey : '';
-        // A blank key never overwrites a real one already on record: a device
-        // that hasn't received the real key yet can otherwise wipe it out for
-        // everyone just by editing an unrelated field (e.g. the enabled toggle),
-        // since that stamps a fresh "latest" write with its own empty key.
-        const resolvedKey = incomingKey || storedAi.apiKey || '';
+        let incomingKey = typeof aiSettings.apiKey === 'string' ? aiSettings.apiKey : '';
+        // Security (Finding #1): Do NOT store API keys if sync code length < 8
+        if (code.length < 8) {
+          incomingKey = '';
+        }
+        const resolvedKey = incomingKey || (code.length >= 8 ? (storedAi.apiKey || '') : '');
         const resolvedTime = incomingTime || storedTime || (incomingKey || aiSettings.enabled ? Date.now() : 0);
         syncData.aiSettings = {
           enabled: !!aiSettings.enabled,
           apiKey: resolvedKey,
-          model: typeof aiSettings.model === 'string' ? aiSettings.model : (storedAi.model || ''),
-          baseUrl: typeof aiSettings.baseUrl === 'string' ? aiSettings.baseUrl : (storedAi.baseUrl || ''),
-          lang: typeof aiSettings.lang === 'string' ? aiSettings.lang : (storedAi.lang || ''),
+          model: typeof aiSettings.model === 'string' ? aiSettings.model.slice(0, 100) : (storedAi.model || ''),
+          baseUrl: typeof aiSettings.baseUrl === 'string' ? aiSettings.baseUrl.slice(0, 200) : (storedAi.baseUrl || ''),
+          lang: typeof aiSettings.lang === 'string' ? aiSettings.lang.slice(0, 10) : (storedAi.lang || ''),
           lastModified: resolvedTime
         };
       }
@@ -611,6 +703,7 @@ app.post('/api/sync', async (req, res) => {
     syncData._savedAt = new Date().toISOString();
 
     await fs.writeFile(filePath, JSON.stringify(syncData, null, 2), 'utf8');
+    recordSyncSuccess(req);
     res.json({ success: true, _savedAt: syncData._savedAt });
   } catch (err) {
     console.error(`Failed to save sync progress for ${code}:`, err);

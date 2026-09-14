@@ -32,4 +32,4 @@ async function synthesizeText(text, langCode, outPath) {
   }
 }
 
-module.exports = { synthesizeText };
+module.exports = { synthesizeText, VOICE_MAP };

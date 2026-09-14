@@ -4,6 +4,12 @@
 
 // Handle for the auto-easy timeout so it can be cancelled on manual rating
 let autoEasyTimeout = null;
+function clearAutoEasyTimeout() {
+  if (autoEasyTimeout) {
+    clearTimeout(autoEasyTimeout);
+    autoEasyTimeout = null;
+  }
+}
 
 // Pre-fetched audio for the currently displayed card, warmed up while the
 // user is still typing so playback on submit has no network delay.
@@ -866,9 +872,9 @@ function renderAiBox(boxState, text) {
   if (askBtn) askBtn.classList.add('hide');
 
   const isFr = (ai.lang || 'fr') === 'fr';
-  const headerText = isFr ? 'Coach mémoire' : 'Memory coach';
-  const retryText = isFr ? 'Autre conseil' : 'Different hint';
-  const errRetryText = isFr ? 'Réessayer' : 'Try again';
+  const headerText = escapeHtml(isFr ? 'Coach mémoire' : 'Memory coach');
+  const retryText = escapeHtml(isFr ? 'Autre conseil' : 'Different hint');
+  const errRetryText = escapeHtml(isFr ? 'Réessayer' : 'Try again');
 
   if (boxState === 'loading') {
     box.innerHTML = `<div class="aihdr"><span class="aispin"></span> ${headerText}</div>`;
@@ -1257,7 +1263,7 @@ function recordSessionMistake(card, userAnswer) {
   if (!card) return;
   const cardId = card.id;
   const typed = (userAnswer || '').trim();
-  const deckTitle = (state.activeDeck && state.activeDeck.title) || '';
+  const deckTitle = (state.activeDeck && (state.activeDeck.name || state.activeDeck.title)) || '';
   const targetLang = (state.activeDeck && state.activeDeck.targetLang) || 'it';
 
   let diffDesc = '';
@@ -1511,6 +1517,7 @@ function initSessionMistakesUI() {
 
 // Routing & View Switcher
 function navigateTo(hash) {
+  clearAutoEasyTimeout();
   window.location.hash = hash;
 }
 
@@ -1599,26 +1606,26 @@ async function fetchDecks() {
           </div>
         </div>
         <div class="deck-actions">
-          <button class="btn btn-indigo btn-sm deck-btn-practice" onclick="navigateTo('#deck/${deck.id}')">
+          <button class="btn btn-indigo btn-sm deck-btn-practice" data-action="practice" data-deck-id="${escapeHtml(deck.id)}">
             Étudier
           </button>
-          <button class="deck-btn-delete" title="Enrichir le deck" onclick="event.stopPropagation(); openEnrichModal('${deck.id}', '${escapeHtml(deck.name)}')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px;">
+          <button class="deck-btn-delete" title="Enrichir le deck" data-action="enrich" data-deck-id="${escapeHtml(deck.id)}" data-deck-name="${escapeHtml(deck.name)}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; pointer-events: none;">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 21l-.813-5.096L3.1 15.09l5.087-.805L9 9.186l.813 5.098 5.087.805-5.087.815zm10.742-8.528L19.5 12l-1.055-4.624L13.82 6.32l4.625-1.056L19.5 1l1.055 4.264 4.625 1.056-4.625 1.056z" />
             </svg>
           </button>
-          <button class="deck-btn-delete" title="Exporter le deck" onclick="event.stopPropagation(); exportDeck('${deck.id}', '${escapeHtml(deck.name)}')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px;">
+          <button class="deck-btn-delete" title="Exporter le deck" data-action="export" data-deck-id="${escapeHtml(deck.id)}" data-deck-name="${escapeHtml(deck.name)}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; pointer-events: none;">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
             </svg>
           </button>
-          <button class="deck-btn-delete" title="Renommer le deck" onclick="event.stopPropagation(); renameDeck('${deck.id}', '${escapeHtml(deck.name)}')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px;">
+          <button class="deck-btn-delete" title="Renommer le deck" data-action="rename" data-deck-id="${escapeHtml(deck.id)}" data-deck-name="${escapeHtml(deck.name)}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; pointer-events: none;">
               <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125" />
             </svg>
           </button>
-          <button class="deck-btn-delete" title="Supprimer le deck" onclick="event.stopPropagation(); deleteDeck('${deck.id}')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px;">
+          <button class="deck-btn-delete" title="Supprimer le deck" data-action="delete" data-deck-id="${escapeHtml(deck.id)}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; pointer-events: none;">
               <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
             </svg>
           </button>
@@ -2094,6 +2101,7 @@ function updateStatistics(filteredCards) {
 
 // UI Controls Reset
 function resetTrainerUI() {
+  clearAutoEasyTimeout();
   document.getElementById('feedback-section').classList.add('hide');
   document.getElementById('submit-answer-btn').classList.remove('hide');
   document.getElementById('skip-card-btn').classList.remove('hide');
@@ -2145,8 +2153,6 @@ function verifyAnswer() {
   state.sessionStats.seen++;
   if (isAccepted) {
     state.sessionStats.correct++;
-  } else {
-    recordSessionMistake(state.currentCard, typed);
   }
   
   // Update intervals on rating buttons
@@ -2199,10 +2205,7 @@ function formatInterval(intervalDays, isAgain = false) {
 // Submit Flashcard Rating
 function submitCardRating(rating) {
   if (!state.currentCard) return;
-  if (autoEasyTimeout) {
-    clearTimeout(autoEasyTimeout);
-    autoEasyTimeout = null;
-  }
+  clearAutoEasyTimeout();
   
   const cardId = state.currentCard.id;
   const currentProg = state.progress[cardId] || defaultProgress();
@@ -2232,6 +2235,7 @@ function excludeCurrentCard() {
   const cardId = state.currentCard.id;
   
   if (confirm('Voulez-vous exclure cette phrase ? Elle ne vous sera plus proposée.')) {
+    clearAutoEasyTimeout();
     state.excluded.add(cardId);
     localStorage.setItem(`excluded_${state.activeDeck.id}`, JSON.stringify([...state.excluded]));
     
@@ -2244,6 +2248,7 @@ function excludeCurrentCard() {
 // Skip Card without rating it
 function skipCurrentCard() {
   if (!state.currentCard) return;
+  clearAutoEasyTimeout();
   state.skippedCards.add(state.currentCard.id);
   showNextCard();
 }
@@ -2423,7 +2428,7 @@ function updateSyncStatus(text, type) {
 // Reset Entire Deck Progress
 function resetDeckProgress() {
   if (!confirm('Voulez-vous réinitialiser toute votre progression sur ce deck ? Cette opération est irréversible.')) return;
-  
+  clearAutoEasyTimeout();
   state.progress = {};
   state.excluded.clear();
   state.sessionStats = { seen: 0, correct: 0 };
@@ -2457,6 +2462,25 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('back-to-dashboard-btn').addEventListener('click', () => {
     navigateTo('#dashboard');
   });
+
+  // Delegated click handler for deck card actions (XSS-safe)
+  const decksList = document.getElementById('decks-list');
+  if (decksList) {
+    decksList.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-action]');
+      if (!btn) return;
+      e.stopPropagation();
+      const action = btn.dataset.action;
+      const deckId = btn.dataset.deckId;
+      const deckName = btn.dataset.deckName || '';
+
+      if (action === 'practice') navigateTo('#deck/' + deckId);
+      else if (action === 'enrich') openEnrichModal(deckId, deckName);
+      else if (action === 'export') exportDeck(deckId, deckName);
+      else if (action === 'rename') renameDeck(deckId, deckName);
+      else if (action === 'delete') deleteDeck(deckId);
+    });
+  }
   
   // Modal Open/Close Controls
   const modal = document.getElementById('create-deck-modal');

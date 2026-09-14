@@ -2349,13 +2349,26 @@ async function loadAllProgress(code, silent = false) {
 
   try {
     const res = await fetch(`/api/sync?code=${encodeURIComponent(code)}`);
-    if (res.status === 404) return false; // new code — nothing to pull yet, not an error
+    if (res.status === 404) {
+      // New code — nothing to pull yet, but still seed it with local AI settings if any
+      if (ai.apiKey || ai.enabled) pushAiSettingsToSync();
+      return false;
+    }
     if (!res.ok) throw new Error('Erreur serveur');
 
     const syncData = await res.json();
     const decks = syncData.decks || {};
 
     mergeRemoteAiSettings(syncData.aiSettings);
+
+    // Backfill: if this device holds real AI settings the server doesn't
+    // have yet (e.g. configured before sync existed, or before this device
+    // ever connected), push them up now instead of waiting for the next edit.
+    const remoteAi = syncData.aiSettings;
+    const localHasRealSettings = !!(ai.apiKey || ai.enabled);
+    if (localHasRealSettings && (!remoteAi || (ai.lastModified || 0) >= (remoteAi.lastModified || 0))) {
+      pushAiSettingsToSync();
+    }
 
     for (const [deckId, deckData] of Object.entries(decks)) {
       const localProg = JSON.parse(localStorage.getItem(`progress_${deckId}`) || '{}');

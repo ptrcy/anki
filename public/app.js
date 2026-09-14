@@ -320,7 +320,8 @@ function defaultProgress() {
     dueAt: Date.now(),
     reps: 0,
     lapses: 0,
-    lastRating: null
+    lastRating: null,
+    lastModified: 0
   };
 }
 
@@ -358,6 +359,7 @@ function rateCard(cardProgress, rating) {
   }
   
   p.lastRating = rating;
+  p.lastModified = now;
   return p;
 }
 
@@ -496,9 +498,12 @@ function mergeRemoteAiSettings(remote) {
   const remoteTime = remote.lastModified || 0;
   if (remoteTime <= (ai.lastModified || 0)) return;
 
+  const remoteKey = typeof remote.apiKey === 'string' ? remote.apiKey : '';
+  const resolvedKey = remoteKey || ai.apiKey || '';
+
   Object.assign(ai, {
     enabled: !!remote.enabled,
-    apiKey: typeof remote.apiKey === 'string' ? remote.apiKey : '',
+    apiKey: resolvedKey,
     model: remote.model || AI_DEFAULT_MODEL,
     baseUrl: remote.baseUrl || AI_DEFAULT_BASE,
     lang: remote.lang || AI_DEFAULT_LANG,
@@ -2359,14 +2364,17 @@ async function loadAllProgress(code, silent = false) {
     const syncData = await res.json();
     const decks = syncData.decks || {};
 
-    mergeRemoteAiSettings(syncData.aiSettings);
-
-    // Backfill: if this device holds real AI settings the server doesn't
-    // have yet (e.g. configured before sync existed, or before this device
-    // ever connected), push them up now instead of waiting for the next edit.
     const remoteAi = syncData.aiSettings;
+    const localTimeBeforeMerge = ai.lastModified || 0;
     const localHasRealSettings = !!(ai.apiKey || ai.enabled);
-    if (localHasRealSettings && (!remoteAi || (ai.lastModified || 0) >= (remoteAi.lastModified || 0))) {
+    const remoteHasSettings = !!(remoteAi && (remoteAi.apiKey || remoteAi.enabled));
+    // Backfill: if this device holds real AI settings the server doesn't
+    // have yet (or local holds strictly newer edits), push them up now.
+    const shouldBackfill = localHasRealSettings && (!remoteHasSettings || localTimeBeforeMerge > (remoteAi.lastModified || 0));
+
+    mergeRemoteAiSettings(remoteAi);
+
+    if (shouldBackfill) {
       pushAiSettingsToSync();
     }
 
@@ -2618,43 +2626,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateSyncStatus('Synchronisation...', 'loading');
 
-    // Push every deck that has local progress to the server first
-    const pushPromises = [];
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (key && key.startsWith('progress_')) {
-        const deckId = key.slice('progress_'.length);
-        const progress = JSON.parse(localStorage.getItem(key) || '{}');
-        const excluded = JSON.parse(localStorage.getItem(`excluded_${deckId}`) || '[]');
+    try {
+      // Push every deck that has local progress to the server first
+      const pushPromises = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && key.startsWith('progress_')) {
+          const deckId = key.slice('progress_'.length);
+          const progress = JSON.parse(localStorage.getItem(key) || '{}');
+          const excluded = JSON.parse(localStorage.getItem(`excluded_${deckId}`) || '[]');
+          pushPromises.push(
+            fetch(`/api/sync?code=${encodeURIComponent(code)}`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ deckId, progress, excluded })
+            }).then(res => { if (!res.ok) throw new Error('Erreur de synchronisation'); })
+          );
+        }
+      }
+      // Push current AI coach settings if configured, so a fresh connection carries them over
+      if (ai.apiKey || ai.enabled) {
         pushPromises.push(
           fetch(`/api/sync?code=${encodeURIComponent(code)}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ deckId, progress, excluded })
-          })
+            body: JSON.stringify({ aiSettings: ai })
+          }).then(res => { if (!res.ok) throw new Error('Erreur de synchronisation'); })
         );
       }
-    }
-    // Push current AI coach settings too, so a fresh connection carries them over
-    pushPromises.push(
-      fetch(`/api/sync?code=${encodeURIComponent(code)}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ aiSettings: ai })
-      })
-    );
-    await Promise.all(pushPromises);
+      await Promise.all(pushPromises);
 
-    // Pull the merged server state (404 = new code, that's fine)
-    localStorage.setItem('anki-sync-code', code);
-    const ok = await loadAllProgress(code, false);
-    if (!ok && pushPromises.length > 0) {
-      // Push succeeded but pull failed — real error, don't connect
-      localStorage.removeItem('anki-sync-code');
-    } else {
-      applySyncCodeUI(code);
-      if (!ok) updateSyncStatus('Connecté ✓ (nouveau code)', 'success');
-      fetchDecks();
+      // Pull the merged server state (404 = new code, that's fine)
+      localStorage.setItem('anki-sync-code', code);
+      const ok = await loadAllProgress(code, false);
+      if (!ok && pushPromises.length > 0) {
+        // Push succeeded but pull failed — real error, don't connect
+        localStorage.removeItem('anki-sync-code');
+        updateSyncStatus('Échec du chargement', 'error');
+      } else {
+        applySyncCodeUI(code);
+        if (!ok) updateSyncStatus('Connecté ✓ (nouveau code)', 'success');
+        fetchDecks();
+      }
+    } catch (err) {
+      console.error('Connection sync failed:', err);
+      updateSyncStatus('Erreur de connexion', 'error');
     }
   });
 

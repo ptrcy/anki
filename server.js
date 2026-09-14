@@ -573,9 +573,13 @@ app.post('/api/sync', async (req, res) => {
         }
       }
 
+      const incomingExcluded = Array.isArray(excluded) ? excluded.filter(s => typeof s === 'string') : [];
+      const storedExcluded = Array.isArray(stored.excluded) ? stored.excluded.filter(s => typeof s === 'string') : [];
+      const mergedExcluded = Array.from(new Set([...storedExcluded, ...incomingExcluded]));
+
       syncData.decks[deckId] = {
         progress: merged,
-        excluded: Array.isArray(excluded) ? excluded.filter(s => typeof s === 'string') : (stored.excluded || [])
+        excluded: mergedExcluded
       };
     }
 
@@ -592,13 +596,14 @@ app.post('/api/sync', async (req, res) => {
         // everyone just by editing an unrelated field (e.g. the enabled toggle),
         // since that stamps a fresh "latest" write with its own empty key.
         const resolvedKey = incomingKey || storedAi.apiKey || '';
+        const resolvedTime = incomingTime || storedTime || (incomingKey || aiSettings.enabled ? Date.now() : 0);
         syncData.aiSettings = {
           enabled: !!aiSettings.enabled,
           apiKey: resolvedKey,
           model: typeof aiSettings.model === 'string' ? aiSettings.model : (storedAi.model || ''),
           baseUrl: typeof aiSettings.baseUrl === 'string' ? aiSettings.baseUrl : (storedAi.baseUrl || ''),
           lang: typeof aiSettings.lang === 'string' ? aiSettings.lang : (storedAi.lang || ''),
-          lastModified: incomingTime || Date.now()
+          lastModified: resolvedTime
         };
       }
     }

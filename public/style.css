@@ -8,16 +8,19 @@
   --bg-card-hover: #fafafa;
   --border-color: #e2e8f0;
   --border-light: #f1f5f9;
+  --border: var(--border-color);
   
   --text-main: #0f172a;
   --text-muted: #64748b;
   --text-light: #94a3b8;
+  --text-secondary: var(--text-muted);
   
   /* Colors */
   --primary: #4f46e5;
   --primary-hover: #4338ca;
   --primary-light: #e0e7ff;
   --primary-dark: #3730a3;
+  --text-indigo: var(--primary-dark);
   
   --success: #10b981;
   --success-light: #ecfdf5;
@@ -336,7 +339,7 @@ body {
   gap: 10px;
   padding: 10px 16px;
   background: var(--bg-card);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   margin-bottom: 24px;
   color: var(--text-light);
@@ -352,7 +355,7 @@ body {
 
 .sync-bar-input:disabled {
   background: var(--bg-subtle, #f8f9fa);
-  color: var(--text-secondary);
+  color: var(--text-secondary, var(--text-light));
   cursor: default;
 }
 
@@ -372,7 +375,7 @@ body {
 
 .deck-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
   gap: 24px;
 }
 
@@ -550,6 +553,14 @@ body {
 
 .select-wrapper select:focus {
   border-color: var(--primary);
+}
+
+.select-wrapper select:focus-visible,
+.btn:focus-visible,
+.close-btn:focus-visible,
+.rating-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
 }
 
 .select-wrapper::after {

@@ -6,6 +6,7 @@ data/sync/**/*.json
 data/sync/*.json
 data/decks/**/*.json
 data/decks/*.json
+data/backups/
 public/audio/**/*.mp3
 public/audio/*.mp3
 **/*key*.json
@@ -18,3 +19,4 @@ coverage/
 .idea/
 Thumbs.db
 .claude/
+ocrrev.txt

@@ -2188,18 +2188,25 @@ function updateRatingButtonsIntervals() {
   const goodP = rateCard(p, 'good');
   const easyP = rateCard(p, 'easy');
   
-  document.getElementById('interval-again').innerText = formatInterval(againP.interval, true);
-  document.getElementById('interval-hard').innerText = formatInterval(hardP.interval);
-  document.getElementById('interval-good').innerText = formatInterval(goodP.interval);
-  document.getElementById('interval-easy').innerText = formatInterval(easyP.interval);
+  document.getElementById('interval-again').innerText = formatInterval(againP, true);
+  document.getElementById('interval-hard').innerText = formatInterval(hardP);
+  document.getElementById('interval-good').innerText = formatInterval(goodP);
+  document.getElementById('interval-easy').innerText = formatInterval(easyP);
 }
 
-function formatInterval(intervalDays, isAgain = false) {
+function formatInterval(p, isAgain = false) {
   if (isAgain) return '10m';
-  if (intervalDays === 0) return '10m';
-  if (intervalDays < 1) return '10m';
-  if (intervalDays === 1) return '1j';
-  return `${intervalDays}j`;
+  if (typeof p === 'number') {
+    if (p === 0 || p < 1) return '10m';
+    if (p === 1) return '1j';
+    return `${p}j`;
+  }
+  if (!p) return '10m';
+  if (p.lastRating === 'again') return '10m';
+  if (p.lastRating === 'hard' && p.interval === 0) return '20m';
+  if (p.interval === 0 || p.interval < 1) return '10m';
+  if (p.interval === 1) return '1j';
+  return `${p.interval}j`;
 }
 
 // Submit Flashcard Rating
@@ -2362,7 +2369,7 @@ async function loadAllProgress(code, silent = false) {
     if (res.status === 404) {
       // New code — nothing to pull yet, but still seed it with local AI settings if any
       if (ai.apiKey || ai.enabled) pushAiSettingsToSync();
-      return false;
+      return 'not_found';
     }
     if (!res.ok) throw new Error('Erreur serveur');
 
@@ -2412,10 +2419,10 @@ async function loadAllProgress(code, silent = false) {
 
     const savedDateStr = syncData._savedAt ? new Date(syncData._savedAt).toLocaleDateString() : '';
     if (!silent) updateSyncStatus(`Connecté ✓ ${savedDateStr}`, 'success');
-    return true;
+    return 'ok';
   } catch (err) {
     if (!silent) updateSyncStatus(err.message, 'error');
-    return false;
+    return 'error';
   }
 }
 
@@ -2680,16 +2687,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       await Promise.all(pushPromises);
 
-      // Pull the merged server state (404 = new code, that's fine)
-      localStorage.setItem('anki-sync-code', code);
-      const ok = await loadAllProgress(code, false);
-      if (!ok && pushPromises.length > 0) {
-        // Push succeeded but pull failed — real error, don't connect
+      // Pull the merged server state (not_found = new code, error = real network/server failure)
+      const loadResult = await loadAllProgress(code, false);
+      if (loadResult === 'error') {
+        // Real error — do not store code and do not connect
         localStorage.removeItem('anki-sync-code');
         updateSyncStatus('Échec du chargement', 'error');
       } else {
+        localStorage.setItem('anki-sync-code', code);
         applySyncCodeUI(code);
-        if (!ok) updateSyncStatus('Connecté ✓ (nouveau code)', 'success');
+        if (loadResult === 'not_found') {
+          updateSyncStatus('Connecté ✓ (nouveau code)', 'success');
+        }
         fetchDecks();
       }
     } catch (err) {
@@ -2896,6 +2905,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+
+  initEnrichModalListeners();
 });
 
 // HTML escaping helper
@@ -2942,69 +2953,75 @@ function closeEnrichModal() {
   document.getElementById('enrich-deck-modal').classList.add('hide');
 }
 
-// Bind modal close buttons
-document.getElementById('close-enrich-modal-btn').addEventListener('click', closeEnrichModal);
-document.getElementById('cancel-enrich-btn').addEventListener('click', closeEnrichModal);
+function initEnrichModalListeners() {
+  const closeBtn = document.getElementById('close-enrich-modal-btn');
+  const cancelBtn = document.getElementById('cancel-enrich-btn');
+  const form = document.getElementById('enrich-deck-form');
 
-// Handle Form Submission
-document.getElementById('enrich-deck-form').addEventListener('submit', async (e) => {
-  e.preventDefault();
-  
-  const deckId = document.getElementById('enrich-deck-id').value;
-  const translationLang = document.getElementById('enrich-lang-select').value;
-  const includeGrammar = document.getElementById('enrich-grammar-checkbox').checked;
-  const includeCloze = document.getElementById('enrich-cloze-checkbox').checked;
-  const apiKey = document.getElementById('enrich-api-key-input').value.trim();
+  if (closeBtn) closeBtn.addEventListener('click', closeEnrichModal);
+  if (cancelBtn) cancelBtn.addEventListener('click', closeEnrichModal);
 
-  // Save API key if provided
-  if (apiKey) {
-    localStorage.setItem('gemini-api-key', apiKey);
-  } else {
-    localStorage.removeItem('gemini-api-key');
-  }
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const deckId = document.getElementById('enrich-deck-id').value;
+      const translationLang = document.getElementById('enrich-lang-select').value;
+      const includeGrammar = document.getElementById('enrich-grammar-checkbox').checked;
+      const includeCloze = document.getElementById('enrich-cloze-checkbox').checked;
+      const apiKey = document.getElementById('enrich-api-key-input').value.trim();
 
-  // Show progress spinner, hide buttons/errors
-  const progressContainer = document.getElementById('enrich-progress-container');
-  const errorEl = document.getElementById('enrich-error-message');
-  const modalActions = document.getElementById('enrich-modal-actions');
+      // Save API key if provided
+      if (apiKey) {
+        localStorage.setItem('gemini-api-key', apiKey);
+      } else {
+        localStorage.removeItem('gemini-api-key');
+      }
 
-  progressContainer.classList.remove('hide');
-  errorEl.classList.add('hide');
-  modalActions.classList.add('hide');
+      // Show progress spinner, hide buttons/errors
+      const progressContainer = document.getElementById('enrich-progress-container');
+      const errorEl = document.getElementById('enrich-error-message');
+      const modalActions = document.getElementById('enrich-modal-actions');
 
-  try {
-    const res = await fetch(`/api/decks/${deckId}/enrich`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        translationLang,
-        includeGrammar,
-        includeCloze,
-        apiKey
-      })
+      progressContainer.classList.remove('hide');
+      errorEl.classList.add('hide');
+      modalActions.classList.add('hide');
+
+      try {
+        const res = await fetch(`/api/decks/${deckId}/enrich`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            translationLang,
+            includeGrammar,
+            includeCloze,
+            apiKey
+          })
+        });
+
+        const result = await res.json();
+        if (!res.ok) throw new Error(result.error || "Une erreur est survenue lors de l'enrichissement");
+
+        // Success! Update local progress mapping
+        if (result.idChanges) {
+          updateLocalProgressKeys(deckId, result.idChanges);
+        }
+
+        closeEnrichModal();
+        alert('Deck enrichi avec succès ! Le serveur a mis à jour les cartes et synchronisé votre progression.');
+        fetchDecks(); // reload dashboard deck counts and list
+
+      } catch (err) {
+        errorEl.innerText = err.message;
+        errorEl.classList.remove('hide');
+        modalActions.classList.remove('hide');
+        progressContainer.classList.add('hide');
+      }
     });
-
-    const result = await res.json();
-    if (!res.ok) throw new Error(result.error || "Une erreur est survenue lors de l'enrichissement");
-
-    // Success! Update local progress mapping
-    if (result.idChanges) {
-      updateLocalProgressKeys(deckId, result.idChanges);
-    }
-
-    closeEnrichModal();
-    alert('Deck enrichi avec succès ! Le serveur a mis à jour les cartes et synchronisé votre progression.');
-    fetchDecks(); // reload dashboard deck counts and list
-
-  } catch (err) {
-    errorEl.innerText = err.message;
-    errorEl.classList.remove('hide');
-    modalActions.classList.remove('hide');
-    progressContainer.classList.add('hide');
   }
-});
+}
 
 // Helper to rename localStorage progress keys based on server-side ID changes
 function updateLocalProgressKeys(deckId, idChanges) {

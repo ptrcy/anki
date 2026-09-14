@@ -26,7 +26,7 @@ async function synthesize(card, lang, attempt = 0) {
   if (!safeCardId) return 'error';
 
   const outPath = path.join(AUDIO_DIR, `${safeCardId}.mp3`);
-  if (fs.existsSync(outPath)) return 'skipped';
+  if (fs.existsSync(outPath) && fs.statSync(outPath).size > 0) return 'skipped';
 
   try {
     const success = await synthesizeText(card.target, lang, outPath);

@@ -32,16 +32,19 @@ const AUDIO_DIR = path.join(__dirname, 'public', 'audio');
 // Middleware
 app.use(express.json({ limit: '10mb' }));
 
+// In-flight deduplication for on-demand audio generation
+const pendingAudioGenerations = new Map();
+
 // On-demand Audio Middleware
 app.get('/audio/:filename', async (req, res, next) => {
   const { filename } = req.params;
   if (!filename || typeof filename !== 'string') return next();
 
-  // Security (Finding #3): Strict filename validation upfront to prevent path traversal
+  // Strict filename validation upfront to prevent path traversal
   const match = filename.match(/^(card_[a-z0-9]+)_([a-z0-9]+)_([a-z]{2})\.mp3$/i);
   if (!match) {
     if (!/^[a-zA-Z0-9_-]+\.mp3$/.test(filename)) {
-      return res.status(400).send('Invalid audio filename format');
+      return res.status(400).json({ error: 'Invalid audio filename format' });
     }
   }
 
@@ -54,41 +57,56 @@ app.get('/audio/:filename', async (req, res, next) => {
   }
 
   if (!match) {
-    return res.status(404).send('Audio file not found');
+    return res.status(404).json({ error: 'Audio file not found' });
   }
 
-  // If not, try to find the card in the decks to get the text
-  console.log(`Generating on-demand audio for: ${safeFilename}`);
+  // Deduplicate concurrent requests for the same missing audio file
+  let genPromise = pendingAudioGenerations.get(safeFilename);
+  if (!genPromise) {
+    genPromise = (async () => {
+      console.log(`Generating on-demand audio for: ${safeFilename}`);
+      const [, cardId, targetHash, targetLang] = match;
+
+      const deckFiles = await fs.readdir(DECKS_DIR);
+      let cardText = null;
+
+      // Find the card whose fr-hash matches cardId, target-hash matches targetHash, and deck language matches targetLang.
+      for (const file of deckFiles) {
+        if (!file.endsWith('.json')) continue;
+        const deck = JSON.parse(await fs.readFile(path.join(DECKS_DIR, file), 'utf8'));
+        if (!deck || !deck.targetLang || deck.targetLang.toLowerCase() !== targetLang.toLowerCase()) continue;
+        if (!Array.isArray(deck.cards)) continue;
+        const card = deck.cards.find(c => c && c.id === cardId && hashText(c.target) === targetHash);
+        if (card) {
+          cardText = card.target;
+          break;
+        }
+      }
+
+      if (cardText) {
+        return await synthesizeText(cardText, targetLang, filePath);
+      }
+      return false;
+    })();
+
+    pendingAudioGenerations.set(safeFilename, genPromise);
+    genPromise.finally(() => {
+      pendingAudioGenerations.delete(safeFilename);
+    });
+  }
+
   try {
-    const [, cardId, targetHash, targetLang] = match;
-
-    const deckFiles = await fs.readdir(DECKS_DIR);
-    let cardText = null;
-
-    // Find the card whose fr-hash matches cardId, target-hash matches targetHash, and deck language matches targetLang.
-    // This uniquely identifies the exact target text and its language.
-    for (const file of deckFiles) {
-      if (!file.endsWith('.json')) continue;
-      const deck = JSON.parse(await fs.readFile(path.join(DECKS_DIR, file), 'utf8'));
-      if (deck.targetLang.toLowerCase() !== targetLang.toLowerCase()) continue;
-      const card = deck.cards.find(c => c.id === cardId && hashText(c.target) === targetHash);
-      if (card) {
-        cardText = card.target;
-        break;
-      }
+    const success = await genPromise;
+    if (success && existsSync(filePath)) {
+      return res.sendFile(filePath);
     }
-
-    if (cardText) {
-      const success = await synthesizeText(cardText, targetLang, filePath);
-      if (success) {
-        return res.sendFile(filePath);
-      }
-    }
-    
-    res.status(404).send('Audio not found and could not be generated');
+    return res.status(404).json({ error: 'Audio not found and could not be generated' });
   } catch (err) {
     console.error('On-demand audio error:', err);
-    next();
+    if (!res.headersSent) {
+      return res.status(500).json({ error: 'Audio generation failed' });
+    }
+    next(err);
   }
 });
 
@@ -277,11 +295,15 @@ async function promiseAllLimit(limit, items, iteratorFn) {
   for (const item of items) {
     const p = Promise.resolve().then(() => iteratorFn(item));
     results.push(p);
+    p.catch(() => {}); // prevent unhandled rejection during queue processing
     if (limit <= items.length) {
-      const e = p.then(() => executing.splice(executing.indexOf(e), 1));
+      const e = p.then(
+        () => executing.splice(executing.indexOf(e), 1),
+        () => executing.splice(executing.indexOf(e), 1)
+      );
       executing.push(e);
       if (executing.length >= limit) {
-        await Promise.race(executing);
+        await Promise.race(executing).catch(() => {});
       }
     }
   }
@@ -296,18 +318,25 @@ app.post('/api/decks/:id/enrich', async (req, res) => {
   const { translationLang, includeGrammar, includeCloze, apiKey } = req.body;
 
   // Initialize unified SDK client.
-  // If user provided a key, use Gemini Developer API (AI Studio).
-  // Otherwise, use Vertex AI with VM's default credentials (requires no key).
+  // Requires user-provided key, server GEMINI_API_KEY, or authenticated VERTEX_PROJECT_ID.
   let aiClient;
   try {
-    if (apiKey) {
-      aiClient = new GoogleGenAI({ apiKey: apiKey });
-    } else {
+    if (apiKey && typeof apiKey === 'string' && apiKey.trim() !== '') {
+      aiClient = new GoogleGenAI({ apiKey: apiKey.trim() });
+    } else if (process.env.GEMINI_API_KEY) {
+      aiClient = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+    } else if (process.env.VERTEX_PROJECT_ID) {
+      const adminToken = process.env.ADMIN_TOKEN;
+      if (adminToken && req.get('x-admin-token') !== adminToken) {
+        return res.status(401).json({ error: 'Unauthorized: Admin token required for server-backed AI generation' });
+      }
       aiClient = new GoogleGenAI({
         vertexai: true,
-        project: 'gen-lang-client-0670059811',
-        location: 'us-central1'
+        project: process.env.VERTEX_PROJECT_ID,
+        location: process.env.VERTEX_LOCATION || 'us-central1'
       });
+    } else {
+      return res.status(400).json({ error: 'No Gemini API key provided. Please configure your API key in settings.' });
     }
   } catch (err) {
     return res.status(400).json({ error: `Failed to initialize Gemini Client: ${err.message}` });
@@ -713,9 +742,24 @@ app.post('/api/sync', async (req, res) => {
   }
 });
 
-// Catch-all for routing (SPA fallback)
+// Catch-all for routing (SPA fallback) - only for non-API, non-audio routes
 app.get('*', (req, res) => {
+  if (req.path.startsWith('/api/') || req.path.startsWith('/audio/')) {
+    return res.status(404).json({ error: 'Endpoint not found' });
+  }
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Centralized error handling middleware
+app.use((err, req, res, next) => {
+  console.error('Unhandled server error:', err);
+  if (!res.headersSent) {
+    if (req.path.startsWith('/api/') || req.path.startsWith('/audio/')) {
+      return res.status(500).json({ error: err.message || 'Internal server error' });
+    }
+    return res.status(500).send('Internal server error');
+  }
+  next(err);
 });
 
 app.listen(PORT, () => {

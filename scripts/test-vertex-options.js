@@ -26,6 +26,11 @@ function makeRequest(url, token) {
       });
     });
 
+    req.setTimeout(15000, () => {
+      req.destroy(new Error('Timed out'));
+      resolve({ status: 'TIMEOUT', body: 'Request timed out' });
+    });
+
     req.on('error', (e) => {
       resolve({ status: 'ERROR', body: e.message });
     });
@@ -36,9 +41,17 @@ function makeRequest(url, token) {
 }
 
 async function main() {
-  const token = execSync('gcloud auth print-access-token', { encoding: 'utf8' }).trim();
-  const projectId = 'gen-lang-client-0670059811';
-  const location = 'us-central1';
+  let token;
+  try {
+    token = execSync('gcloud auth print-access-token', { encoding: 'utf8' }).trim();
+  } catch (err) {
+    console.error('Failed to obtain gcloud access token:', err.message);
+    process.exitCode = 1;
+    return;
+  }
+
+  const projectId = process.env.VERTEX_PROJECT_ID || 'gen-lang-client-0670059811';
+  const location = process.env.VERTEX_LOCATION || 'us-central1';
 
   const configs = [
     { version: 'v1', model: 'gemini-1.5-flash-001' },
@@ -53,19 +66,27 @@ async function main() {
     { version: 'v1beta1', model: 'gemini-2.0-flash-exp' }
   ];
 
+  let successCount = 0;
   for (const cfg of configs) {
     const url = `https://${location}-aiplatform.googleapis.com/${cfg.version}/projects/${projectId}/locations/${location}/publishers/google/models/${cfg.model}:generateContent`;
     console.log(`Testing ${cfg.version} with model: ${cfg.model}...`);
     const res = await makeRequest(url, token);
     console.log(`Status: ${res.status}`);
     if (res.status === 200) {
-      console.log('SUCCESS!');
-      console.log(res.body);
-      break;
+      console.log('  SUCCESS');
+      successCount++;
     } else {
-      console.log(res.body.slice(0, 300));
+      console.log(`  FAILED: ${String(res.body).slice(0, 150)}`);
     }
+  }
+
+  console.log(`\nVertex AI options test completed: ${successCount}/${configs.length} passed.`);
+  if (successCount === 0) {
+    process.exitCode = 1;
   }
 }
 
-main().catch(console.error);
+main().catch(err => {
+  console.error('Fatal error:', err.message);
+  process.exitCode = 1;
+});

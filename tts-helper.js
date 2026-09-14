@@ -1,6 +1,5 @@
 const textToSpeech = require('@google-cloud/text-to-speech');
 const fs = require('fs');
-const path = require('path');
 
 const client = new textToSpeech.TextToSpeechClient();
 
@@ -16,7 +15,17 @@ const VOICE_MAP = {
 };
 
 async function synthesizeText(text, langCode, outPath) {
-  const voice = VOICE_MAP[langCode] || VOICE_MAP.it;
+  if (typeof text !== 'string' || text.trim() === '') {
+    throw new Error('text must be a non-empty string');
+  }
+  if (typeof outPath !== 'string' || outPath === '') {
+    throw new Error('outPath must be provided');
+  }
+
+  const voice = VOICE_MAP[langCode];
+  if (!voice) {
+    throw new Error(`Unsupported langCode: ${langCode}`);
+  }
   
   try {
     const [response] = await client.synthesizeSpeech({
@@ -24,7 +33,10 @@ async function synthesizeText(text, langCode, outPath) {
       voice,
       audioConfig: { audioEncoding: 'MP3' },
     });
-    fs.writeFileSync(outPath, response.audioContent, 'binary');
+    if (!response || !response.audioContent) {
+      throw new Error('Empty audio content received from TTS service');
+    }
+    await fs.promises.writeFile(outPath, response.audioContent);
     return true;
   } catch (err) {
     console.error(`TTS Error for "${text}":`, err.message);

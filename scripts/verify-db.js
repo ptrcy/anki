@@ -20,6 +20,9 @@ const SYNC_DIR = path.join(DATA_DIR, 'sync');
 
 console.log('=== Starting DB Validation ===\n');
 
+let totalErrors = 0;
+let totalWarnings = 0;
+
 // 1. Validate Decks
 const decks = {};
 if (fs.existsSync(DECKS_DIR)) {
@@ -48,6 +51,8 @@ if (fs.existsSync(DECKS_DIR)) {
       
       if (!Array.isArray(data.cards)) {
         console.error(`[ERROR] Deck [${deckId}]: cards is not an array`);
+        deckErrors++;
+        totalErrors++;
         return;
       }
 
@@ -55,7 +60,7 @@ if (fs.existsSync(DECKS_DIR)) {
       const cardFrs = new Set();
 
       data.cards.forEach((card, idx) => {
-        if (!card.fr || !card.target) {
+        if (!card || typeof card !== 'object' || !card.fr || !card.target) {
           console.error(`[ERROR] Deck [${deckId}] Card #${idx}: missing fr or target:`, card);
           deckErrors++;
           return;
@@ -81,16 +86,20 @@ if (fs.existsSync(DECKS_DIR)) {
         cardFrs.add(frNormalized);
       });
 
+      totalErrors += deckErrors;
+      totalWarnings += deckWarnings;
+
       if (deckErrors > 0 || deckWarnings > 0) {
         console.log(`Deck [${deckId}]: Completed with ${deckErrors} errors, ${deckWarnings} warnings.\n`);
       }
 
     } catch (err) {
       console.error(`[FATAL] Deck [${deckId}]: Error reading/parsing deck: ${err.message}`);
+      totalErrors++;
     }
   });
 } else {
-  console.error('Decks directory not found!');
+  console.warn('Decks directory not found, skipping deck validation.');
 }
 
 // 2. Validate Sync Files
@@ -99,17 +108,18 @@ if (fs.existsSync(SYNC_DIR)) {
   console.log(`\nFound ${syncFiles.length} sync files.`);
 
   syncFiles.forEach(file => {
-    const filePath = path.join(SYNC_DIR, file);
-    const syncCode = decodeURIComponent(path.basename(file, '.json'));
     let syncErrors = 0;
     let syncWarnings = 0;
 
     try {
+      const syncCode = decodeURIComponent(path.basename(file, '.json'));
+      const filePath = path.join(SYNC_DIR, file);
       const content = fs.readFileSync(filePath, 'utf8');
       const data = JSON.parse(content);
 
-      if (!data.decks) {
+      if (!data || typeof data !== 'object' || !data.decks || typeof data.decks !== 'object') {
         console.warn(`[WARN] Sync [${syncCode}]: Legacy or invalid sync format (no decks object)`);
+        totalWarnings++;
         return;
       }
 
@@ -120,13 +130,13 @@ if (fs.existsSync(SYNC_DIR)) {
           syncWarnings++;
         }
 
-        const progress = deckSync.progress || {};
-        const excluded = deckSync.excluded || [];
+        const progress = (deckSync && typeof deckSync.progress === 'object') ? deckSync.progress : {};
+        const excluded = Array.isArray(deckSync && deckSync.excluded) ? deckSync.excluded : [];
 
         // Check each progress item
         Object.entries(progress).forEach(([cardId, cardProg]) => {
-          if (deck) {
-            const cardExists = deck.cards.some(c => c.id === cardId);
+          if (deck && Array.isArray(deck.cards)) {
+            const cardExists = deck.cards.some(c => c && c.id === cardId);
             if (!cardExists) {
               console.warn(`[WARN] Sync [${syncCode}] Deck [${deckId}]: Progress for cardId "${cardId}" references non-existent card`);
               syncWarnings++;
@@ -134,24 +144,29 @@ if (fs.existsSync(SYNC_DIR)) {
           }
 
           // Check progress values
-          if (typeof cardProg.ease !== 'number' || isNaN(cardProg.ease)) {
-            console.error(`[ERROR] Sync [${syncCode}] Deck [${deckId}]: Card "${cardId}" has invalid ease:`, cardProg.ease);
+          if (!cardProg || typeof cardProg !== 'object') {
+            console.error(`[ERROR] Sync [${syncCode}] Deck [${deckId}]: Card "${cardId}" has non-object progress:`, cardProg);
             syncErrors++;
-          }
-          if (typeof cardProg.interval !== 'number' || isNaN(cardProg.interval)) {
-            console.error(`[ERROR] Sync [${syncCode}] Deck [${deckId}]: Card "${cardId}" has invalid interval:`, cardProg.interval);
-            syncErrors++;
-          }
-          if (typeof cardProg.dueAt !== 'number' || isNaN(cardProg.dueAt)) {
-            console.error(`[ERROR] Sync [${syncCode}] Deck [${deckId}]: Card "${cardId}" has invalid dueAt:`, cardProg.dueAt);
-            syncErrors++;
+          } else {
+            if (typeof cardProg.ease !== 'number' || isNaN(cardProg.ease)) {
+              console.error(`[ERROR] Sync [${syncCode}] Deck [${deckId}]: Card "${cardId}" has invalid ease:`, cardProg.ease);
+              syncErrors++;
+            }
+            if (typeof cardProg.interval !== 'number' || isNaN(cardProg.interval)) {
+              console.error(`[ERROR] Sync [${syncCode}] Deck [${deckId}]: Card "${cardId}" has invalid interval:`, cardProg.interval);
+              syncErrors++;
+            }
+            if (typeof cardProg.dueAt !== 'number' || isNaN(cardProg.dueAt)) {
+              console.error(`[ERROR] Sync [${syncCode}] Deck [${deckId}]: Card "${cardId}" has invalid dueAt:`, cardProg.dueAt);
+              syncErrors++;
+            }
           }
         });
 
         // Check excluded items
         excluded.forEach(cardId => {
-          if (deck) {
-            const cardExists = deck.cards.some(c => c.id === cardId);
+          if (deck && Array.isArray(deck.cards)) {
+            const cardExists = deck.cards.some(c => c && c.id === cardId);
             if (!cardExists) {
               console.warn(`[WARN] Sync [${syncCode}] Deck [${deckId}]: Excluded cardId "${cardId}" does not exist in deck`);
               syncWarnings++;
@@ -160,16 +175,23 @@ if (fs.existsSync(SYNC_DIR)) {
         });
       });
 
+      totalErrors += syncErrors;
+      totalWarnings += syncWarnings;
+
       if (syncErrors > 0 || syncWarnings > 0) {
         console.log(`Sync [${syncCode}]: Completed with ${syncErrors} errors, ${syncWarnings} warnings.\n`);
       }
 
     } catch (err) {
-      console.error(`[FATAL] Sync [${syncCode}]: Error reading/parsing sync file: ${err.message}`);
+      console.error(`[FATAL] Sync file [${file}]: Error reading/parsing sync file: ${err.message}`);
+      totalErrors++;
     }
   });
 } else {
-  console.error('Sync directory not found!');
+  console.log('Sync directory not found, skipping sync validation.');
 }
 
-console.log('\n=== DB Validation Completed ===');
+console.log(`\n=== DB Validation Completed: ${totalErrors} errors, ${totalWarnings} warnings ===`);
+if (totalErrors > 0) {
+  process.exitCode = 1;
+}

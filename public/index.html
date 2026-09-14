@@ -320,7 +320,7 @@
 
             <!-- Answer Submission Area -->
             <div class="answer-section">
-              <textarea id="user-answer-input" class="input-textarea" placeholder="Tapez votre réponse ici..." rows="2" autofocus autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>
+              <textarea id="user-answer-input" class="input-textarea" placeholder="Tapez votre réponse ici..." rows="2" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>
               <div class="answer-shortcut-tip">Appuyez sur <kbd>Entrée</kbd> pour valider</div>
 
               <div class="action-buttons-row">
@@ -424,10 +424,10 @@
   </main>
 
   <!-- 3. CREATE DECK OVERLAY MODAL -->
-  <div id="create-deck-modal" class="modal-overlay hide">
+  <div id="create-deck-modal" class="modal-overlay hide" role="dialog" aria-modal="true" aria-labelledby="create-deck-modal-title">
     <div class="modal-card">
       <div class="modal-header">
-        <h3>Créer un Nouveau Deck</h3>
+        <h3 id="create-deck-modal-title">Créer un Nouveau Deck</h3>
         <button id="close-modal-btn" class="close-btn" title="Fermer">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="close-icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -468,7 +468,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
             </svg>
             <span class="file-label">Cliquez pour choisir un fichier CSV</span>
-            <input type="file" id="deck-file-input" accept=".csv" required class="hide">
+            <input type="file" id="deck-file-input" accept=".csv" class="hide">
             <span id="selected-file-name" class="file-selected-text"></span>
           </div>
           
@@ -498,10 +498,10 @@
   </div>
 
   <!-- 4. ENRICH DECK OVERLAY MODAL -->
-  <div id="enrich-deck-modal" class="modal-overlay hide">
+  <div id="enrich-deck-modal" class="modal-overlay hide" role="dialog" aria-modal="true" aria-labelledby="enrich-deck-modal-title">
     <div class="modal-card">
       <div class="modal-header">
-        <h3>Enrichir le Deck</h3>
+        <h3 id="enrich-deck-modal-title">Enrichir le Deck</h3>
         <button id="close-enrich-modal-btn" class="close-btn" title="Fermer">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="close-icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -546,7 +546,7 @@
         <!-- Gemini API Key -->
         <div class="form-group">
           <label for="enrich-api-key-input">Clé API Gemini :</label>
-          <input type="password" id="enrich-api-key-input" placeholder="Saisissez votre clé API Gemini (optionnel)" class="input-text">
+          <input type="password" id="enrich-api-key-input" placeholder="Saisissez votre clé API Gemini (optionnel)" autocomplete="off" spellcheck="false" class="input-text">
           <span class="help-text">Si vous n'en avez pas, demandez à l'administrateur ou utilisez votre propre clé.</span>
         </div>
 
@@ -572,10 +572,10 @@
   </div>
 
   <!-- 5. AI COACH SETTINGS OVERLAY MODAL -->
-  <div id="ai-settings-modal" class="modal-overlay hide">
+  <div id="ai-settings-modal" class="modal-overlay hide" role="dialog" aria-modal="true" aria-labelledby="ai-settings-modal-title">
     <div class="modal-card">
       <div class="modal-header">
-        <h3>Paramètres du Coach Mémoire IA</h3>
+        <h3 id="ai-settings-modal-title">Paramètres du Coach Mémoire IA</h3>
         <button id="close-ai-settings-modal-btn" class="close-btn" title="Fermer">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="close-icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -623,10 +623,10 @@
   </div>
 
   <!-- 6. SESSION MISTAKES MODAL (ChatGPT / Advanced Agent Export) -->
-  <div id="session-mistakes-modal" class="modal-overlay hide">
+  <div id="session-mistakes-modal" class="modal-overlay hide" role="dialog" aria-modal="true" aria-labelledby="mistakes-modal-title">
     <div class="modal-card" style="max-width: 680px;">
       <div class="modal-header">
-        <h3>Erreurs de la session (Prompt ChatGPT / Claude)</h3>
+        <h3 id="mistakes-modal-title">Erreurs de la session (Prompt ChatGPT / Claude)</h3>
         <button id="close-mistakes-modal-btn" class="close-btn" title="Fermer">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="close-icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -656,7 +656,7 @@
   </div>
 
   <!-- Special character long-press popup -->
-  <div id="special-char-popup" class="special-char-popup hide" role="listbox" aria-label="Caractères spéciaux"></div>
+  <div id="special-char-popup" class="special-char-popup hide" role="toolbar" aria-label="Caractères spéciaux"></div>
 
   <script src="/app.js"></script>
 </body>

@@ -32,10 +32,24 @@ async function main() {
   const jobs = [];
 
   for (const file of deckFiles) {
-    const deck = JSON.parse(fs.readFileSync(path.join(DECKS_DIR, file), 'utf8'));
+    let deck;
+    try {
+      deck = JSON.parse(fs.readFileSync(path.join(DECKS_DIR, file), 'utf8'));
+    } catch (err) {
+      console.warn(`Failed to parse deck file ${file}:`, err.message);
+      continue;
+    }
+    if (!deck || !Array.isArray(deck.cards)) {
+      console.warn(`Deck ${file} has no valid cards array, skipping.`);
+      continue;
+    }
     const lang = deck.targetLang || 'it';
 
     for (const card of deck.cards) {
+      if (!card || typeof card !== 'object' || !card.id || typeof card.target !== 'string' || card.target.trim() === '') {
+        console.warn(`Deck ${file} card #${card ? card.id : 'unknown'}: invalid id or target, skipping.`);
+        continue;
+      }
       const filename = `${card.id}_${hashText(card.target)}_${lang.toLowerCase()}.mp3`;
       if (seen.has(filename)) continue;
       seen.add(filename);
@@ -44,7 +58,14 @@ async function main() {
   }
 
   const total   = jobs.length;
-  const toGen   = jobs.filter(j => !fs.existsSync(path.join(AUDIO_DIR, j.filename)));
+  const toGen   = jobs.filter(j => {
+    const p = path.join(AUDIO_DIR, j.filename);
+    try {
+      return !fs.existsSync(p) || fs.statSync(p).size === 0;
+    } catch {
+      return true;
+    }
+  });
   const skipped = total - toGen.length;
 
   console.log(`Total cards : ${total}`);
@@ -60,13 +81,19 @@ async function main() {
     const batch = toGen.slice(i, i + CONCURRENCY);
     await Promise.all(batch.map(async ({ filename, text, lang, deck }) => {
       const outPath = path.join(AUDIO_DIR, filename);
-      const ok = await synthesizeText(text, lang, outPath);
-      done++;
-      if (ok) {
-        process.stdout.write(`\r[${done}/${toGen.length}] ✓ ${filename}   `);
-      } else {
+      try {
+        const ok = await synthesizeText(text, lang, outPath);
+        done++;
+        if (ok) {
+          process.stdout.write(`\r[${done}/${toGen.length}] ✓ ${filename}   `);
+        } else {
+          errors++;
+          console.error(`\n✗ failed: ${filename} (${deck})`);
+        }
+      } catch (err) {
+        done++;
         errors++;
-        console.error(`\n✗ failed: ${filename} (${deck})`);
+        console.error(`\n✗ error: ${filename} (${deck}): ${err.message}`);
       }
     }));
   }

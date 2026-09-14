@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Characters Typing Helper - Demo</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --border: #e2e8f0;
+      --radius: 10px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --text: #f8fafc;
+        --text-muted: #94a3b8;
+        --primary: #6366f1;
+        --primary-hover: #4f46e5;
+        --border: #334155;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 760px;
+    }
+
+    header {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .lang-selector {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .lang-btn {
+      padding: 8px 16px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.15s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 16px;
+      background: var(--bg);
+      color: var(--text);
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+      font-family: inherit;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .instructions {
+      background: rgba(99, 102, 241, 0.08);
+      border-left: 4px solid var(--primary);
+      padding: 14px 16px;
+      border-radius: 4px;
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    .instructions ul {
+      margin-left: 20px;
+      margin-top: 6px;
+    }
+
+    .instructions li {
+      margin-bottom: 4px;
+    }
+
+    .kbd {
+      display: inline-block;
+      padding: 2px 6px;
+      font-size: 12px;
+      font-family: monospace;
+      background: var(--border);
+      border-radius: 4px;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .code-box {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 6px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 14px;
+      overflow-x: auto;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Special Characters Typing Helper</h1>
+      <p class="subtitle">Hold down keys to type accents and special characters</p>
+    </header>
+
+    <div class="card">
+      <label>Choose Language Script to test:</label>
+      <div class="lang-selector" id="lang-buttons">
+        <button class="lang-btn active" data-lang="it">Italian (it)</button>
+        <button class="lang-btn" data-lang="de">German (de)</button>
+        <button class="lang-btn" data-lang="es">Spanish (es)</button>
+        <button class="lang-btn" data-lang="fr">French (fr)</button>
+        <button class="lang-btn" data-lang="pt">Portuguese (pt)</button>
+      </div>
+
+      <div class="form-group">
+        <label for="demo-input">Single-line Input:</label>
+        <input type="text" id="demo-input" placeholder="Type here and hold 'e', 'a', 'o', etc.">
+      </div>
+
+      <div class="form-group">
+        <label for="demo-textarea">Multi-line Textarea:</label>
+        <textarea id="demo-textarea" placeholder="Try holding vowels or letters in your chosen language..."></textarea>
+      </div>
+
+      <div class="instructions">
+        <strong>How to use:</strong>
+        <ul>
+          <li><strong>Hold a key</strong> (e.g. <span class="kbd">e</span>, <span class="kbd">a</span>, <span class="kbd">o</span>) for ~400ms.</li>
+          <li>If 1 variant exists (e.g. German <span class="kbd">s</span> → <strong>ß</strong>), it replaces directly.</li>
+          <li>If multiple variants exist, a floating popup appears with numbered options.</li>
+          <li>Press <span class="kbd">1</span>-<span class="kbd">9</span>, or use <span class="kbd">←</span> / <span class="kbd">→</span> + <span class="kbd">Enter</span> / <span class="kbd">Space</span>, or click with mouse.</li>
+          <li>Press <span class="kbd">Escape</span> or any other key to dismiss.</li>
+          <li>Hold <span class="kbd">Shift</span> while holding a letter to get uppercase accents (e.g. <strong>È</strong>, <strong>É</strong>).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>How to Include in Any HTML Page</h2>
+      <p style="color: var(--text-muted); margin-top: 6px;">Just drop a single script tag into your HTML page:</p>
+      
+      <div class="code-box" id="code-snippet">&lt;!-- For Italian --&gt;
+&lt;script src="special-chars-it.js"&gt;&lt;/script&gt;</div>
+    </div>
+  </div>
+
+  <!-- Dynamic script loader for demo switcher -->
+  <script>
+    let currentScript = null;
+    let currentLang = null;
+    let loadRequestSeq = 0;
+
+    function setActiveLanguageUI(code) {
+      document.querySelectorAll('.lang-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === code);
+      });
+      document.getElementById('code-snippet').textContent = `<!-- For ${code.toUpperCase()} -->\n<script src="special-chars-${code}.js"><\/script>`;
+    }
+
+    function loadLanguageScript(code) {
+      if (code === currentLang) return;
+
+      const prevLang = currentLang;
+      const seq = ++loadRequestSeq;
+
+      if (currentScript) {
+        if (typeof window.specialCharsCleanup === 'function') {
+          window.specialCharsCleanup();
+        }
+        currentScript.remove();
+        currentScript = null;
+        const oldStyle = document.getElementById('special-char-popup-styles');
+        if (oldStyle) oldStyle.remove();
+        const oldPopup = document.getElementById('special-char-popup');
+        if (oldPopup) oldPopup.remove();
+      }
+
+      const script = document.createElement('script');
+      script.src = `special-chars-${code}.js`;
+
+      script.onload = () => {
+        if (seq !== loadRequestSeq) {
+          script.remove();
+          return;
+        }
+        currentScript = script;
+        currentLang = code;
+        setActiveLanguageUI(code);
+      };
+
+      script.onerror = () => {
+        if (seq !== loadRequestSeq) return;
+        script.remove();
+        currentScript = null;
+        console.error(`Failed to load special characters helper for ${code}`);
+        if (prevLang && prevLang !== code) {
+          loadLanguageScript(prevLang);
+        }
+      };
+
+      document.body.appendChild(script);
+    }
+
+    document.getElementById('lang-buttons').addEventListener('click', (e) => {
+      const btn = e.target.closest('.lang-btn');
+      if (!btn || !btn.dataset.lang) return;
+      loadLanguageScript(btn.dataset.lang);
+    });
+
+    // Initial load (Italian)
+    loadLanguageScript('it');
+  </script>
+</body>
+</html>

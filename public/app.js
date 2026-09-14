@@ -472,29 +472,40 @@ let ai = (function() {
   if (!d.baseUrl) d.baseUrl = AI_DEFAULT_BASE;
   if (!d.model) d.model = AI_DEFAULT_MODEL;
   if (!d.lang) d.lang = AI_DEFAULT_LANG;
+  if ((d.apiKey || d.enabled) && !d.lastModified) {
+    d.lastModified = Date.now();
+  }
   return d;
 })();
 
-function saveAiSettings() {
+function saveAiSettings(immediate = false) {
   ai.lastModified = Date.now();
   try { localStorage.setItem(AI_SETTINGS_KEY, JSON.stringify(ai)); } catch(e) {}
-  pushAiSettingsToSync();
+  pushAiSettingsToSync(immediate);
 }
 
-// Pushes the AI coach config to the sync server (debounced, since settings
-// are saved on every keystroke) so it carries over to other devices.
+// Pushes the AI coach config to the sync server (debounced on typing,
+// immediate on explicit save/close) so it carries over to other devices.
 let aiSyncPushTimer = null;
-function pushAiSettingsToSync() {
+function pushAiSettingsToSync(immediate = false) {
   const code = localStorage.getItem('anki-sync-code');
   if (!code) return;
-  clearTimeout(aiSyncPushTimer);
-  aiSyncPushTimer = setTimeout(() => {
+  if (aiSyncPushTimer) {
+    clearTimeout(aiSyncPushTimer);
+    aiSyncPushTimer = null;
+  }
+  const doPush = () => {
     fetch(`/api/sync?code=${encodeURIComponent(code)}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ aiSettings: ai })
     }).catch(err => console.error('AI settings sync failed:', err));
-  }, 800);
+  };
+  if (immediate) {
+    doPush();
+  } else {
+    aiSyncPushTimer = setTimeout(doPush, 400);
+  }
 }
 
 // Merges a remote AI settings snapshot into the local one if it's newer
@@ -1045,7 +1056,7 @@ function syncAiToForms() {
   }
 }
 
-function syncAiFromDashboard() {
+function syncAiFromDashboard(e) {
   const ed = document.getElementById('ai-enabled-dashboard');
   const kd = document.getElementById('ai-key-dashboard');
   const md = document.getElementById('ai-model-dashboard');
@@ -1058,11 +1069,12 @@ function syncAiFromDashboard() {
   if (bd) ai.baseUrl = bd.value.trim().replace(/\/+$/, '') || AI_DEFAULT_BASE;
   if (ld) ai.lang = ld.value || AI_DEFAULT_LANG;
 
-  saveAiSettings();
+  const isImmediate = e && (e.type === 'change' || e.type === 'click');
+  saveAiSettings(isImmediate);
   syncAiToForms();
 }
 
-function syncAiFromModal() {
+function syncAiFromModal(immediate = false) {
   const em = document.getElementById('ai-enabled-modal');
   const km = document.getElementById('ai-key-modal');
   const mm = document.getElementById('ai-model-modal');
@@ -1075,7 +1087,7 @@ function syncAiFromModal() {
   if (bm) ai.baseUrl = bm.value.trim().replace(/\/+$/, '') || AI_DEFAULT_BASE;
   if (lm) ai.lang = lm.value || AI_DEFAULT_LANG;
 
-  saveAiSettings();
+  saveAiSettings(immediate);
   syncAiToForms();
 }
 
@@ -1151,7 +1163,7 @@ function initAiCoachUI() {
   if (es) {
     es.addEventListener('change', () => {
       ai.enabled = es.checked;
-      saveAiSettings();
+      saveAiSettings(true);
       syncAiToForms();
     });
   }
@@ -1193,16 +1205,23 @@ function initAiCoachUI() {
 
   if (closeModalBtn && modalEl) {
     closeModalBtn.addEventListener('click', () => {
+      syncAiFromModal(true);
       modalEl.classList.add('hide');
     });
   }
 
   if (saveModalBtn && modalEl) {
     saveModalBtn.addEventListener('click', () => {
-      syncAiFromModal();
+      syncAiFromModal(true);
       modalEl.classList.add('hide');
     });
   }
+
+  window.addEventListener('beforeunload', () => {
+    if (aiSyncPushTimer) {
+      pushAiSettingsToSync(true);
+    }
+  });
 
   const testBtnModal = document.getElementById('ai-test-btn-modal');
   if (testBtnModal) {
@@ -2347,7 +2366,8 @@ async function saveProgress(silent = true) {
         body: JSON.stringify({
           deckId: deckId,
           progress: progressSnapshot,
-          excluded: excludedSnapshot
+          excluded: excludedSnapshot,
+          aiSettings: ai
         })
       });
       if (!res.ok) throw new Error('Erreur serveur');
@@ -2368,7 +2388,7 @@ async function loadAllProgress(code, silent = false) {
     const res = await fetch(`/api/sync?code=${encodeURIComponent(code)}`);
     if (res.status === 404) {
       // New code — nothing to pull yet, but still seed it with local AI settings if any
-      if (ai.apiKey || ai.enabled) pushAiSettingsToSync();
+      if (ai.apiKey || ai.enabled) pushAiSettingsToSync(true);
       return 'not_found';
     }
     if (!res.ok) throw new Error('Erreur serveur');
@@ -2387,7 +2407,7 @@ async function loadAllProgress(code, silent = false) {
     mergeRemoteAiSettings(remoteAi);
 
     if (shouldBackfill) {
-      pushAiSettingsToSync();
+      pushAiSettingsToSync(true);
     }
 
     for (const [deckId, deckData] of Object.entries(decks)) {
@@ -2658,34 +2678,30 @@ document.addEventListener('DOMContentLoaded', () => {
     updateSyncStatus('Synchronisation...', 'loading');
 
     try {
-      // Push every deck that has local progress to the server first
-      const pushPromises = [];
+      // Push every deck that has local progress to the server first (sequentially to prevent race conditions)
       for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
         if (key && key.startsWith('progress_')) {
           const deckId = key.slice('progress_'.length);
           const progress = JSON.parse(localStorage.getItem(key) || '{}');
           const excluded = JSON.parse(localStorage.getItem(`excluded_${deckId}`) || '[]');
-          pushPromises.push(
-            fetch(`/api/sync?code=${encodeURIComponent(code)}`, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ deckId, progress, excluded })
-            }).then(res => { if (!res.ok) throw new Error('Erreur de synchronisation'); })
-          );
-        }
-      }
-      // Push current AI coach settings if configured, so a fresh connection carries them over
-      if (ai.apiKey || ai.enabled) {
-        pushPromises.push(
-          fetch(`/api/sync?code=${encodeURIComponent(code)}`, {
+          const res = await fetch(`/api/sync?code=${encodeURIComponent(code)}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ aiSettings: ai })
-          }).then(res => { if (!res.ok) throw new Error('Erreur de synchronisation'); })
-        );
+            body: JSON.stringify({ deckId, progress, excluded, aiSettings: ai })
+          });
+          if (!res.ok) throw new Error('Erreur de synchronisation');
+        }
       }
-      await Promise.all(pushPromises);
+      // If no decks were in localStorage, still push current AI settings
+      if (ai.apiKey || ai.enabled) {
+        const res = await fetch(`/api/sync?code=${encodeURIComponent(code)}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ aiSettings: ai })
+        });
+        if (!res.ok) throw new Error('Erreur de synchronisation');
+      }
 
       // Pull the merged server state (not_found = new code, error = real network/server failure)
       const loadResult = await loadAllProgress(code, false);

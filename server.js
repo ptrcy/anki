@@ -597,12 +597,6 @@ app.get('/api/sync', async (req, res) => {
     const syncContent = await fs.readFile(filePath, 'utf8');
     const syncData = JSON.parse(syncContent);
     recordSyncSuccess(req);
-
-    // Security (Finding #1): Do NOT expose plaintext API keys on short or easily guessable sync codes (< 8 chars).
-    if (code.length < 8 && syncData.aiSettings && syncData.aiSettings.apiKey) {
-      syncData.aiSettings = { ...syncData.aiSettings, apiKey: '' };
-    }
-
     res.json(syncData);
   } catch (err) {
     if (err.code === 'ENOENT') {
@@ -614,24 +608,19 @@ app.get('/api/sync', async (req, res) => {
   }
 });
 
-// Simple in-memory locking for sync files to prevent race conditions (with timeout)
-const syncLocks = new Map();
+// Strict FIFO queue per sync code to serialize writes and prevent race conditions / file clobbering
+const syncQueues = new Map();
 
-async function acquireLock(code, timeoutMs = 5000) {
-  const start = Date.now();
-  while (syncLocks.has(code)) {
-    if (Date.now() - start > timeoutMs) {
-      console.warn(`Sync lock timed out for code ${code} after ${timeoutMs}ms, breaking lock`);
-      syncLocks.delete(code);
-      break;
+function enqueueSync(code, task) {
+  const lastTask = syncQueues.get(code) || Promise.resolve();
+  const nextTask = lastTask.then(() => task(), () => task());
+  syncQueues.set(code, nextTask);
+  nextTask.finally(() => {
+    if (syncQueues.get(code) === nextTask) {
+      syncQueues.delete(code);
     }
-    await new Promise(resolve => setTimeout(resolve, 50));
-  }
-  syncLocks.set(code, Date.now());
-}
-
-function releaseLock(code) {
-  syncLocks.delete(code);
+  });
+  return nextTask;
 }
 
 // 6. Save progress (Sync) — merges one deck's progress into the stored file
@@ -658,88 +647,83 @@ app.post('/api/sync', async (req, res) => {
     }
   }
 
-  await acquireLock(code);
-
-  try {
-    const filePath = path.join(SYNC_DIR, `${encodeURIComponent(code)}.json`);
-
-    // Load existing sync data (or start fresh)
-    let syncData = { decks: {} };
+  return enqueueSync(code, async () => {
     try {
-      const existingContent = await fs.readFile(filePath, 'utf8');
-      const existing = JSON.parse(existingContent);
-      syncData = existing && typeof existing.decks === 'object' ? existing : { decks: {} };
-    } catch (err) {
-      if (err.code !== 'ENOENT') {
-        console.warn(`Sync file ${code} found but error reading:`, err.message);
-      }
-    }
+      const filePath = path.join(SYNC_DIR, `${encodeURIComponent(code)}.json`);
 
-    if (hasDeckPayload) {
-      const stored = (syncData.decks && syncData.decks[deckId]) || {};
-      const storedProgress = stored.progress || {};
-      const merged = Object.create(null);
-      Object.assign(merged, storedProgress);
-
-      for (const [cardId, incoming] of Object.entries(progress)) {
-        if (!SAFE_ID_REGEX.test(cardId) || FORBIDDEN_KEYS.has(cardId)) continue;
-        if (!incoming || typeof incoming !== 'object') continue;
-
-        const existing = merged[cardId];
-        const incomingTime = incoming.lastModified || 0;
-        const existingTime = existing ? (existing.lastModified || 0) : -1;
-
-        if (!existing || incomingTime > existingTime || (incomingTime === existingTime && incoming.reps > existing.reps)) {
-          merged[cardId] = incoming;
+      // Load existing sync data (or start fresh)
+      let syncData = { decks: {} };
+      try {
+        const existingContent = await fs.readFile(filePath, 'utf8');
+        const existing = JSON.parse(existingContent);
+        syncData = existing && typeof existing.decks === 'object' ? existing : { decks: {} };
+      } catch (err) {
+        if (err.code !== 'ENOENT') {
+          console.warn(`Sync file ${code} found but error reading:`, err.message);
         }
       }
 
-      const incomingExcluded = Array.isArray(excluded) ? excluded.filter(s => typeof s === 'string' && SAFE_ID_REGEX.test(s) && !FORBIDDEN_KEYS.has(s)) : [];
-      const storedExcluded = Array.isArray(stored.excluded) ? stored.excluded.filter(s => typeof s === 'string' && !FORBIDDEN_KEYS.has(s)) : [];
-      const mergedExcluded = Array.from(new Set([...storedExcluded, ...incomingExcluded]));
+      if (hasDeckPayload) {
+        const stored = (syncData.decks && syncData.decks[deckId]) || {};
+        const storedProgress = stored.progress || {};
+        const merged = Object.create(null);
+        Object.assign(merged, storedProgress);
 
-      if (!syncData.decks) syncData.decks = {};
-      syncData.decks[deckId] = {
-        progress: { ...merged },
-        excluded: mergedExcluded
-      };
-    }
+        for (const [cardId, incoming] of Object.entries(progress)) {
+          if (!SAFE_ID_REGEX.test(cardId) || FORBIDDEN_KEYS.has(cardId)) continue;
+          if (!incoming || typeof incoming !== 'object') continue;
 
-    if (hasAiPayload) {
-      const storedAi = syncData.aiSettings || {};
-      const incomingTime = aiSettings.lastModified || 0;
-      const storedTime = storedAi.lastModified || 0;
+          const existing = merged[cardId];
+          const incomingTime = incoming.lastModified || 0;
+          const existingTime = existing ? (existing.lastModified || 0) : -1;
 
-      if (incomingTime >= storedTime) {
-        let incomingKey = typeof aiSettings.apiKey === 'string' ? aiSettings.apiKey : '';
-        // Security (Finding #1): Do NOT store API keys if sync code length < 8
-        if (code.length < 8) {
-          incomingKey = '';
+          if (!existing || incomingTime > existingTime || (incomingTime === existingTime && incoming.reps > existing.reps)) {
+            merged[cardId] = incoming;
+          }
         }
-        const resolvedKey = incomingKey || (code.length >= 8 ? (storedAi.apiKey || '') : '');
-        const resolvedTime = incomingTime || storedTime || (incomingKey || aiSettings.enabled ? Date.now() : 0);
-        syncData.aiSettings = {
-          enabled: !!aiSettings.enabled,
-          apiKey: resolvedKey,
-          model: typeof aiSettings.model === 'string' ? aiSettings.model.slice(0, 100) : (storedAi.model || ''),
-          baseUrl: typeof aiSettings.baseUrl === 'string' ? aiSettings.baseUrl.slice(0, 200) : (storedAi.baseUrl || ''),
-          lang: typeof aiSettings.lang === 'string' ? aiSettings.lang.slice(0, 10) : (storedAi.lang || ''),
-          lastModified: resolvedTime
+
+        const incomingExcluded = Array.isArray(excluded) ? excluded.filter(s => typeof s === 'string' && SAFE_ID_REGEX.test(s) && !FORBIDDEN_KEYS.has(s)) : [];
+        const storedExcluded = Array.isArray(stored.excluded) ? stored.excluded.filter(s => typeof s === 'string' && !FORBIDDEN_KEYS.has(s)) : [];
+        const mergedExcluded = Array.from(new Set([...storedExcluded, ...incomingExcluded]));
+
+        if (!syncData.decks) syncData.decks = {};
+        syncData.decks[deckId] = {
+          progress: { ...merged },
+          excluded: mergedExcluded
         };
       }
+
+      if (hasAiPayload) {
+        const storedAi = syncData.aiSettings || {};
+        const incomingTime = aiSettings.lastModified || 0;
+        const storedTime = storedAi.lastModified || 0;
+
+        if (incomingTime >= storedTime || (!storedTime && (aiSettings.apiKey || aiSettings.enabled))) {
+          let incomingKey = typeof aiSettings.apiKey === 'string' ? aiSettings.apiKey : '';
+          const shouldClearKey = aiSettings.clearKey === true;
+          const resolvedKey = shouldClearKey ? '' : (incomingKey || storedAi.apiKey || '');
+          const resolvedTime = incomingTime || Date.now();
+          syncData.aiSettings = {
+            enabled: !!aiSettings.enabled,
+            apiKey: resolvedKey,
+            model: typeof aiSettings.model === 'string' ? aiSettings.model.slice(0, 100) : (storedAi.model || ''),
+            baseUrl: typeof aiSettings.baseUrl === 'string' ? aiSettings.baseUrl.slice(0, 200) : (storedAi.baseUrl || ''),
+            lang: typeof aiSettings.lang === 'string' ? aiSettings.lang.slice(0, 10) : (storedAi.lang || ''),
+            lastModified: resolvedTime
+          };
+        }
+      }
+
+      syncData._savedAt = new Date().toISOString();
+
+      await fs.writeFile(filePath, JSON.stringify(syncData, null, 2), 'utf8');
+      recordSyncSuccess(req);
+      res.json({ success: true, _savedAt: syncData._savedAt });
+    } catch (err) {
+      console.error(`Failed to save sync progress for ${code}:`, err);
+      res.status(500).json({ error: 'Failed to save sync progress' });
     }
-
-    syncData._savedAt = new Date().toISOString();
-
-    await fs.writeFile(filePath, JSON.stringify(syncData, null, 2), 'utf8');
-    recordSyncSuccess(req);
-    res.json({ success: true, _savedAt: syncData._savedAt });
-  } catch (err) {
-    console.error(`Failed to save sync progress for ${code}:`, err);
-    res.status(500).json({ error: 'Failed to save sync progress' });
-  } finally {
-    releaseLock(code);
-  }
+  });
 });
 
 // Catch-all for routing (SPA fallback) - only for non-API, non-audio routes

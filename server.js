@@ -586,9 +586,15 @@ app.post('/api/sync', async (req, res) => {
       const storedTime = storedAi.lastModified || 0;
 
       if (incomingTime >= storedTime) {
+        const incomingKey = typeof aiSettings.apiKey === 'string' ? aiSettings.apiKey : '';
+        // A blank key never overwrites a real one already on record: a device
+        // that hasn't received the real key yet can otherwise wipe it out for
+        // everyone just by editing an unrelated field (e.g. the enabled toggle),
+        // since that stamps a fresh "latest" write with its own empty key.
+        const resolvedKey = incomingKey || storedAi.apiKey || '';
         syncData.aiSettings = {
           enabled: !!aiSettings.enabled,
-          apiKey: typeof aiSettings.apiKey === 'string' ? aiSettings.apiKey : (storedAi.apiKey || ''),
+          apiKey: resolvedKey,
           model: typeof aiSettings.model === 'string' ? aiSettings.model : (storedAi.model || ''),
           baseUrl: typeof aiSettings.baseUrl === 'string' ? aiSettings.baseUrl : (storedAi.baseUrl || ''),
           lang: typeof aiSettings.lang === 'string' ? aiSettings.lang : (storedAi.lang || ''),

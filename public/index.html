@@ -543,11 +543,33 @@
           </div>
         </div>
 
-        <!-- Gemini API Key -->
-        <div class="form-group">
-          <label for="enrich-api-key-input">Clé API Gemini :</label>
-          <input type="password" id="enrich-api-key-input" placeholder="Saisissez votre clé API Gemini (optionnel)" autocomplete="off" spellcheck="false" class="input-text">
-          <span class="help-text">Si vous n'en avez pas, demandez à l'administrateur ou utilisez votre propre clé.</span>
+        <!-- AI Enrichment Settings (OpenAI / OpenRouter compatible) -->
+        <div class="form-group" style="border-top: 1px solid var(--border, #e2e8f0); padding-top: 14px; margin-top: 14px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <label style="font-weight: 600; margin-bottom: 0;">Paramètres API (OpenRouter / OpenAI compatible) :</label>
+            <button type="button" id="enrich-use-global-ai-btn" class="btn btn-sm btn-ghost" style="font-size: 11px; padding: 2px 8px;" title="Copier les paramètres du Coach IA">
+              Copier depuis Coach IA
+            </button>
+          </div>
+          
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div>
+              <label for="enrich-api-key-input" style="font-size: 13px;">Clé API (API Key) :</label>
+              <input type="password" id="enrich-api-key-input" placeholder="sk-or-v1-... ou sk-..." autocomplete="off" spellcheck="false" class="input-text">
+              <span class="help-text">Clé OpenRouter, OpenAI, Groq, etc.</span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+              <div>
+                <label for="enrich-base-url-input" style="font-size: 13px;">URL de base (Base URL) :</label>
+                <input type="text" id="enrich-base-url-input" placeholder="https://openrouter.ai/api/v1" spellcheck="false" class="input-text">
+              </div>
+              <div>
+                <label for="enrich-model-input" style="font-size: 13px;">Modèle (Model) :</label>
+                <input type="text" id="enrich-model-input" placeholder="google/gemini-2.5-flash" spellcheck="false" class="input-text">
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Progress Spinner / Message -->

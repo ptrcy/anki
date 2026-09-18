@@ -35,6 +35,42 @@ app.use(express.json({ limit: '10mb' }));
 // In-flight deduplication for on-demand audio generation
 const pendingAudioGenerations = new Map();
 
+// Strict FIFO queue per sync code to serialize writes and prevent race conditions / file clobbering
+const syncQueues = new Map();
+
+function enqueueSync(code, task) {
+  const lastTask = syncQueues.get(code) || Promise.resolve();
+  const nextTask = lastTask.then(() => task(), () => task());
+  syncQueues.set(code, nextTask);
+  nextTask.finally(() => {
+    if (syncQueues.get(code) === nextTask) {
+      syncQueues.delete(code);
+    }
+  });
+  return nextTask;
+}
+
+// In-memory locking compatibility helpers
+const syncLocks = new Map();
+
+async function acquireLock(code, timeoutMs = 10000) {
+  const start = Date.now();
+  while (syncLocks.has(code)) {
+    if (Date.now() - start > timeoutMs) {
+      console.warn(`Sync lock timed out for code ${code} after ${timeoutMs}ms, breaking lock`);
+      syncLocks.delete(code);
+      break;
+    }
+    await new Promise(resolve => setTimeout(resolve, 50));
+  }
+  syncLocks.set(code, Date.now());
+}
+
+function releaseLock(code) {
+  syncLocks.delete(code);
+}
+
+
 // On-demand Audio Middleware
 app.get('/audio/:filename', async (req, res, next) => {
   const { filename } = req.params;
@@ -274,8 +310,48 @@ app.delete('/api/decks/:id', async (req, res) => {
     console.error(`Failed to delete deck ${deckId}:`, err);
     res.status(500).json({ error: 'Failed to delete deck file' });
   }
-});// 5b. Enrich deck (LLM Bulk Generator)
-const { GoogleGenAI } = require('@google/genai');
+});// 5b. Enrich deck (LLM Bulk Generator - OpenAI-compatible API)
+const OpenAI = require('openai');
+
+function unwrapArray(parsed) {
+  if (Array.isArray(parsed)) return parsed;
+  if (parsed && typeof parsed === 'object' && parsed !== null) {
+    const arr = Object.values(parsed).find(v => Array.isArray(v));
+    if (arr) return arr;
+  }
+  return [parsed];
+}
+
+function extractJson(rawText) {
+  if (!rawText || typeof rawText !== 'string') {
+    throw new Error('Empty response from AI model');
+  }
+  let s = rawText.trim();
+  const codeBlockMatch = s.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
+  if (codeBlockMatch) {
+    s = codeBlockMatch[1].trim();
+  }
+
+  try {
+    return unwrapArray(JSON.parse(s));
+  } catch (e) {
+    const firstArr = s.indexOf('[');
+    const lastArr = s.lastIndexOf(']');
+    if (firstArr !== -1 && lastArr > firstArr) {
+      try {
+        return unwrapArray(JSON.parse(s.slice(firstArr, lastArr + 1)));
+      } catch (e2) {}
+    }
+    const firstObj = s.indexOf('{');
+    const lastObj = s.lastIndexOf('}');
+    if (firstObj !== -1 && lastObj > firstObj) {
+      try {
+        return unwrapArray(JSON.parse(s.slice(firstObj, lastObj + 1)));
+      } catch (e3) {}
+    }
+    throw new Error(`Invalid JSON returned by model: ${e.message}`);
+  }
+}
 
 const LANG_NAMES = {
   it: 'italien',
@@ -315,31 +391,40 @@ app.post('/api/decks/:id/enrich', async (req, res) => {
   if (!/^[a-z0-9-]+$/.test(deckId)) {
     return res.status(400).json({ error: 'Invalid deck ID' });
   }
-  const { translationLang, includeGrammar, includeCloze, apiKey } = req.body;
+  const { translationLang, includeGrammar, includeCloze, apiKey, baseUrl, model } = req.body;
 
-  // Initialize unified SDK client.
-  // Requires user-provided key, server GEMINI_API_KEY, or authenticated VERTEX_PROJECT_ID.
+  // Resolve OpenAI-compatible API parameters (OpenRouter, OpenAI, Groq, local, etc.)
+  const resolvedApiKey = (apiKey && typeof apiKey === 'string' && apiKey.trim() !== '')
+    ? apiKey.trim()
+    : (process.env.ENRICH_API_KEY || process.env.OPENROUTER_API_KEY || process.env.OPENAI_API_KEY || process.env.GEMINI_API_KEY || '');
+
+  if (!resolvedApiKey) {
+    return res.status(400).json({ error: 'Clé API requise pour enrichir le deck. Veuillez la renseigner dans la fenêtre d\'enrichissement.' });
+  }
+
+  const rawBaseUrl = (baseUrl && typeof baseUrl === 'string' && baseUrl.trim() !== '')
+    ? baseUrl.trim()
+    : (process.env.ENRICH_BASE_URL || process.env.OPENROUTER_BASE_URL || process.env.OPENAI_BASE_URL || 'https://openrouter.ai/api/v1');
+
+  // Strip trailing slashes and /chat/completions if the user entered the endpoint path
+  const cleanBaseUrl = rawBaseUrl.replace(/\/+$/, '').replace(/\/chat\/completions$/i, '');
+
+  const resolvedModel = (model && typeof model === 'string' && model.trim() !== '')
+    ? model.trim()
+    : (process.env.ENRICH_MODEL || process.env.OPENROUTER_MODEL || process.env.OPENAI_MODEL || 'google/gemini-2.5-flash');
+
   let aiClient;
   try {
-    if (apiKey && typeof apiKey === 'string' && apiKey.trim() !== '') {
-      aiClient = new GoogleGenAI({ apiKey: apiKey.trim() });
-    } else if (process.env.GEMINI_API_KEY) {
-      aiClient = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-    } else if (process.env.VERTEX_PROJECT_ID) {
-      const adminToken = process.env.ADMIN_TOKEN;
-      if (adminToken && req.get('x-admin-token') !== adminToken) {
-        return res.status(401).json({ error: 'Unauthorized: Admin token required for server-backed AI generation' });
+    aiClient = new OpenAI({
+      apiKey: resolvedApiKey,
+      baseURL: cleanBaseUrl,
+      defaultHeaders: {
+        'X-Title': 'Anki Trainer Hub Deck Enrichment',
+        'HTTP-Referer': 'https://github.com/ptrcy/anki'
       }
-      aiClient = new GoogleGenAI({
-        vertexai: true,
-        project: process.env.VERTEX_PROJECT_ID,
-        location: process.env.VERTEX_LOCATION || 'us-central1'
-      });
-    } else {
-      return res.status(400).json({ error: 'No Gemini API key provided. Please configure your API key in settings.' });
-    }
+    });
   } catch (err) {
-    return res.status(400).json({ error: `Failed to initialize Gemini Client: ${err.message}` });
+    return res.status(400).json({ error: `Failed to initialize OpenAI Client: ${err.message}` });
   }
 
   const filePath = path.join(DECKS_DIR, `${deckId}.json`);
@@ -359,7 +444,7 @@ app.post('/api/decks/:id/enrich', async (req, res) => {
     const targetLangName = LANG_NAMES[deck.targetLang] || deck.targetLang || 'italien';
     const translationLangName = LANG_NAMES[translationLang] || translationLang || 'français';
 
-    console.log(`Starting bulk enrichment for deck [${deckId}] (${cards.length} cards) to ${translationLangName} using Gemini 2.5 Flash...`);
+    console.log(`Starting bulk enrichment for deck [${deckId}] (${cards.length} cards) to ${translationLangName} using model "${resolvedModel}" at ${cleanBaseUrl}...`);
 
     // We will batch cards to avoid token limits and speed up calls.
     const batchSize = 50;
@@ -412,14 +497,25 @@ Return ONLY a valid JSON array of objects matching this schema:
       let batchResults = null;
       while (attempt < 3 && !batchResults) {
         try {
-          const response = await aiClient.models.generateContent({
-            model: 'gemini-2.5-flash',
-            contents: prompt,
-            config: {
-              responseMimeType: 'application/json'
-            }
+          const response = await aiClient.chat.completions.create({
+            model: resolvedModel,
+            messages: [
+              {
+                role: 'system',
+                content: 'You are an expert language teacher and translator. You strictly output valid JSON without any conversation or commentary.'
+              },
+              {
+                role: 'user',
+                content: prompt
+              }
+            ],
+            temperature: 0.3,
+            max_tokens: 4096
           });
-          batchResults = JSON.parse(response.text);
+
+          const content = response.choices && response.choices[0] && response.choices[0].message && response.choices[0].message.content;
+          if (!content) throw new Error('Empty response from model');
+          batchResults = extractJson(content);
         } catch (err) {
           attempt++;
           console.warn(`Attempt ${attempt} failed for batch ${batchObj.batchIndex}: ${err.message}`);
@@ -462,53 +558,67 @@ Return ONLY a valid JSON array of objects matching this schema:
       });
     });
 
+    // Backup existing deck before updating
+    const backupDir = path.join(DATA_DIR, 'backups', new Date().toISOString().replace(/[:.]/g, '-'));
+    try {
+      await fs.mkdir(backupDir, { recursive: true });
+      await fs.copyFile(filePath, path.join(backupDir, `${deckId}.json`));
+    } catch (bckErr) {
+      console.warn(`Could not create backup for ${deckId}:`, bckErr.message);
+    }
+
     // After updating all cards in deck, save it
     await fs.writeFile(filePath, JSON.stringify(deck, null, 2), 'utf8');
 
-    // Update all sync progress files on server in-place under lock
+    // Update all sync progress files on server in-place serialized by sync queue
     if (existsSync(SYNC_DIR)) {
       const syncFiles = await fs.readdir(SYNC_DIR);
       for (const file of syncFiles) {
         if (!file.endsWith('.json')) continue;
-        const code = decodeURIComponent(file.slice(0, -5));
-        await acquireLock(code);
+        let code = file.slice(0, -5);
         try {
-          const syncPath = path.join(SYNC_DIR, file);
-          const syncData = JSON.parse(await fs.readFile(syncPath, 'utf8'));
-          if (syncData.decks && syncData.decks[deckId]) {
-            const deckSync = syncData.decks[deckId];
-            const oldProgress = deckSync.progress || {};
-            const oldExcluded = deckSync.excluded || [];
-            const newProgress = {};
-            const newExcluded = new Set();
-
-            Object.entries(oldProgress).forEach(([oldId, progVal]) => {
-              const newId = idChanges[oldId];
-              if (newId) {
-                newProgress[newId] = progVal;
-              } else {
-                newProgress[oldId] = progVal;
-              }
-            });
-
-            oldExcluded.forEach(oldId => {
-              const newId = idChanges[oldId];
-              if (newId) {
-                newExcluded.add(newId);
-              } else {
-                newExcluded.add(oldId);
-              }
-            });
-
-            deckSync.progress = newProgress;
-            deckSync.excluded = Array.from(newExcluded);
-            await fs.writeFile(syncPath, JSON.stringify(syncData, null, 2), 'utf8');
-          }
-        } catch (err) {
-          console.error(`Failed to update sync file ${file}:`, err);
-        } finally {
-          releaseLock(code);
+          code = decodeURIComponent(code);
+        } catch {
+          // ignore URI decode error
         }
+
+        await enqueueSync(code, async () => {
+          try {
+            const syncPath = path.join(SYNC_DIR, file);
+            const syncData = JSON.parse(await fs.readFile(syncPath, 'utf8'));
+            if (syncData.decks && syncData.decks[deckId]) {
+              const deckSync = syncData.decks[deckId];
+              const oldProgress = deckSync.progress || {};
+              const oldExcluded = deckSync.excluded || [];
+              const newProgress = {};
+              const newExcluded = new Set();
+
+              Object.entries(oldProgress).forEach(([oldId, progVal]) => {
+                const newId = idChanges[oldId];
+                if (newId) {
+                  newProgress[newId] = progVal;
+                } else {
+                  newProgress[oldId] = progVal;
+                }
+              });
+
+              oldExcluded.forEach(oldId => {
+                const newId = idChanges[oldId];
+                if (newId) {
+                  newExcluded.add(newId);
+                } else {
+                  newExcluded.add(oldId);
+                }
+              });
+
+              deckSync.progress = newProgress;
+              deckSync.excluded = Array.from(newExcluded);
+              await fs.writeFile(syncPath, JSON.stringify(syncData, null, 2), 'utf8');
+            }
+          } catch (err) {
+            console.error(`Failed to update sync file ${file}:`, err);
+          }
+        });
       }
     }
 
@@ -607,21 +717,6 @@ app.get('/api/sync', async (req, res) => {
     res.status(500).json({ error: 'Failed to read sync progress' });
   }
 });
-
-// Strict FIFO queue per sync code to serialize writes and prevent race conditions / file clobbering
-const syncQueues = new Map();
-
-function enqueueSync(code, task) {
-  const lastTask = syncQueues.get(code) || Promise.resolve();
-  const nextTask = lastTask.then(() => task(), () => task());
-  syncQueues.set(code, nextTask);
-  nextTask.finally(() => {
-    if (syncQueues.get(code) === nextTask) {
-      syncQueues.delete(code);
-    }
-  });
-  return nextTask;
-}
 
 // 6. Save progress (Sync) — merges one deck's progress into the stored file
 app.post('/api/sync', async (req, res) => {

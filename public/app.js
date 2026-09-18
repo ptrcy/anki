@@ -2937,8 +2937,14 @@ function escapeHtml(str) {
 }
 
 // ----------------------------------------------------
-// ENRICH DECK FEATURES (LLM Bulk Generator)
+// ENRICH DECK FEATURES (LLM Bulk Generator - OpenAI/OpenRouter Compatible)
 // ----------------------------------------------------
+
+const ENRICH_API_KEY_STORAGE = 'enrich_api_key';
+const ENRICH_BASE_URL_STORAGE = 'enrich_base_url';
+const ENRICH_MODEL_STORAGE = 'enrich_model';
+const ENRICH_DEFAULT_BASE = 'https://openrouter.ai/api/v1';
+const ENRICH_DEFAULT_MODEL = 'google/gemini-2.5-flash';
 
 function openEnrichModal(deckId, deckName) {
   document.getElementById('enrich-deck-id').value = deckId;
@@ -2952,9 +2958,20 @@ function openEnrichModal(deckId, deckName) {
   document.getElementById('enrich-grammar-checkbox').checked = true;
   document.getElementById('enrich-cloze-checkbox').checked = true;
   
-  // Load saved API key from localStorage
-  const savedKey = localStorage.getItem('gemini-api-key') || '';
+  // Load saved enrichment settings from localStorage (with fallbacks to legacy key or global ai)
+  const savedKey = localStorage.getItem(ENRICH_API_KEY_STORAGE) ||
+                   localStorage.getItem('gemini-api-key') ||
+                   (typeof ai !== 'undefined' && ai.apiKey ? ai.apiKey : '') || '';
+  const savedBaseUrl = localStorage.getItem(ENRICH_BASE_URL_STORAGE) ||
+                       (typeof ai !== 'undefined' && ai.baseUrl ? ai.baseUrl : '') ||
+                       ENRICH_DEFAULT_BASE;
+  const savedModel = localStorage.getItem(ENRICH_MODEL_STORAGE) ||
+                     (typeof ai !== 'undefined' && ai.model ? ai.model : '') ||
+                     ENRICH_DEFAULT_MODEL;
+
   document.getElementById('enrich-api-key-input').value = savedKey;
+  document.getElementById('enrich-base-url-input').value = savedBaseUrl;
+  document.getElementById('enrich-model-input').value = savedModel;
 
   // Hide progress and errors
   document.getElementById('enrich-progress-container').classList.add('hide');
@@ -2972,10 +2989,20 @@ function closeEnrichModal() {
 function initEnrichModalListeners() {
   const closeBtn = document.getElementById('close-enrich-modal-btn');
   const cancelBtn = document.getElementById('cancel-enrich-btn');
+  const copyGlobalAiBtn = document.getElementById('enrich-use-global-ai-btn');
   const form = document.getElementById('enrich-deck-form');
 
   if (closeBtn) closeBtn.addEventListener('click', closeEnrichModal);
   if (cancelBtn) cancelBtn.addEventListener('click', closeEnrichModal);
+  if (copyGlobalAiBtn) {
+    copyGlobalAiBtn.addEventListener('click', () => {
+      if (typeof ai !== 'undefined') {
+        if (ai.apiKey) document.getElementById('enrich-api-key-input').value = ai.apiKey;
+        if (ai.baseUrl) document.getElementById('enrich-base-url-input').value = ai.baseUrl;
+        if (ai.model) document.getElementById('enrich-model-input').value = ai.model;
+      }
+    });
+  }
 
   if (form) {
     form.addEventListener('submit', async (e) => {
@@ -2986,13 +3013,19 @@ function initEnrichModalListeners() {
       const includeGrammar = document.getElementById('enrich-grammar-checkbox').checked;
       const includeCloze = document.getElementById('enrich-cloze-checkbox').checked;
       const apiKey = document.getElementById('enrich-api-key-input').value.trim();
+      const baseUrl = document.getElementById('enrich-base-url-input').value.trim() || ENRICH_DEFAULT_BASE;
+      const model = document.getElementById('enrich-model-input').value.trim() || ENRICH_DEFAULT_MODEL;
 
-      // Save API key if provided
+      // Save enrichment settings
       if (apiKey) {
+        localStorage.setItem(ENRICH_API_KEY_STORAGE, apiKey);
         localStorage.setItem('gemini-api-key', apiKey);
       } else {
+        localStorage.removeItem(ENRICH_API_KEY_STORAGE);
         localStorage.removeItem('gemini-api-key');
       }
+      localStorage.setItem(ENRICH_BASE_URL_STORAGE, baseUrl);
+      localStorage.setItem(ENRICH_MODEL_STORAGE, model);
 
       // Show progress spinner, hide buttons/errors
       const progressContainer = document.getElementById('enrich-progress-container');
@@ -3013,7 +3046,9 @@ function initEnrichModalListeners() {
             translationLang,
             includeGrammar,
             includeCloze,
-            apiKey
+            apiKey,
+            baseUrl,
+            model
           })
         });
 
